@@ -50,6 +50,12 @@ jobs:
           hugo-version: 'latest' # You can specify a version like '0.148.0'
           extended: true
 
+      # Add a step to install AsciiDoctor, as your site requires it
+      - name: Install AsciiDoctor
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y asciidoctor
+
       - name: Build with Hugo
         env:
           HUGO_BASEURL: ${{ steps.pages.outputs.base_url }}/
