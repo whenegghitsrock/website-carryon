@@ -113,26 +113,26 @@ The multi-cluster proxy request API `/API_PREFIX/clusters/{cluster}/API_GROUP/AP
 
 **Access Control**
 
-- The `iam.kubesphere.io/v1alpha2` API version has been removed. Please use the `iam.kubesphere.io/v1beta1` API version instead.
-- Significant changes in `iam.kubesphere.io/v1beta1`:
-  The API Group for Role, RoleBinding, ClusterRole, and ClusterRoleBinding resources has changed from `rbac.authorization.k8s.io` to `iam.kubesphere.io`.
+- The `iam.docs.kubesphere-carryon.top/v1alpha2` API version has been removed. Please use the `iam.docs.kubesphere-carryon.top/v1beta1` API version instead.
+- Significant changes in `iam.docs.kubesphere-carryon.top/v1beta1`:
+  The API Group for Role, RoleBinding, ClusterRole, and ClusterRoleBinding resources has changed from `rbac.authorization.k8s.io` to `iam.docs.kubesphere-carryon.top`.
 
 **Multi-tenancy**
 
-- Partial APIs in `tenant.kubesphere.io/v1alpha1` and `tenant.kubesphere.io/v1alpha2` API versions have been removed. Please use the `tenant.kubesphere.io/v1beta1` API version instead.
-- Significant changes in `tenant.kubesphere.io/v1beta1`:
+- Partial APIs in `tenant.docs.kubesphere-carryon.top/v1alpha1` and `tenant.docs.kubesphere-carryon.top/v1alpha2` API versions have been removed. Please use the `tenant.docs.kubesphere-carryon.top/v1beta1` API version instead.
+- Significant changes in `tenant.docs.kubesphere-carryon.top/v1beta1`:
   `spec.networkIsolation` in `Workspace` has been removed.
 
 **kubectl**
 
-- The `/resources.kubesphere.io/v1alpha2/users/{user}/kubectl` interface has been removed. Terminal-related operations no longer need to call this interface.
-- The API path for the user web kubectl terminal has been adjust from `/kapis/terminal.kubesphere.io/v1alpha2/namespaces/{namespace}/pods/{pod}/exec` to `/kapis/terminal.kubesphere.io/v1alpha2/users/{user}/kubectl`.
+- The `/resources.docs.kubesphere-carryon.top/v1alpha2/users/{user}/kubectl` interface has been removed. Terminal-related operations no longer need to call this interface.
+- The API path for the user web kubectl terminal has been adjust from `/kapis/terminal.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/pods/{pod}/exec` to `/kapis/terminal.docs.kubesphere-carryon.top/v1alpha2/users/{user}/kubectl`.
 
 **Gateway**
 
-The `gateway.kubesphere.io/v1alpha1` API version has been removed.
+The `gateway.docs.kubesphere-carryon.top/v1alpha1` API version has been removed.
 
-- The API for querying related gateways of the Ingress configuration has been adjust to `/kapis/gateway.kubesphere.io/v1alpha2/namespaces/{namespace}/availableingressclassscopes`.
+- The API for querying related gateways of the Ingress configuration has been adjust to `/kapis/gateway.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/availableingressclassscopes`.
 
 #### API Deprecations
 

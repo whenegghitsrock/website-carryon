@@ -67,16 +67,16 @@ Ingress 并不是 Kubernetes 服务本身提供的暴露方式，而是借助于
 
 ![Portter](https://pek3b.qingstor.com/kubesphere-docs/png/20200611120450.png)
 
-Porter 的所有代码和文档已在 [GitHub](https://github.com/kubesphere/porter) 开源，欢迎大家关注 (Star) 和使用。
+Porter 的所有代码和文档已在 [GitHub](https://github.com/whenegghitsrock/porter) 开源，欢迎大家关注 (Star) 和使用。
 
 
 ## 如何快速部署使用
 
 Porter 目前已在如下两种环境下进行过部署和测试，并将部署测试与使用步骤的详细文档记录在 GitHub，大家可以通过以下链接查看，建议大家动手部署实践一下。
 
-- [在物理部署的 Kubernetes 集群上部署使用 Porter](https://github.com/kubesphere/porter/blob/master/doc/zh/deploy_baremetal.md)
-- [在云平台用模拟路由器的方式测试](https://github.com/kubesphere/porter/blob/master/doc/zh/simulate_with_bird.md)
-- [Layer2 的使用](https://github.com/kubesphere/porter/blob/master/doc/zh/layer2.md)
+- [在物理部署的 Kubernetes 集群上部署使用 Porter](https://github.com/whenegghitsrock/porter/blob/master/doc/zh/deploy_baremetal.md)
+- [在云平台用模拟路由器的方式测试](https://github.com/whenegghitsrock/porter/blob/master/doc/zh/simulate_with_bird.md)
+- [Layer2 的使用](https://github.com/whenegghitsrock/porter/blob/master/doc/zh/layer2.md)
 
 ## 原理
 

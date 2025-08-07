@@ -89,4 +89,4 @@ The KubeSphere community has the capabilities and technical know-how to help you
 
 **Contributors**. KubeSphere contributors help the whole community by contributing to code or documentation. You don't need to be an expert while you can still make a difference even it is a minor code fix or language improvement.
 
-For more information, see [Partner Program](https://kubesphere.io/partner/) and [Community Governance](https://kubesphere.io/contribution/).
+For more information, see [Partner Program](https://docs.kubesphere-carryon.top/partner/) and [Community Governance](https://docs.kubesphere-carryon.top/contribution/).

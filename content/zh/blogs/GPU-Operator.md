@@ -501,7 +501,7 @@ $ kubectl apply -f custom/gpu-servicemonitor.yaml
 $ curl -LO https://raw.githubusercontent.com/kubesphere/monitoring-dashboard/master/contrib/gallery/nvidia-gpu-dcgm-exporter-dashboard.yaml
 $ cat nvidia-gpu-dcgm-exporter-dashboard.yaml
 ----
-apiVersion: monitoring.kubesphere.io/v1alpha1
+apiVersion: monitoring.docs.kubesphere-carryon.top/v1alpha1
 kind: Dashboard
 metadata:
   name: nvidia-dcgm-exporter-dashboard-rev1

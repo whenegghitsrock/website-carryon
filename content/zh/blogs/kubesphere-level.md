@@ -32,13 +32,13 @@ K8s 是容器编排和分布式应用部署领域的领导者，在 K8s 环境�
 
 ```yaml
 kind: User
-apiVersion: iam.kubesphere.io/v1alpha2
+apiVersion: iam.docs.kubesphere-carryon.top/v1alpha2
 metadata:
   name: demo-user
   labels:
     kubernetes.io/level: 3
 spec:
-  email: demo-user@kubesphere.io
+  email: demo-user@docs.kubesphere-carryon.top
 ```
 
 创建一个权限等级是 2 的项目 `demo-ns`，那么基于项目创建的负载、Pod、存储等资源的权限等级也是 2。

@@ -24,14 +24,14 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/ospp-2022-selecte
 
 | 项目 | 领域  | 技能 | 难 度 | 
 | -------- | -------- | -------- |-------- |
-| [KubeSphere Sharing Secret 插件开发](https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/ospp-2022/kubesphere-sharing-secret-plugin_zh-CN.md) <br/>在 KubeSphere 可插拔框架的基础之上开发 Sharing Secret 插件。<br/>导师： [Hongming](https://github.com/wansir/)    | Pluggable    | React，TypeScript，HTML，CSS，Helm，Kubernetes |基础|
-| [KubeKey Phase Run 阶段运行功能开发](https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/ospp-2022/kubekey-phase-run_zh-CN.md)<br/>在 KubeKey 当前模块化架构基础上拆分流水线实现阶段运行功能。<br/>导师： [24sama](https://github.com/24sama/)  | command-line | Kubernetes, golang, Linux | 基础 |
-| [KubeSphere-DevOps 对接 FluxCD](https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/ospp-2022/ks-devops-fluxcd-integrations_zh-CN.md) <br/>通过对接 FluxCD 增强 KubeSphere 多集群应用发布与管理能力。<br/>导师： [LXM](https://github.com/lxm) | DevOps   | Golang，Kubernetes，FluxCD，React     | 基础 |
-| [OpenFunction 的 Node.js 函数框架升级](https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/ospp-2022/openfunction-nodejs-function-framework-upgrade_zh-CN.md) <br/>升级现有的 OpenFunction Node.js Function Framework（函数框架），使之对齐 OpenFunction 0.6.0 两大主体功能 —— 函数插件和可观测能力。<br/>导师： [Haili Zhang](https://github.com/webup) | Functions-as-a-Service   | Node.js，Kubernetes，CloudEvent，OpenFunction，Cloud Native Buildpacks，Dapr、Knative（可选）    | 基础 |
-| [OpenFunction 弹性应用运行时](https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/ospp-2022/openfunction-dapr-elastic-app-runtime_zh-CN.md) <br/>为 OpenFunction 添加弹性应用运行时，支持直接运行 Dapr 应用， 支持使用 Keda 进行动态伸缩。<br/>导师： [雷万钧](https://github.com/wanjunlei) | Functions-as-a-Service   | Kubernetes，OpenFunction，Dapr，Golang，Keda | 基础 |
-| [KubeEye Console 2.0 前端页面开发](https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/ospp-2022/kubeeye-console-v2.0_zh-CN.md) <br/>开发 KubeEye Console 2.0 插件管理功能的前端页面。<br/>导师： [chenzhen](https://github.com/chenz24) |  Observability  | JavaScript，TypeScript，HTML，CSS，React，Docker，Kubernetes| 基础 |
+| [KubeSphere Sharing Secret 插件开发](https://github.com/whenegghitsrock/community/blob/master/sig-advocacy-and-outreach/ospp-2022/kubesphere-sharing-secret-plugin_zh-CN.md) <br/>在 KubeSphere 可插拔框架的基础之上开发 Sharing Secret 插件。<br/>导师： [Hongming](https://github.com/wansir/)    | Pluggable    | React，TypeScript，HTML，CSS，Helm，Kubernetes |基础|
+| [KubeKey Phase Run 阶段运行功能开发](https://github.com/whenegghitsrock/community/blob/master/sig-advocacy-and-outreach/ospp-2022/kubekey-phase-run_zh-CN.md)<br/>在 KubeKey 当前模块化架构基础上拆分流水线实现阶段运行功能。<br/>导师： [24sama](https://github.com/24sama/)  | command-line | Kubernetes, golang, Linux | 基础 |
+| [KubeSphere-DevOps 对接 FluxCD](https://github.com/whenegghitsrock/community/blob/master/sig-advocacy-and-outreach/ospp-2022/ks-devops-fluxcd-integrations_zh-CN.md) <br/>通过对接 FluxCD 增强 KubeSphere 多集群应用发布与管理能力。<br/>导师： [LXM](https://github.com/lxm) | DevOps   | Golang，Kubernetes，FluxCD，React     | 基础 |
+| [OpenFunction 的 Node.js 函数框架升级](https://github.com/whenegghitsrock/community/blob/master/sig-advocacy-and-outreach/ospp-2022/openfunction-nodejs-function-framework-upgrade_zh-CN.md) <br/>升级现有的 OpenFunction Node.js Function Framework（函数框架），使之对齐 OpenFunction 0.6.0 两大主体功能 —— 函数插件和可观测能力。<br/>导师： [Haili Zhang](https://github.com/webup) | Functions-as-a-Service   | Node.js，Kubernetes，CloudEvent，OpenFunction，Cloud Native Buildpacks，Dapr、Knative（可选）    | 基础 |
+| [OpenFunction 弹性应用运行时](https://github.com/whenegghitsrock/community/blob/master/sig-advocacy-and-outreach/ospp-2022/openfunction-dapr-elastic-app-runtime_zh-CN.md) <br/>为 OpenFunction 添加弹性应用运行时，支持直接运行 Dapr 应用， 支持使用 Keda 进行动态伸缩。<br/>导师： [雷万钧](https://github.com/wanjunlei) | Functions-as-a-Service   | Kubernetes，OpenFunction，Dapr，Golang，Keda | 基础 |
+| [KubeEye Console 2.0 前端页面开发](https://github.com/whenegghitsrock/community/blob/master/sig-advocacy-and-outreach/ospp-2022/kubeeye-console-v2.0_zh-CN.md) <br/>开发 KubeEye Console 2.0 插件管理功能的前端页面。<br/>导师： [chenzhen](https://github.com/chenz24) |  Observability  | JavaScript，TypeScript，HTML，CSS，React，Docker，Kubernetes| 基础 |
 
-您还可以通过开源之夏官网 [KubeSphere 社区项目列表页](https://summer-ospp.ac.cn/#/org/orgdetail/669ff0b7-2366-4bf3-8ffb-10f79089a45a/)或 [KubeSphere 官网开源之夏页面](https://github.com/kubesphere/community/tree/master/sig-advocacy-and-outreach/ospp-2022)了解这些项目的详情。
+您还可以通过开源之夏官网 [KubeSphere 社区项目列表页](https://summer-ospp.ac.cn/#/org/orgdetail/669ff0b7-2366-4bf3-8ffb-10f79089a45a/)或 [KubeSphere 官网开源之夏页面](https://github.com/whenegghitsrock/community/tree/master/sig-advocacy-and-outreach/ospp-2022)了解这些项目的详情。
 
 ## 中选学生简介
 
@@ -77,7 +77,7 @@ KubeSphere 社区已经参与了[夏季活动](https://github.com/cncf/mentoring
 - 社区治理
 - ...
 
-具体的贡献方式参见 [KubeSphere 官网](https://kubesphere.io/zh/contribution/)。
+具体的贡献方式参见 [KubeSphere 官网](https://docs.kubesphere-carryon.top/zh/contribution/)。
 
-一起来 [KubeSphere 的 GitHub 仓库](https://github.com/kubesphere/kubesphere)共建共赢吧！可以先点个 Star 关注一下哦！
+一起来 [KubeSphere 的 GitHub 仓库](https://github.com/whenegghitsrock/kubesphere-carryon)共建共赢吧！可以先点个 Star 关注一下哦！
 

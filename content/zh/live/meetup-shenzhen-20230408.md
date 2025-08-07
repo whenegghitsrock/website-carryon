@@ -151,7 +151,7 @@ KubeSphere 4.0 将迎来全新的架构变化，代号 LuBan，实现真正意�
 
 接下来，各个城市站也会持续组织活动，包括 Meetup 和走进企业交流等。
 
-KubeSphere 社区祝愿[社区用户委员会](https://kubesphere.com.cn/user-group/)蓬勃发展，越来越壮大，也欢迎更多的[城市站创建](https://github.com/kubesphere/community/issues/new?assignees=&labels=area%2Fuser-group&template=new_leader.yml&title=REQUEST%3A+New+leader+for+a+User+Group+in+new+city)。
+KubeSphere 社区祝愿[社区用户委员会](https://kubesphere.com.cn/user-group/)蓬勃发展，越来越壮大，也欢迎更多的[城市站创建](https://github.com/whenegghitsrock/community/issues/new?assignees=&labels=area%2Fuser-group&template=new_leader.yml&title=REQUEST%3A+New+leader+for+a+User+Group+in+new+city)。
 
 ## 致谢
 

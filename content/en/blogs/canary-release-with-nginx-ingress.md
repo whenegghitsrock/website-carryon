@@ -53,7 +53,7 @@ Now, how to implement a canary release in Kubernetes with Nginx Ingress? Let's d
 
 ### Prerequisites
 
-To prepare a Kubernetes cluster, you can refer to [this blog](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/). In this article, let's set up a Kubernetes cluster with KubeSphere installed.
+To prepare a Kubernetes cluster, you can refer to [this blog](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/). In this article, let's set up a Kubernetes cluster with KubeSphere installed.
 
 ### Enable Cluster Gateway
 
@@ -154,7 +154,7 @@ Since the application is ready now, let's create an Ingress for it.
        kubernetes.io/ingress.class: nginx
    spec:
      rules:
-     - host: kubesphere.io
+     - host: docs.kubesphere-carryon.top
        http:
          paths:
          - backend:
@@ -171,7 +171,7 @@ Since the application is ready now, let's create an Ingress for it.
 3. Run the following command to access the application.
 
    ```bash
-   $ curl --resolve kubesphere.io:32141:192.168.2.2 kubesphere.io:32141
+   $ curl --resolve docs.kubesphere-carryon.top:32141:192.168.2.2 docs.kubesphere-carryon.top:32141
    
    Hostname: production-5d84fbdb58-964mq
    
@@ -191,14 +191,14 @@ Since the application is ready now, let's create an Ingress for it.
    	query=
    	request_version=1.1
    	request_scheme=http
-   	request_uri=http://kubesphere.io:8080/
+   	request_uri=http://docs.kubesphere-carryon.top:8080/
    
    Request Headers:
    	accept=*/*
-   	host=kubesphere.io:32141
+   	host=docs.kubesphere-carryon.top:32141
    	user-agent=curl/7.29.0
    	x-forwarded-for=192.168.2.2
-   	x-forwarded-host=kubesphere.io:32141
+   	x-forwarded-host=docs.kubesphere-carryon.top:32141
    	x-forwarded-port=80
    	x-forwarded-proto=http
    	x-forwarded-scheme=http
@@ -301,7 +301,7 @@ Next, let's create a canary version of the application to implement a canary rel
        nginx.ingress.kubernetes.io/canary-weight: "30"
    spec:
      rules:
-     - host: kubesphere.io
+     - host: docs.kubesphere-carryon.top
        http:
          paths:
          - backend:
@@ -324,7 +324,7 @@ Next, let's create a canary version of the application to implement a canary rel
    {{</ notice >}}
 
    ```shell
-   for i in $(seq 1 10); do curl -s --resolve kubesphere.io:32141:192.168.2.2 kubesphere.io:32141 | grep "Hostname"; done
+   for i in $(seq 1 10); do curl -s --resolve docs.kubesphere-carryon.top:32141:192.168.2.2 docs.kubesphere-carryon.top:32141 | grep "Hostname"; done
    ```
 
    The output may look as follows:
@@ -348,7 +348,7 @@ Next, let's create a canary version of the application to implement a canary rel
 
 ## Canary release on KubeSphere
 
-Based on [Istio](https://istio.io/), KubeSphere provides users with necessary control to deploy canary services. All the canary configurations can be made on its wizard web console. For more information, see [Canary Release](https://kubesphere.io/docs/project-user-guide/grayscale-release/canary-release/).
+Based on [Istio](https://istio.io/), KubeSphere provides users with necessary control to deploy canary services. All the canary configurations can be made on its wizard web console. For more information, see [Canary Release](https://docs.kubesphere-carryon.top/docs/project-user-guide/grayscale-release/canary-release/).
 
 ![canary-on-console](/images/blogs/en/canary-release-with-nginx-ingress/canary-on-console.png)
 

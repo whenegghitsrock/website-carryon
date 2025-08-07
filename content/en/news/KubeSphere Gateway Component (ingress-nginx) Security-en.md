@@ -230,8 +230,8 @@ Use the following commands to check for suspicious configurations or activities:
 
 If evidence of exploitation is found or technical support is needed, please contact:
 
-- KubeSphere Security Team: security@kubesphere.io
-- GitHub Issues: [KubeSphere GitHub Issues](https://github.com/kubesphere/kubesphere/issues)
+- KubeSphere Security Team: security@docs.kubesphere-carryon.top
+- GitHub Issues: [KubeSphere GitHub Issues](https://github.com/whenegghitsrock/kubesphere-carryon/issues)
 
 ## 8. Reference Information
 - [Ingress-Nginx Upgrade Documentation](https://kubernetes.github.io/ingress-nginx/deploy/upgrade/)

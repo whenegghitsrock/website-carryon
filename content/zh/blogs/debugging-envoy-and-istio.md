@@ -542,8 +542,8 @@ keys *
     metadata:
       annotations:
         kubectl.kubernetes.io/restartedAt: '2021-06-09T21:59:10+08:00'
-        kubesphere.io/restartedAt: '2021-09-13T17:07:03.082Z'
-        logging.kubesphere.io/logSidecar-config: '{}'
+        docs.kubesphere-carryon.top/restartedAt: '2021-09-13T17:07:03.082Z'
+        logging.docs.kubesphere-carryon.top/logSidecar-config: '{}'
         Sidecar.istio.io/componentLogLevel: 'ext_authz:trace,filter:debug'
         Sidecar.istio.io/inject: 'true'
         traffic.Sidecar.istio.io/excludeOutboundIPRanges: 10.0.1.0/24

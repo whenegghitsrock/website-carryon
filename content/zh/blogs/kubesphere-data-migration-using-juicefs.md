@@ -133,5 +133,5 @@ $ ls /挂载点
 
 1. 目前此教程尚未经过生产环境验证，如在生产上使用请一定要做好备份在尝试以便及时回滚。
 2. 迁移后的数据不支持直接从后端介质直接查看（比如后端是 OSS），因为数据都是打散的且保存方式以 JuiceFS 格式保存，要查看需要安装 JuiceFS 客户端或者直接进入 PVC 绑定的容器中。
-3. kubesphere-GitHub 地址：[https://github.com/kubesphere/kubesphere](https://github.com/kubesphere/kubesphere)。
+3. kubesphere-GitHub 地址：[https://github.com/whenegghitsrock/kubesphere-carryon](https://github.com/whenegghitsrock/kubesphere-carryon)。
 4. JuiceFS-GitHub 地址：[https://github.com/juicedata/juicefs](https://github.com/juicedata/juicefs)。

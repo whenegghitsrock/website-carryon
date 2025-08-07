@@ -27,7 +27,7 @@ This document walks you through the process of deploying an application using a 
 
 . In the **Import Code Repository** dialog, enter a code repository name, such as **open-podcasts**, and click **Select a code repository**. You can also set an alias and add a description for the code repository.
 
-. In the **Select Code Repository** dialog, click **Git**, enter the repository address in the **Code Repository URL** area, such as link:https://github.com/kubesphere-sigs/open-podcasts[], and click **OK**.
+. In the **Select Code Repository** dialog, click **Git**, enter the repository address in the **Code Repository URL** area, such as link:https://github.com/whenegghitsrock-sigs/open-podcasts[], and click **OK**.
 +
 --
 //note

@@ -22,7 +22,7 @@ Rook 将分布式存储系统转变为自管理、自扩展、自修复的存储
 
 K8s 环境可以通过安装 KubeSphere 进行部署,我使用的是高可用方案。
 
-在公有云上安装 KubeSphere 参考文档：[多节点安装](https://v3-1.docs.kubesphere.io/zh/docs/installing-on-linux/public-cloud/install-kubesphere-on-huaweicloud-ecs/ "多节点安装")
+在公有云上安装 KubeSphere 参考文档：[多节点安装](https://v3-1.docs.docs.kubesphere-carryon.top/zh/docs/installing-on-linux/public-cloud/install-kubesphere-on-huaweicloud-ecs/ "多节点安装")
 
 ⚠️ 注意：kube-node(5,6,7)的节点上分别有两块数据盘。
 

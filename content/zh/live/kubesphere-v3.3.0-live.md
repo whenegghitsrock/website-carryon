@@ -37,7 +37,7 @@ B 站  https://live.bilibili.com/22580654
 
 ### Q1：关于安全容器方向，有什么计划吗？
 
-A：[KubeKey](https://github.com/kubesphere/kubekey) 可以指定 container runtime 为 kata，欢迎试用。
+A：[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) 可以指定 container runtime 为 kata，欢迎试用。
 
 ### Q2：持续部署和流水线怎么样结合起来？
 

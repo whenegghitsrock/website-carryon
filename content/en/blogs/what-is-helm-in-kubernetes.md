@@ -138,7 +138,7 @@ helm uninstall new-release
 
 ## Managing Helm Charts on KubeSphere
 
-As a distributed operating system for cloud-native application management, [KubeSphere](https://kubesphere.io/) realizes application lifecycle management through its pluggable component, App Store. After [enabling the App Store](https://kubesphere.io/docs/pluggable-components/app-store/), you can deploy the built-in applications on the web console. Moreover, you can [upload Helm-based applications](https://kubesphere.io/docs/workspace-administration/upload-helm-based-application/) or [import a Helm repository](https://kubesphere.io/docs/workspace-administration/app-repository/import-helm-repository/). With KubeSphere, you can manage your Kubernetes applications throughout their lifecycle, including submission, review, test, release, upgrade, and removal via the console.
+As a distributed operating system for cloud-native application management, [KubeSphere](https://docs.kubesphere-carryon.top/) realizes application lifecycle management through its pluggable component, App Store. After [enabling the App Store](https://docs.kubesphere-carryon.top/docs/pluggable-components/app-store/), you can deploy the built-in applications on the web console. Moreover, you can [upload Helm-based applications](https://docs.kubesphere-carryon.top/docs/workspace-administration/upload-helm-based-application/) or [import a Helm repository](https://docs.kubesphere-carryon.top/docs/workspace-administration/app-repository/import-helm-repository/). With KubeSphere, you can manage your Kubernetes applications throughout their lifecycle, including submission, review, test, release, upgrade, and removal via the console.
 
 ![](/images/blogs/en/what-is-helm-in-kubernetes/ks-app-store.png)
 

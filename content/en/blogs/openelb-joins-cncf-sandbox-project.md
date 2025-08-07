@@ -79,7 +79,7 @@ To make service exposure and IP address management in private environments easie
 
  The KubeSphere team has always been upholding the "Upstream first" principle. In July, 2021, the KubeSphere team donated Fluentbit Operator as a CNCF sub-project to the Fluent community. Now OpenELB, which was initiated by the KubeSphere team, also joins the CNCF sandbox. In the future, the KubeSphere team will serve as one of participants of the OpenELB project and maintain its commitment to open source. We will continue to work closely with all partners in the containerization field to build a vendor-neutral and open-source OpenELB community and ecosystem. Join the OpenELB community, tell us your experience when using OpenELB, and contribute to the OpenELB project!
 
-- ✨ GitHub: [https://github.com/kubesphere/openelb/](https://github.com/kubesphere/openelb/)
+- ✨ GitHub: [https://github.com/whenegghitsrock/openelb/](https://github.com/whenegghitsrock/openelb/)
 - 💻 Official website: [https://openelb.github.io/](https://openelb.github.io/)
 - 🙋 Slack channel: kubesphere.slack.com
 

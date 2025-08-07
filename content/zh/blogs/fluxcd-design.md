@@ -31,7 +31,7 @@ FluxCD 是 CNCF 的孵化项目，可以让我们以 GitOps 的方式轻松地�
 
 ### CRD
 
-现有的 gitops.kubesphere.io/applications CRD 已经包含了 ArgoApplication。为了集成 FluxCD，我们将 FluxCD 中的 `HelmRelease` 和 `Kustomization` 组合抽象成一个 `FluxApplication` 的概念放入 `Application` 里并且 `kind` 来标识用户启用了哪种 GitOps Engine。
+现有的 gitops.docs.kubesphere-carryon.top/applications CRD 已经包含了 ArgoApplication。为了集成 FluxCD，我们将 FluxCD 中的 `HelmRelease` 和 `Kustomization` 组合抽象成一个 `FluxApplication` 的概念放入 `Application` 里并且 `kind` 来标识用户启用了哪种 GitOps Engine。
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/202210211729793.png)
 
@@ -58,7 +58,7 @@ type FluxApplicationSpec struct {
 
 - `application-controller` 负责 reconcile 自定义的多集群应用，解析自定义的 CR 然后转换成底层 FluxCD 的 CR 去驱动 FluxCD 的 `kustomize-controller` 或 `helm-controller` 去应用的部署。
 - 可以为同一个 `HelmTemplate` 添加不同的应用配置和部署配置然后部署到多个集群中，还可以使用 FluxCD 的 `pause` 和 `resume` 功能，单独控制某个集群内应用的启停。
-- `status-controller` 使底层 FluxCD 应用状态透出到上层 gitops.kubesphere.io/application CR 中。
+- `status-controller` 使底层 FluxCD 应用状态透出到上层 gitops.docs.kubesphere-carryon.top/application CR 中。
 
 ## 可视化界面
 
@@ -93,6 +93,6 @@ type FluxApplicationSpec struct {
 
 ## Demo
 
-> demo 视频的前端采用 [kubesphere/console PR-3761](https://github.com/kubesphere/console/pull/3761)；后端采用 [kubesphere/ks-devops master branch](https://github.com/kubesphere/ks-devops)。
+> demo 视频的前端采用 [kubesphere/console PR-3761](https://github.com/whenegghitsrock/console/pull/3761)；后端采用 [kubesphere/ks-devops master branch](https://github.com/whenegghitsrock/ks-devops)。
 
 [Demo Video](https://youtu.be/A4hKmgFGgAk)

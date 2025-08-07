@@ -38,7 +38,7 @@ weight: 11215
 
 ### 步骤 2：在 GitLab 仓库中编辑 Jenkinsfile
 
-1. 登录 GitLab 并创建一个公开项目。点击**导入项目**，选择**从 URL 导入仓库**，然后输入 [devops-maven-sample](https://github.com/kubesphere/devops-maven-sample) 的 URL。可见性级别选择**公开**，然后点击**新建项目**。
+1. 登录 GitLab 并创建一个公开项目。点击**导入项目**，选择**从 URL 导入仓库**，然后输入 [devops-maven-sample](https://github.com/whenegghitsrock/devops-maven-sample) 的 URL。可见性级别选择**公开**，然后点击**新建项目**。
 
 2. 在刚刚创建的项目中，从 master 分支中创建一个新分支，命名为 `gitlab-demo`。
 

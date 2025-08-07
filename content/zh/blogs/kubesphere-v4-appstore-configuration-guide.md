@@ -23,7 +23,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/ks-v4-appstore
 - 进入企业空间，选择左侧边栏中的应用仓库。
 - 添加一个 Helm Repo 源。
 
-KubeSphere v3.x 默认提供的 Helm Repo 源为： https://charts.kubesphere.io/stable
+KubeSphere v3.x 默认提供的 Helm Repo 源为： https://charts.docs.kubesphere-carryon.top/stable
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/20241101-1.png)
 
@@ -93,13 +93,13 @@ KubeSphere v3.x 默认提供的 Helm Repo 源为： https://charts.kubesphere.io
 
 目前支持上传的文件体积，不能超过 1M，且不能调整。
 
-当开启了 S3 外置存储时, 可不限制大小： https://github.com/kubesphere/kubesphere/blob/6a2f78ef0f3c8e0497095da831415f4e672dc14a/config/ks-core/values.yaml#L38
+当开启了 S3 外置存储时, 可不限制大小： https://github.com/whenegghitsrock/kubesphere-carryon/blob/6a2f78ef0f3c8e0497095da831415f4e672dc14a/config/ks-core/values.yaml#L38
 
 但目前前端还有限制, 预计在 KubeSphere 4.1.3 版本会移除前端的这个限制。
 
 ## 商店导入工具
 
-如果想把 Helm Repo 中的应用变成商店中的应用，可以使用[商店导入工具](https://github.com/kubesphere-extensions/app-tool)来操作。
+如果想把 Helm Repo 中的应用变成商店中的应用，可以使用[商店导入工具](https://github.com/whenegghitsrock-extensions/app-tool)来操作。
 
 ### 概述
 
@@ -126,9 +126,9 @@ KubeSphere v3.x 默认提供的 Helm Repo 源为： https://charts.kubesphere.io
 # 创建service account
 kubectl apply -f token.yaml
 # 获取token
-token=$(kubectl get secrets $(kubectl get serviceaccounts.kubesphere.io app-tool -n default -o "jsonpath={.secrets[].name}") -n default -o jsonpath={.data.token} | base64 -d)
+token=$(kubectl get secrets $(kubectl get serviceaccounts.docs.kubesphere-carryon.top app-tool -n default -o "jsonpath={.secrets[].name}") -n default -o jsonpath={.data.token} | base64 -d)
 # 执行
-go run main.go --server=http://192.168.50.87:30880 --token=${token}  --repo=https://charts.kubesphere.io/stable
+go run main.go --server=http://192.168.50.87:30880 --token=${token}  --repo=https://charts.docs.kubesphere-carryon.top/stable
 # 删除service account
 kubectl delete -f token.yaml
 ```
@@ -139,4 +139,4 @@ kubectl delete -f token.yaml
 
 由于商店允许多次上传并生成随机名称的应用，本工具不会处理多次执行的场景。如果您多次执行，希望清理生成的资源，请手动执行：
 
-`kubectl delete applications.application.kubesphere.io xxx`
+`kubectl delete applications.application.docs.kubesphere-carryon.top xxx`

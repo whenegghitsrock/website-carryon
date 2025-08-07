@@ -35,7 +35,7 @@ KubeSphere 3.4 对内置角色和自定义角色的授权项做了一些调整�
 1. 使用以下命令从能够访问互联网的机器上下载镜像清单文件 `images-list.txt`：
 
    ```bash
-   curl -L -O https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/images-list.txt
+   curl -L -O https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/images-list.txt
    ```
 
    {{< notice note >}}
@@ -47,7 +47,7 @@ KubeSphere 3.4 对内置角色和自定义角色的授权项做了一些调整�
 2. 下载 `offline-installation-tool.sh`。
 
    ```bash
-   curl -L -O https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/offline-installation-tool.sh
+   curl -L -O https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/offline-installation-tool.sh
    ```
 
 3. 使 `.sh` 文件可执行。
@@ -107,7 +107,7 @@ KubeSphere 3.4 对内置角色和自定义角色的授权项做了一些调整�
 1. 执行以下命令下载 ks-installer，并将其传输至您充当任务机的机器，用于安装。
 
    ```bash
-   curl -L -O https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/kubesphere-installer.yaml
+   curl -L -O https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/kubesphere-installer.yaml
    ```
    
 2. 验证您已在 `cluster-configuration.yaml` 中的 `spec.local_registry` 字段指定了私有镜像仓库地址。请注意，如果您的已有集群通过离线安装方式搭建，您应该已配置了此地址。如果您的集群采用在线安装方式搭建而需要进行离线升级，执行以下命令编辑您已有 KubeSphere 3.4 集群的 `cluster-configuration.yaml` 文件，并添加私有镜像仓库地址：
@@ -169,7 +169,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             20xx-xx-xx xx:xx:xx
+https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
 #####################################################
 ```
 

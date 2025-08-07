@@ -12,7 +12,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/kubeblocks-on-
 
 KubeSphere 是在 Kubernetes 之上构建的面向云原生应用的分布式操作系统，完全开源，支持多云与多集群管理，提供全栈的 IT 自动化运维能力，简化企业的 DevOps 工作流。它的架构可以非常方便地使第三方应用与云原生生态组件进行即插即用 (plug-and-play) 的集成。作为全栈的多租户容器平台，KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。KubeSphere 为用户提供构建企业级 Kubernetes 环境所需的多项功能，例如多云与多集群管理、Kubernetes 资源管理、DevOps、应用生命周期管理、微服务治理（服务网格）、日志查询与收集、服务与网络、多租户管理、监控告警、事件与审计查询、存储管理、访问权限控制、GPU 支持、网络策略、镜像仓库管理以及安全管理等。
 
-![](https://kubesphere.io/images/docs/v3.x/zh-cn/introduction/what-is-kubesphere/kubesphere-feature-overview.jpeg)
+![](https://docs.kubesphere-carryon.top/images/docs/v3.x/zh-cn/introduction/what-is-kubesphere/kubesphere-feature-overview.jpeg)
 
 ## KubeBlocks 是什么？
 
@@ -39,7 +39,7 @@ KubeSphere 提供了一个成熟的 Kubernetes 容器管理平台，而 KubeBloc
 
 ### 部署先决条件
 
-- 确保已有可用的 KubeSphere 平台，如还未部署请至官网进行部署即可。官网地址：https://kubesphere.io/zh/docs/v3.4/。
+- 确保已有可用的 KubeSphere 平台，如还未部署请至官网进行部署即可。官网地址：https://docs.kubesphere-carryon.top/zh/docs/v3.4/。
 
 - 确保宿主机网络互通并可以访问互联网。
 

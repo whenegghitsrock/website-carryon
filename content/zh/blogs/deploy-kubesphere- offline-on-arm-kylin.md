@@ -320,7 +320,7 @@ yum remove podman
 
 ### 3.2 下载 KubeKey
 
-下载 **kubekey-v2.3.1-linux-arm64.tar.gz**。具体 KubeKey 版本号可以在 **[KubeKey 发行页面](https://github.com/kubesphere/kubekey/releases)** 查看。
+下载 **kubekey-v2.3.1-linux-arm64.tar.gz**。具体 KubeKey 版本号可以在 **[KubeKey 发行页面](https://github.com/whenegghitsrock/kubekey-carryon/releases)** 查看。
 
 - 方式一
 
@@ -333,12 +333,12 @@ cd kubesphere/
 export KKZONE=cn
 
 # 执行下载命令，获取最新版的 kk（受限于网络，有时需要执行多次）
-curl -sfL https://get-kk.kubesphere.io/v2.3.1/kubekey-v2.3.1-linux-arm64.tar.gz | tar xzf -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top/v2.3.1/kubekey-v2.3.1-linux-arm64.tar.gz | tar xzf -
 ```
 
 - 方式二
 
-使用本地电脑，直接去 GitHub 下载 [Releases · kubesphere/kubekey](https://github.com/kubesphere/kubekey/releases?page=4)，上传至服务器 /root/kubesphere 目录解压。
+使用本地电脑，直接去 GitHub 下载 [Releases · kubesphere/kubekey](https://github.com/whenegghitsrock/kubekey-carryon/releases?page=4)，上传至服务器 /root/kubesphere 目录解压。
 
 ```
 tar zxf kubekey-v2.3.1-linux-arm64.tar.gz
@@ -372,7 +372,7 @@ tar zxf kubekey-v2.3.1-linux-arm64.tar.gz
 修改后的示例如下：
 
 ```
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample
@@ -424,7 +424,7 @@ spec:
 
 
 ---
-apiVersion: installer.kubesphere.io/v1alpha1
+apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
 kind: ClusterConfiguration
 metadata:
   name: ks-installer
@@ -732,7 +732,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2024-07-03 11:10:11
+https://docs.kubesphere-carryon.top             2024-07-03 11:10:11
 #####################################################
 ```
 

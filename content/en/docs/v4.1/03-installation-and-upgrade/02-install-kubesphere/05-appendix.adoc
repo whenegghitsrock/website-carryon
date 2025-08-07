@@ -58,18 +58,18 @@ If the `appSelector` value is empty, all composed apps will be processed. If the
 
 * When installing ks-core, add this in the installation command:
 +
---set composedApp.appSelector="kubesphere.io/creator"
+--set composedApp.appSelector="docs.kubesphere-carryon.top/creator"
 
 * When upgrading ks-core, add this in the upgrade command:
 +
---set composedApp.appSelector="kubesphere.io/creator"
+--set composedApp.appSelector="docs.kubesphere-carryon.top/creator"
 
 * After installation or upgrade, set in the `kubesphere-config` ConfigMap of the cluster:
 +
 [,yaml]
 ----
 composedApp:
-  appSelector: "kubesphere.io/creator"
+  appSelector: "docs.kubesphere-carryon.top/creator"
 ----
 |===
 
@@ -247,7 +247,7 @@ Before setting, you need to enable the limiter as in the previous step. Then exe
 
 [,bash]
 ----
-kubectl -n <Namespace> patch serviceaccounts.kubesphere.io <ServiceAccount> --type merge -p '{"metadata": {"annotations": {"kubesphere.io/ratelimiter-qps": "20.0", "kubesphere.io/ratelimiter-burst": "40"}}}'
+kubectl -n <Namespace> patch serviceaccounts.docs.kubesphere-carryon.top <ServiceAccount> --type merge -p '{"metadata": {"annotations": {"docs.kubesphere-carryon.top/ratelimiter-qps": "20.0", "docs.kubesphere-carryon.top/ratelimiter-burst": "40"}}}'
 ----
 
 [discrete]

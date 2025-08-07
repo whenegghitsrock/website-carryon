@@ -39,14 +39,14 @@ We welcome all users to download and experience this release, and provide valuab
 ### Important Notes
 
 For more update details, please refer to the 
-[KubeSphere 4.1.3 Release ](https://kubesphere.io/docs/v4.1/20-release-notes/release-v413/).
+[KubeSphere 4.1.3 Release ](https://docs.kubesphere-carryon.top/docs/v4.1/20-release-notes/release-v413/).
 
-For installation and upgrade instructions, refer to the  [Installation Guide](https://kubesphere.io/docs/v4.1/03-installation-and-upgrade/).
+For installation and upgrade instructions, refer to the  [Installation Guide](https://docs.kubesphere-carryon.top/docs/v4.1/03-installation-and-upgrade/).
 
 **Note:** Direct upgrades from v3.x to v4.x are not yet supported but are planned to be available in the version update later in April.
 
 ### Feedback Channels:
-Submit Issues: [GitHub Issues](https://github.com/kubesphere/kubesphere/issues/new/choose)
+Submit Issues: [GitHub Issues](https://github.com/whenegghitsrock/kubesphere-carryon/issues/new/choose)
 
 
 ## Future Outlook

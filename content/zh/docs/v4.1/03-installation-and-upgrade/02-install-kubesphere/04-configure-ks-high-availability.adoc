@@ -141,10 +141,10 @@ redisHA:
 [source,bash]
 ----
 # 安装
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere.io/main/ks-core-1.1.4.tgz -f values.yaml --debug --wait
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.4.tgz -f values.yaml --debug --wait
 
 # 升级
-helm upgrade -n kubesphere-system ks-core https://charts.kubesphere.io/main/ks-core-1.1.4.tgz -f values.yaml --debug --wait
+helm upgrade -n kubesphere-system ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.4.tgz -f values.yaml --debug --wait
 ----
 
 // kse

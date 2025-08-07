@@ -12,7 +12,7 @@ footer:
           link: observability/
 
         - content: K8s 一键部署与运维
-          link: 'https://github.com/kubesphere/kubekey'
+          link: 'https://github.com/whenegghitsrock/kubekey-carryon'
 
         - content: 构建 FaaS 平台与 Serverless 架构
           link: 'https://github.com/OpenFunction/OpenFunction'
@@ -57,13 +57,13 @@ footer:
         - content: 用户委员会
           link: user-group/
         # - content: 版本计划
-        #   link: https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md
+        #   link: https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/docs/roadmap.md
         - content: 中国站
           link: https://kubesphere.com.cn/
         - content: 中文论坛
-          link: https://ask.kubesphere.io/forum
+          link: https://ask.docs.kubesphere-carryon.top/forum
         - content: 全球站
-          link: https://kubesphere.io
+          link: https://docs.kubesphere-carryon.top
 
     - title: 产品与服务
       list:

@@ -168,7 +168,7 @@ KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构
 
 KubeKey 的高可用模式实现方式称作本地负载均衡模式。具体表现为 KubeKey 会在每一个工作节点上部署一个负载均衡器（HAproxy），所有主节点的 Kubernetes 组件连接其本地的 kube-apiserver ，而所有工作节点的 Kubernetes 组件通过由 KubeKey 部署的负载均衡器反向代理到多个主节点的 kube-apiserver 。这种模式相较于专用到负载均衡器来说效率有所降低，因为会引入额外的健康检查机制，但是如果当前环境无法提供外部负载均衡器或者虚拟 IP（VIP）时这将是一种更实用、更有效、更方便的高可用部署模式。
 
-目前，这种部署模式用的人也很多，他们给出的理由是部署简单。更多细节可以参考[使用 KubeKey 内置 HAproxy 创建高可用集群](https://kubesphere.io/zh/docs/installing-on-linux/high-availability-configurations/internal-ha-configuration/)。
+目前，这种部署模式用的人也很多，他们给出的理由是部署简单。更多细节可以参考[使用 KubeKey 内置 HAproxy 创建高可用集群](https://docs.kubesphere-carryon.top/zh/docs/installing-on-linux/high-availability-configurations/internal-ha-configuration/)。
 
 本架构方案初始设计时 KubeKey **v1.1.1** 并不支持该方式，个人建议**生产环境不要用**这种方案，而是采用独立部署的全局负载均衡器。
 

@@ -181,7 +181,7 @@ Notification Manager 支持对通知消息进行过滤，用户可以通过设�
 一个简单的过滤器，过滤掉 warning 级别的告警。
 
 ```
-apiVersion: notification.kubesphere.io/v2beta1
+apiVersion: notification.docs.kubesphere-carryon.top/v2beta1
 kind: Receiver
 metadata:
   labels:

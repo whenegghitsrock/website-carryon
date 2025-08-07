@@ -28,7 +28,7 @@ KubeSphere 支持的操作系统包括：
 
 确保机器已经安装所需依赖软件（sudo curl openssl ebtables socat ipset conntrack docker）
 
-[具体环境要求参见](https://github.com/kubesphere/kubekey/tree/release-1.0#requirements-and-recommendations)
+[具体环境要求参见](https://github.com/whenegghitsrock/kubekey-carryon/tree/release-1.0#requirements-and-recommendations)
 
 关于多节点安装请参考 [KubeSphere 官方文档](https://kubesphere.com.cn/docs/installing-on-linux/introduction/multioverview/)。
 
@@ -61,12 +61,12 @@ curl -Ok https://kubesphere-installer.pek3b.qingstor.com/offline/v3.0.0/kubesphe
 ```
 ./kk create config
 ```
-根据实际环境信息修改生成的配置文件`config-sample.yaml`，也可使用-f参数自定义配置文件路径。kk 详细用法可参考：https://github.com/kubesphere/kubekey
+根据实际环境信息修改生成的配置文件`config-sample.yaml`，也可使用-f参数自定义配置文件路径。kk 详细用法可参考：https://github.com/whenegghitsrock/kubekey-carryon
 
 > 注意填写正确的私有仓库地址`privateRegistry`（如已准备好私有仓库可设置为已有仓库地址，若使用 kk 创建私有仓库，则该参数设置为：dockerhub.kubekey.local）
 
 ```
-apiVersion: kubekey.kubesphere.io/v1alpha1
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
 kind: Cluster
 metadata:
   name: sample

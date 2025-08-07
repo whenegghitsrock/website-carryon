@@ -219,7 +219,7 @@ yum install tar
 
 ### 下载 KubeKey
 
-本文将 master-0 节点作为部署节点，把 KubeKey (下文简称 kk) 最新版（3.0.7）二进制文件下载到该服务器。具体 kk 版本号可以在 [kk 发行页面](https://github.com/kubesphere/kubekey/releases)查看。
+本文将 master-0 节点作为部署节点，把 KubeKey (下文简称 kk) 最新版（3.0.7）二进制文件下载到该服务器。具体 kk 版本号可以在 [kk 发行页面](https://github.com/whenegghitsrock/kubekey-carryon/releases)查看。
 
 - 下载最新版的 KubeKey
 
@@ -230,17 +230,17 @@ cd kubekey/
 
 # 选择中文区下载(访问github受限时使用)
 export KKZONE=cn
-curl -sfL https://get-kk.kubesphere.io | sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 
 # 也可以使用下面的命令指定具体版本
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 
 # 正确的执行效果如下
 [root@ks-master-0 ~]# cd ~
 [root@ks-master-0 ~]# mkdir kubekey
 [root@ks-master-0 ~]# cd kubekey/
 [root@ks-master-0 kubekey]# export KKZONE=cn
-[root@ks-master-0 kubekey]# curl -sfL https://get-kk.kubesphere.io | sh -
+[root@ks-master-0 kubekey]# curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 
 Downloading kubekey v3.0.7 from https://kubernetes.pek3b.qingstor.com/kubekey/releases/download/v3.0.7/kubekey-v3.0.7-linux-amd64.tar.gz ...
 
@@ -366,7 +366,7 @@ Generate KubeKey config file successfully
 修改后的示例如下：
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample
@@ -465,7 +465,7 @@ Greetings, KubeKey!
 
 This is a simple check of your environment.
 Before installation, ensure that your machines meet all requirements specified at
-https://github.com/kubesphere/kubekey#requirements-and-recommendations
+https://github.com/whenegghitsrock/kubekey-carryon#requirements-and-recommendations
 
 Continue this installation? [yes/no]:
 ```
@@ -475,7 +475,7 @@ Continue this installation? [yes/no]:
 部署完成后，您应该会在终端上看到类似于下面的输出。提示部署完成的同时，输出中还会显示用户登陆 KubeSphere 的默认管理员用户和密码。
 
 ```yaml
-clusterconfiguration.installer.kubesphere.io/ks-installer created
+clusterconfiguration.installer.docs.kubesphere-carryon.top/ks-installer created
 10:50:36 CST skipped: [ks-master-2]
 10:50:36 CST skipped: [ks-master-1]
 10:50:36 CST success: [ks-master-0]
@@ -495,7 +495,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2023-05-22 11:02:08
+https://docs.kubesphere-carryon.top             2023-05-22 11:02:08
 #####################################################
 11:02:12 CST skipped: [ks-master-2]
 11:02:12 CST skipped: [ks-master-1]

@@ -57,8 +57,8 @@ The Pod labeled `maven` uses the docker-in-docker network to run the pipeline. N
 ### Prepare for the Maven project
 
 - Ensure you build the Maven project successfully on the development device.
-- Add the Dockerfile to the project repository to build the image. For more information, refer to <https://github.com/kubesphere/devops-maven-sample/blob/master/Dockerfile-online>.
-- Add the YAML file to the project repository to deploy the workload. For more information, refer to <https://github.com/kubesphere/devops-maven-sample/tree/master/deploy/dev-ol>. If there are different environments, you need to prepare multiple deployment files.
+- Add the Dockerfile to the project repository to build the image. For more information, refer to <https://github.com/whenegghitsrock/devops-maven-sample/blob/master/Dockerfile-online>.
+- Add the YAML file to the project repository to deploy the workload. For more information, refer to <https://github.com/whenegghitsrock/devops-maven-sample/tree/master/deploy/dev-ol>. If there are different environments, you need to prepare multiple deployment files.
 
 ### Create credentials
 
@@ -106,7 +106,7 @@ In this example, all workloads are deployed in `kubesphere-sample-dev`. You must
            stage ('checkout scm') {
                steps {
                    // Please avoid committing your test changes to this repository
-                   git branch: 'master', url: "https://github.com/kubesphere/devops-maven-sample.git"
+                   git branch: 'master', url: "https://github.com/whenegghitsrock/devops-maven-sample.git"
                }
            }
    

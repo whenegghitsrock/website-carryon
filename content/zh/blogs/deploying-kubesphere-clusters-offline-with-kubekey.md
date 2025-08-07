@@ -28,7 +28,7 @@ KubeKey v2.0.0 版本新增了清单（manifest）和制品（artifact）的概�
 说明：由于 KK 版本不断更新请按照 GitHub 上最新 Releases 版本为准
 
 ```bash
-$ wget https://github.com/kubesphere/kubekey/releases/download/v2.0.0-rc.3/kubekey-v2.0.0-rc.3-linux-amd64.tar.gz
+$ wget https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v2.0.0-rc.3/kubekey-v2.0.0-rc.3-linux-amd64.tar.gz
 ```
 ```bash
 $ tar -zxvf kubekey-v2.0.0-rc.3-linux-amd64.tar.gz 
@@ -63,7 +63,7 @@ $ vim manifest.yaml
 
 ```yaml
 ---
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Manifest
 metadata:
   name: sample
@@ -274,7 +274,7 @@ $ ./kk artifact export -m manifest-sample.yaml -o kubesphere.tar.gz
 ### 1. 离线环境下载 KK
 
 ```bash
-$ wget https://github.com/kubesphere/kubekey/releases/download/v2.0.0-rc.3/kubekey-v2.0.0-rc.3-linux-amd64.tar.gz
+$ wget https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v2.0.0-rc.3/kubekey-v2.0.0-rc.3-linux-amd64.tar.gz
 ```
 
 ### 2. 创建离线集群配置文件
@@ -296,7 +296,7 @@ $ vim config-sample.yaml
 3. registry 里必须指定 type 类型为 harbor，不配 harbor 的话默认是装的 docker registry
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample
@@ -355,7 +355,7 @@ spec:
 **4.1 下载指定脚本初始化 harbor 仓库**
 
 ```bash
-$ curl https://github.com/kubesphere/ks-installer/blob/master/scripts/create_project_harbor.sh
+$ curl https://github.com/whenegghitsrock/ks-installer-carryon/blob/master/scripts/create_project_harbor.sh
 ```
 
 **4.2 修改脚本配置文件**
@@ -486,7 +486,7 @@ are up and running.
 2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2022-02-28 23:30:06
+https://docs.kubesphere-carryon.top             2022-02-28 23:30:06
 #####################################################
 ```
 
@@ -498,4 +498,4 @@ https://kubesphere.io             2022-02-28 23:30:06
 
 ## 四、结尾
 
- 本教程使用 KK 2.0.0 作为部署工具来实现 KubeSphere 集群在离线环境中的部署，当然 KK 也支持 kubernetes 的部署。希望 KK 能帮助大家实现离线闪电交付的目的。如果大家有好的想法和建议可以到 [Kubekey 仓库](https://github.com/kubesphere/kubekey)中提交 issue 帮助解决。
+ 本教程使用 KK 2.0.0 作为部署工具来实现 KubeSphere 集群在离线环境中的部署，当然 KK 也支持 kubernetes 的部署。希望 KK 能帮助大家实现离线闪电交付的目的。如果大家有好的想法和建议可以到 [Kubekey 仓库](https://github.com/whenegghitsrock/kubekey-carryon)中提交 issue 帮助解决。

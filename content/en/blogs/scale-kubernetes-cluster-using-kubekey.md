@@ -8,7 +8,7 @@ author: 'Sherlock'
 snapshot: 'https://ap3.qingstor.com/kubesphere-website/docs/KubeKey-lightweight-installer.png'
 ---
 
-In my [last post](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/), I demonstrated how to set up a three-node Kubernetes cluster using [KubeKey](https://github.com/kubesphere/kubekey). As I mentioned in the article, KubeKey is a lightweight, powerful installer that is able to install Kubernetes as well as its related add-ons in a quick and convenient way. In fact, KubeKey can do way more than that as it is also an efficient tool to scale your Kubernetes cluster.
+In my [last post](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/), I demonstrated how to set up a three-node Kubernetes cluster using [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon). As I mentioned in the article, KubeKey is a lightweight, powerful installer that is able to install Kubernetes as well as its related add-ons in a quick and convenient way. In fact, KubeKey can do way more than that as it is also an efficient tool to scale your Kubernetes cluster.
 
 On some cloud platforms, you can directly scale your cluster by increasing or decreasing the number of nodes. Usually, this does not entail complex operations as these platforms will do almost everything for you and you only need to click a few buttons. However, in some on-premises environments, you may need to manually change the number of nodes. In this article, I am going to demonstrate how to scale out and scale in your cluster using KubeKey. The steps are listed as follows:
 
@@ -41,14 +41,14 @@ Here is the node that will be added to the cluster first and then removed from t
 | ----------- | --------- | ------ | ----------------------------------------- |
 | 192.168.0.5 | worker3   | worker | CentOS 7.5, 8 Cores, 8 G Memory, 50 G Disk |
 
-For more information about requirements for nodes, network, and dependencies, [see my last post](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/#node-requirements).
+For more information about requirements for nodes, network, and dependencies, [see my last post](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/#node-requirements).
 
 ## Download KubeKey
 
-1. Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command to download KubeKey version 1.0.1. You only need to download KubeKey to one of your machines that serves as the **taskbox** for scaling, such as the master node.
+1. Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command to download KubeKey version 1.0.1. You only need to download KubeKey to one of your machines that serves as the **taskbox** for scaling, such as the master node.
 
    ```bash
-   curl -sfL https://get-kk.kubesphere.io | VERSION=v2.0.0 sh -
+   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.0.0 sh -
    ```
 
    {{< notice note >}}
@@ -81,7 +81,7 @@ For more information about requirements for nodes, network, and dependencies, [s
    ```
 
    ```bash
-   apiVersion: kubekey.kubesphere.io/v1alpha1
+   apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
    kind: Cluster
    metadata:
      name: sample
@@ -126,7 +126,7 @@ For more information about requirements for nodes, network, and dependencies, [s
 
    - You are not allowed to modify the host name of existing nodes (e.g. master) when adding new nodes.
 
-   - For more information about different parameters in the configuration file, see my [last article](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/#install-kubernetes).
+   - For more information about different parameters in the configuration file, see my [last article](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/#install-kubernetes).
 
    {{</ notice >}} 
 
@@ -197,7 +197,7 @@ For more information about requirements for nodes, network, and dependencies, [s
 2. Double check if all the fields are set correctly, make changes if necessary, and save the file.
 
    ```yaml
-   apiVersion: kubekey.kubesphere.io/v1alpha1
+   apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
    kind: Cluster
    metadata:
      name: sample
@@ -271,8 +271,8 @@ Adding and deleting nodes remains an important part of cluster maintenance. In r
 
 ## Reference
 
-[KubeKey](https://github.com/kubesphere/kubekey)
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon)
 
-[Multi-node Installation](https://kubesphere.io/docs/installing-on-linux/introduction/multioverview/)
+[Multi-node Installation](https://docs.kubesphere-carryon.top/docs/installing-on-linux/introduction/multioverview/)
 
-[KubeKey: A Lightweight Installer for Kubernetes and Cloud Native Addons](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/)
+[KubeKey: A Lightweight Installer for Kubernetes and Cloud Native Addons](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/)

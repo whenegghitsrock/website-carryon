@@ -60,18 +60,18 @@ weight: 05
 
 * 安装 ks-core 时，在安装命令中添加：
 +
---set composedApp.appSelector="kubesphere.io/creator"
+--set composedApp.appSelector="docs.kubesphere-carryon.top/creator"
 
 * 升级 ks-core 时，在升级命令中添加：
 +
---set composedApp.appSelector="kubesphere.io/creator"
+--set composedApp.appSelector="docs.kubesphere-carryon.top/creator"
 
 * 安装升级完成后，在集群的 kubesphere-config 配置字典中设置为：
 +
 [,yaml]
 ----
 composedApp:
-  appSelector: "kubesphere.io/creator"
+  appSelector: "docs.kubesphere-carryon.top/creator"
 ----
 |===
 
@@ -253,7 +253,7 @@ kubectl -n kubesphere-system rollout restart deploy ks-apiserver
 
 [,bash]
 ----
-kubectl -n <Namespace> patch serviceaccounts.kubesphere.io <ServiceAccount> --type merge -p '{"metadata": {"annotations": {"kubesphere.io/ratelimiter-qps": "20.0", "kubesphere.io/ratelimiter-burst": "40"}}}'
+kubectl -n <Namespace> patch serviceaccounts.docs.kubesphere-carryon.top <ServiceAccount> --type merge -p '{"metadata": {"annotations": {"docs.kubesphere-carryon.top/ratelimiter-qps": "20.0", "docs.kubesphere-carryon.top/ratelimiter-burst": "40"}}}'
 ----
 
 [discrete]

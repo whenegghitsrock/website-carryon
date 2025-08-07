@@ -82,7 +82,7 @@ With CPU management policies of Kubelet, you can set CPU affinity for a specific
 
 When resources are running out, your cluster will first kill Pods with a QoS class of `BestEffort`, followed by `Burstable`. In other words, Pods that have the lowest priority are terminated first. If you have enough resources, you can assign all Pods the class of `Guaranteed`. This can be considered as a trade-off between compute resources and performance and stability. You may expect higher overheads but your cluster can work more efficiently. At the same time, to improve resource utilization, you can assign Pods running business services the class of `Guaranteed`. For other services, assign them the class of `Burstable` or `BestEffort` according to their priority.
 
-Next, we will use the [KubeSphere container platform](https://kubesphere.io/) as an example to see how to gracefully configure resources for Pods.
+Next, we will use the [KubeSphere container platform](https://docs.kubesphere-carryon.top/) as an example to see how to gracefully configure resources for Pods.
 
 ## Use KubeSphere to Allocate Resources
 
@@ -90,7 +90,7 @@ As stated above, requests and limits are two important building blocks for clust
 
 ### Before You Begin
 
-KubeSphere features a highly functional multi-tenant system for fine-grained access control of different users. In KubeSphere 3.0, you can set requests and limits for namespaces (ResourceQuotas) and containers (LimitRanges) respectively. To perform these operations, you need to create a workspace, a project (i.e. namespace) and a user (`ws-admin`). For more information, see [Create Workspaces, Projects, Users and Roles](https://kubesphere.io/docs/quick-start/create-workspace-and-project/).
+KubeSphere features a highly functional multi-tenant system for fine-grained access control of different users. In KubeSphere 3.0, you can set requests and limits for namespaces (ResourceQuotas) and containers (LimitRanges) respectively. To perform these operations, you need to create a workspace, a project (i.e. namespace) and a user (`ws-admin`). For more information, see [Create Workspaces, Projects, Users and Roles](https://docs.kubesphere-carryon.top/docs/quick-start/create-workspace-and-project/).
 
 ### Set Resource Quotas
 
@@ -111,7 +111,7 @@ KubeSphere features a highly functional multi-tenant system for fine-grained acc
 
    {{< notice note >}}
 
-   Project quotas in KubeSphere are the same as [ResourceQuotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/) in Kubernetes. Besides CPU and memory, you can also set resource quotas for other objects separately such as Deployments and ConfigMaps. For more information, see [Project Quotas](https://kubesphere.io/docs/workspace-administration/project-quotas/).
+   Project quotas in KubeSphere are the same as [ResourceQuotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/) in Kubernetes. Besides CPU and memory, you can also set resource quotas for other objects separately such as Deployments and ConfigMaps. For more information, see [Project Quotas](https://docs.kubesphere-carryon.top/docs/workspace-administration/project-quotas/).
 
    {{</ notice >}} 
 
@@ -129,11 +129,11 @@ To set default requests and limits, perform the following steps:
 
    {{< notice note >}}
 
-   The default container requests and limits in KubeSphere are known as [LimitRanges](https://kubernetes.io/docs/concepts/policy/limit-range/) in Kubernetes. For more information, see [Container Limit Ranges](https://kubesphere.io/docs/project-administration/container-limit-ranges/).
+   The default container requests and limits in KubeSphere are known as [LimitRanges](https://kubernetes.io/docs/concepts/policy/limit-range/) in Kubernetes. For more information, see [Container Limit Ranges](https://docs.kubesphere-carryon.top/docs/project-administration/container-limit-ranges/).
 
    {{</ notice >}} 
 
-3. When you create workloads later, requests and limits will be prepopulated automatically. For more information about how to create workloads in KubeSphere, see [the KubeSphere documentation](https://kubesphere.io/docs/project-user-guide/application-workloads/deployments/).
+3. When you create workloads later, requests and limits will be prepopulated automatically. For more information about how to create workloads in KubeSphere, see [the KubeSphere documentation](https://docs.kubesphere-carryon.top/docs/project-user-guide/application-workloads/deployments/).
 
    ![workload-values](/images/blogs/en/understand-requests-and-limits-in-kubesphere/workload-values.jpg)
 

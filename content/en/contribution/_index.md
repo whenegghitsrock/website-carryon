@@ -26,11 +26,11 @@ section2:
       icon2: 'images/contribution/38.png'
       children:
         - content: 'Join the SIGs and WGs'
-          link: 'https://github.com/kubesphere/community#kubesphere-community'
+          link: 'https://github.com/whenegghitsrock/community#kubesphere-community'
         - content: 'Improve the Docs'
-          link: 'https://github.com/kubesphere/website/issues'
+          link: 'https://github.com/whenegghitsrock/website-carryon/issues'
         - content: 'Submit a Bug or Suggestion'
-          link: 'https://github.com/kubesphere/kubesphere/issues/new/choose'
+          link: 'https://github.com/whenegghitsrock/kubesphere-carryon/issues/new/choose'
 
     - name: 'Get in Touch'
       icon1: 'images/contribution/business.svg'
@@ -85,7 +85,7 @@ section3:
         icon: '/images/contribution/apps.svg'
         iconActive: '/images/contribution/apps-active.svg'
         content: 'App charts for the built-in App Store'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-apps'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-apps'
         linkContent: 'Join SIG - Apps →'
         children:
           - icon: '/images/contribution/calicq1.jpg'
@@ -96,7 +96,7 @@ section3:
         icon: '/images/contribution/app-store.svg'
         iconActive: '/images/contribution/app-store-active.svg'
         content: 'App Store, App template management'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-appstore'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-appstore'
         linkContent: 'Join SIG - Application store →'
         children:
           - icon: '/images/contribution/calicq4.jpg'
@@ -107,7 +107,7 @@ section3:
         icon: '/images/contribution/architecture.svg'
         iconActive: '/images/contribution/architecture-active.svg'
         content: ' System architecture design and investigation'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-architecture'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-architecture'
         linkContent: 'Join SIG - Architecture →'
         children:
           - icon: '/images/contribution/calicq7.jpg'
@@ -117,7 +117,7 @@ section3:
         icon: '/images/contribution/cloud-providers.svg'
         iconActive: '/images/contribution/cloud-providers-active.svg'
         content: 'Support KubeSphere on multi-cloud '
-        link: 'https://github.com/kubesphere/community/tree/master/sig-cloud-providers'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-cloud-providers'
         linkContent: 'Join SIG - Cloud-Providers →'
         children:
           - icon: '/images/contribution/calicq9.jpg'
@@ -128,7 +128,7 @@ section3:
         icon: '/images/contribution/console.svg'
         iconActive: '/images/contribution/console-active.svg'
         content: 'Web console and framework devlopment'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-console'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-console'
         linkContent: 'Join SIG - Console (Front-end) →'
         children:
           - icon: '/images/contribution/calicq12.jpg'
@@ -139,7 +139,7 @@ section3:
         icon: '/images/contribution/dev-ops.svg'
         iconActive: '/images/contribution/dev-ops-active.svg'
         content: 'Pipeline, S2I, B2I, Image Registry'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-devops'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-devops'
         linkContent: 'Join SIG - DevOps →'
         children:
           - icon: '/images/contribution/calicq15.jpg'
@@ -150,7 +150,7 @@ section3:
         icon: '/images/contribution/docs.svg'
         iconActive: '/images/contribution/docs-active.svg'
         content: 'Documentation and website'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-docs'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-docs'
         linkContent: 'Join SIG - Docs →'
         children:
           - icon: '/images/contribution/calicq8.svg'
@@ -161,7 +161,7 @@ section3:
         icon: '/images/contribution/edge.svg'
         iconActive: '/images/contribution/edge-active.svg'
         content: 'Support edge computing platforms such as KubeEdge, K3s etc.'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-edge'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-edge'
         linkContent: 'Join SIG - Edge →'
         children:
           - icon: '/images/contribution/calicq19.jpg'
@@ -171,7 +171,7 @@ section3:
         icon: '/images/contribution/installation.svg'
         iconActive: '/images/contribution/installation-active.svg'
         content: 'KubeSphere installer and deployment'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-installation'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-installation'
         linkContent: 'Join SIG - Installation →'
         children:
           - icon: '/images/contribution/calicq21.jpg'
@@ -182,7 +182,7 @@ section3:
         icon: '/images/contribution/microservice.svg'
         iconActive: '/images/contribution/microservice-active.svg'
         content: ' Microservices governance, tracing, traffic management'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-microservice'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-microservice'
         linkContent: 'Join SIG - Microservice →'
         children:
           - icon: '/images/contribution/calicq23.jpg'
@@ -193,7 +193,7 @@ section3:
         icon: '/images/contribution/multicluster.svg'
         iconActive: '/images/contribution/multicluster-active.svg'
         content: 'Multi-cluster and multi-cloud management'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-multicluster'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-multicluster'
         linkContent: 'Join SIG - Multicluster →'
         children:
           - icon: '/images/contribution/calicq26.jpg'
@@ -203,7 +203,7 @@ section3:
         icon: '/images/contribution/multitenancy.svg'
         iconActive: '/images/contribution/multitenancy-active.svg'
         content: 'Workspace management, IAM, Security, RBAC'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-multitenancy'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-multitenancy'
         linkContent: 'Join SIG - Multitenancy →'
         children:
           - icon: '/images/contribution/calicq27.jpg'
@@ -214,7 +214,7 @@ section3:
         icon: '/images/contribution/network.svg'
         iconActive: '/images/contribution/network-active.svg'
         content: 'Network policy, Service Proxy, CNI plugins, SDN'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-network'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-network'
         linkContent: 'Join SIG - Network →'
         children:
           - icon: '/images/contribution/calicq30.svg'
@@ -225,7 +225,7 @@ section3:
         icon: '/images/contribution/observability.svg'
         iconActive: '/images/contribution/observability-active.svg'
         content: 'Logging, Monitoring, Alerting, Notification, Audit, Events'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-observability'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-observability'
         linkContent: 'Join SIG - Observability →'
         children:
           - icon: '/images/contribution/calicq33.jpg'
@@ -236,7 +236,7 @@ section3:
         icon: '/images/contribution/release.svg'
         iconActive: '/images/contribution/release-active.svg'
         content: 'Release of each version'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-release'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-release'
         linkContent: 'Join SIG - Release →'
         children:
           - icon: '/images/contribution/calicq7.jpg'
@@ -246,7 +246,7 @@ section3:
         icon: '/images/contribution/storage.svg'
         iconActive: '/images/contribution/storage-active.svg'
         content: 'CSI plugins, storage integration'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-storage'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-storage'
         linkContent: 'Join SIG - Storage →'
         children:
           - icon: '/images/contribution/calicq36.jpg'
@@ -257,7 +257,7 @@ section3:
         icon: '/images/contribution/testing.svg'
         iconActive: '/images/contribution/testing-active.svg'
         content: 'Effectively and automatically test KubeSphere on different environments'
-        link: 'https://github.com/kubesphere/community/tree/master/sig-testing'
+        link: 'https://github.com/whenegghitsrock/community/tree/master/sig-testing'
         linkContent: 'Join SIG - Testing →'
         children:
           - icon: '/images/contribution/calicq38.jpg'
@@ -280,7 +280,7 @@ section4:
       - title: 'Be a Contributor'
         icon: 'images/contribution/group-2.png'
         content: 'KubeSphere is 100% open source and driven by the community. We appreciate contributions to our code and documentation! Significant contributions will earn you a contributor T-shirt.'
-        link: 'https://github.com/kubesphere/community/blob/master/ROLES.md#kubesphere-community-roles'
+        link: 'https://github.com/whenegghitsrock/community/blob/master/ROLES.md#kubesphere-community-roles'
         linkContent: 'Become a KubeSphere Contributor →'
 
 section5:

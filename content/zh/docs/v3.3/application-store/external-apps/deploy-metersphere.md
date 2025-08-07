@@ -21,7 +21,7 @@ MeterSphere 是一站式的开源企业级连续测试平台，涵盖测试跟�
 
 1. 以 `ws-admin` 身份登录 KubeSphere。在企业空间中，访问**应用管理**下的**应用仓库**，然后点击**添加**。
 
-2. 在出现的对话框中，输入 `metersphere` 作为应用仓库名称，输入 `https://charts.kubesphere.io/test` 作为应用仓库 URL。点击**验证**来验证 URL，如果可用，则会在 URL 右侧看到一个绿色的对号。点击**确定**继续操作。
+2. 在出现的对话框中，输入 `metersphere` 作为应用仓库名称，输入 `https://charts.docs.kubesphere-carryon.top/test` 作为应用仓库 URL。点击**验证**来验证 URL，如果可用，则会在 URL 右侧看到一个绿色的对号。点击**确定**继续操作。
 
 3. 仓库成功导入到 KubeSphere 后，会显示在列表里。
 

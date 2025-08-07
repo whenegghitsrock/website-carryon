@@ -42,7 +42,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-docs/png/20200327132943.png'
 
 ## Level 1：工具选型
 
-我们从初步接触 DevOps 相关知识，在此期间偶然了解到开源的 KubeSphere (kubesphere.io)。KubeSphere 是在 Kubernetes 之上构建的以应用为中心的企业级容器平台，支持敏捷开发与自动化运维、DevOps、微服务治理、灰度发布、多租户管理、监控告警、日志查询与收集、应用商店、存储管理、网络管理等多种业务场景。
+我们从初步接触 DevOps 相关知识，在此期间偶然了解到开源的 KubeSphere (docs.kubesphere-carryon.top)。KubeSphere 是在 Kubernetes 之上构建的以应用为中心的企业级容器平台，支持敏捷开发与自动化运维、DevOps、微服务治理、灰度发布、多租户管理、监控告警、日志查询与收集、应用商店、存储管理、网络管理等多种业务场景。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20200327141156.png)
 
@@ -94,7 +94,7 @@ KubeSphere 内置的基于 Jenkins 的 DevOps 流水线非常适合我们，并�
 
 ### 连环坑：线下访问线上数据库
 
-为了将应用的镜像从线下环境上传到线上生产环境的镜像仓库，我们踩了个连环坑，先是折腾了好久镜像仓库的 https 登陆。登陆的坑填平了，又掉到 push 镜像的坑里。最后，发现就是一个小小的配置导致的 push 镜像到线上环境失败。这两个坑折腾了我们很长的时间，不过好在最终都解决了，这些解决方法的细节，我们记录在了 KubeSphere 开发者论坛，可以在 KubeSphere 论坛找到：`https://ask.kubesphere.io/forum/d/294-docker-login-https-harbor`。
+为了将应用的镜像从线下环境上传到线上生产环境的镜像仓库，我们踩了个连环坑，先是折腾了好久镜像仓库的 https 登陆。登陆的坑填平了，又掉到 push 镜像的坑里。最后，发现就是一个小小的配置导致的 push 镜像到线上环境失败。这两个坑折腾了我们很长的时间，不过好在最终都解决了，这些解决方法的细节，我们记录在了 KubeSphere 开发者论坛，可以在 KubeSphere 论坛找到：`https://ask.docs.kubesphere-carryon.top/forum/d/294-docker-login-https-harbor`。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20200327140134.png)
 

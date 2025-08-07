@@ -8,7 +8,7 @@ weight: 3510
 
 对于生产环境，我们需要考虑集群的高可用性。如果关键组件（例如 kube-apiserver，kube-scheduler 和 kube-controller-manager）都在同一主节点上运行，一旦主节点出现故障，Kubernetes 和 KubeSphere 将不可用。因此，我们需要通过用负载均衡器配置多个主节点来设置高可用性集群。您可以使用任何云负载平衡器或任何硬件负载平衡器（例如F5）。另外，Keepalived 和 HAproxy 或 NGINX 也是创建高可用性集群的替代方法。
 
-本教程介绍如何使用 [Keepalived + HAProxy](https://ask.kubesphere.io/forum/d/1566-kubernetes-keepalived-haproxy) 对 kube-apiserver 进行负载均衡，实现高可用 Kubernetes 集群。
+本教程介绍如何使用 [Keepalived + HAProxy](https://ask.docs.kubesphere-carryon.top/forum/d/1566-kubernetes-keepalived-haproxy) 对 kube-apiserver 进行负载均衡，实现高可用 Kubernetes 集群。
 
 ## 前提条件
 
@@ -285,10 +285,10 @@ systemctl status -l keepalived
 
 {{< tab "如果您能正常访问 GitHub/Googleapis" >}}
 
-从 [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) 下载 KubeKey 或直接使用以下命令。
+从 [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) 下载 KubeKey 或直接使用以下命令。
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -304,7 +304,7 @@ export KKZONE=cn
 执行以下命令下载 KubeKey。
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}
@@ -358,7 +358,7 @@ vi ~/config-sample.yaml
 ```
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha1
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
 kind: Cluster
 metadata:
   name: config-sample
@@ -455,7 +455,7 @@ NOTES：
      are up and running.
   2. Please change the default password after login.
 #####################################################
-https://kubesphere.io             2020-08-15 23:32:12
+https://docs.kubesphere-carryon.top             2020-08-15 23:32:12
 #####################################################
 ```
 

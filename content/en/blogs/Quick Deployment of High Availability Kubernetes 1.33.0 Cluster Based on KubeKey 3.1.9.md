@@ -138,7 +138,7 @@ systemctl disable firewalld
 ```shell
 kk create config
 ```
-It will generate a default configuration file as shown here: https://github.com/kubesphere/kubekey/blob/master/docs/config-example.md.
+It will generate a default configuration file as shown here: https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/config-example.md.
 
 You can then modify it according to your environment settings.
 
@@ -167,7 +167,7 @@ ntpServers:
 ### 5.1 Download KubeKey 
 
 ```shell
-curl -sSL https://get-kk.kubesphere.io | sh -
+curl -sSL https://get-kk.docs.kubesphere-carryon.top | sh -
 ```
 
 

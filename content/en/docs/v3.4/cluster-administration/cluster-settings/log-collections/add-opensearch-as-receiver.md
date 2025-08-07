@@ -27,7 +27,7 @@ In KubeSphere v3.4.0 and later, OpenSearch is the default backend storage for `l
 ```shell
 $ kubectl edit cc -n kubesphere-system ks-installer
 
-apiVersion: installer.kubesphere.io/v1alpha1
+apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
 kind: ClusterConfiguration
 metadata:
   name: ks-installer
@@ -40,7 +40,7 @@ spec:
       opensearchPrefix: whizard      # The string making up index names. The index name will be formatted as ks-<opensearchPrefix>-logging.
 ```
 
-For KubeSphere versions below `v3.4.0`, please [upgrade](https://github.com/kubesphere/ks-installer/tree/release-3.4#upgrade) first.
+For KubeSphere versions below `v3.4.0`, please [upgrade](https://github.com/whenegghitsrock/ks-installer-carryon/tree/release-3.4#upgrade) first.
 
 ### Enable Logging via the Console and Use OpenSearch as the Backend Storage
 
@@ -78,7 +78,7 @@ If you are using KubeSphere's internal OpenSearch and want to change it to your 
 2. Set `opensearch:externalOpensearchHost` to the address of your external OpenSearch and set `opensearch:externalOpensearchPort` to its port. Comment or delete the `status:logging` field. Here is an example:
 
   ```yaml
-  apiVersion: installer.kubesphere.io/v1alpha1
+  apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
   kind: ClusterConfiguration
   metadata:
     name: ks-installer

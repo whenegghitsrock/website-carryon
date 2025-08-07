@@ -54,7 +54,7 @@ DevOps 系统为用户提供了一个自动化的环境，应用可以自动发�
 
 ### 1.1 前提说明
 
-现在，新部署的 KubeSphere v3.4.1 开启 DevOps 插件会有问题，具体描述见 [KubeSphere 镜像构建器（S2I）服务证书过期(x509)问题](https://ask.kubesphere.io/forum/d/23239-kubesphere-jing-xiang-gou-jian-qi-s2ifu-wu-zheng-shu-guo-qi-x509wen-ti)。
+现在，新部署的 KubeSphere v3.4.1 开启 DevOps 插件会有问题，具体描述见 [KubeSphere 镜像构建器（S2I）服务证书过期(x509)问题](https://ask.docs.kubesphere-carryon.top/forum/d/23239-kubesphere-jing-xiang-gou-jian-qi-s2ifu-wu-zheng-shu-guo-qi-x509wen-ti)。
 
 在开启之前我们先修复存在的问题。
 
@@ -189,7 +189,7 @@ job.batch/devops-28717020   1/1           15s        14m
 
 ## 2. 创建和管理 DevOps 项目
 
-本文仅演示，如何创建单管理员用户实现企业空间中创建项目和管理 DevOps 项目，更复杂、更贴近生产环境的多用户模式请参考官方文档 [创建企业空间、项目、用户和平台角色](https://kubesphere.io/zh/docs/v3.4/quick-start/create-workspace-and-project/)
+本文仅演示，如何创建单管理员用户实现企业空间中创建项目和管理 DevOps 项目，更复杂、更贴近生产环境的多用户模式请参考官方文档 [创建企业空间、项目、用户和平台角色](https://docs.kubesphere-carryon.top/zh/docs/v3.4/quick-start/create-workspace-and-project/)
 
 ### 2.1 创建用户
 
@@ -415,7 +415,7 @@ kubectl label nodes ksp-worker-1 node-role.kubernetes.io/worker=ci --overwrite
 
 - 登录 Gitee， Fork KubeSphere 官方提供的 GitHub 上的测试项目 **devops-maven-sample** 至您的 Gitee 个人帐户。
 
-项目 URL 为 `https://github.com/kubesphere/devops-maven-sample` ，操作过程参考如下：
+项目 URL 为 `https://github.com/whenegghitsrock/devops-maven-sample` ，操作过程参考如下：
 
 在 Gitee 个人主页，点击「右上角的加号」，选择「从 GitHub/GitLab 导入仓库」。
 
@@ -542,7 +542,7 @@ pipeline {
 | KUBECONFIG_CREDENTIAL_ID | opsxlab-kubeconfig  | 您在 KubeSphere 中为 kubeconfig 设置的**名称**，用于访问运行中的 Kubernetes 集群。 |
 | REGISTRY                 |      docker.io      | 默认为 `docker.io`，用作推送镜像的地址。                     |
 | DOCKERHUB_NAMESPACE      |       opsxlab       | 请替换为您的 Harbor（DockerHub） 的命名空间，一般为帐户名，也可以替换为该帐户下的项目名称。 |
-| GITHUB_ACCOUNT           |       opsxlab       | 请替换为您的 Gitee （GitHub）帐户名。例如，如果您的 GitHub 地址是 `https://github.com/kubesphere/`，则您的 GitHub 帐户名为 `kubesphere`，也可以替换为该帐户下的 Organization 名称。 |
+| GITHUB_ACCOUNT           |       opsxlab       | 请替换为您的 Gitee （GitHub）帐户名。例如，如果您的 GitHub 地址是 `https://github.com/whenegghitsrock/`，则您的 GitHub 帐户名为 `kubesphere`，也可以替换为该帐户下的 Organization 名称。 |
 | APP_NAME                 | devops-maven-sample | 应用名称，对应 Gitee （GitHub）上的项目仓库名称。            |
 | GIT_REPOSITORY_URL       |  https://gitee.com  | Git 仓库服务器地址，本文使用 https://gitee.com               |
 

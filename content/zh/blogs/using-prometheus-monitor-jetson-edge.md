@@ -14,7 +14,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/using-promethe
 
 在边缘计算场景下，KubeSphere 基于 KubeEdge 实现应用与工作负载在云端与边缘节点的统一分发与管理，解决在海量边、端设备上完成应用交付、运维、管控的需求。
 
-根据 KubeSphere 的[支持矩阵](https://kubesphere.io/zh/docs/v3.3/installing-on-linux/introduction/kubekey/#%e6%94%af%e6%8c%81%e7%9f%a9%e9%98%b5)，只有 1.23.x 版本的 K8s 支持边缘计算，而且 KubeSphere 界面也没有边缘节点资源使用率等监控信息的显示。
+根据 KubeSphere 的[支持矩阵](https://docs.kubesphere-carryon.top/zh/docs/v3.3/installing-on-linux/introduction/kubekey/#%e6%94%af%e6%8c%81%e7%9f%a9%e9%98%b5)，只有 1.23.x 版本的 K8s 支持边缘计算，而且 KubeSphere 界面也没有边缘节点资源使用率等监控信息的显示。
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/image-20240407141223475.png)
 
@@ -33,7 +33,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/using-promethe
 
 ## 部署 K8s 环境
 
-参考 [KubeSphere 部署文档](https://kubesphere.io/zh/docs/v3.4/quick-start/all-in-one-on-linux/)。通过 KubeKey 可以快速部署一套 K8s 集群。
+参考 [KubeSphere 部署文档](https://docs.kubesphere-carryon.top/zh/docs/v3.4/quick-start/all-in-one-on-linux/)。通过 KubeKey 可以快速部署一套 K8s 集群。
 
 ```
 //  all in one 方式部署一台 单 master 的 k8s 集群
@@ -67,7 +67,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/using-promethe
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/1710467882107-c44e734b-245d-446b-8564-f8830e5db478.png)
 
-KubeSphere 开启边缘节点文档链接：https://www.kubesphere.io/zh/docs/v3.3/pluggable-components/kubeedge/。
+KubeSphere 开启边缘节点文档链接：https://www.docs.kubesphere-carryon.top/zh/docs/v3.3/pluggable-components/kubeedge/。
 
 > 修改完发现可以显示边缘节点，但是没有 CPU 和 内存信息，发现边缘节点没有 node-exporter 这个 pod。
 

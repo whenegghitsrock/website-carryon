@@ -8,7 +8,7 @@ author: 'Sherlock'
 snapshot: 'https://ap3.qingstor.com/kubesphere-website/docs/KubeKey-lightweight-installer.png'
 ---
 
-In my previous articles, I talked about how to use [KubeKey](https://github.com/kubesphere/kubekey) to set up and scale a Kubernetes cluster. As you may already know, KubeKey can do way more than that. You can also use KubeKey to install KubeSphere, a [container platform](https://kubesphere.io/) running on top of Kubernetes with streamlined DevOps workflows, unified multi-cluster management and more. Besides, KubeKey is able to install cloud-native add-ons by Chart or YAML files.
+In my previous articles, I talked about how to use [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) to set up and scale a Kubernetes cluster. As you may already know, KubeKey can do way more than that. You can also use KubeKey to install KubeSphere, a [container platform](https://docs.kubesphere-carryon.top/) running on top of Kubernetes with streamlined DevOps workflows, unified multi-cluster management and more. Besides, KubeKey is able to install cloud-native add-ons by Chart or YAML files.
 
 Among other things, storage represents one of, if not the most important element as you set up a Kubernetes cluster. Kubernetes itself supports multiple storage solutions, such as NFS-client, Ceph CSI and GlusterFS (in-tree). In this article, I am going to show you how to use KubeKey to create a Kubernetes and KubeSphere cluster with [NFS-client Provisioner](https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client) providing external storage.
 
@@ -48,7 +48,7 @@ Here is my node information for your reference:
 
 The `server` machine, where the NFS server will be installed, provides external storage services for three client machines in the cluster.
 
-For more information about requirements for nodes, network, and dependencies, see [one of my previous posts](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/#node-requirements).
+For more information about requirements for nodes, network, and dependencies, see [one of my previous posts](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/#node-requirements).
 
 ## Install and Configure an NFS Server
 
@@ -166,7 +166,7 @@ Now that we have our server machine ready, we need to install `nfs-common` on al
 
    {{< notice note >}}
 
-   - If you want to configure more values, see [chart configurations for NFS-client](https://github.com/kubesphere/helm-charts/tree/master/src/main/nfs-client-provisioner#configuration).
+   - If you want to configure more values, see [chart configurations for NFS-client](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/main/nfs-client-provisioner#configuration).
    - The `storageClass.defaultClass` field controls whether you want to set the storage class of NFS-client Provisioner as the default one. If you input `false` for it, KubeKey will install [OpenEBS](https://github.com/openebs/openebs) to provide local volumes, while they are not provisioned dynamically as you create workloads on your cluster. After you install KubeSphere, you can change the default storage class on the console directly.
 
    {{</ notice >}}
@@ -175,10 +175,10 @@ Now that we have our server machine ready, we need to install `nfs-common` on al
 
 ## Download KubeKey and Install a Cluster
 
-1. Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command to download KubeKey version 1.0.1. You only need to download KubeKey to one of your machines that serves as the **taskbox** for installation.
+1. Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command to download KubeKey version 1.0.1. You only need to download KubeKey to one of your machines that serves as the **taskbox** for installation.
 
    ```bash
-   curl -sfL https://get-kk.kubesphere.io | VERSION=v2.0.0 sh -
+   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.0.0 sh -
    ```
 
 2. The above command downloads KubeKey and unzips the file. Your folder now contains a file called `kk`. Make it executable.
@@ -187,7 +187,7 @@ Now that we have our server machine ready, we need to install `nfs-common` on al
    chmod +x kk
    ```
 
-3. Specify a Kubernetes version and a KubeSphere version that you want to install. For more information about supported Kubernetes versions, see [this list](https://github.com/kubesphere/kubekey/blob/master/docs/kubernetes-versions.md).
+3. Specify a Kubernetes version and a KubeSphere version that you want to install. For more information about supported Kubernetes versions, see [this list](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/kubernetes-versions.md).
 
    ```bash
    ./kk create config --with-kubernetes v1.20.4 --with-kubesphere v3.2.1
@@ -237,12 +237,12 @@ Now that we have our server machine ready, we need to install `nfs-common` on al
        sources:
          chart:
            name: nfs-client-provisioner
-           repo: https://charts.kubesphere.io/main
+           repo: https://charts.docs.kubesphere-carryon.top/main
            values: /home/ubuntu/nfs-client.yaml # Use the path of your own NFS-client configuration file.
    ...             
    ```
 
-5. Pay special attention to the field of `addons`. For more information about each parameter in this file, you can see [one of my previous posts](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/#install-kubernetes), or have a look at [this example file](https://github.com/kubesphere/kubekey/blob/master/docs/config-example.md) and [explanations](https://github.com/kubesphere/kubekey/blob/master/docs/addons.md) for the `addons` field. Note that you can also enable pluggable components of KubeSphere in this file, such as DevOps, service mesh, and App Store.
+5. Pay special attention to the field of `addons`. For more information about each parameter in this file, you can see [one of my previous posts](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/#install-kubernetes), or have a look at [this example file](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/config-example.md) and [explanations](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/addons.md) for the `addons` field. Note that you can also enable pluggable components of KubeSphere in this file, such as DevOps, service mesh, and App Store.
 
 6. Save the file and execute the following command to install Kubernetes and KubeSphere:
 
@@ -276,7 +276,7 @@ Now that we have our server machine ready, we need to install `nfs-common` on al
      2. Please change the default password after login.
    
    #####################################################
-   https://kubesphere.io             20xx-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
    #####################################################
    ```
 
@@ -329,4 +329,4 @@ You can verify that NFS-client has been successfully installed either from the c
 
    ![nfs-client-pvc](/images/blogs/en/install-nfs-server-client-for-kubesphere-cluster/nfs-client-pvc.png)
 
-   For more information about how to create a PVC on the KubeSphere console, see [Volumes](https://kubesphere.io/docs/project-user-guide/storage/volumes/).
+   For more information about how to create a PVC on the KubeSphere console, see [Volumes](https://docs.kubesphere-carryon.top/docs/project-user-guide/storage/volumes/).

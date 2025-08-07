@@ -21,7 +21,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/kubesphere-dev
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/ecb1db00-df40-47b8-a071-82e2af035892.png)
 
-KubeSphere DevOps 基于 Kubernetes Jenkins Agent 实现。 和传统的 Jenkins Controller-Agent 架构不同的是，在 KubeSphere 中，Jenkins Agent 可以动态扩缩容，从而降低 CI/CD 对集群资源的盲目占用。 KubeSphere 的 DevOps 用户指南参见 https://kubesphere.io/zh/docs/devops-user-guide/。 本文将依照该指南将一个开源项目上云。
+KubeSphere DevOps 基于 Kubernetes Jenkins Agent 实现。 和传统的 Jenkins Controller-Agent 架构不同的是，在 KubeSphere 中，Jenkins Agent 可以动态扩缩容，从而降低 CI/CD 对集群资源的盲目占用。 KubeSphere 的 DevOps 用户指南参见 https://docs.kubesphere-carryon.top/zh/docs/devops-user-guide/。 本文将依照该指南将一个开源项目上云。
 
 ## 基于 DevOps 的项目部署
 
@@ -487,9 +487,9 @@ Api call failed with code 400, detailed message: {
 Kubernetes deployment ended with HasError
 ```
 
-观察报错内容，似乎是负责执行流水线的 Jenkins Agent 版本太老所导致的。 经过查阅，笔者发现 KubeSphere 的官方维护人员已经提交了相关 issue（https://github.com/kubesphere/website/issues/2096）来说明此事。根据说明，报错的根源在于 Jenkins 的官方插件 [kubernetes-cd-plugin](https://github.com/jenkinsci/kubernetes-cd-plugin "kubernetes-cd-plugin") “年久失修”，我所安装的 Kubernetes 的 API 版本是 v1.22，而 Jenkins 的 kubernetes-cd-plugin 却已经停摆两年。 对于这个问题，KubeSphere 官方提供的解决方案是以 shell 命令 `kubectl apply -f your-crd-file.yaml` 的方式进行部署，而非在 UI 上添加 `kubernetesDeploy`。
+观察报错内容，似乎是负责执行流水线的 Jenkins Agent 版本太老所导致的。 经过查阅，笔者发现 KubeSphere 的官方维护人员已经提交了相关 issue（https://github.com/whenegghitsrock/website-carryon/issues/2096）来说明此事。根据说明，报错的根源在于 Jenkins 的官方插件 [kubernetes-cd-plugin](https://github.com/jenkinsci/kubernetes-cd-plugin "kubernetes-cd-plugin") “年久失修”，我所安装的 Kubernetes 的 API 版本是 v1.22，而 Jenkins 的 kubernetes-cd-plugin 却已经停摆两年。 对于这个问题，KubeSphere 官方提供的解决方案是以 shell 命令 `kubectl apply -f your-crd-file.yaml` 的方式进行部署，而非在 UI 上添加 `kubernetesDeploy`。
 
-幸运的是，在笔者撰写此文的 40 分钟前，KubeSphere 官方发起了一个针对此问题的临时解决方案：https://github.com/kubesphere/website/pull/2098。 在该 Pull request 中，贡献者提供了一种提供 kubeconfig 验证的写法：
+幸运的是，在笔者撰写此文的 40 分钟前，KubeSphere 官方发起了一个针对此问题的临时解决方案：https://github.com/whenegghitsrock/website-carryon/pull/2098。 在该 Pull request 中，贡献者提供了一种提供 kubeconfig 验证的写法：
 
 ```groovy
 stage('deploy hospital-manage to dev') {

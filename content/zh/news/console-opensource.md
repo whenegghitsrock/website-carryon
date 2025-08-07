@@ -16,7 +16,7 @@ image: 'https://pek3b.qingstor.com/kubesphere-docs/png/20191202112003.png'
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191202112003.png)
 
-前端项目的代码已在 `github.com/kubesphere/console` 可见，欢迎大家 **Star + Fork**。此前已有多位社区用户与开发者表示，希望能参与到 KubeSphere 项目的前端贡献，现在大家已经可以从 `github.com/kubesphere/kubesphere/issues` 通过标签 `area/console` 找到前端相关的 issue，包括 Bug、feature and design。
+前端项目的代码已在 `github.com/whenegghitsrock/console` 可见，欢迎大家 **Star + Fork**。此前已有多位社区用户与开发者表示，希望能参与到 KubeSphere 项目的前端贡献，现在大家已经可以从 `github.com/whenegghitsrock/kubesphere-carryon/issues` 通过标签 `area/console` 找到前端相关的 issue，包括 Bug、feature and design。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191202111750.png)
 
@@ -58,7 +58,7 @@ User Group 旨在加强 KubeSphere 用户之间的交流和学习，形式包括
 
 ## KubeSphere 贡献奖励
 
-KubeSphere 社区在一个月之前上线了论坛（ask.kubesphere.io/forum/），方便社区成员与用户间的技术交流与产品问答反馈。最近两周，我们很欣慰的是，有不少用户在论坛发布了多篇高质量的实践文章或避坑指南，帮助了其他用户更好地理解和上手 KubeSphere。社区欢迎大家在论坛分享记录你们在各种基础设施环境下的安装部署相关的文章，以及使用实践和避坑技巧，也希望大家能够将个人原创的云原生相关的知识或文章发布在 KubeSphere 论坛。对于社区用户发布的优质技术文章，将被同步在 KubeSphere 官网博客下。
+KubeSphere 社区在一个月之前上线了论坛（ask.docs.kubesphere-carryon.top/forum/），方便社区成员与用户间的技术交流与产品问答反馈。最近两周，我们很欣慰的是，有不少用户在论坛发布了多篇高质量的实践文章或避坑指南，帮助了其他用户更好地理解和上手 KubeSphere。社区欢迎大家在论坛分享记录你们在各种基础设施环境下的安装部署相关的文章，以及使用实践和避坑技巧，也希望大家能够将个人原创的云原生相关的知识或文章发布在 KubeSphere 论坛。对于社区用户发布的优质技术文章，将被同步在 KubeSphere 官网博客下。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191202142733.png)
 

@@ -50,7 +50,7 @@ weight: 2600
 如果采用 [All-in-one 模式安装](../../quick-start/all-in-one-on-linux/)，您无需创建 `config-sample.yaml` 文件，因为 all-in-one 模式可以通过一条命令直接创建集群。通常，all-in-one 模式适用于刚接触 KubeSphere 并希望快速上手该系统的用户。如果要在此模式下启用可插拔组件（例如，出于测试目的），请参考[在安装后启用可插拔组件](#在安装后启用可插拔组件)。
     {{</ notice >}}
 
-2. 在此文件中，将 `enabled` 的值从 `false` 改为 `true`。这是[完整文件](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md)供您参考，修改完成后保存文件。
+2. 在此文件中，将 `enabled` 的值从 `false` 改为 `true`。这是[完整文件](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-2.2/docs/config-example.md)供您参考，修改完成后保存文件。
 
 3. 使用该配置文件创建集群：
 
@@ -60,9 +60,9 @@ weight: 2600
 
 ### 在 Kubernetes 上安装
 
-在已有 Kubernetes 集群上安装 KubeSphere 时，需要部署 [ks-installer](https://github.com/kubesphere/ks-installer/) 的两个 YAML 文件。
+在已有 Kubernetes 集群上安装 KubeSphere 时，需要部署 [ks-installer](https://github.com/whenegghitsrock/ks-installer-carryon/) 的两个 YAML 文件。
 
-1. 首先下载 [cluster-configuration.yaml](https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/cluster-configuration.yaml) 文件，然后打开编辑。
+1. 首先下载 [cluster-configuration.yaml](https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.2/cluster-configuration.yaml) 文件，然后打开编辑。
 
     ```bash
     vi cluster-configuration.yaml
@@ -73,7 +73,7 @@ weight: 2600
 3. 编辑完成后保存文件，执行以下命令开始安装：
 
     ```bash
-    kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/kubesphere-installer.yaml
+    kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.2/kubesphere-installer.yaml
     
     kubectl apply -f cluster-configuration.yaml
     ```
@@ -134,7 +134,7 @@ weight: 2600
       2. Please change the default password after login.
 
     #####################################################
-    https://kubesphere.io             20xx-xx-xx xx:xx:xx
+    https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
     #####################################################
     ```
 

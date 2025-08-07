@@ -7,21 +7,21 @@ ifeval::["{file_output_type}" == "html"]
 // Bash
 include::../../../_ks_components/code/bash.adoc[]
 
-curl -L -O https://github.com/kubesphere/ks-installer/releases/download/v3.5.0/kubesphere-installer.yaml
+curl -L -O https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.5.0/kubesphere-installer.yaml
 
 ----
 
 // Bash
 include::../../../_ks_components/code/bash.adoc[]
 
-curl -L -O https://github.com/kubesphere/ks-installer/releases/download/v3.5.0/cluster-configuration.yaml
+curl -L -O https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.5.0/cluster-configuration.yaml
 
 ----
 
 // Note
 include::../../../_ks_components/admonitions/note.adoc[]
 
-如果您的集群节点无法连接互联网，您可以从互联网连接正常的设备手动下载配置文件 link:https://github.com/kubesphere/ks-installer/releases/download/v3.5.0/kubesphere-installer.yaml[kubesphere-installer.yaml] 和 link:https://github.com/kubesphere/ks-installer/releases/download/v3.5.0/cluster-configuration.yaml[cluster-configuration.yaml]，然后将其传输到 Kubernetes 集群的任意节点。
+如果您的集群节点无法连接互联网，您可以从互联网连接正常的设备手动下载配置文件 link:https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.5.0/kubesphere-installer.yaml[kubesphere-installer.yaml] 和 link:https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.5.0/cluster-configuration.yaml[cluster-configuration.yaml]，然后将其传输到 Kubernetes 集群的任意节点。
 
 include::../../../_ks_components/admonitions/admonEnd.adoc[]
 --

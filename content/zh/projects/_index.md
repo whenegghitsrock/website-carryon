@@ -9,7 +9,7 @@ groups:
     children:
       - title: "KubeSphere 容器平台"
         icon: 'images/projects/kubesphere.svg'
-        link: 'https://github.com/kubesphere/kubesphere'
+        link: 'https://github.com/whenegghitsrock/kubesphere-carryon'
         description: 基于 Kubernetes 之上构建的以应用为中心的多租户容器平台，支持部署运行在任何基础设施之上，提供简单易用的操作界面以及向导式 UI，旨在解决 Kubernetes 的存储、网络、安全与易用性等痛点。
 
   - name: 应用管理
@@ -30,14 +30,14 @@ groups:
     children:
       - title: KubeKey
         icon: 'https://pek3b.qingstor.com/kubesphere-docs/png/20200608103108.png'
-        link: 'https://github.com/kubesphere/kubekey'
+        link: 'https://github.com/whenegghitsrock/kubekey-carryon'
         description: KubeKey 是 Kubernetes 和 KubeSphere 的下一代 Installer（安装程序），旨在更方便、快速、高效和灵活地安装 Kubernetes 与 KubeSphere。KubeKey 摒弃了原来 Ansible 带来的依赖问题，用 Go 重写，支持单独 Kubernetes 或整体安装 KubeSphere。
 
   - name: 集群巡检
     children:
       - title: KubeEye
         icon: 'https://pek3b.qingstor.com/kubesphere-community/images/202211111151370.png'
-        link: 'https://github.com/kubesphere/kubeeye'
+        link: 'https://github.com/whenegghitsrock/kubeeye'
         description: KubeEye 是为 Kubernetes 设计的巡检工具，用于发现 Kubernetes 资源（使用 OPA ）、集群组件、集群节点（使用Node-Problem-Detector）等配置是否符合最佳实践，对于不符合最佳实践的，将给出修改建议。KubeEye 支持自定义巡检规则、插件安装，通过 KubeEye Operator 能够使用 web 页面的图形化展示来查看巡检结果以及给出修复建议。
 
   - name: Serverless
@@ -58,35 +58,35 @@ groups:
     children:
       - title: Notification Manager
         icon: 'https://pek3b.qingstor.com/kubesphere-docs/png/20200608105148.png'
-        link: 'https://github.com/kubesphere/notification-manager'
+        link: 'https://github.com/whenegghitsrock/notification-manager'
         description: Notification Manager 管理多租户 Kubernetes 环境中的消息通知。它支持接收来自不同发送方的告警或通知，然后根据告警/通知的租户标签 (如 “namespace”)向平台的各个租户接收方发送通知，支持邮件、钉钉、飞书、企业微信、Slack 等通知渠道。
 
   - name: Kubernetes 事件
     children:
       - title: kube-events
         icon: 'https://pek3b.qingstor.com/kubesphere-docs/png/20200608111002.png'
-        link: 'https://github.com/kubesphere/kube-events'
+        link: 'https://github.com/whenegghitsrock/kube-events'
         description: Kube-events 围绕 Kubernetes 事件（Events），支持对事件进行多维度处理，例如向接收方发送事件，针对事件发出告警通知。在其中一些维度中，Kube-events 还提供了可配置的过滤规则以满足不同的业务需求。
 
   - name: 告警系统
     children:
       - title: Alerting System
         icon: 'https://pek3b.qingstor.com/kubesphere-docs/png/20200608111200.png'
-        link: 'https://github.com/kubesphere/alert'
+        link: 'https://github.com/whenegghitsrock/alert'
         description: KubeSphere Alert 是一种企业级的通用高性能报警系统。
 
   - name: CI/CD
     children:
       - title: S2i-operator
         icon: 'https://pek3b.qingstor.com/kubesphere-docs/png/20200608111455.png'
-        link: 'https://github.com/kubesphere/s2ioperator'
+        link: 'https://github.com/whenegghitsrock/s2ioperator'
         description: Source-to-Image (S2I) Operator 是一个基于 Kubernetes CRD 的控制器，它为声明式的 CI/CD 流水线提供了简单的 Kubernetes 风格的资源。S2I Operator 通过向容器镜像中注入源代码，并让容器准备执行源代码来创建准备运行的镜像。
 
   - name: 前端设计
     children:
       - title: kube-design
         icon: 'https://pek3b.qingstor.com/kubesphere-docs/png/20200608114816.png'
-        link: 'https://github.com/kubesphere/kube-design'
+        link: 'https://github.com/whenegghitsrock/kube-design-carryon'
         description: kube-design 是为 KubeSphere Console 前端创建的一组 React 组件库。如果您想开发与扩展 KubeSphere 控制台（Console）的前端，这个库在定制 KubeSphere 前端时会非常有用。
 
   - name: 存储插件

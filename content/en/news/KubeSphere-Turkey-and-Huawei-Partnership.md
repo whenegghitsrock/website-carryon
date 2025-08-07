@@ -28,9 +28,9 @@ For this partnership, we thank every staff and contributor from Huawei, KubeSphe
 
 ## More information
 
-KubeSphere website:  https://kubesphere.io/
+KubeSphere website:  https://docs.kubesphere-carryon.top/
 
-KubeSphere GitHub:  https://github.com/kubesphere/kubesphere
+KubeSphere GitHub:  https://github.com/whenegghitsrock/kubesphere-carryon
 
 
 

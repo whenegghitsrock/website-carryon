@@ -37,18 +37,18 @@ Server Version: version.Info{Major:"1", Minor:"18+", GitVersion:"v1.18.4-tke.2",
 ## KubeSphere 平台部署
 
 ### 通过 ks-installer 执行最小化部署
-接下来就可以使用 [ks-installer](https://github.com/kubesphere/ks-installer) 在已有的 Kubernetes 集群上来执行 KubeSphere 部署，建议首先还是以最小功能集进行安装。
+接下来就可以使用 [ks-installer](https://github.com/whenegghitsrock/ks-installer-carryon) 在已有的 Kubernetes 集群上来执行 KubeSphere 部署，建议首先还是以最小功能集进行安装。
 
 - 使用 kubectl 执行以下命令安装 KubeSphere：
 
 ```bash
-kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/kubesphere-installer.yaml
+kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/kubesphere-installer.yaml
 ```
 
 - 下载集群配置文件
 
 ```bash
-wget https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/cluster-configuration.yaml
+wget https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/cluster-configuration.yaml
 ```
 
   {{< notice tip >}}
@@ -127,7 +127,7 @@ kubectl logs -n kubesphere-system $(kubectl get pod -n kubesphere-system -l 'app
 若您用 admin 帐户无法登录控制台，界面显示 “Internal error occurred: account is not active” 且 `ks-controller-manager` pod 日志显示 “tls: bad certificate”，则需要更新一下 `ks-controller-manager` 的证书：
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/kubesphere/ks-installer/2c4b479ec65110f7910f913734b3d069409d72a8/roles/ks-core/prepare/files/ks-init/users.iam.kubesphere.io.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubesphere/ks-installer/2c4b479ec65110f7910f913734b3d069409d72a8/roles/ks-core/prepare/files/ks-init/users.iam.docs.kubesphere-carryon.top.yaml
 kubectl apply -f https://raw.githubusercontent.com/kubesphere/ks-installer/2c4b479ec65110f7910f913734b3d069409d72a8/roles/ks-core/prepare/files/ks-init/webhook-secret.yaml
 kubectl -n kubesphere-system rollout restart deploy ks-controller-manager
 ```

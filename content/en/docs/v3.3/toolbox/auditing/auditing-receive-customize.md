@@ -116,7 +116,7 @@ You need to restart the Kubernetes apiserver to make the changes effective after
 Edit the CRD Webhook `kube-auditing-webhook`, and change the value of `k8sAuditingEnabled` to `true` through the following commands.
 
 ```bash
-kubectl edit webhooks.auditing.kubesphere.io kube-auditing-webhook
+kubectl edit webhooks.auditing.docs.kubesphere-carryon.top kube-auditing-webhook
 ```
 
 ```yaml
@@ -137,7 +137,7 @@ To stop receiving auditing logs from Kubernetes, remove the configuration of aud
 KubeSphere Auditing Log system provides a CRD Webhook `kube-auditing-webhook` to customize auditing logs. Here is an example yaml file:
 
 ```yaml
-apiVersion: auditing.kubesphere.io/v1alpha1
+apiVersion: auditing.docs.kubesphere-carryon.top/v1alpha1
 kind: Webhook
 metadata:
   name: kube-auditing-webhook

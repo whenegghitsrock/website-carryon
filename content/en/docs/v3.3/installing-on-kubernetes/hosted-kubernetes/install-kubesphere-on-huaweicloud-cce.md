@@ -54,7 +54,7 @@ kind: StorageClass
 metadata:
   annotations:
     storageclass.kubernetes.io/is-default-class: "true"
-    storageclass.kubesphere.io/support-snapshot: "false"
+    storageclass.docs.kubesphere-carryon.top/support-snapshot: "false"
   name: csi-disk-sas
 parameters:
   csi.storage.k8s.io/csi-driver-name: disk.csi.everest.io
@@ -73,12 +73,12 @@ For how to set up or cancel a default StorageClass, refer to Kubernetes official
 
 ### Use ks-installer to minimize the deployment
 
-Use [ks-installer](https://github.com/kubesphere/ks-installer) to deploy KubeSphere on an existing Kubernetes cluster. Execute the following commands directly for a minimal installation:
+Use [ks-installer](https://github.com/whenegghitsrock/ks-installer-carryon) to deploy KubeSphere on an existing Kubernetes cluster. Execute the following commands directly for a minimal installation:
 
 ```bash
-kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/kubesphere-installer.yaml
+kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.2/kubesphere-installer.yaml
 
-kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/cluster-configuration.yaml
+kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.2/cluster-configuration.yaml
 ```
 
 Go to **Workload** > **Pod**, and check the running status of the pod in `kubesphere-system` of its namespace to understand the minimal deployment of KubeSphere. Check `ks-console-xxxx`  of the namespace to understand the availability of KubeSphere console.

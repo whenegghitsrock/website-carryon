@@ -188,7 +188,7 @@ You may not need to install all the dependencies depending on the Kubernetes ver
 
 ## Download KubeKey
 
-[Kubekey](https://github.com/kubesphere/kubekey) is the next-gen installer which provides an easy, fast and flexible way to install Kubernetes and KubeSphere.
+[Kubekey](https://github.com/whenegghitsrock/kubekey-carryon) is the next-gen installer which provides an easy, fast and flexible way to install Kubernetes and KubeSphere.
 
 Follow the step below to download KubeKey.
 
@@ -196,10 +196,10 @@ Follow the step below to download KubeKey.
 
 {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command directly.
+Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly.
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -215,7 +215,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}
@@ -266,7 +266,7 @@ vi config-sample.yaml
 ```
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha1
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
 kind: Cluster
 metadata:
   name: config-sample
@@ -320,7 +320,7 @@ NOTES：
      are up and running.
   2. Please change the default password after login.
 #####################################################
-https://kubesphere.io             20xx-xx-xx xx:xx:xx
+https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
 #####################################################
 ```
 

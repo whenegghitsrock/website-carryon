@@ -106,7 +106,7 @@ To create a GitHub Personal Access Token, go to your GitHub account's **Settings
 
 == Step 2: Modify the Jenkinsfile in your GitHub repository
 
-. Log in to GitHub and fork all branches of the repository link:https://github.com/kubesphere/devops-maven-sample[devops-maven-sample] to your personal GitHub account.
+. Log in to GitHub and fork all branches of the repository link:https://github.com/whenegghitsrock/devops-maven-sample[devops-maven-sample] to your personal GitHub account.
 
 . In your GitHub repository **devops-maven-sample**, switch to the `v4.1.0-sonarqube` branch and click on the file **Jenkinsfile-online** in the root directory.
 
@@ -135,7 +135,7 @@ To create a GitHub Personal Access Token, go to your GitHub account's **Settings
 
 |GITHUB_ACCOUNT
 |your-github-id
-|Replace it with your GitHub account name. For example, if your GitHub URL is link:https://github.com/kubesphere/[], your GitHub account name is **kubesphere** or the organization name under that account.
+|Replace it with your GitHub account name. For example, if your GitHub URL is link:https://github.com/whenegghitsrock/[], your GitHub account name is **kubesphere** or the organization name under that account.
 
 |APP_NAME
 |devops-maven-sample
@@ -316,7 +316,7 @@ In KubeSphere, if you do not specify a reviewer, the user that can run a pipelin
 == Step 5: Check Pipeline Status
 
 . Under the **Pipeline** tab in the run records, check the running status of the pipeline. The pipeline may take a few minutes to initialize when first created. 
-// The sample pipeline consists of eight stages, each defined separately in the link:https://github.com/kubesphere/devops-maven-sample/blob/sonarqube/Jenkinsfile-online[Jenkinsfile-online].
+// The sample pipeline consists of eight stages, each defined separately in the link:https://github.com/whenegghitsrock/devops-maven-sample/blob/sonarqube/Jenkinsfile-online[Jenkinsfile-online].
 
 . Click the **Run Logs** tab to view the pipeline's running logs. Click each stage to view detailed logs. Click **View Full Logs** to troubleshoot and resolve issues based on the logs, and you can also download the logs for further analysis.
 

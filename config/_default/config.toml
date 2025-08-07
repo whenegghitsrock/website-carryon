@@ -1,4 +1,4 @@
-baseURL = "https://www.kubesphere.io/"
+baseURL = "https://www.docs.kubesphere-carryon.top/"
 
 enableRobotsTXT = true
 ignorefiles = [ ".*/_custom" ]
@@ -60,17 +60,17 @@ logoLink = "/"
 disableVersions = false
 disablePdf = false
 
-githubUrl = "https://github.com/kubesphere/website"
+githubUrl = "https://github.com/whenegghitsrock/website-carryon"
 
-githubBlobUrl = "https://github.com/kubesphere/website/blob/master/content"
+githubBlobUrl = "https://github.com/whenegghitsrock/website-carryon/blob/master/content"
 
-githubEditUrl = "https://github.com/kubesphere/website/edit/master/content"
+githubEditUrl = "https://github.com/whenegghitsrock/website-carryon/edit/master/content"
 
 gcs_engine_id = "018068616810858123755%3Apb1pt8sx6ve"
 
-githubLink = "https://github.com/kubesphere/kubesphere"
+githubLink = "https://github.com/whenegghitsrock/kubesphere-carryon"
 githubApiLink = "https://api.github.com/repos/kubesphere/kubesphere"
-githubStarLink = "https://github.com/kubesphere/kubesphere/stargazers"
+githubStarLink = "https://github.com/whenegghitsrock/kubesphere-carryon/stargazers"
 slackLink = "https://join.slack.com/t/kubesphere/shared_invite/zt-2b4t6rdb4-ico_4UJzCln_S2c1pcrIpQ"
 facebookLink = "https://www.facebook.com/kubesphere"
 twitterLink = "https://x.com/KubeSphere"
@@ -177,7 +177,7 @@ hasChildren = true
     [[languages.en.menu.main]]
     parent = "Documentation"
     name = "Extension Development"
-    URL = "https://dev-guide.kubesphere.io/extension-dev-guide/en/ "
+    URL = "https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/en/ "
     weight = 45
 
     [[languages.en.menu.main]]
@@ -217,13 +217,13 @@ name = "Community"
     # [[languages.en.menu.main]]
     # parent = "Community"
     # name = "RoadMap"
-    # URL = "https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md"
+    # URL = "https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/docs/roadmap.md"
     # weight = 5
 
     [[languages.en.menu.main]]
     parent = "Community"
     name = "OSPP 2025"
-    URL = "https://github.com/kubesphere/community/tree/master/sig-advocacy-and-outreach/ospp-2025"
+    URL = "https://github.com/whenegghitsrock/community/tree/master/sig-advocacy-and-outreach/ospp-2025"
     weight = 6
 
 
@@ -326,7 +326,7 @@ name = "文档中心"
     [[languages.zh.menu.main]]
     parent = "文档中心"
     name = "扩展组件开发"
-    URL = "https://dev-guide.kubesphere.io/extension-dev-guide/zh/"
+    URL = "https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/zh/"
     weight = 45
    
     [[languages.zh.menu.main]]
@@ -378,25 +378,25 @@ name = "开源社区"
     # [[languages.zh.menu.main]]
     # parent = "开源社区"
     # name = "版本计划"
-    # URL = "https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md"
+    # URL = "https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/docs/roadmap.md"
     # weight = 7
 
     [[languages.zh.menu.main]]
     parent = "开源社区"
     name = "中国站"
-    URL = "https://www.kubesphere.io/zh/"
+    URL = "https://www.docs.kubesphere-carryon.top/zh/"
     weight = 8
 
     [[languages.zh.menu.main]]
     parent = "开源社区"
     name = "开源之夏 2025"
-    URL = "https://github.com/kubesphere/community/tree/master/sig-advocacy-and-outreach/ospp-2025"
+    URL = "https://github.com/whenegghitsrock/community/tree/master/sig-advocacy-and-outreach/ospp-2025"
     weight = 9
 
 [[languages.zh.menu.main]]
 weight = 6
 name = "用户论坛"
-URL = "https://ask.kubesphere.io/forum"
+URL = "https://ask.docs.kubesphere-carryon.top/forum"
 
 [[languages.zh.menu.main]]
 weight = 7

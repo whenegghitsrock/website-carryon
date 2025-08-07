@@ -28,8 +28,8 @@ KubeSphere 土耳其地区产品经理 Halil 表示，“华为在土耳其建�
 
 ## 更多信息
 
-KubeSphere 官网： https://kubesphere.io/zh/
+KubeSphere 官网： https://docs.kubesphere-carryon.top/zh/
 
-KubeSphere GitHub: https://github.com/kubesphere/kubesphere
+KubeSphere GitHub: https://github.com/whenegghitsrock/kubesphere-carryon
 
 

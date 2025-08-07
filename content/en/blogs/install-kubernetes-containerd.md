@@ -10,7 +10,7 @@ snapshot: '/images/blogs/en/kubekey-containerd/k8s-containerd.png'
 
 ![k8s-containerd](/images/blogs/en/kubekey-containerd/k8s-containerd.png)
 
-[KubeKey](https://github.com/kubesphere/kubekey) is a lightweight and turn-key installer that supports the installation of Kubernetes, KubeSphere and related add-ons. Writtent in Go, KubeKey enables you to set up a Kubernetes cluster within minutes. In this blog, we will install Kubernetes 1.22 and [containerd](https://containerd.io/) in one command with KubeKey.
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) is a lightweight and turn-key installer that supports the installation of Kubernetes, KubeSphere and related add-ons. Writtent in Go, KubeKey enables you to set up a Kubernetes cluster within minutes. In this blog, we will install Kubernetes 1.22 and [containerd](https://containerd.io/) in one command with KubeKey.
 
 ## Step 1: Prepare a Linux Machine
 
@@ -95,10 +95,10 @@ Perform the following steps to download KubeKey.
 
 {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or run the following command:
+Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or run the following command:
 
 ```bash
-curl -L https://github.com/kubesphere/kubekey/releases/download/v1.2.0-alpha.4/kubekey-v1.2.0-alpha.4-linux-amd64.tar.gz > installer.tar.gz && tar -zxf installer.tar.gz
+curl -L https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v1.2.0-alpha.4/kubekey-v1.2.0-alpha.4-linux-amd64.tar.gz > installer.tar.gz && tar -zxf installer.tar.gz
 ```
 
 {{</ tab >}}
@@ -114,7 +114,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -L https://github.com/kubesphere/kubekey/releases/download/v1.2.0-alpha.4/kubekey-v1.2.0-alpha.4-linux-amd64.tar.gz > installer.tar.gz && tar -zxf installer.tar.gz
+curl -L https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v1.2.0-alpha.4/kubekey-v1.2.0-alpha.4-linux-amd64.tar.gz > installer.tar.gz && tar -zxf installer.tar.gz
 ```
 
 {{< notice note >}}
@@ -143,7 +143,7 @@ You only need to run one command for all-in-one installation.
 
 {{< notice note >}}
 
-- Supported Kubernetes versions: v1.19.8, v1.20.4, v1.21.4, v1.22.1. If you do not specify a Kubernetes version, KubeKey installs Kubernetes v1.21.5 by default. For more information about supported Kubernetes versions, see [Support Matrix](https://github.com/kubesphere/kubekey/blob/master/docs/kubernetes-versions.md).
+- Supported Kubernetes versions: v1.19.8, v1.20.4, v1.21.4, v1.22.1. If you do not specify a Kubernetes version, KubeKey installs Kubernetes v1.21.5 by default. For more information about supported Kubernetes versions, see [Support Matrix](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/kubernetes-versions.md).
 - For all-in-one installation, you do not need to change any configuration.
 - KubeKey supports AMD64 and ARM64.
 
@@ -183,4 +183,4 @@ kube-system   kube-scheduler-i-mxtuejcj                  1/1     Running   0    
 kube-system   nodelocaldns-7zqp2                         1/1     Running   0          48s
 ```
 
-Congratulations! You have installed a sing-node Kubernetes cluster with containerd. For advanced usage of KubeKey, see [Installing on Linux — Overview](https://kubesphere.io/docs/installing-on-linux/introduction/intro/) for more information.
+Congratulations! You have installed a sing-node Kubernetes cluster with containerd. For advanced usage of KubeKey, see [Installing on Linux — Overview](https://docs.kubesphere-carryon.top/docs/installing-on-linux/introduction/intro/) for more information.

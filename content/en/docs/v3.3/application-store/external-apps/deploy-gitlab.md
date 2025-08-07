@@ -21,7 +21,7 @@ This tutorial demonstrates how to deploy GitLab on KubeSphere.
 
 1. Log in to KubeSphere as `ws-admin`. In your workspace, go to **App Repositories** under **App Management**, and then click **Add**.
 
-2. In the displayed dialog box, enter `main` for the app repository name and `https://charts.kubesphere.io/main` for the app repository URL. Click **Validate** to verify the URL and you will see a green check mark next to the URL if it is available. Click **OK** to continue.
+2. In the displayed dialog box, enter `main` for the app repository name and `https://charts.docs.kubesphere-carryon.top/main` for the app repository URL. Click **Validate** to verify the URL and you will see a green check mark next to the URL if it is available. Click **OK** to continue.
 
 3. The repository displays in the list after it is successfully imported to KubeSphere.
 

@@ -54,7 +54,7 @@ KubeSphere 提供三种创建服务的基本方法：**无状态服务**、**有
 
   {{< notice tip>}}
 
-关键字 `annotations:kubesphere.io/serviceType` 的值可以定义为 `statelessservice`、`statefulservice`、`externalservice` 和 `None`。
+关键字 `annotations:docs.kubesphere-carryon.top/serviceType` 的值可以定义为 `statelessservice`、`statefulservice`、`externalservice` 和 `None`。
 
   {{</ notice>}}
 

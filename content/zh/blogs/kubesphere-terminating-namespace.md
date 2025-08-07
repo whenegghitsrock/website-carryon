@@ -50,8 +50,8 @@ $ kubectl get namespace kubesphere-logging-system -o json > kubesphere-logging-s
         "creationTimestamp": "2021-12-31T05:03:58Z",
         "deletionTimestamp": "2022-01-05T08:05:40Z",
         "labels": {
-            "kubesphere.io/namespace": "kubesphere-logging-system",
-            "kubesphere.io/workspace": "system-workspace"
+            "docs.kubesphere-carryon.top/namespace": "kubesphere-logging-system",
+            "docs.kubesphere-carryon.top/workspace": "system-workspace"
         },
         "managedFields": [
             {
@@ -61,7 +61,7 @@ $ kubectl get namespace kubesphere-logging-system -o json > kubesphere-logging-s
                     "f:metadata": {
                         "f:labels": {
                             ".": {},
-                            "f:kubesphere.io/namespace": {}
+                            "f:docs.kubesphere-carryon.top/namespace": {}
                         },
                         "f:ownerReferences": {
                             ".": {},
@@ -87,7 +87,7 @@ $ kubectl get namespace kubesphere-logging-system -o json > kubesphere-logging-s
                 "fieldsV1": {
                     "f:metadata": {
                         "f:labels": {
-                            "f:kubesphere.io/workspace": {}
+                            "f:docs.kubesphere-carryon.top/workspace": {}
                         }
                     },
                     "f:status": {
@@ -156,7 +156,7 @@ $ kubectl get namespace kubesphere-logging-system -o json > kubesphere-logging-s
         "name": "kubesphere-logging-system",
         "ownerReferences": [
             {
-                "apiVersion": "tenant.kubesphere.io/v1alpha1",
+                "apiVersion": "tenant.docs.kubesphere-carryon.top/v1alpha1",
                 "blockOwnerDeletion": true,
                 "controller": true,
                 "kind": "Workspace",
@@ -197,14 +197,14 @@ $ kubectl get namespace kubesphere-logging-system -o json > kubesphere-logging-s
             },
             {
                 "lastTransitionTime": "2022-01-05T08:05:47Z",
-                "message": "Some resources are remaining: fluentbits.logging.kubesphere.io has 1 resource instances",
+                "message": "Some resources are remaining: fluentbits.logging.docs.kubesphere-carryon.top has 1 resource instances",
                 "reason": "SomeResourcesRemain",
                 "status": "True",
                 "type": "NamespaceContentRemaining"
             },
             {
                 "lastTransitionTime": "2022-01-05T08:05:47Z",
-                "message": "Some content in the namespace has finalizers remaining: fluentbit.logging.kubesphere.io in 1 resource instances",
+                "message": "Some content in the namespace has finalizers remaining: fluentbit.logging.docs.kubesphere-carryon.top in 1 resource instances",
                 "reason": "SomeFinalizersRemain",
                 "status": "True",
                 "type": "NamespaceFinalizersRemaining"
@@ -227,8 +227,8 @@ $ kubectl get namespace kubesphere-logging-system -o json > kubesphere-logging-s
         "creationTimestamp": "2021-12-31T05:03:58Z",
         "deletionTimestamp": "2022-01-05T08:05:40Z",
         "labels": {
-            "kubesphere.io/namespace": "kubesphere-logging-system",
-            "kubesphere.io/workspace": "system-workspace"
+            "docs.kubesphere-carryon.top/namespace": "kubesphere-logging-system",
+            "docs.kubesphere-carryon.top/workspace": "system-workspace"
         },
         "managedFields": [
             {
@@ -238,7 +238,7 @@ $ kubectl get namespace kubesphere-logging-system -o json > kubesphere-logging-s
                     "f:metadata": {
                         "f:labels": {
                             ".": {},
-                            "f:kubesphere.io/namespace": {}
+                            "f:docs.kubesphere-carryon.top/namespace": {}
                         },
                         "f:ownerReferences": {
                             ".": {},
@@ -264,7 +264,7 @@ $ kubectl get namespace kubesphere-logging-system -o json > kubesphere-logging-s
                 "fieldsV1": {
                     "f:metadata": {
                         "f:labels": {
-                            "f:kubesphere.io/workspace": {}
+                            "f:docs.kubesphere-carryon.top/workspace": {}
                         }
                     },
                     "f:status": {
@@ -333,7 +333,7 @@ $ kubectl get namespace kubesphere-logging-system -o json > kubesphere-logging-s
         "name": "kubesphere-logging-system",
         "ownerReferences": [
             {
-                "apiVersion": "tenant.kubesphere.io/v1alpha1",
+                "apiVersion": "tenant.docs.kubesphere-carryon.top/v1alpha1",
                 "blockOwnerDeletion": true,
                 "controller": true,
                 "kind": "Workspace",
@@ -373,14 +373,14 @@ $ kubectl get namespace kubesphere-logging-system -o json > kubesphere-logging-s
             },
             {
                 "lastTransitionTime": "2022-01-05T08:05:47Z",
-                "message": "Some resources are remaining: fluentbits.logging.kubesphere.io has 1 resource instances",
+                "message": "Some resources are remaining: fluentbits.logging.docs.kubesphere-carryon.top has 1 resource instances",
                 "reason": "SomeResourcesRemain",
                 "status": "True",
                 "type": "NamespaceContentRemaining"
             },
             {
                 "lastTransitionTime": "2022-01-05T08:05:47Z",
-                "message": "Some content in the namespace has finalizers remaining: fluentbit.logging.kubesphere.io in 1 resource instances",
+                "message": "Some content in the namespace has finalizers remaining: fluentbit.logging.docs.kubesphere-carryon.top in 1 resource instances",
                 "reason": "SomeFinalizersRemain",
                 "status": "True",
                 "type": "NamespaceFinalizersRemaining"

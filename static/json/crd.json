@@ -4,8 +4,8 @@
     "title": "KubeSphere",
     "contact": {
       "name": "KubeSphere",
-      "url": "https://kubesphere.io/",
-      "email": "info@kubesphere.io"
+      "url": "https://docs.kubesphere-carryon.top/",
+      "email": "info@docs.kubesphere-carryon.top"
     },
     "license": {
       "name": "Apache 2.0",
@@ -47,7 +47,7 @@
         }
       }
     },
-    "/apis/cluster.kubesphere.io/": {
+    "/apis/cluster.docs.kubesphere-carryon.top/": {
       "get": {
         "description": "get information of a group",
         "consumes": [
@@ -77,7 +77,7 @@
         }
       }
     },
-    "/apis/cluster.kubesphere.io/v1alpha1/": {
+    "/apis/cluster.docs.kubesphere-carryon.top/v1alpha1/": {
       "get": {
         "description": "get available resources",
         "consumes": [
@@ -107,7 +107,7 @@
         }
       }
     },
-    "/apis/cluster.kubesphere.io/v1alpha1/clusters": {
+    "/apis/cluster.docs.kubesphere-carryon.top/v1alpha1/clusters": {
       "get": {
         "description": "list or watch objects of kind Cluster",
         "consumes": [
@@ -195,7 +195,7 @@
         },
         "x-kubernetes-action": "list",
         "x-kubernetes-group-version-kind": {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Cluster"
         }
@@ -263,7 +263,7 @@
         },
         "x-kubernetes-action": "post",
         "x-kubernetes-group-version-kind": {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Cluster"
         }
@@ -388,7 +388,7 @@
         },
         "x-kubernetes-action": "deletecollection",
         "x-kubernetes-group-version-kind": {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Cluster"
         }
@@ -403,7 +403,7 @@
         }
       ]
     },
-    "/apis/cluster.kubesphere.io/v1alpha1/clusters/{name}": {
+    "/apis/cluster.docs.kubesphere-carryon.top/v1alpha1/clusters/{name}": {
       "get": {
         "description": "read the specified Cluster",
         "consumes": [
@@ -431,7 +431,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Cluster"
         }
@@ -493,7 +493,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Cluster"
         }
@@ -568,7 +568,7 @@
         },
         "x-kubernetes-action": "delete",
         "x-kubernetes-group-version-kind": {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Cluster"
         }
@@ -634,7 +634,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Cluster"
         }
@@ -657,7 +657,7 @@
         }
       ]
     },
-    "/apis/cluster.kubesphere.io/v1alpha1/clusters/{name}/status": {
+    "/apis/cluster.docs.kubesphere-carryon.top/v1alpha1/clusters/{name}/status": {
       "get": {
         "description": "read status of the specified Cluster",
         "consumes": [
@@ -685,7 +685,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Cluster"
         }
@@ -747,7 +747,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Cluster"
         }
@@ -813,7 +813,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Cluster"
         }
@@ -836,7 +836,7 @@
         }
       ]
     },
-    "/apis/cluster.kubesphere.io/v1alpha1/watch/clusters": {
+    "/apis/cluster.docs.kubesphere-carryon.top/v1alpha1/watch/clusters": {
       "get": {
         "description": "watch individual changes to a list of Cluster. deprecated: use the 'watch' parameter with a list operation instead.",
         "consumes": [
@@ -866,7 +866,7 @@
         },
         "x-kubernetes-action": "watchlist",
         "x-kubernetes-group-version-kind": {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Cluster"
         }
@@ -937,7 +937,7 @@
         }
       ]
     },
-    "/apis/cluster.kubesphere.io/v1alpha1/watch/clusters/{name}": {
+    "/apis/cluster.docs.kubesphere-carryon.top/v1alpha1/watch/clusters/{name}": {
       "get": {
         "description": "watch changes to an object of kind Cluster. deprecated: use the 'watch' parameter with a list operation instead, filtered to a single item with the 'fieldSelector' parameter.",
         "consumes": [
@@ -967,7 +967,7 @@
         },
         "x-kubernetes-action": "watch",
         "x-kubernetes-group-version-kind": {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Cluster"
         }
@@ -1046,7 +1046,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/": {
+    "/apis/devops.docs.kubesphere-carryon.top/": {
       "get": {
         "description": "get information of a group",
         "consumes": [
@@ -1076,7 +1076,7 @@
         }
       }
     },
-    "/apis/devops.kubesphere.io/v1alpha1/": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/": {
       "get": {
         "description": "get available resources",
         "consumes": [
@@ -1106,7 +1106,7 @@
         }
       }
     },
-    "/apis/devops.kubesphere.io/v1alpha1/s2ibinaries": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/s2ibinaries": {
       "get": {
         "description": "list or watch objects of kind S2iBinary",
         "consumes": [
@@ -1194,7 +1194,7 @@
         },
         "x-kubernetes-action": "list",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBinary"
         }
@@ -1262,7 +1262,7 @@
         },
         "x-kubernetes-action": "post",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBinary"
         }
@@ -1387,7 +1387,7 @@
         },
         "x-kubernetes-action": "deletecollection",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBinary"
         }
@@ -1402,7 +1402,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/s2ibinaries/{name}": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/s2ibinaries/{name}": {
       "get": {
         "description": "read the specified S2iBinary",
         "consumes": [
@@ -1430,7 +1430,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBinary"
         }
@@ -1492,7 +1492,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBinary"
         }
@@ -1567,7 +1567,7 @@
         },
         "x-kubernetes-action": "delete",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBinary"
         }
@@ -1633,7 +1633,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBinary"
         }
@@ -1656,7 +1656,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/s2ibinaries/{name}/status": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/s2ibinaries/{name}/status": {
       "get": {
         "description": "read status of the specified S2iBinary",
         "consumes": [
@@ -1684,7 +1684,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBinary"
         }
@@ -1746,7 +1746,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBinary"
         }
@@ -1812,7 +1812,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBinary"
         }
@@ -1835,7 +1835,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/s2ibuilders": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/s2ibuilders": {
       "get": {
         "description": "list or watch objects of kind S2iBuilder",
         "consumes": [
@@ -1923,7 +1923,7 @@
         },
         "x-kubernetes-action": "list",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilder"
         }
@@ -1991,7 +1991,7 @@
         },
         "x-kubernetes-action": "post",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilder"
         }
@@ -2116,7 +2116,7 @@
         },
         "x-kubernetes-action": "deletecollection",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilder"
         }
@@ -2131,7 +2131,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/s2ibuilders/{name}": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/s2ibuilders/{name}": {
       "get": {
         "description": "read the specified S2iBuilder",
         "consumes": [
@@ -2159,7 +2159,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilder"
         }
@@ -2221,7 +2221,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilder"
         }
@@ -2296,7 +2296,7 @@
         },
         "x-kubernetes-action": "delete",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilder"
         }
@@ -2362,7 +2362,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilder"
         }
@@ -2385,7 +2385,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/s2ibuilders/{name}/status": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/s2ibuilders/{name}/status": {
       "get": {
         "description": "read status of the specified S2iBuilder",
         "consumes": [
@@ -2413,7 +2413,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilder"
         }
@@ -2475,7 +2475,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilder"
         }
@@ -2541,7 +2541,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilder"
         }
@@ -2564,7 +2564,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/s2ibuildertemplates": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/s2ibuildertemplates": {
       "get": {
         "description": "list or watch objects of kind S2iBuilderTemplate",
         "consumes": [
@@ -2652,7 +2652,7 @@
         },
         "x-kubernetes-action": "list",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilderTemplate"
         }
@@ -2720,7 +2720,7 @@
         },
         "x-kubernetes-action": "post",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilderTemplate"
         }
@@ -2845,7 +2845,7 @@
         },
         "x-kubernetes-action": "deletecollection",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilderTemplate"
         }
@@ -2860,7 +2860,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/s2ibuildertemplates/{name}": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/s2ibuildertemplates/{name}": {
       "get": {
         "description": "read the specified S2iBuilderTemplate",
         "consumes": [
@@ -2888,7 +2888,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilderTemplate"
         }
@@ -2950,7 +2950,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilderTemplate"
         }
@@ -3025,7 +3025,7 @@
         },
         "x-kubernetes-action": "delete",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilderTemplate"
         }
@@ -3091,7 +3091,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilderTemplate"
         }
@@ -3114,7 +3114,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/s2ibuildertemplates/{name}/status": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/s2ibuildertemplates/{name}/status": {
       "get": {
         "description": "read status of the specified S2iBuilderTemplate",
         "consumes": [
@@ -3142,7 +3142,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilderTemplate"
         }
@@ -3204,7 +3204,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilderTemplate"
         }
@@ -3270,7 +3270,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilderTemplate"
         }
@@ -3293,7 +3293,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/s2iruns": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/s2iruns": {
       "get": {
         "description": "list or watch objects of kind S2iRun",
         "consumes": [
@@ -3381,7 +3381,7 @@
         },
         "x-kubernetes-action": "list",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iRun"
         }
@@ -3449,7 +3449,7 @@
         },
         "x-kubernetes-action": "post",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iRun"
         }
@@ -3574,7 +3574,7 @@
         },
         "x-kubernetes-action": "deletecollection",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iRun"
         }
@@ -3589,7 +3589,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/s2iruns/{name}": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/s2iruns/{name}": {
       "get": {
         "description": "read the specified S2iRun",
         "consumes": [
@@ -3617,7 +3617,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iRun"
         }
@@ -3679,7 +3679,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iRun"
         }
@@ -3754,7 +3754,7 @@
         },
         "x-kubernetes-action": "delete",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iRun"
         }
@@ -3820,7 +3820,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iRun"
         }
@@ -3843,7 +3843,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/s2iruns/{name}/status": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/s2iruns/{name}/status": {
       "get": {
         "description": "read status of the specified S2iRun",
         "consumes": [
@@ -3871,7 +3871,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iRun"
         }
@@ -3933,7 +3933,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iRun"
         }
@@ -3999,7 +3999,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iRun"
         }
@@ -4022,7 +4022,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/watch/s2ibinaries": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/watch/s2ibinaries": {
       "get": {
         "description": "watch individual changes to a list of S2iBinary. deprecated: use the 'watch' parameter with a list operation instead.",
         "consumes": [
@@ -4052,7 +4052,7 @@
         },
         "x-kubernetes-action": "watchlist",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBinary"
         }
@@ -4123,7 +4123,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/watch/s2ibinaries/{name}": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/watch/s2ibinaries/{name}": {
       "get": {
         "description": "watch changes to an object of kind S2iBinary. deprecated: use the 'watch' parameter with a list operation instead, filtered to a single item with the 'fieldSelector' parameter.",
         "consumes": [
@@ -4153,7 +4153,7 @@
         },
         "x-kubernetes-action": "watch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBinary"
         }
@@ -4232,7 +4232,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/watch/s2ibuilders": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/watch/s2ibuilders": {
       "get": {
         "description": "watch individual changes to a list of S2iBuilder. deprecated: use the 'watch' parameter with a list operation instead.",
         "consumes": [
@@ -4262,7 +4262,7 @@
         },
         "x-kubernetes-action": "watchlist",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilder"
         }
@@ -4333,7 +4333,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/watch/s2ibuilders/{name}": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/watch/s2ibuilders/{name}": {
       "get": {
         "description": "watch changes to an object of kind S2iBuilder. deprecated: use the 'watch' parameter with a list operation instead, filtered to a single item with the 'fieldSelector' parameter.",
         "consumes": [
@@ -4363,7 +4363,7 @@
         },
         "x-kubernetes-action": "watch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilder"
         }
@@ -4442,7 +4442,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/watch/s2ibuildertemplates": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/watch/s2ibuildertemplates": {
       "get": {
         "description": "watch individual changes to a list of S2iBuilderTemplate. deprecated: use the 'watch' parameter with a list operation instead.",
         "consumes": [
@@ -4472,7 +4472,7 @@
         },
         "x-kubernetes-action": "watchlist",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilderTemplate"
         }
@@ -4543,7 +4543,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/watch/s2ibuildertemplates/{name}": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/watch/s2ibuildertemplates/{name}": {
       "get": {
         "description": "watch changes to an object of kind S2iBuilderTemplate. deprecated: use the 'watch' parameter with a list operation instead, filtered to a single item with the 'fieldSelector' parameter.",
         "consumes": [
@@ -4573,7 +4573,7 @@
         },
         "x-kubernetes-action": "watch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iBuilderTemplate"
         }
@@ -4652,7 +4652,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/watch/s2iruns": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/watch/s2iruns": {
       "get": {
         "description": "watch individual changes to a list of S2iRun. deprecated: use the 'watch' parameter with a list operation instead.",
         "consumes": [
@@ -4682,7 +4682,7 @@
         },
         "x-kubernetes-action": "watchlist",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iRun"
         }
@@ -4753,7 +4753,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha1/watch/s2iruns/{name}": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha1/watch/s2iruns/{name}": {
       "get": {
         "description": "watch changes to an object of kind S2iRun. deprecated: use the 'watch' parameter with a list operation instead, filtered to a single item with the 'fieldSelector' parameter.",
         "consumes": [
@@ -4783,7 +4783,7 @@
         },
         "x-kubernetes-action": "watch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "S2iRun"
         }
@@ -4862,7 +4862,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha3/": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha3/": {
       "get": {
         "description": "get available resources",
         "consumes": [
@@ -4892,7 +4892,7 @@
         }
       }
     },
-    "/apis/devops.kubesphere.io/v1alpha3/devopsprojects": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha3/devopsprojects": {
       "get": {
         "description": "list or watch objects of kind DevOpsProject",
         "consumes": [
@@ -4980,7 +4980,7 @@
         },
         "x-kubernetes-action": "list",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "DevOpsProject"
         }
@@ -5048,7 +5048,7 @@
         },
         "x-kubernetes-action": "post",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "DevOpsProject"
         }
@@ -5173,7 +5173,7 @@
         },
         "x-kubernetes-action": "deletecollection",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "DevOpsProject"
         }
@@ -5188,7 +5188,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha3/devopsprojects/{name}": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha3/devopsprojects/{name}": {
       "get": {
         "description": "read the specified DevOpsProject",
         "consumes": [
@@ -5216,7 +5216,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "DevOpsProject"
         }
@@ -5278,7 +5278,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "DevOpsProject"
         }
@@ -5353,7 +5353,7 @@
         },
         "x-kubernetes-action": "delete",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "DevOpsProject"
         }
@@ -5419,7 +5419,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "DevOpsProject"
         }
@@ -5442,7 +5442,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha3/devopsprojects/{name}/status": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha3/devopsprojects/{name}/status": {
       "get": {
         "description": "read status of the specified DevOpsProject",
         "consumes": [
@@ -5470,7 +5470,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "DevOpsProject"
         }
@@ -5532,7 +5532,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "DevOpsProject"
         }
@@ -5598,7 +5598,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "DevOpsProject"
         }
@@ -5621,7 +5621,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha3/pipelines": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha3/pipelines": {
       "get": {
         "description": "list or watch objects of kind Pipeline",
         "consumes": [
@@ -5709,7 +5709,7 @@
         },
         "x-kubernetes-action": "list",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "Pipeline"
         }
@@ -5777,7 +5777,7 @@
         },
         "x-kubernetes-action": "post",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "Pipeline"
         }
@@ -5902,7 +5902,7 @@
         },
         "x-kubernetes-action": "deletecollection",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "Pipeline"
         }
@@ -5917,7 +5917,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha3/pipelines/{name}": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha3/pipelines/{name}": {
       "get": {
         "description": "read the specified Pipeline",
         "consumes": [
@@ -5945,7 +5945,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "Pipeline"
         }
@@ -6007,7 +6007,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "Pipeline"
         }
@@ -6082,7 +6082,7 @@
         },
         "x-kubernetes-action": "delete",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "Pipeline"
         }
@@ -6148,7 +6148,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "Pipeline"
         }
@@ -6171,7 +6171,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha3/pipelines/{name}/status": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha3/pipelines/{name}/status": {
       "get": {
         "description": "read status of the specified Pipeline",
         "consumes": [
@@ -6199,7 +6199,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "Pipeline"
         }
@@ -6261,7 +6261,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "Pipeline"
         }
@@ -6327,7 +6327,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "Pipeline"
         }
@@ -6350,7 +6350,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha3/watch/devopsprojects": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha3/watch/devopsprojects": {
       "get": {
         "description": "watch individual changes to a list of DevOpsProject. deprecated: use the 'watch' parameter with a list operation instead.",
         "consumes": [
@@ -6380,7 +6380,7 @@
         },
         "x-kubernetes-action": "watchlist",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "DevOpsProject"
         }
@@ -6451,7 +6451,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha3/watch/devopsprojects/{name}": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha3/watch/devopsprojects/{name}": {
       "get": {
         "description": "watch changes to an object of kind DevOpsProject. deprecated: use the 'watch' parameter with a list operation instead, filtered to a single item with the 'fieldSelector' parameter.",
         "consumes": [
@@ -6481,7 +6481,7 @@
         },
         "x-kubernetes-action": "watch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "DevOpsProject"
         }
@@ -6560,7 +6560,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha3/watch/pipelines": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha3/watch/pipelines": {
       "get": {
         "description": "watch individual changes to a list of Pipeline. deprecated: use the 'watch' parameter with a list operation instead.",
         "consumes": [
@@ -6590,7 +6590,7 @@
         },
         "x-kubernetes-action": "watchlist",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "Pipeline"
         }
@@ -6661,7 +6661,7 @@
         }
       ]
     },
-    "/apis/devops.kubesphere.io/v1alpha3/watch/pipelines/{name}": {
+    "/apis/devops.docs.kubesphere-carryon.top/v1alpha3/watch/pipelines/{name}": {
       "get": {
         "description": "watch changes to an object of kind Pipeline. deprecated: use the 'watch' parameter with a list operation instead, filtered to a single item with the 'fieldSelector' parameter.",
         "consumes": [
@@ -6691,7 +6691,7 @@
         },
         "x-kubernetes-action": "watch",
         "x-kubernetes-group-version-kind": {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "version": "v1alpha3",
           "kind": "Pipeline"
         }
@@ -6770,7 +6770,7 @@
         }
       ]
     },
-    "/apis/network.kubesphere.io/": {
+    "/apis/network.docs.kubesphere-carryon.top/": {
       "get": {
         "description": "get information of a group",
         "consumes": [
@@ -6800,7 +6800,7 @@
         }
       }
     },
-    "/apis/network.kubesphere.io/v1alpha1/": {
+    "/apis/network.docs.kubesphere-carryon.top/v1alpha1/": {
       "get": {
         "description": "get available resources",
         "consumes": [
@@ -6830,7 +6830,7 @@
         }
       }
     },
-    "/apis/network.kubesphere.io/v1alpha1/namespacenetworkpolicies": {
+    "/apis/network.docs.kubesphere-carryon.top/v1alpha1/namespacenetworkpolicies": {
       "get": {
         "description": "list or watch objects of kind NamespaceNetworkPolicy",
         "consumes": [
@@ -6918,7 +6918,7 @@
         },
         "x-kubernetes-action": "list",
         "x-kubernetes-group-version-kind": {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "NamespaceNetworkPolicy"
         }
@@ -6986,7 +6986,7 @@
         },
         "x-kubernetes-action": "post",
         "x-kubernetes-group-version-kind": {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "NamespaceNetworkPolicy"
         }
@@ -7111,7 +7111,7 @@
         },
         "x-kubernetes-action": "deletecollection",
         "x-kubernetes-group-version-kind": {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "NamespaceNetworkPolicy"
         }
@@ -7126,7 +7126,7 @@
         }
       ]
     },
-    "/apis/network.kubesphere.io/v1alpha1/namespacenetworkpolicies/{name}": {
+    "/apis/network.docs.kubesphere-carryon.top/v1alpha1/namespacenetworkpolicies/{name}": {
       "get": {
         "description": "read the specified NamespaceNetworkPolicy",
         "consumes": [
@@ -7154,7 +7154,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "NamespaceNetworkPolicy"
         }
@@ -7216,7 +7216,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "NamespaceNetworkPolicy"
         }
@@ -7291,7 +7291,7 @@
         },
         "x-kubernetes-action": "delete",
         "x-kubernetes-group-version-kind": {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "NamespaceNetworkPolicy"
         }
@@ -7357,7 +7357,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "NamespaceNetworkPolicy"
         }
@@ -7380,7 +7380,7 @@
         }
       ]
     },
-    "/apis/network.kubesphere.io/v1alpha1/namespacenetworkpolicies/{name}/status": {
+    "/apis/network.docs.kubesphere-carryon.top/v1alpha1/namespacenetworkpolicies/{name}/status": {
       "get": {
         "description": "read status of the specified NamespaceNetworkPolicy",
         "consumes": [
@@ -7408,7 +7408,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "NamespaceNetworkPolicy"
         }
@@ -7470,7 +7470,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "NamespaceNetworkPolicy"
         }
@@ -7536,7 +7536,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "NamespaceNetworkPolicy"
         }
@@ -7559,7 +7559,7 @@
         }
       ]
     },
-    "/apis/network.kubesphere.io/v1alpha1/watch/namespacenetworkpolicies": {
+    "/apis/network.docs.kubesphere-carryon.top/v1alpha1/watch/namespacenetworkpolicies": {
       "get": {
         "description": "watch individual changes to a list of NamespaceNetworkPolicy. deprecated: use the 'watch' parameter with a list operation instead.",
         "consumes": [
@@ -7589,7 +7589,7 @@
         },
         "x-kubernetes-action": "watchlist",
         "x-kubernetes-group-version-kind": {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "NamespaceNetworkPolicy"
         }
@@ -7660,7 +7660,7 @@
         }
       ]
     },
-    "/apis/network.kubesphere.io/v1alpha1/watch/namespacenetworkpolicies/{name}": {
+    "/apis/network.docs.kubesphere-carryon.top/v1alpha1/watch/namespacenetworkpolicies/{name}": {
       "get": {
         "description": "watch changes to an object of kind NamespaceNetworkPolicy. deprecated: use the 'watch' parameter with a list operation instead, filtered to a single item with the 'fieldSelector' parameter.",
         "consumes": [
@@ -7690,7 +7690,7 @@
         },
         "x-kubernetes-action": "watch",
         "x-kubernetes-group-version-kind": {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "NamespaceNetworkPolicy"
         }
@@ -7769,7 +7769,7 @@
         }
       ]
     },
-    "/apis/tenant.kubesphere.io/": {
+    "/apis/tenant.docs.kubesphere-carryon.top/": {
       "get": {
         "description": "get information of a group",
         "consumes": [
@@ -7799,7 +7799,7 @@
         }
       }
     },
-    "/apis/tenant.kubesphere.io/v1alpha1/": {
+    "/apis/tenant.docs.kubesphere-carryon.top/v1alpha1/": {
       "get": {
         "description": "get available resources",
         "consumes": [
@@ -7829,7 +7829,7 @@
         }
       }
     },
-    "/apis/tenant.kubesphere.io/v1alpha1/watch/workspaces": {
+    "/apis/tenant.docs.kubesphere-carryon.top/v1alpha1/watch/workspaces": {
       "get": {
         "description": "watch individual changes to a list of Workspace. deprecated: use the 'watch' parameter with a list operation instead.",
         "consumes": [
@@ -7859,7 +7859,7 @@
         },
         "x-kubernetes-action": "watchlist",
         "x-kubernetes-group-version-kind": {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Workspace"
         }
@@ -7930,7 +7930,7 @@
         }
       ]
     },
-    "/apis/tenant.kubesphere.io/v1alpha1/watch/workspaces/{name}": {
+    "/apis/tenant.docs.kubesphere-carryon.top/v1alpha1/watch/workspaces/{name}": {
       "get": {
         "description": "watch changes to an object of kind Workspace. deprecated: use the 'watch' parameter with a list operation instead, filtered to a single item with the 'fieldSelector' parameter.",
         "consumes": [
@@ -7960,7 +7960,7 @@
         },
         "x-kubernetes-action": "watch",
         "x-kubernetes-group-version-kind": {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Workspace"
         }
@@ -8039,7 +8039,7 @@
         }
       ]
     },
-    "/apis/tenant.kubesphere.io/v1alpha1/workspaces": {
+    "/apis/tenant.docs.kubesphere-carryon.top/v1alpha1/workspaces": {
       "get": {
         "description": "list or watch objects of kind Workspace",
         "consumes": [
@@ -8127,7 +8127,7 @@
         },
         "x-kubernetes-action": "list",
         "x-kubernetes-group-version-kind": {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Workspace"
         }
@@ -8195,7 +8195,7 @@
         },
         "x-kubernetes-action": "post",
         "x-kubernetes-group-version-kind": {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Workspace"
         }
@@ -8320,7 +8320,7 @@
         },
         "x-kubernetes-action": "deletecollection",
         "x-kubernetes-group-version-kind": {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Workspace"
         }
@@ -8335,7 +8335,7 @@
         }
       ]
     },
-    "/apis/tenant.kubesphere.io/v1alpha1/workspaces/{name}": {
+    "/apis/tenant.docs.kubesphere-carryon.top/v1alpha1/workspaces/{name}": {
       "get": {
         "description": "read the specified Workspace",
         "consumes": [
@@ -8363,7 +8363,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Workspace"
         }
@@ -8425,7 +8425,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Workspace"
         }
@@ -8500,7 +8500,7 @@
         },
         "x-kubernetes-action": "delete",
         "x-kubernetes-group-version-kind": {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Workspace"
         }
@@ -8566,7 +8566,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Workspace"
         }
@@ -8589,7 +8589,7 @@
         }
       ]
     },
-    "/apis/tenant.kubesphere.io/v1alpha1/workspaces/{name}/status": {
+    "/apis/tenant.docs.kubesphere-carryon.top/v1alpha1/workspaces/{name}/status": {
       "get": {
         "description": "read status of the specified Workspace",
         "consumes": [
@@ -8617,7 +8617,7 @@
         },
         "x-kubernetes-action": "get",
         "x-kubernetes-group-version-kind": {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Workspace"
         }
@@ -8679,7 +8679,7 @@
         },
         "x-kubernetes-action": "put",
         "x-kubernetes-group-version-kind": {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Workspace"
         }
@@ -8745,7 +8745,7 @@
         },
         "x-kubernetes-action": "patch",
         "x-kubernetes-group-version-kind": {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "version": "v1alpha1",
           "kind": "Workspace"
         }
@@ -9034,37 +9034,37 @@
           "version": "v1"
         },
         {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "kind": "DeleteOptions",
           "version": "v1alpha1"
         },
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "DeleteOptions",
           "version": "v1alpha1"
         },
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "DeleteOptions",
           "version": "v1alpha3"
         },
         {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "kind": "DeleteOptions",
           "version": "v1alpha1"
         },
         {
-          "group": "servicemesh.kubesphere.io",
+          "group": "servicemesh.docs.kubesphere-carryon.top",
           "kind": "DeleteOptions",
           "version": "v1alpha2"
         },
         {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "kind": "DeleteOptions",
           "version": "v1alpha1"
         },
         {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "kind": "DeleteOptions",
           "version": "v1alpha2"
         }
@@ -9433,37 +9433,37 @@
           "version": "v1"
         },
         {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "kind": "WatchEvent",
           "version": "v1alpha1"
         },
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "WatchEvent",
           "version": "v1alpha1"
         },
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "WatchEvent",
           "version": "v1alpha3"
         },
         {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "kind": "WatchEvent",
           "version": "v1alpha1"
         },
         {
-          "group": "servicemesh.kubesphere.io",
+          "group": "servicemesh.docs.kubesphere-carryon.top",
           "kind": "WatchEvent",
           "version": "v1alpha2"
         },
         {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "kind": "WatchEvent",
           "version": "v1alpha1"
         },
         {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "kind": "WatchEvent",
           "version": "v1alpha2"
         }
@@ -9502,7 +9502,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "kind": "Cluster",
           "version": "v1alpha1"
         }
@@ -9567,7 +9567,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "cluster.kubesphere.io",
+          "group": "cluster.docs.kubesphere-carryon.top",
           "kind": "ClusterList",
           "version": "v1alpha1"
         }
@@ -9871,7 +9871,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "S2iBinary",
           "version": "v1alpha1"
         }
@@ -9904,7 +9904,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "S2iBinaryList",
           "version": "v1alpha1"
         }
@@ -10045,7 +10045,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "S2iBuilder",
           "version": "v1alpha1"
         }
@@ -10078,7 +10078,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "S2iBuilderList",
           "version": "v1alpha1"
         }
@@ -10148,7 +10148,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "S2iBuilderTemplate",
           "version": "v1alpha1"
         }
@@ -10181,7 +10181,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "S2iBuilderTemplateList",
           "version": "v1alpha1"
         }
@@ -10535,7 +10535,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "S2iRun",
           "version": "v1alpha1"
         }
@@ -10568,7 +10568,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "S2iRunList",
           "version": "v1alpha1"
         }
@@ -10742,7 +10742,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "DevOpsProject",
           "version": "v1alpha3"
         }
@@ -10775,7 +10775,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "DevOpsProjectList",
           "version": "v1alpha3"
         }
@@ -11032,7 +11032,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "Pipeline",
           "version": "v1alpha3"
         }
@@ -11065,7 +11065,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "devops.kubesphere.io",
+          "group": "devops.docs.kubesphere-carryon.top",
           "kind": "PipelineList",
           "version": "v1alpha3"
         }
@@ -11170,7 +11170,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "kind": "NamespaceNetworkPolicy",
           "version": "v1alpha1"
         }
@@ -11203,7 +11203,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "network.kubesphere.io",
+          "group": "network.docs.kubesphere-carryon.top",
           "kind": "NamespaceNetworkPolicyList",
           "version": "v1alpha1"
         }
@@ -11342,7 +11342,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "kind": "Workspace",
           "version": "v1alpha1"
         }
@@ -11375,7 +11375,7 @@
       },
       "x-kubernetes-group-version-kind": [
         {
-          "group": "tenant.kubesphere.io",
+          "group": "tenant.docs.kubesphere-carryon.top",
           "kind": "WorkspaceList",
           "version": "v1alpha1"
         }

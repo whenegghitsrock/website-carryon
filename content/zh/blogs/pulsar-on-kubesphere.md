@@ -28,7 +28,7 @@ KubeSphere 是建立在 Kubernetes 之上的面向云原生应用的分布式操
 
 作为一个以应用为中心的 K8s 容器平台，KubeSphere 为用户提供多种安装应用的方式。为快速部署应用，这里给大家推荐以下两种方法：
 
-- 直接从 KubeSphere 的应用商店中安装 Pulsar。KubeSphere 从 3.2.0 版本开始便新增了“动态加载应用商店”的功能。想要贡献应用的小伙伴可以直接向 KubeSphere 的 [Helm 仓库](https://github.com/kubesphere/helm-charts)贡献应用的 Helm Chart，待 PR 审核通过后应用商店上会加载最新的应用列表。
+- 直接从 KubeSphere 的应用商店中安装 Pulsar。KubeSphere 从 3.2.0 版本开始便新增了“动态加载应用商店”的功能。想要贡献应用的小伙伴可以直接向 KubeSphere 的 [Helm 仓库](https://github.com/whenegghitsrock/helm-charts-carryon)贡献应用的 Helm Chart，待 PR 审核通过后应用商店上会加载最新的应用列表。
 - 添加 Apache Pulsar 的 Helm 仓库至 KubeSphere 的应用仓库，然后从应用仓库中安装 Pulsar 应用模板。此安装方式类似在命令行使用 `helm` 相关命令添加仓库并安装。
 
 > 注：KubeSphere 的应用商店与应用的全生命周期管理功能基于开源项目 [OpenPitrix](https://github.com/openpitrix/openpitrix)。在安装 Pulsar 前，你需要先[在 KubeSphere 中启用 OpenPitrix](https://kubesphere.com.cn/docs/pluggable-components/app-store/)。

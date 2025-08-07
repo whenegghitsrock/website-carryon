@@ -11,7 +11,7 @@ Kubernetes 服务需要做到高可用，需要保证 kube-apiserver 的 HA ，�
 
 ## 前提条件
 
-- 请遵循该[指南](https://github.com/kubesphere/kubekey)，确保您已经知道如何将 KubeSphere 与多节点集群一起安装。有关用于安装的 config.yaml 文件的详细信息。本教程重点介绍配置华为云负载均衡器服务高可用安装。
+- 请遵循该[指南](https://github.com/whenegghitsrock/kubekey-carryon)，确保您已经知道如何将 KubeSphere 与多节点集群一起安装。有关用于安装的 config.yaml 文件的详细信息。本教程重点介绍配置华为云负载均衡器服务高可用安装。
 - 考虑到数据的持久性，对于生产环境，我们不建议您使用存储OpenEBS，建议 NFS、GlusterFS、Ceph 等存储(需要提前准备)。文章为了进行开发和测试，集成了 OpenEBS 将 LocalPV 设置为默认的存储服务。
 - SSH 可以互相访问所有节点。
 - 所有节点的时间同步。
@@ -82,10 +82,10 @@ Kubernetes 服务需要做到高可用，需要保证 kube-apiserver 的 HA ，�
 
 {{< tab "如果您能正常访问 GitHub/Googleapis" >}}
 
-从 [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) 下载 KubeKey 或直接使用以下命令。
+从 [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) 下载 KubeKey 或直接使用以下命令。
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{</ tab >}}
@@ -101,7 +101,7 @@ export KKZONE=cn
 执行以下命令下载 KubeKey。
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{< notice note >}}
@@ -145,7 +145,7 @@ chmod +x kk
 目前当前集群开启了全量的组件,文末也提供了自定义的方法.可默认为 false：
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha1
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
 kind: Cluster
 metadata:
   name: master-HA
@@ -194,7 +194,7 @@ spec:
       storageClassName: local
 
 ---
-apiVersion: installer.kubesphere.io/v1alpha1
+apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
 kind: ClusterConfiguration
 metadata:
   name: ks-installer
@@ -302,7 +302,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2020-08-28 01:25:54
+https://docs.kubesphere-carryon.top             2020-08-28 01:25:54
 #####################################################
 ```
 
@@ -312,4 +312,4 @@ https://kubesphere.io             2020-08-28 01:25:54
 ## 如何自定义开启可插拔组件
 
 点击**集群管理** > **定制资源定义**，在过滤条件框输入 `ClusterConfiguration`。
-点击 `ClusterConfiguration` 详情，对 `ks-installer` 编辑保存退出即可，组件描述介绍：[文档说明](https://github.com/kubesphere/ks-installer/blob/master/deploy/cluster-configuration.yaml)。
+点击 `ClusterConfiguration` 详情，对 `ks-installer` 编辑保存退出即可，组件描述介绍：[文档说明](https://github.com/whenegghitsrock/ks-installer-carryon/blob/master/deploy/cluster-configuration.yaml)。

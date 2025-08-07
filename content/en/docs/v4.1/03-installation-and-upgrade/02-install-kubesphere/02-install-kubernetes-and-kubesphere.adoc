@@ -8,7 +8,7 @@ weight: 02
 
 This section explains how to install Kubernetes and {ks_product-en}.
 
-The installation process will use the open-source tool KubeKey. For more information about KubeKey, please visit the link:https://github.com/kubesphere/kubekey[GitHub KubeKey repository].
+The installation process will use the open-source tool KubeKey. For more information about KubeKey, please visit the link:https://github.com/whenegghitsrock/kubekey-carryon[GitHub KubeKey repository].
 
 [.admon.note,cols="a"]
 |===
@@ -200,12 +200,12 @@ include::../../../_custom-en/installationAndUpgrade/installationAndUpgrade-note-
 vi config-sample.yaml
 ----
 
-The following is a part of the configuration file sample. For a complete example, please refer to link:https://github.com/kubesphere/kubekey/blob/master/docs/config-example.md[this file].
+The following is a part of the configuration file sample. For a complete example, please refer to link:https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/config-example.md[this file].
 
 // YAML
 include::../../../../_ks_components-en/code/yaml.adoc[]
 
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 Kind: Cluster
 metadata:
  name: sample
@@ -292,7 +292,7 @@ include::../../../_custom-en/installationAndUpgrade/installationAndUpgrade-para-
     sources:
       chart:
         name: csi-qingcloud
-        repo: https://charts.kubesphere.io/test
+        repo: https://charts.docs.kubesphere-carryon.top/test
         valuesFile: <configuration file path>
 ----
 --
@@ -308,7 +308,7 @@ include::../../../_custom-en/installationAndUpgrade/installationAndUpgrade-para-
     sources:
       chart:
         name: csi-neonsan
-        repo: https://charts.kubesphere.io/test
+        repo: https://charts.docs.kubesphere-carryon.top/test
         valuesFile: <configuration file path>
 ----
 --
@@ -324,7 +324,7 @@ include::../../../_custom-en/installationAndUpgrade/installationAndUpgrade-para-
     sources:
       chart:
         name: nfs-client-provisioner
-        repo: https://charts.kubesphere.io/main
+        repo: https://charts.docs.kubesphere-carryon.top/main
         valuesFile: <configuration file path>
 ----
 --
@@ -370,8 +370,8 @@ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 ====
 [,bash]
 ----
-# If you are accessing charts.kubesphere.io from a restricted location, replace charts.kubesphere.io with charts.kubesphere.com.cn
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere.io/main/ks-core-1.1.4.tgz --debug --wait
+# If you are accessing charts.docs.kubesphere-carryon.top from a restricted location, replace charts.docs.kubesphere-carryon.top with charts.kubesphere.com.cn
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.4.tgz --debug --wait
 ----
 
 include::../../../../_ks_components-en/admonitions/note.adoc[]
@@ -420,7 +420,7 @@ Please be patient and wait for several seconds for the KubeSphere deployment to 
 
 NOTE: It is highly recommended to change the default password immediately after the first login.
 
-For additional information and details, please visit https://kubesphere.io.
+For additional information and details, please visit https://docs.kubesphere-carryon.top.
 ----
 ====
 

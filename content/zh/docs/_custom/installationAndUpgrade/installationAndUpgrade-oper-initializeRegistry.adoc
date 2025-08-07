@@ -9,12 +9,12 @@ vi config-sample.yaml
 
 ----
 
-以下为部分示例配置文件，如需了解完整示例，请参阅link:https://github.com/kubesphere/kubekey/blob/master/docs/config-example.md[此文件]。
+以下为部分示例配置文件，如需了解完整示例，请参阅link:https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/config-example.md[此文件]。
 
 // Bash
 include::../../../_ks_components/code/bash.adoc[]
 
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample

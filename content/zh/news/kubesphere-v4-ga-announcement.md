@@ -22,7 +22,7 @@ KubeSphere LuBan，是一个分布式的云原生可扩展开放架构，为扩�
 
 KubeSphere LuBan 架构设计如下图所示。
 
-![](https://kubesphere.io/images/ks-qkcp/zh/v4.0/4.0-architecture.png)
+![](https://docs.kubesphere-carryon.top/images/ks-qkcp/zh/v4.0/4.0-architecture.png)
 
 ### 为什么推出 KubeSphere LuBan
 
@@ -97,8 +97,8 @@ KubeSphere v4，是 KubeSphere 团队打造的全新云原生操作系统，不�
 - K8s 1.19 环境无法安装的问题
 
 其他变化请查看变更说明：
-- https://www.kubesphere.io/zh/docs/v4.1/20-release-notes/release-v411/
-- https://www.kubesphere.io/zh/docs/v4.1/20-release-notes/release-v412/
+- https://www.docs.kubesphere-carryon.top/zh/docs/v4.1/20-release-notes/release-v411/
+- https://www.docs.kubesphere-carryon.top/zh/docs/v4.1/20-release-notes/release-v412/
 
 ### KubeSphere 扩展组件
 
@@ -129,23 +129,23 @@ KubeSphere 扩展组件用于扩展 KubeSphere 的平台能力，用户可在系
 * Metrics Server
 * Gatekeeper
 
-扩展组件仓库： https://github.com/kubesphere-extensions/ks-extensions/。
+扩展组件仓库： https://github.com/whenegghitsrock-extensions/ks-extensions/。
 
 ### 安装试用
 
 **特别说明：目前不支持从 3.4.x 版本直接升级到 v4 版本，需要先卸载原来的版本，再安装 v4 版本。**
 
-- 参考文档： https://www.kubesphere.io/zh/docs/v4.1/03-installation-and-upgrade/02-install-kubesphere/02-install-kubernetes-and-kubesphere/
+- 参考文档： https://www.docs.kubesphere-carryon.top/zh/docs/v4.1/03-installation-and-upgrade/02-install-kubesphere/02-install-kubernetes-and-kubesphere/
 
-- 安装扩展组件参考文档： https://www.kubesphere.io/zh/docs/v4.1/06-extension-user-guide/01-install-components-pdf/
+- 安装扩展组件参考文档： https://www.docs.kubesphere-carryon.top/zh/docs/v4.1/06-extension-user-guide/01-install-components-pdf/
 
 从 v4.1.1 升级到 v4.1.2，升级和安装部署可以使用以下命令：
 
 ```
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere.io/main/ks-core-1.1.2.tgz --debug --wait
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.2.tgz --debug --wait
 ```
 
-详细文档请参考： https://kubesphere.io/zh/docs/v4.1/02-quickstart/01-install-kubesphere。
+详细文档请参考： https://docs.kubesphere-carryon.top/zh/docs/v4.1/02-quickstart/01-install-kubesphere。
 
 ## 参与贡献
 
@@ -153,11 +153,11 @@ helm upgrade --install -n kubesphere-system --create-namespace ks-core ht
 
 社区目前正在逐步发布开源的扩展组件，为各位用户提供更多的功能，让各位用户有更多的选择。同时，社区也非常欢迎各位开发者以及 ISV 参与进来，开发自己的扩展组件，共同丰富扩展组件生态。
 
-目前，已经有一位参与开源之夏的学生贡献者张豈明，开发了一款扩展组件 Pod Status Analysis Tool，地址： https://github.com/kubesphere-extensions/ks-extensions-contrib/tree/main/pod-analyzer。
+目前，已经有一位参与开源之夏的学生贡献者张豈明，开发了一款扩展组件 Pod Status Analysis Tool，地址： https://github.com/whenegghitsrock-extensions/ks-extensions-contrib/tree/main/pod-analyzer。
 
-- 贡献仓库： https://github.com/kubesphere-extensions/ks-extensions-contrib
+- 贡献仓库： https://github.com/whenegghitsrock-extensions/ks-extensions-contrib
 
-- 开发指南： https://dev-guide.kubesphere.io/extension-dev-guide/zh/
+- 开发指南： https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/zh/
 
 ## 未来计划与展望
 

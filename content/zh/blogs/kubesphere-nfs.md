@@ -282,7 +282,7 @@ metadata:
   name: demo4nfs
   namespace: ddddd
   annotations:
-    kubesphere.io/creator: admin
+    docs.kubesphere-carryon.top/creator: admin
     volume.beta.kubernetes.io/storage-provisioner: nfs/provisioner-229
   finalizers:
     - kubernetes.io/pvc-protection

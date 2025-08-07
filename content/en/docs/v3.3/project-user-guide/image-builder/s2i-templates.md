@@ -6,9 +6,9 @@ linkTitle: "Customize S2I Templates"
 weight: 10640
 ---
 
-Once you have understood the workflow and logic of Source-to-Image (S2I), you can customize Image Builder templates (i.e. S2I/B2I templates) based on your projects to extend S2I capabilities. KubeSphere provides several common Image Builder templates based on different languages, such as [Python](https://github.com/kubesphere/s2i-python-container/) and [Java](https://github.com/kubesphere/s2i-java-container/).
+Once you have understood the workflow and logic of Source-to-Image (S2I), you can customize Image Builder templates (i.e. S2I/B2I templates) based on your projects to extend S2I capabilities. KubeSphere provides several common Image Builder templates based on different languages, such as [Python](https://github.com/whenegghitsrock/s2i-python-container/) and [Java](https://github.com/whenegghitsrock/s2i-java-container/).
 
-This tutorial demonstrates how to create an Image Builder that contains an NGINX service. If you need to use runtime images in your project, refer to [this document](https://github.com/kubesphere/s2irun/blob/master/docs/runtime_image.md) for more information about how to create a runtime image.
+This tutorial demonstrates how to create an Image Builder that contains an NGINX service. If you need to use runtime images in your project, refer to [this document](https://github.com/whenegghitsrock/s2irun/blob/master/docs/runtime_image.md) for more information about how to create a runtime image.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ You need to have the required elements for S2I template customization ready in a
 
 {{< notice note >}}
 
-The Image Builder is compatible with that of OpenShift, and you can reuse it in KubeSphere. For more information about S2I Image Builders, refer to [S2IRun](https://github.com/kubesphere/s2irun/blob/master/docs/builder_image.md#s2i-builder-image-requirements).
+The Image Builder is compatible with that of OpenShift, and you can reuse it in KubeSphere. For more information about S2I Image Builders, refer to [S2IRun](https://github.com/whenegghitsrock/s2irun/blob/master/docs/builder_image.md#s2i-builder-image-requirements).
 
 {{</ notice >}}
 
@@ -119,7 +119,7 @@ CMD ["/usr/libexec/s2i/usage"]
 
 {{< notice note >}}
 
-S2I scripts will use the flags defined in the Dockerfile as parameters. If you need to use a base image different from those provided by KubeSphere, refer to [S2I Scripts](https://github.com/kubesphere/s2irun/blob/master/docs/builder_image.md#s2i-scripts).
+S2I scripts will use the flags defined in the Dockerfile as parameters. If you need to use a base image different from those provided by KubeSphere, refer to [S2I Scripts](https://github.com/whenegghitsrock/s2irun/blob/master/docs/builder_image.md#s2i-scripts).
 
 {{</ notice >}}
 
@@ -170,7 +170,7 @@ S2I scripts will use the flags defined in the Dockerfile as parameters. If you n
    #!/bin/bash -e
    cat <<EOF
    This is the nginx-centos7 S2I image:
-   To use it, install S2I: https://github.com/kubesphere/s2i-operator
+   To use it, install S2I: https://github.com/whenegghitsrock/s2i-operator
    Sample invocation:
    s2i build test/test-app kubespheredev/nginx-centos7 nginx-centos7-app
    You can then run the resulting image via:
@@ -259,12 +259,12 @@ Once you finish testing the S2I Image Builder locally, you can push the image to
 #### s2ibuildertemplate.yaml
 
 ```yaml
-apiVersion: devops.kubesphere.io/v1alpha1
+apiVersion: devops.docs.kubesphere-carryon.top/v1alpha1
 kind: S2iBuilderTemplate
 metadata:
   labels:
     controller-tools.k8s.io: "1.0"
-    builder-type.kubesphere.io/s2i: "s2i"
+    builder-type.docs.kubesphere-carryon.top/s2i: "s2i"
   name: nginx-demo
 spec:
   containerInfo:
@@ -281,7 +281,7 @@ spec:
 
    ```bash
    $ kubectl apply -f s2ibuildertemplate.yaml
-   s2ibuildertemplate.devops.kubesphere.io/nginx created
+   s2ibuildertemplate.devops.docs.kubesphere-carryon.top/nginx created
    ```
 
 2. You can find the customized S2I template available in **Build Environment** when you create an S2I build on KubeSphere.
@@ -292,9 +292,9 @@ Refer to the following detailed descriptions of S2I template labels passed as pa
 
 | Label Name                            | Option                 | Definition                                                   |
 | ------------------------------------- | ---------------------- | ------------------------------------------------------------ |
-| builder-type.kubesphere.io/s2i: "s2i" | "s2i"                  | The type of this template is S2I, which builds images based on application source code. |
-| builder-type.kubesphere.io/b2i        | "b2i"                  | The type of this template is B2I, which builds images based on binary files or other artifacts. |
-| binary-type.kubesphere.io             | "jar", "war", "binary" | This type is complementary to the type of B2I and will be required when B2I is selected. For example, select the type of "jar" when a JAR package is provided. In KubeSphere v2.1.1 and later, it is also allowed to customize B2I templates. |
+| builder-type.docs.kubesphere-carryon.top/s2i: "s2i" | "s2i"                  | The type of this template is S2I, which builds images based on application source code. |
+| builder-type.docs.kubesphere-carryon.top/b2i        | "b2i"                  | The type of this template is B2I, which builds images based on binary files or other artifacts. |
+| binary-type.docs.kubesphere-carryon.top             | "jar", "war", "binary" | This type is complementary to the type of B2I and will be required when B2I is selected. For example, select the type of "jar" when a JAR package is provided. In KubeSphere v2.1.1 and later, it is also allowed to customize B2I templates. |
 
 Refer to the following detailed descriptions of S2I template parameters. The required parameters are marked with an asterisk.
 

@@ -14,7 +14,7 @@ weight: 10815
 
 内置模板包括 MySQL、Elasticsearch、Redis等。这些模板仅供演示使用，并会根据 KubeSphere 新版本的发布同步更新。此外，您还可以创建自定义监控面板。
 
-KubeSphere 自定义监控面板可以视作为一个 YAML 配置文件。数据模型主要基于 [Grafana](https://github.com/grafana/grafana)（一个用于监控和可观测性的开源工具）创建，您可以在 [kubesphere/monitoring-dashboard](https://github.com/kubesphere/monitoring-dashboard) 中找到 KubeSphere 监控面板数据模型的设计。该配置文件便捷，可进行分享，欢迎您通过  [Monitoring Dashboards Gallery](https://github.com/kubesphere/monitoring-dashboard/tree/master/contrib/gallery) 对 KubeSphere 社区贡献面板模板。
+KubeSphere 自定义监控面板可以视作为一个 YAML 配置文件。数据模型主要基于 [Grafana](https://github.com/grafana/grafana)（一个用于监控和可观测性的开源工具）创建，您可以在 [kubesphere/monitoring-dashboard](https://github.com/whenegghitsrock/monitoring-dashboard) 中找到 KubeSphere 监控面板数据模型的设计。该配置文件便捷，可进行分享，欢迎您通过  [Monitoring Dashboards Gallery](https://github.com/whenegghitsrock/monitoring-dashboard/tree/master/contrib/gallery) 对 KubeSphere 社区贡献面板模板。
 
 ### 使用内置模板
 
@@ -68,4 +68,4 @@ KubeSphere 为 MySQL、Elasticsearch 和 Redis 提供内置模板方便您快速
 
 ## 面板模板
 
-您可以在 [Monitoring Dashboards Gallery](https://github.com/kubesphere/monitoring-dashboard/tree/master/contrib/gallery) 中找到并分享面板模板，KubeSphere 社区用户可以在这里贡献他们模板设计。
+您可以在 [Monitoring Dashboards Gallery](https://github.com/whenegghitsrock/monitoring-dashboard/tree/master/contrib/gallery) 中找到并分享面板模板，KubeSphere 社区用户可以在这里贡献他们模板设计。

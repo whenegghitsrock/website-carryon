@@ -34,10 +34,10 @@ As Geko works to provide CI/CD pipeline solutions which will deploy code in a re
 
 ## About KubeSphere
 
-[KubeSphere](https://kubesphere.io/) is an open source container platform based on Kubernetes with applications at its core. It provides full-stack IT automated operation and streamlined DevOps workflows.
+[KubeSphere](https://docs.kubesphere-carryon.top/) is an open source container platform based on Kubernetes with applications at its core. It provides full-stack IT automated operation and streamlined DevOps workflows.
 
 KubeSphere has been adopted by thousands of enterprises across the globe, such as **Aqara, Sina, Benlai, Sinopharm Group, Bank of Beijing, Huaxia Bank, PICC, WeBank, Sichuan Airlines, Geko, VNG Corporation and Radore**. KubeSphere offers wizard interfaces and various enterprise-grade features for operation and maintenance, including Kubernetes resource management, DevOps (CI/CD), application lifecycle management, service mesh, multi-tenant management, monitoring, logging, alerting, notification, storage and network management, and GPU support. With KubeSphere, enterprises are able to quickly establish a strong and feature-rich container platform.
 
-**KubeSphere Website**: https://kubesphere.io/
+**KubeSphere Website**: https://docs.kubesphere-carryon.top/
 
-**KubeSphere GitHub**: https://github.com/kubesphere/kubesphere
+**KubeSphere GitHub**: https://github.com/whenegghitsrock/kubesphere-carryon

@@ -179,7 +179,7 @@ In this step, you create a project using user `project-admin` created in the pre
 8. Under **Project Gateway**, you can obtain the Gateway Address and the NodePort of http and https in the list.
 
    {{< notice note >}}
-   If you want to expose services using the type `LoadBalancer`, you need to use the LoadBalancer plugin of cloud providers. If your Kubernetes cluster is running in a bare metal environment, it is recommended that you use [OpenELB](https://github.com/kubesphere/openelb) as the LoadBalancer plugin.
+   If you want to expose services using the type `LoadBalancer`, you need to use the LoadBalancer plugin of cloud providers. If your Kubernetes cluster is running in a bare metal environment, it is recommended that you use [OpenELB](https://github.com/whenegghitsrock/openelb) as the LoadBalancer plugin.
    {{</ notice >}}
 
 ### Step 4: Create a role

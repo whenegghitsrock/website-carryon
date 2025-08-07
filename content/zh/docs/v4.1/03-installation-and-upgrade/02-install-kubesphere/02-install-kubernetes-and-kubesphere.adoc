@@ -9,7 +9,7 @@ weight: 02
 
 本节介绍如何安装 Kubernetes 和{ks_product_left}。
 
-安装过程中将用到开源工具 KubeKey。有关 KubeKey 的更多信息，请访问 link:https://github.com/kubesphere/kubekey[GitHub KubeKey 仓库]。
+安装过程中将用到开源工具 KubeKey。有关 KubeKey 的更多信息，请访问 link:https://github.com/whenegghitsrock/kubekey-carryon[GitHub KubeKey 仓库]。
 
 
 == 前提条件
@@ -198,12 +198,12 @@ include::../../../_custom/installationAndUpgrade/installationAndUpgrade-note-doN
 vi config-sample.yaml
 ----
 
-以下为部分示例配置文件，如需了解完整示例，请参阅link:https://github.com/kubesphere/kubekey/blob/master/docs/config-example.md[此文件]。
+以下为部分示例配置文件，如需了解完整示例，请参阅link:https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/config-example.md[此文件]。
 
 // YAML
 [source,yaml]
 ----
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample
@@ -282,7 +282,7 @@ include::../../../_custom/installationAndUpgrade/installationAndUpgrade-para-con
     sources:
       chart:
         name: csi-qingcloud
-        repo: https://charts.kubesphere.io/test
+        repo: https://charts.docs.kubesphere-carryon.top/test
         valuesFile: <configuration file path>
 ----
 --
@@ -298,7 +298,7 @@ include::../../../_custom/installationAndUpgrade/installationAndUpgrade-para-con
     sources:
       chart:
         name: csi-neonsan
-        repo: https://charts.kubesphere.io/test
+        repo: https://charts.docs.kubesphere-carryon.top/test
         valuesFile: <configuration file path>
 ----
 --
@@ -314,7 +314,7 @@ include::../../../_custom/installationAndUpgrade/installationAndUpgrade-para-con
     sources:
       chart:
         name: nfs-client-provisioner
-        repo: https://charts.kubesphere.io/main
+        repo: https://charts.docs.kubesphere-carryon.top/main
         valuesFile: <configuration file path>
 ----
 --
@@ -360,8 +360,8 @@ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 ====
 [,bash]
 ----
-# 如果无法访问 charts.kubesphere.io, 可将 charts.kubesphere.io 替换为 charts.kubesphere.com.cn
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere.io/main/ks-core-1.1.4.tgz --debug --wait
+# 如果无法访问 charts.docs.kubesphere-carryon.top, 可将 charts.docs.kubesphere-carryon.top 替换为 charts.kubesphere.com.cn
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.4.tgz --debug --wait
 ----
 
 include::../../../../_ks_components/admonitions/note.adoc[]
@@ -410,7 +410,7 @@ Please be patient and wait for several seconds for the KubeSphere deployment to 
 
 NOTE: It is highly recommended to change the default password immediately after the first login.
 
-For additional information and details, please visit https://kubesphere.io.
+For additional information and details, please visit https://docs.kubesphere-carryon.top.
 ----
 ====
 

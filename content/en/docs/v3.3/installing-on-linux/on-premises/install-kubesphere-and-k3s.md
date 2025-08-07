@@ -29,10 +29,10 @@ Follow the step below to download [KubeKey](../../../installing-on-linux/introdu
 
 {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command directly.
+Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly.
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{</ tab >}}
@@ -48,7 +48,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{< notice note >}}
@@ -131,7 +131,7 @@ chmod +x kk
 
    {{< notice note >}}
 
-   For more information about each field in the configuration file, see [an example file](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md).
+   For more information about each field in the configuration file, see [an example file](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-2.2/docs/config-example.md).
 
    {{</ notice >}} 
 
@@ -167,7 +167,7 @@ chmod +x kk
      2. Please change the default password after login.
    
    #####################################################
-   https://kubesphere.io             20xx-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
    #####################################################
    ```
 

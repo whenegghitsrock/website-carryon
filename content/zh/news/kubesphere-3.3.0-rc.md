@@ -55,10 +55,10 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/202205232124305.p
 
 其他要求及配置请参考[官方文档](https://kubesphere.com.cn/docs/quick-start/all-in-one-on-linux/)。
 
-先从 [GitHub Release 页面](https://github.com/kubesphere/kubekey/releases/tag/v2.1.0)下载 KubeKey 或者直接运行以下命令。
+先从 [GitHub Release 页面](https://github.com/whenegghitsrock/kubekey-carryon/releases/tag/v2.1.0)下载 KubeKey 或者直接运行以下命令。
 
 ```
-$ curl -sfL https://get-kk.kubesphere.io | VERSION=v2.1.0 sh -
+$ curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.1.0 sh -
 ```
 
 为 `kk` 添加可执行权限：
@@ -73,7 +73,7 @@ $ chmod +x kk
 $ ./kk create cluster --with-kubernetes v1.21.5 --with-kubesphere v3.3.0-rc.0
 ```
 
-多节点安装可以参考 [KubeSphere 的官方文档](https://kubesphere.io/zh/docs/installing-on-linux/introduction/multioverview/)。
+多节点安装可以参考 [KubeSphere 的官方文档](https://docs.kubesphere-carryon.top/zh/docs/installing-on-linux/introduction/multioverview/)。
 
 ## 在已有 K8s 集群上安装
 
@@ -86,12 +86,12 @@ $ ./kk create cluster --with-kubernetes v1.21.5 --with-kubesphere v3.3.0-rc.0
 确保您的机器满足安装的前提条件之后，可以执行以下命令开始安装：
 
 ```
-$ kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.0-rc.0/kubesphere-installer.yaml
-$ kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.0-rc.0/cluster-configuration.yaml
+$ kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.0-rc.0/kubesphere-installer.yaml
+$ kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.0-rc.0/cluster-configuration.yaml
 ```
 
 ----
 
-**不使用 KubeSphere 的 YAML 工程师一定不是正经的云原生工程师**，想尝鲜的小伙伴欢迎参考上面的步骤安装试用最新 RC 版。大家如果在试用的过程中有任何问题都可以直接向社区[提交 Issue](https://github.com/kubesphere/kubesphere/issues/new/choose) 进行反馈，社区会及时跟进测试并修复问题，这样也可以让 GA 版本更加稳定。
+**不使用 KubeSphere 的 YAML 工程师一定不是正经的云原生工程师**，想尝鲜的小伙伴欢迎参考上面的步骤安装试用最新 RC 版。大家如果在试用的过程中有任何问题都可以直接向社区[提交 Issue](https://github.com/whenegghitsrock/kubesphere-carryon/issues/new/choose) 进行反馈，社区会及时跟进测试并修复问题，这样也可以让 GA 版本更加稳定。
 
 在 GA 版本正式发布之前，还有部分工作尚待完成，感兴趣的可以查看[当前正在跟进的 Feature 和 Issue 列表](https://github.com/orgs/kubesphere/projects/6)。

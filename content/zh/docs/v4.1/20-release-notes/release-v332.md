@@ -94,4 +94,4 @@ weight: 48
 - 修复删除服务时，相关的 pod 没有删除的问题。
 - 修复只有一个节点时，节点数量和角色显示错误的问题。
 
-有关 KubeSphere 3.3.2 的 Issue 和贡献者详细信息，请参阅 [GitHub](https://github.com/kubesphere/kubesphere/blob/master/CHANGELOG/CHANGELOG-3.3.2.md)。
+有关 KubeSphere 3.3.2 的 Issue 和贡献者详细信息，请参阅 [GitHub](https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/CHANGELOG/CHANGELOG-3.3.2.md)。

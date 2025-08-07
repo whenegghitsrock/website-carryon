@@ -10,7 +10,7 @@ This project uses [Hugo](https://gohugo.io/) to build the KubeSphere website.
 
 Contributions of any kind are welcome! Thanks goes to these wonderful contributors, they made our community and product grow fast.
 
-<a href="https://github.com/kubesphere/website/graphs/contributors">
+<a href="https://github.com/whenegghitsrock/website-carryon/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=kubesphere/website" />
 </a>
 

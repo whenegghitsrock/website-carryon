@@ -435,7 +435,7 @@ spec:
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/202111251142917.png)
 
-创建完成后可以直接得到一个非常丰富的 Apache APISIX 网关监控面板。KubeSphere 也同时在 [积极推进](https://github.com/kubesphere/kubesphere/issues/4433) 将 Grafana 模版导入的功能引入到项目的自定义监控能力中去，敬请期待！
+创建完成后可以直接得到一个非常丰富的 Apache APISIX 网关监控面板。KubeSphere 也同时在 [积极推进](https://github.com/whenegghitsrock/kubesphere-carryon/issues/4433) 将 Grafana 模版导入的功能引入到项目的自定义监控能力中去，敬请期待！
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/202111251142354.png)
 

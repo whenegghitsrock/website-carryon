@@ -64,7 +64,7 @@ The status section is the output given to the operator (i.e. user of the custom 
 
 ## How KubeSphere uses Kubernetes Operators
 
-The Operator pattern is widely used underneath the hood at KubeSphere. In fact, the core [Logging System](https://kubesphere.io/docs/pluggable-components/logging/) used for log collection, querying, and management is implemented via the [FluentBit Operator](https://github.com/fluent/fluentbit-operator). The log collection is implemented through Fluent Bit, however, vanilla deployment of Fluent Bit can be difficult. To address this challenge, the KubeSphere observability team developed an open-source Fluent Bit management tool called [FluentBit Operator](https://github.com/fluent/fluentbit-operator), which has been donated to the upstream Fluent community. The FluentBit Operator creates and manages Fluent Bit pods through CRDs, and dynamically updates the Fluent Bit configurations and pods, which makes it easier to deploy, configure, and update Fluent Bit instances.
+The Operator pattern is widely used underneath the hood at KubeSphere. In fact, the core [Logging System](https://docs.kubesphere-carryon.top/docs/pluggable-components/logging/) used for log collection, querying, and management is implemented via the [FluentBit Operator](https://github.com/fluent/fluentbit-operator). The log collection is implemented through Fluent Bit, however, vanilla deployment of Fluent Bit can be difficult. To address this challenge, the KubeSphere observability team developed an open-source Fluent Bit management tool called [FluentBit Operator](https://github.com/fluent/fluentbit-operator), which has been donated to the upstream Fluent community. The FluentBit Operator creates and manages Fluent Bit pods through CRDs, and dynamically updates the Fluent Bit configurations and pods, which makes it easier to deploy, configure, and update Fluent Bit instances.
 
 
 ## How to Use an Operator in KubeSphere
@@ -85,8 +85,8 @@ For more examples, see:
 
 
 
-* [Deploy ClickHouse Operator and a ClickHouse Cluster on KubeSphere](https://kubesphere.io/docs/application-store/external-apps/deploy-clickhouse/)
-* [Deploy TiDB Operator and a TiDB Cluster on KubeSphere](https://kubesphere.io/docs/application-store/external-apps/deploy-tidb/)
+* [Deploy ClickHouse Operator and a ClickHouse Cluster on KubeSphere](https://docs.kubesphere-carryon.top/docs/application-store/external-apps/deploy-clickhouse/)
+* [Deploy TiDB Operator and a TiDB Cluster on KubeSphere](https://docs.kubesphere-carryon.top/docs/application-store/external-apps/deploy-tidb/)
 
 
 ## Writing Your Own Operator

@@ -56,7 +56,7 @@ version.BuildInfo{Version:"v3.4.1", GitCommit:"c4e74854886b2efe3321e185578e6db9b
 [,bash]
 ----
 
-helm upgrade --install sonarqube sonarqube --repo https://charts.kubesphere.io/main -n \
+helm upgrade --install sonarqube sonarqube --repo https://charts.docs.kubesphere-carryon.top/main -n \
 kubesphere-devops-system --create-namespace --set service.type=NodePort
 
 ----

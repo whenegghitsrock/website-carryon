@@ -43,7 +43,7 @@ cd /data/kubekey
 export KKZONE=cn
 
 # 执行下载命令，获取最新版的 kk（受限于网络，有时需要执行多次）
-curl -sfL https://get-kk.kubesphere.io | sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 ```
 
 ### 1.2 创建 manifests 模板文件
@@ -89,7 +89,7 @@ Flags:
 4. 生成的配置文件如下
 
  ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Manifest
 metadata:
   name: opsxlab
@@ -171,7 +171,7 @@ spec:
 根据上面的文件及相关信息，生成最终的 manifest 文件 **ksp-v1.28.8-manifest-opsxlab.yaml**。
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Manifest
 metadata:
   name: opsxlab
@@ -251,7 +251,7 @@ spec:
 
 ### 1.4 获取操作系统依赖包
 
-本实验环境使用的操作系统是 x64 的 openEuler 22.03 LTS SP3，需要自己制作安装 Kubernetes 需要的操作系统依赖包镜像 **openEuler-22.03-rpms-amd64.iso**，其他操作系统请读者在 [KubeKey releases 页面](https://github.com/kubesphere/kubekey/releases)下载。
+本实验环境使用的操作系统是 x64 的 openEuler 22.03 LTS SP3，需要自己制作安装 Kubernetes 需要的操作系统依赖包镜像 **openEuler-22.03-rpms-amd64.iso**，其他操作系统请读者在 [KubeKey releases 页面](https://github.com/whenegghitsrock/kubekey-carryon/releases)下载。
 
 KubeKey 官方支持的操作系统依赖包，包含以下系统：
 
@@ -367,7 +367,7 @@ vi ksp-v1228-offline.yaml
 修改后的完整示例如下：
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample

@@ -12,7 +12,7 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/kubesphere-user-g
 
 为了让国内的云原生爱好者能够有更多的机会聚在一起面对面交流，自 2020 年起 KubeSphere 社区便组织了多场大大小小的线下 Meetup。同时，为了能够让那些狂热爱好者能够自发组织小范围的云原生技术交流和 Meetup，我们于 2021 年创立了社区用户委员会，分别成立了上海站、杭州站、成都站三个城市站，并已正常运转。
 
-目前，KubeSphere 社区用户委员会[官网落地页](https://kubesphere.io/zh/user-group/)已上线，关于委员会的信息和分享内容，各位小伙伴均可在此页面了解（也可在官网“社区”下拉菜单下找到“用户委员会”来获取信息）。
+目前，KubeSphere 社区用户委员会[官网落地页](https://docs.kubesphere-carryon.top/zh/user-group/)已上线，关于委员会的信息和分享内容，各位小伙伴均可在此页面了解（也可在官网“社区”下拉菜单下找到“用户委员会”来获取信息）。
 
 ## 社区用户委员会简介
 
@@ -32,7 +32,7 @@ KubeSphere 社区用户委员会，是由 KubeSphere 社区牵头发起，在某
 
 2022 年和 2023 年，社区又成立了广州站和深圳站两个城市站。
 
-以下是五个城市站的成员信息，具体介绍大家可在[官网](https://www.kubesphere.io/zh/user-group/)获取。
+以下是五个城市站的成员信息，具体介绍大家可在[官网](https://www.docs.kubesphere-carryon.top/zh/user-group/)获取。
 
 | 城市站 | 站长   | 副站长 | 委员     |
 | ------ | ------ | ------ | ------ |
@@ -63,7 +63,7 @@ KubeSphere 社区用户委员会上级组织为 Advocacy and Outreach SIG（即�
 
 ### 人员更换规则
 
-* 如果站长或副站长因个人原因，不想再担任此角色，可在社区提交申请（GitHub 提交 [issue](https://github.com/kubesphere/community/issues)），上级组织将会寻找合适的人员（首选是委员会成员）替代。
+* 如果站长或副站长因个人原因，不想再担任此角色，可在社区提交申请（GitHub 提交 [issue](https://github.com/whenegghitsrock/community/issues)），上级组织将会寻找合适的人员（首选是委员会成员）替代。
 * 基于以上原则，委员会的人员是流动的，委员有机会“晋升”为站长或副站长。
 
 ## 社区给予的支持
@@ -86,7 +86,7 @@ KubeSphere 社区用户委员会上级组织为 Advocacy and Outreach SIG（即�
 
 ### 加入方式：
 
-在 GitHub 提交 [issue](https://github.com/kubesphere/community/issues/new?assignees=&labels=area%2Fuser-group&projects=&template=user_group_guest.yml&title=REQUEST%3A+Apply+to+join+the+User+Group+in+%5Bcity+name%5D+)，对应城市站的站长及 Advocacy and Outreach SIG 中的一位 Member 通过，即可加入。
+在 GitHub 提交 [issue](https://github.com/whenegghitsrock/community/issues/new?assignees=&labels=area%2Fuser-group&projects=&template=user_group_guest.yml&title=REQUEST%3A+Apply+to+join+the+User+Group+in+%5Bcity+name%5D+)，对应城市站的站长及 Advocacy and Outreach SIG 中的一位 Member 通过，即可加入。
 
 > 我们设立了 issue 模板，可根据模板提交信息。
 
@@ -115,7 +115,7 @@ KubeSphere 社区用户委员会上级组织为 Advocacy and Outreach SIG（即�
 
 ### 申请方式
 
-站长在 GitHub 提交 issue，向社区[提交申请](https://github.com/kubesphere/community/issues/new?assignees=&labels=area%2Fuser-group&template=new_leader.yml&title=REQUEST%3A+New+leader+for+a+User+Group+in+new+city)，通过后即可成立。
+站长在 GitHub 提交 issue，向社区[提交申请](https://github.com/whenegghitsrock/community/issues/new?assignees=&labels=area%2Fuser-group&template=new_leader.yml&title=REQUEST%3A+New+leader+for+a+User+Group+in+new+city)，通过后即可成立。
 
 > 我们设立了 issue 模板，可根据模板提交信息。
 

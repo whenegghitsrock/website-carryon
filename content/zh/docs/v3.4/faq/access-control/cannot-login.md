@@ -21,7 +21,7 @@ KubeSphere 安装时会自动创建默认用户 (`admin/P@88w0rd`)，密码错�
    ```bash
    $ kubectl get users
    NAME         EMAIL                    STATUS
-   admin        admin@kubesphere.io      Active
+   admin        admin@docs.kubesphere-carryon.top      Active
    ```
 
 2. 检查 `ks-controller-manager` 是否正常运行，是否有异常日志：
@@ -39,10 +39,10 @@ Kubernetes 1.19 使用了 Golang 1.15 进行编译，需要更新 admission webh
 相关错误日志：
 
 ```bash
-Internal error occurred: failed calling webhook "validating-user.kubesphere.io": Post "https://ks-controller-manager.kubesphere-system.svc:443/validate-email-iam-kubesphere-io-v1alpha2-user?timeout=30s": x509: certificate relies on legacy Common Name field, use SANs or temporarily enable Common Name matching with GODEBUG=x509ignoreCN=0
+Internal error occurred: failed calling webhook "validating-user.docs.kubesphere-carryon.top": Post "https://ks-controller-manager.kubesphere-system.svc:443/validate-email-iam-kubesphere-io-v1alpha2-user?timeout=30s": x509: certificate relies on legacy Common Name field, use SANs or temporarily enable Common Name matching with GODEBUG=x509ignoreCN=0
 ```
 
-有关该问题和解决方式的更多信息，请参见[此 GitHub Issue](https://github.com/kubesphere/kubesphere/issues/2928)。
+有关该问题和解决方式的更多信息，请参见[此 GitHub Issue](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2928)。
 
 ### ks-controller-manager 无法正常工作
 
@@ -63,7 +63,7 @@ failed to connect to ldap service, please check ldap status, error: factory is n
 ```
 
 ```bash
-Internal error occurred: failed calling webhook “validating-user.kubesphere.io”: Post https://ks-controller-manager.kubesphere-system.svc:443/validate-email-iam-kubesphere-io-v1alpha2-user?timeout=4s: context deadline exceeded
+Internal error occurred: failed calling webhook “validating-user.docs.kubesphere-carryon.top”: Post https://ks-controller-manager.kubesphere-system.svc:443/validate-email-iam-kubesphere-io-v1alpha2-user?timeout=4s: context deadline exceeded
 ```
 
 **解决方式**

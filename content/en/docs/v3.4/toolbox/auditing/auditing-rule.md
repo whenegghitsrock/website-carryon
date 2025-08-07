@@ -8,14 +8,14 @@ weight: 15320
 
 An auditing rule defines the policy for processing auditing logs. KubeSphere Auditing Logs provide users with two CRD rules (`archiving-rule` and `alerting-rule`) for customization.
 
-After you enable [KubeSphere Auditing Logs](../../../pluggable-components/auditing-logs/), log in to the console with a user of `platform-admin` role. In **CRDs** on the **Cluster Management** page, enter `rules.auditing.kubesphere.io` in the search bar. Click the result **Rule** and you can see the two CRD rules.
+After you enable [KubeSphere Auditing Logs](../../../pluggable-components/auditing-logs/), log in to the console with a user of `platform-admin` role. In **CRDs** on the **Cluster Management** page, enter `rules.auditing.docs.kubesphere-carryon.top` in the search bar. Click the result **Rule** and you can see the two CRD rules.
 
 Below are examples of part of the rules.
 
 ## archiving-rule
 
 ```yaml
-apiVersion: auditing.kubesphere.io/v1alpha1
+apiVersion: auditing.docs.kubesphere-carryon.top/v1alpha1
 kind: Rule
 metadata:
   labels:
@@ -42,7 +42,7 @@ spec:
 ## alerting-rule
 
 ```yaml
-apiVersion: auditing.kubesphere.io/v1alpha1
+apiVersion: auditing.docs.kubesphere-carryon.top/v1alpha1
 kind: Rule
 metadata:
   labels:
@@ -129,7 +129,7 @@ RequestReceivedTimestamp >= "2020-06-12T09:23:28.359896Z" and RequestReceivedTim
 A `macro` is a rule condition snippet that can be re-used inside rules and even other macros. Macros provide a way to name common patterns and factor out redundancies in rules. Here is an example of a macro.
 
 ```yaml
-apiVersion: auditing.kubesphere.io/v1alpha1
+apiVersion: auditing.docs.kubesphere-carryon.top/v1alpha1
 kind: Rule
 metadata:
   name: alerting-rule
@@ -155,7 +155,7 @@ A `macro` can be used in rules or other macros like ${pod} or ${alerting-rule.po
 A `list` is a collection of items that can be included in rules, macros, or other lists. Unlike rules and macros, lists cannot be parsed as filtering expressions. Here is an example of a list.
 
 ```yaml
-apiVersion: auditing.kubesphere.io/v1alpha1
+apiVersion: auditing.docs.kubesphere-carryon.top/v1alpha1
 kind: Rule
 metadata:
   name: alerting-rule
@@ -179,7 +179,7 @@ spec:
 An `alias` is a short name of a filter field. It can be included in rules, macros, lists, and output strings. Here is an example of an alias.
 
 ```yaml
-apiVersion: auditing.kubesphere.io/v1alpha1
+apiVersion: auditing.docs.kubesphere-carryon.top/v1alpha1
 kind: Rule
 metadata:
   name: alerting-rule

@@ -29,7 +29,7 @@ KubeSphere 3.3 引入了一种为云原生应用实现持续部署的理念 – 
 5. 在**导入代码仓库**对话框，输入代码仓库名称，如 **open-podcasts**，并选择代码仓库。您也可以为代码仓库设置别名和添加描述信息。
 
 
-6. 在**选择代码仓库**对话框，点击 **Git**，在**代码仓库地址**区域，输入代码仓库地址，如 **https://github.com/kubesphere-sigs/open-podcasts**，点击**确定**。
+6. 在**选择代码仓库**对话框，点击 **Git**，在**代码仓库地址**区域，输入代码仓库地址，如 **https://github.com/whenegghitsrock-sigs/open-podcasts**，点击**确定**。
 
    {{< notice note >}}
 

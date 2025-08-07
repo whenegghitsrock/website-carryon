@@ -48,7 +48,7 @@ You can remove a cluster by using either of the following methods:
 6. Run the following command to clean up multi-cluster configuration data of the removed member cluster:
 
    ```bash
-   for ns in $(kubectl get ns --field-selector status.phase!=Terminating -o jsonpath='{.items[*].metadata.name}'); do kubectl label ns $ns kubesphere.io/workspace- && kubectl patch ns $ns --type merge -p '{"metadata":{"ownerReferences":[]}}'; done
+   for ns in $(kubectl get ns --field-selector status.phase!=Terminating -o jsonpath='{.items[*].metadata.name}'); do kubectl label ns $ns docs.kubesphere-carryon.top/workspace- && kubectl patch ns $ns --type merge -p '{"metadata":{"ownerReferences":[]}}'; done
    ```
 
 ## Remove an Unhealthy Cluster

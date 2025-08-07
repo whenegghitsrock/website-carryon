@@ -42,8 +42,8 @@ B 站  https://live.bilibili.com/22580654
 ### Q1：KubeSphere 目前的网关功能默认开启是 Nginx Ingress，是否把默认的换成 APISIX，目前安装 APISIX controller 后，无法在 KubeSphere console 的网关中看到，并通过 KubeSphere console 来管理应用路由和网关，有计划吗？
 
 A：这里有两篇文章可供参考：
-- [使用 Apache APISIX 作为 Kubernetes 的 Ingress Controller](https://kubesphere.io/zh/blogs/kubesphere-apacheapisix/)
-- [在 KubeSphere 中安装和使用 Apache APISIX Ingress 网关](https://kubesphere.io/zh/blogs/use-apache-apisix-ingress-in-kubesphere/)
+- [使用 Apache APISIX 作为 Kubernetes 的 Ingress Controller](https://docs.kubesphere-carryon.top/zh/blogs/kubesphere-apacheapisix/)
+- [在 KubeSphere 中安装和使用 Apache APISIX Ingress 网关](https://docs.kubesphere-carryon.top/zh/blogs/use-apache-apisix-ingress-in-kubesphere/)
 
 需要注意的是，如果集群中有多个 ingress controller 同时存在，那么需要注意通过 IngressClass 进行区分。
 

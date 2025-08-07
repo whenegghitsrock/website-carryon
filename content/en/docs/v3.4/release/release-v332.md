@@ -89,4 +89,4 @@ weight: 18095
 - Fix an issue where related pods are not deleted after users delete a service.
 - Fix an issue where the number of nodes and roles are incorrectly displayed when there is only one node.
 
-For more information about issues and contributors of KubeSphere 3.3.2, see [GitHub](https://github.com/kubesphere/kubesphere/blob/master/CHANGELOG/CHANGELOG-3.3.2.md).
+For more information about issues and contributors of KubeSphere 3.3.2, see [GitHub](https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/CHANGELOG/CHANGELOG-3.3.2.md).

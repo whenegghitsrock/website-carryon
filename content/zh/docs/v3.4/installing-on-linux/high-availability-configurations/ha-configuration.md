@@ -39,16 +39,16 @@ weight: 3150
 
 ## 下载 KubeKey
 
-[Kubekey](https://github.com/kubesphere/kubekey) 是新一代安装程序，可以简单、快速和灵活地安装 Kubernetes 和 KubeSphere。请按照以下步骤下载 KubeKey。
+[Kubekey](https://github.com/whenegghitsrock/kubekey-carryon) 是新一代安装程序，可以简单、快速和灵活地安装 Kubernetes 和 KubeSphere。请按照以下步骤下载 KubeKey。
 
 {{< tabs >}}
 
 {{< tab "如果您能正常访问 GitHub 和 Googleapis" >}}
 
-从 [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) 下载 KubeKey 或直接使用以下命令。
+从 [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) 下载 KubeKey 或直接使用以下命令。
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -64,7 +64,7 @@ export KKZONE=cn
 执行以下命令下载 KubeKey：
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}
@@ -211,6 +211,6 @@ spec:
      2. Please change the default password after login.
    
    #####################################################
-   https://kubesphere.io             2020-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             2020-xx-xx xx:xx:xx
    #####################################################
    ```

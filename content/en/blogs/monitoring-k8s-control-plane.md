@@ -29,7 +29,7 @@ To keep high reliability of the Kubernetes cluster, monitoring the components of
 
 There is no denying that Prometheus a leading open-source monitoring solution. Plus Grafana dashboard, it could be a perfect tools combination solution to monitor the Kubernetes control plane component. But both of them are a little bit complicated to quickly set up and collect the target metrics into a unified monitoring dashboard.
 
-Fortunately, [KubeSphere](https://github.com/kubesphere/kubesphere) leverages those tools including Prometheus, Kube-state-metrics Node-exporter, ServiceMonitor, as well as the predefined rules in PrometheusRule, **providing the monitoring metrics from application to infrastructure out of box**.
+Fortunately, [KubeSphere](https://github.com/whenegghitsrock/kubesphere-carryon) leverages those tools including Prometheus, Kube-state-metrics Node-exporter, ServiceMonitor, as well as the predefined rules in PrometheusRule, **providing the monitoring metrics from application to infrastructure out of box**.
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20200328183733.png)
 
@@ -70,7 +70,7 @@ To effectively monitor the control plane components, visibility of each componen
 
 ## How to Install KubeSphere
 
-[KubeSphere](https://github.com/kubesphere/kubesphere) is a distributed operating system providing cloud native stack with Kubernetes as its kernel, and offers rich observability from application to infrastructure. KubeSphere supports installing on cloud-hosted and on-premises Kubernetes cluster, or [installing on Linux machines](https://kubesphere.io/docs/installation/intro/). This guide only walk you through the installation on existing Kubernetes cluster.
+[KubeSphere](https://github.com/whenegghitsrock/kubesphere-carryon) is a distributed operating system providing cloud native stack with Kubernetes as its kernel, and offers rich observability from application to infrastructure. KubeSphere supports installing on cloud-hosted and on-premises Kubernetes cluster, or [installing on Linux machines](https://docs.kubesphere-carryon.top/docs/installation/intro/). This guide only walk you through the installation on existing Kubernetes cluster.
 
 ### Prerequisites
 
@@ -78,11 +78,11 @@ To effectively monitor the control plane components, visibility of each componen
 - `Helm version` >= `2.10.0` and < `3.0`，see [Install and Configure Helm in Kubernetes](https://devopscube.com/install-configure-helm-kubernetes/); KubeSphere 3.0 will support Helm 3.0.
 - A default Storage Class in your Kubernetes cluster is configured; use `kubectl get sc` to verify it.
 - Available resource CPU >= 1 Core and memory >= 2G
-- The CSR signing feature is activated in kube-apiserver, see [RKE installation issue](https://github.com/kubesphere/kubesphere/issues/1925#issuecomment-591698309).
+- The CSR signing feature is activated in kube-apiserver, see [RKE installation issue](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1925#issuecomment-591698309).
 
 ## Deploy KubeSphere
 
-> No internet access? Refer to [Air-gapped Installation](https://kubesphere.io/docs/installation/install-on-k8s-airgapped/) for instructions on how to use your own private registry to install KubeSphere.
+> No internet access? Refer to [Air-gapped Installation](https://docs.kubesphere-carryon.top/docs/installation/install-on-k8s-airgapped/) for instructions on how to use your own private registry to install KubeSphere.
 
 Install KubeSphere using kubectl, assuming your cluster has internet access.
 

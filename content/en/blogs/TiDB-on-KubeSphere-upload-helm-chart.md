@@ -8,15 +8,15 @@ author: 'Will, Feynman, Sherlock'
 snapshot: 'https://ap3.qingstor.com/kubesphere-website/docs/tidb-architecture.png'
 ---
 
-[My last blog](https://kubesphere.io/blogs/tidb-on-kubesphere-using-qke/) talked about how to deploy TiDB Operator and a TiDB cluster on KubeSphere. After you add an app repository to KubeSphere, apps within the repository are provided as app templates on the [container platform](https://kubesphere.io/). Tenants in the same workspace can deploy these app templates if they have necessary permissions. However, if you want these apps to be available to all workspace tenants, I recommend you release apps to the public repository of KubeSphere, also known as the KubeSphere App Store.
+[My last blog](https://docs.kubesphere-carryon.top/blogs/tidb-on-kubesphere-using-qke/) talked about how to deploy TiDB Operator and a TiDB cluster on KubeSphere. After you add an app repository to KubeSphere, apps within the repository are provided as app templates on the [container platform](https://docs.kubesphere-carryon.top/). Tenants in the same workspace can deploy these app templates if they have necessary permissions. However, if you want these apps to be available to all workspace tenants, I recommend you release apps to the public repository of KubeSphere, also known as the KubeSphere App Store.
 
 In this article, I will demonstrate another way to upload an app to KubeSphere and release it to the App Store.
 
 ## Before You Begin
 
-- You have [prepared the environment with KubeSphere installed](https://kubesphere.io/blogs/tidb-on-kubesphere-using-qke/#preparing-environments).
+- You have [prepared the environment with KubeSphere installed](https://docs.kubesphere-carryon.top/blogs/tidb-on-kubesphere-using-qke/#preparing-environments).
 
-- You have [enabled the KubeSphere App Store](https://kubesphere.io/docs/pluggable-components/app-store/).
+- You have [enabled the KubeSphere App Store](https://docs.kubesphere-carryon.top/docs/pluggable-components/app-store/).
 
 ## Preparing TiDB Helm Charts
 
@@ -69,7 +69,7 @@ As I will upload individual Helm charts of TiDB later, I need to first download 
 
 Now that you have Helm charts ready, you can upload them to KubeSphere as app templates.
 
-1. Log in to the web console of KubeSphere. As I described in my last blog, you need to create a workspace before you create any resources in it. You can see [the official documentation of KubeSphere](https://kubesphere.io/docs/quick-start/create-workspace-and-project/) to learn how to create a workspace.
+1. Log in to the web console of KubeSphere. As I described in my last blog, you need to create a workspace before you create any resources in it. You can see [the official documentation of KubeSphere](https://docs.kubesphere-carryon.top/docs/quick-start/create-workspace-and-project/) to learn how to create a workspace.
 
    ![create-workspace](https://ap3.qingstor.com/kubesphere-website/docs/20201026192648.png)
 
@@ -83,7 +83,7 @@ Now that you have Helm charts ready, you can upload them to KubeSphere as app te
 
 ## Deploying TiDB Operator and a TiDB Cluster
 
-1. To deploy apps, you need to [create a project](https://kubesphere.io/docs/quick-start/create-workspace-and-project/#task-3-create-a-project) (i.e. namespace) where all workloads of an app run.
+1. To deploy apps, you need to [create a project](https://docs.kubesphere-carryon.top/docs/quick-start/create-workspace-and-project/#task-3-create-a-project) (i.e. namespace) where all workloads of an app run.
 
    ![create-project](https://ap3.qingstor.com/kubesphere-website/docs/20201026193410.png)
 
@@ -95,13 +95,13 @@ Now that you have Helm charts ready, you can upload them to KubeSphere as app te
 
    ![app-template](https://ap3.qingstor.com/kubesphere-website/docs/20201026193657.png)
 
-4. All Helm charts uploaded individually as app templates will appear in **From workspace**. If you add an app repository to KubeSphere to provide app templates, they will display in other repositories in the drop-down list, which is exactly what I demonstrated in my last blog. Select **From workspace** here and click **tidb-cluster** and **tidb-operator** respectively to deploy them. For more information about how to configure them, see [my last blog](https://kubesphere.io/blogs/tidb-on-kubesphere-using-qke/).
+4. All Helm charts uploaded individually as app templates will appear in **From workspace**. If you add an app repository to KubeSphere to provide app templates, they will display in other repositories in the drop-down list, which is exactly what I demonstrated in my last blog. Select **From workspace** here and click **tidb-cluster** and **tidb-operator** respectively to deploy them. For more information about how to configure them, see [my last blog](https://docs.kubesphere-carryon.top/blogs/tidb-on-kubesphere-using-qke/).
 
    ![deploy-tidb](https://ap3.qingstor.com/kubesphere-website/docs/20201201141406.png)
 
 ## Releasing Apps to the App Store
 
-[App templates](https://kubesphere.io/docs/project-user-guide/application/app-template/) enable users to deploy and manage apps in a visualized way. Internally, they play an important role as shared resources (e.g. databases, middleware and operating systems) created by enterprises for the coordination and cooperation within teams.
+[App templates](https://docs.kubesphere-carryon.top/docs/project-user-guide/application/app-template/) enable users to deploy and manage apps in a visualized way. Internally, they play an important role as shared resources (e.g. databases, middleware and operating systems) created by enterprises for the coordination and cooperation within teams.
 
 You can release apps you have uploaded to KubeSphere to the public repository, also known as the App Store. In this way, all tenants on the platform can see these apps and deploy them if they have necessary permissions regardless of the workspace they belong to.
 
@@ -145,20 +145,20 @@ You can release apps you have uploaded to KubeSphere to the public repository, a
 
     ![tidb-operator](https://ap3.qingstor.com/kubesphere-website/docs/20201201154211.png)
 
-    For more information about how to deploy an app from the App Store, see the [KubeSphere documentation](https://kubesphere.io/docs/project-user-guide/application/deploy-app-from-appstore/). You can also see [Application Lifecycle Management](https://kubesphere.io/docs/application-store/app-lifecycle-management/) to know more about how an app is managed across its entire lifecycle.
+    For more information about how to deploy an app from the App Store, see the [KubeSphere documentation](https://docs.kubesphere-carryon.top/docs/project-user-guide/application/deploy-app-from-appstore/). You can also see [Application Lifecycle Management](https://docs.kubesphere-carryon.top/docs/application-store/app-lifecycle-management/) to know more about how an app is managed across its entire lifecycle.
 
 ## Summary
 
 Both TiDB and KubeSphere are powerful tools for us as we deploy containerized applications and use the distributed database on the cloud. As a big fan of open source, I hope both sides can continue to deliver efficient and effective cloud-native tools for us in production.
 
-If you have any questions, don’t hesitate to contact us in [Slack](https://join.slack.com/t/kubesphere/shared_invite/zt-2b4t6rdb4-ico_4UJzCln_S2c1pcrIpQ) or [GitHub](https://github.com/kubesphere).
+If you have any questions, don’t hesitate to contact us in [Slack](https://join.slack.com/t/kubesphere/shared_invite/zt-2b4t6rdb4-ico_4UJzCln_S2c1pcrIpQ) or [GitHub](https://github.com/whenegghitsrock).
 
 ## References
 
-[KubeSphere GitHub](https://github.com/kubesphere/kubesphere)
+[KubeSphere GitHub](https://github.com/whenegghitsrock/kubesphere-carryon)
 
 [TiDB GitHub](https://github.com/pingcap/TiDB)
 
 [TiDB Operator Documentation](https://docs.pingcap.com/tidb-in-kubernetes/stable/tidb-operator-overview)
 
-[KubeSphere Documentation](https://kubesphere.io/docs/)
+[KubeSphere Documentation](https://docs.kubesphere-carryon.top/docs/)

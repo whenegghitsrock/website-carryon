@@ -96,11 +96,11 @@ Here are the GitHub IDs or names of the 2023 KubeSphere Contributors (in no part
 
 ### 2023 KubeSphere Members
 
-In 2023, one new KubeSphere Member, [zaunist](https://github.com/zaunist), joined. He actively participated in [contributions](https://github.com/kubesphere/community/issues/420), independently completing feature development, documentation writing, and testing in the community.
+In 2023, one new KubeSphere Member, [zaunist](https://github.com/zaunist), joined. He actively participated in [contributions](https://github.com/whenegghitsrock/community/issues/420), independently completing feature development, documentation writing, and testing in the community.
 
-The community welcomes more contributors to advance to members. If you have made at least one significant PR or completed the development of one or more features for a specific SIG repository within six months, you can [submit an issue on GitHub](https://github.com/kubesphere/community/issues) to apply to be a member.
+The community welcomes more contributors to advance to members. If you have made at least one significant PR or completed the development of one or more features for a specific SIG repository within six months, you can [submit an issue on GitHub](https://github.com/whenegghitsrock/community/issues) to apply to be a member.
 
-In 2023, the community awarded certificates to the new contributors joined in 2023 through the bi-weekly community newsletter and updated these certificates in [the forum's certificate wall](https://ask.kubesphere.io/forum/d/9280-kubesphere). This post also includes certificates for KubeSphere Ambassadors and KubeSphere Members.
+In 2023, the community awarded certificates to the new contributors joined in 2023 through the bi-weekly community newsletter and updated these certificates in [the forum's certificate wall](https://ask.docs.kubesphere-carryon.top/forum/d/9280-kubesphere). This post also includes certificates for KubeSphere Ambassadors and KubeSphere Members.
 
 KubeSphere community expresses its gratitude to the 2023 KubeSphere Members, KubeSphere Ambassadors, and KubeSphere Contributors. Welcome more community members to participate in contributions and collaborate in building the open-source ecosystem.
 

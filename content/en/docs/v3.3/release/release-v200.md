@@ -39,7 +39,7 @@ KubeSphere 2.0.0 was released on **May 18th, 2019**.
 - CI/CD pipeline provides email notification and supports the email notification during construction.
 - Enhance CI/CD graphical editing pipelines, and more pipelines for common plugins and execution conditions.
 - Provide source code vulnerability scanning based on SonarQube 7.4.
-- Support [Source to Image](https://github.com/kubesphere/s2ioperator) feature.
+- Support [Source to Image](https://github.com/whenegghitsrock/s2ioperator) feature.
 
 ### Monitoring
 
@@ -54,7 +54,7 @@ KubeSphere 2.0.0 was released on **May 18th, 2019**.
 - Support real-time and history logs.
 - Support combined log query based on namespace, workload, Pod, container, key words and time limit.  
 - Support detail page of single and direct logs. Pods and containers can be switched.
-- [FluentBit Operator](https://github.com/kubesphere/fluentbit-operator) supports logging gathering settings: ElasticSearch, Kafka and Fluentd can be added, activated or turned off as log collectors. Before sending to log collectors, you can configure filtering conditions for needed logs.
+- [FluentBit Operator](https://github.com/whenegghitsrock/fluentbit-operator) supports logging gathering settings: ElasticSearch, Kafka and Fluentd can be added, activated or turned off as log collectors. Before sending to log collectors, you can configure filtering conditions for needed logs.
 
 ### Alerting and Notifications
 

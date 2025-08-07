@@ -30,7 +30,7 @@ NeuVector 此次开源的并非某个组件或者安全工具，而是一套完�
 | Kubei          | portshift             | https://github.com/cisco-open/kubei             | 489   | 镜像扫描(带面板)                   | 2020-03-22 |
 | Polaris        | Fairwinds             | https://github.com/FairwindsOps/polaris         | 2.4k  | 配置扫描与策略                     | 2018-11-15 |
 | kubesec        | controlplaneio        | https://github.com/controlplaneio/kubesec       | 667   | Kubernetes 配置扫描                | 2017-10-10 |
-| KubeEye        | KubeSphere            | https://github.com/kubesphere/kubeeye           | 424   | 基于策略的 Kubernetes 集群配置扫描 | 2020-11-07 |
+| KubeEye        | KubeSphere            | https://github.com/whenegghitsrock/kubeeye           | 424   | 基于策略的 Kubernetes 集群配置扫描 | 2020-11-07 |
 | kube-linter    | Stackrox(RedHat)      | https://github.com/stackrox/kube-linter         | 1.8k  | Kubernetes 配置扫描                | 2020-08-13 |
 
 上表中，我们列举出了来自各个安全厂商的主要开源项目。从上面的表格中我们可以看出,目前开源安全软件集中在四大类别：

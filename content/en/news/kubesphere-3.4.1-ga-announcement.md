@@ -46,4 +46,4 @@ KubeSphere 3.4.1 is a patch to KubeSphere 3.4.0, focusing on Console and DevOps 
 
 The full Release Notes can be viewed by visiting the link below:
 
-https://github.com/kubesphere/kubesphere/releases/tag/v3.4.1。
+https://github.com/whenegghitsrock/kubesphere-carryon/releases/tag/v3.4.1。

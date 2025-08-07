@@ -49,7 +49,7 @@ A：KubeSphere 的网关实际上就是 Nginx Ingress Controller，用户每开�
 
 ### Q2：OpenELB 和 MetaLB 区别和优缺点？
 
-A：MetalLB 在近期也加入了 CNCF Sandbox，该项目在 2017 年底发起，经过 4 年的发展已经在社区被广泛采用。OpenELB 作为后起之秀，采用了更加 Kubernetes-native 的实现方式，虽然起步更晚但得益于社区的帮助，已经迭代了 12 个版本并支持了多种路由方式。这篇文章中我们详细介绍了两者对比： https://kubesphere.io/zh/blogs/openelb-joins-cncf-sandbox-project/
+A：MetalLB 在近期也加入了 CNCF Sandbox，该项目在 2017 年底发起，经过 4 年的发展已经在社区被广泛采用。OpenELB 作为后起之秀，采用了更加 Kubernetes-native 的实现方式，虽然起步更晚但得益于社区的帮助，已经迭代了 12 个版本并支持了多种路由方式。这篇文章中我们详细介绍了两者对比： https://docs.kubesphere-carryon.top/zh/blogs/openelb-joins-cncf-sandbox-project/
 
 ### Q3：MetalLB 使用 ConfigMap 来配置 IP 池, OpenELB 使用 eip 来配置 IP 池的目的，我用 MetalLB 可以很明显看到和使用虚拟 IP(VIP) 访问比较简单不用外置硬件路由器，看 OpenELB 演示还是使用了域名或硬件路由，核心路由协议 BGP，在离线环境无硬件路由下怎样考虑架构。哪个协议性能更好？
 
@@ -69,11 +69,11 @@ A: 可以考虑将 interface 配置为 can_reach:192.168.1.1，这里的 192.168
 
 ### Q7：KubeSphere 网关默认的 Nginx ingress controller 方案可以替换成其它网关方案吗？比如 APISIX、Traefik、Kong？
 
-A：可以替换成其它网关方案，参考[在 Kubernetes 中安装和使用 Apache APISIX Ingress 网关](https://kubesphere.io/zh/blogs/use-apache-apisix-ingress-in-kubesphere/)。
+A：可以替换成其它网关方案，参考[在 Kubernetes 中安装和使用 Apache APISIX Ingress 网关](https://docs.kubesphere-carryon.top/zh/blogs/use-apache-apisix-ingress-in-kubesphere/)。
 
 ### Q8：开启 service 的 LB 类型，选择 OpenELB，service 的注解是必输入项？
 
-A: 不是必须的，当存在默认的 eip 时，OpenELB 自动处理没有任何主机的 LB 类型的 Service。可以通过给 eip 增加注解 `eip.openelb.kubesphere.io/is-default-eip: true` 将其设置为默认 eip。
+A: 不是必须的，当存在默认的 eip 时，OpenELB 自动处理没有任何主机的 LB 类型的 Service。可以通过给 eip 增加注解 `eip.openelb.docs.kubesphere-carryon.top/is-default-eip: true` 将其设置为默认 eip。
 
 ### Q9：配置地址池绑定接口是每个节点都需要绑定吗，还是绑定在某个节点？如果绑定到每个节点 L2 模式下节点接口处于某个 vlan 中，但是各个节点的接口可能不处于同一 vlan 同一个网段。
 
@@ -106,9 +106,9 @@ A：一个项目网关就是一个 Nginx ingress controller，毕竟是无状态
 
 ## 相关内容参考的链接：
 
-- 使用 Ingress-Nginx 进行灰度发布： https://v2-1.docs.kubesphere.io/docs/zh-CN/quick-start/ingress-canary/ 
-- KubeSphere 应用路由与服务示例入门： https://v2-1.docs.kubesphere.io/docs/zh-CN/quick-start/ingress-demo/
+- 使用 Ingress-Nginx 进行灰度发布： https://v2-1.docs.docs.kubesphere-carryon.top/docs/zh-CN/quick-start/ingress-canary/ 
+- KubeSphere 应用路由与服务示例入门： https://v2-1.docs.docs.kubesphere-carryon.top/docs/zh-CN/quick-start/ingress-demo/
 - 深入浅出 Kubernetes 项目网关与应用路由： https://kubesphere.com.cn/blogs/how-to-use-kubesphere-project-gateways-and-routes/
-- 在 Kubernetes 中安装和使用 Apache APISIX Ingress 网关： https://kubesphere.io/zh/blogs/use-apache-apisix-ingress-in-kubesphere/
-- OpenELB 项目进入 CNCF Sandbox，让私有化环境对外暴露服务更简单： https://kubesphere.io/zh/blogs/openelb-joins-cncf-sandbox-project/
+- 在 Kubernetes 中安装和使用 Apache APISIX Ingress 网关： https://docs.kubesphere-carryon.top/zh/blogs/use-apache-apisix-ingress-in-kubesphere/
+- OpenELB 项目进入 CNCF Sandbox，让私有化环境对外暴露服务更简单： https://docs.kubesphere-carryon.top/zh/blogs/openelb-joins-cncf-sandbox-project/
 - OpenELB 官网： https://openelb.github.io/

@@ -42,16 +42,16 @@ KubeSphere 4.1.3 开源版正式发布，本次更新包含多项功能优化和
 
 ### 注意事项
 
-更多更新内容，请参阅 [KubeSphere 4.1.3 发布说明](https://kubesphere.io/zh/docs/v4.1/20-release-notes/release-v413/)。
+更多更新内容，请参阅 [KubeSphere 4.1.3 发布说明](https://docs.kubesphere-carryon.top/zh/docs/v4.1/20-release-notes/release-v413/)。
 
-安装与升级，请参阅 [安装指南](https://kubesphere.io/zh/docs/v4.1/03-installation-and-upgrade/)。
+安装与升级，请参阅 [安装指南](https://docs.kubesphere-carryon.top/zh/docs/v4.1/03-installation-and-upgrade/)。
 
 注意：暂不支持从 v3.x 版本直接升级到 v4.x，计划在4月下旬的版本更新中支持。
 
 
 ### 反馈渠道：
 
-提交 Issue：[GitHub Issues](https://github.com/kubesphere/kubesphere/issues/new/choose)
+提交 Issue：[GitHub Issues](https://github.com/whenegghitsrock/kubesphere-carryon/issues/new/choose)
 
 社区讨论：[KubeSphere 论坛](https://ask.kubesphere.com.cn/forum/)
 

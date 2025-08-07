@@ -30,7 +30,7 @@ If you want to import the Member Cluster to a new Host Cluster while retaining e
 1. Run the following command on the Member Cluster to unbind the projects to be retained from your workspace.
 
    ```bash
-   kubectl label ns <namespace> kubesphere.io/workspace- && kubectl patch ns <namespace>   -p '{"metadata":{"ownerReferences":[]}}' --type=merge
+   kubectl label ns <namespace> docs.kubesphere-carryon.top/workspace- && kubectl patch ns <namespace>   -p '{"metadata":{"ownerReferences":[]}}' --type=merge
    ```
 
 2. Run the following command on the Member Cluster to clear your workspace.
@@ -42,7 +42,7 @@ If you want to import the Member Cluster to a new Host Cluster while retaining e
 3. When you create a workspace on the new Host Cluster and assign the Member Cluster to this workspace, run the following command on the Member Cluster to bind the projects retained for the workspace.
 
    ```bash
-   kuebctl label ns <namespace> kubesphere.io/workspace=<workspace name>
+   kuebctl label ns <namespace> docs.kubesphere-carryon.top/workspace=<workspace name>
    ```
 
 ### User Management

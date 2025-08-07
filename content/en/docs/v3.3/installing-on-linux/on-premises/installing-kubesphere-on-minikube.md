@@ -74,7 +74,7 @@ If your Minikube cluster environment meets all the requirements above, then you 
 
 {{< notice note >}}
 
-- The CSR signing feature is activated in `kube-apiserver` when it is started with the `--cluster-signing-cert-file` and `--cluster-signing-key-file` parameters. See [RKE installation issue](https://github.com/kubesphere/kubesphere/issues/1925#issuecomment-591698309).
+- The CSR signing feature is activated in `kube-apiserver` when it is started with the `--cluster-signing-cert-file` and `--cluster-signing-key-file` parameters. See [RKE installation issue](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1925#issuecomment-591698309).
 
 {{</ notice >}}
 
@@ -108,9 +108,9 @@ After you make sure your machine meets the conditions, perform the following ste
 2. Run the following commands to start installation:
 
     ```bash
-    kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.2.1/kubesphere-installer.yaml
+    kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.2.1/kubesphere-installer.yaml
     
-    kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.2.1/cluster-configuration.yaml
+    kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.2.1/cluster-configuration.yaml
     ```
 
 3. After KubeSphere is successfully installed, you can run the following command to view the installation logs:
@@ -139,7 +139,7 @@ This guide is used only for the minimal installation by default. For more inform
 
 ## Uninstall KubeSphere from Minikube
 
-You can uninstall KubeSphere from your existing Minikube cluster by using [kubesphere-delete.sh](https://github.com/kubesphere/ks-installer/blob/release-3.1/scripts/kubesphere-delete.sh). Copy it from the [GitHub source file](https://raw.githubusercontent.com/kubesphere/ks-installer/release-3.1/scripts/kubesphere-delete.sh) and execute this script on your local machine.
+You can uninstall KubeSphere from your existing Minikube cluster by using [kubesphere-delete.sh](https://github.com/whenegghitsrock/ks-installer-carryon/blob/release-3.1/scripts/kubesphere-delete.sh). Copy it from the [GitHub source file](https://raw.githubusercontent.com/kubesphere/ks-installer/release-3.1/scripts/kubesphere-delete.sh) and execute this script on your local machine.
 
 {{< notice warning >}}
 

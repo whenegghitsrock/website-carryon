@@ -34,7 +34,7 @@ export KKZONE=cn
 
 [,bash]
 ----
-curl -sfL https://get-kk.kubesphere.io | sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 ----
 --
 
@@ -66,8 +66,8 @@ apt install socat conntrack -y
 +
 [,bash]
 ----
-# 如果无法访问 charts.kubesphere.io, 可将 charts.kubesphere.io 替换为 charts.kubesphere.com.cn
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere.io/main/ks-core-1.1.4.tgz --debug --wait
+# 如果无法访问 charts.docs.kubesphere-carryon.top, 可将 charts.docs.kubesphere-carryon.top 替换为 charts.kubesphere.com.cn
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.4.tgz --debug --wait
 ----
 
 +
@@ -119,7 +119,7 @@ Please be patient and wait for several seconds for the KubeSphere deployment to 
 
 NOTE: It is highly recommended to change the default password immediately after the first login.
 
-For additional information and details, please visit https://kubesphere.io.
+For additional information and details, please visit https://docs.kubesphere-carryon.top.
 ----
 
 执行以下命令检查 Pod 状态。

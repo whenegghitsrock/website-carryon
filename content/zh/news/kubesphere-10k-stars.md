@@ -28,11 +28,11 @@ KubeSphere 致力于成为企业落地云原生的基石，即打造一个云原
 
 让我们来共同回顾 KubeSphere 项目在成长旅程中获得的成绩，诚挚地感谢所有的用户和贡献者：
 
-+ 发布了多个主要版本，最新的两个主要版本是 3.1 和 3.2，包含了众多新功能。具体可参考：[KubeSphere 3.2.0 发布：带来面向 AI 场景的 GPU 调度与更灵活的网关](https://kubesphere.io/zh/blogs/kubesphere-3.2.0-ga-announcement/)。
++ 发布了多个主要版本，最新的两个主要版本是 3.1 和 3.2，包含了众多新功能。具体可参考：[KubeSphere 3.2.0 发布：带来面向 AI 场景的 GPU 调度与更灵活的网关](https://docs.kubesphere-carryon.top/zh/blogs/kubesphere-3.2.0-ga-announcement/)。
 + 在 AWS、Azure、DigitalOcean、QingCloud 等全球各大公有云应用市场上架，分别集成了 Amazon EKS、Azure AKS、DigitalOcean Kubernetes 与青云 QKE 容器引擎。
 
 + 为了满足以云原生的方式管理 Fluent Bit 的需求开发了 **Fluentbit Operator**，随后不久捐献给 Fluent 社区。在集成了 Fluentd 之后，重新命名为 **Fluent Operator**（GitHub 地址： **https://github.com/fluent/fluent-operator**）。
-+ 为了解决在非公有云环境的 K8s 集群下对外暴露 LoadBalancer 服务的问题，KubeSphere 社区发起了 PorterLB 项目，后重命名为 [OpenELB](https://github.com/kubesphere/openelb/)，并于 **2021 年 11 月 10 日**正式进入 CNCF 沙箱（Sandbox）托管。
++ 为了解决在非公有云环境的 K8s 集群下对外暴露 LoadBalancer 服务的问题，KubeSphere 社区发起了 PorterLB 项目，后重命名为 [OpenELB](https://github.com/whenegghitsrock/openelb/)，并于 **2021 年 11 月 10 日**正式进入 CNCF 沙箱（Sandbox）托管。
 + 2020 年 12 月，KubeSphere 社区发起函数即服务（FaaS: Function-as-a-Service）项目 [OpenFunction](https://github.com/OpenFunction/OpenFunction/)，并于 **2022 年 4 月 27 日**正式进入 CNCF 沙箱（Sandbox）托管。
 + 至今有**上万家企业**在生产环境中使用 KubeSphere，包括金融、交通、能源、医疗、教育、制造等行业。
 + KubeSphere 开源社区目前成为广受开发者欢迎的社区，微信社群人数 **5000+**（进群方式：先关注公众号 KubeSphere 云原生，后台依次点击『加入社区』-->『加入社群』），Slack 社群人数近 **2000**。

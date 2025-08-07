@@ -70,14 +70,14 @@ For the first problem, Ingress can be used for L4 but the configuration of Ingre
 
 ![Portter](https://pek3b.qingstor.com/kubesphere-docs/png/20200611120450.png)
 
-All Porter codes are open source and documents are available in [GitHub](https://github.com/kubesphere/porter). You are welcome to star and use it.
+All Porter codes are open source and documents are available in [GitHub](https://github.com/whenegghitsrock/porter). You are welcome to star and use it.
 
 ## How to Install Porter
 
 Porter has been deployed and tested in two environments so far as below. You can see more details in GitHub about the deployment, test and process by clicking the link below. It is recommended to have a try:
 
-- [Deploy Porter on Bare Metal Kubernetes Cluster](https://github.com/kubesphere/porter/blob/master/doc/deploy_baremetal.md)
-- [Test in the QingCloud Platform Using a Simulated Router](https://github.com/kubesphere/porter/blob/master/doc/simulate_with_bird.md)
+- [Deploy Porter on Bare Metal Kubernetes Cluster](https://github.com/whenegghitsrock/porter/blob/master/doc/deploy_baremetal.md)
+- [Test in the QingCloud Platform Using a Simulated Router](https://github.com/whenegghitsrock/porter/blob/master/doc/simulate_with_bird.md)
 
 ## Principle
 

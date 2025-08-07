@@ -70,7 +70,7 @@ KubeEye 本身使用 Golang 编写，可使用编译好的二进制可执行文�
 #### 二进制安装
 
 ```shell
-wget https://github.com/kubesphere/kubeeye/releases/download/v0.3.0/kubeeye-0.3.0-linux-amd64.tar.gz
+wget https://github.com/whenegghitsrock/kubeeye/releases/download/v0.3.0/kubeeye-0.3.0-linux-amd64.tar.gz
 tar -zxvf kubeeye-0.3.0-linux-amd64.tar.gz
 mv kubeeye /usr/bin/
 ```
@@ -78,7 +78,7 @@ mv kubeeye /usr/bin/
 #### 源码编译安装
 
 ```shell
-git clone https://github.com/kubesphere/kubeeye.git
+git clone https://github.com/whenegghitsrock/kubeeye.git
 cd kubeeye 
 make installke
 ```
@@ -115,7 +115,7 @@ $ kubectl get clusterinsight -o yaml
 
 apiVersion: v1
 items:
-- apiVersion: kubeeye.kubesphere.io/v1alpha1
+- apiVersion: kubeeye.docs.kubesphere-carryon.top/v1alpha1
   kind: ClusterInsight
   metadata:
     name: clusterinsight-sample
@@ -247,4 +247,4 @@ kubeeye audit -p ./opa
 
 ## 参考链接
 
-*  https://github.com/kubesphere/kubeeye/
+*  https://github.com/whenegghitsrock/kubeeye/

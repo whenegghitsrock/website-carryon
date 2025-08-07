@@ -59,7 +59,7 @@ KubeSphere 选型理由有以下几点：
 创建制品清单 :
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Manifest
 metadata:
   name: sample
@@ -101,7 +101,7 @@ $ ./kk artifact export -m manifest-sample.yaml -o kubesphere.tar.gz
 创建部署清单：
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample

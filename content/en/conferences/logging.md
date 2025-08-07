@@ -17,7 +17,7 @@ As an essential part of observability, logs play an important role in developmen
 
 In the environment of physical or virtual machines, logs are generally exported as files and managed by users. This makes it difficult for centralized management and analysis. On the contrary, container technologies, such as Kubernetes and Docker, can export logs directly to stdout, providing great convenience for the centralized management and analysis of logs.
 
-The general logging architecture offered by the official website of Kubernetes is shown below, including logging agent, backend services and frontend console. Mature solutions (e.g. ELK/EFK) and the open source tool Loki launched in 2018 in the cloud native area share a similar architecture. More details will be provided below on the contribution of ELK/EFK, [Loki](https://github.com/grafana/loki) and [KubeSphere](https://github.com/kubesphere/kubesphere) in this regard.
+The general logging architecture offered by the official website of Kubernetes is shown below, including logging agent, backend services and frontend console. Mature solutions (e.g. ELK/EFK) and the open source tool Loki launched in 2018 in the cloud native area share a similar architecture. More details will be provided below on the contribution of ELK/EFK, [Loki](https://github.com/grafana/loki) and [KubeSphere](https://github.com/whenegghitsrock/kubesphere-carryon) in this regard.
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191001090839.png)
 
@@ -35,7 +35,7 @@ It can be seen that Fluent Bit turns out to be a better log collector as it uses
 
 Fluent Bit also has its own problems though it is more lightweight and efficient: after the configuration file is changed, the new configuration cannot be loaded automatically. Please refer to the official website in Github: [#PR 842](https://github.com/fluent/fluent-bit/pull/842) and [#issue 365](https://github.com/fluent/fluent-bit/issues/365).
 
-To solve the problems above, the KubeSphere development team has developed [FluentBit Operator](https://github.com/kubesphere/fluentbit-operator) and applied it to KubeSphere as the log collector. Here is how FluentBit Operator works:
+To solve the problems above, the KubeSphere development team has developed [FluentBit Operator](https://github.com/whenegghitsrock/fluentbit-operator) and applied it to KubeSphere as the log collector. Here is how FluentBit Operator works:
 
 1. Include the FluentBit Controller process in the main Container of FluentBit Pod to control the start and stop of the FluentBit main process;
 

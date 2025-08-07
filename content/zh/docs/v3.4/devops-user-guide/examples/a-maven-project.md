@@ -57,8 +57,8 @@ kubectl get cm -n kubesphere-devops-worker ks-devops-agent -o yaml
 ### Maven 项目准备工作
 
 - 确保您在开发设备上成功构建 Maven 项目。
-- 添加 Dockerfile 至项目仓库以构建镜像。有关更多信息，请参考 <https://github.com/kubesphere/devops-maven-sample/blob/master/Dockerfile-online>。
-- 添加 YAML 文件至项目仓库以部署工作负载。有关更多信息，请参考 <https://github.com/kubesphere/devops-maven-sample/tree/master/deploy/dev-ol>。如果有多个不同环境，您需要准备多个部署文件。
+- 添加 Dockerfile 至项目仓库以构建镜像。有关更多信息，请参考 <https://github.com/whenegghitsrock/devops-maven-sample/blob/master/Dockerfile-online>。
+- 添加 YAML 文件至项目仓库以部署工作负载。有关更多信息，请参考 <https://github.com/whenegghitsrock/devops-maven-sample/tree/master/deploy/dev-ol>。如果有多个不同环境，您需要准备多个部署文件。
 
 ### 创建凭证
 
@@ -106,7 +106,7 @@ kubectl get cm -n kubesphere-devops-worker ks-devops-agent -o yaml
            stage ('checkout scm') {
                steps {
                    // 下方所用的 GitHub 仓库仅用作体验功能的示例，请避免向该仓库提交包含测试性改动的 PR
-                   git branch: 'master', url: "https://github.com/kubesphere/devops-maven-sample.git"
+                   git branch: 'master', url: "https://github.com/whenegghitsrock/devops-maven-sample.git"
                }
            }
    

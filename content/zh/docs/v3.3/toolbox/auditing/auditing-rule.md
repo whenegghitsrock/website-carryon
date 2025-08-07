@@ -8,14 +8,14 @@ weight: 15320
 
 审计规则定义了处理审计日志的策略。KubeSphere 审计日志为用户提供两种 CRD 规则（`archiving-rule` 和 `alerting-rule`）以供自定义。
 
-启用 [KubeSphere 审计日志](../../../pluggable-components/auditing-logs/)后，使用拥有 `platform-admin` 角色的用户登录控制台。在**集群管理**页面转到**定制资源定义**，在搜索栏中输入 `rules.auditing.kubesphere.io`。点击搜索结果 **Rule**，您便可以看到这两种 CRD 规则。
+启用 [KubeSphere 审计日志](../../../pluggable-components/auditing-logs/)后，使用拥有 `platform-admin` 角色的用户登录控制台。在**集群管理**页面转到**定制资源定义**，在搜索栏中输入 `rules.auditing.docs.kubesphere-carryon.top`。点击搜索结果 **Rule**，您便可以看到这两种 CRD 规则。
 
 下方是部分规则的示例。
 
 ## archiving-rule
 
 ```yaml
-apiVersion: auditing.kubesphere.io/v1alpha1
+apiVersion: auditing.docs.kubesphere-carryon.top/v1alpha1
 kind: Rule
 metadata:
   labels:
@@ -42,7 +42,7 @@ spec:
 ## alerting-rule
 
 ```yaml
-apiVersion: auditing.kubesphere.io/v1alpha1
+apiVersion: auditing.docs.kubesphere-carryon.top/v1alpha1
 kind: Rule
 metadata:
   labels:
@@ -129,7 +129,7 @@ RequestReceivedTimestamp >= "2020-06-12T09:23:28.359896Z" and RequestReceivedTim
 `macro` 是一种规则条件片段，可以在规则甚至其他宏中复用。宏提供了一种命名常用模式的方法，并消除了规则中的冗余。以下是一个宏的示例。
 
 ```yaml
-apiVersion: auditing.kubesphere.io/v1alpha1
+apiVersion: auditing.docs.kubesphere-carryon.top/v1alpha1
 kind: Rule
 metadata:
   name: alerting-rule
@@ -155,7 +155,7 @@ spec:
 `list` 是一个可以包含在规则、宏或其他 List 中的项目的集合。与规则和宏不同，List 不能被解析为过滤表达式。下面是一个 List 的示例。
 
 ```yaml
-apiVersion: auditing.kubesphere.io/v1alpha1
+apiVersion: auditing.docs.kubesphere-carryon.top/v1alpha1
 kind: Rule
 metadata:
   name: alerting-rule
@@ -179,7 +179,7 @@ spec:
 `alias` 是一个过滤字段的简称。它可以包含在规则、宏、List 和输出字符串中。下面是一个 Alias 的示例。
 
 ```yaml
-apiVersion: auditing.kubesphere.io/v1alpha1
+apiVersion: auditing.docs.kubesphere-carryon.top/v1alpha1
 kind: Rule
 metadata:
   name: alerting-rule

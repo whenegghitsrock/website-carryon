@@ -76,7 +76,7 @@ curl -X POST -H 'Content-Type: application/x-www-form-urlencoded' \
 ```bash
 $ curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidWlkIjoiYTlhNjJmOTEtYWQ2Yi00MjRlLWIxNWEtZTFkOTcyNmUzNDFhIiwidG9rZW5fdHlwZSI6ImFjY2Vzc190b2tlbiIsImV4cCI6MTYwMDg1MjM5OCwiaWF0IjoxNjAwODQ1MTk4LCJpc3MiOiJrdWJlc3BoZXJlIiwibmJmIjoxNjAwODQ1MTk4fQ.Hcyf-CPMeq8XyQQLz5PO-oE1Rp1QVkOeV_5J2oX1hvU" \
   -H 'Content-Type: application/json' \
-  'http://[node ip]:31407/kapis/resources.kubesphere.io/v1alpha3/nodes'
+  'http://[node ip]:31407/kapis/resources.docs.kubesphere-carryon.top/v1alpha3/nodes'
 
 {
  "items": [
@@ -116,10 +116,10 @@ $ curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ
 
 ## API 参考
 
-KubeSphere API Swagger JSON 文件可以在 https://github.com/kubesphere/kubesphere/tree/release-3.4/api 仓库中找到。
+KubeSphere API Swagger JSON 文件可以在 https://github.com/whenegghitsrock/kubesphere-carryon/tree/release-3.4/api 仓库中找到。
 
-- KubeSphere 已指定 API [Swagger Json](https://github.com/kubesphere/kubesphere/blob/release-3.1/api/ks-openapi-spec/swagger.json) 文件，它包含所有只适用于 KubeSphere 的 API。
-- KubeSphere 已指定 CRD [Swagger Json](https://github.com/kubesphere/kubesphere/blob/release-3.1/api/openapi-spec/swagger.json) 文件，它包含所有已生成的 CRD API 文档，与 Kubernetes API 对象相同。
+- KubeSphere 已指定 API [Swagger Json](https://github.com/whenegghitsrock/kubesphere-carryon/blob/release-3.1/api/ks-openapi-spec/swagger.json) 文件，它包含所有只适用于 KubeSphere 的 API。
+- KubeSphere 已指定 CRD [Swagger Json](https://github.com/whenegghitsrock/kubesphere-carryon/blob/release-3.1/api/openapi-spec/swagger.json) 文件，它包含所有已生成的 CRD API 文档，与 Kubernetes API 对象相同。
 - kubernetes API 参考：https://kubernetes.io/docs/concepts/overview/kubernetes-api/
 
-您也可以[点击这里](https://kubesphere.io/api/kubesphere)查看 KubeSphere API 文档。
+您也可以[点击这里](https://docs.kubesphere-carryon.top/api/kubesphere)查看 KubeSphere API 文档。

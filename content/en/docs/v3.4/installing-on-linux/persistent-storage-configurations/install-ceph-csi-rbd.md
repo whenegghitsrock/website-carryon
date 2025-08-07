@@ -56,7 +56,7 @@ metadata:
    name: csi-rbd-sc
    annotations:
      storageclass.beta.kubernetes.io/is-default-class: "true"
-     storageclass.kubesphere.io/supported-access-modes: '["ReadWriteOnce","ReadOnlyMany","ReadWriteMany"]'
+     storageclass.docs.kubesphere-carryon.top/supported-access-modes: '["ReadWriteOnce","ReadOnlyMany","ReadWriteMany"]'
 provisioner: rbd.csi.ceph.com
 parameters:
    clusterID: "cluster1"
@@ -111,7 +111,7 @@ sc:
   isDefault: false
 ```
 
-If you want to configure more values, see [chart configuration for rbd-provisioner](https://github.com/kubesphere/helm-charts/tree/master/src/test/rbd-provisioner#configuration).
+If you want to configure more values, see [chart configuration for rbd-provisioner](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/test/rbd-provisioner#configuration).
 
 #### Add-on configurations
 
@@ -123,6 +123,6 @@ Save the above chart config locally (for example, `/root/rbd-provisioner.yaml`).
   sources:
     chart:
       name: rbd-provisioner
-      repo: https://charts.kubesphere.io/test
+      repo: https://charts.docs.kubesphere-carryon.top/test
       valuesFile: /root/rbd-provisioner.yaml
 ```

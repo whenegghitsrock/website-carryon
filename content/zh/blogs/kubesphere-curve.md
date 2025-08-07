@@ -25,7 +25,7 @@ Curve 是一个高性能、轻量级操作、本地云的开源分布式存储�
 ## 开始部署
 
 K8s 环境可以通过安装 KubeSphere 进行部署 , 我使用的是高可用方案。
-在公有云上安装 KubeSphere 参考文档：[多节点安装](https://v3-1.docs.kubesphere.io/zh/docs/installing-on-linux/public-cloud/install-kubesphere-on-huaweicloud-ecs/ "多节点安装")
+在公有云上安装 KubeSphere 参考文档：[多节点安装](https://v3-1.docs.docs.kubesphere-carryon.top/zh/docs/installing-on-linux/public-cloud/install-kubesphere-on-huaweicloud-ecs/ "多节点安装")
 
 ```bash
 [root@k8s-master ~]# kubectl get node

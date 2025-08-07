@@ -12,7 +12,7 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/202206271135109.j
 
 The CNCF annual report points out that the dominance of containerization and K8s is becoming secure, and K8s is slowly turning into a background technology: it is everywhere, but not felt by people. This situation benefited from a variety of platforms that make K8s easier to use, among which KubeSphere is one of the leading players. KubeSphere eliminates the complexity and disparity of the underlying K8s cluster for and provides users with an open architecture that supports pluggable components for seamless integration of third-party applications, removing the barriers for enterprises to implement K8s.
 
-KubeSphere [v3.1](https://kubesphere.io/news/kubesphere-3.1.0-ga-announcement/) and [v3.2](https://kubesphere.io/news/kubesphere-3.2.0-ga-announcement/) released in 2021 provided users with exciting features including **Edge Computing**, **Metering and Billing**, and **GPU Resource Scheduling**, which extended K8s from the cloud to the edge and enhanced user experience in cloud-native AI scenarios.
+KubeSphere [v3.1](https://docs.kubesphere-carryon.top/news/kubesphere-3.1.0-ga-announcement/) and [v3.2](https://docs.kubesphere-carryon.top/news/kubesphere-3.2.0-ga-announcement/) released in 2021 provided users with exciting features including **Edge Computing**, **Metering and Billing**, and **GPU Resource Scheduling**, which extended K8s from the cloud to the edge and enhanced user experience in cloud-native AI scenarios.
 
 KubeSphere v3.3.0 now brings more fervently anticipated features. The continuous deployment solution based on **GitOps** makes DevOps on KubeSphere more powerful. The interaction designs of multiple features, including **Multi-cluster Management, Multi-tenancy, Observability, App Store, Application Governance, Edge Computing, and Storage Management**, are optimized for better user experience.
 
@@ -34,7 +34,7 @@ For example, if nginx-ingress and knative-serving have been installed in your Ku
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/202206271709605.png)
 
-Jenkins is a CI engine with a large user base and a rich plugin ecosystem. We will let Jenkins do what it is good at—functioning only as an engine in the backend to provide stable pipeline management capability. Previously, KubeSphere DevOps used a polling method to implement data synchronization of Jenkins pipelines, which resulted in a lot of computing resource overheads. In KubeSphere v3.3.0, a new Jenkins plugin has been introduced, which sends events on Jenkins to [ks-devops](https://github.com/kubesphere/ks-devops) through a webhook.
+Jenkins is a CI engine with a large user base and a rich plugin ecosystem. We will let Jenkins do what it is good at—functioning only as an engine in the backend to provide stable pipeline management capability. Previously, KubeSphere DevOps used a polling method to implement data synchronization of Jenkins pipelines, which resulted in a lot of computing resource overheads. In KubeSphere v3.3.0, a new Jenkins plugin has been introduced, which sends events on Jenkins to [ks-devops](https://github.com/whenegghitsrock/ks-devops) through a webhook.
 
 KubeSphere DevOps has provided two built-in pipeline templates since KubeSphere v3.1.0, helping DevOps engineers improve CI/CD pipeline creation and O&M efficiency. However, the built-in templates are embedded in the frontend code and are difficult to customize. The pipeline templates are refactored in KubeSphere v3.3.0, which further provides multiple **pipeline templates based on a CRD** and supports parameter configuration. Users can also create multiple custom templates by using CRs.
 
@@ -147,15 +147,15 @@ OpenELB is integrated with the web console of KubeSphere v3.3.0 by default, allo
 
 Boosted by the open-source community, KubeSphere quickly goes global. KubeSphere has users across more than <0>100</0> countries and regions and has been downloaded for nearly <0>1 million</0> times. The KubeSphere repository on GitHub has nearly <0>300</0> contributors, more than <0>10000</0> starts, and more than <0>1500</0> forks.
 
-In the future, the KubeSphere team will maintain its commitment to open source. The source code and design documents of KubeSphere v3.3.0 updates and features such as [Console](https://github.com/kubesphere/console/), [OpenELB](https://github.com/kubesphere/openelb/), [Fluent Operator](https://github.com/fluent/fluent-operator), [KubeKey](https://github.com/kubesphere/kubekey/), [KubeEye](https://github.com/kubesphere/kubeeye/), [Notification Manager](https://github.com/kubesphere/notification-manager/), [kube-events](https://github.com/kubesphere/kube-events/), and [ks-devops](https://github.com/kubesphere/ks-devops/), are available on GitHub. Come to GitHub to star, fork, and send pull requests to the KubeSphere repositories to promote the development of KubeSphere!
+In the future, the KubeSphere team will maintain its commitment to open source. The source code and design documents of KubeSphere v3.3.0 updates and features such as [Console](https://github.com/whenegghitsrock/console/), [OpenELB](https://github.com/whenegghitsrock/openelb/), [Fluent Operator](https://github.com/fluent/fluent-operator), [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon/), [KubeEye](https://github.com/whenegghitsrock/kubeeye/), [Notification Manager](https://github.com/whenegghitsrock/notification-manager/), [kube-events](https://github.com/whenegghitsrock/kube-events/), and [ks-devops](https://github.com/whenegghitsrock/ks-devops/), are available on GitHub. Come to GitHub to star, fork, and send pull requests to the KubeSphere repositories to promote the development of KubeSphere!
 
 ## Installation and Upgrade
 
-Visit [KubeSphere official website](https://kubesphere.io/docs/v3.3/) to obtain the KubeSphere v3.3.0 installation and upgrade guide.
+Visit [KubeSphere official website](https://docs.kubesphere-carryon.top/docs/v3.3/) to obtain the KubeSphere v3.3.0 installation and upgrade guide.
 
 ## Acknowledgements
 
-The KubeSphere team would like to acknowledge contributions from the people who make KubeSphere v3.3.0 possible. The following GitHub IDs are not listed in order. If you are not listed, please contact us at [the GitHub KubeSphere Repository](https://github.com/kubesphere/kubesphere).
+The KubeSphere team would like to acknowledge contributions from the people who make KubeSphere v3.3.0 possible. The following GitHub IDs are not listed in order. If you are not listed, please contact us at [the GitHub KubeSphere Repository](https://github.com/whenegghitsrock/kubesphere-carryon).
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/202206271736057.png)
 

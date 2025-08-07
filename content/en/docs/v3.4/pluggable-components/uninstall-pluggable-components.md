@@ -45,7 +45,7 @@ Change the value of `openpitrix.store.enabled` from `true` to `false` in `ks-ins
 
    ```bash
    # Remove all resources related with DevOps
-   for devops_crd in $(kubectl get crd -o=jsonpath='{range .items[*]}{.metadata.name}{"\n"}{end}' | grep "devops.kubesphere.io"); do
+   for devops_crd in $(kubectl get crd -o=jsonpath='{range .items[*]}{.metadata.name}{"\n"}{end}' | grep "devops.docs.kubesphere-carryon.top"); do
        for ns in $(kubectl get ns -ojsonpath='{.items..metadata.name}'); do
            for devops_res in $(kubectl get $devops_crd -n $ns -oname); do
                kubectl patch $devops_res -n $ns -p '{"metadata":{"finalizers":[]}}' --type=merge
@@ -53,7 +53,7 @@ Change the value of `openpitrix.store.enabled` from `true` to `false` in `ks-ins
        done
    done
    # Remove all DevOps CRDs
-   kubectl get crd -o=jsonpath='{range .items[*]}{.metadata.name}{"\n"}{end}' | grep "devops.kubesphere.io" | xargs -I crd_name kubectl delete crd crd_name
+   kubectl get crd -o=jsonpath='{range .items[*]}{.metadata.name}{"\n"}{end}' | grep "devops.docs.kubesphere-carryon.top" | xargs -I crd_name kubectl delete crd crd_name
    # Remove DevOps namespace
    kubectl delete namespace kubesphere-devops-system
    ```
@@ -66,7 +66,7 @@ Change the value of `openpitrix.store.enabled` from `true` to `false` in `ks-ins
 2. To disable only log collection:
 
    ```bash
-   kubectl delete inputs.logging.kubesphere.io -n kubesphere-logging-system tail
+   kubectl delete inputs.logging.docs.kubesphere-carryon.top -n kubesphere-logging-system tail
    ```
 
    {{< notice note >}}
@@ -78,11 +78,11 @@ Change the value of `openpitrix.store.enabled` from `true` to `false` in `ks-ins
 3. To uninstall the Logging system, including Elasticsearch:
 
    ```bash
-   kubectl delete crd fluentbitconfigs.logging.kubesphere.io
-   kubectl delete crd fluentbits.logging.kubesphere.io
-   kubectl delete crd inputs.logging.kubesphere.io
-   kubectl delete crd outputs.logging.kubesphere.io
-   kubectl delete crd parsers.logging.kubesphere.io
+   kubectl delete crd fluentbitconfigs.logging.docs.kubesphere-carryon.top
+   kubectl delete crd fluentbits.logging.docs.kubesphere-carryon.top
+   kubectl delete crd inputs.logging.docs.kubesphere-carryon.top
+   kubectl delete crd outputs.logging.docs.kubesphere-carryon.top
+   kubectl delete crd parsers.logging.docs.kubesphere-carryon.top
    kubectl delete deployments.apps -n kubesphere-logging-system fluentbit-operator
    helm uninstall elasticsearch-logging --namespace kubesphere-logging-system
    ```
@@ -135,8 +135,8 @@ Change the value of `openpitrix.store.enabled` from `true` to `false` in `ks-ins
 
    ```bash
    helm uninstall kube-auditing -n kubesphere-logging-system
-   kubectl delete crd rules.auditing.kubesphere.io
-   kubectl delete crd webhooks.auditing.kubesphere.io
+   kubectl delete crd rules.auditing.docs.kubesphere-carryon.top
+   kubectl delete crd webhooks.auditing.docs.kubesphere-carryon.top
    ```
 
 ## Uninstall KubeSphere Service Mesh

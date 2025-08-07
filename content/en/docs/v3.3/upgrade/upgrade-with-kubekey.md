@@ -36,10 +36,10 @@ Follow the steps below to download KubeKey before you upgrade your cluster.
 
 {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command directly.
+Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly.
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{</ tab >}}
@@ -55,7 +55,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{< notice note >}}
@@ -126,7 +126,7 @@ Edit `sample.yaml` based on your cluster configuration. Make sure you replace th
 
 {{< notice note >}}
 
-For more information, see [Edit the configuration file](../../installing-on-linux/introduction/multioverview/#2-edit-the-configuration-file) or refer to the `Cluster` section of [the complete configuration file](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md) for more information.
+For more information, see [Edit the configuration file](../../installing-on-linux/introduction/multioverview/#2-edit-the-configuration-file) or refer to the `Cluster` section of [the complete configuration file](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-2.2/docs/config-example.md) for more information.
 
 {{</ notice >}}
 

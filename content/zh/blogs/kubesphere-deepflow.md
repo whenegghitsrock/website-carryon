@@ -16,7 +16,7 @@ KubeSphere 是在 Kubernetes 之上构建的面向云原生应用的分布式操
 
 作为全栈的多租户容器平台，KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。KubeSphere 为用户提供构建企业级 Kubernetes 环境所需的多项功能，例如多云与多集群管理、Kubernetes 资源管理、DevOps、应用生命周期管理、微服务治理（服务网格）、日志查询与收集、服务与网络、多租户管理、监控告警、事件与审计查询、存储管理、访问权限控制、GPU 支持、网络策略、镜像仓库管理以及安全管理等。
 
-GitHub 地址： https://github.com/kubesphere。
+GitHub 地址： https://github.com/whenegghitsrock。
 
 ## 什么是 DeepFlow
 

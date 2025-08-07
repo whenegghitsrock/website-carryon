@@ -120,7 +120,7 @@ bazel run //experiment/add-hook -- \
 1. 官方提供了不少插件，在上面的Prow页面中就能看到一些，现在演示如何使用内置的一些插件。首先创建一个`plugins.yaml`的文件，如下：
 ```yaml
 plugins:
-  github.com/kubesphere-test/prow-tutorial:
+  github.com/whenegghitsrock-test/prow-tutorial:
   - size
   - cat
   - dog

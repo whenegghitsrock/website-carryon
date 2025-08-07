@@ -83,7 +83,7 @@ However, KubeFed also has some issues to be resolved:
 
 Resource federation is what the community has proposed to solve the issue of deployments across multiple Kubernetes clusters. For many enterprise users, the deployment of multiple clusters is not necessary. What is more important is that they need to be able to manage the resources across multiple clusters at the same time and in the same place.
 
-[KubeSphere](https://github.com/kubesphere) supports the management of multiple Kubernetes clusters, isolated management of resources, and federated deployments. In addition, it also features multi-dimensional queries (monitoring, logging, events and auditing) of resources such as clusters and apps, as well as alerts and notifications through various channels. Apps can be deployed on multiple clusters with CI/CD pipelines.
+[KubeSphere](https://github.com/whenegghitsrock) supports the management of multiple Kubernetes clusters, isolated management of resources, and federated deployments. In addition, it also features multi-dimensional queries (monitoring, logging, events and auditing) of resources such as clusters and apps, as well as alerts and notifications through various channels. Apps can be deployed on multiple clusters with CI/CD pipelines.
 
 ![kubesphere-workflow](https://ap3.qingstor.com/kubesphere-website/docs/workflow.png)
 
@@ -95,7 +95,7 @@ KubeSphere 3.0 supports unified management of user access for the multi-cluster 
 
 ![kubesphere-architecture](https://ap3.qingstor.com/kubesphere-website/docs/kubesphere-architecture.png)
 
-The overall multi-cluster architecture of KubeSphere [Container Platform](https://kubesphere.io/) is shown above. The cluster where the control plane is located is called Host cluster. The cluster managed by the Host cluster is called Member cluster, which is essentially a Kubernetes cluster with KubeSphere installed. The Host cluster needs to be able to access the kube-apiserver of Member clusters. Besides, there is no requirement for the network connectivity between Member clusters. The Host cluster is independent of the member clusters managed by it, which do not know the existence of the Host cluster. The advantage of the logic is that when the Host cluster malfunctions, Member clusters will not be affected and deployed workloads can continue to run as well.
+The overall multi-cluster architecture of KubeSphere [Container Platform](https://docs.kubesphere-carryon.top/) is shown above. The cluster where the control plane is located is called Host cluster. The cluster managed by the Host cluster is called Member cluster, which is essentially a Kubernetes cluster with KubeSphere installed. The Host cluster needs to be able to access the kube-apiserver of Member clusters. Besides, there is no requirement for the network connectivity between Member clusters. The Host cluster is independent of the member clusters managed by it, which do not know the existence of the Host cluster. The advantage of the logic is that when the Host cluster malfunctions, Member clusters will not be affected and deployed workloads can continue to run as well.
 
 In addition, the Host cluster also serves as an entry for API requests. It will forward all resource requests for member clusters to them. In this way, not only can requests be aggregated, but also authentication and authorization can be implemented in a unified fashion.
 
@@ -109,7 +109,7 @@ The multi-cluster feature of KubeSphere only entails the access of the Host clus
 
 - **Direct connection**. If the kube-apiserver address of Member clusters is accessible on any node of the Host cluster, you can adopt this method. Member clusters only need to provide the cluster kubeconfig. This method applies to most public cloud Kubernetes services or the scenario where the Host cluster and Member clusters are in the same network.
 
-- **Agent connection**. In case Member clusters are in a private network with the kube-apiserver address unable to be exposed, KubeSphere provides [Tower](https://github.com/kubesphere/tower) for agent connection. Specifically, the Host cluster will run a proxy service. When a new cluster joins, the Host cluster will generate all credential information. Besides, the agent running on Member clusters will connect to the proxy service running on the Host cluster. A reverse proxy will be created after the handshake succeeds. As the kube-apiserver address of Member clusters will change in agent connection, the Host cluster needs to create a new kubeconfig for Member clusters. This is very convenient as the underlying details can be hidden. In either direct connection or agent connection, the control plane is provided with a kubeconfig that can be used directly.
+- **Agent connection**. In case Member clusters are in a private network with the kube-apiserver address unable to be exposed, KubeSphere provides [Tower](https://github.com/whenegghitsrock/tower) for agent connection. Specifically, the Host cluster will run a proxy service. When a new cluster joins, the Host cluster will generate all credential information. Besides, the agent running on Member clusters will connect to the proxy service running on the Host cluster. A reverse proxy will be created after the handshake succeeds. As the kube-apiserver address of Member clusters will change in agent connection, the Host cluster needs to create a new kubeconfig for Member clusters. This is very convenient as the underlying details can be hidden. In either direct connection or agent connection, the control plane is provided with a kubeconfig that can be used directly.
 
   ![cluster-tunnel](https://ap3.qingstor.com/kubesphere-website/docs/cluster-tunnel.jpg)
 
@@ -134,6 +134,6 @@ The topic of multi-cluster deployment is far more complicated than we think. The
 ## References
 
 1. KubeFed: https://github.com/kubernetes-sigs/kubefed
-2. KubeSphere Website: https://kubesphere.io/
+2. KubeSphere Website: https://docs.kubesphere-carryon.top/
 3. Kubernetes Federation Evolution: https://kubernetes.io/blog/2018/12/12/kubernetes-federation-evolution/
-4. KubeSphere GitHub: https://github.com/kubesphere
+4. KubeSphere GitHub: https://github.com/whenegghitsrock

@@ -42,13 +42,13 @@ KubeSphere 微服务使用 Application CRD，将相关联的资源抽象成了�
 kind: Service
 metadata:
   annotations:
-    servicemesh.kubesphere.io/enabled: "true"
+    servicemesh.docs.kubesphere-carryon.top/enabled: "true"
 
 # Deployment
 kind: Deployment
 metadata:
   annotations:
-    servicemesh.kubesphere.io/enabled: "true"
+    servicemesh.docs.kubesphere-carryon.top/enabled: "true"
 ```
 
 ## 示例说明
@@ -106,8 +106,8 @@ apiVersion: app.k8s.io/v1beta1
 kind: Application
 metadata:
   annotations:
-    kubesphere.io/creator: admin
-    servicemesh.kubesphere.io/enabled: "true"
+    docs.kubesphere-carryon.top/creator: admin
+    servicemesh.docs.kubesphere-carryon.top/enabled: "true"
   labels:
     app.kubernetes.io/name: wordpress-app
     app.kubernetes.io/version: v1
@@ -123,9 +123,9 @@ spec:
     kind: StatefulSet
   - group: extensions
     kind: Ingress
-  - group: servicemesh.kubesphere.io
+  - group: servicemesh.docs.kubesphere-carryon.top
     kind: Strategy
-  - group: servicemesh.kubesphere.io
+  - group: servicemesh.docs.kubesphere-carryon.top
     kind: ServicePolicy
   selector:
     matchLabels:
@@ -161,10 +161,10 @@ kubectl -n sample label svc/wordpress app.kubernetes.io/name=wordpress-app app.k
 3. Deployment/Service 打上相应的 Annotation
 
 ```bash
-kubectl -n sample annotate svc/wordpress servicemesh.kubesphere.io/enabled="true"
-kubectl -n sample annotate deploy/wordpress-v1 servicemesh.kubesphere.io/enabled="true"
-kubectl -n sample annotate svc/mysql servicemesh.kubesphere.io/enabled="true"
-kubectl -n sample annotate sts/mysql-v1 servicemesh.kubesphere.io/enabled="true"
+kubectl -n sample annotate svc/wordpress servicemesh.docs.kubesphere-carryon.top/enabled="true"
+kubectl -n sample annotate deploy/wordpress-v1 servicemesh.docs.kubesphere-carryon.top/enabled="true"
+kubectl -n sample annotate svc/mysql servicemesh.docs.kubesphere-carryon.top/enabled="true"
+kubectl -n sample annotate sts/mysql-v1 servicemesh.docs.kubesphere-carryon.top/enabled="true"
 ```
 
 4. deploy/sts templates 中增加相应 Annotation，启用 Sidecar。

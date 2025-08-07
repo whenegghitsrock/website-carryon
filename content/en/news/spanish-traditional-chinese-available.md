@@ -22,4 +22,4 @@ At the same time, we would also like to express our gratitude to [Turtle Chang](
 
 Community represents an essential part of KubeSphere. The localization provided by them is an excellent example of how community members can contribute to the open source platform so that everyone can benefit.
 
-We expect more languages to be supported in KubeSphere Console. If you are also interested in contributing to the localization of KubeSphere, please don’t hesitate to tell us and a [guide](https://github.com/kubesphere/community/blob/master/sig-docs/localization/how-to-localize-console.md) is available for reference.
+We expect more languages to be supported in KubeSphere Console. If you are also interested in contributing to the localization of KubeSphere, please don’t hesitate to tell us and a [guide](https://github.com/whenegghitsrock/community/blob/master/sig-docs/localization/how-to-localize-console.md) is available for reference.

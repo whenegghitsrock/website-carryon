@@ -16,11 +16,11 @@ GitHub 地址：https://github.com/linktimecloud/kubernetes-data-platform/blob/m
 
 ### 技术简介
 
-- [KubeKey](https://github.com/kubesphere/kubekey)
+- [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon)
 
   KubeKey 是一个开源的 Kubernetes 安装程序和生命周期管理工具。它支持安装 Kubernetes 集群、KubeSphere 以及其他相关组件。
 
-- [KubeSphere](https://github.com/kubesphere/kubesphere)
+- [KubeSphere](https://github.com/whenegghitsrock/kubesphere-carryon)
 
   KubeSphere 是一个用于云原生应用程序管理的分布式操作系统，使用 Kubernetes 作为其内核。它提供了即插即用架构，允许第三方应用程序无缝集成到其生态系统中。
 
@@ -32,7 +32,7 @@ GitHub 地址：https://github.com/linktimecloud/kubernetes-data-platform/blob/m
 
 ### 先决条件
 
-在 Kubernetes 上已安装 KubeSphere（[快速开始可参考在 Kubernetes 上最小化安装 KubeSphere](https://kubesphere.io/zh/docs/v3.4/quick-start/minimal-kubesphere-on-k8s/)）：
+在 Kubernetes 上已安装 KubeSphere（[快速开始可参考在 Kubernetes 上最小化安装 KubeSphere](https://docs.kubesphere-carryon.top/zh/docs/v3.4/quick-start/minimal-kubesphere-on-k8s/)）：
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/ks-cluster-overview.png)
 
@@ -48,7 +48,7 @@ KubeSphere 安装完成后，登录 KubeSphere Web 控制台并确保监控组�
 
 - 可选使用本地终端工具或 KubeSphere 网页终端进行操作：
   - 通过本地 Shell：打开您计算机上的 Bash 或 Zsh 终端。
-  - 通过 [Web Kubectl](https://kubesphere.io/zh/docs/v3.4/toolbox/web-kubectl/)：
+  - 通过 [Web Kubectl](https://docs.kubesphere-carryon.top/zh/docs/v3.4/toolbox/web-kubectl/)：
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/ks-web-kubectl.png)
 

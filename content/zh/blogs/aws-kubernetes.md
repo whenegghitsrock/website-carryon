@@ -13,7 +13,7 @@ snapshot: '../../../images/blogs/aws-kubernetes/aws.png'
 对于生产环境，我们需要考虑 Kubernetes 集群的高可用性。本文教您部署如何在多台 AWS EC2 实例快速部署一套高可用的生产环境。要满足 Kubernetes 集群服务需要做到高可用，需要保证 kube-apiserver 的 HA ，可使用下列两种方式：
 
 * AWS ELB（推荐）
-* [keepalived + haproxy](https://ask.kubesphere.io/forum/d/1566-kubernetes-keepalived-haproxy) 对 kube-apiserver 进行负载均衡，实现高可用 Kubernetes 集群。
+* [keepalived + haproxy](https://ask.docs.kubesphere-carryon.top/forum/d/1566-kubernetes-keepalived-haproxy) 对 kube-apiserver 进行负载均衡，实现高可用 Kubernetes 集群。
 
 本教程重点介绍配置 AWS ELB 服务高可用安装。
 
@@ -133,10 +133,10 @@ sudo systemctl restart sshd
 
 ### 获取 KubeKey 部署程序
 
-从[Github Realese Page](https://github.com/kubesphere/kubekey/releases)下载 KubeKey 或直接使用以下命令：
+从[Github Realese Page](https://github.com/whenegghitsrock/kubekey-carryon/releases)下载 KubeKey 或直接使用以下命令：
 
 ```
-curl -sfL https://get-kk.kubesphere.io | VERSION=v2.0.0 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.0.0 sh -
 ```
 
 ### 使用 KubeyKey 部署
@@ -149,10 +149,10 @@ curl -sfL https://get-kk.kubesphere.io | VERSION=v2.0.0 sh -
 
 ### 集群配置调整
 
-根据当前集群信息修改配置文件内容，有关更多信息，请参见[多节点安装](https://kubesphere.io/zh/docs/installing-on-linux/introduction/multioverview/)和[ Kubernetes 集群配置](https://kubesphere.io/zh/docs/installing-on-linux/introduction/vars/)：
+根据当前集群信息修改配置文件内容，有关更多信息，请参见[多节点安装](https://docs.kubesphere-carryon.top/zh/docs/installing-on-linux/introduction/multioverview/)和[ Kubernetes 集群配置](https://docs.kubesphere-carryon.top/zh/docs/installing-on-linux/introduction/vars/)：
 
 ```
-apiVersion: kubekey.kubesphere.io/v1alpha1
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
 kind: Cluster
 metadata:
   name: sample

@@ -115,7 +115,7 @@ Weight: 3420
 
 ### 步骤 2：下载 KubeKey
 
-[KubeKey](https://github.com/kubesphere/kubekey) 是新一代 Kubernetes 和 KubeSphere 安装器，可帮助您以简单、快速、灵活的方式安装 Kubernetes 和 KubeSphere。
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) 是新一代 Kubernetes 和 KubeSphere 安装器，可帮助您以简单、快速、灵活的方式安装 Kubernetes 和 KubeSphere。
 
 请按照以下步骤下载 KubeKey。
 
@@ -123,10 +123,10 @@ Weight: 3420
 
 {{< tab "如果您能正常访问 GitHub/Googleapis" >}}
 
-从 [GitHub 发布页面](https://github.com/kubesphere/kubekey/releases)下载 KubeKey 或直接使用以下命令：
+从 [GitHub 发布页面](https://github.com/whenegghitsrock/kubekey-carryon/releases)下载 KubeKey 或直接使用以下命令：
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{</ tab >}}
@@ -142,7 +142,7 @@ export KKZONE=cn
 执行以下命令下载 KubeKey：
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{< notice note >}}
@@ -222,7 +222,7 @@ spec:
     - node3
 ```
 
-有关完整的配置示例说明，请参见[此文件](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md)。
+有关完整的配置示例说明，请参见[此文件](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-2.2/docs/config-example.md)。
 
 ### 步骤 4：配置负载均衡器
 
@@ -310,7 +310,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2020-08-13 10:50:24
+https://docs.kubesphere-carryon.top             2020-08-13 10:50:24
 #####################################################
 ```
 

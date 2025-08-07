@@ -7,7 +7,7 @@ weight: 2100,
 showSubscribe: true
 ---
 
-For those who are new to KubeSphere and looking for a quick way to discover the [container platform](https://kubesphere.io/), the all-in-one mode is your best choice to get started. It features rapid deployment and hassle-free configurations with KubeSphere and Kubernetes all provisioned on your machine.
+For those who are new to KubeSphere and looking for a quick way to discover the [container platform](https://docs.kubesphere-carryon.top/), the all-in-one mode is your best choice to get started. It features rapid deployment and hassle-free configurations with KubeSphere and Kubernetes all provisioned on your machine.
 
 ## Video Demonstration
 
@@ -142,10 +142,10 @@ Perform the following steps to download KubeKey.
 
 {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or run the following command:
+Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or run the following command:
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{</ tab >}}
@@ -161,7 +161,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{< notice note >}}
@@ -239,7 +239,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             20xx-xx-xx xx:xx:xx
+https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
 #####################################################
 ```
 

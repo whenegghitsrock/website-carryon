@@ -27,7 +27,7 @@ KubeSphere 在 `v3.4.0` 版本集成了 OpenSearch 的 `v1` 和 `v2` 版本，�
 ```shell
 $ kubectl edit cc -n kubesphere-system ks-installer
 
-apiVersion: installer.kubesphere.io/v1alpha1
+apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
 
 kind: ClusterConfiguration
 
@@ -58,7 +58,7 @@ spec:
   ...
 
 ```
-KubeSphere 版本低于 `v3.4.0`的，请先[升级](https://github.com/kubesphere/ks-installer/tree/release-3.4#upgrade)。
+KubeSphere 版本低于 `v3.4.0`的，请先[升级](https://github.com/whenegghitsrock/ks-installer-carryon/tree/release-3.4#upgrade)。
 
 ### 通过控制台启用 `logging` 组件，并使用 `OpenSearch` 作为后端存储
 
@@ -97,7 +97,7 @@ kubectl edit cc -n kubesphere-system ks-installer
 2. 将 `opensearch.externalOpensearchHost` 设置为外部 `OpenSearch` 的地址，将 `opensearch.externalOpensearchPort` 设置为其端口号，并将 `status.logging` 字段注释或者删除掉。以下示例供您参考：
 
 ```yaml
-apiVersion: installer.kubesphere.io/v1alpha1
+apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
 
 kind: ClusterConfiguration
 

@@ -75,7 +75,7 @@ users:
 您可以通过以下方式获取 ks-mcp-server 二进制文件：
 
 - 从源码构建：`go build -o ks-mcp-server cmd/main.go`
-- 从[GitHub Releases](https://github.com/kubesphere/ks-mcp-server/releases)下载
+- 从[GitHub Releases](https://github.com/whenegghitsrock/ks-mcp-server/releases)下载
 
 获取后，请确保将其添加到系统的`$PATH`环境变量中。
 
@@ -139,7 +139,7 @@ AI助手将通过 KubeSphere MCP Server 获取相关信息并以人类可读的�
 
 KubeSphere MCP Server 是一个开源项目，我们欢迎社区成员的贡献和反馈。如果您有任何问题或建议，请通过以下方式联系我们：
 
-- GitHub仓库：[https://github.com/kubesphere/ks-mcp-server](https://github.com/kubesphere/ks-mcp-server)
+- GitHub仓库：[https://github.com/whenegghitsrock/ks-mcp-server](https://github.com/whenegghitsrock/ks-mcp-server)
 - KubeSphere论坛：[https://kubesphere.com.cn/forum/](https://kubesphere.com.cn/forum/)
 - Slack频道：[https://kubesphere.slack.com](https://kubesphere.slack.com)
 

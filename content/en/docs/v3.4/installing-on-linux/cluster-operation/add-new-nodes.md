@@ -6,7 +6,7 @@ linkTitle: "Add New Nodes"
 weight: 3610
 ---
 
-After you use KubeSphere for a certain period of time, it is likely that you need to scale out your cluster with an increasing number of workloads. From KubeSphere v3.0.0, you can use the brand-new installer [KubeKey](https://github.com/kubesphere/kubekey) to add new nodes to a Kubernetes cluster. Fundamentally, the operation is based on Kubelet's registration mechanism. In other words, the new nodes will automatically join the existing Kubernetes cluster. KubeSphere supports hybrid environments, which means the newly-added host OS can be CentOS or Ubuntu.
+After you use KubeSphere for a certain period of time, it is likely that you need to scale out your cluster with an increasing number of workloads. From KubeSphere v3.0.0, you can use the brand-new installer [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) to add new nodes to a Kubernetes cluster. Fundamentally, the operation is based on Kubelet's registration mechanism. In other words, the new nodes will automatically join the existing Kubernetes cluster. KubeSphere supports hybrid environments, which means the newly-added host OS can be CentOS or Ubuntu.
 
 This tutorial demonstrates how to add new nodes to a single-node cluster. To scale out a multi-node cluster, the steps are basically the same.
 
@@ -87,7 +87,7 @@ The steps of adding master nodes are generally the same as adding worker nodes w
 2. Open the file and you can see some fields are pre-populated with values. Add the information of new nodes and your load balancer to the file. Here is an example for your reference:
 
    ```yaml
-   apiVersion: kubekey.kubesphere.io/v1alpha1
+   apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
    kind: Cluster
    metadata:
      name: sample

@@ -48,7 +48,7 @@ cd ~/kubekey/
 
 # 选择中文区下载(访问 GitHub 受限时使用)
 export KKZONE=cn
-curl -sfL https://get-kk.kubesphere.io | sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 ```
 
 - 查看 KubeKey 支持的 Kubernetes 版本列表 **`./kk version --show-supported-k8s`**
@@ -107,7 +107,7 @@ KubeKey 支持的 K8s 版本还是比较新的。本文选择 **v1.28.8**，生�
 修改后的完整示例如下：
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: opsxlab
@@ -196,7 +196,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2024-07-17 22:34:20
+https://docs.kubesphere-carryon.top             2024-07-17 22:34:20
 #####################################################
 22:34:20 CST skipped: [ksp-control-3]
 22:34:20 CST skipped: [ksp-control-2]

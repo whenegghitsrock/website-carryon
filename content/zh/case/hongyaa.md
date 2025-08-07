@@ -110,7 +110,7 @@ section2:
         - content: 但钉钉并不能支持标准的 OAuth 协议对接应用，在 KubeSphere 认证时，我们引入了阿里云 IDaaS 产品，将钉钉作为认证源，IDaaS 作为 OAuth Provider， 实现账号的统一认证。
         - specialContent:
             text: 回馈社区——参与社区开发贡献了 KubeSphere IDaaS 插件，PR——support aliyun idaas oauth login。
-            link: https://github.com/kubesphere/kubesphere/pull/2997
+            link: https://github.com/whenegghitsrock/kubesphere-carryon/pull/2997
       image: https://pek3b.qingstor.com/kubesphere-community/images/dingding.png
 
     - title: 开发、生产环境全量迁移至 KubeSphere

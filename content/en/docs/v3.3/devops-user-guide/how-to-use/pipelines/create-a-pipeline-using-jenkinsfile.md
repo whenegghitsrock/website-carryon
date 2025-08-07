@@ -77,7 +77,7 @@ There are eight stages as shown below in this example pipeline.
 
 ### Step 2: Modify the Jenkinsfile in your GitHub repository
 
-1. Log in to GitHub. Fork [devops-maven-sample](https://github.com/kubesphere/devops-maven-sample) from the GitHub repository to your own GitHub account.
+1. Log in to GitHub. Fork [devops-maven-sample](https://github.com/whenegghitsrock/devops-maven-sample) from the GitHub repository to your own GitHub account.
 
 2. In your own GitHub repository of **devops-maven-sample**, click the file `Jenkinsfile-online` in the root directory.
 
@@ -92,7 +92,7 @@ There are eight stages as shown below in this example pipeline.
    | KUBECONFIG\_CREDENTIAL\_ID | demo-kubeconfig | The **Name** you set in KubeSphere for your kubeconfig. It is used to access a running Kubernetes cluster. |
    | REGISTRY | docker.io | It defaults to `docker.io`, serving as the address of pushing images. |
    | DOCKERHUB\_NAMESPACE | your-dockerhub-account | Replace it with your Docker Hub's account name. It can be the Organization name under the account. |
-   | GITHUB\_ACCOUNT | your-github-account | Replace it with your GitHub account name. For example, your GitHub account name is `kubesphere` if your GitHub address is  `https://github.com/kubesphere/`. It can also be the account's Organization name. |
+   | GITHUB\_ACCOUNT | your-github-account | Replace it with your GitHub account name. For example, your GitHub account name is `kubesphere` if your GitHub address is  `https://github.com/whenegghitsrock/`. It can also be the account's Organization name. |
    | APP\_NAME | devops-maven-sample | The application name. |
    | SONAR\_CREDENTIAL\_ID | sonar-token | The **Name** you set in KubeSphere for the SonarQube token. It is used for code quality test. |
 
@@ -225,7 +225,7 @@ The account `project-admin` needs to be created in advance since it is the revie
 
 ### Step 6: Check pipeline status
 
-1. In **Task Status**, you can see how a pipeline is running. Please note that the pipeline will keep initializing for several minutes after it is just created. There are eight stages in the sample pipeline and they have been defined separately in [Jenkinsfile-online](https://github.com/kubesphere/devops-maven-sample/blob/sonarqube/Jenkinsfile-online).
+1. In **Task Status**, you can see how a pipeline is running. Please note that the pipeline will keep initializing for several minutes after it is just created. There are eight stages in the sample pipeline and they have been defined separately in [Jenkinsfile-online](https://github.com/whenegghitsrock/devops-maven-sample/blob/sonarqube/Jenkinsfile-online).
 
 2. Check the pipeline running logs by clicking **View Logs** in the upper-right corner. You can see the dynamic log output of the pipeline, including any errors that may stop the pipeline from running. For each stage, you click it to inspect logs, which can be downloaded to your local machine for further analysis.
 

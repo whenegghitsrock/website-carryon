@@ -42,13 +42,13 @@ Prerequisites for using KubeSphere microservices are as follows:
 kind: Service
 metadata:
   annotations:
-    servicemesh.kubesphere.io/enabled: "true"
+    servicemesh.docs.kubesphere-carryon.top/enabled: "true"
 
 # Deployment
 kind: Deployment
 metadata:
   annotations:
-    servicemesh.kubesphere.io/enabled: "true"
+    servicemesh.docs.kubesphere-carryon.top/enabled: "true"
 ```
 
 ## Example
@@ -109,8 +109,8 @@ apiVersion: app.k8s.io/v1beta1
 kind: Application
 metadata:
   annotations:
-    kubesphere.io/creator: admin
-    servicemesh.kubesphere.io/enabled: "true"
+    docs.kubesphere-carryon.top/creator: admin
+    servicemesh.docs.kubesphere-carryon.top/enabled: "true"
   labels:
     app.kubernetes.io/name: wordpress-app
     app.kubernetes.io/version: v1
@@ -126,9 +126,9 @@ spec:
     kind: StatefulSet
   - group: extensions
     kind: Ingress
-  - group: servicemesh.kubesphere.io
+  - group: servicemesh.docs.kubesphere-carryon.top
     kind: Strategy
-  - group: servicemesh.kubesphere.io
+  - group: servicemesh.docs.kubesphere-carryon.top
     kind: ServicePolicy
   selector:
     matchLabels:
@@ -164,10 +164,10 @@ Then, check the application, and you can find that the number of services associ
 3. Add annotations to the target deployment and service.
 
 ```bash
-kubectl -n sample annotate svc/wordpress servicemesh.kubesphere.io/enabled="true"
-kubectl -n sample annotate deploy/wordpress-v1 servicemesh.kubesphere.io/enabled="true"
-kubectl -n sample annotate svc/mysql servicemesh.kubesphere.io/enabled="true"
-kubectl -n sample annotate sts/mysql-v1 servicemesh.kubesphere.io/enabled="true"
+kubectl -n sample annotate svc/wordpress servicemesh.docs.kubesphere-carryon.top/enabled="true"
+kubectl -n sample annotate deploy/wordpress-v1 servicemesh.docs.kubesphere-carryon.top/enabled="true"
+kubectl -n sample annotate svc/mysql servicemesh.docs.kubesphere-carryon.top/enabled="true"
+kubectl -n sample annotate sts/mysql-v1 servicemesh.docs.kubesphere-carryon.top/enabled="true"
 ```
 
 4. Add annotations to the deploy and sts templates to enable the sidecar.

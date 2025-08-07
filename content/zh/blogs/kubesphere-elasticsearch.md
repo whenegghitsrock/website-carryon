@@ -115,7 +115,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2022-08-04 15:53:14
+https://docs.kubesphere-carryon.top             2022-08-04 15:53:14
 #####################################################
 ```
 
@@ -123,7 +123,7 @@ https://kubesphere.io             2022-08-04 15:53:14
 
  ```bash
  ###### 卸载 KubeSphere 日志系统
- $ kubectl delete inputs.logging.kubesphere.io -n kubesphere-logging-system tail
+ $ kubectl delete inputs.logging.docs.kubesphere-carryon.top -n kubesphere-logging-system tail
 
  ###### 卸载 KubeSphere 事件系统
  $ helm delete ks-events -n kubesphere-logging-system
@@ -131,20 +131,20 @@ https://kubesphere.io             2022-08-04 15:53:14
  ###### 卸载 KubeSphere 审计
  $ helm uninstall kube-auditing -n kubesphere-logging-system
 
- $ kubectl delete crd rules.auditing.kubesphere.io
+ $ kubectl delete crd rules.auditing.docs.kubesphere-carryon.top
 
- $ kubectl delete crd webhooks.auditing.kubesphere.io
+ $ kubectl delete crd webhooks.auditing.docs.kubesphere-carryon.top
 
  ###### 卸载包括 Elasticsearch 的日志系统
- $ kubectl delete crd fluentbitconfigs.logging.kubesphere.io
+ $ kubectl delete crd fluentbitconfigs.logging.docs.kubesphere-carryon.top
 
- $ kubectl delete crd fluentbits.logging.kubesphere.io
+ $ kubectl delete crd fluentbits.logging.docs.kubesphere-carryon.top
 
- $ kubectl delete crd inputs.logging.kubesphere.io
+ $ kubectl delete crd inputs.logging.docs.kubesphere-carryon.top
 
- $ kubectl delete crd outputs.logging.kubesphere.io
+ $ kubectl delete crd outputs.logging.docs.kubesphere-carryon.top
 
- $ kubectl delete crd parsers.logging.kubesphere.io
+ $ kubectl delete crd parsers.logging.docs.kubesphere-carryon.top
 
  $ kubectl delete deployments.apps -n kubesphere-logging-system fluentbit-operator
 
@@ -264,7 +264,7 @@ NAME        ENDPOINTS      AGE           es-service                        172.3
 > elkPrefix（开发：dev，测试：sit，生产：prod）
 
 ```yaml
-apiVersion: installer.kubesphere.io/v1alpha1
+apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
 kind: ClusterConfiguration
 metadata:
   labels:
@@ -318,7 +318,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2022-08-04 15:53:14
+https://docs.kubesphere-carryon.top             2022-08-04 15:53:14
 #####################################################
 ```
 

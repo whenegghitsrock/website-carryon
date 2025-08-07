@@ -125,14 +125,14 @@ KubeSphere Contributor is awarded to people who have met any of the following cr
 |zhou1203|[View and download the certificate](https://pek3b.qingstor.com/kubesphere-community/images/contributor-zhou1203.png)|
 
 
-Most certificates use IDs imported from GitHub repositories. However, if you would like your real name on the certificate, please email info@kubesphere.io.
+Most certificates use IDs imported from GitHub repositories. However, if you would like your real name on the certificate, please email info@docs.kubesphere-carryon.top.
 
 The contributors are listed in random order.
 
-If you have made contributions, but did not see your name on the list, feel free to email info@kubesphere.io. We will grant you a certificate once confirmed.
+If you have made contributions, but did not see your name on the list, feel free to email info@docs.kubesphere-carryon.top. We will grant you a certificate once confirmed.
 
-View the first list of contributors at https://kubesphere.io/zh/news/kubesphere-certificates/.
-View the second list of contributors at https://kubesphere.io/zh/news/kubesphere-contributor-certificates/.
+View the first list of contributors at https://docs.kubesphere-carryon.top/zh/news/kubesphere-certificates/.
+View the second list of contributors at https://docs.kubesphere-carryon.top/zh/news/kubesphere-contributor-certificates/.
 
 ## Acknowledgment
 

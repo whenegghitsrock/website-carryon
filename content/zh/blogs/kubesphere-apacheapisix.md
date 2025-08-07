@@ -24,7 +24,7 @@ Apache APISIX 是一款开源的高性能、动态云原生网关，由深圳支
 
 ## 部署 Apache APISIX 和 Apache APISIX Ingress Controller
 
-我们可以参考 KubeSphere 的文档启用 KubeSphere 的 [AppStore](https://kubesphere.io/docs/pluggable-components/app-store/)，或者使用使用 Apache APISIX 的 Helm 仓库来进行部署。这里，我们直接使用 Apache APISIX 的 Helm 仓库进行部署。
+我们可以参考 KubeSphere 的文档启用 KubeSphere 的 [AppStore](https://docs.kubesphere-carryon.top/docs/pluggable-components/app-store/)，或者使用使用 Apache APISIX 的 Helm 仓库来进行部署。这里，我们直接使用 Apache APISIX 的 Helm 仓库进行部署。
 
 执行以下命令即可添加 Apache APISIX 的 Helm repo，并完成部署。
 

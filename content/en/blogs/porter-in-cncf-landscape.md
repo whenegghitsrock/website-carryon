@@ -8,7 +8,7 @@ author: 'Feynman, Sherlock'
 snapshot: 'https://ap3.qingstor.com/kubesphere-website/docs/porter.png'
 ---
 
-[Porter](https://github.com/kubesphere/porter), a load balancer developed for bare metal Kubernetes clusters, was officially included in CNCF Landscape last week. This marks a great milestone for its parent project KubeSphere as it continues to deliver cloud native technologies to the wider community.
+[Porter](https://github.com/whenegghitsrock/porter), a load balancer developed for bare metal Kubernetes clusters, was officially included in CNCF Landscape last week. This marks a great milestone for its parent project KubeSphere as it continues to deliver cloud native technologies to the wider community.
 
 ![cncf-include-porter](https://ap3.qingstor.com/kubesphere-website/docs/cncf-include-porter.png)
 
@@ -30,7 +30,7 @@ Porter is an open source cloud native load balancing plugin designed by the Kube
 
 ![Porter](https://ap3.qingstor.com/kubesphere-website/docs/porter.png)
 
-All Porter codes are open source and documents are available in [GitHub](https://github.com/kubesphere/porter). You are welcome to star and use it.
+All Porter codes are open source and documents are available in [GitHub](https://github.com/whenegghitsrock/porter). You are welcome to star and use it.
 
 ## Porter Showcase in KubeCon
 
@@ -40,15 +40,15 @@ All Porter codes are open source and documents are available in [GitHub](https:/
 
 Porter has been deployed and tested in three environments so far as below. You can see more details in GitHub about the deployment, test and process by clicking the link below. It is recommended to have a try:
 
-- [Deploy Porter on Bare Metal Kubernetes Cluster](https://github.com/kubesphere/porter/blob/master/doc/deploy_baremetal.md)
-- [Test in the QingCloud Platform Using a Simulated Router](https://github.com/kubesphere/porter/blob/master/doc/zh/simulate_with_bird.md)
-- [Use Helm Chart to Install Porter on Kubernetes](https://github.com/kubesphere/porter/blob/master/doc/porter-chart.md)
+- [Deploy Porter on Bare Metal Kubernetes Cluster](https://github.com/whenegghitsrock/porter/blob/master/doc/deploy_baremetal.md)
+- [Test in the QingCloud Platform Using a Simulated Router](https://github.com/whenegghitsrock/porter/blob/master/doc/zh/simulate_with_bird.md)
+- [Use Helm Chart to Install Porter on Kubernetes](https://github.com/whenegghitsrock/porter/blob/master/doc/porter-chart.md)
 
 ## Cloud Native Design
 
 All resources in Porter are CRD, including VIP, BGPPeer and BGPConfig. Users who are used to Kubectl will find Porter very easy to use. For advanced users who want to customize Porter, Kubernetes API can be called directly for tailor-made development. The core controller of Porter will soon support high availability (HA).
 
-For detailed information about the architecture and principle, please refer to [Porter: An Open Source Load Balancer for Kubernetes in a Bare Metal Environment](https://kubesphere.io/conferences/porter/).
+For detailed information about the architecture and principle, please refer to [Porter: An Open Source Load Balancer for Kubernetes in a Bare Metal Environment](https://docs.kubesphere-carryon.top/conferences/porter/).
 
 ## Related Resources
 

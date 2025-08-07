@@ -8,7 +8,7 @@ weight: 3120
 
 在生产环境中，由于单节点集群资源有限、计算能力不足，无法满足大部分需求，因此不建议在处理大规模数据时使用单节点集群。此外，单节点集群只有一个节点，因此也不具有高可用性。相比之下，在应用程序部署和分发方面，多节点架构是最常见的首选架构。
 
-本节概述了多节点安装，包括概念、[KubeKey](https://github.com/kubesphere/kubekey/) 和操作步骤。有关高可用安装的信息，请参考[高可用配置](../../../installing-on-linux/high-availability-configurations/ha-configuration/)、[在公有云上安装](../../../installing-on-linux/public-cloud/install-kubesphere-on-azure-vms/)和[在本地环境中安装](../../../installing-on-linux/on-premises/install-kubesphere-on-bare-metal/)。
+本节概述了多节点安装，包括概念、[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon/) 和操作步骤。有关高可用安装的信息，请参考[高可用配置](../../../installing-on-linux/high-availability-configurations/ha-configuration/)、[在公有云上安装](../../../installing-on-linux/public-cloud/install-kubesphere-on-azure-vms/)和[在本地环境中安装](../../../installing-on-linux/on-premises/install-kubesphere-on-bare-metal/)。
 
 ## 视频演示
 
@@ -98,10 +98,10 @@ KubeKey 可以一同安装 Kubernetes 和 KubeSphere。根据要安装的 Kubern
 
 {{< tab "如果您能正常访问 GitHub/Googleapis" >}}
 
-从 [GitHub 发布页面](https://github.com/kubesphere/kubekey/releases)下载 KubeKey 或直接使用以下命令。
+从 [GitHub 发布页面](https://github.com/whenegghitsrock/kubekey-carryon/releases)下载 KubeKey 或直接使用以下命令。
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -117,7 +117,7 @@ export KKZONE=cn
 执行以下命令下载 KubeKey：
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}
@@ -273,7 +273,7 @@ KubeSphere 会默认安装 [OpenEBS](https://openebs.io/)，为开发和测试�
 {{< notice tip >}}
 
 - 您可以编辑配置文件，启用多集群功能。有关更多信息，请参见[多集群管理](../../../multicluster-management/)。
-- 您也可以选择要安装的组件。有关更多信息，请参见[启用可插拔组件](../../../pluggable-components/)。有关完整的 `config-sample.yaml` 文件的示例，请参见[此文件](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md)。
+- 您也可以选择要安装的组件。有关更多信息，请参见[启用可插拔组件](../../../pluggable-components/)。有关完整的 `config-sample.yaml` 文件的示例，请参见[此文件](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-2.2/docs/config-example.md)。
 
 {{</ notice >}}
 
@@ -315,7 +315,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             20xx-xx-xx xx:xx:xx
+https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
 #####################################################
 ```
 

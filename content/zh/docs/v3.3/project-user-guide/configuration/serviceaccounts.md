@@ -13,7 +13,7 @@ weight: 10440
 
 ## 前提条件
 
-你已经创建一个企业空间、项目和用户（`project-regular`），将该用户邀请至创建的项目，并为其分配 `operator` 角色。有关更多信息，请参阅 [创建企业空间、项目、用户和平台角色](https://kubesphere.io/zh/docs/quick-start/create-workspace-and-project/)。
+你已经创建一个企业空间、项目和用户（`project-regular`），将该用户邀请至创建的项目，并为其分配 `operator` 角色。有关更多信息，请参阅 [创建企业空间、项目、用户和平台角色](https://docs.kubesphere-carryon.top/zh/docs/quick-start/create-workspace-and-project/)。
 
 ## 创建服务帐户
 

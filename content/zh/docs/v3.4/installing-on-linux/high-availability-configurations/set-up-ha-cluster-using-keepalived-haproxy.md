@@ -258,16 +258,16 @@ yum install keepalived haproxy psmisc -y
 
 ## 使用 KubeKey 创建 Kubernetes 集群
 
-[KubeKey](https://github.com/kubesphere/kubekey) 是一款用来创建 Kubernetes 集群的工具，高效而便捷。请按照以下步骤下载 KubeKey。
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) 是一款用来创建 Kubernetes 集群的工具，高效而便捷。请按照以下步骤下载 KubeKey。
 
 {{< tabs >}}
 
 {{< tab "如果您能正常访问 GitHub/Googleapis" >}}
 
-从 [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) 下载 KubeKey 或者直接使用以下命令。
+从 [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) 下载 KubeKey 或者直接使用以下命令。
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -283,7 +283,7 @@ export KKZONE=cn
 运行以下命令来下载 KubeKey：
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}
@@ -408,6 +408,6 @@ spec:
      2. Please change the default password after login.
    
    #####################################################
-   https://kubesphere.io             2020-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             2020-xx-xx xx:xx:xx
    #####################################################
    ```

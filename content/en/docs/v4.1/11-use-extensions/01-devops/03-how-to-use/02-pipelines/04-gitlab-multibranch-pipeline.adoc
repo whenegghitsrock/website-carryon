@@ -51,7 +51,7 @@ If your account or password contains special characters such as **@** and **$**,
 
 == Step 2: Edit the Jenkinsfile in your GitLab Repository
 
-. Log in to GitLab and create a public project. Click **New Project > Import Project**, select **Import repository from URL**, enter the URL of link:https://github.com/kubesphere/devops-maven-sample[devops-maven-sample], choose the visibility level **Public**, and then click **Create Project**.
+. Log in to GitLab and create a public project. Click **New Project > Import Project**, select **Import repository from URL**, enter the URL of link:https://github.com/whenegghitsrock/devops-maven-sample[devops-maven-sample], choose the visibility level **Public**, and then click **Create Project**.
 
 . In the newly created project, create a new branch from the v4.1.0 branch, named **gitlab-demo**.
 

@@ -12,7 +12,7 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/202206271135109.j
 
 CNCF 发布的 2021 年度调查报告指出，容器和 K8s 的事实地位已经趋于稳固，并慢慢退居“幕后”，类似于无处不在的 Linux，人们甚至都感觉不到它的存在。这要得益于众多致力于降低用户使用门槛的 K8s 管理平台，KubeSphere 便是这其中的佼佼者，它帮助用户屏蔽了底层 K8s 集群的复杂性和差异性，提供了可插拔的开放式架构，无缝对接第三方应用，极大地降低了企业用户的使用门槛。
 
-2021 年 KubeSphere 先后推出了 [v3.1](https://kubesphere.io/zh/news/kubesphere-3.1.0-ga-announcement/) 和 [v3.2](https://kubesphere.io/zh/news/kubesphere-3.2.0-ga-announcement/) 两个大版本，带来了 **“边缘计算”**、**“计量计费”**、**“GPU 资源调度管理”** 等众多令人期待的功能，将 K8s 从云端扩展至边缘，并进一步增强了在云原生 AI 场景的使用体验。
+2021 年 KubeSphere 先后推出了 [v3.1](https://docs.kubesphere-carryon.top/zh/news/kubesphere-3.1.0-ga-announcement/) 和 [v3.2](https://docs.kubesphere-carryon.top/zh/news/kubesphere-3.2.0-ga-announcement/) 两个大版本，带来了 **“边缘计算”**、**“计量计费”**、**“GPU 资源调度管理”** 等众多令人期待的功能，将 K8s 从云端扩展至边缘，并进一步增强了在云原生 AI 场景的使用体验。
 
 今天，KubeSphere 3.3.0 带来了更多令人期待的功能，新增了基于 **GitOps** 的持续部署方案，进一步优化了 DevOps 的使用体验。同时还增强了 “**多集群管理、多租户管理、可观测性、应用商店、微服务治理、边缘计算、存储**” 等特性，更进一步完善交互设计，并全面提升了用户体验。
 
@@ -34,7 +34,7 @@ KubeSphere DevOps 从 3.3.0 开始，后端已支持独立部署，并提供了*
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/202206222328876.png)
 
-Jenkins 作为一款用户基数极大、生态丰富的 CI 引擎，我们会让 Jenkins 真正地“扮演”引擎的角色——退入幕后持续为大家提供稳定的流水线功能。之前 KubeSphere DevOps 通过轮询的方式来实现 Jenkins 流水线的数据同步，浪费了很多计算资源，本次新增了一个 Jenkins 插件，只要 Jenkins 端有相应的事件发生，就可以通过 Webhook 的形式立即将事件发送到 [ks-devops](https://github.com/kubesphere/ks-devops)。
+Jenkins 作为一款用户基数极大、生态丰富的 CI 引擎，我们会让 Jenkins 真正地“扮演”引擎的角色——退入幕后持续为大家提供稳定的流水线功能。之前 KubeSphere DevOps 通过轮询的方式来实现 Jenkins 流水线的数据同步，浪费了很多计算资源，本次新增了一个 Jenkins 插件，只要 Jenkins 端有相应的事件发生，就可以通过 Webhook 的形式立即将事件发送到 [ks-devops](https://github.com/whenegghitsrock/ks-devops)。
 
 KubeSphere DevOps 从 3.1.0 开始便内置了两个常用的流水线模板，帮助 DevOps 工程师提升 CI/CD 流水线的创建与运维效率。但内置的模板内嵌到了前端代码中，很难被改变。3.3.0 对流水线模板进行了重构，新增多款**基于 CRD 的内置流水线模板**，支持参数设置，用户也可以通过 CR 创建多个自定义的模板。
 
@@ -147,11 +147,11 @@ v3.3.0 默认集成了 OpenELB，即使是在非公有云环境的 K8s 集群下
 
 借助于开源社区的力量，KubeSphere 迅速走向全球，目前 KubeSphere 的用户遍布全球，覆盖超过了 **100** 个国家和地区，下载量近**百万**，拥有贡献者近 **300 人**，主仓库在 GitHub 上 Star 数超过 **10000**，Fork 数超 **1500**。v3.3.0 Console 除了支持中、英、繁中和西班牙语之外，还支持了更多的语种，进一步拓展了海外市场。
 
-未来 KubeSphere 团队将继续保持开源、开放的理念，v3.3.0 带来的众多优化也早已在 GitHub 开源，例如 [Console](https://github.com/kubesphere/console/)、[OpenELB](https://github.com/kubesphere/openelb/)、[Fluent Operator](https://github.com/fluent/fluent-operator)、 [KubeKey](https://github.com/kubesphere/kubekey/)、[KubeEye](https://github.com/kubesphere/kubeeye/)、[Notification Manager](https://github.com/kubesphere/notification-manager/)、[Kube-Events](https://github.com/kubesphere/kube-events/)、[ks-devops](https://github.com/kubesphere/ks-devops/)，相关的代码与设计文档在 GitHub 相关仓库都可以找到，欢迎大家在 GitHub 给我们 Star + Fork + PR 三连。
+未来 KubeSphere 团队将继续保持开源、开放的理念，v3.3.0 带来的众多优化也早已在 GitHub 开源，例如 [Console](https://github.com/whenegghitsrock/console/)、[OpenELB](https://github.com/whenegghitsrock/openelb/)、[Fluent Operator](https://github.com/fluent/fluent-operator)、 [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon/)、[KubeEye](https://github.com/whenegghitsrock/kubeeye/)、[Notification Manager](https://github.com/whenegghitsrock/notification-manager/)、[Kube-Events](https://github.com/whenegghitsrock/kube-events/)、[ks-devops](https://github.com/whenegghitsrock/ks-devops/)，相关的代码与设计文档在 GitHub 相关仓库都可以找到，欢迎大家在 GitHub 给我们 Star + Fork + PR 三连。
 
 ## 安装升级
 
-KubeSphere 已将 v3.3.0 所有镜像在国内镜像仓库进行了同步与备份，国内用户下载镜像的安装体验会更加友好。关于最新的 v3.3.0 安装与升级指南，可参考 [KubeSphere 官方文档](https://kubesphere.io/zh/docs/v3.3/)。
+KubeSphere 已将 v3.3.0 所有镜像在国内镜像仓库进行了同步与备份，国内用户下载镜像的安装体验会更加友好。关于最新的 v3.3.0 安装与升级指南，可参考 [KubeSphere 官方文档](https://docs.kubesphere-carryon.top/zh/docs/v3.3/)。
 
 ## 致谢
 

@@ -72,7 +72,7 @@ metadata:
   name: mysql-cnf
   namespace: lstack
   annotations:
-    kubesphere.io/creator: lstack
+    docs.kubesphere-carryon.top/creator: lstack
 data:
   custom.cnf: |-
     [mysqld]
@@ -144,7 +144,7 @@ metadata:
   name: mysql-secret
   namespace: lstack
   annotations:
-    kubesphere.io/creator: lstack
+    docs.kubesphere-carryon.top/creator: lstack
 data:
   MYSQL_ROOT_PASSWORD: UEA4OHcwcmQ=
 type: Opaque
@@ -197,7 +197,7 @@ metadata:
   labels:
     app: mysql
   annotations:
-    kubesphere.io/creator: lstack
+    docs.kubesphere-carryon.top/creator: lstack
 spec:
   replicas: 1
   selector:
@@ -209,7 +209,7 @@ spec:
       labels:
         app: mysql
       annotations:
-        logging.kubesphere.io/logsidecar-config: '{}'
+        logging.docs.kubesphere-carryon.top/logsidecar-config: '{}'
     spec:
       volumes:
         - name: host-time
@@ -379,9 +379,9 @@ metadata:
   labels:
     app: mysql
   annotations:
-    kubesphere.io/alias-name: mysql
-    kubesphere.io/creator: lstack
-    kubesphere.io/serviceType: statefulservice
+    docs.kubesphere-carryon.top/alias-name: mysql
+    docs.kubesphere-carryon.top/creator: lstack
+    docs.kubesphere-carryon.top/serviceType: statefulservice
 spec:
   ports:
     - name: tcp-mysql
@@ -437,7 +437,7 @@ metadata:
   labels:
     app: mysql-external
   annotations:
-    kubesphere.io/creator: lstack
+    docs.kubesphere-carryon.top/creator: lstack
 spec:
   ports:
     - name: tcp-mysql-external

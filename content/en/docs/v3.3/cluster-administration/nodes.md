@@ -59,4 +59,4 @@ Be careful when you add taints as they may cause unexpected behavior, leading to
 
 ## Add and Remove Nodes
 
-Currently, you cannot add or remove nodes directly from the KubeSphere console, but you can do it by using [KubeKey](https://github.com/kubesphere/kubekey). For more information, see [Add New Nodes](../../installing-on-linux/cluster-operation/add-new-nodes/) and [Remove Nodes](../../installing-on-linux/cluster-operation/remove-nodes/).
+Currently, you cannot add or remove nodes directly from the KubeSphere console, but you can do it by using [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon). For more information, see [Add New Nodes](../../installing-on-linux/cluster-operation/add-new-nodes/) and [Remove Nodes](../../installing-on-linux/cluster-operation/remove-nodes/).

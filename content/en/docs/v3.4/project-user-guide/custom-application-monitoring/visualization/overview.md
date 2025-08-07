@@ -14,7 +14,7 @@ To create new dashboards for your app metrics, navigate to **Custom Monitoring**
 
 Built-in templates include MySQL, Elasticsearch, Redis, and more. These templates are for demonstration purposes and are updated with KubeSphere releases. Besides, you can choose to customize monitoring dashboards.
 
-A KubeSphere custom monitoring dashboard can be seen as simply a YAML configuration file. The data model is heavily inspired by [Grafana](https://github.com/grafana/grafana), an open-source tool for monitoring and observability. Please find KubeSphere monitoring dashboard data model design in [kubesphere/monitoring-dashboard](https://github.com/kubesphere/monitoring-dashboard). The configuration file is portable and sharable. You are welcome to contribute dashboard templates to the KubeSphere community via [Monitoring Dashboards Gallery](https://github.com/kubesphere/monitoring-dashboard/tree/master/contrib/gallery). 
+A KubeSphere custom monitoring dashboard can be seen as simply a YAML configuration file. The data model is heavily inspired by [Grafana](https://github.com/grafana/grafana), an open-source tool for monitoring and observability. Please find KubeSphere monitoring dashboard data model design in [kubesphere/monitoring-dashboard](https://github.com/whenegghitsrock/monitoring-dashboard). The configuration file is portable and sharable. You are welcome to contribute dashboard templates to the KubeSphere community via [Monitoring Dashboards Gallery](https://github.com/whenegghitsrock/monitoring-dashboard/tree/master/contrib/gallery). 
 
 ### From a built-in template
 
@@ -68,4 +68,4 @@ The place of group on the right is consistent with the place of charts in the mi
 
 ## Dashboard Templates
 
-Find and share dashboard templates in [Monitoring Dashboards Gallery](https://github.com/kubesphere/monitoring-dashboard/tree/master/contrib/gallery). It is a place for KubeSphere community users to contribute their masterpieces.
+Find and share dashboard templates in [Monitoring Dashboards Gallery](https://github.com/whenegghitsrock/monitoring-dashboard/tree/master/contrib/gallery). It is a place for KubeSphere community users to contribute their masterpieces.

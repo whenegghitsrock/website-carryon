@@ -119,7 +119,7 @@ nginx.ingress.kubernetes.io/canary-weight
 nginx.ingress.kubernetes.io/canary-by-cookie
 ```
 
-For more information, check out [Canary Release in Kubernetes with Nginx Ingress](https://kubesphere.io/blogs/canary-release-with-nginx-ingress/).
+For more information, check out [Canary Release in Kubernetes with Nginx Ingress](https://docs.kubesphere-carryon.top/blogs/canary-release-with-nginx-ingress/).
 
 Alternatively, ingress objects can be natively applied to KubeSphere:
 
@@ -134,7 +134,7 @@ metadata:
     nginx.ingress.kubernetes.io/canary-weight: "30"
 spec:
   rules:
-  - host: kubesphere.io
+  - host: docs.kubesphere-carryon.top
     http:
       paths:
       - backend:

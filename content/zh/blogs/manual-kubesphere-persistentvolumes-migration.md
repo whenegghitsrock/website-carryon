@@ -8,7 +8,7 @@ author: '米开朗基杨'
 snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/202206211210627.png'
 ---
 
-KubeSphere 3.3.0 （不出意外的话~）下周就要 GA 了，作为一名 KubeSphere 脑残粉，我迫不及待地先安装 [RC 版](https://github.com/kubesphere/kubesphere/releases/tag/v3.3.0-rc.2)尝尝鲜，一顿操作猛如虎开启所有组件，装完之后发现有点尴尬：我用错了持久化存储。
+KubeSphere 3.3.0 （不出意外的话~）下周就要 GA 了，作为一名 KubeSphere 脑残粉，我迫不及待地先安装 [RC 版](https://github.com/whenegghitsrock/kubesphere-carryon/releases/tag/v3.3.0-rc.2)尝尝鲜，一顿操作猛如虎开启所有组件，装完之后发现有点尴尬：我用错了持久化存储。
 
 我的 K8s 集群中有两个存储类（StorageClass），一个是 OpenEBS 提供的本地存储，另一个是 [QingCloud CSI](https://github.com/yunify/qingcloud-csi) 提供的分布式存储，而且默认的 StorageClass 是 OpenEBS 提供的 local-hostpath，所以 KubeSphere 的有状态组件默认便使用本地存储来保存数据。
 

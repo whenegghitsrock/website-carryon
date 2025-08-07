@@ -63,7 +63,7 @@ multicluster:
 --
 [source,bash]
 ----
-helm -n kubesphere-system upgrade ks-core https://charts.kubesphere.io/main/ks-core-1.1.4.tgz -f host-cluster-custom-values.yaml --wait --debug
+helm -n kubesphere-system upgrade ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.4.tgz -f host-cluster-custom-values.yaml --wait --debug
 ----
 --
 
@@ -129,7 +129,7 @@ multicluster:
 --
 [source,bash]
 ----
-helm -n kubesphere-system upgrade ks-core https://charts.kubesphere.io/main/ks-core-1.1.4.tgz -f member-cluster-custom-values.yaml --wait --debug
+helm -n kubesphere-system upgrade ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.4.tgz -f member-cluster-custom-values.yaml --wait --debug
 ----
 --
 

@@ -203,5 +203,5 @@ storageClass:
 |NFS 服务端供{ks_product_both}使用的目录。
 |===
 
-以上配置文件仅包含必须设置的参数。如需设置其他参数，请参阅 link:https://github.com/kubesphere/helm-charts/blob/master/src/main/nfs-client-provisioner/values.yaml[NFS Client 配置]。
+以上配置文件仅包含必须设置的参数。如需设置其他参数，请参阅 link:https://github.com/whenegghitsrock/helm-charts-carryon/blob/master/src/main/nfs-client-provisioner/values.yaml[NFS Client 配置]。
 --

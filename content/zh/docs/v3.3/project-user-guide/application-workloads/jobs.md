@@ -73,15 +73,15 @@ weight: 10250
         app: job-test-1
       name: job-test-1
       annotations:
-        kubesphere.io/alias-name: Test
-        kubesphere.io/description: A job test
+        docs.kubesphere-carryon.top/alias-name: Test
+        docs.kubesphere-carryon.top/description: A job test
     spec:
       template:
         metadata:
           labels:
             app: job-test-1
           annotations:
-            kubesphere.io/containerSecrets: null
+            docs.kubesphere-carryon.top/containerSecrets: null
         spec:
           containers:
             - name: container-xv4p2o

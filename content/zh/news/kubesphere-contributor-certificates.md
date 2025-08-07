@@ -12,7 +12,7 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/kubesphere-contri
 
 KubeSphere 开源贡献的方式，包括在 GitHub 提交 Pull Request 参与应用的开发及 bug 的修复（即我们常说的贡献代码），或者在 KubeSphere 中文论坛发布过优质的技术博客。社区设置了 KubeSphere Contributor 奖项作为激励多次为 KubeSphere 贡献代码的成员。
 
-从上一次[颁发](https://kubesphere.io/zh/news/kubesphere-certificates/)（2021 年 2 月 11 日）到现在，共诞生了 76 位 KubeSphere Contributor，他们都曾为 KubeSphere 贡献过代码。
+从上一次[颁发](https://docs.kubesphere-carryon.top/zh/news/kubesphere-certificates/)（2021 年 2 月 11 日）到现在，共诞生了 76 位 KubeSphere Contributor，他们都曾为 KubeSphere 贡献过代码。
 
 另外，在 10 月份，作为 Hacktoberfest 活动的项目之一，KubeSphere 也开启了为期一个月的 Hacktoberfest 活动月。只要在 10 月 1 日至 31 日期间（在任何时区）提交的 PR 数量达到 4 个，就可以获得官方限定的 2021 年 Hacktoberfest T恤、KubeSphere 周边礼品和证书。活动开启后，有些社区小伙伴积极参与并达到了要求，他们的证书在本次一并发放。
 
@@ -99,7 +99,7 @@ KubeSphere 开源贡献的方式，包括在 GitHub 提交 Pull Request 参与�
 
 > 因贡献者都是从 GitHub 仓库导出，因此大部分证书是以 GitHub ID 进行制作的，如果您希望以自己的真实姓名制作证书，请联系小 kk（微信搜索 kubesphere），进行二次制作。
 
-还有很多默默在 GitHub 提交过 Pull Request 的来自全球各地的社区贡献者，我们尚且还不知道这些 Contributor 的名字或联系方式。因此 KubeSphere 社区开启了 [issue](https://github.com/kubesphere/community/issues/367) 和[表单](https://jinshuju.net/f/Npcqwi)来长期公开征集。
+还有很多默默在 GitHub 提交过 Pull Request 的来自全球各地的社区贡献者，我们尚且还不知道这些 Contributor 的名字或联系方式。因此 KubeSphere 社区开启了 [issue](https://github.com/whenegghitsrock/community/issues/367) 和[表单](https://jinshuju.net/f/Npcqwi)来长期公开征集。
 
 如果您为 KubeSphere 贡献过代码，但没有获得该证书也并未出现在上述公开名单中，欢迎回复 issue 或填写表单。一经确认，即可为您制作证书和寄送周边礼物。
 

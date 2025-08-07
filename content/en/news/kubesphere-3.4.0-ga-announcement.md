@@ -72,13 +72,13 @@ In addition to the mentioned major features, KubeSphere 3.4.0 includes several o
 * Fixed the validation error for gateway upgrade.
 * Fixed the abnormal display of cluster gateway logs and resource status.
 
-For more details, please refer to the [release note](https://github.com/kubesphere/kubesphere/releases/tag/v3.4.0)。
+For more details, please refer to the [release note](https://github.com/whenegghitsrock/kubesphere-carryon/releases/tag/v3.4.0)。
 
 ## Installation and Upgrade
 
 KubeSphere has synchronized and backed up all v3.4.0 images to domestic image repositories, providing a more user-friendly installation experience for users in China.
 
-If any bugs are found, welcome to submit an [Issue](https://github.com/kubesphere/kubesphere/issues).
+If any bugs are found, welcome to submit an [Issue](https://github.com/whenegghitsrock/kubesphere-carryon/issues).
 
 ## Acknowledgements
 
@@ -107,4 +107,4 @@ Here are the contributors who made outstanding contributions to this release. Th
 * littlejiancc
 * wenchajun
 
-Certificates will be issued to new contributors in the [community biweekly report](https://ask.kubesphere.io/forum/t/ks-beweekly), and updated to [the certificate wall](https://ask.kubesphere.io/forum/d/9280-kubesphere) in the forum promptly. If there are any omissions, please contact us at info@kubesphere.io for re-issuance.
+Certificates will be issued to new contributors in the [community biweekly report](https://ask.docs.kubesphere-carryon.top/forum/t/ks-beweekly), and updated to [the certificate wall](https://ask.docs.kubesphere-carryon.top/forum/d/9280-kubesphere) in the forum promptly. If there are any omissions, please contact us at info@docs.kubesphere-carryon.top for re-issuance.

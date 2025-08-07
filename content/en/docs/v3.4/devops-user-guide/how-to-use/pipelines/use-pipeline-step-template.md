@@ -89,21 +89,21 @@ Currently, custom step templates can only be created through the console.
 2. To create a custom step template, create a YAML file first to support simple file writing.
 
   ```
-  apiVersion: devops.kubesphere.io/v1alpha3
+  apiVersion: devops.docs.kubesphere-carryon.top/v1alpha3
   kind: ClusterStepTemplate
   metadata:
     annotations:
-      devops.kubesphere.io/descriptionEN: Write message to file in the build
-      devops.kubesphere.io/descriptionZH: Write a file during the build process
-      devops.kubesphere.io/displayNameEN: writeFile
-      devops.kubesphere.io/displayNameZH: Write a file
+      devops.docs.kubesphere-carryon.top/descriptionEN: Write message to file in the build
+      devops.docs.kubesphere-carryon.top/descriptionZH: Write a file during the build process
+      devops.docs.kubesphere-carryon.top/displayNameEN: writeFile
+      devops.docs.kubesphere-carryon.top/displayNameZH: Write a file
       meta.helm.sh/release-name: devops
       meta.helm.sh/release-namespace: kubesphere-devops-system
-      step.devops.kubesphere.io/icon: loudspeaker
+      step.devops.docs.kubesphere-carryon.top/icon: loudspeaker
     generation: 1
     labels:
       app.kubernetes.io/managed-by: Helm
-      step.devops.kubesphere.io/category: General
+      step.devops.docs.kubesphere-carryon.top/category: General
     name: writefile
   spec:
     parameters:
@@ -140,7 +140,7 @@ Currently, custom step templates can only be created through the console.
 
   {{< notice note >}}
 
-  a. Step templates are implemented through CRDs (Custom Resource Definitions). For more details, please refer to [CRD for Step Templates](https://github.com/kubesphere-sigs/ks-devops-helm-chart/blob/master/charts/ks-devops/crds/devops.kubesphere.io_clustersteptemplates.yaml).
+  a. Step templates are implemented through CRDs (Custom Resource Definitions). For more details, please refer to [CRD for Step Templates](https://github.com/whenegghitsrock-sigs/ks-devops-helm-chart/blob/master/charts/ks-devops/crds/devops.kubesphere.io_clustersteptemplates.yaml).
 
   b. `metadata.name` in the YAML file should be consistent with `spec.template.name`. Additionally, the `name` field relies on functions within Jenkins to achieve the corresponding functionality. In the provided YAML file, the `writeFile` function is used to implement the output functionality. For more details, please refer to [pipeline steps](https://www.jenkins.io/doc/pipeline/steps/).
 

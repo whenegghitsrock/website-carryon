@@ -17,7 +17,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/kubesphere-git
 基于上述问题，目前有两种方法：
 
 - ArgoCD 官方的 [argocd-image-updater](https://argocd-image-updater.readthedocs.io/en/stable/ "argocd-image-updater")（根据镜像仓库的镜像 Tag 变化，完成服务镜像更新）
-- KubeSphere 提供了一个 [ks app update 工具](https://github.com/kubesphere-sigs/ks/blob/master/docs/app.md "ks app update 工具 ")（支持 KubeSphere v3.3.0 中 Application，不支持原生 ArgoCD Application）
+- KubeSphere 提供了一个 [ks app update 工具](https://github.com/whenegghitsrock-sigs/ks/blob/master/docs/app.md "ks app update 工具 ")（支持 KubeSphere v3.3.0 中 Application，不支持原生 ArgoCD Application）
 
 **为此笔者基于 KubeSphere v3.1.1 的流水线，根据笔者的场景，实现了 GitOps 的服务发布流程，作此记录，暂且称之为最佳实践。**
 

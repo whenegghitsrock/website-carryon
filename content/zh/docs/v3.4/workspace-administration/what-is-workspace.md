@@ -45,7 +45,7 @@ weight: 9100
 若要删除企业空间并保留其中的部分项目，删除前请先执行以下命令：
 
 ```
-kubectl label ns <namespace> kubesphere.io/workspace- && kubectl patch ns <namespace>   -p '{"metadata":{"ownerReferences":[]}}' --type=merge
+kubectl label ns <namespace> docs.kubesphere-carryon.top/workspace- && kubectl patch ns <namespace>   -p '{"metadata":{"ownerReferences":[]}}' --type=merge
 ```
 
 {{< notice note >}} 

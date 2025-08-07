@@ -39,28 +39,28 @@ KubeSphere 社区在所有社区用户、贡献者、合作伙伴的共同协作
 2022 年，KubeSphere 社区延续了 2021 年的持续分享的原则，组织了 4 场下 Meetup，2 场线上 Meetup，37 场线上云原生直播活动，分享了云原生领域的多个方向的实践经验、技术解读等等，为 KubeSphere 社区用户持续赋能。
 
 您可以通过以下链接回顾每场活动：
-- [长沙站 Meetup](https://kubesphere.io/zh/live/meetup-changsha-20220312/)
-- [成都站 Meetup](https://kubesphere.io/zh/live/meetup-chengdu-20220514/)
-- [线上 Meetup —— KubeSphere + Apache Pulsar](https://kubesphere.io/zh/live/pulsar-kubesphere-meetup0625/)
-- [广州站 Meetup](https://kubesphere.io/zh/live/meetup-guangzhou-20220806/)
-- [杭州站 Meetup](https://kubesphere.io/zh/live/meetup-hangzhou-20220827/)
-- [线上 Meetup —— KubeSphere + Apache APISIX](https://kubesphere.io/zh/live/apisix-kubesphere-meetup1022/)
-- [云原生直播](https://kubesphere.io/zh/live/)
+- [长沙站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-changsha-20220312/)
+- [成都站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-chengdu-20220514/)
+- [线上 Meetup —— KubeSphere + Apache Pulsar](https://docs.kubesphere-carryon.top/zh/live/pulsar-kubesphere-meetup0625/)
+- [广州站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-guangzhou-20220806/)
+- [杭州站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-hangzhou-20220827/)
+- [线上 Meetup —— KubeSphere + Apache APISIX](https://docs.kubesphere-carryon.top/zh/live/apisix-kubesphere-meetup1022/)
+- [云原生直播](https://docs.kubesphere-carryon.top/zh/live/)
 
 
 ## 年度用户落地实践案例
 
 2022 年又有近十家企业在社区发布了实践案例，帮助其他社区用户落地 KubeSphere 和云原生技术：
-- [去哪儿网业务大规模容器化最佳实践](https://kubesphere.io/zh/blogs/qunar-kubesphere-best-practice/)
-- [中科金财区块链平台容器化最佳实践](https://kubesphere.io/zh/case/sinodata/)
-- [新东方核心业务全面容器化实践](https://kubesphere.io/zh/case/xdf/)
-- [图菱科技 SaaS 系统容器化最佳实践](https://kubesphere.io/zh/case/turing/)
-- [基于 KubeSphere 的运管系统落地实践](https://kubesphere.io/zh/blogs/kubesphere-practice/)
-- [基于云原生的私有化 PaaS 平台交付实践](https://kubesphere.io/zh/blogs/cloudnative-paas/)
-- [国星宇航 SaaS 系统容器化最佳实践](https://kubesphere.io/zh/case/adaspace/)
-- [广西交科集团业务大规模容器化最佳实践](https://kubesphere.io/zh/case/gxjtkyy/)
+- [去哪儿网业务大规模容器化最佳实践](https://docs.kubesphere-carryon.top/zh/blogs/qunar-kubesphere-best-practice/)
+- [中科金财区块链平台容器化最佳实践](https://docs.kubesphere-carryon.top/zh/case/sinodata/)
+- [新东方核心业务全面容器化实践](https://docs.kubesphere-carryon.top/zh/case/xdf/)
+- [图菱科技 SaaS 系统容器化最佳实践](https://docs.kubesphere-carryon.top/zh/case/turing/)
+- [基于 KubeSphere 的运管系统落地实践](https://docs.kubesphere-carryon.top/zh/blogs/kubesphere-practice/)
+- [基于云原生的私有化 PaaS 平台交付实践](https://docs.kubesphere-carryon.top/zh/blogs/cloudnative-paas/)
+- [国星宇航 SaaS 系统容器化最佳实践](https://docs.kubesphere-carryon.top/zh/case/adaspace/)
+- [广西交科集团业务大规模容器化最佳实践](https://docs.kubesphere-carryon.top/zh/case/gxjtkyy/)
 
-欢迎各大企业或组织向 KubeSphere 社区提交自己的实践案例，您可以先在社区[论坛帖子](https://kubesphere.io/forum/d/5293-kubesphere)中进行回复，然后将案例文章发布到论坛中。
+欢迎各大企业或组织向 KubeSphere 社区提交自己的实践案例，您可以先在社区[论坛帖子](https://docs.kubesphere-carryon.top/forum/d/5293-kubesphere)中进行回复，然后将案例文章发布到论坛中。
 
 ## 2022 年度 KubeSphere 贡献者
 
@@ -203,7 +203,7 @@ KubeSphere 社区在所有社区用户、贡献者、合作伙伴的共同协作
 
 2022 年共诞生 2 位新的 KubeSphere Member，他们深度参与了 KubeSphere 社区开源贡献，在社区独立完成了一个或多个功能特性开发、文档撰写以及测试。
 
-社区也欢迎更多的 contributor 能进阶为 member，如果您在半年内为特定的 SIG 代码库贡献了至少一个显著的 PR 或者完成一项或多项功能的开发，即可去 GitHub 提交 [Issue](https://github.com/kubesphere/community/issues) 来申请。
+社区也欢迎更多的 contributor 能进阶为 member，如果您在半年内为特定的 SIG 代码库贡献了至少一个显著的 PR 或者完成一项或多项功能的开发，即可去 GitHub 提交 [Issue](https://github.com/whenegghitsrock/community/issues) 来申请。
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/kubesphere-member-2022-review.png)
 
@@ -212,7 +212,7 @@ KubeSphere 社区在所有社区用户、贡献者、合作伙伴的共同协作
 |Arhell|[领取证书](https://pek3b.qingstor.com/kubesphere-community/images/member-Arhell.png) |
 |zhaohuiweixiao|[领取证书](https://pek3b.qingstor.com/kubesphere-community/images/member-zhaohuiweixiao.png) |
 
-> 我们在论坛开了一个[证书汇总贴](https://kubesphere.io/forum/d/9280-kubesphere)，包含社区颁发过的所有证书，欢迎大家领取。后续我们将会在官网开辟一个新的 team 页面，届时在此页面即可下载证书。
+> 我们在论坛开了一个[证书汇总贴](https://docs.kubesphere-carryon.top/forum/d/9280-kubesphere)，包含社区颁发过的所有证书，欢迎大家领取。后续我们将会在官网开辟一个新的 team 页面，届时在此页面即可下载证书。
 
 KubeSphere 社区向 2022 年度 KubeSphere Member、KubeSphere Ambassador、KubeSphere Talented Speaker 及 KubeSphere Contributor 致谢，也欢迎更多的社区小伙伴参与开源贡献，共建开源生态。
 
@@ -224,11 +224,11 @@ KubeSphere 的运营体系日臻完善，参与社区运营的人员也日益增
 
 2022 年，KubeSphere 用户委员会已经成为社区运营的**中坚力量**，他们在社区非常活跃，做了非常多且高质量的贡献，此外他们还做了非常多创造性的工作，比如走进企业交流、走进高校交流（筹备中）：
 
-- [成都站 Meetup](https://kubesphere.io/zh/live/meetup-chengdu-20220514/) —— 成都用户委员会
-- [广州站 Meetup](https://kubesphere.io/zh/live/meetup-guangzhou-20220806/) —— 广州用户委员会
-- [杭州站](https://kubesphere.io/zh/live/meetup-hangzhou-20220827/) —— 杭州用户委员会
-- [走进企业富数科技交流](https://kubesphere.io/zh/live/fudata-kubesphere/) —— 杭州用户委员会
-- [走进企业之江实验室交流](https://kubesphere.io/zh/live/zhijianglab-kubesphere/) —— 杭州用户委员会
+- [成都站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-chengdu-20220514/) —— 成都用户委员会
+- [广州站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-guangzhou-20220806/) —— 广州用户委员会
+- [杭州站](https://docs.kubesphere-carryon.top/zh/live/meetup-hangzhou-20220827/) —— 杭州用户委员会
+- [走进企业富数科技交流](https://docs.kubesphere-carryon.top/zh/live/fudata-kubesphere/) —— 杭州用户委员会
+- [走进企业之江实验室交流](https://docs.kubesphere-carryon.top/zh/live/zhijianglab-kubesphere/) —— 杭州用户委员会
 - [KubeSphere Talk 第一期](https://www.xiaoyuzhoufm.com/podcast/6375d6e8b0725ebdf1e702e6) —— 杭州站长尹珉
 - [KubeSphere Talk 第二期](https://www.xiaoyuzhoufm.com/podcast/6375d6e8b0725ebdf1e702e6) ——广州站长裴振飞
 
@@ -246,7 +246,7 @@ KubeSphere 社区在 2022 年推出了两个新的栏目，每两周更新一次
 
 为了帮助社区的小伙伴们更好地掌握 KubeSphere 社区的进展，我们决定每两周更新一次周报，即双周报。本双周报主要是整理展示新增的贡献者名单，以及两周内提交过 Commit 的贡献者，并对近期重要的 PR 进行解析，同时还包含了线上/线下活动和布道推广等一系列社区动态。
 
-目前已更新 12 期，大家可以通过[社区双周报合集](https://kubesphere.io/forum/t/ks-beweekly)进行回顾。
+目前已更新 12 期，大家可以通过[社区双周报合集](https://docs.kubesphere-carryon.top/forum/t/ks-beweekly)进行回顾。
 
 ### 播客栏目——KubeSphere Talk
 
@@ -256,7 +256,7 @@ KubeSphere Talk 是由 KubeSphere 社区发起的一档访谈、聊天的音频�
 
 <div align=center><img src="https://pek3b.qingstor.com/kubesphere-community/images/202211291541054.png"  width = "200" height = "200"></div>
 
-关于播客的详情，大家也可以阅读文章[《KubeSphere 社区推出播客啦！》](https://kubesphere.io/zh/news/kubesphere-talk-podcast/)进行了解。
+关于播客的详情，大家也可以阅读文章[《KubeSphere 社区推出播客啦！》](https://docs.kubesphere-carryon.top/zh/news/kubesphere-talk-podcast/)进行了解。
 
 ## 社区荣誉
 

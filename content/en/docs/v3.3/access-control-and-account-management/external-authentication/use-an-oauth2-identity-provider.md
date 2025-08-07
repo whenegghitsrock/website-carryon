@@ -20,11 +20,11 @@ You need to deploy a Kubernetes cluster and install KubeSphere in the cluster. F
 
 {{< notice note >}}
 
-KubeSphere provides two built-in OAuth 2.0 plugins: [GitHubIdentityProvider](https://github.com/kubesphere/kubesphere/blob/release-3.1/pkg/apiserver/authentication/identityprovider/github/github.go) for GitHub and  [AliyunIDaasProvider](https://github.com/kubesphere/kubesphere/blob/release-3.1/pkg/apiserver/authentication/identityprovider/github/github.go) for Alibaba Cloud IDaaS. You can develop other plugins according to the built-in plugins.
+KubeSphere provides two built-in OAuth 2.0 plugins: [GitHubIdentityProvider](https://github.com/whenegghitsrock/kubesphere-carryon/blob/release-3.1/pkg/apiserver/authentication/identityprovider/github/github.go) for GitHub and  [AliyunIDaasProvider](https://github.com/whenegghitsrock/kubesphere-carryon/blob/release-3.1/pkg/apiserver/authentication/identityprovider/github/github.go) for Alibaba Cloud IDaaS. You can develop other plugins according to the built-in plugins.
 
 {{</ notice >}}
 
-1. Clone the [KubeSphere repository](https://github.com/kubesphere/kubesphere) on your local machine, go to the local KubeSphere repository, and create a package for your plugin in the `/pkg/apiserver/authentication/identityprovider/` directory.
+1. Clone the [KubeSphere repository](https://github.com/whenegghitsrock/kubesphere-carryon) on your local machine, go to the local KubeSphere repository, and create a package for your plugin in the `/pkg/apiserver/authentication/identityprovider/` directory.
 
 2. In the plugin package, implement the following interfaces:
 
@@ -72,12 +72,12 @@ KubeSphere provides two built-in OAuth 2.0 plugins: [GitHubIdentityProvider](htt
    // Change <CustomPackage> to the actual name of your plugin package.
    import (
    	...
-   	_ "kubesphere.io/kubesphere/pkg/apiserver/authentication/identityprovider/<CustomPackage>"
+   	_ "docs.kubesphere-carryon.top/kubesphere/pkg/apiserver/authentication/identityprovider/<CustomPackage>"
    	...
    	)
    ```
 
-5. [Build the image of ks-apiserver](https://github.com/kubesphere/community/blob/104bab42f67094930f2ca87c603b7c6365cd092a/developer-guide/development/quickstart.md) and deploy it in your cluster.
+5. [Build the image of ks-apiserver](https://github.com/whenegghitsrock/community/blob/104bab42f67094930f2ca87c603b7c6365cd092a/developer-guide/development/quickstart.md) and deploy it in your cluster.
 
 ## Integrate an Identity Provider with KubeSphere
 
@@ -91,7 +91,7 @@ KubeSphere provides two built-in OAuth 2.0 plugins: [GitHubIdentityProvider](htt
 
 3. Configure fields in `oauthOptions:identityProviders` section according to the identity provider plugin you have developed.
 
-   The following is a configuration example that uses GitHub as an external identity provider. For details, see the [official GitHub documentation](https://docs.github.com/en/developers/apps/building-oauth-apps) and the [source code of the GitHubIdentityProvider](https://github.com/kubesphere/kubesphere/blob/release-3.1/pkg/apiserver/authentication/identityprovider/github/github.go) plugin.
+   The following is a configuration example that uses GitHub as an external identity provider. For details, see the [official GitHub documentation](https://docs.github.com/en/developers/apps/building-oauth-apps) and the [source code of the GitHubIdentityProvider](https://github.com/whenegghitsrock/kubesphere-carryon/blob/release-3.1/pkg/apiserver/authentication/identityprovider/github/github.go) plugin.
 
    ```yaml
    spec:
@@ -112,7 +112,7 @@ KubeSphere provides two built-in OAuth 2.0 plugins: [GitHubIdentityProvider](htt
              redirectURL: 'https://ks-console/oauth/redirect/github'
    ```
    
-   Similarly, you can also use Alibaba Cloud IDaaS as an external identity provider. For details, see the official [Alibaba IDaaS documentation](https://www.alibabacloud.com/help/product/111120.htm?spm=a3c0i.14898238.2766395700.1.62081da1NlxYV0) and the [source code of the AliyunIDaasProvider](https://github.com/kubesphere/kubesphere/blob/release-3.1/pkg/apiserver/authentication/identityprovider/github/github.go) plugin.
+   Similarly, you can also use Alibaba Cloud IDaaS as an external identity provider. For details, see the official [Alibaba IDaaS documentation](https://www.alibabacloud.com/help/product/111120.htm?spm=a3c0i.14898238.2766395700.1.62081da1NlxYV0) and the [source code of the AliyunIDaasProvider](https://github.com/whenegghitsrock/kubesphere-carryon/blob/release-3.1/pkg/apiserver/authentication/identityprovider/github/github.go) plugin.
 
 4. After the fields are configured, save your changes, and wait until the restart of ks-installer is complete.
 

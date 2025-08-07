@@ -15,7 +15,7 @@ Kubernetes 是一个开源容器编排引擎，可以帮助开发者或运维人
 
 可以通过快速安装 kubernetes 集群：
 
-- [KubeSphere Installer](https://github.com/kubesphere/kubesphere)
+- [KubeSphere Installer](https://github.com/whenegghitsrock/kubesphere-carryon)
 - [minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/)
 - [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/)
 
@@ -94,7 +94,7 @@ docker push $DOCKERHUB_USER/example-app:v0.1.0
 
 此应用将分为两个服务部署，一个是包含 Nodejs 主程序的 example-app 服务，一个提供存储的 mognodb 服务。
 
-mongodb 使用 https://hub.docker.com/_/mongo 作为镜像，因为有持久化数据，在单节点模式下可以使用 HostPath 挂载存储（多节点模式或挂载 PVC 存储形式推荐使用 [KubeSphere](https://kubesphere.io/) 部署集群, 省去繁琐的配置），通过 Service 将服务暴露到 k8s 内部。
+mongodb 使用 https://hub.docker.com/_/mongo 作为镜像，因为有持久化数据，在单节点模式下可以使用 HostPath 挂载存储（多节点模式或挂载 PVC 存储形式推荐使用 [KubeSphere](https://docs.kubesphere-carryon.top/) 部署集群, 省去繁琐的配置），通过 Service 将服务暴露到 k8s 内部。
 
 mongodb.yaml
 ```yaml
@@ -402,4 +402,4 @@ curl -X GET \
 通过测试可发现 example-app 与 mongodb 服务运行正常。
 
 <!-- ### 使用 KubeSphere UI 部署服务
-[KubeSphere](https://kubesphere.io/) 是一款简单易用的 kubernetes 开源发行版, 可视化的部署操作大大降低运维难度。 -->
+[KubeSphere](https://docs.kubesphere-carryon.top/) 是一款简单易用的 kubernetes 开源发行版, 可视化的部署操作大大降低运维难度。 -->

@@ -20,7 +20,7 @@ As the control plane oversees the state of a Kubernetes cluster, worker nodes ha
 
 ## Restart a Kubernetes Cluster
 
-This article assumes that you set up your Kubernetes cluster through [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/) or [KubeKey](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/).
+This article assumes that you set up your Kubernetes cluster through [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/) or [KubeKey](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/).
 
 You have to make sure that you at least finish the backup for ectd before restarting your cluster, which would prevent you from the loss of critical data. Next, let's go into details about the process of restarting a Kubernetes cluster.
 

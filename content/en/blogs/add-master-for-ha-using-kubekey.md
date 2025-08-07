@@ -8,7 +8,7 @@ author: 'Sherlock'
 snapshot: 'https://ap3.qingstor.com/kubesphere-website/docs/KubeKey-lightweight-installer.png'
 ---
 
-As demonstrated in my [last article](https://kubesphere.io/blogs/scale-kubernetes-cluster-using-kubekey/), you can use KubeKey to easily scale in and out your cluster. As I only had one master node in the example, the cluster did not feature high availability. In this post, I will continue to demonstrate how to scale out your cluster while by adding master nodes this time to achieve high availability.
+As demonstrated in my [last article](https://docs.kubesphere-carryon.top/blogs/scale-kubernetes-cluster-using-kubekey/), you can use KubeKey to easily scale in and out your cluster. As I only had one master node in the example, the cluster did not feature high availability. In this post, I will continue to demonstrate how to scale out your cluster while by adding master nodes this time to achieve high availability.
 
 The steps are listed as follows:
 
@@ -44,7 +44,7 @@ Here are the nodes that will be added to the cluster to achieve high availabilit
 
 ![node-info](https://ap3.qingstor.com/kubesphere-website/docs/ha-architecture-node-info.jpg)
 
-For more information about requirements for nodes, network, and dependencies, [see this article](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/#node-requirements).
+For more information about requirements for nodes, network, and dependencies, [see this article](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/#node-requirements).
 
 ## Prepare Load Balancers
 
@@ -52,10 +52,10 @@ You can use any cloud load balancers or hardware load balancers (e.g. F5). In ad
 
 ## Download KubeKey
 
-1. Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command to download KubeKey version 1.0.1. You only need to download KubeKey to one of your machines that serves as the **taskbox** for scaling.
+1. Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command to download KubeKey version 1.0.1. You only need to download KubeKey to one of your machines that serves as the **taskbox** for scaling.
 
    ```bash
-   curl -sfL https://get-kk.kubesphere.io | VERSION=v2.0.0 sh -
+   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.0.0 sh -
    ```
 
 2. The above command downloads KubeKey and unzips the file. Your folder now contains a file called `kk`. Make it executable:
@@ -82,7 +82,7 @@ You can use any cloud load balancers or hardware load balancers (e.g. F5). In ad
    This is my configuration for your reference:
 
    ```yaml
-   apiVersion: kubekey.kubesphere.io/v1alpha1
+   apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
    kind: Cluster
    metadata:
      name: sample
@@ -132,7 +132,7 @@ You can use any cloud load balancers or hardware load balancers (e.g. F5). In ad
    {{< notice note >}}
 
    - You are not allowed to modify the host name of existing nodes (e.g. `master1`) when adding new nodes.
-   - For more information about different parameters in the configuration file, see [this article](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/#install-kubernetes).
+   - For more information about different parameters in the configuration file, see [this article](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/#install-kubernetes).
 
    {{</ notice >}} 
 
@@ -222,14 +222,14 @@ You can use any cloud load balancers or hardware load balancers (e.g. F5). In ad
 
 ## Summary
 
-The steps of adding more master nodes so that your cluster is highly available is basically the same as demonstrated in my [last post](https://kubesphere.io/blogs/scale-kubernetes-cluster-using-kubekey/). The major difference is that you must configure your load balancer correctly.
+The steps of adding more master nodes so that your cluster is highly available is basically the same as demonstrated in my [last post](https://docs.kubesphere-carryon.top/blogs/scale-kubernetes-cluster-using-kubekey/). The major difference is that you must configure your load balancer correctly.
 
 ## Reference
 
-[KubeKey](https://github.com/kubesphere/kubekey)
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon)
 
-[Multi-node Installation](https://kubesphere.io/docs/installing-on-linux/introduction/multioverview/)
+[Multi-node Installation](https://docs.kubesphere-carryon.top/docs/installing-on-linux/introduction/multioverview/)
 
-[KubeKey: A Lightweight Installer for Kubernetes and Cloud Native Addons](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/)
+[KubeKey: A Lightweight Installer for Kubernetes and Cloud Native Addons](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/)
 
-[Scaling a Kubernetes Cluster: One of the Best Practices for Using KubeKey](https://kubesphere.io/blogs/scale-kubernetes-cluster-using-kubekey/)
+[Scaling a Kubernetes Cluster: One of the Best Practices for Using KubeKey](https://docs.kubesphere-carryon.top/blogs/scale-kubernetes-cluster-using-kubekey/)

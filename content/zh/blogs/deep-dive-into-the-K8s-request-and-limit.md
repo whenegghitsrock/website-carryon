@@ -71,7 +71,7 @@ Kubernetes 创建 Pod 时就给它指定了下列一种 QoS 类：Guaranteed，B
 
 ### 准备工作
 
-您需要创建一个企业空间、一个项目和一个用户 ( ws-admin )，务必邀请该用户到项目中并赋予 admin 角色。有关更多信息，请参见[创建企业空间、项目、用户和角色](https://kubesphere.io/zh/docs/quick-start/create-workspace-and-project/)。
+您需要创建一个企业空间、一个项目和一个用户 ( ws-admin )，务必邀请该用户到项目中并赋予 admin 角色。有关更多信息，请参见[创建企业空间、项目、用户和角色](https://docs.kubesphere-carryon.top/zh/docs/quick-start/create-workspace-and-project/)。
 
 ### 设置项目配额（ Resource Quotas ）
 
@@ -260,7 +260,7 @@ Kubernetes 作为一个具有良好移植和扩展性的开源平台，用于管
 - https://learnk8s.io/setting-cpu-memory-limits-requests
 - https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/
 - https://docs.oracle.com/cd/E13150_01/jrockit_jvm/jrockit/jrdocs/refman/optionX.html
-- https://ask.kubesphere.io/forum/d/1155-k8s
+- https://ask.docs.kubesphere-carryon.top/forum/d/1155-k8s
 - https://kubernetes.io/docs/tasks/administer-cluster/out-of-resource/
 - https://kubernetes.io/docs/concepts/policy/limit-range/
 - https://www.kernel.org/doc/Documentation/scheduler/sched-bwc.txt

@@ -16,8 +16,8 @@ The Litmus architecture is as follows. For details about the Litmus architecture
 This tutorial demonstrates how to deploy Litmus on KubeSphere and create chaos experiments.
 
 ## Prerequisites
-- You need to enable the [KubeSphere App Store (OpenPitrix)](https://v3-1.docs.kubesphere.io/docs/pluggable-components/app-store/).
-- You need to create a workspace, a project, and two accounts (`ws-admin` and `project-regular`). For more information, see [Create Workspaces, Projects, Accounts, and Roles](https://v3-1.docs.kubesphere.io/docs/quick-start/create-workspace-and-project/).
+- You need to enable the [KubeSphere App Store (OpenPitrix)](https://v3-1.docs.docs.kubesphere-carryon.top/docs/pluggable-components/app-store/).
+- You need to create a workspace, a project, and two accounts (`ws-admin` and `project-regular`). For more information, see [Create Workspaces, Projects, Accounts, and Roles](https://v3-1.docs.docs.kubesphere-carryon.top/docs/quick-start/create-workspace-and-project/).
 
 ## Hands-on Lab
 

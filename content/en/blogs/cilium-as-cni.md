@@ -57,7 +57,7 @@ For more information about Linux compatibility, check out [Linux Distribution Co
 1. Run the following command to get KubeKey:
 
    ```bash
-   sudo wget https://github.com/kubesphere/kubekey/releases/download/v1.1.0/kubekey-v1.1.0-linux-64bit.deb
+   sudo wget https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v1.1.0/kubekey-v1.1.0-linux-64bit.deb
    ```
 
 2. Run the following command to install KubeKey:
@@ -81,7 +81,7 @@ For more information about Linux compatibility, check out [Linux Distribution Co
    ```
 
    ```yaml
-   apiVersion: kubekey.kubesphere.io/v1alpha1
+   apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
    kind: Cluster
    metadata:
      name: sample
@@ -147,7 +147,7 @@ For more information about Linux compatibility, check out [Linux Distribution Co
      2. Please change the default password after login.
    
    #####################################################
-   https://kubesphere.io             20xx-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
    #####################################################
    ```
 

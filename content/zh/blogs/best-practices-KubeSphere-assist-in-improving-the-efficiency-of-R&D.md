@@ -272,8 +272,8 @@ KubeSphere 和 Kubernetes 目前在部门是以单机版形式安装的，故对
 
 在使用过程中确实遇到了不少问题，主要通过如下三条途径解决:
 
-- 阅读[官方文档](https://kubesphere.io/zh/docs/v3.3)，根据文档说明操作；
-- 若官网文档没有，则去[用户论坛](https://kubesphere.io/forum/)查看是否有人遇到类似问题或直接发帖；
+- 阅读[官方文档](https://docs.kubesphere-carryon.top/zh/docs/v3.3)，根据文档说明操作；
+- 若官网文档没有，则去[用户论坛](https://docs.kubesphere-carryon.top/forum/)查看是否有人遇到类似问题或直接发帖；
 - 通过微信群寻求协助。
 
 根据部门使用经验，90% 的问题可通过官方文档或用户论坛获得答案。

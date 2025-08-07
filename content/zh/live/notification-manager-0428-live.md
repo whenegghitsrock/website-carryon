@@ -59,7 +59,7 @@ A：Notification Manager 的代码结构比较清晰，上手的难度不大，�
 
 A：Notification Manager 提供了一个接口供数据源写入数据。
 
-https://github.com/kubesphere/notification-manager/blob/master/docs/api/_index.md#Receive-alerts
+https://github.com/whenegghitsrock/notification-manager/blob/master/docs/api/_index.md#Receive-alerts
 
 ### Q6：KubeSphere 多集群中，是不是每个 Member 集群都需要单独配置 Receiver？
 
@@ -68,7 +68,7 @@ A：不需要，KubeSphere 实现了配置的自动分发。
 ### Q7：KubeSphere 3.3 应该不会集成 Notification Manager 2.0 吧？是否可以手动升级？
 
 A：KubeSphere 3.3 没有集成 Notification Manager 2.0。可以手动升级。参考： 
-https://github.com/kubesphere/notification-manager#install
+https://github.com/whenegghitsrock/notification-manager#install
 
 ### Q8：社区新手怎样参与 Notification Manager 项目的贡献？
 

@@ -14,7 +14,7 @@ weight: 9500
 
   {{< notice note >}}
 
-  For the implementation of the network policy, you can refer to [KubeSphere NetworkPolicy](https://github.com/kubesphere/community/blob/master/sig-network/concepts-and-designs/kubesphere-network-policy.md).
+  For the implementation of the network policy, you can refer to [KubeSphere NetworkPolicy](https://github.com/whenegghitsrock/community/blob/master/sig-network/concepts-and-designs/kubesphere-network-policy.md).
 
   {{</ notice >}}
 

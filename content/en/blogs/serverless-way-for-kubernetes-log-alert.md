@@ -17,7 +17,7 @@ Our general design idea is to add a Kafka server as a log receiver, and then use
 1. Set up a Kafka server as the log receiver for Kubernetes clusters.
 2. Deploy OpenFunction to provide serverless capabilities for log processing workloads.
 3. Write log processing functions to grab specific logs to generate alerting messages.
-4. Configure [Notification Manager](https://github.com/kubesphere/notification-manager/) to send alerts to Slack.
+4. Configure [Notification Manager](https://github.com/whenegghitsrock/notification-manager/) to send alerts to Slack.
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/202108261124546.png)
 
@@ -31,7 +31,7 @@ In this scenario, we will make use of the serverless capabilities of[ OpenFuncti
 
 ## Use Kafka as a Log Receiver
 
-First, enable the **logging** component for the KubeSphere platform (For more information, please refer to[ Enable Pluggable Components](https://kubesphere.io/docs/pluggable-components/). Next, we can use [strimzi-kafka-operator](https://github.com/strimzi/strimzi-kafka-operator) to build a minimal Kafka server.
+First, enable the **logging** component for the KubeSphere platform (For more information, please refer to[ Enable Pluggable Components](https://docs.kubesphere-carryon.top/docs/pluggable-components/). Next, we can use [strimzi-kafka-operator](https://github.com/strimzi/strimzi-kafka-operator) to build a minimal Kafka server.
 
 1. In the `default` namespace, install [strimzi-kafka-operator.](https://github.com/strimzi/strimzi-kafka-operator)
    
@@ -120,7 +120,7 @@ Add this Kafka server as a log receiver.
 
 1. Log in to the web console of KubeSphere as **admin**. In the upper-left corner, choose **Platform** > ****Cluster Management****.
    
-   > If you have enabled the [multi-cluster feature](https://kubesphere.io/docs/multicluster-management/), you need to select a cluster.
+   > If you have enabled the [multi-cluster feature](https://docs.kubesphere-carryon.top/docs/multicluster-management/), you need to select a cluster.
 
 2. On the ****Cluster Management**** page, click **Log Collections** under ****Cluster Settings****.
 
@@ -172,7 +172,7 @@ When a request returns **404**, the log content is as follows:
 
 ```
 
-Here are our needs: When a request returns **404**, the Notification Manager sends a notification to the receiver (Configure a Slack alert receiver according to [Configure Slack Notifications](https://kubesphere.io/docs/cluster-administration/platform-settings/notification-management/configure-slack/), and records the namespace, Pod name, request path, request method, and other information. Therefore, we write a simple function:
+Here are our needs: When a request returns **404**, the Notification Manager sends a notification to the receiver (Configure a Slack alert receiver according to [Configure Slack Notifications](https://docs.kubesphere-carryon.top/docs/cluster-administration/platform-settings/notification-management/configure-slack/), and records the namespace, Pod name, request path, request method, and other information. Therefore, we write a simple function:
 
 > You can learn how to use `openfunction-context` from [OpenFunction Context Spec,](https://github.com/OpenFunction/functions-framework/blob/main/docs/v0.3.0/OpenFunction-context-specs.md) which is a tool library provided by OpenFunction for writing functions. You can learn more about OpenFunction functions from [OpenFunction Samples.](https://github.com/OpenFunction/samples)
 

@@ -10,7 +10,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/containerd-cni
 
 ## 引言
 
-在[上一篇文章](https://kubesphere.io/zh/blogs/containerd-kubernetes/)中，我们详细讨论了 Kubernetes 中 containerd 的使用方法和一些核心概念。今天，我们将继续深入，探索 containerd 中的 CNI 插件。作为容器网络的关键组成部分，CNI 插件在实现容器之间的网络通信中扮演了重要角色。了解 CNI 插件不仅可以帮助我们更好地管理 Kubernetes 集群，还能提升我们的整体运维效率。
+在[上一篇文章](https://docs.kubesphere-carryon.top/zh/blogs/containerd-kubernetes/)中，我们详细讨论了 Kubernetes 中 containerd 的使用方法和一些核心概念。今天，我们将继续深入，探索 containerd 中的 CNI 插件。作为容器网络的关键组成部分，CNI 插件在实现容器之间的网络通信中扮演了重要角色。了解 CNI 插件不仅可以帮助我们更好地管理 Kubernetes 集群，还能提升我们的整体运维效率。
 
 ## 探索 CNI 插件的奥秘
 

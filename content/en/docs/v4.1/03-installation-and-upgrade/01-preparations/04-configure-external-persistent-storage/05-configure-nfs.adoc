@@ -214,5 +214,5 @@ Replace the following parameters with actual values:
 |The directory of NFS server used by KubeSphere.
 |===
 
-The above configuration file only contains the parameters that must be set. To set other parameters, see link:https://github.com/kubesphere/helm-charts/blob/master/src/main/nfs-client-provisioner/values.yaml[NFS Client Configuration].
+The above configuration file only contains the parameters that must be set. To set other parameters, see link:https://github.com/whenegghitsrock/helm-charts-carryon/blob/master/src/main/nfs-client-provisioner/values.yaml[NFS Client Configuration].
 --

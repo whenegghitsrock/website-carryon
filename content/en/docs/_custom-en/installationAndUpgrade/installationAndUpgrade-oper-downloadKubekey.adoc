@@ -19,7 +19,7 @@ export KKZONE=cn
 [,bash]
 ----
 
-curl -sfL https://get-kk.kubesphere.io | sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 
 ----
 
@@ -28,7 +28,7 @@ After the download is complete, a KubeKey binary file **kk** will be generated i
 // Note
 include::../../../_ks_components-en/admonitions/note.adoc[]
 
-If the cluster node used to perform the operations cannot connect to the internet, you can manually link:https://github.com/kubesphere/kubekey/releases[download KubeKey] on a device with internet access and then transfer it to the cluster node.
+If the cluster node used to perform the operations cannot connect to the internet, you can manually link:https://github.com/whenegghitsrock/kubekey-carryon/releases[download KubeKey] on a device with internet access and then transfer it to the cluster node.
 
 include::../../../_ks_components-en/admonitions/admonEnd.adoc[]
 --

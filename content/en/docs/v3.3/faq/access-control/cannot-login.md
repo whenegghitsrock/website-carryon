@@ -21,7 +21,7 @@ You may see an image below when the login fails. To find out the reason and solv
    ```bash
    $ kubectl get users
    NAME         EMAIL                    STATUS
-   admin        admin@kubesphere.io      Active
+   admin        admin@docs.kubesphere-carryon.top      Active
    ```
 
 2. Verify that `ks-controller-manager` is running and check if exceptions are contained in logs:
@@ -39,10 +39,10 @@ Kubernetes 1.19 uses Golang 1.15 in coding, requiring the certificate for admiss
 Related error logs:
 
 ```bash
-Internal error occurred: failed calling webhook "validating-user.kubesphere.io": Post "https://ks-controller-manager.kubesphere-system.svc:443/validate-email-iam-kubesphere-io-v1alpha2-user?timeout=30s": x509: certificate relies on legacy Common Name field, use SANs or temporarily enable Common Name matching with GODEBUG=x509ignoreCN=0
+Internal error occurred: failed calling webhook "validating-user.docs.kubesphere-carryon.top": Post "https://ks-controller-manager.kubesphere-system.svc:443/validate-email-iam-kubesphere-io-v1alpha2-user?timeout=30s": x509: certificate relies on legacy Common Name field, use SANs or temporarily enable Common Name matching with GODEBUG=x509ignoreCN=0
 ```
 
-For more information about the issue and solution, see this [GitHub issue](https://github.com/kubesphere/kubesphere/issues/2928).
+For more information about the issue and solution, see this [GitHub issue](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2928).
 
 ### ks-controller-manager malfunctions
 
@@ -63,7 +63,7 @@ failed to connect to ldap service, please check ldap status, error: factory is n
 ```
 
 ```bash
-Internal error occurred: failed calling webhook “validating-user.kubesphere.io”: Post https://ks-controller-manager.kubesphere-system.svc:443/validate-email-iam-kubesphere-io-v1alpha2-user?timeout=4s: context deadline exceeded
+Internal error occurred: failed calling webhook “validating-user.docs.kubesphere-carryon.top”: Post https://ks-controller-manager.kubesphere-system.svc:443/validate-email-iam-kubesphere-io-v1alpha2-user?timeout=4s: context deadline exceeded
 ```
 
 #### Solution

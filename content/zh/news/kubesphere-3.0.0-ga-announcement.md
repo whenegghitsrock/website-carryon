@@ -70,7 +70,7 @@ KubeSphere 安装部署是之前版本备受社区用户诟病的问题，我们
 
 开源社区正在帮助 KubeSphere 迅速走向全球，目前 KubeSphere 社区用户分布在全球的 90 多个国家。3.0.0 在 Console 支持了中英之外的繁中和西班牙语，均由社区开发者参与贡献。KubeSphere 还联合海外的贡献者企业共同建立了西班牙社区和土耳其社区，未来将进一步拓展欧洲市场。
 
-KubeSphere 3.0.0 继续秉承 100% 开源的承诺，3.0.0 版本带来的诸多新功能也早已在 GitHub 开源，例如 Porter、OpenPitrix、Fluentbit Operator、 KubeKey、Notification Manager、Kube-events，还开源了一套前端组件库 Kube-design，这些新特性的代码与设计文档在 GitHub（`github.com/kubesphere`）相关仓库都可以找到，欢迎大家在 GitHub 给我们 Star + Fork + PR 三连。
+KubeSphere 3.0.0 继续秉承 100% 开源的承诺，3.0.0 版本带来的诸多新功能也早已在 GitHub 开源，例如 Porter、OpenPitrix、Fluentbit Operator、 KubeKey、Notification Manager、Kube-events，还开源了一套前端组件库 Kube-design，这些新特性的代码与设计文档在 GitHub（`github.com/whenegghitsrock`）相关仓库都可以找到，欢迎大家在 GitHub 给我们 Star + Fork + PR 三连。
 
 ## 未来可期
 

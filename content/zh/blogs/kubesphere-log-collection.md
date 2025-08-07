@@ -62,12 +62,12 @@ $ kubectl get Output -n kubesphere-logging-system es -o yaml
 
 ```yaml
 ---
-apiVersion: logging.kubesphere.io/v1alpha2
+apiVersion: logging.docs.kubesphere-carryon.top/v1alpha2
 kind: Input
 metadata:
   labels:
-    logging.kubesphere.io/component: logging
-    logging.kubesphere.io/enabled: "true"
+    logging.docs.kubesphere-carryon.top/component: logging
+    logging.docs.kubesphere-carryon.top/enabled: "true"
   name: kafka-flux-wms
   namespace: kubesphere-logging-system
 spec:
@@ -79,14 +79,14 @@ spec:
     refreshIntervalSeconds: 10
     tag: fluxwms.*
 ---
-apiVersion: logging.kubesphere.io/v1alpha2
+apiVersion: logging.docs.kubesphere-carryon.top/v1alpha2
 kind: Output
 metadata:
   annotations:
-    kubesphere.io/creator: admin
+    docs.kubesphere-carryon.top/creator: admin
   labels:
-    logging.kubesphere.io/component: logging
-    logging.kubesphere.io/enabled: "true"
+    logging.docs.kubesphere-carryon.top/component: logging
+    logging.docs.kubesphere-carryon.top/enabled: "true"
   name: kafka-flux-wms
   namespace: kubesphere-logging-system
 spec:
@@ -110,12 +110,12 @@ FluentBit 对多行日志的支持，需要配置 Parser，并通过 `parserFirs
 
 ```yaml
 ---
-apiVersion: logging.kubesphere.io/v1alpha2
+apiVersion: logging.docs.kubesphere-carryon.top/v1alpha2
 kind: Input
 metadata:
   labels:
-    logging.kubesphere.io/component: logging
-    logging.kubesphere.io/enabled: "true"
+    logging.docs.kubesphere-carryon.top/component: logging
+    logging.docs.kubesphere-carryon.top/enabled: "true"
   name: kafka-flux-wms
   namespace: kubesphere-logging-system
 spec:
@@ -129,12 +129,12 @@ spec:
     refreshIntervalSeconds: 10
     tag: fluxwms.*
 ---
-apiVersion: logging.kubesphere.io/v1alpha2
+apiVersion: logging.docs.kubesphere-carryon.top/v1alpha2
 kind: Parser
 metadata:
   labels:
-    logging.kubesphere.io/component: logging
-    logging.kubesphere.io/enabled: "true"
+    logging.docs.kubesphere-carryon.top/component: logging
+    logging.docs.kubesphere-carryon.top/enabled: "true"
   name: kafka-flux-wms
   namespace: kubesphere-logging-system
 spec:

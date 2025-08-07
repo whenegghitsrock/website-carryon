@@ -14,7 +14,7 @@ As **a promising newcomer** of the cloud native family, KubeSphere has gained wi
 
 ## For Enterprises
 
-KubeSphere is a **multi-tenant** [container platform built on Kubernetes](https://kubesphere.io/) with applications at its core. It is capable of full stack IT automated operation and maintenance, streamlining the DevOps workflow for enterprises. KubeSphere not only helps enterprises quickly establish a Kubernetes cluster in public cloud or private data center, but also provides a set of multi-functional wizard interfaces.
+KubeSphere is a **multi-tenant** [container platform built on Kubernetes](https://docs.kubesphere-carryon.top/) with applications at its core. It is capable of full stack IT automated operation and maintenance, streamlining the DevOps workflow for enterprises. KubeSphere not only helps enterprises quickly establish a Kubernetes cluster in public cloud or private data center, but also provides a set of multi-functional wizard interfaces.
 
 KubeSphere enables enterprises to build a feature-rich container platform equipped with the great flexibility and agile deployment of Kubernetes. The platform also offers outstanding solutions to storage, network and stability, creating the same user experience as IaaS. For example, KubeSphere 2.1.1 supports the integration of Alibaba Cloud and Tencent Cloud block storage plugin. In this version, public cloud storage can be mounted to Pod, providing more stable and persistent storage for stateful applications.
 
@@ -74,4 +74,4 @@ Three grayscale strategies are provided by KubeSphere based on Istio: blue-green
 
 ## KubeSphere Installation
 
-KubeSphere can be deployed and run on any infrastructure, including public clouds, private clouds, virtual machines, bare metals and Kubernetes. It can be installed either online or offline. For more information, refer to [Installing on Linux](https://kubesphere.io/docs/installing-on-linux/) and [Installing on Kubernetes](https://kubesphere.io/docs/installing-on-kubernetes/).
+KubeSphere can be deployed and run on any infrastructure, including public clouds, private clouds, virtual machines, bare metals and Kubernetes. It can be installed either online or offline. For more information, refer to [Installing on Linux](https://docs.kubesphere-carryon.top/docs/installing-on-linux/) and [Installing on Kubernetes](https://docs.kubesphere-carryon.top/docs/installing-on-kubernetes/).

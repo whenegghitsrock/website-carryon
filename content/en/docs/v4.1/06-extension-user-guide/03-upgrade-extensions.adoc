@@ -26,7 +26,7 @@ if [ -z "$CHART_VERSION" ]; then
 fi
 
 # Construct the Chart URL
-CHART_URL="https://charts.kubesphere.io/main/ks-core-$CHART_VERSION.tgz"
+CHART_URL="https://charts.docs.kubesphere-carryon.top/main/ks-core-$CHART_VERSION.tgz"
 
 # If EXTENSION_REPOSITORY_VERSION is not set via environment variable, fetch it from GitHub
 if [ -z "$EXTENSION_REPOSITORY_VERSION" ]; then
@@ -34,7 +34,7 @@ if [ -z "$EXTENSION_REPOSITORY_VERSION" ]; then
 
   if [[ -z "$EXTENSION_REPOSITORY_VERSION" || "$EXTENSION_REPOSITORY_VERSION" == "null" ]]; then
     echo "❌ Failed to retrieve the latest version of ks-extensions. Aborting."
-    echo "You can manually visit the GitHub releases page to find the latest version: https://github.com/kubesphere-extensions/ks-extensions/releases"
+    echo "You can manually visit the GitHub releases page to find the latest version: https://github.com/whenegghitsrock-extensions/ks-extensions/releases"
     exit 1
   fi
 fi

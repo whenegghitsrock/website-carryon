@@ -53,7 +53,7 @@ Here are parameter descriptions of some commonly used fields in KubeSphere.
 | Volume Expansion | Specified by `allowVolumeExpansion` in the manifest. When it is set to `true`, PVs can be configured to be expandable. For more information, see [Allow Volume Expansion](https://kubernetes.io/docs/concepts/storage/storage-classes/#allow-volume-expansion). |
 | Reclaim Policy | Specified by `reclaimPolicy` in the manifest. For more information, see [Reclaim Policy](https://kubernetes.io/docs/concepts/storage/storage-classes/#reclaim-policy). |
 | Storage System | Specified by `provisioner` in the manifest. It determines what volume plugin is used for provisioning PVs. For more information, see [Provisioner](https://kubernetes.io/docs/concepts/storage/storage-classes/#provisioner). |
-| Access Mode | Specified by `metadata.annotations[storageclass.kubesphere.io/supported-access-modes]` in the manifest. It tells KubeSphere which [access mode](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes) is supported. |
+| Access Mode | Specified by `metadata.annotations[storageclass.docs.kubesphere-carryon.top/supported-access-modes]` in the manifest. It tells KubeSphere which [access mode](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes) is supported. |
 | Volume Binding Mode | Specified by `volumeBindingMode` in the manifest. It determines what binding mode is used. **Delayed binding** means that a volume, after it is created, is bound to a volume instance when a Pod using this volume is created. **Immediate binding** means that a volume, after it is created, is immediately bound to a volume instance. |
 
 For other settings, you need to provide different information for different storage plugins, which, in the manifest, are always indicated under the field `parameters`. They will be described in detail in the sections below. You can also refer to [Parameters](https://kubernetes.io/docs/concepts/storage/storage-classes/#parameters) in the official documentation of Kubernetes.
@@ -115,7 +115,7 @@ Nevertheless, you can use [rbd provisioner](https://github.com/kubernetes-incuba
 #### Prerequisites
 
 - The Ceph server has already been installed. See [Ceph Installation Documentation](https://docs.ceph.com/en/latest/install/) for more information.
-- Install the plugin if you choose to use rbd-provisioner. Community developers provide [charts for rbd provisioner](https://github.com/kubesphere/helm-charts/tree/master/src/test/rbd-provisioner) that you can use to install rbd-provisioner by helm.
+- Install the plugin if you choose to use rbd-provisioner. Community developers provide [charts for rbd provisioner](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/test/rbd-provisioner) that you can use to install rbd-provisioner by helm.
 
 #### Settings
 
@@ -153,7 +153,7 @@ NFS is incompatible with some applications, for example, Prometheus, which may r
 #### Prerequisites
 
 - An available NFS server.
-- The volume plugin nfs-client has already been installed. Community developers provide [charts for nfs-client](https://github.com/kubesphere/helm-charts/tree/master/src/main/nfs-client-provisioner) that you can use to install nfs-client by helm.
+- The volume plugin nfs-client has already been installed. Community developers provide [charts for nfs-client](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/main/nfs-client-provisioner) that you can use to install nfs-client by helm.
 
 #### Common Settings
 
@@ -161,8 +161,8 @@ NFS is incompatible with some applications, for example, Prometheus, which may r
 | :---- | :---- |
 | Volume Expansion | Specified by `allowVolumeExpansion` in the manifest. Select `No`. |
 | Reclaim Policy | Specified by `reclaimPolicy` in the manifest. The value is `Delete` by default. |
-| Storage System | Specified by `provisioner` in the manifest. If you install the storage class by [charts for nfs-client](https://github.com/kubesphere/helm-charts/tree/master/src/main/nfs-client-provisioner), it can be `cluster.local/nfs-client-nfs-client-provisioner`. |
-| Access Mode | Specified by `.metadata.annotations.storageclass.kubesphere.io/supported-access-modes` in the manifest. `ReadWriteOnce`, `ReadOnlyMany` and `ReadWriteMany` are all selected by default. |
+| Storage System | Specified by `provisioner` in the manifest. If you install the storage class by [charts for nfs-client](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/main/nfs-client-provisioner), it can be `cluster.local/nfs-client-nfs-client-provisioner`. |
+| Access Mode | Specified by `.metadata.annotations.storageclass.docs.kubesphere-carryon.top/supported-access-modes` in the manifest. `ReadWriteOnce`, `ReadOnlyMany` and `ReadWriteMany` are all selected by default. |
 | Volume Binding Mode | Specified by `volumeBindingMode` in the manifest. It determines what binding mode is used. **Delayed binding** means that a volume, after it is created, is bound to a volume instance when a Pod using this volume is created. **Immediate binding** means that a volume, after it is created, is immediately bound to a volume instance. |
 
 #### Parameters

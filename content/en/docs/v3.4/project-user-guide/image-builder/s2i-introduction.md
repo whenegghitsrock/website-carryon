@@ -8,7 +8,7 @@ weight: 10630
 
 Source-to-Image (S2I) is an automation tool for building images from source code. S2I injects source code into an Image Builder for compiling and then automatically packages the compiled code into a Docker image.
 
-For more information about how to use S2I in KubeSphere, refer to [Source to Image: Publish an App without a Dockerfile](../source-to-image/). Besides, you can refer to the code repositories [S2IOperator](https://github.com/kubesphere/s2ioperator#source-to-image-operator) and [S2IRun](https://github.com/kubesphere/s2irun#s2irun) for more details.
+For more information about how to use S2I in KubeSphere, refer to [Source to Image: Publish an App without a Dockerfile](../source-to-image/). Besides, you can refer to the code repositories [S2IOperator](https://github.com/whenegghitsrock/s2ioperator#source-to-image-operator) and [S2IRun](https://github.com/whenegghitsrock/s2irun#s2irun) for more details.
 
 ## S2I Workflow and Logic
 

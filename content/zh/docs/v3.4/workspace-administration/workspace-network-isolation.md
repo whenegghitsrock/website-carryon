@@ -14,7 +14,7 @@ weight: 9500
 
   {{< notice note >}}
 
-  关于网络策略的实现，您可以参考 [KubeSphere NetworkPolicy](https://github.com/kubesphere/community/blob/master/sig-network/concepts-and-designs/kubesphere-network-policy.md)。
+  关于网络策略的实现，您可以参考 [KubeSphere NetworkPolicy](https://github.com/whenegghitsrock/community/blob/master/sig-network/concepts-and-designs/kubesphere-network-policy.md)。
 
   {{</ notice >}}
 

@@ -17,7 +17,7 @@ snapshot: 'https://ap3.qingstor.com/kubesphere-website/docs/20201028212049.png'
 
 ## KubeSphere 简介
 
-[KubeSphere](https://kubesphere.io) 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，完全开源，支持多云与多集群管理，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。
+[KubeSphere](https://docs.kubesphere-carryon.top) 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，完全开源，支持多云与多集群管理，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。
 
 ![KubeSphere 架构](https://img-blog.csdnimg.cn/20201009114300360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25ldHdvcmtlbg==,size_16,color_FFFFFF,t_70#pic_center)
 
@@ -25,7 +25,7 @@ snapshot: 'https://ap3.qingstor.com/kubesphere-website/docs/20201028212049.png'
 
 KubeSphere 是由青云 QingCloud 开源的容器平台，**支持在任何基础设施上安装部署**。在青云公有云上支持一键部署 KubeSphere（QKE）。
 
-下面以在青云云平台快速启用 KubeSphere 容器平台为例部署 TiDB 分布式数据库，至少需要准备 3 个可调度的 node 节点。你也可以在任何 Kubernetes 集群或 Linux 系统上安装 KubeSphere，可以参考 [KubeSphere 官方文档](https://kubesphere.io/docs)。
+下面以在青云云平台快速启用 KubeSphere 容器平台为例部署 TiDB 分布式数据库，至少需要准备 3 个可调度的 node 节点。你也可以在任何 Kubernetes 集群或 Linux 系统上安装 KubeSphere，可以参考 [KubeSphere 官方文档](https://docs.kubesphere-carryon.top/docs)。
 
 1. 登录青云控制台：[https://console.qingcloud.com/](https://console.qingcloud.com/)，点击左侧容器平台，选择 KubeSphere，点击创建并选择合适的集群规格：
 
@@ -222,7 +222,7 @@ KubeSphere 容器平台对于云原生应用部署非常友好，对于还不熟
 
 ## 参考
 
-**KubeSphere GitHub**: https://github.com/kubesphere/kubesphere 
+**KubeSphere GitHub**: https://github.com/whenegghitsrock/kubesphere-carryon 
 
 **TiDB GitHub**: https://github.com/pingcap/TiDB
 
@@ -230,6 +230,6 @@ KubeSphere 容器平台对于云原生应用部署非常友好，对于还不熟
 
 **TiDB-Operator 文档**: https://docs.pingcap.com/tidb-in-kubernetes/stable/TiDB-Operator-overview
 
-**KubeSphere Introduction**: https://kubesphere.io/docs/introduction/what-is-kubesphere/
+**KubeSphere Introduction**: https://docs.kubesphere-carryon.top/docs/introduction/what-is-kubesphere/
 
-**KubeSphere Documentation**: https://kubesphere.io/docs/
+**KubeSphere Documentation**: https://docs.kubesphere-carryon.top/docs/

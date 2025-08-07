@@ -78,7 +78,7 @@ K8s 社区也提供了丰富的工具链，借助 [controller-runtime](https://g
 /apis/{api-group}/{version}/{resources}
 # 示例
 /apis/apps/v1/deployments
-/kapis/iam.kubesphere.io/v1alpha2/users
+/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/users
 # api core
 /api/v1/namespaces
 
@@ -153,17 +153,17 @@ subjects:
 以 User 资源为例，我们可以定义一下结构的 [CRD ](https://raw.githubusercontent.com/kubesphere/kubesphere/master/config/crds/iam.kubesphere.io_users.yaml) 对 User 进行抽象:
 
 ```yaml
-apiVersion: iam.kubesphere.io/v1alpha2
+apiVersion: iam.docs.kubesphere-carryon.top/v1alpha2
 kind: User
 metadata:
   annotations:
-    iam.kubesphere.io/last-password-change-time: "2021-05-12T05:50:07Z"
+    iam.docs.kubesphere-carryon.top/last-password-change-time: "2021-05-12T05:50:07Z"
   name: admin
   resourceVersion: "478503717"
-  selfLink: /apis/iam.kubesphere.io/v1alpha2/users/admin
+  selfLink: /apis/iam.docs.kubesphere-carryon.top/v1alpha2/users/admin
   uid: 9e438fcc-f179-4254-b534-e913dfd7a727
 spec:
-  email: admin@kubesphere.io
+  email: admin@docs.kubesphere-carryon.top
   lang: zh
   description: 'description'
   password: $2a$10$w312tzLTvXObnfEYiIrk9u5Nu/reJpwQeI66vrM1XJETWtpjd1/q2
@@ -176,23 +176,23 @@ status:
 
 ```bash
 # 创建
-POST /apis/iam.kubesphere.io/v1alpha2/users
+POST /apis/iam.docs.kubesphere-carryon.top/v1alpha2/users
 
 # 删除
-DELETE /apis/iam.kubesphere.io/v1alpha2/users/{username}
+DELETE /apis/iam.docs.kubesphere-carryon.top/v1alpha2/users/{username}
 
 # 修改
-PUT /apis/iam.kubesphere.io/v1alpha2/users/{username}
-PATCH /apis/iam.kubesphere.io/v1alpha2/users/{username}
+PUT /apis/iam.docs.kubesphere-carryon.top/v1alpha2/users/{username}
+PATCH /apis/iam.docs.kubesphere-carryon.top/v1alpha2/users/{username}
 
 # 查询
-GET /apis/iam.kubesphere.io/v1alpha2/users
-GET /apis/iam.kubesphere.io/v1alpha2/users/{username}
+GET /apis/iam.docs.kubesphere-carryon.top/v1alpha2/users
+GET /apis/iam.docs.kubesphere-carryon.top/v1alpha2/users/{username}
 ```
 
 ks-apiserver 负责将这些数据写入 K8s 再由 informer 同步到各个副本中。
 
-ks-controller-manager 通过监听数据变化，对资源状态进行维护，以创建用户为例, 通过 `POST /apis/iam.kubesphere.io/v1alpha2/users` 创建用户之后,  user controller 会对用户资源状态进行同步。
+ks-controller-manager 通过监听数据变化，对资源状态进行维护，以创建用户为例, 通过 `POST /apis/iam.docs.kubesphere-carryon.top/v1alpha2/users` 创建用户之后,  user controller 会对用户资源状态进行同步。
 
 ```go
 func (c *userController) reconcile(key string) error {
@@ -236,10 +236,10 @@ func (c *userController) reconcile(key string) error {
 通过声明式的 API 将复杂的逻辑放到 controller 进行处理，方便解耦。可以很方便的与其他系统、服务进行集成，例如：
 
 ```
-/apis/devops.kubesphere.io/v1alpha2/namespaces/{namespace}/pipelines
-/apis/devops.kubesphere.io/v1alpha2/namespaces/{namespace}/credentials
+/apis/devops.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/pipelines
+/apis/devops.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/credentials
 /apis/openpitrix.io/v1alpha2/namespaces/{namespace}/applications
-/apis/notification.kubesphere.io/v1alpha2/configs
+/apis/notification.docs.kubesphere-carryon.top/v1alpha2/configs
 ```
 
 对应的权限控制策略：
@@ -252,7 +252,7 @@ kind: ClusterRole
 metadata:
   name: user-manager
 rules:
-- apiGroups: ["iam.kubesphere.io"]
+- apiGroups: ["iam.docs.kubesphere-carryon.top"]
   resources: ["users"]
   verbs: ["create","delete","patch","update","get","list"]
 ```
@@ -265,7 +265,7 @@ kind: Role
 metadata:
   name: devops-manager
 rules:
-- apiGroups: ["devops.kubesphere.io"]
+- apiGroups: ["devops.docs.kubesphere-carryon.top"]
   resources: ["pipelines"]
   verbs: ["create","delete","patch","update","get","list"]
 ```

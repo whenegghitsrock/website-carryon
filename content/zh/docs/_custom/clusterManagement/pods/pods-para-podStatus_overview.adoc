@@ -10,4 +10,4 @@
 
 * **未知**：系统无法获取容器组状态。出现这种状态通常是由于系统与容器组所在的主机通信失败。
 
-// 已完成 vs 成功完成：https://github.com/kubesphere/project/issues/3983#issuecomment-2246982909
+// 已完成 vs 成功完成：https://github.com/whenegghitsrock/project/issues/3983#issuecomment-2246982909

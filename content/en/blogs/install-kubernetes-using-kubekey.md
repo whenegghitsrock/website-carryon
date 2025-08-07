@@ -14,7 +14,7 @@ In this article, I am going to demonstrate how to set up a three-node Kubernetes
 
 ## What is KubeKey
 
-Developed in Go, [KubeKey](https://github.com/kubesphere/kubekey) provides an easy, fast and flexible way to install Kubernetes and any add-ons that can be deployed as YAML or Chart files. KubeKey uses kubeadm to install Kubernetes clusters on nodes in parallel as much as possible in order to reduce installation complexity and improve efficiency. It greatly saves installation time compared to other installation methods.
+Developed in Go, [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) provides an easy, fast and flexible way to install Kubernetes and any add-ons that can be deployed as YAML or Chart files. KubeKey uses kubeadm to install Kubernetes clusters on nodes in parallel as much as possible in order to reduce installation complexity and improve efficiency. It greatly saves installation time compared to other installation methods.
 
 As we all know, Kubernetes clusters can be deployed across on-premises environments, public clouds, private clouds, or bare metal. As such, it serves as a comprehensive platform for deploying cloud-native apps. Nevertheless, each environment may entail different configurations and settings. In fact, this is where KubeKey comes to change the game as you can use it to deploy Kubernetes across any environments.
 
@@ -62,14 +62,14 @@ You can use KubeKey to install a specified Kubernetes version. The dependency th
 ## Network and DNS Requirements
 
 - Make sure the DNS address in `/etc/resolv.conf` is available. Otherwise, it may cause some issues of DNS in your cluster.
-- If your network configuration uses firewall rules or security groups, you must ensure infrastructure components can communicate with each other through specific ports. It’s recommended that you turn off the firewall. For more information, see [Network Access](https://github.com/kubesphere/kubekey/blob/master/docs/network-access.md).
+- If your network configuration uses firewall rules or security groups, you must ensure infrastructure components can communicate with each other through specific ports. It’s recommended that you turn off the firewall. For more information, see [Network Access](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/network-access.md).
 
 ## Install Kubernetes
 
-1. Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command to download KubeKey version 1.0.1. You only need to download KubeKey to one of your machines that serves as the **taskbox** for installation, such as the master node.
+1. Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command to download KubeKey version 1.0.1. You only need to download KubeKey to one of your machines that serves as the **taskbox** for installation, such as the master node.
 
    ```bash
-   curl -sfL https://get-kk.kubesphere.io | VERSION=v2.0.0 sh -
+   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.0.0 sh -
    ```
 
    {{< notice note >}}
@@ -90,7 +90,7 @@ You can use KubeKey to install a specified Kubernetes version. The dependency th
    ./kk create config [--with-kubernetes version] [(-f | --file) path]
    ```
 
-   The default Kubernetes version is v1.17.9. For more information about supported Kubernetes versions, see this [file](https://github.com/kubesphere/kubekey/blob/master/docs/kubernetes-versions.md). Execute the following command as an example:
+   The default Kubernetes version is v1.17.9. For more information about supported Kubernetes versions, see this [file](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/kubernetes-versions.md). Execute the following command as an example:
 
    ```bash
    ./kk create config --with-kubernetes v1.20.4
@@ -105,7 +105,7 @@ You can use KubeKey to install a specified Kubernetes version. The dependency th
 5. You will see the file prepopulated with some values. Here is my configuration for your reference:
 
    ```yaml
-   apiVersion: kubekey.kubesphere.io/v1alpha1
+   apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
    kind: Cluster
    metadata:
      name: sample
@@ -161,7 +161,7 @@ You can use KubeKey to install a specified Kubernetes version. The dependency th
 
    - `worker`: worker node names.
 
-   You can provide more values in this configuration file, such as `addons`. KubeKey can install all [addons](https://github.com/kubesphere/kubekey/blob/release-1.0/docs/addons.md) that can be installed as a YAML file or Chart file. For example, KubeKey does not install any storage plugin for Kubernetes by default, but you can [add your own storage systems](https://kubesphere.io/docs/installing-on-linux/persistent-storage-configurations/understand-persistent-storage/), including NFS Client, Ceph, and GlusterFS. For more information about the configuration file, see [Kubernetes Cluster Configurations](https://kubesphere.io/docs/installing-on-linux/introduction/vars/) and [this file](https://github.com/kubesphere/kubekey/blob/release-1.0/docs/config-example.md).
+   You can provide more values in this configuration file, such as `addons`. KubeKey can install all [addons](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-1.0/docs/addons.md) that can be installed as a YAML file or Chart file. For example, KubeKey does not install any storage plugin for Kubernetes by default, but you can [add your own storage systems](https://docs.kubesphere-carryon.top/docs/installing-on-linux/persistent-storage-configurations/understand-persistent-storage/), including NFS Client, Ceph, and GlusterFS. For more information about the configuration file, see [Kubernetes Cluster Configurations](https://docs.kubesphere-carryon.top/docs/installing-on-linux/introduction/vars/) and [this file](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-1.0/docs/config-example.md).
 
 6. Save the file when you finish editing and execute the following command to install Kubernetes:
 
@@ -332,7 +332,7 @@ You can use KubeKey to install a specified Kubernetes version. The dependency th
 
 ## KubeSphere and its Graphic Dashboard
 
-KubeSphere is a **distributed operating system managing cloud-native applications** with Kubernetes as its kernel. As an [open-source enterprise-grade container platform](https://kubesphere.io/), it boasts full-stack automated IT operation, multi-cluster management, and streamlined [DevOps workflows](https://kubesphere.io/devops/). Here is the architecture of KubeSphere.
+KubeSphere is a **distributed operating system managing cloud-native applications** with Kubernetes as its kernel. As an [open-source enterprise-grade container platform](https://docs.kubesphere-carryon.top/), it boasts full-stack automated IT operation, multi-cluster management, and streamlined [DevOps workflows](https://docs.kubesphere-carryon.top/devops/). Here is the architecture of KubeSphere.
 
 ![architecture](https://ap3.qingstor.com/kubesphere-website/docs/architecture.png)
 
@@ -340,18 +340,18 @@ Besides, KubeSphere also has its own responsive web-based console, which is more
 
 ![kubesphere-dashboard-compared-to-k8s](https://ap3.qingstor.com/kubesphere-website/docs/kubesphere-dashboard-compared-to-k8s.png)
 
-In fact, you can use KubeKey to install Kubernetes and KubeSphere at the same time. The process is basically the same while you need to add the flag `--with-kubesphere [version]` when you run the command `./kk create config`. For more information, have a look at [the KubeSphere documentation](https://kubesphere.io/docs/installing-on-linux/introduction/multioverview/).
+In fact, you can use KubeKey to install Kubernetes and KubeSphere at the same time. The process is basically the same while you need to add the flag `--with-kubesphere [version]` when you run the command `./kk create config`. For more information, have a look at [the KubeSphere documentation](https://docs.kubesphere-carryon.top/docs/installing-on-linux/introduction/multioverview/).
 
 ## Summary
 
-The installation process I demonstrate in this article is only a tiny part of what KubeKey is capable of. In addition to installing Kubernetes and KubeSphere, you can also use it to scale and upgrade your cluster. It also supports [air-gapped installation](https://kubesphere.io/docs/installing-on-linux/introduction/air-gapped-installation/) as long as you download installation images in advance.
+The installation process I demonstrate in this article is only a tiny part of what KubeKey is capable of. In addition to installing Kubernetes and KubeSphere, you can also use it to scale and upgrade your cluster. It also supports [air-gapped installation](https://docs.kubesphere-carryon.top/docs/installing-on-linux/introduction/air-gapped-installation/) as long as you download installation images in advance.
 
 I hope this article can be useful especially for those who have been seeking for an installation method for so long. With KubeKey, I think, the Kubernetes community sees a significant step forward in terms of installation efficiency and user experience.
 
 ## Reference
 
-[KubeKey](https://github.com/kubesphere/kubekey)
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon)
 
 [Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
 
-[Multi-node Installation](https://kubesphere.io/docs/installing-on-linux/introduction/multioverview/)
+[Multi-node Installation](https://docs.kubesphere-carryon.top/docs/installing-on-linux/introduction/multioverview/)

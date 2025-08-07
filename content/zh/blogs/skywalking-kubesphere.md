@@ -39,11 +39,11 @@ Apache SkyWalking 架构图如下，关于详细的架构介绍，大家可以�
 
 接下来我们通过一个完整的示例演示在 KubeSphere 部署 Apache SkyWalking，并接入一个 SpringCloud 示例应用，在 Apache SkyWalking 的 Dashboard 展示 APM 效果。
 
-首先，下载 Apache SkyWalking 的 Helm Chart，然后通过 KubeSphere 将 Chart 上传至应用商店，这部分的步骤可以参考 KubeSphere 官方文档（kubesphere.io/docs），本文不再赘述。
+首先，下载 Apache SkyWalking 的 Helm Chart，然后通过 KubeSphere 将 Chart 上传至应用商店，这部分的步骤可以参考 KubeSphere 官方文档（docs.kubesphere-carryon.top/docs），本文不再赘述。
 
 KubeSphere 提供了基于 Helm 完整的应用生命周期管理的能力，应用通过审核后即可上架，并提供给平台所有用户一键部署至 Kubernetes 的选项。
 
-> 提示：我们对 Apache SkyWalking 的 Helm Chart（6.5.0），针对 Helm 2 作了适配，可以在 `https://github.com/kubesphere/helm-charts` 获取 Chart 文件。
+> 提示：我们对 Apache SkyWalking 的 Helm Chart（6.5.0），针对 Helm 2 作了适配，可以在 `https://github.com/whenegghitsrock/helm-charts-carryon` 获取 Chart 文件。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20200311124308.png)
 
@@ -78,7 +78,7 @@ KubeSphere 提供了基于 Helm 完整的应用生命周期管理的能力，应
 首先，通过 Git 将 SpringCloud 示例应用的代码拉取到本地。
 
 ```bash
-git clone https://github.com/kubesphere/tutorial.git
+git clone https://github.com/whenegghitsrock/tutorial.git
 ```
 
 然后进入 `tutorial/tutorial 6 → skywalking/6.5.0/apm-springcloud-demo/` 目录，分别将 **apm-eureka.yml** 与 **apm-item.yml** 文件中的 Agent Collector 的后端服务地址，修改为 `skywalking-oap` 服务的 DNS 地址与端口。

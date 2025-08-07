@@ -49,12 +49,12 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/2024-kubesphere-y
 
 您可以通过以下链接回顾每场活动：
 
-- [杭州站 Meetup](https://kubesphere.io/zh/live/meetup-hangzhou-20240323/)
-- [深圳站 Meetup](https://kubesphere.io/zh/live/meetup-shenzhen-20240420/)
-- [北京站 Meetup](https://kubesphere.io/zh/live/meetup-beijing-20240525/)
-- [上海站 Meetup](https://kubesphere.io/zh/live/meetup-shanghai-20240720/)
-- [成都站 Meetup](https://kubesphere.io/zh/live/meetup-chengdu-20241123/)
-- [广州站 Meetup](https://kubesphere.io/zh/live/meetup-guangzhou-20241228/)
+- [杭州站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-hangzhou-20240323/)
+- [深圳站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-shenzhen-20240420/)
+- [北京站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-beijing-20240525/)
+- [上海站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-shanghai-20240720/)
+- [成都站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-chengdu-20241123/)
+- [广州站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-guangzhou-20241228/)
 
 ### 社区用户委员会
 
@@ -100,7 +100,7 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/2024-kubesphere-y
 2024 年，我们进一步拓展了合作伙伴网络，深化了与开源社区和机构的合作，基于 LuBan 架构累计开发了 40 余款扩展组件，推动了生态的多样性与开放性。衷心感谢所有合作伙伴的支持与信任。
 ![](https://pek3b.qingstor.com/kubesphere-community/images/2024-kubesphere-partner.png)
 
-如果您希望与 KubeSphere 深度合作，成为 KubeSphere 的合作伙伴，欢迎您与我们取得联系。具体请参考：[欢迎加入 KubeSphere 社区合作伙伴阵容！](https://kubesphere.io/zh/news/kubesphere-partner/)。
+如果您希望与 KubeSphere 深度合作，成为 KubeSphere 的合作伙伴，欢迎您与我们取得联系。具体请参考：[欢迎加入 KubeSphere 社区合作伙伴阵容！](https://docs.kubesphere-carryon.top/zh/news/kubesphere-partner/)。
 
 
 ## 社区关注度情况

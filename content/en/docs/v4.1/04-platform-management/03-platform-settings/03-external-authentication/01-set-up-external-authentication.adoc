@@ -50,7 +50,7 @@ metadata:
   namespace: kubesphere-system
   name: identity-provider-ldap          
   labels:
-    config.kubesphere.io/type: identityprovider
+    config.docs.kubesphere-carryon.top/type: identityprovider
 stringData:
   configuration.yaml: |
     name: openldap      
@@ -63,7 +63,7 @@ stringData:
       userSearchBase: cn=users,dc=nas
       loginAttribute: uid
       mailAttribute: mail
-type: config.kubesphere.io/identityprovider
+type: config.docs.kubesphere-carryon.top/identityprovider
 ----
 
 [.admon.attention,cols="a"]
@@ -74,11 +74,11 @@ type: config.kubesphere.io/identityprovider
 - The secret must be created in the `kubeshere-system` project.
 - The secret must include a type.
 +
-`type: config.kubesphere.io/identityprovider`.
+`type: config.docs.kubesphere-carryon.top/identityprovider`.
 
 - The secret must include a label.
 +
-`config.kubesphere.io/type: identityprovider`.
+`config.docs.kubesphere-carryon.top/type: identityprovider`.
 |===
 
 == Configuration Explanation

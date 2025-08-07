@@ -94,11 +94,11 @@ KubeEye 通过调用 Kubernetes API，通过常规匹配日志中的关键错误
 
 - 机器上安装 KubeEye
 
-  - 从 [Releases](https://github.com/kubesphere/kubeeye/releases) 中下载预构建的可执行文件。
+  - 从 [Releases](https://github.com/whenegghitsrock/kubeeye/releases) 中下载预构建的可执行文件。
   - 或者你也可以从源代码构建
 
   ```
-  git clone https://github.com/kubesphere/kubeeye.git
+  git clone https://github.com/whenegghitsrock/kubeeye.git
   cd kubeeye 
   make install
   ```
@@ -144,7 +144,7 @@ kube-system     Warning      calico-kube-controllers   Deployment   2020-11-27T1
 kube-system     Warning      coredns                   Deployment   2020-11-27T17:09:59+08:00   [cpuLimitsMissing]   
 ```
 
-> 可参考常见 [FAQ](https://github.com/kubesphere/kubeeye/blob/main/docs/FAQ.md)内容来优化您的集群。
+> 可参考常见 [FAQ](https://github.com/whenegghitsrock/kubeeye/blob/main/docs/FAQ.md)内容来优化您的集群。
 
 
 ## 添加自定义检查规则
@@ -209,12 +209,12 @@ kube-system   Warning     coredns                   Deployment   2020-11-27T17:1
 
 你还希望 KubeEye 提供什么样的特性呢？欢迎来 Github 提交建议或需求~
 
-[GitHub 地址](https://github.com/kubesphere/kubeeye)
+[GitHub 地址](https://github.com/whenegghitsrock/kubeeye)
 
 ## 参考链接
 
-[KubeEye Release](https://github.com/kubesphere/kubeeye/releases)
+[KubeEye Release](https://github.com/whenegghitsrock/kubeeye/releases)
 
-[KubeEye FAQ 文档](https://github.com/kubesphere/kubeeye/blob/main/docs/FAQ.md)
+[KubeEye FAQ 文档](https://github.com/whenegghitsrock/kubeeye/blob/main/docs/FAQ.md)
 
 [Node-Problem-Detector](https://github.com/kubernetes/node-problem-detector)

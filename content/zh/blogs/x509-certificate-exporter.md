@@ -8,7 +8,7 @@ author: '杨传胜'
 snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/20210713231336.jpg'
 ---
 
-KubeSphere 虽然提供了运维友好的向导式操作界面，简化了 Kubernetes 的运维操作，但它还是建立在底层 Kubernetes 之上的，Kubernetes 默认的证书有效期都是一年，即使使用 [KubeKey](https://github.com/kubesphere/kubekey) 这样的集群安装利器也不能改变这个结果。如果不想办法对 Kubernetes 各个组件的证书有效期进行监控，说不定哪天就会掉进坑里。
+KubeSphere 虽然提供了运维友好的向导式操作界面，简化了 Kubernetes 的运维操作，但它还是建立在底层 Kubernetes 之上的，Kubernetes 默认的证书有效期都是一年，即使使用 [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) 这样的集群安装利器也不能改变这个结果。如果不想办法对 Kubernetes 各个组件的证书有效期进行监控，说不定哪天就会掉进坑里。
 
 有部分读者可能听说过 [ssl-exporter](https://github.com/ribbybibby/ssl_exporter) 这个项目，它能提供多种针对 SSL 的检测手段，包括：HTTPS 证书、文件证书、Kubernetes Secret、Kubeconfig 文件。从功能上来看，它基本可以满足上述需求，但它的指标还不够丰富，本文将介绍一个更为强大的 Prometheus Exporter：[x509-certificate-exporter](https://github.com/enix/x509-certificate-exporter)。
 

@@ -23,7 +23,7 @@ Weight: 16410
 在 Host 集群执行以下命令修改指定帐户的密码：
 
 ```bash
-kubectl patch users <USERNAME> -p '{"spec":{"password":"<YOURPASSWORD>"}}' --type='merge' && kubectl annotate users <USERNAME> iam.kubesphere.io/password-encrypted-
+kubectl patch users <USERNAME> -p '{"spec":{"password":"<YOURPASSWORD>"}}' --type='merge' && kubectl annotate users <USERNAME> iam.docs.kubesphere-carryon.top/password-encrypted-
 ```
 
 {{< notice note >}}

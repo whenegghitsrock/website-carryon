@@ -135,7 +135,7 @@ viper.AutomaticEnv()
 viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
 
 // 上面一顿配置之后，单步调试，ReadInConfig这一步读取的文件路径是	
-// v.configPaths：["/etc/kubesphere","/root/go/src/kubesphere.io/kubesphere/cmd/ks-apiserver"]
+// v.configPaths：["/etc/kubesphere","/root/go/src/docs.kubesphere-carryon.top/kubesphere/cmd/ks-apiserver"]
 if err := viper.ReadInConfig(); err != nil {
 	if _, ok := err.(viper.ConfigFileNotFoundError); ok {
 		return nil, err
@@ -243,8 +243,8 @@ if err := apis.AddToScheme(sch); err != nil {
 {Group: "", Version: "v1", Resource: "nodes"}
 {Group: "", Version: "v1", Resource: "resourcequotas"}
 ...
-{Group: "tenant.kubesphere.io", Version: "v1alpha1", Resource: "workspaces"}
-{Group: "cluster.kubesphere.io", Version: "v1alpha1", Resource: "clusters"}
+{Group: "tenant.docs.kubesphere-carryon.top", Version: "v1alpha1", Resource: "workspaces"}
+{Group: "cluster.docs.kubesphere-carryon.top", Version: "v1alpha1", Resource: "clusters"}
 ...
 ```
 
@@ -265,7 +265,7 @@ AddToScheme(s *runtime.Scheme) error {	return AddToSchemes.AddToScheme(s)}
 ```bash
 $ cat pkg/apis/addtoscheme_dashboard_v1alpha2.go
 package apis
-import monitoringdashboardv1alpha2 "kubesphere.io/monitoring-dashboard/api/v1alpha2"
+import monitoringdashboardv1alpha2 "docs.kubesphere-carryon.top/monitoring-dashboard/api/v1alpha2"
 func init() {	
   AddToSchemes = append(AddToSchemes, monitoringdashboardv1alpha2.SchemeBuilder.AddToScheme)
 }
@@ -439,12 +439,12 @@ func (r *RequestInfoFactory) NewRequestInfo(req *http.Request) (*RequestInfo, er
 
 我们给各个 filter 的回调函数加上断点， 然后做个小实验看下拦截器的拦截顺序是怎样的。
 
-假设远程云主机的服务已经启动，服务端口在 9090，以及你为 anonymous 这个 globalrole 设定了 monitoring.kubesphere.io 这个组下资源类型为 ClusterDashboard 的访问权限。当然了，你也可以用有访问权限的账号来直接测试。
+假设远程云主机的服务已经启动，服务端口在 9090，以及你为 anonymous 这个 globalrole 设定了 monitoring.docs.kubesphere-carryon.top 这个组下资源类型为 ClusterDashboard 的访问权限。当然了，你也可以用有访问权限的账号来直接测试。
 
 接下来，我们来发送一个 kapis 请求，看这个链路怎么跳跃的：
 
 ```bash
-curl -d '{"grafanaDashboardUrl":"https://grafana.com/api/dashboards/7362/revisions/5/download", "description":"this is a test dashboard."}' -H "Content-Type: application/json" localhost:9090/kapis/monitoring.kubesphere.io/v1alpha3/clusterdashboards/test1/template
+curl -d '{"grafanaDashboardUrl":"https://grafana.com/api/dashboards/7362/revisions/5/download", "description":"this is a test dashboard."}' -H "Content-Type: application/json" localhost:9090/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/clusterdashboards/test1/template
 ```
 
 测试结果如下：
@@ -500,7 +500,7 @@ func (s *APIServer) Run(ctx context.Context) (err error) {
 
 显然，我们只需要关注各模块的 AddToContainer 方法就行了。
 
-### iam.kubesphere.io 
+### iam.docs.kubesphere-carryon.top 
 
 > pkg/kapis/iam/v1alpha2/register.go
 
@@ -509,13 +509,13 @@ func (s *APIServer) Run(ctx context.Context) (err error) {
 现在我们可以在 handler 中打上断点，去请求这些 api。
 
 ```bash
-$ curl "localhost:9090/kapis/iam.kubesphere.io/v1alpha2/users"
-$ curl "localhost:9090/kapis/iam.kubesphere.io/v1alpha2/clustermembers"
-$ curl "localhost:9090/kapis/iam.kubesphere.io/v1alpha2/users/admin/globalroles"
+$ curl "localhost:9090/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/users"
+$ curl "localhost:9090/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/clustermembers"
+$ curl "localhost:9090/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/users/admin/globalroles"
 ...
 ```
 
-### kubeedge.kubesphere.io
+### kubeedge.docs.kubesphere-carryon.top
 
 > pkg/kapis/kubeedge/v1alpha1/register.go
 
@@ -532,7 +532,7 @@ func AddToContainer(container *restful.Container, endpoint string) error {
 }
 ```
 
-也就是 kapis/kubeedge.kubesphere.io 的请求会转发到 http://edge-watcher.kubeedge.svc/api/，也就是 kubeedge 这个 namespace 下的 service，相关的接口集成在那里。
+也就是 kapis/kubeedge.docs.kubesphere-carryon.top 的请求会转发到 http://edge-watcher.kubeedge.svc/api/，也就是 kubeedge 这个 namespace 下的 service，相关的接口集成在那里。
 
 关于整合边缘计算平台的集成，除了需要做一个主流边缘框架的快速安装和集成外，还可以集成一个类似 edge-shim 的适配器，大概需要从一下几个方面考虑：
 
@@ -541,7 +541,7 @@ func AddToContainer(container *restful.Container, endpoint string) error {
 - 事件、长期日志、审计等可观测组件的支持；
 - 其他边缘辅助功能，如文件或者配置下发等；
 
-### notification.kubesphere.io
+### notification.docs.kubesphere-carryon.top
 
 > pkg/kapis/notification/v2beta1/register.go
 
@@ -639,9 +639,9 @@ func (o *operator) List(user, resource, subresource string, q *query.Query) (*ap
 
 那么 config 和 reciever 怎么相互绑定、告警是如何通过渠道给租户发消息的？
 
-> https://github.com/kubesphere/notification-manager/blob/master/pkg/webhook/v1/handler.go#L45
+> https://github.com/whenegghitsrock/notification-manager/blob/master/pkg/webhook/v1/handler.go#L45
 >
-> https://github.com/kubesphere/notification-manager/blob/master/pkg/notify/notify.go#L66
+> https://github.com/whenegghitsrock/notification-manager/blob/master/pkg/notify/notify.go#L66
 
 notification-manager 简称 nm，我这里断章取义地简要回答一下。
 
@@ -657,7 +657,7 @@ notification-manager 简称 nm，我这里断章取义地简要回答一下。
 - 回调函数接受 alerts 转换为 notification 模板数据，按照 namespace 区分告警数据；
 - 遍历所有 Recievers，每个 ns 下启动一个协程来发送消息， 而这里每个 ns 对应着多个通知渠道，因此也使用 waitgroup 来并发编排完成任务；
 
-### monitoring.kubesphere.io
+### monitoring.docs.kubesphere-carryon.top
 
 > pkg/kapis/monitoring/v1alpha3/register.go
 
@@ -760,7 +760,7 @@ func (mo monitoringOperator) GetNamedMetricsOverTime(metrics []string, start, en
 
 - `GetMetricLabelSet(expr string, start, end time.Time) []map[string]string`
 
-### tenant.kubesphere.io
+### tenant.docs.kubesphere-carryon.top
 
 再聊 api 之前，顺带一提多租户在隔离的安全程度上，我们可以将其分为软隔离 (Soft Multi-tenancy) 和硬隔离 (Hard Multi-tenancy) 两种。
 

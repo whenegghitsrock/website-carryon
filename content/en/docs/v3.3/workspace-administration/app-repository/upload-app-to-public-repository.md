@@ -10,11 +10,11 @@ KubeSphere provides an app repository for testing and development. Users can upl
 
 ## Upload Your App
 
-Build your app first based on [the Helm documentation](https://helm.sh/docs/topics/charts/). You can refer to the existing apps in the KubeSphere app repository. Official apps are stored in [src/main](https://github.com/kubesphere/helm-charts/tree/master/src/main) and apps being tested are stored in [src/test](https://github.com/kubesphere/helm-charts/tree/master/src/test).
+Build your app first based on [the Helm documentation](https://helm.sh/docs/topics/charts/). You can refer to the existing apps in the KubeSphere app repository. Official apps are stored in [src/main](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/main) and apps being tested are stored in [src/test](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/test).
 
 ### Step 1: Develop an app
 
-1. [Fork the app repository of KubeSphere](https://github.com/kubesphere/helm-charts/fork).
+1. [Fork the app repository of KubeSphere](https://github.com/whenegghitsrock/helm-charts-carryon/fork).
 
 2. Install Helm based on [the Helm documentation](https://helm.sh/docs/intro/install/).
 
@@ -36,9 +36,9 @@ Build your app first based on [the Helm documentation](https://helm.sh/docs/topi
 
 ### Step 2: Submit an app
 
-When you finish the development, submit a pull request to [the official repository of KubeSphere](https://github.com/kubesphere/helm-charts) for review.
+When you finish the development, submit a pull request to [the official repository of KubeSphere](https://github.com/whenegghitsrock/helm-charts-carryon) for review.
 
 ### Step 3: Deploy your app
 
-After your pull request is approved, your app will be available to use. For more information, refer to [Import a Helm Repository](../import-helm-repository/) to add `https://charts.kubesphere.io/main` to KubeSphere.
+After your pull request is approved, your app will be available to use. For more information, refer to [Import a Helm Repository](../import-helm-repository/) to add `https://charts.docs.kubesphere-carryon.top/main` to KubeSphere.
 

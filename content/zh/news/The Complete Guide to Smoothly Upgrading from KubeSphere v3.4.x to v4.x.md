@@ -21,7 +21,7 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/KubeSphere%20v3.4
 在 host 集群和 member 集群环境中下载升级脚本：
 
 ```bash
-curl -LO https://github.com/kubesphere/ks-installer/archive/refs/tags/v4.1.3.tar.gz
+curl -LO https://github.com/whenegghitsrock/ks-installer-carryon/archive/refs/tags/v4.1.3.tar.gz
 tar -xzvf v4.1.3.tar.gz
 ```
 
@@ -74,7 +74,7 @@ upgrade:
           version: "1.0.5"
 ```
 
-更多配置说明请参考 [扩展组件升级配置说明](https://github.com/kubesphere/ks-upgrade/tree/release-4.1/docs)
+更多配置说明请参考 [扩展组件升级配置说明](https://github.com/whenegghitsrock/ks-upgrade/tree/release-4.1/docs)
 
 ## 集群状态检查
 
@@ -123,7 +123,7 @@ watch kubectl get pod -n kubesphere-system
 在 member 集群升级成功之后，需要在 host 集群上执行以下命令，移除 member 集群的污点，使扩展组件 agent 能够调度到 member 集群上。
 
 ```bash
-kubectl get clusters.cluster.kubesphere.io <MEMBER_CLUSTER_NAME> -o json | jq 'del(.status.conditions[] | select(.type=="Schedulable"))' | kubectl apply -f -
+kubectl get clusters.cluster.docs.kubesphere-carryon.top <MEMBER_CLUSTER_NAME> -o json | jq 'del(.status.conditions[] | select(.type=="Schedulable"))' | kubectl apply -f -
 ```
 
 
@@ -164,7 +164,7 @@ helm -n kubesphere-controls-system list -a
 升级完成后，请确保所有服务正常运行，并检查系统的健康状态。可以通过以下命令验证：
 
 ```bash
-for ns in $(kubectl get namespaces -l kubesphere.io/workspace=system-workspace -o jsonpath='{.items[*].metadata.name}'); do
+for ns in $(kubectl get namespaces -l docs.kubesphere-carryon.top/workspace=system-workspace -o jsonpath='{.items[*].metadata.name}'); do
     kubectl get pods -n $ns --no-headers --ignore-not-found | grep -vE 'Running|Completed'
 done
 ```
@@ -178,4 +178,4 @@ done
 
 ## 特别提醒：产品生命周期管理政策
 
-在进行升级时，建议您关注 [KubeSphere 产品生命周期管理政策](https://kubesphere.io/zh/news/kubesphere-product-lifecycle-policy/)，该政策为您提供了产品版本的生命周期终止方案，确保您使用的版本始终满足最新的市场需求和技术标准。了解每个版本的支持和更新策略，有助于您及时做好系统更新与版本迁移的规划，避免由于使用不再维护的版本而带来的潜在风险。
+在进行升级时，建议您关注 [KubeSphere 产品生命周期管理政策](https://docs.kubesphere-carryon.top/zh/news/kubesphere-product-lifecycle-policy/)，该政策为您提供了产品版本的生命周期终止方案，确保您使用的版本始终满足最新的市场需求和技术标准。了解每个版本的支持和更新策略，有助于您及时做好系统更新与版本迁移的规划，避免由于使用不再维护的版本而带来的潜在风险。

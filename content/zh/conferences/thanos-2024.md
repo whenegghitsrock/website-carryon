@@ -113,7 +113,7 @@ kube-thanos 是一个 Thanos 社区维护的项目，允许用户通过 jsonnet 
 - Compactor、Store、Ruler 也必须可扩展，以处理数十个甚至上百个集群的规模
 - 每当有集群添加或移除时，自动配置 Thanos，减轻运维负担
 
-为了更好地应对以上问题和挑战，KubeSphere 可观测性团队于 2021 年开始开发 Thanos 的企业发行版 Whizard，并于 2024 香港 KubeCon 正式[宣布开源](https://www.kubesphere.io/zh/news/announcing-whizard-as-open-source/)。
+为了更好地应对以上问题和挑战，KubeSphere 可观测性团队于 2021 年开始开发 Thanos 的企业发行版 Whizard，并于 2024 香港 KubeCon 正式[宣布开源](https://www.docs.kubesphere-carryon.top/zh/news/announcing-whizard-as-open-source/)。
 
 ## Whizard
 

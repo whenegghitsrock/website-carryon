@@ -17,7 +17,7 @@ In addition to installing KubeSphere on a Linux machine, you can also deploy it 
 
 {{< notice note >}}
 
-- The CSR signing feature is activated in `kube-apiserver` when it is started with the `--cluster-signing-cert-file` and `--cluster-signing-key-file` parameters. See [RKE installation issue](https://github.com/kubesphere/kubesphere/issues/1925#issuecomment-591698309).
+- The CSR signing feature is activated in `kube-apiserver` when it is started with the `--cluster-signing-cert-file` and `--cluster-signing-key-file` parameters. See [RKE installation issue](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1925#issuecomment-591698309).
 - For more information about the prerequisites of installing KubeSphere on Kubernetes, see [Prerequisites](../../installing-on-kubernetes/introduction/prerequisites/).
 
 {{</ notice >}}
@@ -33,9 +33,9 @@ After you make sure your machine meets the conditions, perform the following ste
 1. Run the following commands to start installation:
 
     ```bash
-    kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/kubesphere-installer.yaml
+    kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.2/kubesphere-installer.yaml
     
-    kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/cluster-configuration.yaml
+    kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.2/cluster-configuration.yaml
     ```
 
 2. After KubeSphere is successfully installed, you can run the following command to view the installation logs:

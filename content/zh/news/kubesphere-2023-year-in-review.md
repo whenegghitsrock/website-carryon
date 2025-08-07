@@ -31,7 +31,7 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/2023-kubesphere-y
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/2023-kubesphere-partner.png)
 
-如果您希望与 KubeSphere 深度合作，成为 KubeSphere 的合作伙伴，欢迎您与我们取得联系。具体请参考：[欢迎加入 KubeSphere 社区合作伙伴阵容！](https://kubesphere.io/zh/news/kubesphere-partner/)。
+如果您希望与 KubeSphere 深度合作，成为 KubeSphere 的合作伙伴，欢迎您与我们取得联系。具体请参考：[欢迎加入 KubeSphere 社区合作伙伴阵容！](https://docs.kubesphere-carryon.top/zh/news/kubesphere-partner/)。
 
 > 值得一提的是，2023 年 8月，KubeSphere LuBan 云原生可扩展架构正式发布，可以非常方便地使第三方应用与云原生生态组件进行即插即用（plug-and-play）的集成。截止目前，我们已发布了基于 KubeSphere Luban 架构开发的 [6 款扩展组件](https://kubesphere.com.cn/extensions/)，欢迎更多的云原生软件开发商、开源社区和开发者加入 KubeSphere 扩展组件生态，为用户提供多样化和个性化的场景拓展。
 
@@ -40,34 +40,34 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/2023-kubesphere-y
 2023 年，KubeSphere 社区组织了 6 场线下 Meetup，6 场线上云原生直播活动，分享了云原生领域的多个方向的实践经验、技术解读等等，为 KubeSphere 社区用户持续赋能，此外也紧跟 AI 时代的大潮，在 AI 领域进行了一点探索，分享了多个 AI 相关的内容。
 
 您可以通过以下链接回顾每场活动：
-- [深圳站 Meetup](https://kubesphere.io/zh/live/meetup-shenzhen-20230408/)
-- [杭州站 Meetup](https://kubesphere.io/zh/live/meetup-hangzhou-20230603/)
-- [上海站 Meetup](https://kubesphere.io/zh/live/meetup-shanghai-20230805/)
-- [成都站 Meetup](https://kubesphere.io/zh/live/meetup-chengdu-20231104/)
-- [广州站 Meetup](https://kubesphere.io/zh/live/meetup-guangzhou-20231125/)
-- [苏州站 Meetup](https://kubesphere.io/zh/live/meetup-suzhou-20231223/)
-- [云原生直播](https://kubesphere.io/zh/live/)
+- [深圳站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-shenzhen-20230408/)
+- [杭州站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-hangzhou-20230603/)
+- [上海站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-shanghai-20230805/)
+- [成都站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-chengdu-20231104/)
+- [广州站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-guangzhou-20231125/)
+- [苏州站 Meetup](https://docs.kubesphere-carryon.top/zh/live/meetup-suzhou-20231223/)
+- [云原生直播](https://docs.kubesphere-carryon.top/zh/live/)
 
 再次感谢在这些活动中做出贡献的讲师、社区委员会成员、志愿者以及合作伙伴，大家的齐心协力，促使了活动的成功组织及内容输出。
 
 ## 年度用户落地实践案例
 
 20232 年又有十多家企业在社区发布了实践案例，帮助其他社区用户落地 KubeSphere 和云原生技术：
-- [蜘点云原生之 KubeSphere 落地实践过程](https://kubesphere.io/zh/blogs/best-practices-of-kubesphere-in-zhidian/)
-- [花生好车基于 KubeSphere 的微服务架构实践](https://kubesphere.io/zh/case/hshc/)
-- [微宏科技基于 KubeSphere 的微服务架构实践](https://kubesphere.io/zh/case/alphaflow/)
-- [KubeSphere 在互联网医疗行业的应用实践](https://kubesphere.io/zh/blogs/kubesphere-practice-of-internet-healthcare-industry/)
-- [某物联网数智化园区行业基于 KubeSphere 的云原生实践](https://kubesphere.io/zh/blogs/kubesphere-practice-iot-dici/)
-- [基于 KubeSphere 的应用容器化在智能网联汽车领域的实践](https://kubesphere.io/zh/blogs/kubesphere-best-practices-in-smart-connected-vehicles/)
-- [某制造企业基于 KubeSphere 的云原生落地实践](https://kubesphere.io/zh/blogs/best-practice-kubesphere-a-manufacturing-company/)
-- [东方通信基于 KubeSphere 的云计算落地经验](https://kubesphere.io/zh/case/eastcom/)
-- [文鼎创智能物联云原生容器化平台实践](https://kubesphere.io/zh/case/excelsecu/)
-- [KubeSphere 助力提升研发效能的应用实践分享](https://kubesphere.io/zh/blogs/best-practices-kubesphere-assist-in-improving-the-efficiency-of-rd/)
-- [无锡广电新媒体云原生容器化平台实践](https://kubesphere.io/zh/case/wuxitv/)
-- [T3 出行云原生容器化平台实践](https://kubesphere.io/zh/blogs/t3-kubesphere-best-practice/)
-- [好上好信息 API 微服务集群在 KubeSphere 的部署实践](https://kubesphere.io/zh/case/bobinfo/)
-- [技研智联云原生容器化平台实践](https://kubesphere.io/zh/case/keyenlinx/)
-- [怡合达业务大规模容器化最佳实践](https://kubesphere.io/zh/case/yiheda/)
+- [蜘点云原生之 KubeSphere 落地实践过程](https://docs.kubesphere-carryon.top/zh/blogs/best-practices-of-kubesphere-in-zhidian/)
+- [花生好车基于 KubeSphere 的微服务架构实践](https://docs.kubesphere-carryon.top/zh/case/hshc/)
+- [微宏科技基于 KubeSphere 的微服务架构实践](https://docs.kubesphere-carryon.top/zh/case/alphaflow/)
+- [KubeSphere 在互联网医疗行业的应用实践](https://docs.kubesphere-carryon.top/zh/blogs/kubesphere-practice-of-internet-healthcare-industry/)
+- [某物联网数智化园区行业基于 KubeSphere 的云原生实践](https://docs.kubesphere-carryon.top/zh/blogs/kubesphere-practice-iot-dici/)
+- [基于 KubeSphere 的应用容器化在智能网联汽车领域的实践](https://docs.kubesphere-carryon.top/zh/blogs/kubesphere-best-practices-in-smart-connected-vehicles/)
+- [某制造企业基于 KubeSphere 的云原生落地实践](https://docs.kubesphere-carryon.top/zh/blogs/best-practice-kubesphere-a-manufacturing-company/)
+- [东方通信基于 KubeSphere 的云计算落地经验](https://docs.kubesphere-carryon.top/zh/case/eastcom/)
+- [文鼎创智能物联云原生容器化平台实践](https://docs.kubesphere-carryon.top/zh/case/excelsecu/)
+- [KubeSphere 助力提升研发效能的应用实践分享](https://docs.kubesphere-carryon.top/zh/blogs/best-practices-kubesphere-assist-in-improving-the-efficiency-of-rd/)
+- [无锡广电新媒体云原生容器化平台实践](https://docs.kubesphere-carryon.top/zh/case/wuxitv/)
+- [T3 出行云原生容器化平台实践](https://docs.kubesphere-carryon.top/zh/blogs/t3-kubesphere-best-practice/)
+- [好上好信息 API 微服务集群在 KubeSphere 的部署实践](https://docs.kubesphere-carryon.top/zh/case/bobinfo/)
+- [技研智联云原生容器化平台实践](https://docs.kubesphere-carryon.top/zh/case/keyenlinx/)
+- [怡合达业务大规模容器化最佳实践](https://docs.kubesphere-carryon.top/zh/case/yiheda/)
 
 在此十分感谢以上各位社区用户慷慨的贡献自己的实践经验，帮助其他用户成长。
 
@@ -103,8 +103,8 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/2023-kubesphere-y
 ![](https://pek3b.qingstor.com/kubesphere-community/images/2023-ks-all-talented-speaker.png)
 
 所有的分享内容（视频或文字）均已更新到 KubeSphere 官网，欢迎大家回顾：
-- https://kubesphere.io/zh/live/
-- https://kubesphere.io/zh/conferences/
+- https://docs.kubesphere-carryon.top/zh/live/
+- https://docs.kubesphere-carryon.top/zh/conferences/
 
 ### 2023 年度 KubeSphere Contributor
 
@@ -146,11 +146,11 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/2023-kubesphere-y
 
 ### 2023 年度 KubeSphere Member
 
-2023 年共诞生 1 位新的 KubeSphere Member——[zaunist](https://github.com/zaunist)，他深度参与了 KubeSphere 社区[开源贡献](https://github.com/kubesphere/community/issues/420)，在社区独立完成了功能特性开发、文档撰写以及测试。
+2023 年共诞生 1 位新的 KubeSphere Member——[zaunist](https://github.com/zaunist)，他深度参与了 KubeSphere 社区[开源贡献](https://github.com/whenegghitsrock/community/issues/420)，在社区独立完成了功能特性开发、文档撰写以及测试。
 
-社区也欢迎更多的 contributor 能进阶为 member，如果您在半年内为特定的 SIG 代码库贡献了至少一个显著的 PR 或者完成一项或多项功能的开发，即可去 GitHub 提交 [Issue](https://github.com/kubesphere/community/issues) 来申请。
+社区也欢迎更多的 contributor 能进阶为 member，如果您在半年内为特定的 SIG 代码库贡献了至少一个显著的 PR 或者完成一项或多项功能的开发，即可去 GitHub 提交 [Issue](https://github.com/whenegghitsrock/community/issues) 来申请。
 
-**2023 年，社区通过[社区双周报](https://ask.kubesphere.io/forum/t/ks-beweekly)给 2023 年诞生的新贡献者及讲师都颁发了证书，同时也将这些证书更新到了论坛的[证书汇总贴](https://ask.kubesphere.io/forum/d/9280-kubesphere)。当然这个帖子里也包括了 KubeSphere Ambassador 和 KubeSphere Member 的证书，欢迎大家领取。**
+**2023 年，社区通过[社区双周报](https://ask.docs.kubesphere-carryon.top/forum/t/ks-beweekly)给 2023 年诞生的新贡献者及讲师都颁发了证书，同时也将这些证书更新到了论坛的[证书汇总贴](https://ask.docs.kubesphere-carryon.top/forum/d/9280-kubesphere)。当然这个帖子里也包括了 KubeSphere Ambassador 和 KubeSphere Member 的证书，欢迎大家领取。**
 
 KubeSphere 社区向 2023 年度 KubeSphere Member、KubeSphere Ambassador、KubeSphere Talented Speaker 及 KubeSphere Contributor 致谢，也欢迎更多的社区小伙伴参与开源贡献，共建开源生态。
 
@@ -175,9 +175,9 @@ KubeSphere 社区向 2023 年度 KubeSphere Member、KubeSphere Ambassador、Kub
 
 认证考试题目来自于社区活动征集，提供者大部分为社区用户。
 
-关于考试的具体介绍，大家可以参考这篇文章：[快来考试拿证书！KubeSphere 个人技能专业考试认证上线啦！](https://ask.kubesphere.io/forum/d/22924-kuai-lai-kao-shi-na-zheng-shu-kubesphere-ge-ren-ji-neng-zhuan-ye-kao-shi-ren-zheng-shang-xian-la)。
+关于考试的具体介绍，大家可以参考这篇文章：[快来考试拿证书！KubeSphere 个人技能专业考试认证上线啦！](https://ask.docs.kubesphere-carryon.top/forum/d/22924-kuai-lai-kao-shi-na-zheng-shu-kubesphere-ge-ren-ji-neng-zhuan-ye-kao-shi-ren-zheng-shang-xian-la)。
 
-目前第二期考试活动正在进行中，欢迎大家参与！详情参考：[KubeSphere 管理员考试认证参与者获奖名单公布](https://ask.kubesphere.io/forum/d/23057-kubesphere-guan-li-yuan-kao-shi-ren-zheng-can-yu-zhe-huo-jiang-ming-dan-gong-bu)。
+目前第二期考试活动正在进行中，欢迎大家参与！详情参考：[KubeSphere 管理员考试认证参与者获奖名单公布](https://ask.docs.kubesphere-carryon.top/forum/d/23057-kubesphere-guan-li-yuan-kao-shi-ren-zheng-can-yu-zhe-huo-jiang-ming-dan-gong-bu)。
 
 ## 社区关注度情况
 

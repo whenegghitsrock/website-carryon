@@ -55,4 +55,4 @@ Beyond the preceding new features and enhancements, KubeSphere 3.3.1 has some ot
 
 Read the release notes below to check out more details:
 
-**https://github.com/kubesphere/kubesphere/releases/tag/v3.3.1**
+**https://github.com/whenegghitsrock/kubesphere-carryon/releases/tag/v3.3.1**

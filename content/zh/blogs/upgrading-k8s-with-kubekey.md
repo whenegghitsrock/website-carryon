@@ -75,10 +75,10 @@ ETCDCTL_API=3 etcdctl --endpoints=https://127.0.0.1:2379 \
 export KKZONE=cn
 ```
 
-支持手动下载：https://github.com/kubesphere/kubekey/releases。
+支持手动下载：https://github.com/whenegghitsrock/kubekey-carryon/releases。
 
 ```yaml
-curl -sfL https://get-kk.kubesphere.io | sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 ```
 
 ### 检查当前集群状态

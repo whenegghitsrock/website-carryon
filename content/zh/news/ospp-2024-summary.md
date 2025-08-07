@@ -12,15 +12,15 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/ospp-kubesphere-2
 
 KubeSphere 社区积极参与本次活动，作为导师，共获得了 4个官方赞助名额。最终对学生开放如下任务：
 
-- [基于 LangChain 实现的 Pod 状态分析工具](https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/ospp-2024/pod-state-analysis-tool-based-on-langchain_zh-CN.md) 
-- [Fluent Operator 集成 Fluent-bit 3.0](https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/ospp-2024/integrating-fluent-bit-3.0-into-fluent-operator_zh-CN.md) 
-- [OpenELB 支持 IPV6](https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/ospp-2024/openelb-support-ipv6_zh-CN.md)
-- [cluster-api-kubekey-provider 升级](https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/ospp-2024/upgrading-cluster-api-kubekey-provider_zh-CN.md)
+- [基于 LangChain 实现的 Pod 状态分析工具](https://github.com/whenegghitsrock/community/blob/master/sig-advocacy-and-outreach/ospp-2024/pod-state-analysis-tool-based-on-langchain_zh-CN.md) 
+- [Fluent Operator 集成 Fluent-bit 3.0](https://github.com/whenegghitsrock/community/blob/master/sig-advocacy-and-outreach/ospp-2024/integrating-fluent-bit-3.0-into-fluent-operator_zh-CN.md) 
+- [OpenELB 支持 IPV6](https://github.com/whenegghitsrock/community/blob/master/sig-advocacy-and-outreach/ospp-2024/openelb-support-ipv6_zh-CN.md)
+- [cluster-api-kubekey-provider 升级](https://github.com/whenegghitsrock/community/blob/master/sig-advocacy-and-outreach/ospp-2024/upgrading-cluster-api-kubekey-provider_zh-CN.md)
 
 
 经过 3 个月的开发，社区评审，导师评审，OSPP 官方委员会评审多个步骤，最终 4 个项目全部顺利结项，在此恭贺各位同学。
 
-> 中选学生介绍见之前[动态](https://kubesphere.io/zh/news/ospp-2024-selected-students/)。
+> 中选学生介绍见之前[动态](https://docs.kubesphere-carryon.top/zh/news/ospp-2024-selected-students/)。
 
 ## 项目结果
 
@@ -30,11 +30,11 @@ KubeSphere 社区积极参与本次活动，作为导师，共获得了 4个官�
 - 学校：华东师范大学
 - 导师：[Haili Zhang](https://github.com/webup) 
 - 合并 PR：
-  - [基础静态前端界面](https://github.com/kubesphere-extensions/ks-extensions-contrib/pull/1)
-  - [pod信息自动获取](https://github.com/kubesphere-extensions/ks-extensions-contrib/pull/2)
-  - [LLM能力接入](https://github.com/kubesphere-extensions/ks-extensions-contrib/pull/3)
-  - [完善Readme文档](https://github.com/kubesphere-extensions/ks-extensions-contrib/pull/5)
-  - [完善Deployment相关内容](https://github.com/kubesphere-extensions/ks-extensions-contrib/pull/6)
+  - [基础静态前端界面](https://github.com/whenegghitsrock-extensions/ks-extensions-contrib/pull/1)
+  - [pod信息自动获取](https://github.com/whenegghitsrock-extensions/ks-extensions-contrib/pull/2)
+  - [LLM能力接入](https://github.com/whenegghitsrock-extensions/ks-extensions-contrib/pull/3)
+  - [完善Readme文档](https://github.com/whenegghitsrock-extensions/ks-extensions-contrib/pull/5)
+  - [完善Deployment相关内容](https://github.com/whenegghitsrock-extensions/ks-extensions-contrib/pull/6)
 
 ### Fluent Operator 集成 Fluent-bit 3.0
 
@@ -70,9 +70,9 @@ KubeSphere 社区积极参与本次活动，作为导师，共获得了 4个官�
 - 学校：华东师范大学
 - 导师：[刘健](https://github.com/ImitationImmortal)
 - 合并 PR：
-  - [创建CRD资源](https://github.com/kubesphere/kubekey/pull/2409)
-  - [工作集群生命周期管理](https://github.com/kubesphere/kubekey/pull/2419)
-  - [任务流程模板](https://github.com/kubesphere/kubekey/pull/2418)
+  - [创建CRD资源](https://github.com/whenegghitsrock/kubekey-carryon/pull/2409)
+  - [工作集群生命周期管理](https://github.com/whenegghitsrock/kubekey-carryon/pull/2419)
+  - [任务流程模板](https://github.com/whenegghitsrock/kubekey-carryon/pull/2418)
 
 ## 结语
 

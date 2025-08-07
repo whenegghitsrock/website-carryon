@@ -86,7 +86,7 @@ A：支持 arm，目前不支持 centos。
 
 ### Q10：addons 的 chart 支持本地 tgz 文件么？如果支持写法是什么样的？
 
-A：支持，`.sources.chart.path` 字段配置本地文件。具体可参考： https://github.com/kubesphere/kubekey/blob/master/docs/addons.md
+A：支持，`.sources.chart.path` 字段配置本地文件。具体可参考： https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/addons.md
 
 ### Q11：KubeKey 安装过程中拉去的镜像的名称是默认写死的么？如果不按照官方的名称命名镜像，是不是就拉取不下来？这个镜像名称规范有没有详细的说明？
 

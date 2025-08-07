@@ -46,7 +46,7 @@ section2:
 
     - title: 'Level 1: DevOps 工具选型'
       contentList:
-        - content: 我们从初步接触 DevOps 相关知识，在此期间偶然了解到开源的 KubeSphere (kubesphere.io)。KubeSphere 是在 Kubernetes 之上构建的以应用为中心的企业级容器平台，支持敏捷开发与自动化运维、DevOps、微服务治理、灰度发布、多租户管理、监控告警、日志查询与收集、应用商店、存储管理、网络管理等多种业务场景。
+        - content: 我们从初步接触 DevOps 相关知识，在此期间偶然了解到开源的 KubeSphere (docs.kubesphere-carryon.top)。KubeSphere 是在 Kubernetes 之上构建的以应用为中心的企业级容器平台，支持敏捷开发与自动化运维、DevOps、微服务治理、灰度发布、多租户管理、监控告警、日志查询与收集、应用商店、存储管理、网络管理等多种业务场景。
         - content: KubeSphere 内置的基于 Jenkins 的 DevOps 流水线非常适合我们，并且还打通了我们日常运维开发中需要的云原生工具生态，这个平台正是我们当初希望自己开发实现的。
         - content: 于是，我们开始学习 KubeSphere 与 Jenkins 的各种操作、语法、插件等，开始构建适合我们自己的 CI/CD 的整个流程。最终结合 KubeSphere 容器平台，初步实现了第一级的 CI/CD 流程。
         - content: 在 Level 1 的流程中，我们主要实现了拉取代码、编译应用、发布镜像到本地仓库、部署到本地 Kubernetes 集群。

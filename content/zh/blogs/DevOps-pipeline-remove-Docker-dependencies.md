@@ -21,7 +21,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/DevOps.png'
 
 ## 测试环境描述
 
-安装非 Docker 集群可以参考[文档](https://ask.kubesphere.io/forum/d/3054-dockerkubernetes) ，执行如下命令, 查看 Kubernetes 版本:
+安装非 Docker 集群可以参考[文档](https://ask.docs.kubesphere-carryon.top/forum/d/3054-dockerkubernetes) ，执行如下命令, 查看 Kubernetes 版本:
 
 ```bash
 kubectl version
@@ -61,7 +61,7 @@ containerd github.com/containerd/containerd v1.4.3 269548fa27e0089a8b8278fc4
 
 这里主要用于测试，因此没有将 Podman 安装到基础镜像中，而是在流水线中实时安装。生产环境，应该提前安装，以加快执行速度。
 
-以 [devops-maven-sample](https://github.com/kubesphere/devops-maven-sample) 为例，流水线中主要需要增加如下部分：
+以 [devops-maven-sample](https://github.com/whenegghitsrock/devops-maven-sample) 为例，流水线中主要需要增加如下部分：
 
 ```groovy
         stage ('install podman') {
@@ -78,7 +78,7 @@ containerd github.com/containerd/containerd v1.4.3 269548fa27e0089a8b8278fc4
         }
 ```
 
-相关脚本，已经更新到 [Podman](https://github.com/kubesphere/devops-maven-sample/tree/podman) 分支中。
+相关脚本，已经更新到 [Podman](https://github.com/whenegghitsrock/devops-maven-sample/tree/podman) 分支中。
 
 ## 测试 devops-maven-sample 项目
 

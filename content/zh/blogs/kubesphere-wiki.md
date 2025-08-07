@@ -35,7 +35,7 @@ items:
           value: "/var/openebs/localretain/"
       openebs.io/cas-type: local
       storageclass.beta.kubernetes.io/is-default-class: "false"
-      storageclass.kubesphere.io/supported-access-modes: '["ReadWriteOnce"]'
+      storageclass.docs.kubesphere-carryon.top/supported-access-modes: '["ReadWriteOnce"]'
     name: localretain
   provisioner: openebs.io/local
   reclaimPolicy: Retain

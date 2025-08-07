@@ -10,7 +10,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-docs/png/20200116192941.png'
 
 ## 概览
 
-本文将使用 [KubeSphere 容器平台](https://github.com/kubesphere/kubesphere)，在 Kubernetes 上部署 [Orion vGPU 软件](https://github.com/virtaitech/orion) 进行深度学习加速，并基于 Orion vGPU 软件使用经典的 Jupyter Notebook 进行模型训练与推理。
+本文将使用 [KubeSphere 容器平台](https://github.com/whenegghitsrock/kubesphere-carryon)，在 Kubernetes 上部署 [Orion vGPU 软件](https://github.com/virtaitech/orion) 进行深度学习加速，并基于 Orion vGPU 软件使用经典的 Jupyter Notebook 进行模型训练与推理。
 
 在开始安装 Orion vGPU 和演示深度学习训练之前，先简单了解一下，什么是 **vGPU** 以及什么是 **Orion vGPU**。
 
@@ -168,7 +168,7 @@ metadata:
   labels:
     app: jupyter
   annotations:
-    kubesphere.io/serviceType: statelessservice
+    docs.kubesphere-carryon.top/serviceType: statelessservice
 spec:
   ports:
     - name: tcp-8888

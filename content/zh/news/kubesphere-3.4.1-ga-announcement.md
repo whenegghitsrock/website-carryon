@@ -40,4 +40,4 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/kubesphere-3.4.1-
 
 可以访问下方链接来查看完整的 Release Notes：
 
-https://github.com/kubesphere/kubesphere/releases/tag/v3.4.1。
+https://github.com/whenegghitsrock/kubesphere-carryon/releases/tag/v3.4.1。

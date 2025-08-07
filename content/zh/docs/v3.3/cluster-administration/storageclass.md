@@ -64,7 +64,7 @@ table th:nth-of-type(2) {
 | :---- | :---- |
 | 卷扩展 | 在 YAML 文件中由 `allowVolumeExpansion` 指定。 |
 | 回收机制 | 在 YAML 文件中由 `reclaimPolicy` 指定。 |
-| 访问模式 | 在 YAML 文件中由 `.metadata.annotations.storageclass.kubesphere.io/supported-access-modes` 指定。默认 `ReadWriteOnce`、`ReadOnlyMany` 和 `ReadWriteMany` 全选。 |
+| 访问模式 | 在 YAML 文件中由 `.metadata.annotations.storageclass.docs.kubesphere-carryon.top/supported-access-modes` 指定。默认 `ReadWriteOnce`、`ReadOnlyMany` 和 `ReadWriteMany` 全选。 |
 | 供应者 | 在 YAML 文件中由 `provisioner` 指定。如果您使用 [NFS-Subdir 的 Chart](https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner/) 来安装存储类型，可以设为 `cluster.local/nfs-subdir-external-provisioner/`。 |
 | 卷绑定模式 | 在 YAML 文件中由 `volumeBindingMode` 指定。它决定使用何种绑定模式。**延迟绑定**即持久性声明创建后，当使用此持久性声明的容器组被创建时，此持久性声明才绑定到一个持久卷。**立即绑定**即持久卷声明创建后，立即绑定到一个持久卷。 |
 ### QingCloud CSI
@@ -138,7 +138,7 @@ Ceph RBD 也是 Kubernetes 上的一种树内存储插件，即 Kubernetes 中�
 #### 准备工作
 
 - 已经安装 Ceph 服务器。有关更多信息，请参见 [Ceph 安装文档](https://docs.ceph.com/en/latest/install/)。
-- 如果您选择使用 RBD Provisioner，请安装插件。社区开发者提供了 [RBD Provisioner 的 Chart](https://github.com/kubesphere/helm-charts/tree/master/src/test/rbd-provisioner)，您可以通过 Helm 用这些 Chart 安装 RBD Provisioner。
+- 如果您选择使用 RBD Provisioner，请安装插件。社区开发者提供了 [RBD Provisioner 的 Chart](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/test/rbd-provisioner)，您可以通过 Helm 用这些 Chart 安装 RBD Provisioner。
 
 #### 参数设置项
 

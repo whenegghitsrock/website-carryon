@@ -16,11 +16,11 @@ For demonstration and testing purposes, here are some example artifacts you can 
 
 | Artifact Package                                             | GitHub Repository                                            |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [b2i-war-java8.war](https://github.com/kubesphere/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-war-java8.war) | [spring-mvc-showcase](https://github.com/spring-projects/spring-mvc-showcase) |
-| [b2i-war-java11.war](https://github.com/kubesphere/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-war-java11.war) | [springmvc5](https://github.com/kubesphere/s2i-java-container/tree/master/tomcat/examples/springmvc5) |
-| [b2i-binary](https://github.com/kubesphere/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-binary) | [devops-go-sample](https://github.com/runzexia/devops-go-sample) |
-| [b2i-jar-java11.jar](https://github.com/kubesphere/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-jar-java11.jar) | [ java-maven-example](https://github.com/kubesphere/s2i-java-container/tree/master/java/examples/maven) |
-| [b2i-jar-java8.jar](https://github.com/kubesphere/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-jar-java8.jar) | [devops-maven-sample](https://github.com/kubesphere/devops-maven-sample) |
+| [b2i-war-java8.war](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-war-java8.war) | [spring-mvc-showcase](https://github.com/spring-projects/spring-mvc-showcase) |
+| [b2i-war-java11.war](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-war-java11.war) | [springmvc5](https://github.com/whenegghitsrock/s2i-java-container/tree/master/tomcat/examples/springmvc5) |
+| [b2i-binary](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-binary) | [devops-go-sample](https://github.com/runzexia/devops-go-sample) |
+| [b2i-jar-java11.jar](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-jar-java11.jar) | [ java-maven-example](https://github.com/whenegghitsrock/s2i-java-container/tree/master/java/examples/maven) |
+| [b2i-jar-java8.jar](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-jar-java8.jar) | [devops-maven-sample](https://github.com/whenegghitsrock/devops-maven-sample) |
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ You must create a Docker Hub Secret so that the Docker image created through B2I
 
    **Service Type**: Select **Stateless Service** for this example. For more information about different Services, see [Service Type](../../../project-user-guide/application-workloads/services/#service-type).
 
-   **Artifact File**: Upload the war artifact ([b2i-war-java8](https://github.com/kubesphere/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-war-java8.war)).
+   **Artifact File**: Upload the war artifact ([b2i-war-java8](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-war-java8.war)).
 
    **Build Environment**: Select **kubesphere/tomcat85-java8-centos7:v2.1.0**.
 
@@ -117,7 +117,7 @@ Make sure you have created a Secret for Docker Hub. For more information, see [C
 
 4. On the **Build Settings** page, provide the following information accordingly and click **Create**.
 
-   **Artifact File**: Download [b2i-binary](https://github.com/kubesphere/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-binary) and upload it to KubeSphere.
+   **Artifact File**: Download [b2i-binary](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-binary) and upload it to KubeSphere.
 
    **Build Environment**: Select **kubesphere/s2i-binary:v2.1.0**.
 

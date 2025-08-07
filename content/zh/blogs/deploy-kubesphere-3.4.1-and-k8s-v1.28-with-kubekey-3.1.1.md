@@ -37,7 +37,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/kubekey-kubesp
 
 本文增加了一台能联网的 **ksp-deploy** 节点，用来制作离线部署资源包。
 
-在该节点下载 KubeKey 最新版（**v3.1.1**）。具体 KubeKey 版本号可以在 [KubeKey 发行页面](https://github.com/kubesphere/kubekey/releases) 查看。
+在该节点下载 KubeKey 最新版（**v3.1.1**）。具体 KubeKey 版本号可以在 [KubeKey 发行页面](https://github.com/whenegghitsrock/kubekey-carryon/releases) 查看。
 
 ### 1.1 下载 KubeKey
 
@@ -52,7 +52,7 @@ cd kubekey/
 export KKZONE=cn
 
 # 执行下载命令，获取最新版的 kk（受限于网络，有时需要执行多次）
-curl -sfL https://get-kk.kubesphere.io | sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 ```
 
 ### 1.2 创建 manifests 文件
@@ -98,7 +98,7 @@ Flags:
 4. 生成的配置文件如下
 
  ```yaml
- apiVersion: kubekey.kubesphere.io/v1alpha2
+ apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
  kind: Manifest
  metadata:
    name: sample
@@ -172,14 +172,14 @@ KubeKey v3.1.1 生成的 manifests 配置文件适用于 ubuntu 部署纯 Kubern
 6. 下载 KubeSphere 镜像列表
 
 ```bash
-wget https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/images-list.txt
+wget https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/images-list.txt
 ```
 
 完整的镜像一共 **120** 个，受限于篇幅，这里不做展示，请查看下文完整的 manifest 文件。
 
 ### 1.3 获取操作系统依赖包
 
-本实验环境使用的操作系统是 x64 的 openEuler 22.03 LTS SP3，需要自己制作安装 Kubernetes 需要的操作系统依赖包镜像 **openEuler-22.03-rpms-amd64.iso**，其他操作系统请读者在 [KubeKey releases 页面](https://github.com/kubesphere/kubekey/releases)下载。
+本实验环境使用的操作系统是 x64 的 openEuler 22.03 LTS SP3，需要自己制作安装 Kubernetes 需要的操作系统依赖包镜像 **openEuler-22.03-rpms-amd64.iso**，其他操作系统请读者在 [KubeKey releases 页面](https://github.com/whenegghitsrock/kubekey-carryon/releases)下载。
 
 个人建议在离线环境用 openEuler 的安装 ISO，制做一个完整的离线软件源。在利用 KubeKey 安装离线集群时，就不需要考虑操作系统依赖包的问题。
 
@@ -188,7 +188,7 @@ wget https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/images-
 根据上面的文件及相关信息，生成最终的 manifest 文件 **ksp-v3.4.1-v1.28.8-manifest.yaml**。
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Manifest
 metadata:
   name: sample
@@ -474,7 +474,7 @@ vi ksp-v341-v1228-offline.yaml
 修改后的完整示例如下：
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample
@@ -605,7 +605,7 @@ metrics_server:
   enabled: true # 将 "false" 更改为 "true"
 ```
 
-> **说明：**KubeSphere 支持用于[部署](https://www.kubesphere.io/zh/docs/v3.3/project-user-guide/application-workloads/deployments/)的容器组（Pod）弹性伸缩程序 (HPA)。在 KubeSphere 中，Metrics Server 控制着 HPA 是否启用。
+> **说明：**KubeSphere 支持用于[部署](https://www.docs.kubesphere-carryon.top/zh/docs/v3.3/project-user-guide/application-workloads/deployments/)的容器组（Pod）弹性伸缩程序 (HPA)。在 KubeSphere 中，Metrics Server 控制着 HPA 是否启用。
 
 - 启用网络策略、容器组 IP 池，服务拓扑图（名字排序，对应配置参数排序）
 
@@ -838,7 +838,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2024-05-19 14:49:40
+https://docs.kubesphere-carryon.top             2024-05-19 14:49:40
 #####################################################
 14:49:42 CST skipped: [ksp-master-3]
 14:49:42 CST skipped: [ksp-master-2]

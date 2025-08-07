@@ -174,7 +174,7 @@ image:/images/ks-qkcp/en/devops-user-guide/use-devops/create-a-pipeline-using-gr
 . Click **Add Step**. Select **Git Clone** from the list to fetch sample code from GitHub. Fill in the required fields in the pop-up dialog. Click **OK** to confirm the operation.
 +
 --
-* **URL**: Enter the GitHub repository link:https://github.com/kubesphere/devops-maven-sample.git[]. Note that this is a sample address; please use your own repository address.
+* **URL**: Enter the GitHub repository link:https://github.com/whenegghitsrock/devops-maven-sample.git[]. Note that this is a sample address; please use your own repository address.
 
 * **Credential ID**: No need to input a credential ID in this example.
 
@@ -273,7 +273,7 @@ image:/images/ks-qkcp/en/devops-user-guide/use-devops/create-a-pipeline-using-gr
 mvn -Dmaven.test.skip=true clean package
 ----
 
-. Again, click **Add nesting steps**, select **shell**. Enter the following command to build the Docker image based on the link:https://github.com/kubesphere/devops-maven-sample/blob/sonarqube/Dockerfile-online[Dockerfile].
+. Again, click **Add nesting steps**, select **shell**. Enter the following command to build the Docker image based on the link:https://github.com/whenegghitsrock/devops-maven-sample/blob/sonarqube/Dockerfile-online[Dockerfile].
 +
 --
 [source,bash]

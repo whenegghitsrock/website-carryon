@@ -87,5 +87,5 @@ Replace the following parameters with actual values:
 * **ap2a**: Asia Pacific Zone 2-A
 |===
 
-The above configuration file includes only the necessary parameters to be set. For other parameters, please refer to link:https://github.com/kubesphere/helm-charts/tree/master/src/test/csi-qingcloud#configuration[QingCloud CSI Configuration].
+The above configuration file includes only the necessary parameters to be set. For other parameters, please refer to link:https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/test/csi-qingcloud#configuration[QingCloud CSI Configuration].
 --

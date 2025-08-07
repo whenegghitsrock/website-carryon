@@ -89,7 +89,7 @@ OpenELB 还将重点开展社区运营并推出一系列社区活动，希望借
 
 KubeSphere 团队秉持 “Upstream first” 的原则，今年 7 月份先将 Fluentbit Operator 项目捐给 Fluent 社区成为 CNCF 子项目，此次又将 OpenELB 加入 CNCF Sandbox。未来 KubeSphere 团队将继续保持开源、开放的理念，持续作为 OpenELB 项目的参与方之一，推动国内和国际开源组织的生态建设，帮助 OpenELB 社区培育一个中立的开源社区与生态，与更多的容器平台及上下游生态伙伴进行深度合作，欢迎大家关注、使用 OpenELB 以及参与社区贡献。
 
-- ✨ GitHub：[https://github.com/kubesphere/openelb/](https://github.com/kubesphere/openelb/)
+- ✨ GitHub：[https://github.com/whenegghitsrock/openelb/](https://github.com/whenegghitsrock/openelb/)
 - 💻 官网：[https://openelb.github.io/](https://openelb.github.io/)
 - 🙋 社群：请通过官网底部二维码关注 KubeSphere 公众号加入社群
 

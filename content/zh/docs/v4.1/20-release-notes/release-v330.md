@@ -86,4 +86,4 @@ weight: 50
 - 优化了 ClusterConfiguration 更新机制，无需重启 ks-apiserver、ks-controller-manager。
 - 优化了部分页面文案描述。
 
-有关 KubeSphere 3.3.0 的 Issue 和贡献者详细信息，请参阅 [GitHub](https://github.com/kubesphere/kubesphere/blob/master/CHANGELOG/CHANGELOG-3.3.md)。
+有关 KubeSphere 3.3.0 的 Issue 和贡献者详细信息，请参阅 [GitHub](https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/CHANGELOG/CHANGELOG-3.3.md)。

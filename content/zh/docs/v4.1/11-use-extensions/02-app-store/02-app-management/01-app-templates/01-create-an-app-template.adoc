@@ -21,7 +21,7 @@ include::../../../../../_custom/workspaceManagement/workspaceManagement-prer-req
 
 * {ks_product_right}平台需要安装并启用 **KubeSphere 应用商店管理**扩展组件。
 
-* 已准备 .tar.gz 或 .tgz 格式的 Helm Chart 压缩包，或应用的 yaml 文件。您可以link:https://kubesphere.io/files/application-templates/nginx-0.1.0.tgz[下载 Nginx Helm Chart] 用于测试。有关更多信息，请参阅 link:https://helm.sh/zh/docs/topics/charts/[Helm 官方文档]。
+* 已准备 .tar.gz 或 .tgz 格式的 Helm Chart 压缩包，或应用的 yaml 文件。您可以link:https://docs.kubesphere-carryon.top/files/application-templates/nginx-0.1.0.tgz[下载 Nginx Helm Chart] 用于测试。有关更多信息，请参阅 link:https://helm.sh/zh/docs/topics/charts/[Helm 官方文档]。
 
 
 == 操作步骤

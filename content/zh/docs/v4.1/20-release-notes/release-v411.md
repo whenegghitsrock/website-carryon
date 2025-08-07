@@ -113,26 +113,26 @@ v4.1 版本将停止提供以下 API：
 
 **访问控制**
 
-- `iam.kubesphere.io/v1alpha2` API 版本被移除。请使用 `iam.kubesphere.io/v1beta1` API 版本代替。
-- `iam.kubesphere.io/v1beta1` 中的显著变化：
-  Role、RoleBinding、ClusterRole、ClusterRoleBinding 资源的 API Group 从 `rbac.authorization.k8s.io` 变更为 `iam.kubesphere.io`。
+- `iam.docs.kubesphere-carryon.top/v1alpha2` API 版本被移除。请使用 `iam.docs.kubesphere-carryon.top/v1beta1` API 版本代替。
+- `iam.docs.kubesphere-carryon.top/v1beta1` 中的显著变化：
+  Role、RoleBinding、ClusterRole、ClusterRoleBinding 资源的 API Group 从 `rbac.authorization.k8s.io` 变更为 `iam.docs.kubesphere-carryon.top`。
 
 **多租户**
 
-- `tenant.kubesphere.io/v1alpha1` 和 `tenant.kubesphere.io/v1alpha2` API 版本部分 API 被移除。请使用 `tenant.kubesphere.io/v1beta1` API 版本代替。
-- `tenant.kubesphere.io/v1beta1` 中的显著变化：
+- `tenant.docs.kubesphere-carryon.top/v1alpha1` 和 `tenant.docs.kubesphere-carryon.top/v1alpha2` API 版本部分 API 被移除。请使用 `tenant.docs.kubesphere-carryon.top/v1beta1` API 版本代替。
+- `tenant.docs.kubesphere-carryon.top/v1beta1` 中的显著变化：
   `Workspace` 中 `spec.networkIsolation` 被移除。
 
 **kubectl**
 
-- `/resources.kubesphere.io/v1alpha2/users/{user}/kubectl` 接口已移除，终端相关操作无需再调用该接口
-- 用户 web kubectl 终端 API 路径从 `/kapis/terminal.kubesphere.io/v1alpha2/namespaces/{namespace}/pods/{pod}/exec` 调整为 `/kapis/terminal.kubesphere.io/v1alpha2/users/{user}/kubectl`
+- `/resources.docs.kubesphere-carryon.top/v1alpha2/users/{user}/kubectl` 接口已移除，终端相关操作无需再调用该接口
+- 用户 web kubectl 终端 API 路径从 `/kapis/terminal.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/pods/{pod}/exec` 调整为 `/kapis/terminal.docs.kubesphere-carryon.top/v1alpha2/users/{user}/kubectl`
 
 **gateway**
 
-`gateway.kubesphere.io/v1alpha1` API 版本被移除。
+`gateway.docs.kubesphere-carryon.top/v1alpha1` API 版本被移除。
 
-- 配置 Ingress 查询相关网关的 API 调整为 `/kapis/gateway.kubesphere.io/v1alpha2/namespaces/{namespace}/availableingressclassscopes`。
+- 配置 Ingress 查询相关网关的 API 调整为 `/kapis/gateway.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/availableingressclassscopes`。
 
 #### API 弃用
 

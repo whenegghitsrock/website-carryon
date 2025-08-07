@@ -29,10 +29,10 @@ KubeKey v2.1.0 版本新增了清单（manifest）和制品（artifact）的概�
 
    {{< tab "如果您能正常访问 GitHub/Googleapis" >}}
 
-   从 [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) 下载 KubeKey 或者直接运行以下命令。
+   从 [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) 下载 KubeKey 或者直接运行以下命令。
 
    ```bash
-   curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
    ```
 
    {{</ tab >}}
@@ -48,13 +48,13 @@ KubeKey v2.1.0 版本新增了清单（manifest）和制品（artifact）的概�
    运行以下命令来下载 KubeKey：
 
    ```bash
-   curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
    ```
    {{</ tab >}}
 
    {{</ tabs >}}
 
-2. 在联网主机上执行以下命令，并复制示例中的 manifest 内容。关于更多信息，请参阅 [manifest-example](https://github.com/kubesphere/kubekey/blob/master/docs/manifest-example.md)。
+2. 在联网主机上执行以下命令，并复制示例中的 manifest 内容。关于更多信息，请参阅 [manifest-example](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/manifest-example.md)。
    
    ```bash
    vim manifest.yaml
@@ -62,7 +62,7 @@ KubeKey v2.1.0 版本新增了清单（manifest）和制品（artifact）的概�
    
    ```yaml
    ---
-   apiVersion: kubekey.kubesphere.io/v1alpha2
+   apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
    kind: Manifest
    metadata:
      name: sample
@@ -77,7 +77,7 @@ KubeKey v2.1.0 版本新增了清单（manifest）和制品（artifact）的概�
        repository:
          iso:
            localPath:
-           url: https://github.com/kubesphere/kubekey/releases/download/v3.0.10/centos7-rpms-amd64.iso
+           url: https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v3.0.10/centos7-rpms-amd64.iso
      - arch: amd64
        type: linux
        id: ubuntu
@@ -85,7 +85,7 @@ KubeKey v2.1.0 版本新增了清单（manifest）和制品（artifact）的概�
        repository:
          iso:
            localPath:
-           url: https://github.com/kubesphere/kubekey/releases/download/v3.0.10/ubuntu-20.04-debs-amd64.iso
+           url: https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v3.0.10/ubuntu-20.04-debs-amd64.iso
      kubernetesDistributions:
      - type: kubernetes
        version: v1.23.15
@@ -265,7 +265,7 @@ KubeKey v2.1.0 版本新增了清单（manifest）和制品（artifact）的概�
    
    - 可根据实际情况修改 **manifest-sample.yaml** 文件的内容，用于之后导出期望的 artifact 文件。
   
-   - 您可以访问 https://github.com/kubesphere/kubekey/releases/tag/v3.0.7 下载 ISO 文件。
+   - 您可以访问 https://github.com/whenegghitsrock/kubekey-carryon/releases/tag/v3.0.7 下载 ISO 文件。
    
    {{</ notice >}}
    
@@ -336,7 +336,7 @@ KubeKey v2.1.0 版本新增了清单（manifest）和制品（artifact）的概�
    {{</ notice >}}
 
    ```yaml
-   apiVersion: kubekey.kubesphere.io/v1alpha2
+   apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
    kind: Cluster
    metadata:
      name: sample
@@ -579,7 +579,7 @@ KubeKey v2.1.0 版本新增了清单（manifest）和制品（artifact）的概�
       1. Please change the default password after login.
       
       #####################################################
-      https://kubesphere.io             2022-02-28 23:30:06
+      https://docs.kubesphere-carryon.top             2022-02-28 23:30:06
       #####################################################
       ```
 

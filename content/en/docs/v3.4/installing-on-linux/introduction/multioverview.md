@@ -8,7 +8,7 @@ weight: 3130
 
 In a production environment, a single-node cluster cannot satisfy most of the needs as the cluster has limited resources with insufficient compute capabilities. Thus, single-node clusters are not recommended for large-scale data processing. Besides, a cluster of this kind is not available with high availability as it only has one node. On the other hand, a multi-node architecture is the most common and preferred choice in terms of application deployment and distribution.
 
-This section gives you an overview of a single-master multi-node installation, including the concept, [KubeKey](https://github.com/kubesphere/kubekey/) and steps. For information about HA installation, refer to [High Availability Configurations](../../../installing-on-linux/high-availability-configurations/ha-configuration/), [Installing on Public Cloud](../../public-cloud/install-kubesphere-on-azure-vms/) and [Installing in On-premises Environment](../../on-premises/install-kubesphere-on-bare-metal/).
+This section gives you an overview of a single-master multi-node installation, including the concept, [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon/) and steps. For information about HA installation, refer to [High Availability Configurations](../../../installing-on-linux/high-availability-configurations/ha-configuration/), [Installing on Public Cloud](../../public-cloud/install-kubesphere-on-azure-vms/) and [Installing in On-premises Environment](../../on-premises/install-kubesphere-on-bare-metal/).
 
 ## Video Demonstration
 
@@ -24,7 +24,7 @@ A multi-node cluster is composed of at least one control plane and one worker no
 
 ## Step 1: Prepare Linux Hosts
 
-Please see the requirements for hardware and operating system shown below. To get started with multi-node installation in this tutorial, you need to prepare at least three hosts according to the following requirements. It is possible to install the [KubeSphere Container Platform](https://kubesphere.io/) on two nodes if they have sufficient resources.
+Please see the requirements for hardware and operating system shown below. To get started with multi-node installation in this tutorial, you need to prepare at least three hosts according to the following requirements. It is possible to install the [KubeSphere Container Platform](https://docs.kubesphere-carryon.top/) on two nodes if they have sufficient resources.
 
 ### System requirements
 
@@ -107,10 +107,10 @@ Follow the step below to download [KubeKey](../kubekey).
 
 {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command directly.
+Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly.
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -126,7 +126,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}
@@ -281,7 +281,7 @@ KubeKey will install [OpenEBS](https://openebs.io/) to provision [LocalPV](https
 {{< notice tip >}}
 
 - You can enable the multi-cluster feature by editing the configuration file. For more information, see [Multi-cluster Management](../../../multicluster-management/).
-- You can also select the components you want to install. For more information, see [Enable Pluggable Components](../../../pluggable-components/). For an example of a complete `config-sample.yaml` file, see [this file](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md).
+- You can also select the components you want to install. For more information, see [Enable Pluggable Components](../../../pluggable-components/). For an example of a complete `config-sample.yaml` file, see [this file](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-2.2/docs/config-example.md).
 
 {{</ notice >}}
 
@@ -323,7 +323,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             20xx-xx-xx xx:xx:xx
+https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
 #####################################################
 ```
 

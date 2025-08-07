@@ -10,7 +10,7 @@ groups:
     children:
       - title: "KubeSphere"
         icon: 'images/projects/kubesphere.svg'
-        link: 'https://github.com/kubesphere/kubesphere'
+        link: 'https://github.com/whenegghitsrock/kubesphere-carryon'
         description: KubeSphere is a distributed operating system managing cloud native applications with Kubernetes as its kernel, and provides plug-and-play architecture for the seamless integration of third-party applications to boost its ecosystem.
 
   - name: Application Management
@@ -31,14 +31,14 @@ groups:
     children:
       - title: KubeKey
         icon: 'https://pek3b.qingstor.com/kubesphere-docs/png/20200608103108.png'
-        link: 'https://github.com/kubesphere/kubekey'
+        link: 'https://github.com/whenegghitsrock/kubekey-carryon'
         description: KubeKey is the next-gen installer for Kubernetes and KubeSphere. KubeKey changes from ansible-based technology to Go, supports installing Kubernetes and KubeSphere separately or as a whole easily, efficiently and flexibly.
 
   - name: Inspection Tool
     children:
       - title: KubeEye
         icon: 'https://pek3b.qingstor.com/kubesphere-community/images/202211111151370.png'
-        link: 'https://github.com/kubesphere/kubeeye'
+        link: 'https://github.com/whenegghitsrock/kubeeye'
         description: KubeEye is an inspection tool for Kubernetes. It discovers whether Kubernetes resources (by using OPA ), cluster components, cluster nodes (by using Node-Problem-Detector), and other configurations comply with best practices and makes modification suggestions accordingly. KubeEye supports custom inspection rules and plugin installation. With KubeEye Operator, you can intuitively view the inspection results and modification suggestions on the web console.
 
   - name: Serverless
@@ -59,35 +59,35 @@ groups:
     children:
       - title: Notification Manager
         icon: 'https://pek3b.qingstor.com/kubesphere-docs/png/20200608105148.png'
-        link: 'https://github.com/kubesphere/notification-manager'
+        link: 'https://github.com/whenegghitsrock/notification-manager'
         description: Notification Manager manages notifications in multi-tenant K8s environment. It receives alerts or notifications from different senders and then send notifications to various tenant receivers based on alerts/notifications' tenant label like "namespace".
 
   - name: Events
     children:
       - title: Kube-events
         icon: 'https://pek3b.qingstor.com/kubesphere-docs/png/20200608111002.png'
-        link: 'https://github.com/kubesphere/kube-events'
+        link: 'https://github.com/whenegghitsrock/kube-events'
         description: Kube-events revolves around Kubernetes Event, covering multi-dimensional processing of them, such as emitting events to sinks, issuing notifications and generating alerts. And in some of these dimensions, configurable filtering rules are provided to meet different business needs.
 
   - name: Alert
     children:
       - title: Alerting System
         icon: 'https://pek3b.qingstor.com/kubesphere-docs/png/20200608111200.png'
-        link: 'https://github.com/kubesphere/alert'
+        link: 'https://github.com/whenegghitsrock/alert'
         description: Alert is an enterprise-grade general-purpose high-performance alerting system.
 
   - name: CI/CD
     children:
       - title: S2i-operator
         icon: 'https://pek3b.qingstor.com/kubesphere-docs/png/20200608111455.png'
-        link: 'https://github.com/kubesphere/s2ioperator'
+        link: 'https://github.com/whenegghitsrock/s2ioperator'
         description: Source-to-image(S2I)-Operator is a Kubernetes Custom Resource Defintion (CRD) controller that provides easy Kubernetes-style resources for declaring CI/CD-style pipelines. S2I Operator create a ready-to-run images by injecting source code into a container image and letting the container prepare that source code for execution.
 
   - name: Design
     children:
       - title: kube-design
         icon: 'https://pek3b.qingstor.com/kubesphere-docs/png/20200608114816.png'
-        link: 'https://github.com/kubesphere/kube-design'
+        link: 'https://github.com/whenegghitsrock/kube-design-carryon'
         description: Kube Design is a set of React component libraries created for KubeSphere console. If you want to develop KubeSphere console, this library will be pretty useful in customizing front end.
 
   - name: Storage Plugins

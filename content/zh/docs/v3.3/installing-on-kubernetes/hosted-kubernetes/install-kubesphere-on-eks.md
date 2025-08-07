@@ -130,9 +130,9 @@ aws-cli/2.1.2 Python/3.7.3 Linux/4.18.0-193.6.3.el8_2.x86_64 exe/x86_64.centos.8
 - 使用 kubectl 安装 KubeSphere，以下命令仅用于默认的最小安装。
 
   ```bash
-  kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/kubesphere-installer.yaml
+  kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.2/kubesphere-installer.yaml
 
-  kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/cluster-configuration.yaml
+  kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.2/cluster-configuration.yaml
   ```
 
 - 检查安装日志：
@@ -157,7 +157,7 @@ aws-cli/2.1.2 Python/3.7.3 Linux/4.18.0-193.6.3.el8_2.x86_64 exe/x86_64.centos.8
       are ready.
     2. Please modify the default password after login.
   #####################################################
-  https://kubesphere.io             2020-xx-xx xx:xx:xx
+  https://docs.kubesphere-carryon.top             2020-xx-xx xx:xx:xx
   ```
 
 ## 访问 KubeSphere 控制台

@@ -22,7 +22,7 @@ KubeSphere LuBan, a distributed, open, and scalable cloud-native architecture, p
 
 The architectural design of KubeSphere LuBan is shown in the figure below.
 
-![](https://kubesphere.io/images/ks-qkcp/zh/v4.0/4.0-architecture.png)
+![](https://docs.kubesphere-carryon.top/images/ks-qkcp/zh/v4.0/4.0-architecture.png)
 
 ### Why Introduce KubeSphere LuBan
 
@@ -83,8 +83,8 @@ It also fixed the following issues in KubeSphere v4.1.1:
 - Fixed installation failure in K8s 1.19 environments.
 
 For other changes, please see the changelog:
-- https://www.kubesphere.io/docs/v4.1/20-release-notes/release-v411/
-- https://www.kubesphere.io/docs/v4.1/20-release-notes/release-v412/
+- https://www.docs.kubesphere-carryon.top/docs/v4.1/20-release-notes/release-v411/
+- https://www.docs.kubesphere-carryon.top/docs/v4.1/20-release-notes/release-v412/
 
 ### KubeSphere Extensions
 
@@ -115,23 +115,23 @@ Currently, we have open-sourced 20 extensions, including:
 - Metrics Server
 - Gatekeeper
 
-Extension repository: https://github.com/kubesphere-extensions/ks-extensions/.
+Extension repository: https://github.com/whenegghitsrock-extensions/ks-extensions/.
 
 ### Installation
 
 **Attention: Currently, it is not supported to directly upgrade from  v3.4.x to v4. You need to uninstall the old version before installing v4.**
 
-- How to Install KubeSphere: https://www.kubesphere.io/docs/v4.1/03-installation-and-upgrade/02-install-kubesphere/02-install-kubernetes-and-kubesphere/
+- How to Install KubeSphere: https://www.docs.kubesphere-carryon.top/docs/v4.1/03-installation-and-upgrade/02-install-kubesphere/02-install-kubernetes-and-kubesphere/
 
-- How to Install Extensions: https://www.kubesphere.io/docs/v4.1/06-extension-user-guide/01-install-components-pdf/
+- How to Install Extensions: https://www.docs.kubesphere-carryon.top/docs/v4.1/06-extension-user-guide/01-install-components-pdf/
 
 To upgrade from v4.1.1 to v4.1.2, run the following command:
 
 ```
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere.io/main/ks-core-1.1.2.tgz --debug --wait
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.2.tgz --debug --wait
 ```
 
-To quickly start, please refer to: https://kubesphere.io/docs/v4.1/02-quickstart/01-install-kubesphere.
+To quickly start, please refer to: https://docs.kubesphere-carryon.top/docs/v4.1/02-quickstart/01-install-kubesphere.
 
 ## Contribution
 
@@ -139,11 +139,11 @@ As mentioned earlier, the introduction of the extension mechanism makes KubeSphe
 
 The community is gradually releasing open-source extensions, providing more features and more choices. Developers and ISVs are warmly welcomed to participate, develop your own extensions, and enrich the extension ecosystem together.
 
-We are grateful for the contribution of the student, Zhang Qiming, who has developed an extension, **Pod Status Analysis Tool**, address: https://github.com/kubesphere-extensions/ks-extensions-contrib/tree/main/pod-analyzer.
+We are grateful for the contribution of the student, Zhang Qiming, who has developed an extension, **Pod Status Analysis Tool**, address: https://github.com/whenegghitsrock-extensions/ks-extensions-contrib/tree/main/pod-analyzer.
 
-- Repository for Contribution: https://github.com/kubesphere-extensions/ks-extensions-contrib
+- Repository for Contribution: https://github.com/whenegghitsrock-extensions/ks-extensions-contrib
 
-- Development Guide: https://dev-guide.kubesphere.io/extension-dev-guide/en/
+- Development Guide: https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/en/
 
 ## Future Plans
 

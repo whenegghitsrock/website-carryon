@@ -10,7 +10,7 @@ In this quickstart, as a cluster admin, you will learn how to create workspaces,
 
 ## Prerequisites
 
-- You need to [install KubeSphere](https://kubesphere.io/en/install).
+- You need to [install KubeSphere](https://docs.kubesphere-carryon.top/en/install).
 - You need a default admin account.
 
 ## Hands-on Lab

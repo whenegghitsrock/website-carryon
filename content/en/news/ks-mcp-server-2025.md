@@ -75,7 +75,7 @@ users:
 You can obtain the binary by:
 
 - Building from source: `go build -o ks-mcp-server cmd/main.go`
-- Downloading from [GitHub Releases](https://github.com/kubesphere/ks-mcp-server/releases)
+- Downloading from [GitHub Releases](https://github.com/whenegghitsrock/ks-mcp-server/releases)
 
 Ensure the binary is added to your system's `$PATH`.
 
@@ -136,7 +136,7 @@ The AI assistant will retrieve the information via KubeSphere MCP Server and pre
 
 KubeSphere MCP Server is open source, and contributions or feedback from the community are welcome. You can reach out via:
 
-- GitHub：[https://github.com/kubesphere/ks-mcp-server](https://github.com/kubesphere/ks-mcp-server)
+- GitHub：[https://github.com/whenegghitsrock/ks-mcp-server](https://github.com/whenegghitsrock/ks-mcp-server)
 - Slack Channel: [https://kubesphere.slack.com](https://kubesphere.slack.com)
 
 ## Conclusion

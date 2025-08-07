@@ -58,7 +58,7 @@ The separate configuration file contains all parameters of QingCloud CSI which w
    | Guangdong2-A/Guangdong2-B                   | gd2a/gd2b               |
    | Asia-Pacific 2-A                            | ap2a                    |
 
-   If you want to configure more values, see [chart configuration for QingCloud CSI](https://github.com/kubesphere/helm-charts/tree/master/src/test/csi-qingcloud#configuration).
+   If you want to configure more values, see [chart configuration for QingCloud CSI](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/test/csi-qingcloud#configuration).
    
 3. Save the file.
 
@@ -70,10 +70,10 @@ Follow the steps below to download [KubeKey](../../../installing-on-linux/introd
 
 {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command directly.
+Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly.
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -89,7 +89,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}
@@ -175,7 +175,7 @@ chmod +x kk
        sources:
          chart:
            name: csi-qingcloud
-           repo: https://charts.kubesphere.io/test
+           repo: https://charts.docs.kubesphere-carryon.top/test
            valuesFile: /root/csi-qingcloud.yaml
    ...
    ```
@@ -220,7 +220,7 @@ chmod +x kk
      2. Please change the default password after login.
    
    #####################################################
-   https://kubesphere.io             20xx-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
    #####################################################
    ```
 

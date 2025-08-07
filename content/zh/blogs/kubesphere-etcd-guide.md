@@ -101,7 +101,7 @@ export KKZONE=cn
 ```
 
 ```yaml
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 ```yaml

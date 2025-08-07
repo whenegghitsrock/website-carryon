@@ -40,7 +40,7 @@ Here is the detailed information of each node in my cluster for your reference:
 | 172.16.0.9  | worker3   | worker               | CentOS 7.5, 8 Cores, 8 G Memory, 50 G Disk |
 | 172.16.0.10 |           | Virtual IP address   |                                            |
 
-For more information about requirements for nodes, network, and dependencies, [see one of my previous posts](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/#node-requirements).
+For more information about requirements for nodes, network, and dependencies, [see one of my previous posts](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/#node-requirements).
 
 ## Configure Load Balancing
 
@@ -262,12 +262,12 @@ Before you start to create your Kubernetes cluster, make sure you have tested th
 
 ## Use KubeKey to Create a Kubernetes Cluster
 
-[KubeKey](https://github.com/kubesphere/kubekey) is an efficient and convenient tool to create a Kubernetes cluster. If you are not familiar with KubeKey, have a look at my previous articles about using KubeKey to [create a three-node cluster](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/) and scale your cluster.
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) is an efficient and convenient tool to create a Kubernetes cluster. If you are not familiar with KubeKey, have a look at my previous articles about using KubeKey to [create a three-node cluster](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/) and scale your cluster.
 
-1. Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command to download KubeKey version 1.0.1. You only need to download KubeKey to one of your machines (e.g. `master1`) that serves as the **taskbox** for installation.
+1. Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command to download KubeKey version 1.0.1. You only need to download KubeKey to one of your machines (e.g. `master1`) that serves as the **taskbox** for installation.
 
    ```bash
-   curl -sfL https://get-kk.kubesphere.io | VERSION=v2.0.0 sh -
+   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.0.0 sh -
    ```
 
 2. The above command downloads KubeKey and unzips the file. Your folder now contains a file called `kk`. Make it executable:
@@ -285,7 +285,7 @@ Before you start to create your Kubernetes cluster, make sure you have tested th
 4. A default file `config-sample.yaml` will be created. Edit the file and here is my configuration for your reference:
 
    ```yaml
-   apiVersion: kubekey.kubesphere.io/v1alpha1
+   apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
    kind: Cluster
    metadata:
      name: sample
@@ -331,7 +331,7 @@ Before you start to create your Kubernetes cluster, make sure you have tested th
    {{< notice note >}}
 
    - Replace the value of `controlPlaneEndpoint.address` with your own VIP address.
-   - For more information about different parameters in this configuration file, see [one of my previous blogs](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/#install-kubernetes).
+   - For more information about different parameters in this configuration file, see [one of my previous blogs](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/#install-kubernetes).
 
    {{</ notice >}} 
 
@@ -393,6 +393,6 @@ Creating a highly available Kubernetes cluster is not just about business applic
 
 ## Reference
 
-[KubeKey: A Lightweight Installer for Kubernetes and Cloud Native Addons](https://kubesphere.io/blogs/install-kubernetes-using-kubekey/)
+[KubeKey: A Lightweight Installer for Kubernetes and Cloud Native Addons](https://docs.kubesphere-carryon.top/blogs/install-kubernetes-using-kubekey/)
 
-[KubeKey GitHub Repository](https://github.com/kubesphere/kubekey)
+[KubeKey GitHub Repository](https://github.com/whenegghitsrock/kubekey-carryon)

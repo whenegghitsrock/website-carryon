@@ -45,7 +45,7 @@ KubeSphere v3.2 对网关进行了重构，在保留了原有网关功能的基�
 
 ```yaml
 # Gateway sample
-apiVersion: gateway.kubesphere.io/v1alpha1
+apiVersion: gateway.docs.kubesphere-carryon.top/v1alpha1
 kind: Gateway
 metadata:
   name: kubesphere-router-proj1
@@ -71,7 +71,7 @@ spec:
   # worker workload deployment configuration
   deployment:
     annotations: 
-    "servicemesh.kubesphere.io/enabled": "false"
+    "servicemesh.docs.kubesphere-carryon.top/enabled": "false"
     replicas: 1
 
   # 
@@ -91,10 +91,10 @@ KubeSphere 使用 Nginx Ingress Controller 作为默认的网关实现。为了�
 
 根据 watch.yaml 中配置的监听指定 CRD 下的 CR 来创建或更新 Chart 资源。其中可以根据 CR spec 中的值覆盖默认 Helm Chart 中的值，这是由 Helm Operator 中的机制决定的，[详见官方说明](https://sdk.operatorframework.io/docs/building-operators/helm/tutorial/#understanding-the-nginx-cr-spec)。
 
-如下的含义是需要 Watch `gateway.kubesphere.io/v1alpha1` 的 Nginx CR，如果有变化就触发 Reconcile ，根据 chart 中配置的地址创建或更新对应的资源。
+如下的含义是需要 Watch `gateway.docs.kubesphere-carryon.top/v1alpha1` 的 Nginx CR，如果有变化就触发 Reconcile ，根据 chart 中配置的地址创建或更新对应的资源。
 
 ```yaml
-- group: gateway.kubesphere.io
+- group: gateway.docs.kubesphere-carryon.top
   version: v1alpha1
   kind: Nginx
   chart: /var/helm-charts/ingress-nginx
@@ -105,11 +105,11 @@ KubeSphere 使用 Nginx Ingress Controller 作为默认的网关实现。为了�
 watchs.yaml 中就做了如下配置：
 
 ```yaml
-- group: gateway.kubesphere.io
+- group: gateway.docs.kubesphere-carryon.top
   version: v1alpha1
   kind: Nginx
   chart: /var/helm-charts/ingress-nginx
-- group: gateway.kubesphere.io
+- group: gateway.docs.kubesphere-carryon.top
   version: v1alpha1
   kind: Gateway
   chart: /var/helm-charts/gateway
@@ -117,8 +117,8 @@ watchs.yaml 中就做了如下配置：
 
 其中对 chart 而言：
 
-- Nginx 是用的官方的 Helm Chart，在打包 ks-controller-manager 时下载的官方 Helm Chart。详见：https://github.com/kubesphere/kubesphere/blob/v3.2.0/build/ks-controller-manager/Dockerfile#L34
-- Gateway 是在 KubeSphere 中定制的 Helm Chart，里面主要就操作了 Nginx CR 资源。详见：https://github.com/kubesphere/kubesphere/blob/v3.2.0/config/gateway/templates/nginx-ingress.yaml
+- Nginx 是用的官方的 Helm Chart，在打包 ks-controller-manager 时下载的官方 Helm Chart。详见：https://github.com/whenegghitsrock/kubesphere-carryon/blob/v3.2.0/build/ks-controller-manager/Dockerfile#L34
+- Gateway 是在 KubeSphere 中定制的 Helm Chart，里面主要就操作了 Nginx CR 资源。详见：https://github.com/whenegghitsrock/kubesphere-carryon/blob/v3.2.0/config/gateway/templates/nginx-ingress.yaml
 
 整体而言：
 
@@ -154,6 +154,6 @@ gateway:
 ## 参考：
 
 + [https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
-+ [https://github.com/kubesphere/community/blob/master/sig-microservice/concepts-and-designs/KubeSphere-gateway-operator-design.md](https://github.com/kubesphere/community/blob/master/sig-microservice/concepts-and-designs/KubeSphere-gateway-operator-design.md)
-+ [https://github.com/kubesphere/kubesphere](https://github.com/kubesphere/kubesphere)
++ [https://github.com/whenegghitsrock/community/blob/master/sig-microservice/concepts-and-designs/KubeSphere-gateway-operator-design.md](https://github.com/whenegghitsrock/community/blob/master/sig-microservice/concepts-and-designs/KubeSphere-gateway-operator-design.md)
++ [https://github.com/whenegghitsrock/kubesphere-carryon](https://github.com/whenegghitsrock/kubesphere-carryon)
 + [https://sdk.operatorframework.io/docs/building-operators/helm/](https://sdk.operatorframework.io/docs/building-operators/helm/)

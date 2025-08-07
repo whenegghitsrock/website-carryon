@@ -14,7 +14,7 @@ In a world where Kubernetes has become the de facto standard to build applicatio
 
 ![tidb-architecture](https://ap3.qingstor.com/kubesphere-website/docs/tidb-architecture.png)
 
-In addition to TiDB, I am also using KubeSphere [Container Platform](https://kubesphere.io/), an open-source distributed operating system that manages cloud-native applications with [Kubernetes](https://kubernetes.io/) as its kernel. It provides a plug-and-play architecture for the seamless integration of third-party applications to boost its ecosystem. [KubeSphere can be run anywhere](https://kubesphere.io/docs/introduction/what-is-kubesphere/#run-kubesphere-everywhere) as it is highly pluggable without any hacking into Kubernetes.
+In addition to TiDB, I am also using KubeSphere [Container Platform](https://docs.kubesphere-carryon.top/), an open-source distributed operating system that manages cloud-native applications with [Kubernetes](https://kubernetes.io/) as its kernel. It provides a plug-and-play architecture for the seamless integration of third-party applications to boost its ecosystem. [KubeSphere can be run anywhere](https://docs.kubesphere-carryon.top/docs/introduction/what-is-kubesphere/#run-kubesphere-everywhere) as it is highly pluggable without any hacking into Kubernetes.
 
 ![KubeSphere-structure-comp](https://ap3.qingstor.com/kubesphere-website/docs/KubeSphere-structure-comp.png)
 
@@ -24,13 +24,13 @@ By combining TiDB with KubeSphere, we can have Kubernetes-powered TiDB clusters,
 
 As you can imagine, the very first thing to consider is to have a Kubernetes cluster so that you can deploy TiDB. Well, in this regard, the installation of Kubernetes may have haunted a large number of neophytes, especially the preparation of working machines, either physical or virtual. Besides, you also need to configure different network rules so that traffic can move smoothly among instances. Fortunately, QingCloud, the sponsor of KubeSphere, provides users with a highly functional platform that enables them to quickly deploy Kubernetes and KubeSphere at the same time (you can choose to deploy Kubernetes only). Namely, you only need to click few buttons and the platform will do the rest.
 
-Therefore, I select QingCloud Kubernetes Engine (QKE) to prepare the environment. In fact, you can also use instances on the platform directly and [deploy a highly-available Kubernetes cluster with KubeSphere installed](https://kubesphere.io/docs/installing-on-linux/public-cloud/install-kubesphere-on-qingcloud-vms/). Here is how I deploy the cluster and TiDB:
+Therefore, I select QingCloud Kubernetes Engine (QKE) to prepare the environment. In fact, you can also use instances on the platform directly and [deploy a highly-available Kubernetes cluster with KubeSphere installed](https://docs.kubesphere-carryon.top/docs/installing-on-linux/public-cloud/install-kubesphere-on-qingcloud-vms/). Here is how I deploy the cluster and TiDB:
 
 1. Log in to the [web console of QingCloud](https://console.qingcloud.com/). Simply select **KubeSphere (QKE)** from the menu and create a Kubernetes cluster with KubeSphere installed. The platform allows you to install different components of KubeSphere. Here, we need to enable [OpenPitrix](https://github.com/openpitrix/openpitrix), which powers the app management feature in KubeSphere.
 
    {{< notice note >}}
 
-   KubeSphere can be installed on any infrastructure. I just use QingCloud Platform as an example. See [KubeSphere Documentation](https://kubesphere.io/docs/) for more details.
+   KubeSphere can be installed on any infrastructure. I just use QingCloud Platform as an example. See [KubeSphere Documentation](https://docs.kubesphere-carryon.top/docs/) for more details.
 
    {{</ notice >}}
 
@@ -60,7 +60,7 @@ Therefore, I select QingCloud Kubernetes Engine (QKE) to prepare the environment
 
 5. Now, let's get back to the **Access Control** page where all the workspaces are listed. Before I proceed, first I need to create a new workspace (e.g. `dev-workspace`).
 
-   In a workspace, different users have different permissions to perform varied tasks in projects. Usually, a department-wide project requires a multi-tenant system so that everyone is responsible for their own part. For demonstration purposes, I use the user `admin` in this example. You can [see the official documentation of KubeSphere](https://kubesphere.io/docs/quick-start/create-workspace-and-project/) to know more about how the multi-tenant system works.
+   In a workspace, different users have different permissions to perform varied tasks in projects. Usually, a department-wide project requires a multi-tenant system so that everyone is responsible for their own part. For demonstration purposes, I use the user `admin` in this example. You can [see the official documentation of KubeSphere](https://docs.kubesphere-carryon.top/docs/quick-start/create-workspace-and-project/) to know more about how the multi-tenant system works.
 
    ![create-workspace](https://ap3.qingstor.com/kubesphere-website/docs/20201026192648.png)
 
@@ -231,16 +231,16 @@ These services just created can be accessed easily as KubeSphere tells you how a
 
 I hope you guys all have successfully deployed TiDB. Both TiDB and KubeSphere are powerful tools for cloud-native applications, so in fact, I cannot showcase every aspect of them all in this post. For example, the app deployment function has much to offer for cloud-native enthusiasts like me. I will post another article on how to deploy TiDB by uploading Helm charts to the KubeSphere App Store.
 
-If you have any questions, don't hesitate to contact us in [Slack](https://join.slack.com/t/kubesphere/shared_invite/zt-2b4t6rdb4-ico_4UJzCln_S2c1pcrIpQ) or [GitHub](https://github.com/kubesphere).
+If you have any questions, don't hesitate to contact us in [Slack](https://join.slack.com/t/kubesphere/shared_invite/zt-2b4t6rdb4-ico_4UJzCln_S2c1pcrIpQ) or [GitHub](https://github.com/whenegghitsrock).
 
 ## References
 
-**KubeSphere GitHub**: https://github.com/kubesphere/kubesphere 
+**KubeSphere GitHub**: https://github.com/whenegghitsrock/kubesphere-carryon 
 
 **TiDB GitHub**: https://github.com/pingcap/TiDB
 
 **TiDB Operator Documentation**: https://docs.pingcap.com/tidb-in-kubernetes/stable/tidb-operator-overview
 
-**KubeSphere Introduction**: https://kubesphere.io/docs/introduction/what-is-kubesphere/
+**KubeSphere Introduction**: https://docs.kubesphere-carryon.top/docs/introduction/what-is-kubesphere/
 
-**KubeSphere Documentation**: https://kubesphere.io/docs/
+**KubeSphere Documentation**: https://docs.kubesphere-carryon.top/docs/

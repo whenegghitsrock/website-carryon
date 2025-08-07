@@ -13,14 +13,14 @@ snapshot: '/images/blogs/en/kastenk10image/KastenK10-architecture.png'
 Purpose-built for Kubernetes, [Kasten 10 ](https://docs.kasten.io/)provides enterprise operations teams an easy-to-use, scalable, and secure system for backup/restore, disaster recovery, and mobility of Kubernetes applications. 
 
 ![kasten k10 arch](/images/blogs/en/kastenk10image/KastenK10-architecture.png)
-[KubeSphere](https://kubesphere.io/docs/introduction/what-is-kubesphere/) is a distributed operating system for cloud-native application management, using Kubernetes as its kernel. It provides a plug-and-play architecture, allowing third-party applications to be seamlessly integrated into its ecosystem.
+[KubeSphere](https://docs.kubesphere-carryon.top/docs/introduction/what-is-kubesphere/) is a distributed operating system for cloud-native application management, using Kubernetes as its kernel. It provides a plug-and-play architecture, allowing third-party applications to be seamlessly integrated into its ecosystem.
 ![kubesphere arch](/images/blogs/en/kastenk10image/kubesphere-architecture.png)
 
 In this article, we will introduce the deployment of Kasten K10 on KubeSphere.
 
 ## Provision a KubeSphere Cluster
 
-This article will introduce how to deploy Kasten on KubeSphere Container Platform. You can install KubeSphere on any Kubernetes cluster or Linux system, refer to [KubeSphere documentation](https://kubesphere.io/docs/quick-start/all-in-one-on-linux/) for more details or vist the [Github]( https://github.com/kubesphere/website) of KubeSphere.
+This article will introduce how to deploy Kasten on KubeSphere Container Platform. You can install KubeSphere on any Kubernetes cluster or Linux system, refer to [KubeSphere documentation](https://docs.kubesphere-carryon.top/docs/quick-start/all-in-one-on-linux/) for more details or vist the [Github]( https://github.com/whenegghitsrock/website-carryon) of KubeSphere.
 
 After the creation of KubeSphere cluster, you can log in to the KubeSphere web console:
 
@@ -188,14 +188,14 @@ As a container platform, KubeSphere excels in cloud native application deploymen
 
 ### Reference
 
-[KubeSphere Official Documentation](https://kubesphere.io/docs/)
+[KubeSphere Official Documentation](https://docs.kubesphere-carryon.top/docs/)
 
 [Helm Repository Address](https://charts.kasten.io/)
 
 [Kasten Official Documentation](https://docs.kasten.io/)
 
-[KubeSphere GitHub](https://github.com/kubesphere/kubesphere)
+[KubeSphere GitHub](https://github.com/whenegghitsrock/kubesphere-carryon)
 
-[KubeSphere Official Document](https://kubesphere.io/docs/introduction/what-is-kubesphere/)
+[KubeSphere Official Document](https://docs.kubesphere-carryon.top/docs/introduction/what-is-kubesphere/)
 
-[KubeSphere Documentation](https://kubesphere.io/docs/) 
+[KubeSphere Documentation](https://docs.kubesphere-carryon.top/docs/) 

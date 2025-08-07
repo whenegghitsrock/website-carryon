@@ -46,9 +46,9 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/kubekey-upgrad
 
 ### 1.1 Kubernetes 版本升级概述
 
-KubeSphere v3.4.1 已于 2023 年 11 月 10 日正式发布，升级说明详见 [Releases-v3.4.1 发布说明](https://github.com/kubesphere/kubesphere/releases/tag/v3.4.1)。该发布版修复了 v3.4.0 中存在的许多问题，建议所有人更新。
+KubeSphere v3.4.1 已于 2023 年 11 月 10 日正式发布，升级说明详见 [Releases-v3.4.1 发布说明](https://github.com/whenegghitsrock/kubesphere-carryon/releases/tag/v3.4.1)。该发布版修复了 v3.4.0 中存在的许多问题，建议所有人更新。
 
-[KubeSphere 官方的升级文档](https://www.kubesphere.io/zh/docs/v3.4/upgrade/upgrade-with-kubekey/) 操作比较简单。但是，实际升级过程还是遇到 2 个小问题。正好借此机会，写一篇完整版的 KubeSphere 和 Kubernetes **补丁版本**升级完全实战指南。
+[KubeSphere 官方的升级文档](https://www.docs.kubesphere-carryon.top/zh/docs/v3.4/upgrade/upgrade-with-kubekey/) 操作比较简单。但是，实际升级过程还是遇到 2 个小问题。正好借此机会，写一篇完整版的 KubeSphere 和 Kubernetes **补丁版本**升级完全实战指南。
 
 为什么强调**补丁版本**？这里就要简单点介绍一下 Kubernetes 版本命名规则及升级策略。
 
@@ -71,7 +71,7 @@ Kubernetes 版本以 **x.y.z** 表示，其中 **x** 是主要版本， **y** �
 
 当然，为了技术学习，也为了积累原地升级的实战经验，后期还是会推出次要版本升级指南。
 
-KubeKey 支持 **All-in-One 集群**和多节点集群两种升级场景，本文只实战演示多节点集群的升级场景， All-in-One 集群请参考[官方升级指南](https://www.kubesphere.io/zh/docs/v3.4/upgrade/upgrade-with-kubekey/#all-in-one-集群)。
+KubeKey 支持 **All-in-One 集群**和多节点集群两种升级场景，本文只实战演示多节点集群的升级场景， All-in-One 集群请参考[官方升级指南](https://www.docs.kubesphere-carryon.top/zh/docs/v3.4/upgrade/upgrade-with-kubekey/#all-in-one-集群)。
 
 ### 1.2 KubeSphere 和 Kubernetes 升级流程概述
 
@@ -307,7 +307,7 @@ watch kubectl exec -it test-nginx-3 -n upgrade-test  -- df -h
 
 ```bash
 export KKZONE=cn
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 ## 4. 生成集群部署配置文件
@@ -336,7 +336,7 @@ Notice: /root/kubekey/sample.yaml has been created. Some parameters need to be f
 生成的配置文件 `sample.yaml`
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample
@@ -398,7 +398,7 @@ spec:
 **修改后文件内容：**
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample

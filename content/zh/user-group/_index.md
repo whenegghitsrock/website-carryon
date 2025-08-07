@@ -14,12 +14,12 @@ citySection:
   cityCard: 
     title: 城市站
     des: KubeSphere 用户委员会目前已经成立 5 个城市站：上海、杭州、成都、广州、深圳。
-    joinLink: https://github.com/kubesphere/community/issues/new?assignees=&labels=area%2Fuser-group&template=new_leader.yml&title=REQUEST%3A+New+leader+for+a+User+Group+in+new+city
+    joinLink: https://github.com/whenegghitsrock/community/issues/new?assignees=&labels=area%2Fuser-group&template=new_leader.yml&title=REQUEST%3A+New+leader+for+a+User+Group+in+new+city
 
 organization:
   name: 组织架构
   githubIcon: /images/user-group/list/org/github.svg
-  githublink: https://github.com/kubesphere/community/tree/master/sig-advocacy-and-outreach
+  githublink: https://github.com/whenegghitsrock/community/tree/master/sig-advocacy-and-outreach
   description: Advocacy and Outreach SIG 是社区用户委员会的上级组织。该 SIG 从社区运营的角度让 KubeSphere 开源社区保持健康活跃、更好地服务社区用户，以创新的方式发展社区。在每个城市站下设立一名站长，一名副站长，数名委员。
   SIG: Advocacy and Outreach SIG
   SIG_zh: 社区用户委员会城市站
@@ -54,7 +54,7 @@ applyNew:
       head: 站长向社区
       link:
         text: 提交申请
-        link_address: https://github.com/kubesphere/community/issues/new?assignees=&labels=area%2Fuser-group&template=new_leader.yml&title=REQUEST%3A+New+leader+for+a+User+Group+in+new+city
+        link_address: https://github.com/whenegghitsrock/community/issues/new?assignees=&labels=area%2Fuser-group&template=new_leader.yml&title=REQUEST%3A+New+leader+for+a+User+Group+in+new+city
       tail: ，通过后即可成立。
     image: /images/user-group/list/applyNew/note.svg
 
@@ -70,7 +70,7 @@ applyNew:
       - head: 2.如果站长由于某个原因临时、或者长期无法于所在城市组织线下活动，需要向社区
         link:
           text: 提交申请
-          link_address: https://github.com/kubesphere/community/issues
+          link_address: https://github.com/whenegghitsrock/community/issues
         tail: 推荐新的站长，或请求社区推荐新的站长。如果最终无人能组织活动，城市站设置为不活跃状态，直到有新的活跃成员出现。
 
       - head: 3. 如果 Advocacy and Outreach SIG 例会上有关于某个城市站的议题，该城市站需要至少一位成员参与。 

@@ -1,6 +1,6 @@
 # KubeSphere Localization Style Guide (for Simplified Chinese)
 
-This style guide provides a set of editorial guidelines for those who are translating documentation for KubeSphere from English to Simplified Chinese. The general rules are basically the same as [KubeSphere Documentation Style Guide](https://github.com/kubesphere/website/blob/master/KubeSphere%20Documentation%20Style%20Guide.md), while you need to pay special attention to the following content due to language differences.
+This style guide provides a set of editorial guidelines for those who are translating documentation for KubeSphere from English to Simplified Chinese. The general rules are basically the same as [KubeSphere Documentation Style Guide](https://github.com/whenegghitsrock/website-carryon/blob/master/KubeSphere%20Documentation%20Style%20Guide.md), while you need to pay special attention to the following content due to language differences.
 
 ## Basic Rules
 
@@ -67,4 +67,4 @@ Use the correct form of words and phrases.
 
 ## Links
 
-You can refer to [Links in KubeSphere Documentation Style Guide](https://github.com/kubesphere/website/blob/master/KubeSphere%20Documentation%20Style%20Guide.md#Links) for how to set internal and external links respectively. For external links in the target text, change the link to its Simplified Chinese version if it is available.
+You can refer to [Links in KubeSphere Documentation Style Guide](https://github.com/whenegghitsrock/website-carryon/blob/master/KubeSphere%20Documentation%20Style%20Guide.md#Links) for how to set internal and external links respectively. For external links in the target text, change the link to its Simplified Chinese version if it is available.

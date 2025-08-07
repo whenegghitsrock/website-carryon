@@ -18,7 +18,7 @@ include::../../../../../_custom-en/workspaceManagement/workspaceManagement-prer-
 
 * **KubeSphere App Store Management** should have been installed and enabled.
 
-* Already have a Helm Chart package in .tar.gz or .tgz format, or an application's yaml file. You can link:https://kubesphere.io/files/application-templates/nginx-0.1.0.tgz[download the Nginx Helm Chart] for testing. For more information, see link:https://helm.sh/docs/topics/charts/[Helm Documentation].
+* Already have a Helm Chart package in .tar.gz or .tgz format, or an application's yaml file. You can link:https://docs.kubesphere-carryon.top/files/application-templates/nginx-0.1.0.tgz[download the Nginx Helm Chart] for testing. For more information, see link:https://helm.sh/docs/topics/charts/[Helm Documentation].
 
 
 == Steps

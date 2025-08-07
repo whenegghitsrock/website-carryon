@@ -35,7 +35,7 @@ As you install KubeSphere in an air-gapped environment, you need to prepare an i
 1. Download the image list file `images-list.txt` from a machine that has access to Internet through the following command:
 
    ```bash
-   curl -L -O https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/images-list.txt
+   curl -L -O https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/images-list.txt
    ```
 
    {{< notice note >}}
@@ -47,7 +47,7 @@ As you install KubeSphere in an air-gapped environment, you need to prepare an i
 2. Download `offline-installation-tool.sh`. 
 
    ```bash
-   curl -L -O https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/offline-installation-tool.sh
+   curl -L -O https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/offline-installation-tool.sh
    ```
 
 3. Make the `.sh` file executable.
@@ -107,7 +107,7 @@ Similar to installing KubeSphere on an existing Kubernetes cluster in an online 
 1. Execute the following command to download ks-installer and transfer it to your machine that serves as the taskbox for installation.
 
    ```bash
-   curl -L -O https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/kubesphere-installer.yaml
+   curl -L -O https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/kubesphere-installer.yaml
    ```
    
 2. Verify that you have specified your private image registry in `spec.local_registry` in `cluster-configuration.yaml`. Note that if your existing cluster was installed in an air-gapped environment, you may already have this field specified. Otherwise, run the following command to edit `cluster-configuration.yaml` of your existing KubeSphere v3.1.x cluster and add the private image registry:
@@ -169,7 +169,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             20xx-xx-xx xx:xx:xx
+https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
 #####################################################
 ```
 

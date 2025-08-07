@@ -60,5 +60,5 @@ Kubernetes 将容器放入容器组（Pod）中并在节点上运行，从而运
 
 ## 添加和删除节点
 
-当前版本不支持通过 KubeSphere 控制台添加或删除节点。您可以使用 [KubeKey](https://github.com/kubesphere/kubekey) 来进行此类操作。有关更多信息，请参阅[添加新节点](../../installing-on-linux/cluster-operation/add-new-nodes/)和[删除节点](../../installing-on-linux/cluster-operation/remove-nodes/)。
+当前版本不支持通过 KubeSphere 控制台添加或删除节点。您可以使用 [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) 来进行此类操作。有关更多信息，请参阅[添加新节点](../../installing-on-linux/cluster-operation/add-new-nodes/)和[删除节点](../../installing-on-linux/cluster-operation/remove-nodes/)。
 

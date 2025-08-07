@@ -87,4 +87,4 @@ weight: 18098
 - Optimize some UI texts.
 - Optimize display of the service topology on the **Service** page.
 
-For more information about issues and contributors of KubeSphere 3.3.0, see [GitHub](https://github.com/kubesphere/kubesphere/blob/master/CHANGELOG/CHANGELOG-3.3.md).
+For more information about issues and contributors of KubeSphere 3.3.0, see [GitHub](https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/CHANGELOG/CHANGELOG-3.3.md).

@@ -25,10 +25,10 @@ In KubeKey v2.1.0, we bring in concepts of manifest and artifact, which provides
 
    {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-   Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command directly.
+   Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly.
 
    ```bash
-   curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
    ```
 
    {{</ tab >}}
@@ -44,13 +44,13 @@ In KubeKey v2.1.0, we bring in concepts of manifest and artifact, which provides
    Run the following command to download KubeKey:
 
    ```bash
-   curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
    ```
    {{</ tab >}}
 
    {{</ tabs >}}
 
-2. On the online host, run the following command and copy content in the [manifest-example](https://github.com/kubesphere/kubekey/blob/master/docs/manifest-example.md).
+2. On the online host, run the following command and copy content in the [manifest-example](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/manifest-example.md).
 
    ```bash
    vim manifest.yaml
@@ -58,7 +58,7 @@ In KubeKey v2.1.0, we bring in concepts of manifest and artifact, which provides
    
    ```yaml
    ---
-   apiVersion: kubekey.kubesphere.io/v1alpha2
+   apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
    kind: Manifest
    metadata:
      name: sample
@@ -73,7 +73,7 @@ In KubeKey v2.1.0, we bring in concepts of manifest and artifact, which provides
        repository:
          iso:
            localPath:
-           url: https://github.com/kubesphere/kubekey/releases/download/v3.0.7/centos7-rpms-amd64.iso
+           url: https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v3.0.7/centos7-rpms-amd64.iso
      - arch: amd64
        type: linux
        id: ubuntu
@@ -81,7 +81,7 @@ In KubeKey v2.1.0, we bring in concepts of manifest and artifact, which provides
        repository:
          iso:
            localPath:
-           url: https://github.com/kubesphere/kubekey/releases/download/v3.0.7/ubuntu-20.04-debs-amd64.iso
+           url: https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v3.0.7/ubuntu-20.04-debs-amd64.iso
      kubernetesDistributions:
      - type: kubernetes
        version: v1.22.12
@@ -255,7 +255,7 @@ In KubeKey v2.1.0, we bring in concepts of manifest and artifact, which provides
    
    - You can customize the **manifest-sample.yaml** file to export the desired artifact file.
 
-   - You can download the ISO files at https://github.com/kubesphere/kubekey/releases/tag/v3.0.7.
+   - You can download the ISO files at https://github.com/whenegghitsrock/kubekey-carryon/releases/tag/v3.0.7.
    
    {{</ notice >}}
    
@@ -325,7 +325,7 @@ In KubeKey v2.1.0, we bring in concepts of manifest and artifact, which provides
    {{</ notice >}}
 
    ```yaml
-   apiVersion: kubekey.kubesphere.io/v1alpha2
+   apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
    kind: Cluster
    metadata:
      name: sample
@@ -575,7 +575,7 @@ In KubeKey v2.1.0, we bring in concepts of manifest and artifact, which provides
    1. Please change the default password after login.
    
    #####################################################
-   https://kubesphere.io             2022-02-28 23:30:06
+   https://docs.kubesphere-carryon.top             2022-02-28 23:30:06
    #####################################################
    ```
 

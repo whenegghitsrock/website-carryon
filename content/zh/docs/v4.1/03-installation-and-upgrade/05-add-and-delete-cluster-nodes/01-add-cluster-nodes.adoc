@@ -9,7 +9,7 @@ weight: 01
 
 本节介绍如何添加{ks_product_both}集群节点。
 
-节点添加过程中将用到开源工具 KubeKey。有关 KubeKey 的更多信息，请访问 link:https://github.com/kubesphere/kubekey[GitHub KubeKey 仓库]。
+节点添加过程中将用到开源工具 KubeKey。有关 KubeKey 的更多信息，请访问 link:https://github.com/whenegghitsrock/kubekey-carryon[GitHub KubeKey 仓库]。
 
 // Note
 include::../../../../_ks_components/admonitions/note.adoc[]

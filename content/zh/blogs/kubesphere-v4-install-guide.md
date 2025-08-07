@@ -8,7 +8,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/ks-v4-guide-co
 
 日前，KubeSphere v4 发布，相较于之前的版本，新版本在架构上有了颠覆性的变化。为了让社区的各位小伙伴能够丝滑的从旧版本过渡到新版本，我们特别推出本篇安装指南文章，以供参考。
 
-关于 KubeSphere v4 的介绍，请阅读本文：[KubeSphere v4 开源并发布全新可插拔架构 LuBan](https://kubesphere.io/zh/news/kubesphere-v4-ga-announcement/)。
+关于 KubeSphere v4 的介绍，请阅读本文：[KubeSphere v4 开源并发布全新可插拔架构 LuBan](https://docs.kubesphere-carryon.top/zh/news/kubesphere-v4-ga-announcement/)。
 
 > 需要注意的是，目前不支持从 KubeSphere 3.4.1 版本直接升级到 v4 版本，需要先卸载原来的版本，再安装 v4 版本。
 
@@ -75,7 +75,7 @@ tar -zxvf istioctl-1.15.6-linux-amd64.tar.gz
 set -x
 
 # 清除集群所有 namespace 中的 workspace 标签
-kubectl get ns -l kubesphere.io/workspace -o name | xargs -I {} bash -c "kubectl label {} kubesphere.io/workspace- && kubectl patch {} -p '{\"metadata\":{\"ownerReferences\":[]}}' --type=merge"
+kubectl get ns -l docs.kubesphere-carryon.top/workspace -o name | xargs -I {} bash -c "kubectl label {} docs.kubesphere-carryon.top/workspace- && kubectl patch {} -p '{\"metadata\":{\"ownerReferences\":[]}}' --type=merge"
 
 # # 清除集群所有 namespace 中的 kubefed 标签
 kubectl get ns -l kubefed.io/managed -o name | xargs -I {} bash -c "kubectl label {} kubefed.io/managed- && kubectl patch {} -p '{\"metadata\":{\"ownerReferences\":[]}}' --type=merge"
@@ -89,7 +89,7 @@ kubectl get workspace -A -o name | xargs -I {} kubectl delete {}
 
 # 删除 clusterroles
 delete_cluster_roles() {
-  for role in `kubectl get clusterrole -l iam.kubesphere.io/role-template -o jsonpath="{.items[*].metadata.name}"`
+  for role in `kubectl get clusterrole -l iam.docs.kubesphere-carryon.top/role-template -o jsonpath="{.items[*].metadata.name}"`
   do
     kubectl delete clusterrole $role 2>/dev/null
   done
@@ -99,7 +99,7 @@ delete_cluster_roles
 
 # 删除 clusterrolebindings
 delete_cluster_role_bindings() {
-  for rolebinding in `kubectl get clusterrolebindings -l iam.kubesphere.io/role-template -o jsonpath="{.items[*].metadata.name}"`
+  for rolebinding in `kubectl get clusterrolebindings -l iam.docs.kubesphere-carryon.top/role-template -o jsonpath="{.items[*].metadata.name}"`
   do
     kubectl delete clusterrolebindings $rolebinding 2>/dev/null
   done
@@ -107,7 +107,7 @@ delete_cluster_role_bindings() {
 delete_cluster_role_bindings
 
 # 删除 validatingwebhookconfigurations
-for webhook in ks-events-admission-validate users.iam.kubesphere.io network.kubesphere.io validating-webhook-configuration resourcesquotas.quota.kubesphere.io
+for webhook in ks-events-admission-validate users.iam.docs.kubesphere-carryon.top network.docs.kubesphere-carryon.top validating-webhook-configuration resourcesquotas.quota.docs.kubesphere-carryon.top
 do
   kubectl delete validatingwebhookconfigurations.admissionregistration.k8s.io $webhook 2>/dev/null
 done
@@ -127,10 +127,10 @@ kubectl delete users --all 2>/dev/null
 
 # 删除 iam 资源
 for resource_type in `echo globalrolebinding loginrecord rolebase workspacerole globalrole workspacerolebinding`; do
-  for resource_name in `kubectl get ${resource_type}.iam.kubesphere.io -o jsonpath="{.items[*].metadata.name}"`; do
-    kubectl patch ${resource_type}.iam.kubesphere.io ${resource_name} -p '{"metadata":{"finalizers":null}}' --type=merge
+  for resource_name in `kubectl get ${resource_type}.iam.docs.kubesphere-carryon.top -o jsonpath="{.items[*].metadata.name}"`; do
+    kubectl patch ${resource_type}.iam.docs.kubesphere-carryon.top ${resource_name} -p '{"metadata":{"finalizers":null}}' --type=merge
   done
-  kubectl delete ${resource_type}.iam.kubesphere.io --all 2>/dev/null
+  kubectl delete ${resource_type}.iam.docs.kubesphere-carryon.top --all 2>/dev/null
 done
 
 # 卸载 ks-core
@@ -149,21 +149,21 @@ kubectl delete secret -n kubesphere-system --all --ignore-not-found
 kubectl delete sa -n kubesphere-system --all --ignore-not-found
 
 # 删除 Gateway 资源
-for gateway in `kubectl -n kubesphere-controls-system get gateways.gateway.kubesphere.io -o jsonpath="{.items[*].metadata.name}"`
+for gateway in `kubectl -n kubesphere-controls-system get gateways.gateway.docs.kubesphere-carryon.top -o jsonpath="{.items[*].metadata.name}"`
 do
-  kubectl -n kubesphere-controls-system patch gateways.gateway.kubesphere.io $gateway -p '{"metadata":{"finalizers":null}}' --type=merge
+  kubectl -n kubesphere-controls-system patch gateways.gateway.docs.kubesphere-carryon.top $gateway -p '{"metadata":{"finalizers":null}}' --type=merge
 done
-kubectl -n kubesphere-controls-system delete gateways.gateway.kubesphere.io --all 2>/dev/null
+kubectl -n kubesphere-controls-system delete gateways.gateway.docs.kubesphere-carryon.top --all 2>/dev/null
 
 # 删除crd
-kubectl delete crd globalrolebindings.iam.kubesphere.io
-kubectl delete crd globalroles.iam.kubesphere.io
-kubectl delete crd users.iam.kubesphere.io
-kubectl delete crd workspacerolebindings.iam.kubesphere.io
-kubectl delete crd workspaceroles.iam.kubesphere.io 
-kubectl delete crd workspaces.tenant.kubesphere.io
-kubectl delete crd workspacetemplates.tenant.kubesphere.io
-kubectl delete crd gateways.gateway.kubesphere.io
+kubectl delete crd globalrolebindings.iam.docs.kubesphere-carryon.top
+kubectl delete crd globalroles.iam.docs.kubesphere-carryon.top
+kubectl delete crd users.iam.docs.kubesphere-carryon.top
+kubectl delete crd workspacerolebindings.iam.docs.kubesphere-carryon.top
+kubectl delete crd workspaceroles.iam.docs.kubesphere-carryon.top 
+kubectl delete crd workspaces.tenant.docs.kubesphere-carryon.top
+kubectl delete crd workspacetemplates.tenant.docs.kubesphere-carryon.top
+kubectl delete crd gateways.gateway.docs.kubesphere-carryon.top
 
 ## 卸载 监控组件
 # 删除 Prometheus/ALertmanager/ThanosRuler
@@ -219,8 +219,8 @@ kubectl delete crd prometheusrules.monitoring.coreos.com
 kubectl delete crd scrapeconfigs.monitoring.coreos.com
 kubectl delete crd servicemonitors.monitoring.coreos.com
 kubectl delete crd thanosrulers.monitoring.coreos.com
-kubectl delete crd clusterdashboards.monitoring.kubesphere.io
-kubectl delete crd dashboards.monitoring.kubesphere.io
+kubectl delete crd clusterdashboards.monitoring.docs.kubesphere-carryon.top
+kubectl delete crd dashboards.monitoring.docs.kubesphere-carryon.top
 
 # 删除 metrics-server
 kubectl delete apiservice v1beta1.metrics.k8s.io
@@ -264,7 +264,7 @@ kubectl delete deploy -n kubesphere-logging-system --all --ignore-not-found
 
 #### 检查 Namespace 标签
 
-确认所有 Namespace 不包含 `kubesphere.io/workspace` 标签。
+确认所有 Namespace 不包含 `docs.kubesphere-carryon.top/workspace` 标签。
 
 ```
 kubectl get ns --show-labels
@@ -282,8 +282,8 @@ helm del -n kube-federation-system kubefed
 
 ```
 # 下载 ks-core chart 包
-# 如果无法访问 charts.kubesphere.io, 可将 charts.kubesphere.io 替换为 charts.kubesphere.com.cn 
-helm fetch https://charts.kubesphere.io/main/ks-core-1.1.3.tgz --untar
+# 如果无法访问 charts.docs.kubesphere-carryon.top, 可将 charts.docs.kubesphere-carryon.top 替换为 charts.kubesphere.com.cn 
+helm fetch https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.3.tgz --untar
 
 
 # 更新 crds 
@@ -299,9 +299,9 @@ kubectl apply -f ks-core/charts/ks-crds/crds/
 # 如果访问 dockerhub 受限，在以下命令中添加 
 # --set global.imageRegistry=swr.cn-southwest-2.myhuaweicloud.com/ks 
 # --set extension.imageRegistry=swr.cn-southwest-2.myhuaweicloud.com/ks 
-# 如果无法访问 charts.kubesphere.io, 可将 charts.kubesphere.io 替换为 charts.kubesphere.com.cn
+# 如果无法访问 charts.docs.kubesphere-carryon.top, 可将 charts.docs.kubesphere-carryon.top 替换为 charts.kubesphere.com.cn
 
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere.io/main/ks-core-1.1.3.tgz --debug --wait
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.3.tgz --debug --wait
 ```
 
 ### 添加 Member 集群
@@ -386,5 +386,5 @@ Spec 添加 ingressClassName: xxx，保存。
 
 ## 总结
 
-以上就是 KubeSphere v4 安装的完整步骤，供大家参考。如果您在安装过程中出现问题，可去论坛搜索是否有解答，如没有，可在论坛提问： https://ask.kubesphere.io/forum/。
+以上就是 KubeSphere v4 安装的完整步骤，供大家参考。如果您在安装过程中出现问题，可去论坛搜索是否有解答，如没有，可在论坛提问： https://ask.docs.kubesphere-carryon.top/forum/。
 

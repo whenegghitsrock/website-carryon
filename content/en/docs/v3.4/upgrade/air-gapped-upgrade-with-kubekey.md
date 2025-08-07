@@ -51,7 +51,7 @@ KubeKey upgrades Kubernetes from one MINOR version to the next MINOR version unt
 
 {{< notice note >}}
 
-[KubeKey](https://github.com/kubesphere/kubekey) uses `/var/lib/docker` as the default directory where all Docker related files, including images, are stored. It is recommended you add additional storage volumes with at least **100G** mounted to `/var/lib/docker` and `/mnt/registry` respectively. See [fdisk](https://www.computerhope.com/unix/fdisk.htm) command for reference.
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) uses `/var/lib/docker` as the default directory where all Docker related files, including images, are stored. It is recommended you add additional storage volumes with at least **100G** mounted to `/var/lib/docker` and `/mnt/registry` respectively. See [fdisk](https://www.computerhope.com/unix/fdisk.htm) command for reference.
 
 {{</ notice >}}
 
@@ -62,10 +62,10 @@ KubeKey upgrades Kubernetes from one MINOR version to the next MINOR version unt
 
    {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-   Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command directly.
+   Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly.
 
    ```bash
-   curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
    ```
 
    {{</ tab >}}
@@ -81,7 +81,7 @@ KubeKey upgrades Kubernetes from one MINOR version to the next MINOR version unt
    Run the following command to download KubeKey:
 
    ```bash
-   curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
    ```
    {{</ tab >}}
 
@@ -100,7 +100,7 @@ As you install KubeSphere and Kubernetes on Linux, you need to prepare an image 
 1. Download the image list file `images-list.txt` from a machine that has access to Internet through the following command:
 
    ```bash
-   curl -L -O https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/images-list.txt
+   curl -L -O https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/images-list.txt
    ```
 
    {{< notice note >}}
@@ -112,7 +112,7 @@ As you install KubeSphere and Kubernetes on Linux, you need to prepare an image 
 2. Download `offline-installation-tool.sh`.
 
    ```bash
-   curl -L -O https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/offline-installation-tool.sh
+   curl -L -O https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/offline-installation-tool.sh
    ```
 
 3. Make the `.sh` file executable.
@@ -226,7 +226,7 @@ Make sure the Kubernetes version is the one you downloaded.
 
 #### Edit the configuration file
 
-Edit the configuration file `config-sample.yaml`. Here is [an example for your reference](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md).
+Edit the configuration file `config-sample.yaml`. Here is [an example for your reference](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-2.2/docs/config-example.md).
 
    {{< notice warning >}} 
 
@@ -308,7 +308,7 @@ Make sure the Kubernetes version is the one you downloaded.
 
 #### Edit the configuration file
 
-Edit the configuration file `config-sample.yaml`. Here is [an example for your reference](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md).
+Edit the configuration file `config-sample.yaml`. Here is [an example for your reference](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-2.2/docs/config-example.md).
 
    {{< notice warning >}} 
 

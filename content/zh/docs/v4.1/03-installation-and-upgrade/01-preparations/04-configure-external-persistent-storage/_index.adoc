@@ -26,7 +26,7 @@ link:../../02-install-kubesphere/02-install-kubernetes-and-kubesphere/[安装{ks
 . 直接在 `config-sample.yaml` 中的 `addons` 字段下输入必要的参数。
 . 为插件创建一个单独的配置文件，列出所有必要的参数，并在 `config-sample.yaml` 中提供文件的路径，以便 KubeKey 在安装过程中引用该路径。
 
-有关更多信息，请参见link:https://github.com/kubesphere/kubekey/blob/master/docs/addons.md[插件]。
+有关更多信息，请参见link:https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/addons.md[插件]。
 
 == 默认存储类
 

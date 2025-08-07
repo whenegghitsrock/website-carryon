@@ -10,9 +10,9 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/ks-v4-extensio
 
 本文我们将针对扩展组件做一个详细的说明，让大家对扩展组件能够了解、理解和丝滑使用。
 
-关于 KubeSphere v4 的介绍，请阅读本文：[KubeSphere v4 开源并发布全新可插拔架构 LuBan](https://www.kubesphere.io/zh/news/kubesphere-v4-ga-announcement/)。
+关于 KubeSphere v4 的介绍，请阅读本文：[KubeSphere v4 开源并发布全新可插拔架构 LuBan](https://www.docs.kubesphere-carryon.top/zh/news/kubesphere-v4-ga-announcement/)。
 
-如何安装 KubeSphere v4，请参考本文：[KubeSphere v4 安装指南](https://www.kubesphere.io/zh/blogs/kubesphere-v4-install-guide/)。
+如何安装 KubeSphere v4，请参考本文：[KubeSphere v4 安装指南](https://www.docs.kubesphere-carryon.top/zh/blogs/kubesphere-v4-install-guide/)。
 
 ## 扩展市场介绍
 
@@ -49,13 +49,13 @@ KubeSphere 扩展组件用于扩展 KubeSphere 的平台能力，用户可在系
 | Metrics Server                    |  可视化创建和管理 HPA         | 无             |工作负载（Deployment/SatetfulSet） 详情页支持可视化创建和管理 HPA                      |
 | Gatekeeper                        | 安全准入策略管理             | UI 支持<br>版本更新             | 集群管理页面左侧导航栏 |
 
-扩展组件仓库：https://github.com/kubesphere-extensions/ks-extensions/
+扩展组件仓库：https://github.com/whenegghitsrock-extensions/ks-extensions/
 
 您可以在扩展组件仓库中了解每个扩展组件的具体功能以及详细的安装及使用方法。
 
-> 注意：扩展市场不等同于应用商店，两者的对比，可参考[对比文档](https://dev-guide.kubesphere.io/extension-dev-guide/zh/faq/01-difference/)。
+> 注意：扩展市场不等同于应用商店，两者的对比，可参考[对比文档](https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/zh/faq/01-difference/)。
 > 
-> 关于应用商店的使用方法，详见文章 [KubeSphere v4 应用商店配置指南](https://www.kubesphere.io/zh/blogs/kubesphere-v4-appstore-configuration-guide/)。
+> 关于应用商店的使用方法，详见文章 [KubeSphere v4 应用商店配置指南](https://www.docs.kubesphere-carryon.top/zh/blogs/kubesphere-v4-appstore-configuration-guide/)。
 
 ## 扩展组件使用方式
 
@@ -67,7 +67,7 @@ KubeSphere v4 除账户、权限、租户、实时监控和日志功能外，其
 
 > 💡  如果扩展市场是空的，怎么排查？
 > 1. `kubectl -n kubesphere-system get deploy extensions-museum` 检查本地扩展组件仓库是否正常 Running
-> 2. `kubectl describe repository.kubesphere.io extensions-museum` 检查扩展组件仓库是否正常同步
+> 2. `kubectl describe repository.docs.kubesphere-carryon.top extensions-museum` 检查扩展组件仓库是否正常同步
 > 3. 主动触发同步 `kubectl patch repository extensions-museum --type=merge -p '{"status":null}'`
 
 接下来以 Gatekeeper 扩展组件为例进行演示。
@@ -125,18 +125,18 @@ KubeSphere v4 除账户、权限、租户、实时监控和日志功能外，其
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/20241107-16.png)
 
-> 目前[官网文档](https://www.kubesphere.io/zh/docs/v4.1/11-use-extensions/)也已更新，详细介绍了如何使用 KubeSphere 的各个扩展组件，您也可以参考。
+> 目前[官网文档](https://www.docs.kubesphere-carryon.top/zh/docs/v4.1/11-use-extensions/)也已更新，详细介绍了如何使用 KubeSphere 的各个扩展组件，您也可以参考。
 
 ## 开发自己的扩展组件，创造属于您自己的价值
 
 社区目前正在逐步发布开源的扩展组件，为各位用户提供更多的功能，让各位用户有更多的选择。同时您可以开发自己的扩展组件，并将其上架到 Marketplace，为其定价，如果是确实有价值的扩展组件，相信您可以收获到对应的回报。
 
-目前，已经有一位参与开源之夏的学生贡献者张豈明，开发了一款扩展组件 Pod Status Analysis Tool，地址： https://github.com/kubesphere-extensions/ks-extensions-contrib/tree/main/pod-analyzer。
+目前，已经有一位参与开源之夏的学生贡献者张豈明，开发了一款扩展组件 Pod Status Analysis Tool，地址： https://github.com/whenegghitsrock-extensions/ks-extensions-contrib/tree/main/pod-analyzer。
 
-贡献仓库： https://github.com/kubesphere-extensions/ks-extensions-contrib
+贡献仓库： https://github.com/whenegghitsrock-extensions/ks-extensions-contrib
 
-开发指南： https://dev-guide.kubesphere.io/extension-dev-guide/zh/
+开发指南： https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/zh/
 
 ## 总结
 
-以上就是扩展组件使用的方法说明。如果您在使用过程中出现问题，可去论坛搜索是否有解答，如没有，可在论坛提问：https://ask.kubesphere.io/forum/。
+以上就是扩展组件使用的方法说明。如果您在使用过程中出现问题，可去论坛搜索是否有解答，如没有，可在论坛提问：https://ask.docs.kubesphere-carryon.top/forum/。

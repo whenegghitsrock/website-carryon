@@ -64,9 +64,9 @@ weight: 4260
 1. 使用 kubectl 安装 KubeSphere。直接输入以下命令会默认执行 KubeSphere 的最小化安装。
 
     ```bash
-    kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/kubesphere-installer.yaml
+    kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/kubesphere-installer.yaml
 
-    kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/cluster-configuration.yaml
+    kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/cluster-configuration.yaml
     ```
 
 2. 检查安装日志：
@@ -95,7 +95,7 @@ weight: 4260
       2. Please modify the default password after login.
     
     #####################################################
-    https://kubesphere.io             20xx-xx-xx xx:xx:xx
+    https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
     ```
 
 ## 访问 KubeSphere 控制台

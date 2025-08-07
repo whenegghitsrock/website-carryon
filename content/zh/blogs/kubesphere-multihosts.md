@@ -47,12 +47,12 @@ Host 角色的主集群会被创建 25 种联邦资源类型 Kind，如下命令
  - cacheSync，缓存同步联邦资源，这里是个同步的操作。
 
 controller-manager 被重启后，同样会根据配置的变化，把部分资源类型自动转化成联邦资源的逻辑，也就是说，在 Host 集群创建的这部分资源会自动同步到所有成员集群，实际的多集群同步靠 kubefed-controller-manager 来执行。以下资源会被自动创建联邦资源下发：
-  - users.iam.kubesphere.io -> federatedusers.types.kubefed.io
-  - workspacetemplates.tenant.kubesphere.io -> federatedworkspaces.types.kubefed.io
-  - workspaceroles.iam.kubesphere.io -> federatedworkspaceroles.types.kubefed.io
-  - workspacerolebindings.iam.kubesphere.io -> federatedworkspacerolebindings.types.kubefed.io
+  - users.iam.docs.kubesphere-carryon.top -> federatedusers.types.kubefed.io
+  - workspacetemplates.tenant.docs.kubesphere-carryon.top -> federatedworkspaces.types.kubefed.io
+  - workspaceroles.iam.docs.kubesphere-carryon.top -> federatedworkspaceroles.types.kubefed.io
+  - workspacerolebindings.iam.docs.kubesphere-carryon.top -> federatedworkspacerolebindings.types.kubefed.io
 
-此外还会启动 cluster、group 和一些 globalRole* 相关资源的控制器逻辑，同上也会通过 Kubefed 自动下发到所有集群，`clusters.cluster.kubesphere.io` 资源除外。
+此外还会启动 cluster、group 和一些 globalRole* 相关资源的控制器逻辑，同上也会通过 Kubefed 自动下发到所有集群，`clusters.cluster.docs.kubesphere-carryon.top` 资源除外。
 
 > 如果以上资源包含了 `kubefed.io/managed: false` 标签，Kubefed 就不会再做下发同步，而 Host 集群下发完以上资源后，都会自动加上该标签，防止进入死循环
 
@@ -72,7 +72,7 @@ kubectl -n kubesphere-system get cm kubesphere-config -o yaml | grep -v "apiVers
 - 校验成员集群是否安装了 ks-apiserver
 - 校验成员集群的 `jwtSecret` 是否和主集群的一致
 
-> 写稿时，此处有个问题，需要修复，如果 kubeconfig 使用了 `insecure-skip-tls-verify: true` 会导致该集群添加失败，经定位主要是 Kubefed 空指针 panic 了，后续有时间我会去 fix 一下，已提 [issue](https://github.com/kubesphere/kubesphere/issues/4891)。
+> 写稿时，此处有个问题，需要修复，如果 kubeconfig 使用了 `insecure-skip-tls-verify: true` 会导致该集群添加失败，经定位主要是 Kubefed 空指针 panic 了，后续有时间我会去 fix 一下，已提 [issue](https://github.com/whenegghitsrock/kubesphere-carryon/issues/4891)。
 
 校验完必要信息后，就执行实质动作 `joinFederation` 加入联邦，KubeSphere 多集群纳管，实质上是先组成联邦集群:
 - 在成员集群创建 ns kube-federation-system
@@ -128,9 +128,9 @@ xxp    xxp-2@163.com   Active
 
 在一侧的主集群上尝试修复冲突资源，即删除有冲突的用户资源，可以删除成功，但对应的联邦资源会出现删失败的情况。
 ```
-➜  ~ kubectl get users.iam.kubesphere.io
+➜  ~ kubectl get users.iam.docs.kubesphere-carryon.top
 NAME    EMAIL                 STATUS
-admin   admin@kubesphere.io   Active
+admin   admin@docs.kubesphere-carryon.top   Active
 xxp3    xxp3@163.com          Active
 ➜  ~
 ➜  ~ kubectl get federatedusers.types.kubefed.io

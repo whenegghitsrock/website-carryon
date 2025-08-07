@@ -45,9 +45,9 @@ Now that the cluster is ready, you can install KubeSphere following the steps be
 - Install KubeSphere using kubectl. The following commands are only for the default minimal installation.
 
   ```bash
-  kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/kubesphere-installer.yaml
+  kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/kubesphere-installer.yaml
   
-  kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/cluster-configuration.yaml
+  kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/cluster-configuration.yaml
   ```
 
 - Inspect the logs of installation:
@@ -73,7 +73,7 @@ NOTES：
      are ready.
   2. Please modify the default password after login.
 #####################################################
-https://kubesphere.io             2020-xx-xx xx:xx:xx
+https://docs.kubesphere-carryon.top             2020-xx-xx xx:xx:xx
 ```
 
 ## Access KubeSphere Console

@@ -35,7 +35,7 @@ apt install socat conntrack -y
 
 == 获取版本信息及镜像列表
 
-. 访问 https://get-images.kubesphere.io/
+. 访问 https://get-images.docs.kubesphere-carryon.top/
 
 . 选择需要部署的扩展组件。
 
@@ -75,7 +75,7 @@ apt install socat conntrack -y
 
 [source,bash]
 ----
-curl -sSL https://get-kk.kubesphere.io | sh -
+curl -sSL https://get-kk.docs.kubesphere-carryon.top | sh -
 ----
 
 
@@ -128,14 +128,14 @@ vi manifest-sample.yaml
 |===
 |注意
 
-|以下 manifest 文件中的镜像列表仅为示例，建议通过 https://get-images.kubesphere.io/ 获取最新的镜像列表。
+|以下 manifest 文件中的镜像列表仅为示例，建议通过 https://get-images.docs.kubesphere-carryon.top/ 获取最新的镜像列表。
 
 |===
 
 
 [source,yaml]
 ----
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Manifest
 metadata:
   name: sample
@@ -374,10 +374,10 @@ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 [source,bash]
 ----
 VERSION=1.1.3     # Chart 版本
-helm fetch https://charts.kubesphere.io/main/ks-core-${VERSION}.tgz
+helm fetch https://charts.docs.kubesphere-carryon.top/main/ks-core-${VERSION}.tgz
 ----
 
-此处为示例版本，请访问 link:https://get-images.kubesphere.io[] 或 link:https://github.com/kubesphere/kubesphere/releases[KubeSphere GitHub 仓库]查看最新 chart 版本。
+此处为示例版本，请访问 link:https://get-images.docs.kubesphere-carryon.top[] 或 link:https://github.com/whenegghitsrock/kubesphere-carryon/releases[KubeSphere GitHub 仓库]查看最新 chart 版本。
 --
 
 == 离线部署
@@ -422,7 +422,7 @@ vi config-sample.yaml
 
 [source,yaml]
 ----
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample
@@ -658,7 +658,7 @@ helm upgrade --install -n kubesphere-system --create-namespace ks-core ks-core-1
 |说明
 
 |
-* `ksExtensionRepository.image.tag` 为之前获取到的 Extensions Museum 版本（即 https://get-images.kubesphere.io/ 上展示的最新扩展组件仓库版本）。
+* `ksExtensionRepository.image.tag` 为之前获取到的 Extensions Museum 版本（即 https://get-images.docs.kubesphere-carryon.top/ 上展示的最新扩展组件仓库版本）。
 
 * 如需高可用部署 KubeSphere，可在命令中添加 `--set ha.enabled=true,redisHA.enabled=true`。
 |===
@@ -691,7 +691,7 @@ Please be patient and wait for several seconds for the KubeSphere deployment to 
     Password: P@88w0rd
 
 NOTE: It is highly recommended to change the default password immediately after the first login.
-For additional information and details, please visit https://kubesphere.io.
+For additional information and details, please visit https://docs.kubesphere-carryon.top.
 ----
 --
 

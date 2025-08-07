@@ -15,7 +15,7 @@ KubeSphere project network isolation lets project administrators enforce which n
 
 {{< notice note >}}
 
-For the implementation of the Network Policy, you can refer to [KubeSphere NetworkPolicy](https://github.com/kubesphere/community/blob/master/sig-network/concepts-and-designs/kubesphere-network-policy.md).
+For the implementation of the Network Policy, you can refer to [KubeSphere NetworkPolicy](https://github.com/whenegghitsrock/community/blob/master/sig-network/concepts-and-designs/kubesphere-network-policy.md).
 
 {{</ notice >}}
 
@@ -157,8 +157,8 @@ A: After you enable custom monitoring, the KubeSphere monitoring system will acc
 KubeSphere provides a configuration item `allowedIngressNamespaces` to simplify similar configurations, which allows all projects listed in the configuration.
 
 ```yaml
-root@node1:~# kubectl get -n kubesphere-system clusterconfigurations.installer.kubesphere.io  ks-installer -o yaml
-apiVersion: installer.kubesphere.io/v1alpha1
+root@node1:~# kubectl get -n kubesphere-system clusterconfigurations.installer.docs.kubesphere-carryon.top  ks-installer -o yaml
+apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
 kind: ClusterConfiguration
 metadata:
   ...
@@ -203,4 +203,4 @@ A: When you add a network policy and access the Service via the cluster IP addre
 
 Q: How do I determine the network segment when I set the ingress rule?
 
-A: In Kubernetes, the source IP address of the packet is often handled by NAT, so you need to figure out what the source address of the packet will be before you add the rule. For more information, refer to [Source IP](https://github.com/kubesphere/community/blob/master/sig-network/concepts-and-designs/kubesphere-network-policy.md#source-ip).
+A: In Kubernetes, the source IP address of the packet is often handled by NAT, so you need to figure out what the source address of the packet will be before you add the rule. For more information, refer to [Source IP](https://github.com/whenegghitsrock/community/blob/master/sig-network/concepts-and-designs/kubesphere-network-policy.md#source-ip).

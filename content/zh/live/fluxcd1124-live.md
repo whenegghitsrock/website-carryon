@@ -19,7 +19,7 @@ GitOps 是云原生环境下的持续交付模型，Flux CD 是实现 GitOps 的
 
 ## 讲师简介
 
-程乐齐，西安电子科技大学研究生，图像工程方向，专注于 K8s 和云原生，开源之夏 2022 KubeSphere 项目中选学生，完成项目 [KubeSphere-DevOps 对接 FluxCD](https://github.com/kubesphere/community/blob/master/sig-advocacy-and-outreach/ospp-2022/ks-devops-fluxcd-integrations_zh-CN.md)。
+程乐齐，西安电子科技大学研究生，图像工程方向，专注于 K8s 和云原生，开源之夏 2022 KubeSphere 项目中选学生，完成项目 [KubeSphere-DevOps 对接 FluxCD](https://github.com/whenegghitsrock/community/blob/master/sig-advocacy-and-outreach/ospp-2022/ks-devops-fluxcd-integrations_zh-CN.md)。
 
 ## 分享大纲
 
@@ -41,7 +41,7 @@ B 站  https://live.bilibili.com/22580654
 
 ### Q1：`application-controller` 是在 Flux CD 项目下的吗，还是自己开发的？应用下发到多个集群，也是由这个组件下发的吗？
 
-A：`application-controller` 是自己开发的，负责监听`gitops.kubesphere.io/v1alpha1/applications` 这个 CRD，解析下发给 Flux CD 的 `kustomize-controller` 或者 `helm-controller` 去做真正的应用下发。
+A：`application-controller` 是自己开发的，负责监听`gitops.docs.kubesphere-carryon.top/v1alpha1/applications` 这个 CRD，解析下发给 Flux CD 的 `kustomize-controller` 或者 `helm-controller` 去做真正的应用下发。
 
 ### Q2：Flux CD 也类似于 controller，来处理 `application-controller` 创建出来的资源吗？
 

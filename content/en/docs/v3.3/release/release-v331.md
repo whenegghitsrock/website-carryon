@@ -39,4 +39,4 @@ weight: 18096
 - Add support for changing the number of items displayed on each page of a table.
 - Add support for batch stopping workloads.
 
-For more information about issues and contributors of KubeSphere 3.3.1, see [GitHub](https://github.com/kubesphere/kubesphere/blob/master/CHANGELOG/CHANGELOG-3.3.1.md).
+For more information about issues and contributors of KubeSphere 3.3.1, see [GitHub](https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/CHANGELOG/CHANGELOG-3.3.1.md).

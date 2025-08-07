@@ -102,13 +102,13 @@ A unified and all-round identity management and authentication system is indispe
 
 The App Store and application lifecycle management are unique features of KubeSphere, which are based on self-developed and open-source [OpenPitrix](https://github.com/openpitrix/openpitrix).
 
-KubeSphere 3.2.0 adds the feature of **dynamically loading community-developed Helm charts into the KubeSphere App Store.** You can send a pull request containing the Helm chart of a new app to the App Store chart repository. After the pull request is merged, the app is automatically loaded to the App Store regardless of the KubeSphere version. Welcome to submit your Helm charts to https://github.com/kubesphere/helm-charts. Nocalhost and Chaos Mesh have integrated their Helms charts into KubeSphere 3.2.0 by using this method, and you can easily install them to your Kubernetes clusters by one click.
+KubeSphere 3.2.0 adds the feature of **dynamically loading community-developed Helm charts into the KubeSphere App Store.** You can send a pull request containing the Helm chart of a new app to the App Store chart repository. After the pull request is merged, the app is automatically loaded to the App Store regardless of the KubeSphere version. Welcome to submit your Helm charts to https://github.com/whenegghitsrock/helm-charts-carryon. Nocalhost and Chaos Mesh have integrated their Helms charts into KubeSphere 3.2.0 by using this method, and you can easily install them to your Kubernetes clusters by one click.
 
 ![12-app-store](/images/blogs/en/release-announcement3.2.0/12-app-store.png)
 
 ### **More independent Kubernetes DevOps (on KubeSphere)**
 
-Kubernetes DevOps (on KubeSphere) has developed into an independent project [ks-devops](https://github.com/kubesphere/ks-devops) in KubeSphere v3.2.0, which is intended to allow users to run Kubernetes DevOps (on KubeSphere) in any Kubernetes clusters. Currently, you can use a Helm chart to install the backend components of ks-devops.
+Kubernetes DevOps (on KubeSphere) has developed into an independent project [ks-devops](https://github.com/whenegghitsrock/ks-devops) in KubeSphere v3.2.0, which is intended to allow users to run Kubernetes DevOps (on KubeSphere) in any Kubernetes clusters. Currently, you can use a Helm chart to install the backend components of ks-devops.
 
 Jenkins is a CI engine with a large user base and a rich plug-in ecosystem. In KubeSphere 3.2.0, we will let Jenkins do what it is good at—functioning only as an engine in the backend to provide stable pipeline management capability. A newly added CRD PipelineRun encapsulates run records of pipelines, which reduces the number of APIs required for directly interacting with Jenkins and boosts performance of CI pipelines.
 
@@ -118,7 +118,7 @@ Starting from KubeSphere v3.2.0, Kubernetes DevOps (on KubeSphere) allows you to
 
 If you do not have a Kubernetes cluster, you can use KubeKey to install both Kubernetes and KubeSphere; if you already have a Kubernetes cluster, you can use ks-installer to install KubeSphere only.
 
-[KubeKey](https://github.com/kubesphere/kubekey) is an efficient open-source installer, which uses Docker as the default container runtime. It can also use CRI runtimes such as containerd, CRI-O, and iSula. You can use KubeKey to deploy an etcd cluster independent of Kubernetes for better flexibility.
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) is an efficient open-source installer, which uses Docker as the default container runtime. It can also use CRI runtimes such as containerd, CRI-O, and iSula. You can use KubeKey to deploy an etcd cluster independent of Kubernetes for better flexibility.
 
 KubeKey provides the following new features:
 
@@ -128,7 +128,7 @@ KubeKey provides the following new features:
 
 -  Supports a high availability deployment mode that uses an internal load balancer to reduce the complexity of cluster deployment.
 
--  Most of the integrated components such as Istio, Jaeger, Prometheus Operator, Fluent Bit, KubeEdge, and Nginx ingress controller have been updated to the latest. For more information, refer to [Release Notes 3.2.0](https://kubesphere.io/docs/release/release-v320/).
+-  Most of the integrated components such as Istio, Jaeger, Prometheus Operator, Fluent Bit, KubeEdge, and Nginx ingress controller have been updated to the latest. For more information, refer to [Release Notes 3.2.0](https://docs.kubesphere-carryon.top/docs/release/release-v320/).
 
 ### **Better user experience**
 
@@ -136,7 +136,7 @@ To provide a user-friendly web console for global users, our SIG Docs members ha
 
 Some heavy users in the KubeSphere community have participated in enhancing some frontend features. For example, KubeSphere now supports searching for images in a Harbor registry and mounting volumes to init containers, and the feature of automatic workload restart during volume expansion is removed.
 
-For more information about user experience optimization, enhanced features, and fixed bugs, please refer to [Release Notes 3.2.0](https://kubesphere.io/docs/release/release-v320/). You can download and install KubeSphere 3.2.0 by referring to [All-in-One on Linux](https://kubesphere.io/docs/quick-start/all-in-one-on-linux/ ) and [Minimal KubeSphere on Kubernetes](https://kubesphere.io/docs/quick-start/minimal-kubesphere-on-k8s/), and we will offer an offline installation solution in the KubeSphere community in one week.
+For more information about user experience optimization, enhanced features, and fixed bugs, please refer to [Release Notes 3.2.0](https://docs.kubesphere-carryon.top/docs/release/release-v320/). You can download and install KubeSphere 3.2.0 by referring to [All-in-One on Linux](https://docs.kubesphere-carryon.top/docs/quick-start/all-in-one-on-linux/ ) and [Minimal KubeSphere on Kubernetes](https://docs.kubesphere-carryon.top/docs/quick-start/minimal-kubesphere-on-k8s/), and we will offer an offline installation solution in the KubeSphere community in one week.
 
 ## **Acknowledgements**
 

@@ -48,7 +48,7 @@ tower      LoadBalancer    10.233.63.191   139.198.110.23  8080:30721/TCP       
 |Note
 
 |
-Mainstream public cloud providers generally provide LoadBalancer solutions, and load balancers can automatically allocate external IPs. If your cluster runs in a local environment, especially in a bare-metal environment, you can use link:https://github.com/kubesphere/openelb[OpenELB] as the load balancer solution.
+Mainstream public cloud providers generally provide LoadBalancer solutions, and load balancers can automatically allocate external IPs. If your cluster runs in a local environment, especially in a bare-metal environment, you can use link:https://github.com/whenegghitsrock/openelb[OpenELB] as the load balancer solution.
 |===
 
 === If Cluster Does Not Have Available LoadBalancer

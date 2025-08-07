@@ -88,7 +88,7 @@ DevOps 中的图形编辑面板包含用于 Jenkins link:https://www.jenkins.io/
 
 // == 步骤 2：创建项目
 
-// 本示例中，流水线会将 link:https://github.com/kubesphere/devops-maven-sample/tree/sonarqube[sample] 应用部署至一个项目。因此，需要创建一个项目（例如 **kubesphere-sample-dev**）。待流水线成功运行，将在该项目中自动创建该应用的部署和服务。
+// 本示例中，流水线会将 link:https://github.com/whenegghitsrock/devops-maven-sample/tree/sonarqube[sample] 应用部署至一个项目。因此，需要创建一个项目（例如 **kubesphere-sample-dev**）。待流水线成功运行，将在该项目中自动创建该应用的部署和服务。
 
 // . 使用 **project-admin** 账户创建项目，该用户也将是 CI/CD 流水线的审核员。
 
@@ -195,7 +195,7 @@ image:/images/ks-qkcp/zh/devops-user-guide/use-devops/create-a-pipeline-using-gr
 . 点击**添加步骤**。在列表中选择 **Git Clone**，以从 GitHub 拉取示例代码。在弹出的对话框中，填写必需的字段。点击**确定**完成操作。
 +
 --
-* **URL**：输入 GitHub 仓库地址 link:https://github.com/kubesphere/devops-maven-sample.git[]。注意，这里是示例地址，请使用自己的仓库地址。
+* **URL**：输入 GitHub 仓库地址 link:https://github.com/whenegghitsrock/devops-maven-sample.git[]。注意，这里是示例地址，请使用自己的仓库地址。
 
 * **凭证 ID**：本示例中无需输入凭证 ID。
 
@@ -296,7 +296,7 @@ mvn -Dmaven.test.skip=true clean package
 ----
 --
 
-. 再次点击**添加嵌套步骤**，选择 **shell**。在命令行中输入以下命令，以根据 link:https://github.com/kubesphere/devops-maven-sample/blob/sonarqube/Dockerfile-online[Dockerfile] 构建 Docker 镜像。点击**确定**确认操作。
+. 再次点击**添加嵌套步骤**，选择 **shell**。在命令行中输入以下命令，以根据 link:https://github.com/whenegghitsrock/devops-maven-sample/blob/sonarqube/Dockerfile-online[Dockerfile] 构建 Docker 镜像。点击**确定**确认操作。
 +
 --
 [,bash]

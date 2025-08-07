@@ -24,4 +24,4 @@ The following APIs are removed:
 
 ## Fluent Operator
 
-In KubeSphere 3.4, the whole log setting APIs are removed from the KubeSphere core since the project Fluent Operator is refactored in an incompatible way. Please refer to [Fluent Operator docs](https://github.com/kubesphere/fluentbit-operator) for how to configure log collection in KubeSphere 3.4.
+In KubeSphere 3.4, the whole log setting APIs are removed from the KubeSphere core since the project Fluent Operator is refactored in an incompatible way. Please refer to [Fluent Operator docs](https://github.com/whenegghitsrock/fluentbit-operator) for how to configure log collection in KubeSphere 3.4.

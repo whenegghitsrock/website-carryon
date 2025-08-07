@@ -9,7 +9,7 @@ Weight: 3240
 对于生产环境，我们需要考虑集群的高可用性。本文教您部署如何在多台阿里 ECS 实例快速部署一套高可用的生产环境。要满足 Kubernetes 集群服务需要做到高可用，需要保证 kube-apiserver 的 HA ，可使用以下下列两种方式：
 
 - 阿里云 SLB （推荐）
-- keepalived + haproxy [keepalived + haproxy](https://ask.kubesphere.io/forum/d/1566-kubernetes-keepalived-haproxy)对 kube-apiserver 进行负载均衡，实现高可用 kubernetes 集群。
+- keepalived + haproxy [keepalived + haproxy](https://ask.docs.kubesphere-carryon.top/forum/d/1566-kubernetes-keepalived-haproxy)对 kube-apiserver 进行负载均衡，实现高可用 kubernetes 集群。
 
 ## 前提条件
 
@@ -88,10 +88,10 @@ controlPlaneEndpoint:
 
 {{< tab "如果您能正常访问 GitHub/Googleapis" >}}
 
-从 [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) 下载 KubeKey 或直接使用以下命令。
+从 [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) 下载 KubeKey 或直接使用以下命令。
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -107,7 +107,7 @@ export KKZONE=cn
 执行以下命令下载 KubeKey。
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}
@@ -156,7 +156,7 @@ vi config-sample.yaml
 
 ```yaml
 #vi ~/config-sample.yaml
-apiVersion: kubekey.kubesphere.io/v1alpha1
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
 kind: Cluster
 metadata:
   name: config-sample
@@ -250,7 +250,7 @@ are up and running.
 2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2020-08-24 23:30:06
+https://docs.kubesphere-carryon.top             2020-08-24 23:30:06
 #####################################################
 ```
 
@@ -262,7 +262,7 @@ https://kubesphere.io             2020-08-24 23:30:06
 
 - 点击**集群管理** > **定制资源定义**，在过滤条件框输入 `ClusterConfiguration`。
 
-- 点击 `ClusterConfiguration` 详情，对 `ks-installer` 编辑保存退出即可，组件描述介绍:[文档说明](https://github.com/kubesphere/ks-installer/blob/master/deploy/cluster-configuration.yaml)。
+- 点击 `ClusterConfiguration` 详情，对 `ks-installer` 编辑保存退出即可，组件描述介绍:[文档说明](https://github.com/whenegghitsrock/ks-installer-carryon/blob/master/deploy/cluster-configuration.yaml)。
 
 ## FAQ
 

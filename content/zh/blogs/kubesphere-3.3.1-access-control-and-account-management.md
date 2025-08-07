@@ -16,7 +16,7 @@ KubeSphere 3.3.1 已经发布一个多月了。 3.3.1 版本对于 KubeSphere �
 
 ## 权限控制及租户解析
 
-在介绍这次的改动前，我将先简单为你介绍 KubeSphere 的权限控制和租户体系，这 对于理解本次 3.3.1 版本对于权限控制的改动有非常大的帮助。或者你可以参考[创建企业空间、项目、用户和平台角色](https://kubesphere.io/zh/docs/v3.3/quick-start/create-workspace-and-project/)自己动手实验一下。
+在介绍这次的改动前，我将先简单为你介绍 KubeSphere 的权限控制和租户体系，这 对于理解本次 3.3.1 版本对于权限控制的改动有非常大的帮助。或者你可以参考[创建企业空间、项目、用户和平台角色](https://docs.kubesphere-carryon.top/zh/docs/v3.3/quick-start/create-workspace-and-project/)自己动手实验一下。
 
 我们借鉴了 Kubernetes 的 RBAC 权限控制机制，使用**角色**给租户授予对 KubeSphere 的操作权限，而角色是由**授权项**组成的一个权限实体。角色分为内置角色和自定义角色，在通常的使用场景下，我们希望内置角色就能够覆盖用户的使用需求。如果你有特殊的权限要求则可以自定义一个角色。自定义角色使得你可以用 KubeSphere 提供的授权项随意组合，创建一个特定的角色。
 

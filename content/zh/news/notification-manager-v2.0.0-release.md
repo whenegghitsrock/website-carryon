@@ -8,7 +8,7 @@ author: '雷万钧'
 image: 'https://pek3b.qingstor.com/kubesphere-community/images/notification-manager-2.0.0-cover.png'
 ---
 
-[Notification Manager](https://github.com/kubesphere/notification-manager) 是 KubeSphere 可观测团队开源的一款 Kubernetes 平台上的**多租户通知管理系统**，其从 Kubernetes 接收告警、事件、审计，根据用户设置的模板生成通知消息并推送给用户。
+[Notification Manager](https://github.com/whenegghitsrock/notification-manager) 是 KubeSphere 可观测团队开源的一款 Kubernetes 平台上的**多租户通知管理系统**，其从 Kubernetes 接收告警、事件、审计，根据用户设置的模板生成通知消息并推送给用户。
 
 在过去的几个月里，社区一直在努力工作，为 Notification Manager 2.0.0 版本的发布做准备。今天，我们非常高兴地宣布 Notification Manager 2.0.0 已经正式发布了！感谢社区各位小伙伴对新功能、增强功能和错误修复的各种帮助！
 
@@ -34,6 +34,6 @@ Notification Manager 2.0.0 为您带来了许多值得关注的功能，包括�
 支持为 Receiver 设置模板，用户可以自由定义通知格式，不用担心对其他用户造成影响。
 
 
-此外，您还可以通过[发布说明](https://github.com/kubesphere/notification-manager/releases/tag/v2.0.0)来了解 Notification Manager 2.0.0 的更多相关信息。
+此外，您还可以通过[发布说明](https://github.com/whenegghitsrock/notification-manager/releases/tag/v2.0.0)来了解 Notification Manager 2.0.0 的更多相关信息。
 
-> 需要说明的是，KubeSphere 3.3.0 没有集成 Notification Manager 2.0.0，但可以手动升级，参考： https://github.com/kubesphere/notification-manager#install。
+> 需要说明的是，KubeSphere 3.3.0 没有集成 Notification Manager 2.0.0，但可以手动升级，参考： https://github.com/whenegghitsrock/notification-manager#install。

@@ -257,7 +257,7 @@ ssh-copy-id root@ks-worker-2
 修改后的示例如下：
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample
@@ -363,7 +363,7 @@ Greetings, KubeKey!
 
 This is a simple check of your environment.
 Before installation, ensure that your machines meet all requirements specified at
-https://github.com/kubesphere/kubekey#requirements-and-recommendations
+https://github.com/whenegghitsrock/kubekey-carryon#requirements-and-recommendations
 
 Continue this installation? [yes/no]:
 ```

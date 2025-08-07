@@ -9,7 +9,7 @@ weight: 1300
 
 ## Overview
 
-As an [open source container platform](https://kubesphere.io/), KubeSphere provides enterprises with a robust, secure and feature-rich platform, boasting the most common functionalities needed for enterprises adopting Kubernetes, such as multi-cluster deployment and management, network policy configuration, Service Mesh (Istio-based), DevOps projects (CI/CD), security management, Source-to-Image and Binary-to-Image, multi-tenant management, multi-dimensional monitoring, log query and collection, alerting and notification, auditing, application management, and image registry management.
+As an [open source container platform](https://docs.kubesphere-carryon.top/), KubeSphere provides enterprises with a robust, secure and feature-rich platform, boasting the most common functionalities needed for enterprises adopting Kubernetes, such as multi-cluster deployment and management, network policy configuration, Service Mesh (Istio-based), DevOps projects (CI/CD), security management, Source-to-Image and Binary-to-Image, multi-tenant management, multi-dimensional monitoring, log query and collection, alerting and notification, auditing, application management, and image registry management.
 
 It also supports various open source storage and network solutions, as well as cloud storage services. For example, KubeSphere presents users with a powerful cloud-native tool [OpenELB](https://openelb.github.io/), a CNCF-certified load balancer developed for bare metal Kubernetes clusters.
 
@@ -23,7 +23,7 @@ The following modules elaborate on the key features and benefits provided by Kub
 
 ### Provisioning Kubernetes Clusters
 
-[KubeKey](https://github.com/kubesphere/kubekey) allows you to deploy Kubernetes on your infrastructure out of box, provisioning Kubernetes clusters with high availability. It is recommended that at least three control plane nodes are configured behind a load balancer for production environment.
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) allows you to deploy Kubernetes on your infrastructure out of box, provisioning Kubernetes clusters with high availability. It is recommended that at least three control plane nodes are configured behind a load balancer for production environment.
 
 ### Kubernetes Resource Management
 
@@ -33,7 +33,7 @@ As KubeSphere 3.4 features enhanced observability, users are able to keep track 
 
 ### Cluster Upgrade and Scaling
 
-The next-gen installer [KubeKey](https://github.com/kubesphere/kubekey) provides an easy way of installation, management and maintenance. Moreover, it supports rolling upgrades of Kubernetes clusters so that the cluster service is always available while being upgraded. Also, you can add new nodes to a Kubernetes cluster to include more workloads by using KubeKey.
+The next-gen installer [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) provides an easy way of installation, management and maintenance. Moreover, it supports rolling upgrades of Kubernetes clusters so that the cluster service is always available while being upgraded. Also, you can add new nodes to a Kubernetes cluster to include more workloads by using KubeKey.
 
 ## Multi-cluster Management and Deployment
 
@@ -159,7 +159,7 @@ For more information, please see [Project User Guide](../../project-user-guide/)
 
 - Open source network solutions are available such as Calico and Flannel.
 
-- [OpenELB](https://github.com/kubesphere/openelb), a load balancer developed for bare metal Kubernetes clusters, is designed by KubeSphere development team. This CNCF-certified tool serves as an important solution for developers. It mainly features:
+- [OpenELB](https://github.com/whenegghitsrock/openelb), a load balancer developed for bare metal Kubernetes clusters, is designed by KubeSphere development team. This CNCF-certified tool serves as an important solution for developers. It mainly features:
 
   1. ECMP routing load balancing
   2. BGP dynamic routing configuration
@@ -169,4 +169,4 @@ For more information, please see [Project User Guide](../../project-user-guide/)
   6. Dynamic BGP server configuration through CRD (v0.3.0)
   7. Dynamic BGP peer configuration through CRD (v0.3.0)
 
-  For more information, please see [this article](https://kubesphere.io/conferences/porter/).
+  For more information, please see [this article](https://docs.kubesphere-carryon.top/conferences/porter/).

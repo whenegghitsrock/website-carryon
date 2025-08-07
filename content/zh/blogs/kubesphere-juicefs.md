@@ -26,7 +26,7 @@ KubeSphere 提供了运维友好的向导式操作界面，即便是 Kubernetes 
 
 ## 前提条件
 
-- [安装 KubeSphere](https://v3-1.docs.kubesphere.io/zh/docs/installing-on-linux/public-cloud/install-kubesphere-on-huaweicloud-ecs/)
+- [安装 KubeSphere](https://v3-1.docs.docs.kubesphere-carryon.top/zh/docs/installing-on-linux/public-cloud/install-kubesphere-on-huaweicloud-ecs/)
 - [在 KubeSphere 中启用应用商店](https://kubesphere.com.cn/docs/pluggable-components/app-store/)
 - 准备对象存储
   - [创建华为云 OBS](https://support.huaweicloud.com/function-obs/index.html)

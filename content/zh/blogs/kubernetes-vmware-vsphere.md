@@ -30,7 +30,7 @@ VMware vSphere Cloud Native Storage（CNS）是 VMware 结合 vSphere 和 K8s �
 
 ## 容器环境搭建
 
-在了解了基本概念后，本章开始实操演练。首先搭建一个 vSphere 虚拟化上的容器集群。为了快速搭建一个从 0 到 1 的容器集群，此处使用一款开源工具——"KubeKey"。Kubekey 是青云开源的一款快速搭建 K8s 和 KubeSphere 容器集群的工具，KubeSphere 是青云开源的 K8s PaaS 管理平台，可以帮助用户可视化统一管理所有 K8s 环境，包括 AWS EKS，华为 CCE，VMware Tanzu 等 K8s 环境纳管。KubeKey 和 KubeSphere 皆通过 CNCF 一致性认证，感兴趣的小伙伴可以在 [GitHub](https://github.com/kubesphere/kubekey) 查看详情。
+在了解了基本概念后，本章开始实操演练。首先搭建一个 vSphere 虚拟化上的容器集群。为了快速搭建一个从 0 到 1 的容器集群，此处使用一款开源工具——"KubeKey"。Kubekey 是青云开源的一款快速搭建 K8s 和 KubeSphere 容器集群的工具，KubeSphere 是青云开源的 K8s PaaS 管理平台，可以帮助用户可视化统一管理所有 K8s 环境，包括 AWS EKS，华为 CCE，VMware Tanzu 等 K8s 环境纳管。KubeKey 和 KubeSphere 皆通过 CNCF 一致性认证，感兴趣的小伙伴可以在 [GitHub](https://github.com/whenegghitsrock/kubekey-carryon) 查看详情。
 
 获取 KubeKey 很简单，使用以下命令：
 
@@ -38,7 +38,7 @@ VMware vSphere Cloud Native Storage（CNS）是 VMware 结合 vSphere 和 K8s �
 
 ```bash
 🐳  → export KKZONE=cn #国内网络环境友好
-🐳  → curl -sfL https://get-kk.kubesphere.io | VERSION=v2.2.1 sh -
+🐳  → curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.2.1 sh -
 ```
 
 Docker 的出现让我们可以一条命令运行一个 MySQL 应用，Kubekey 让我们一条命令运行一个完整的 K8s 集群和 KubeSphere 平台。

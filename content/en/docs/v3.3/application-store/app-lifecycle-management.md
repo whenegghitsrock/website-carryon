@@ -44,7 +44,7 @@ You need to create two users first, one for ISVs (`isv`) and the other (`reviewe
 
 ### Step 2: Upload and submit an application
 
-1. Log in to KubeSphere as `isv` and go to your workspace. You need to upload the example app Redis to this workspace so that it can be used later. First, download the app [Redis 11.3.4](https://github.com/kubesphere/tutorial/raw/master/tutorial%205%20-%20app-store/redis-11.3.4.tgz) and click **Upload Template** in **App Templates**.
+1. Log in to KubeSphere as `isv` and go to your workspace. You need to upload the example app Redis to this workspace so that it can be used later. First, download the app [Redis 11.3.4](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%205%20-%20app-store/redis-11.3.4.tgz) and click **Upload Template** in **App Templates**.
 
    {{< notice note >}}
 
@@ -154,7 +154,7 @@ To allow workspace users to upgrade apps, you need to add new app versions to Ku
 
 1. Log in to KubeSphere as `isv` again and navigate to **Template-Based Apps**. Click the app Redis in the list.
 
-2. Download [Redis 12.0.0](https://github.com/kubesphere/tutorial/raw/master/tutorial%205%20-%20app-store/redis-12.0.0.tgz), which is a new version of Redis for demonstration in this tutorial. On the tab **Versions**, click **New Version** on the right to upload the package you just downloaded.
+2. Download [Redis 12.0.0](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%205%20-%20app-store/redis-12.0.0.tgz), which is a new version of Redis for demonstration in this tutorial. On the tab **Versions**, click **New Version** on the right to upload the package you just downloaded.
 
 3. Click **Upload Helm Chart** and click **OK** after it is uploaded.
 

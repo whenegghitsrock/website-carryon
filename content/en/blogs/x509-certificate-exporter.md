@@ -7,7 +7,7 @@ author: 'Yang Chuansheng, Bettygogo'
 snapshot: '/images/blogs/en/x509-certificate-exporter/x509-certificate-exporter-cover-image.png'
 ---
 
-KubeSphere offers a developer-friendly wizard that simplifies the operations & maintenance of Kubernetes, but it is essentially built on Kubernetes. Kubernetes' TLS certificates are valid for only one year, so we need to update the certificates every year, which is unavoidable even though the cluster is installed by the powerful and lightweight installation tool [KubeKey](https://github.com/kubesphere/kubekey). To prevent possible risks arising from certificate expiration, we need to find a way to monitor certificate validity of Kubernetes components.
+KubeSphere offers a developer-friendly wizard that simplifies the operations & maintenance of Kubernetes, but it is essentially built on Kubernetes. Kubernetes' TLS certificates are valid for only one year, so we need to update the certificates every year, which is unavoidable even though the cluster is installed by the powerful and lightweight installation tool [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon). To prevent possible risks arising from certificate expiration, we need to find a way to monitor certificate validity of Kubernetes components.
 
 Some of you may have heard of [ssl-exporter](https://github.com/ribbybibby/ssl_exporter), which exports metrics for SSL certificates collected from various sources, such as the HTTPS certificate, file certificate, Kubernetes Secret, and kubeconfig file. Basically, ssl-exporter can meet our needs, but it does not have a wealth of metrics. Here, I will share a more powerful Prometheus Exporter: [x509-certificate-exporter](https://github.com/enix/x509-certificate-exporter) with you.
 
@@ -15,7 +15,7 @@ Unlike ssl-exporter, x509-certificate-exporter only focuses on expiration monito
 
 ## Prepare a KubeSphere App Template
 
-With [OpenPitrix](https://github.com/openpitrix/openpitrix), a multicloud application management platform, [KubeSphere](https://kubesphere.io/) is capable of managing the full lifecycle of apps and allowing you to intuitively deploy and manage apps using the App Store and app templates. For an app that has not been published in the App Store, you can import its Helm chart to the public repository of KubeSphere, or import it to a private app repository to provide an app template.
+With [OpenPitrix](https://github.com/openpitrix/openpitrix), a multicloud application management platform, [KubeSphere](https://docs.kubesphere-carryon.top/) is capable of managing the full lifecycle of apps and allowing you to intuitively deploy and manage apps using the App Store and app templates. For an app that has not been published in the App Store, you can import its Helm chart to the public repository of KubeSphere, or import it to a private app repository to provide an app template.
 
 Here, we use a KubeSphere app template to deploy x509-certificate-exporter.
 

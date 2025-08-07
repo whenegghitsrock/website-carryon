@@ -20,55 +20,55 @@ KubeKey 是 KubeSphere 社区开源的一款高效集群部署工具，运行时
 
 #### 支持 Docker 作为 runtime 部署 Kubernetes v1.24+ 集群
 
-相关 PR: **https://github.com/kubesphere/kubekey/pull/2111**
+相关 PR: **https://github.com/whenegghitsrock/kubekey-carryon/pull/2111**
 
 贡献者：chilianyi
 
 #### 支持 Docker 作为 runtime 的集群升级至 v1.24+ 版本
 
-相关 PR: **https://github.com/kubesphere/kubekey/pull/2148**
+相关 PR: **https://github.com/whenegghitsrock/kubekey-carryon/pull/2148**
 
 贡献者：pixiake
 
 #### 支持部署开启 IPV6 协议的集群
 
-相关 PR: **https://github.com/kubesphere/kubekey/pull/2142**
+相关 PR: **https://github.com/whenegghitsrock/kubekey-carryon/pull/2142**
 
 贡献者：wenwenxiong
 
 #### 支持向多级路径镜像仓库中推送镜像
 
-相关 PR: **https://github.com/kubesphere/kubekey/pull/2159**
+相关 PR: **https://github.com/whenegghitsrock/kubekey-carryon/pull/2159**
 
 贡献者：liangzai006
 
 #### 支持按需制作 artifact
 
-相关 PR: **https://github.com/kubesphere/kubekey/pull/2161**
+相关 PR: **https://github.com/whenegghitsrock/kubekey-carryon/pull/2161**
 
 贡献者：ImitationImmortal
 
 #### 支持自定义 Kubernetes 版本生成 manifest
 
-相关 PR: **https://github.com/kubesphere/kubekey/pull/2204**
+相关 PR: **https://github.com/whenegghitsrock/kubekey-carryon/pull/2204**
 
 贡献者：liangzai006
 
 #### 优化 etcd 部署管理逻辑，支持 etcd 升级
 
-相关 PR: **https://github.com/kubesphere/kubekey/pull/2200**
+相关 PR: **https://github.com/whenegghitsrock/kubekey-carryon/pull/2200**
 
 贡献者：pixiake
 
 更多详情见 GitHub Release：
 
-- https://github.com/kubesphere/kubekey/releases/tag/v3.1.0
-- https://github.com/kubesphere/kubekey/releases/tag/v3.1.1
+- https://github.com/whenegghitsrock/kubekey-carryon/releases/tag/v3.1.0
+- https://github.com/whenegghitsrock/kubekey-carryon/releases/tag/v3.1.1
 
 ## 获取最新版本 KubeKey
 
 ```
-curl -sfL https://get-kk.kubesphere.io | sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 ```
 
 ## 新增功能介绍
@@ -84,7 +84,7 @@ curl -sfL https://get-kk.kubesphere.io | sh -
 
 # 以下为新创建的 manifest-sample.yaml, 可根据离线部署需求，自定义添加或删除镜像。自定义对 manifests 文件调整后执行 ./kk artifact export -m manifest-sample.yaml 制作离线包。
 ---
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Manifest
 metadata:
   name: sample

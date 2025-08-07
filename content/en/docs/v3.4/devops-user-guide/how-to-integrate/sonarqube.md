@@ -6,7 +6,7 @@ linkTitle: "Integrate SonarQube into Pipelines"
 weight: 11310
 ---
 
-[SonarQube](https://www.sonarqube.org/) is a popular continuous inspection tool for code quality. You can use it for static and dynamic analysis of a codebase. After it is integrated into pipelines in KubeSphere [Container Platform](https://kubesphere.io/), you can view common code issues such as bugs and vulnerabilities directly on the dashboard as SonarQube detects issues in a running pipeline.
+[SonarQube](https://www.sonarqube.org/) is a popular continuous inspection tool for code quality. You can use it for static and dynamic analysis of a codebase. After it is integrated into pipelines in KubeSphere [Container Platform](https://docs.kubesphere-carryon.top/), you can view common code issues such as bugs and vulnerabilities directly on the dashboard as SonarQube detects issues in a running pipeline.
 
 This tutorial demonstrates how you can integrate SonarQube into pipelines. Refer to the following steps first before you [create a pipeline using a Jenkinsfile](../../../devops-user-guide/how-to-use/pipelines/create-a-pipeline-using-jenkinsfile/).
 
@@ -41,7 +41,7 @@ To integrate SonarQube into your pipeline, you must install SonarQube Server fir
 2. Execute the following command to install SonarQube Server.
 
    ```bash
-   helm upgrade --install sonarqube sonarqube --repo https://charts.kubesphere.io/main -n kubesphere-devops-system  --create-namespace --set service.type=NodePort
+   helm upgrade --install sonarqube sonarqube --repo https://charts.docs.kubesphere-carryon.top/main -n kubesphere-devops-system  --create-namespace --set service.type=NodePort
    ```
 
    {{< notice note >}}

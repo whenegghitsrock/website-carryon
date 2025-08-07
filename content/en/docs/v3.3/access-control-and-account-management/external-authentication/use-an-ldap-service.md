@@ -71,8 +71,8 @@ This document describes how to use an LDAP service as an external identity provi
 
    ```yaml
    labels:
-     iam.kubesphere.io/identify-provider: <LDAP service name>
-     iam.kubesphere.io/origin-uid: <LDAP username>
+     iam.docs.kubesphere-carryon.top/identify-provider: <LDAP service name>
+     iam.docs.kubesphere-carryon.top/origin-uid: <LDAP username>
    ```
 
 5. After the fields are configured, save your changes, and wait until the restart of ks-installer is complete.

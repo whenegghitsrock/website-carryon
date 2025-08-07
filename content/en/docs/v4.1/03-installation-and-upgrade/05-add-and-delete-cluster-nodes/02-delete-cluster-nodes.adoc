@@ -9,7 +9,7 @@ weight: 02
 
 This section describes how to delete KubeSphere cluster nodes.
 
-The open-source tool KubeKey will be used during the process. For more information about KubeKey, please visit link:https://github.com/kubesphere/kubekey[GitHub KubeKey repository].
+The open-source tool KubeKey will be used during the process. For more information about KubeKey, please visit link:https://github.com/whenegghitsrock/kubekey-carryon[GitHub KubeKey repository].
 
 // Note
 include::../../../../_ks_components-en/admonitions/note.adoc[]

@@ -23,7 +23,7 @@ KubeSphere 作为开源的企业级全栈化容器平台，为用户提供了一
 
 ### 部署 Kubernetes 集群
 
-[KubeKey](https://github.com/kubesphere/kubekey) 允许用户直接在基础架构上部署 Kubernetes，为 Kubernetes 集群提供高可用性。建议在生产环境至少配置三个主节点。
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) 允许用户直接在基础架构上部署 Kubernetes，为 Kubernetes 集群提供高可用性。建议在生产环境至少配置三个主节点。
 
 ### Kubernetes 资源管理
 
@@ -33,7 +33,7 @@ KubeSphere 作为开源的企业级全栈化容器平台，为用户提供了一
 
 ### 集群升级和扩展
 
-[KubeKey](https://github.com/kubesphere/kubekey) 提供了一种简单的安装，管理和维护方式。它支持 Kubernetes 集群的滚动升级，以便集群服务在升级时始终可用。另外，也可以使用 KubeKey 将新节点添加到 Kubernetes 集群中以使用更多工作负载。
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) 提供了一种简单的安装，管理和维护方式。它支持 Kubernetes 集群的滚动升级，以便集群服务在升级时始终可用。另外，也可以使用 KubeKey 将新节点添加到 Kubernetes 集群中以使用更多工作负载。
 
 ## 多集群管理和部署
 
@@ -160,7 +160,7 @@ KubeSphere 通过可视化界面操作监控、运维功能，可简化操作和
 
 - 支持 Calico、Flannel 等开源网络方案。
 
-- [OpenELB](https://github.com/kubesphere/openelb)，是由 KubeSphere 开发团队设计、经过 CNCF 认证的一款适用于物理机部署 Kubernetes 的负载均衡插件。 主要特点：
+- [OpenELB](https://github.com/whenegghitsrock/openelb)，是由 KubeSphere 开发团队设计、经过 CNCF 认证的一款适用于物理机部署 Kubernetes 的负载均衡插件。 主要特点：
 
   1. ECMP 路由负载均衡
   2. BGP 动态路由
@@ -170,4 +170,4 @@ KubeSphere 通过可视化界面操作监控、运维功能，可简化操作和
   6. 通过 CRD 动态配置BGP服务器 (v0.3.0)
   7. 通过 CRD 动态配置BGP对等 (v0.3.0)
 
-  有关 OpenELB 的更多信息，请参见[本文](https://kubesphere.io/zh/conferences/porter/)。
+  有关 OpenELB 的更多信息，请参见[本文](https://docs.kubesphere-carryon.top/zh/conferences/porter/)。

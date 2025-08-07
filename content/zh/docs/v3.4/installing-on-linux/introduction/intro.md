@@ -6,9 +6,9 @@ linkTitle: "概述"
 weight: 3110
 ---
 
-KubeSphere 是 [GitHub](https://github.com/kubesphere) 上的一个开源项目，是成千上万名社区用户的聚集地。很多用户都在使用 KubeSphere 运行工作负载。对于在 Linux 上的安装，KubeSphere 既可以部署在云端，也可以部署在本地环境中，例如 AWS EC2、Azure VM 和裸机等。
+KubeSphere 是 [GitHub](https://github.com/whenegghitsrock) 上的一个开源项目，是成千上万名社区用户的聚集地。很多用户都在使用 KubeSphere 运行工作负载。对于在 Linux 上的安装，KubeSphere 既可以部署在云端，也可以部署在本地环境中，例如 AWS EC2、Azure VM 和裸机等。
 
-KubeSphere 为用户提供轻量级安装程序 [KubeKey](https://github.com/kubesphere/kubekey)（该程序支持安装 Kubernetes、KubeSphere 及相关插件），安装过程简单而友好。KubeKey 不仅能帮助用户在线创建集群，还能作为离线安装解决方案。
+KubeSphere 为用户提供轻量级安装程序 [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon)（该程序支持安装 Kubernetes、KubeSphere 及相关插件），安装过程简单而友好。KubeKey 不仅能帮助用户在线创建集群，还能作为离线安装解决方案。
 
 以下是可用的安装选项：
 
@@ -39,7 +39,7 @@ KubeSphere 为用户提供轻量级安装程序 [KubeKey](https://github.com/kub
 
 ## KubeKey
 
-[KubeKey](https://github.com/kubesphere/kubekey) 为集群的安装和配置提供了一种有效的方法。您可以使用它来创建、扩缩和升级 Kubernetes 集群。您也可以在设置集群时使用 KubeKey 安装云原生组件（YAML 或 Chart）。有关更多信息，请参见 [KubeKey](../kubekey/)。
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) 为集群的安装和配置提供了一种有效的方法。您可以使用它来创建、扩缩和升级 Kubernetes 集群。您也可以在设置集群时使用 KubeKey 安装云原生组件（YAML 或 Chart）。有关更多信息，请参见 [KubeKey](../kubekey/)。
 
 ## 快速安装用于开发和测试
 

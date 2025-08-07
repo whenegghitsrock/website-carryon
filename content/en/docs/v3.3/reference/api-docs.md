@@ -74,7 +74,7 @@ If you have everything you need to access the KubeSphere API server, make the ca
 ```bash
 $ curl -X GET -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidWlkIjoiYTlhNjJmOTEtYWQ2Yi00MjRlLWIxNWEtZTFkOTcyNmUzNDFhIiwidG9rZW5fdHlwZSI6ImFjY2Vzc190b2tlbiIsImV4cCI6MTYwMDg1MjM5OCwiaWF0IjoxNjAwODQ1MTk4LCJpc3MiOiJrdWJlc3BoZXJlIiwibmJmIjoxNjAwODQ1MTk4fQ.Hcyf-CPMeq8XyQQLz5PO-oE1Rp1QVkOeV_5J2oX1hvU" \
   -H 'Content-Type: application/json' \
-  'http://[node ip]:31407/kapis/resources.kubesphere.io/v1alpha3/nodes'
+  'http://[node ip]:31407/kapis/resources.docs.kubesphere-carryon.top/v1alpha3/nodes'
 
 {
  "items": [
@@ -114,9 +114,9 @@ Replace `[node ip]` with your actual IP address.
 
 ## API Reference
 
-The KubeSphere API swagger JSON file can be found in the repository https://github.com/kubesphere/kubesphere/tree/release-3.3/api.
+The KubeSphere API swagger JSON file can be found in the repository https://github.com/whenegghitsrock/kubesphere-carryon/tree/release-3.3/api.
 
-- KubeSphere specified the API [swagger json](https://github.com/kubesphere/kubesphere/blob/release-3.1/api/ks-openapi-spec/swagger.json) file. It contains all the APIs that are only applied to KubeSphere.
-- KubeSphere specified the CRD [swagger json](https://github.com/kubesphere/kubesphere/blob/release-3.1/api/openapi-spec/swagger.json) file. It contains all the generated CRDs API documentation. It is same as Kubernetes API objects.
+- KubeSphere specified the API [swagger json](https://github.com/whenegghitsrock/kubesphere-carryon/blob/release-3.1/api/ks-openapi-spec/swagger.json) file. It contains all the APIs that are only applied to KubeSphere.
+- KubeSphere specified the CRD [swagger json](https://github.com/whenegghitsrock/kubesphere-carryon/blob/release-3.1/api/openapi-spec/swagger.json) file. It contains all the generated CRDs API documentation. It is same as Kubernetes API objects.
 
-You can explore the KubeSphere API document from [here](https://kubesphere.io/api/kubesphere) as well.
+You can explore the KubeSphere API document from [here](https://docs.kubesphere-carryon.top/api/kubesphere) as well.

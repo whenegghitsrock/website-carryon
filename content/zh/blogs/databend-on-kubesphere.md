@@ -59,13 +59,13 @@ Databend 完全面向对象存储而设计，在减少复杂性和成本的同�
 
 ## 准备 KubeSphere 环境
 
-[KubeSphere](https://github.com/kubesphere/kubesphere)（https://kubesphere.io）是在 Kubernetes 之上构建的开源容器平台，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 已被海内外数万家企业采用。此外， KubeSphere 还拥有极为开放的生态，KubeSphere 在 OpenPitrix 的基础上，为用户提供了一个基于 Helm 的应用商店，用于应用生命周期管理。KubeSphere 应用商店让 ISV、开发者和用户能够在一站式服务中只需点击几下就可以上传、测试、安装和发布应用。目前 Databend 已入驻 KubeSphere 应用商店。
+[KubeSphere](https://github.com/whenegghitsrock/kubesphere-carryon)（https://docs.kubesphere-carryon.top）是在 Kubernetes 之上构建的开源容器平台，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 已被海内外数万家企业采用。此外， KubeSphere 还拥有极为开放的生态，KubeSphere 在 OpenPitrix 的基础上，为用户提供了一个基于 Helm 的应用商店，用于应用生命周期管理。KubeSphere 应用商店让 ISV、开发者和用户能够在一站式服务中只需点击几下就可以上传、测试、安装和发布应用。目前 Databend 已入驻 KubeSphere 应用商店。
 
 ### KubeSphere 环境搭建
 
 #### All-in-One 模式部署测试环境
 
-参考[官方文档](https://kubesphere.io/zh/docs/v3.3/quick-start/all-in-one-on-linux/) 。
+参考[官方文档](https://docs.kubesphere-carryon.top/zh/docs/v3.3/quick-start/all-in-one-on-linux/) 。
 
 在 Azure 上 Spot 一台机器：
 
@@ -90,7 +90,7 @@ Welcome to Ubuntu 18.04.6 LTS (GNU/Linux 5.4.0-1089-azure x86_64)
 apt install socat conntrack containerd
 systemctl daemon-reload
 systemctl enable --now containerd
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.2 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.2 sh -
 chmod +x kk
 ./kk create cluster --with-kubernetes v1.22.12 --with-kubesphere v3.3.1
 +------+------+------+---------+----------+-------+-------+---------+-----------+--------+--------+------------------+------------+-------------+------------------+--------------+
@@ -132,7 +132,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2022-09-06 15:41:44
+https://docs.kubesphere-carryon.top             2022-09-06 15:41:44
 #####################################################
 ```
 访问 `30880` 端口，并使用用户名密码登录，就可以访问 KubeSphere 。为确保能够访问 KubeSphere 和其他服务，请根据实际情况在云平台控制面板为相应端口添加入站出站规则。
@@ -159,7 +159,7 @@ https://kubesphere.io             2022-09-06 15:41:44
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/427935099520233.png)
 
-如需使用应用商店，可以参考 [KubeSphere 文档 - 在安装后启用应用商店](https://kubesphere.io/zh/docs/v3.3/pluggable-components/app-store/#%E5%9C%A8%E5%AE%89%E8%A3%85%E5%90%8E%E5%90%AF%E7%94%A8%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97) 启用。
+如需使用应用商店，可以参考 [KubeSphere 文档 - 在安装后启用应用商店](https://docs.kubesphere-carryon.top/zh/docs/v3.3/pluggable-components/app-store/#%E5%9C%A8%E5%AE%89%E8%A3%85%E5%90%8E%E5%90%AF%E7%94%A8%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97) 启用。
 
 开启后可以在应用商店中搜索找到 Databend ，结果类似下图。
 
@@ -177,13 +177,13 @@ https://kubesphere.io             2022-09-06 15:41:44
 
 ### 应用模板载入
 
-虽然应用商店中已经有 Databend 可供选用，但版本较旧（v0.8.122-nightly），新的 [PR](https://github.com/kubesphere/helm-charts/pull/288)（v1.0.3-nightly）需要等合并之后才可用，所以建议添加 Databend 官方维护的 helm-charts 作为应用模板。
+虽然应用商店中已经有 Databend 可供选用，但版本较旧（v0.8.122-nightly），新的 [PR](https://github.com/whenegghitsrock/helm-charts-carryon/pull/288)（v1.0.3-nightly）需要等合并之后才可用，所以建议添加 Databend 官方维护的 helm-charts 作为应用模板。
 
 Databend 官方提供了 Helm Charts ，而 KubeSphere 也支持使用 Helm Charts 应用模板。
 
-> 应用模板是用户上传、交付和管理应用的一种方式。一般来说，根据一个应用的功能以及与外部环境通信的方式，它可以由一个或多个 Kubernetes 工作负载（例如[部署](https://kubesphere.io/zh/docs/v3.3/project-user-guide/application-workloads/deployments/)、[有状态副本集](https://kubesphere.io/zh/docs/v3.3/project-user-guide/application-workloads/statefulsets/)和[守护进程集](https://kubesphere.io/zh/docs/v3.3/project-user-guide/application-workloads/daemonsets/)）和[服务](https://kubesphere.io/zh/docs/v3.3/project-user-guide/application-workloads/services/)组成。作为应用模板上传的应用基于 [Helm](https://helm.sh/) 包构建。
+> 应用模板是用户上传、交付和管理应用的一种方式。一般来说，根据一个应用的功能以及与外部环境通信的方式，它可以由一个或多个 Kubernetes 工作负载（例如[部署](https://docs.kubesphere-carryon.top/zh/docs/v3.3/project-user-guide/application-workloads/deployments/)、[有状态副本集](https://docs.kubesphere-carryon.top/zh/docs/v3.3/project-user-guide/application-workloads/statefulsets/)和[守护进程集](https://docs.kubesphere-carryon.top/zh/docs/v3.3/project-user-guide/application-workloads/daemonsets/)）和[服务](https://docs.kubesphere-carryon.top/zh/docs/v3.3/project-user-guide/application-workloads/services/)组成。作为应用模板上传的应用基于 [Helm](https://helm.sh/) 包构建。
 > 可以将 Helm Chart 交付至 KubeSphere 的公共仓库，或者导入私有应用仓库来提供应用模板。
-> [https://kubesphere.io/zh/docs/v3.3/workspace-administration/upload-helm-based-application/](https://kubesphere.io/zh/docs/v3.3/workspace-administration/upload-helm-based-application/)
+> [https://docs.kubesphere-carryon.top/zh/docs/v3.3/workspace-administration/upload-helm-based-application/](https://docs.kubesphere-carryon.top/zh/docs/v3.3/workspace-administration/upload-helm-based-application/)
 
 在企业空间侧边栏选中**应用管理** ，点击**应用仓库** ，添加 Databend 官方维护的 [Helm Charts](https://charts.databend.rs/) 。
 

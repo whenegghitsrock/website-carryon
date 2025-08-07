@@ -6,7 +6,7 @@
 
 [[redirects]]
   from = "/log/*"
-  to = "https://log.kubesphere.io/:splat"
+  to = "https://log.docs.kubesphere-carryon.top/:splat"
   status = 308
   force = true
 
@@ -18,13 +18,13 @@
 
 [[redirects]]
   from = "/forum/*"
-  to = "https://ask.kubesphere.io/forum/:splat"
+  to = "https://ask.docs.kubesphere-carryon.top/forum/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "/forum/"
-  to = "https://ask.kubesphere.io/forum/"
+  to = "https://ask.docs.kubesphere-carryon.top/forum/"
   status = 301
   force = true
 

@@ -6,7 +6,7 @@ linkTitle: "代理连接"
 weight: 5220
 ---
 
-KubeSphere 的组件 [Tower](https://github.com/kubesphere/tower) 用于代理连接。Tower 是一种通过代理在集群间建立网络连接的工具。如果主集群无法直接访问成员集群，您可以暴露主集群的代理服务地址，这样可以让成员集群通过代理连接到主集群。当成员集群部署在私有环境（例如 IDC）并且主集群可以暴露代理服务时，适用此连接方法。当您的集群分布部署在不同的云厂商上时，同样适用代理连接的方法。
+KubeSphere 的组件 [Tower](https://github.com/whenegghitsrock/tower) 用于代理连接。Tower 是一种通过代理在集群间建立网络连接的工具。如果主集群无法直接访问成员集群，您可以暴露主集群的代理服务地址，这样可以让成员集群通过代理连接到主集群。当成员集群部署在私有环境（例如 IDC）并且主集群可以暴露代理服务时，适用此连接方法。当您的集群分布部署在不同的云厂商上时，同样适用代理连接的方法。
 
 要通过代理连接使用多集群功能，您必须拥有至少两个集群，分别用作主集群和成员集群。您可以在安装 KubeSphere 之前或者之后将一个集群指定为主集群或成员集群。有关安装 KubeSphere 的更多信息，请参考[在 Linux 上安装](../../../installing-on-linux/)和[在 Kubernetes 上安装](../../../installing-on-kubernetes/)。
 
@@ -120,7 +120,7 @@ tower      LoadBalancer    10.233.63.191   139.198.110.23  8080:30721/TCP       
 
 {{< notice note >}}
 
-一般来说，主流公有云厂商会提供 LoadBalancer 解决方案，并且负载均衡器可以自动分配外部 IP。如果您的集群运行在本地环境中，尤其是在**裸机环境**中，可以使用 [OpenELB](https://github.com/kubesphere/openelb) 作为负载均衡器解决方案。
+一般来说，主流公有云厂商会提供 LoadBalancer 解决方案，并且负载均衡器可以自动分配外部 IP。如果您的集群运行在本地环境中，尤其是在**裸机环境**中，可以使用 [OpenELB](https://github.com/whenegghitsrock/openelb) 作为负载均衡器解决方案。
 
 {{</ notice >}}
 

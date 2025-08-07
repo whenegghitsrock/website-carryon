@@ -250,7 +250,7 @@ dex-d8c5cdfc-577gf                    1/1     Running   0          21h
 安装好 Dex 后需要修改 `cluster-configuration.yaml`。
 
 ```yaml
-apiVersion: installer.kubesphere.io/v1alpha1
+apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
 kind: ClusterConfiguration
 metadata:
   name: ks-installer
@@ -323,7 +323,7 @@ kubectl -n kubesphere-system edit cc ks-installer
 *配置示例*:
 
 ```yaml
-apiVersion: installer.kubesphere.io/v1alpha1
+apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
 kind: ClusterConfiguration
 metadata:
   name: ks-installer

@@ -140,10 +140,10 @@ Add `-f values.yaml` when installing or upgrading {ks_product-en}.
 [source,bash]
 ----
 # Installation
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere.io/main/ks-core-1.1.4.tgz -f values.yaml --debug --wait
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.4.tgz -f values.yaml --debug --wait
 
 # Upgrade
-helm upgrade -n kubesphere-system ks-core https://charts.kubesphere.io/main/ks-core-1.1.4.tgz -f values.yaml --debug --wait
+helm upgrade -n kubesphere-system ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.4.tgz -f values.yaml --debug --wait
 ----
 
 // kse

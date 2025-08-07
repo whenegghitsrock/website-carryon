@@ -24,7 +24,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/KubeSphere-K8s
 
 - 本系列文档涉及的 Ansible 代码可以在 [https://gitee.com/zdevops/cloudnative]( "https://gitee.com/zdevops/cloudnative") 获取
 
-## [KubeSphere 简介](https://kubesphere.io/zh/ "KubeSphere 简介")
+## [KubeSphere 简介](https://docs.kubesphere-carryon.top/zh/ "KubeSphere 简介")
 
 ### 全栈的 K8s 容器云 PaaS 解决方案
 
@@ -351,7 +351,7 @@ KubeSphere 是在 K8s 之上构建的以应用为中心的多租户容器平台�
 3. 使用 KubeSphere 自带的解决方案部署 HAProxy
 
    - kubekye v1.2.1 开始支持
-   - 参考[使用 KubeKey 内置 HAproxy 创建高可用集群](https://kubesphere.io/zh/docs/installing-on-linux/high-availability-configurations/internal-ha-configuration/ "使用 KubeKey 内置 HAproxy 创建高可用集群")
+   - 参考[使用 KubeKey 内置 HAproxy 创建高可用集群](https://docs.kubesphere-carryon.top/zh/docs/installing-on-linux/high-availability-configurations/internal-ha-configuration/ "使用 KubeKey 内置 HAproxy 创建高可用集群")
 
 ### 安装配置
 
@@ -577,7 +577,7 @@ KubeSphere 是在 K8s 之上构建的以应用为中心的多租户容器平台�
    [root@k8s-master-0 ~]# export KKZONE=cn
 
    # 执行以下命令下载 KubeKey
-   [root@k8s-master-0 ~]# curl -sfL https://get-kk.kubesphere.io | VERSION=v1.1.1 sh -
+   [root@k8s-master-0 ~]# curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v1.1.1 sh -
 
    # 为 kk 添加可执行权限 (可选)
    [root@k8s-master-0 ~]# chmod +x kk
@@ -597,7 +597,7 @@ KubeSphere 是在 K8s 之上构建的以应用为中心的多租户容器平台�
    - vi config-sample.yaml
 
      ```yaml
-     apiVersion: kubekey.kubesphere.io/v1alpha1
+     apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
      kind: Cluster
      metadata:
        name: sample
@@ -640,7 +640,7 @@ KubeSphere 是在 K8s 之上构建的以应用为中心的多租户容器平台�
        addons: []
 
      ---
-     apiVersion: installer.kubesphere.io/v1alpha1
+     apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
      kind: ClusterConfiguration
 
      ....(后面太多都是 KubeSphere 的配置，本文不涉及，先省略)
@@ -701,14 +701,14 @@ KubeSphere 是在 K8s 之上构建的以应用为中心的多租户容器平台�
        2. Please change the default password after login.
 
      #####################################################
-     https://kubesphere.io             20xx-xx-xx xx:xx:xx
+     https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
      #####################################################
      ```
 
 ## 参考文档
 
-1. [多节点安装](https://kubesphere.io/zh/docs/installing-on-linux/introduction/multioverview/ "多节点安装")
-2. [使用 Keepalived 和 HAproxy 创建高可用 K8s 集群](https://kubesphere.io/zh/docs/installing-on-linux/high-availability-configurations/set-up-ha-cluster-using-keepalived-haproxy/ "使用 Keepalived 和 HAproxy 创建高可用 K8s 集群")
+1. [多节点安装](https://docs.kubesphere-carryon.top/zh/docs/installing-on-linux/introduction/multioverview/ "多节点安装")
+2. [使用 Keepalived 和 HAproxy 创建高可用 K8s 集群](https://docs.kubesphere-carryon.top/zh/docs/installing-on-linux/high-availability-configurations/set-up-ha-cluster-using-keepalived-haproxy/ "使用 Keepalived 和 HAproxy 创建高可用 K8s 集群")
 
 ## 后续
 

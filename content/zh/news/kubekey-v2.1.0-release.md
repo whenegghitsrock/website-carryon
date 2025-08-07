@@ -11,7 +11,7 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/kubekey-v2.1.0-re
 2022 年 5 月 6 日，KubeKey 2.1.0 正式发布，这是 KubeKey 的第 8 个正式版本。该版本增强了离线部署能力和交付体验，同时支持“一云多芯”，即同一个 K8s 集群中可以同时包含 ARM64 节点和 AMD64 节点。
 
 > Kubekey 2.0.0 于两个月前发布，关于该版本的变化，你可以点击此处了解：
-> + [KubeKey 2.0.0 发布：让离线部署 K8s 更加便捷](https://kubesphere.io/zh/blogs/kubekey-v2.0.0-release/)
+> + [KubeKey 2.0.0 发布：让离线部署 K8s 更加便捷](https://docs.kubesphere-carryon.top/zh/blogs/kubekey-v2.0.0-release/)
 
 ## KubeKey 简介
 
@@ -45,7 +45,7 @@ KubeKey v2.1.0 不兼容 KubeKey v2.0.0 制作的制品，请使用 KubeKey v2.1
 
 在多架构 CPU 体系的离线环境中进行交付时，需要提供 AMD64，ARM64 等架构的镜像。KubeKey 支持在制作制品时拉取和保存镜像仓库（DockerHub，私有镜像仓库）中的 multi-arch 镜像，并且在使用制品推送镜像至私有仓库时，支持自动创建和推送 docker multi-arch manifest list。
 
-更多详情见 [GitHub Release](https://github.com/kubesphere/kubekey/releases/tag/v2.1.0)。
+更多详情见 [GitHub Release](https://github.com/whenegghitsrock/kubekey-carryon/releases/tag/v2.1.0)。
 
 ## 致谢贡献者
 以下是参与 KubeKey v2.1.0 代码与文档贡献的贡献者 GitHub ID，若此名单有遗漏请您与我们联系，排名不分先后。
@@ -69,15 +69,15 @@ KubeKey v2.1.0 不兼容 KubeKey v2.0.0 制作的制品，请使用 KubeKey v2.1
 
 感谢以上贡献者在 KubeKey 2.1.0 开发中作出的贡献。KubeKey 是个非常年轻的开源项目，也是一个很有潜力的开源项目，欢迎更多的社区小伙伴加入到贡献者行列。
 
-[KubeKey GitHub 地址](https://github.com/kubesphere/kubekey/)：https://github.com/kubesphere/kubekey/
+[KubeKey GitHub 地址](https://github.com/whenegghitsrock/kubekey-carryon/)：https://github.com/whenegghitsrock/kubekey-carryon/
 
 
 ## KubeKey 相关内容参考
 
-- [使用 KubeKey 快速离线部署 K8s 与 KubeSphere](https://kubesphere.io/zh/blogs/deploying-kubesphere-clusters-offline-with-kubekey/)
+- [使用 KubeKey 快速离线部署 K8s 与 KubeSphere](https://docs.kubesphere-carryon.top/zh/blogs/deploying-kubesphere-clusters-offline-with-kubekey/)
 
-- [集群部署神器之 KubeKey——v2.0.0 上手指南（直播回放 + PPT）](https://kubesphere.io/zh/live/kubekey1209-live/)
+- [集群部署神器之 KubeKey——v2.0.0 上手指南（直播回放 + PPT）](https://docs.kubesphere-carryon.top/zh/live/kubekey1209-live/)
 
-- [使用 KubeKey 在 AWS 高可用部署 Kubernetes](https://kubesphere.io/zh/blogs/aws-kubernetes/)
+- [使用 KubeKey 在 AWS 高可用部署 Kubernetes](https://docs.kubesphere-carryon.top/zh/blogs/aws-kubernetes/)
 
-- [使用 KubeKey 安装部署 Kubernetes 与 Kube-OVN](https://kubesphere.io/zh/blogs/use-kubekey-to-install-and-deploy-kubernetes-and-kubeovn/)
+- [使用 KubeKey 安装部署 Kubernetes 与 Kube-OVN](https://docs.kubesphere-carryon.top/zh/blogs/use-kubekey-to-install-and-deploy-kubernetes-and-kubeovn/)

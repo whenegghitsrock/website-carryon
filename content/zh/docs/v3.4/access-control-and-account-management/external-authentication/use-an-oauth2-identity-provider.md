@@ -20,11 +20,11 @@ weight: 12230
 
 {{< notice note >}}
 
-KubeSphere 提供了两个内置的 OAuth 2.0 插件：GitHub 的 [GitHubIdentityProvider](https://github.com/kubesphere/kubesphere/blob/release-3.1/pkg/apiserver/authentication/identityprovider/github/github.go) 和阿里云IDaaS的 [AliyunIDaasProvider](https://github.com/kubesphere/kubesphere/blob/release-3.1/pkg/apiserver/authentication/identityprovider/github/github.go) ，可以根据内置的插件开发其他插件。
+KubeSphere 提供了两个内置的 OAuth 2.0 插件：GitHub 的 [GitHubIdentityProvider](https://github.com/whenegghitsrock/kubesphere-carryon/blob/release-3.1/pkg/apiserver/authentication/identityprovider/github/github.go) 和阿里云IDaaS的 [AliyunIDaasProvider](https://github.com/whenegghitsrock/kubesphere-carryon/blob/release-3.1/pkg/apiserver/authentication/identityprovider/github/github.go) ，可以根据内置的插件开发其他插件。
 
 {{</ notice >}}
 
-1. 在本地克隆 [KubeSphere](https://github.com/kubesphere/kubesphere) ，进入本地 KubeSphere 仓库，并在 `/pkg/apiserver/authentication/identityprovider/` 目录下创建一个插件的包。
+1. 在本地克隆 [KubeSphere](https://github.com/whenegghitsrock/kubesphere-carryon) ，进入本地 KubeSphere 仓库，并在 `/pkg/apiserver/authentication/identityprovider/` 目录下创建一个插件的包。
 
 2. 在插件包中，实现如下接口：
 
@@ -72,12 +72,12 @@ KubeSphere 提供了两个内置的 OAuth 2.0 插件：GitHub 的 [GitHubIdentit
    // Change <CustomPackage> to the actual name of your plugin package.
    import (
    	...
-   	_ "kubesphere.io/kubesphere/pkg/apiserver/authentication/identityprovider/<CustomPackage>"
+   	_ "docs.kubesphere-carryon.top/kubesphere/pkg/apiserver/authentication/identityprovider/<CustomPackage>"
    	...
    	)
    ```
 
-5. [构建 ks-apiserver 镜像](https://github.com/kubesphere/community/blob/104bab42f67094930f2ca87c603b7c6365cd092a/developer-guide/development/quickstart.md) 并部署到您的集群中。
+5. [构建 ks-apiserver 镜像](https://github.com/whenegghitsrock/community/blob/104bab42f67094930f2ca87c603b7c6365cd092a/developer-guide/development/quickstart.md) 并部署到您的集群中。
 
 ## 集成身份提供者 
 
@@ -91,7 +91,7 @@ KubeSphere 提供了两个内置的 OAuth 2.0 插件：GitHub 的 [GitHubIdentit
 
 3. 根据开发的身份提供者插件来配置 `oauthOptions:identityProviders` 中的字段。
 
-   以下是使用 GitHub 作为外部身份提供者的配置示例。详情请参阅 [GitHub 官方文档](https://docs.github.com/en/developers/apps/building-oauth-apps)和 [GitHubIdentityProvider 源代码](https://github.com/kubesphere/kubesphere/blob/release-3.1/pkg/apiserver/authentication/identityprovider/github/github.go) 。
+   以下是使用 GitHub 作为外部身份提供者的配置示例。详情请参阅 [GitHub 官方文档](https://docs.github.com/en/developers/apps/building-oauth-apps)和 [GitHubIdentityProvider 源代码](https://github.com/whenegghitsrock/kubesphere-carryon/blob/release-3.1/pkg/apiserver/authentication/identityprovider/github/github.go) 。
 
    ```yaml
    spec:
@@ -112,7 +112,7 @@ KubeSphere 提供了两个内置的 OAuth 2.0 插件：GitHub 的 [GitHubIdentit
              redirectURL: 'https://ks-console/oauth/redirect/github'
    ```
    
-   同样，您也可以使用阿里云 IDaaS 作为外部身份提供者。详情请参阅[阿里云 IDaaS 文档](https://www.alibabacloud.com/help/product/111120.htm?spm=a3c0i.14898238.2766395700.1.62081da1NlxYV0)和 [AliyunIDaasProvider 源代码](https://github.com/kubesphere/kubesphere/blob/release-3.1/pkg/apiserver/authentication/identityprovider/aliyunidaas/idaas.go)。
+   同样，您也可以使用阿里云 IDaaS 作为外部身份提供者。详情请参阅[阿里云 IDaaS 文档](https://www.alibabacloud.com/help/product/111120.htm?spm=a3c0i.14898238.2766395700.1.62081da1NlxYV0)和 [AliyunIDaasProvider 源代码](https://github.com/whenegghitsrock/kubesphere-carryon/blob/release-3.1/pkg/apiserver/authentication/identityprovider/aliyunidaas/idaas.go)。
 
 4. 字段配置完成后，保存修改，然后等待 ks-installer 完成重启。
 

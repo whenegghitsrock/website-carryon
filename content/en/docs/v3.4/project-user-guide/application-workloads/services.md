@@ -54,7 +54,7 @@ KubeSphere provides three basic methods to create a Service: **Stateless Service
 
   {{< notice tip>}}
 
-The value of `annotations:kubesphere.io/serviceType` keywords can be defined as: `statelessservice`, `statefulservice`, `externalservice` and `None`.
+The value of `annotations:docs.kubesphere-carryon.top/serviceType` keywords can be defined as: `statelessservice`, `statefulservice`, `externalservice` and `None`.
 
   {{</ notice>}}
 

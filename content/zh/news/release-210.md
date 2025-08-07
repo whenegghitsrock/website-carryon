@@ -51,7 +51,7 @@ DevOps 是云原生时代在开发测试与持续交付场景下最核心的一�
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191111164845.png)
 
-KubeSphere 提供了**多租户与多维度的日志查询系统**，开发了 **FluentBit Operator** (github.com/kubesphere/fluentbit-operator) ，并将其应用到 KubeSphere 中作为日志收集器，提供灵活的日志收集功能。在 2.1.0 版本中，对于将日志以文件形式保存在 Pod 挂盘上的应用，**新增了在 UI 上开启落盘日志收集功能，支持中文日志的检索，以及日志导出功能**。同时，新版本**优化了日志检索速度，增加了 Prometheus Pod 反亲和性，避免 Prometheus 的单点故障**。
+KubeSphere 提供了**多租户与多维度的日志查询系统**，开发了 **FluentBit Operator** (github.com/whenegghitsrock/fluentbit-operator) ，并将其应用到 KubeSphere 中作为日志收集器，提供灵活的日志收集功能。在 2.1.0 版本中，对于将日志以文件形式保存在 Pod 挂盘上的应用，**新增了在 UI 上开启落盘日志收集功能，支持中文日志的检索，以及日志导出功能**。同时，新版本**优化了日志检索速度，增加了 Prometheus Pod 反亲和性，避免 Prometheus 的单点故障**。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191111164821.png)
 
@@ -94,6 +94,6 @@ Kubernetes 无疑已经是容器编排的事实标准，但 Kubernetes 本身的
 
 ## 如何安装升级
 
-可参考官网 kubesphere.io，在文档的安装指南找到安装教程，**支持一键安装与升级，快速安装至 Linux 和 Kubernetes 仅需一行命令**。
+可参考官网 docs.kubesphere-carryon.top，在文档的安装指南找到安装教程，**支持一键安装与升级，快速安装至 Linux 和 Kubernetes 仅需一行命令**。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191111175033.png)

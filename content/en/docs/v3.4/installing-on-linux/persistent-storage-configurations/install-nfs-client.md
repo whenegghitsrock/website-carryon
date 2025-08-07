@@ -53,7 +53,7 @@ Install `nfs-common` on all of the clients. It provides necessary NFS functions 
 
    {{< notice note >}}
 
-   - If you want to configure more values, see [chart configurations for NFS-client](https://github.com/kubesphere/helm-charts/tree/master/src/main/nfs-client-provisioner#configuration).
+   - If you want to configure more values, see [chart configurations for NFS-client](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/main/nfs-client-provisioner#configuration).
    - The `storageClass.defaultClass` field controls whether you want to set the storage class of NFS-client Provisioner as the default one. If you enter `false` for it, KubeKey will install [OpenEBS](https://github.com/openebs/openebs) to provide local volumes, while they are not provisioned dynamically as you create workloads on your cluster. After you install KubeSphere, you can change the default storage class on the console directly.
 
    {{</ notice >}}
@@ -68,10 +68,10 @@ Follow the steps below to download [KubeKey](../../../installing-on-linux/introd
 
 {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command directly.
+Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly.
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -87,7 +87,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}
@@ -173,7 +173,7 @@ chmod +x kk
        sources:
          chart:
            name: nfs-client-provisioner
-           repo: https://charts.kubesphere.io/main
+           repo: https://charts.docs.kubesphere-carryon.top/main
            valuesFile: /home/ubuntu/nfs-client.yaml # Use the path of your own NFS-client configuration file.
    ...             
    ```
@@ -212,7 +212,7 @@ chmod +x kk
      2. Please change the default password after login.
    
    #####################################################
-   https://kubesphere.io             20xx-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
    #####################################################
    ```
 

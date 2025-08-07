@@ -106,70 +106,70 @@ members:
 activities:
   videos:
     - image: https://pek3b.qingstor.com/kubesphere-community/images/meetup-hangzhou-20240323-cover.png
-      link: https://kubesphere.io/zh/live/meetup-hangzhou-20240323/
+      link: https://docs.kubesphere-carryon.top/zh/live/meetup-hangzhou-20240323/
 
     - image: https://pek3b.qingstor.com/kubesphere-community/images/meetup-hangzhou-20230603-cover.png
-      link: https://kubesphere.io/zh/live/meetup-hangzhou-20230603/
+      link: https://docs.kubesphere-carryon.top/zh/live/meetup-hangzhou-20230603/
 
     - image: https://pek3b.qingstor.com/kubesphere-community/images/meetup-hangzhou-20220827-cover.png
-      link: https://kubesphere.io/zh/live/meetup-hangzhou-20220827/
+      link: https://docs.kubesphere-carryon.top/zh/live/meetup-hangzhou-20220827/
 
     - image: /images/user-group/shanghai/rotation/ex.png
-      link: https://kubesphere.io/zh/live/meetup-hangzhou1023/
+      link: https://docs.kubesphere-carryon.top/zh/live/meetup-hangzhou1023/
 
     - image: https://pek3b.qingstor.com/kubesphere-community/images/meetup-hangzhou-cover.png
-      link: https://kubesphere.io/zh/live/meetup-hangzhou/
+      link: https://docs.kubesphere-carryon.top/zh/live/meetup-hangzhou/
 
     - image: /images/user-group/hangzhou/fudata-kubesphere-cover.png
-      link: https://kubesphere.io/zh/live/fudata-kubesphere/
+      link: https://docs.kubesphere-carryon.top/zh/live/fudata-kubesphere/
 
     - image: http://pek3b.qingstor.com/kubesphere-community/images/zhijianglab-kubesphere-cover.png
-      link: https://kubesphere.io/zh/live/zhijianglab-kubesphere/
+      link: https://docs.kubesphere-carryon.top/zh/live/zhijianglab-kubesphere/
 
   review:
     - text: 让容器通信变得简单：深度解析 Containerd 中的 CNI 插件
       description: 了解 CNI 插件不仅可以帮助我们更好地管理 Kubernetes 集群，还能提升我们的整体运维效率。
-      link: https://kubesphere.io/zh/blogs/containerd-cni/
+      link: https://docs.kubesphere-carryon.top/zh/blogs/containerd-cni/
 
     - text: 超越预期：containerd 如何成为 Kubernetes 的首选容器运行时
       description: 通过专注于核心功能和深度集成，containerd 为容器管理提供了高效的解决方案。
-      link: https://kubesphere.io/zh/blogs/containerd-kubernetes/
+      link: https://docs.kubesphere-carryon.top/zh/blogs/containerd-kubernetes/
 
     - text: Kubernetes 升级不弃 Docker：KubeKey 的丝滑之道
       description: 手把手教你如何借助 KubeKey 这个神器，让你在给 Kubernetes “装修升级”的过程中既稳又顺，还能把 Docker 那些贴心好用的功能保留下来。
-      link: https://www.kubesphere.io/zh/blogs/upgrading-k8s-with-kubekey/
+      link: https://www.docs.kubesphere-carryon.top/zh/blogs/upgrading-k8s-with-kubekey/
 
     - text: 揭秘！KubeSphere 背后的“超级大脑”：etcd 的魅力与力量
       description: 我们将深入探索 etcd 如何巧妙地融入 KubeSphere 生态系统，并通过实际应用场景展示其对提升平台工作效率和可靠性的关键作用。
-      link: https://kubesphere.io/zh/blogs/kubesphere-etcd-guide/
+      link: https://docs.kubesphere-carryon.top/zh/blogs/kubesphere-etcd-guide/
 
     - text: 基于 KubeSphere 部署 KubeBlocks 实现数据库自由
       description: KubeSphere 让 KubeBlocks 更易部署和使用，KubeBlocks 让应用在 KubeSphere 上更灵活弹性。
-      link: https://kubesphere.io/zh/blogs/deploy-kubeblocks-on-kubesphere/
+      link: https://docs.kubesphere-carryon.top/zh/blogs/deploy-kubeblocks-on-kubesphere/
 
     - text: 微宏科技基于 KubeSphere 的微服务架构实践
       description: KubeSphere 为微宏科技提供了 GUI 化的 Kubernetes 集群管理、CI/CD 流水线、服务网格治理等功能，简化了云原生技术的运用。
-      link: https://kubesphere.io/zh/case/alphaflow/
+      link: https://docs.kubesphere-carryon.top/zh/case/alphaflow/
 
     - text: Curve 分布式存储在 KubeSphere 中的实践
       description: 文章中详细介绍了如何在 KubeSphere 中部署 Curve 分布式存储。
-      link: https://kubesphere.io/zh/blogs/kubesphere-curve/
+      link: https://docs.kubesphere-carryon.top/zh/blogs/kubesphere-curve/
 
     - text: 基于 JuiceFS 的 KubeSphere DevOps 项目数据迁移方案
       description: 本教程经过本地研发平台测试通过了使用开源项目 juiceFS-CSI 且后端依托 OSS 作为后端存储实现数据迁移的检验。
-      link: https://kubesphere.io/zh/blogs/kubesphere-data-migration-using-juicefs/
+      link: https://docs.kubesphere-carryon.top/zh/blogs/kubesphere-data-migration-using-juicefs/
 
     - text: 使用 KubeKey 快速离线部署 KubeSphere 集群
       description: 本教程使用 KubeKey 2.0.0 作为部署工具来实现 KubeSphere 集群在离线环境中的部署。
-      link: https://kubesphere.io/zh/blogs/deploying-kubesphere-clusters-offline-with-kubekey/
+      link: https://docs.kubesphere-carryon.top/zh/blogs/deploying-kubesphere-clusters-offline-with-kubekey/
 
     - text: Kubernetes 备份容灾服务产品体验教程
       description: KubeSphere Cloud 云原生备份容灾服务是 KubeSphere 团队针对混合云场景推出的 Kubernetes 备份容灾即服务产品。
-      link: https://kubesphere.io/zh/blogs/k8s-backup-disater-recovery-service/
+      link: https://docs.kubesphere-carryon.top/zh/blogs/k8s-backup-disater-recovery-service/
       
     - text: 在 Kubernetes 中使用 Rook 构建云原生存储环境
       description: 本文将介绍如何使用 Rook 来创建维护 Ceph 集群，并作为 Kubernetes 的持久化存储。
-      link: https://kubesphere.io/zh/blogs/rook-on-kubesphere/
+      link: https://docs.kubesphere-carryon.top/zh/blogs/rook-on-kubesphere/
 
 
 ---

@@ -6,8 +6,8 @@ export default async (request, context) => {
     return new Response(`
 <html>
   <head>
-    <meta name="go-import" content="kubesphere.io${url.pathname} git https://github.com/kubesphere${url.pathname}">
-    <meta name="go-source" content="kubesphere.io${url.pathname} _ https://github.com/kubesphere${url.pathname} https://github.com/kubesphere${url.pathname}/tree/master/{/dir} https://github.com/kubesphere${url.pathname}/blob/master/{/dir}/{/file}#L{/line}">
+    <meta name="go-import" content="docs.kubesphere-carryon.top${url.pathname} git https://github.com/whenegghitsrock${url.pathname}">
+    <meta name="go-source" content="docs.kubesphere-carryon.top${url.pathname} _ https://github.com/whenegghitsrock${url.pathname} https://github.com/whenegghitsrock${url.pathname}/tree/master/{/dir} https://github.com/whenegghitsrock${url.pathname}/blob/master/{/dir}/{/file}#L{/line}">
   </head>
 </html>`)
   }

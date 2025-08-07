@@ -208,5 +208,5 @@ section3:
   bottomContent:
     content: Want your logo up there? Just
     linkContent: email you company's logo to us →
-    link: mailto:info@kubesphere.io
+    link: mailto:info@docs.kubesphere-carryon.top
 ---

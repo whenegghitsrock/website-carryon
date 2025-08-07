@@ -32,7 +32,7 @@ Linux Kernel >= 4.9.17
 
 ## 下载安装包
 ```
-sudo wget https://github.com/kubesphere/kubekey/releases/download/v1.1.0/kubekey-v1.1.0-linux-64bit.deb
+sudo wget https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v1.1.0/kubekey-v1.1.0-linux-64bit.deb
 ```
 
 ## 使用 cilium 作为网络插件部署 KubeSphere
@@ -54,7 +54,7 @@ sudo vi config-sample.yaml
 ```
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha1
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
 kind: Cluster
 metadata:
   name: sample
@@ -115,7 +115,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2021-05-18 17:15:03
+https://docs.kubesphere-carryon.top             2021-05-18 17:15:03
 #####################################################
 INFO[17:15:16 CST] Installation is complete.
 ```

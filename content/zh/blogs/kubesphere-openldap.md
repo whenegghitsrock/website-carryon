@@ -23,7 +23,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/kubesphere-ope
 
 ## 前置条件
 
-您需要部署一个 K8s 集群，并在集群中安装 KubeSphere。有关详细信息，请参阅[在 Linux 上安装](https://kubesphere.io/zh/docs/v3.3/installing-on-linux/)和[在 Kubernetes 上安装](https://kubesphere.io/zh/docs/v3.3/installing-on-kubernetes/)。
+您需要部署一个 K8s 集群，并在集群中安装 KubeSphere。有关详细信息，请参阅[在 Linux 上安装](https://docs.kubesphere-carryon.top/zh/docs/v3.3/installing-on-linux/)和[在 Kubernetes 上安装](https://docs.kubesphere-carryon.top/zh/docs/v3.3/installing-on-kubernetes/)。
 
 ## KubeSphere 中部署 LDAP
 
@@ -159,7 +159,7 @@ userSearchFilter: (uid=customuser001)
 kubectl -n kubesphere-system edit cc ks-installer
 ```
 
-[内容如下，请参阅官方文档](https://kubesphere.io/zh/docs/v3.3/access-control-and-account-management/external-authentication/use-an-ldap-service/)。
+[内容如下，请参阅官方文档](https://docs.kubesphere-carryon.top/zh/docs/v3.3/access-control-and-account-management/external-authentication/use-an-ldap-service/)。
 
 ```yaml
 spec:
@@ -204,7 +204,7 @@ kubectl -n kubesphere-system logs ks-apiserver-xxxxxxxxx
 
 ### KubeSphere 配置验证
 
-[http://192.168.100.2:30880/kapis/config.kubesphere.io/v1alpha2/configs/oauth](http://192.168.100.2:30880/kapis/config.kubesphere.io/v1alpha2/configs/oauth)
+[http://192.168.100.2:30880/kapis/config.docs.kubesphere-carryon.top/v1alpha2/configs/oauth](http://192.168.100.2:30880/kapis/config.docs.kubesphere-carryon.top/v1alpha2/configs/oauth)
 
 验证配置内容已经正确更新：
 
@@ -216,8 +216,8 @@ kubectl -n kubesphere-system logs ks-apiserver-xxxxxxxxx
 kubectl edit user <KubeSphere username>
 
 labels:
-  iam.kubesphere.io/identify-provider: <LDAP service name>
-  iam.kubesphere.io/origin-uid: <LDAP username>
+  iam.docs.kubesphere-carryon.top/identify-provider: <LDAP service name>
+  iam.docs.kubesphere-carryon.top/origin-uid: <LDAP username>
 ```
 
 ## 测试使用 OpenLDAP
@@ -249,12 +249,12 @@ custompassword001
 ```bash
 #可以在 KubeSphere 中提前导入第三方（eg.ldap）账户并关联平台角色、企业空间
 cat << EOF | kubectl apply -f -
-apiVersion: iam.kubesphere.io/v1alpha2
+apiVersion: iam.docs.kubesphere-carryon.top/v1alpha2
 kind: User
 metadata:
   labels:
-    iam.kubesphere.io/identify-provider: <IDENTITY_PROVIDER_NAME> #这里指配置名称为：ldap
-    iam.kubesphere.io/origin-uid: <UID> #第三方账户的 UID
+    iam.docs.kubesphere-carryon.top/identify-provider: <IDENTITY_PROVIDER_NAME> #这里指配置名称为：ldap
+    iam.docs.kubesphere-carryon.top/origin-uid: <UID> #第三方账户的 UID
   name: <USERNAME> # 关联的 KubeSphere 账户名称
 spec:
   email: <EMAIL> # 关联的 KubeSphere 账户email
@@ -270,12 +270,12 @@ origin-uid:customuser002
 email:custompasswordaa@ks.com
 
 cat << EOF | kubectl apply -f -
-apiVersion: iam.kubesphere.io/v1alpha2
+apiVersion: iam.docs.kubesphere-carryon.top/v1alpha2
 kind: User
 metadata:
   labels:
-    iam.kubesphere.io/identify-provider: ldap
-    iam.kubesphere.io/origin-uid: customuser002
+    iam.docs.kubesphere-carryon.top/identify-provider: ldap
+    iam.docs.kubesphere-carryon.top/origin-uid: customuser002
   name: customuser002
 spec:
   email: custompasswordaa@ks.com
@@ -283,7 +283,7 @@ EOF
 
 root@i-9z8gtfm9:/home/ubuntu# kubectl get user
 NAME            EMAIL                     STATUS
-admin           admin@kubesphere.io       Active
+admin           admin@docs.kubesphere-carryon.top       Active
 customuser      customuser@ks.com         Active
 customuser001   customusera@example.com   Active
 customuser002   custompasswordaa@ks.com   Active
@@ -296,14 +296,14 @@ shl             shl@163.com               Active
 
 ```bash
 cat << EOF | kubectl apply -f -
-apiVersion: iam.kubesphere.io/v1alpha2
+apiVersion: iam.docs.kubesphere-carryon.top/v1alpha2
 kind: GlobalRoleBinding
 metadata:
   labels:
-    iam.kubesphere.io/user-ref: customuser001
+    iam.docs.kubesphere-carryon.top/user-ref: customuser001
   name: customuser001-platform-regular
 roleRef:
-  apiGroup: iam.kubesphere.io
+  apiGroup: iam.docs.kubesphere-carryon.top
   kind: GlobalRole
   name: platform-regular #查询平台已有的角色
 subjects:
@@ -325,22 +325,22 @@ customuser001-platform-regular   93s
 pre-registration                 139d
 shl-platform-regular             139d
 root@i-9z8gtfm9:/home/ubuntu# kubectl get globalrolebinding customuser001-platform-regular -oyaml
-apiVersion: iam.kubesphere.io/v1alpha2
+apiVersion: iam.docs.kubesphere-carryon.top/v1alpha2
 kind: GlobalRoleBinding
 metadata:
   annotations:
     kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"iam.kubesphere.io/v1alpha2","kind":"GlobalRoleBinding","metadata":{"annotations":{},"labels":{"iam.kubesphere.io/user-ref":"customuser001"},"name":"customuser001-platform-regular"},"roleRef":{"apiGroup":"iam.kubesphere.io","kind":"GlobalRole","name":"platform-regular"},"subjects":[{"apiGroup":"rbac.authorization.k8s.io","kind":"User","name":"customuser001"}]}
+      {"apiVersion":"iam.docs.kubesphere-carryon.top/v1alpha2","kind":"GlobalRoleBinding","metadata":{"annotations":{},"labels":{"iam.docs.kubesphere-carryon.top/user-ref":"customuser001"},"name":"customuser001-platform-regular"},"roleRef":{"apiGroup":"iam.docs.kubesphere-carryon.top","kind":"GlobalRole","name":"platform-regular"},"subjects":[{"apiGroup":"rbac.authorization.k8s.io","kind":"User","name":"customuser001"}]}
   creationTimestamp: "2023-01-03T08:34:23Z"
   generation: 1
   labels:
-    iam.kubesphere.io/user-ref: customuser001
+    iam.docs.kubesphere-carryon.top/user-ref: customuser001
     kubefed.io/managed: "false"
   name: customuser001-platform-regular
   resourceVersion: "3436734"
   uid: 9d7a18a6-b4c9-40f8-8186-7029575e5d2d
 roleRef:
-  apiGroup: iam.kubesphere.io
+  apiGroup: iam.docs.kubesphere-carryon.top
   kind: GlobalRole
   name: platform-regular
 subjects:
@@ -356,7 +356,7 @@ subjects:
 ```bash
 #这里注意多集群的企业空间差异
 cat << EOF | kubectl apply -f -
-apiVersion: tenant.kubesphere.io/v1alpha2
+apiVersion: tenant.docs.kubesphere-carryon.top/v1alpha2
 kind: WorkspaceTemplate
 metadata:
   name: app
@@ -375,15 +375,15 @@ EOF
 
 ```bash
 cat << EOF | kubectl apply -f -
-apiVersion: iam.kubesphere.io/v1alpha2
+apiVersion: iam.docs.kubesphere-carryon.top/v1alpha2
 kind: WorkspaceRoleBinding
 metadata:
   labels:
-    iam.kubesphere.io/user-ref: <USERNAME>
-    kubesphere.io/workspace: <WORKSPACE_NAME>
+    iam.docs.kubesphere-carryon.top/user-ref: <USERNAME>
+    docs.kubesphere-carryon.top/workspace: <WORKSPACE_NAME>
   name: <USERNAME>-<WORKSPACE_ROLE_NAME>
 roleRef:
-  apiGroup: iam.kubesphere.io
+  apiGroup: iam.docs.kubesphere-carryon.top
   kind: WorkspaceRole
   name: <WORKSPACE_ROLE_NAME>
 subjects:

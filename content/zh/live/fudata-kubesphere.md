@@ -40,13 +40,13 @@ KubeSphere 开源项目发起人周小四说：“保持 100% 的开源与开放
 
 ## 关于 KubeSphere
 
-KubeSphere （ https://kubesphere.io）是在 Kubernetes 之上构建的开源容器混合云，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。
+KubeSphere （ https://docs.kubesphere-carryon.top）是在 Kubernetes 之上构建的开源容器混合云，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。
 
 KubeSphere 已被 Aqara 智能家居、爱立信、本来生活、东软、华云、新浪、三一重工、华夏银行、四川航空、国药集团、微众银行、杭州数跑科技、紫金保险、去哪儿网、中通、中国人民银行、中国银行、中国人保寿险、中国太平保险、中国移动、中国联通、中国电信、天翼云、中移金科、Radore、ZaloPay 等海内外数千家企业采用。KubeSphere 提供了开发者友好的向导式操作界面和丰富的企业级功能，包括 Kubernetes 多云与多集群管理、DevOps (CI/CD)、应用生命周期管理、边缘计算、微服务治理 (Service Mesh)、多租户管理、可观测性、存储与网络管理、GPU support 等功能，帮助企业快速构建一个强大和功能丰富的容器云平台。
 
 
 
- ✨ GitHub： https://github.com/kubesphere
+ ✨ GitHub： https://github.com/whenegghitsrock
 
  💻 官网（中国站）： https://kubesphere.com.cn
 

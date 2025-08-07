@@ -6,7 +6,7 @@ linkTitle: "添加新节点"
 weight: 3610
 ---
 
-KubeSphere 使用一段时间之后，由于工作负载不断增加，您可能需要水平扩展集群。自 KubeSphere v3.0.0 起，您可以使用全新的安装程序 [KubeKey](https://github.com/kubesphere/kubekey) 将新节点添加到集群。从根本上说，该操作是基于 Kubelet 的注册机制。换言之，新节点将自动加入现有的 Kubernetes 集群。KubeSphere 支持混合环境，这意味着新添加的主机操作系统可以是 CentOS 或者 Ubuntu。
+KubeSphere 使用一段时间之后，由于工作负载不断增加，您可能需要水平扩展集群。自 KubeSphere v3.0.0 起，您可以使用全新的安装程序 [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) 将新节点添加到集群。从根本上说，该操作是基于 Kubelet 的注册机制。换言之，新节点将自动加入现有的 Kubernetes 集群。KubeSphere 支持混合环境，这意味着新添加的主机操作系统可以是 CentOS 或者 Ubuntu。
 
 本教程演示了如何将新节点添加到单节点集群。若要水平扩展多节点集群，操作步骤基本相同。
 
@@ -89,7 +89,7 @@ KubeSphere 使用一段时间之后，由于工作负载不断增加，您可能
 2. 打开文件，可以看到一些字段预先填充了值。将新节点和负载均衡器的信息添加到文件中。以下示例供您参考：
 
    ```yaml
-   apiVersion: kubekey.kubesphere.io/v1alpha1
+   apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
    kind: Cluster
    metadata:
      name: sample

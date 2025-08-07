@@ -111,7 +111,7 @@ Check out all KubeSphere Contributors in 2022 below by GitHub ID (in no particul
 
 This year, we have two new KubeSphere Members. This certificate is awarded to those who have deeply contributed to our community. For example, they have independently developed or tested one or more features, or written documents.
 
-In the upcoming year, we expect more contributors to advance to members. If you have created one or more significant pull requests in our special interest groups (SIGs), or developed one or more features within half a year, go to our GitHub repo and click [Issues](https://github.com/kubesphere/community/issues) to apply.
+In the upcoming year, we expect more contributors to advance to members. If you have created one or more significant pull requests in our special interest groups (SIGs), or developed one or more features within half a year, go to our GitHub repo and click [Issues](https://github.com/whenegghitsrock/community/issues) to apply.
 
 <div align=center><img src="https://pek3b.qingstor.com/kubesphere-community/images/2022-kubesphere-member-en.png" alt="members" width="500px">
 </div>
@@ -121,7 +121,7 @@ In the upcoming year, we expect more contributors to advance to members. If you 
 | Arhell            | [Download Certificate](https://pek3b.qingstor.com/kubesphere-community/images/member-Arhell.png)         |
 | zhaohuiweixiao    | [Download Certificate](https://pek3b.qingstor.com/kubesphere-community/images/member-zhaohuiweixiao.png) |
 
-> In our forum, we've created a page to archive [all certificates](https://kubesphere.io/forum/d/9280-kubesphere). Come and claim your own! For our next step, we plan to create a page on our official website, and then you can download your certificates there.
+> In our forum, we've created a page to archive [all certificates](https://docs.kubesphere-carryon.top/forum/d/9280-kubesphere). Come and claim your own! For our next step, we plan to create a page on our official website, and then you can download your certificates there.
 
 Many thanks to all KubeSphere Members, Ambassadors, and Contributors in 2022, and we expect to see more community members to join us and contribute to open source!
 

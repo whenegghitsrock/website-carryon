@@ -213,7 +213,7 @@ ln -s /data/containerd /var/lib/containerd
 
 ### 3.1 下载 KubeKey
 
-本文将 **master-1** 节点作为部署节点，把 KubeKey 最新版 (**v3.1.1**) 二进制文件下载到该服务器。具体 KubeKey 版本号可以在 [KubeKey release 页面](https://github.com/kubesphere/kubekey/releases)查看。
+本文将 **master-1** 节点作为部署节点，把 KubeKey 最新版 (**v3.1.1**) 二进制文件下载到该服务器。具体 KubeKey 版本号可以在 [KubeKey release 页面](https://github.com/whenegghitsrock/kubekey-carryon/releases)查看。
 
 - 下载最新版的 KubeKey
 
@@ -223,7 +223,7 @@ cd ~/kubekey/
 
 # 选择中文区下载(访问 GitHub 受限时使用)
 export KKZONE=cn
-curl -sfL https://get-kk.kubesphere.io | sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 ```
 
 - 正确的执行结果如下
@@ -232,7 +232,7 @@ curl -sfL https://get-kk.kubesphere.io | sh -
 [root@ksp-master-1 ~]# mkdir ~/kubekey
 [root@ksp-master-1 ~]# cd ~/kubekey/
 [root@ksp-master-1 kubekey]# export KKZONE=cn
-[root@ksp-master-1 kubekey]# curl -sfL https://get-kk.kubesphere.io | sh -
+[root@ksp-master-1 kubekey]# curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 
 Downloading kubekey v3.1.1 from https://kubernetes.pek3b.qingstor.com/kubekey/releases/download/v3.1.1/kubekey-v3.1.1-linux-amd64.tar.gz ...
 
@@ -280,7 +280,7 @@ KubeKey 支持的 K8s 版本还是比较新的。本文选择 **v1.28.8**，生�
 ./kk create config -f k8s-v1288.yaml --with-kubernetes v1.28.8
 ```
 
-> **注意：** 生成的默认配置文件内容较多，这里就不做过多展示了，更多详细的配置参数请参考 [官方配置示例](https://github.com/kubesphere/kubekey/blob/master/docs/config-example.md)。
+> **注意：** 生成的默认配置文件内容较多，这里就不做过多展示了，更多详细的配置参数请参考 [官方配置示例](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/config-example.md)。
 
 2. 修改配置文件
 
@@ -301,7 +301,7 @@ KubeKey 支持的 K8s 版本还是比较新的。本文选择 **v1.28.8**，生�
 修改后的完整示例如下：
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample
@@ -401,7 +401,7 @@ Greetings, KubeKey!
 
 This is a simple check of your environment.
 Before installation, ensure that your machines meet all requirements specified at
-https://github.com/kubesphere/kubekey#requirements-and-recommendations
+https://github.com/whenegghitsrock/kubekey-carryon#requirements-and-recommendations
 
 Continue this installation? [yes/no]:
 ```

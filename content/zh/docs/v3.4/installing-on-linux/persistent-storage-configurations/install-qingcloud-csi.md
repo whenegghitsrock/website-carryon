@@ -58,7 +58,7 @@ weight: 3320
    | 广东2区-A/广东2区-B                     | gd2a/gd2b               |
    | 亚太2区-A                               | ap2a                    |
 
-   如果想要配置更多的值，请参见 [QingCloud CSI Chart 配置](https://github.com/kubesphere/helm-charts/tree/master/src/test/csi-qingcloud#configuration)。
+   如果想要配置更多的值，请参见 [QingCloud CSI Chart 配置](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/test/csi-qingcloud#configuration)。
    
 3. 保存文件。
 
@@ -70,10 +70,10 @@ weight: 3320
 
 {{< tab "如果您能够正常访问 GitHub/Googleapis" >}}
 
-从 [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) 下载 KubeKey 或者直接运行以下命令。
+从 [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) 下载 KubeKey 或者直接运行以下命令。
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -89,7 +89,7 @@ export KKZONE=cn
 运行以下命令下载 KubeKey：
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}
@@ -175,7 +175,7 @@ chmod +x kk
        sources:
          chart:
            name: csi-qingcloud
-           repo: https://charts.kubesphere.io/test
+           repo: https://charts.docs.kubesphere-carryon.top/test
            valuesFile: /root/csi-qingcloud.yaml
    ...
    ```
@@ -220,7 +220,7 @@ chmod +x kk
      2. Please change the default password after login.
    
    #####################################################
-   https://kubesphere.io             20xx-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
    #####################################################
    ```
 

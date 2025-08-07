@@ -133,7 +133,7 @@ Kubernetes 事件通常表示集群中的某些状态变化，作为 Kubernetes 
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/kubecon-2023-alerting-9.png)
 
-在 KubeSphere 中，事件规则实例中的 `kubesphere.io/rule-scope` 标签可用于限制规则的生效范围：
+在 KubeSphere 中，事件规则实例中的 `docs.kubesphere-carryon.top/rule-scope` 标签可用于限制规则的生效范围：
 - cluster：适用于集群中的所有事件。
 - workspace：适用于属于同一工作区的多个命名空间中的事件。必须在规则实例中指定 `workspace` 标签。
 - namespace：规则实例所在的 namespace 需要与事件涉及对象所在的 namespace 相匹配。

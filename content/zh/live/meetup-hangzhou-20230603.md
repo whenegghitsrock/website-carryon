@@ -18,9 +18,9 @@ section1:
 
 自 2021 年起，KubeSphere 社区已在杭州组织了 3 场 Meetup，贡献了 17 个精彩议题分享。
 
-- [KubeSphere & Friends 2021 Meetup -杭州站全程回顾](https://www.kubesphere.io/zh/live/meetup-hangzhou/)
-- [云原生技术交流 Meetup 杭州站（10.23）回放视频 & PPT 分享](https://www.kubesphere.io/zh/live/meetup-hangzhou1023/)
-- [云原生 Meetup 杭州站精彩回顾（视频回放 + PPT）](https://www.kubesphere.io/zh/live/meetup-hangzhou-20220827/)
+- [KubeSphere & Friends 2021 Meetup -杭州站全程回顾](https://www.docs.kubesphere-carryon.top/zh/live/meetup-hangzhou/)
+- [云原生技术交流 Meetup 杭州站（10.23）回放视频 & PPT 分享](https://www.docs.kubesphere-carryon.top/zh/live/meetup-hangzhou1023/)
+- [云原生 Meetup 杭州站精彩回顾（视频回放 + PPT）](https://www.docs.kubesphere-carryon.top/zh/live/meetup-hangzhou-20220827/)
 
 **此次 Meetup 由 KubeSphere 社区联合极狐 GitLab 及 Curve 社区共同组织，为大家带来 4 个分享以及 1 场 WorkShop。**
 

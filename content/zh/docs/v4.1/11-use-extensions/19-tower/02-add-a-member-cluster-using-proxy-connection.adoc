@@ -48,7 +48,7 @@ tower      LoadBalancer    10.233.63.191   139.198.110.23  8080:30721/TCP       
 |说明
 
 |
-主流公有云厂商一般会提供 LoadBalancer 解决方案，并且负载均衡器可以自动分配外部 IP。如果您的集群运行在本地环境中，尤其是在裸机环境中，可以使用 link:https://github.com/kubesphere/openelb[OpenELB] 作为负载均衡器解决方案。
+主流公有云厂商一般会提供 LoadBalancer 解决方案，并且负载均衡器可以自动分配外部 IP。如果您的集群运行在本地环境中，尤其是在裸机环境中，可以使用 link:https://github.com/whenegghitsrock/openelb[OpenELB] 作为负载均衡器解决方案。
 |===
 
 === 集群中没有可用的 LoadBalancer

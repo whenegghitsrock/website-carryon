@@ -93,4 +93,4 @@ weight: 18093
 
 - Fix the issue that the Monitoring Target field is displayed blank.
 
-For more information about issues and contributors of KubeSphere 3.4.1, see [GitHub](https://github.com/kubesphere/kubesphere/blob/master/CHANGELOG/CHANGELOG-3.4.1.md).
+For more information about issues and contributors of KubeSphere 3.4.1, see [GitHub](https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/CHANGELOG/CHANGELOG-3.4.1.md).

@@ -7,9 +7,9 @@ weight: 10640
 
 ---
 
-当您了解了 Source-to-Image (S2I) 的工作流和逻辑，就可以根据您的项目自定义镜像构建器模板（即 S2I / B2I 模板），以扩展 S2I 功能。KubeSphere 提供了几种常见的镜像构建器模板，如 [Python ](https://github.com/kubesphere/s2i-python-container/)和  [Java](https://github.com/kubesphere/s2i-java-container/)。 
+当您了解了 Source-to-Image (S2I) 的工作流和逻辑，就可以根据您的项目自定义镜像构建器模板（即 S2I / B2I 模板），以扩展 S2I 功能。KubeSphere 提供了几种常见的镜像构建器模板，如 [Python ](https://github.com/whenegghitsrock/s2i-python-container/)和  [Java](https://github.com/whenegghitsrock/s2i-java-container/)。 
 
-本教程演示如何创建包含 Nginx 服务的镜像构建器。如果需要在项目中使用运行时镜像，请参阅[本文档](https://github.com/kubesphere/s2irun/blob/master/docs/runtime_image.md)以了解有关如何创建运行时镜像的更多信息。
+本教程演示如何创建包含 Nginx 服务的镜像构建器。如果需要在项目中使用运行时镜像，请参阅[本文档](https://github.com/whenegghitsrock/s2irun/blob/master/docs/runtime_image.md)以了解有关如何创建运行时镜像的更多信息。
 
 ## 准备工作
 
@@ -27,7 +27,7 @@ S2I 模板自定义分成两部分。
 
 {{< notice note >}}
 
-与 OpenShift 的镜像构建器兼容，您可以在 KubeSphere 中重用它。有关 S2I 镜像构建器的更多信息，请参见 [S2IRun](https://github.com/kubesphere/s2irun/blob/master/docs/builder_image.md#s2i-builder-image-requirements)。
+与 OpenShift 的镜像构建器兼容，您可以在 KubeSphere 中重用它。有关 S2I 镜像构建器的更多信息，请参见 [S2IRun](https://github.com/whenegghitsrock/s2irun/blob/master/docs/builder_image.md#s2i-builder-image-requirements)。
 
 {{</ notice >}}
 
@@ -120,7 +120,7 @@ CMD ["/usr/libexec/s2i/usage"]
 
 {{< notice note >}}
 
-S2I 脚本将使用 Dockerfile 中定义的标志作为参数。如果您需要使用与 KubeSphere 提供的基础镜像不同的基础镜像，请参见 [S2I Scripts](https://github.com/kubesphere/s2irun/blob/master/docs/builder_image.md#s2i-scripts)。
+S2I 脚本将使用 Dockerfile 中定义的标志作为参数。如果您需要使用与 KubeSphere 提供的基础镜像不同的基础镜像，请参见 [S2I Scripts](https://github.com/whenegghitsrock/s2irun/blob/master/docs/builder_image.md#s2i-scripts)。
 
 {{</ notice >}}
 
@@ -169,7 +169,7 @@ S2I 脚本将使用 Dockerfile 中定义的标志作为参数。如果您需要�
    #!/bin/bash -e
    cat <<EOF
    This is the nginx-centos7 S2I image:
-   To use it, install S2I: https://github.com/kubesphere/s2i-operator
+   To use it, install S2I: https://github.com/whenegghitsrock/s2i-operator
    Sample invocation:
    s2i build test/test-app kubespheredev/nginx-centos7 nginx-centos7-app
    You can then run the resulting image via:
@@ -256,12 +256,12 @@ S2I 脚本将使用 Dockerfile 中定义的标志作为参数。如果您需要�
 #### s2ibuildertemplate.yaml
 
 ```yaml
-apiVersion: devops.kubesphere.io/v1alpha1
+apiVersion: devops.docs.kubesphere-carryon.top/v1alpha1
 kind: S2iBuilderTemplate
 metadata:
   labels:
     controller-tools.k8s.io: "1.0"
-    builder-type.kubesphere.io/s2i: "s2i"
+    builder-type.docs.kubesphere-carryon.top/s2i: "s2i"
   name: nginx-demo
 spec:
   containerInfo:
@@ -278,7 +278,7 @@ spec:
 
  ```bash
    $ kubectl apply -f s2ibuildertemplate.yaml
-   s2ibuildertemplate.devops.kubesphere.io/nginx created
+   s2ibuildertemplate.devops.docs.kubesphere-carryon.top/nginx created
  ```
 
 2. 在 KubeSphere 上创建 S2I 构建时，可以在**构建环境**中找到自定义 S2I 模板。
@@ -289,9 +289,9 @@ spec:
 
 | 标签名称                              | 选项                 | 定义                                                         |
 | ------------------------------------- | -------------------- | ------------------------------------------------------------ |
-| builder-type.kubesphere.io/s2i: "s2i" | "s2i"                | 模板类型为 S2I，基于应用程序源代码构建镜像。                 |
-| builder-type.kubesphere.io/b2i        | "b2i"                | 模板类型为 B2I，基于二进制文件或其他制品构建镜像。           |
-| binary-type.kubesphere.io             | "jar","war","binary" | 该类型为 B2I 类型的补充，在选择 B2I 类型时需要。例如，当提供 Jar 包时，选择 "jar" 类型。在 KubeSphere v2.1.1 及更高版本，允许自定义 B2I 模板。 |
+| builder-type.docs.kubesphere-carryon.top/s2i: "s2i" | "s2i"                | 模板类型为 S2I，基于应用程序源代码构建镜像。                 |
+| builder-type.docs.kubesphere-carryon.top/b2i        | "b2i"                | 模板类型为 B2I，基于二进制文件或其他制品构建镜像。           |
+| binary-type.docs.kubesphere-carryon.top             | "jar","war","binary" | 该类型为 B2I 类型的补充，在选择 B2I 类型时需要。例如，当提供 Jar 包时，选择 "jar" 类型。在 KubeSphere v2.1.1 及更高版本，允许自定义 B2I 模板。 |
 
 参见以下 S2I 模板参数的详细说明。必需参数用星号标记。
 

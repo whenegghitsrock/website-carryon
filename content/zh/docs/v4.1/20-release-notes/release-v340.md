@@ -153,4 +153,4 @@ weight: 47
 - 修复容器组列表页按状态查询时，显示的状态与筛选的结果不一致的问题。
 - 查询 Secret 支持 fieldSelector 筛选。
 
-有关 KubeSphere 3.4.0 的 Issue 和贡献者详细信息，请参阅 [GitHub](https://github.com/kubesphere/kubesphere/blob/master/CHANGELOG/CHANGELOG-3.4.0.md)。
+有关 KubeSphere 3.4.0 的 Issue 和贡献者详细信息，请参阅 [GitHub](https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/CHANGELOG/CHANGELOG-3.4.0.md)。

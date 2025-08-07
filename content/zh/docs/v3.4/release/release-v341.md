@@ -93,4 +93,4 @@ weight: 18093
 
 - 修复监控目标显示为空。
 
-有关 KubeSphere 3.4.1 的 Issue 和贡献者详细信息，请参阅 [GitHub](https://github.com/kubesphere/kubesphere/blob/master/CHANGELOG/CHANGELOG-3.4.1.md)。
+有关 KubeSphere 3.4.1 的 Issue 和贡献者详细信息，请参阅 [GitHub](https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/CHANGELOG/CHANGELOG-3.4.1.md)。

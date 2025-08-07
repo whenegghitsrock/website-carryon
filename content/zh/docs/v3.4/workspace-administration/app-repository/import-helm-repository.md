@@ -23,7 +23,7 @@ KubeSphere 构建的应用仓库可以让用户使用基于 Helm Chart 的 Kuber
 
 1. 以 `ws-admin` 身份登录 KubeSphere Web 控制台。在企业空间页面，转到**应用管理**下的**应用仓库**，然后点击**添加**。
 
-2. 在弹出的对话框中，输入应用仓库名称并添加仓库 URL。例如，输入 `https://charts.kubesphere.io/main`。
+2. 在弹出的对话框中，输入应用仓库名称并添加仓库 URL。例如，输入 `https://charts.docs.kubesphere-carryon.top/main`。
 
     - **名称**：为仓库设置一个简洁明了的名称，方便用户识别。
     - **URL**：遵循 RFC 3986 规范并支持以下三种协议：

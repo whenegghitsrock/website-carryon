@@ -6,7 +6,7 @@ linkTitle: "Set Up an HA Cluster Using the Internal HAProxy of KubeKey"
 weight: 3210
 ---
 
-[KubeKey](https://github.com/kubesphere/kubekey) is an easy-to-use tool for creating Kubernetes clusters. Starting from v1.2.1, KubeKey provides a built-in high availability mode to simplify the creation of highly available Kubernetes clusters. The high availability mode that KubeKey implements is called local load balancing mode. KubeKey deploys a load balancer (HAProxy) on each worker node, and the Kubernetes components on all control planes connect to their local kube-apiserver. The Kubernetes components on each worker node, on the other hand, connect to the kube-apiserver of multiple control planes through a reverse proxy, namely the load balancer deployed by KubeKey. Although this mode is less efficient than a dedicated load balancer because additional health check mechanisms are introduced, it brings a more practical, efficient, and convenient high availability deployment mode when current environment cannot provide an external load balancer or virtual IP (VIP).
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) is an easy-to-use tool for creating Kubernetes clusters. Starting from v1.2.1, KubeKey provides a built-in high availability mode to simplify the creation of highly available Kubernetes clusters. The high availability mode that KubeKey implements is called local load balancing mode. KubeKey deploys a load balancer (HAProxy) on each worker node, and the Kubernetes components on all control planes connect to their local kube-apiserver. The Kubernetes components on each worker node, on the other hand, connect to the kube-apiserver of multiple control planes through a reverse proxy, namely the load balancer deployed by KubeKey. Although this mode is less efficient than a dedicated load balancer because additional health check mechanisms are introduced, it brings a more practical, efficient, and convenient high availability deployment mode when current environment cannot provide an external load balancer or virtual IP (VIP).
 
 This document describes how to use the built-in high availability mode when installing KubeSphere on Linux.
 
@@ -30,10 +30,10 @@ Refer to the following steps to download KubeKey.
 
 {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-Download KubeKey from [its GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or run the following command.
+Download KubeKey from [its GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or run the following command.
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -49,7 +49,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}
@@ -193,6 +193,6 @@ After you complete the configuration, run the following command to start install
      2. Please change the default password after login.
    
    #####################################################
-   https://kubesphere.io             2020-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             2020-xx-xx xx:xx:xx
    #####################################################
    ```

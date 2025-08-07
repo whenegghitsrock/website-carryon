@@ -54,7 +54,7 @@ metadata:
    name: csi-rbd-sc
    annotations:
      storageclass.beta.kubernetes.io/is-default-class: "true"
-     storageclass.kubesphere.io/supported-access-modes: '["ReadWriteOnce","ReadOnlyMany","ReadWriteMany"]'
+     storageclass.docs.kubesphere-carryon.top/supported-access-modes: '["ReadWriteOnce","ReadOnlyMany","ReadWriteMany"]'
 provisioner: rbd.csi.ceph.com
 parameters:
    clusterID: "cluster1"
@@ -108,7 +108,7 @@ sc:
   isDefault: false
 ```
 
-如果你想配置更多的参数，请参见 [RBD-Provisioner 的 chart 配置](https://github.com/kubesphere/helm-charts/tree/master/src/test/rbd-provisioner#configuration)。
+如果你想配置更多的参数，请参见 [RBD-Provisioner 的 chart 配置](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/test/rbd-provisioner#configuration)。
 
 #### 插件配置
 
@@ -120,7 +120,7 @@ sc:
   sources:
     chart:
       name: rbd-provisioner
-      repo: https://charts.kubesphere.io/test
+      repo: https://charts.docs.kubesphere-carryon.top/test
       valuesFile: /root/rbd-provisioner.yaml
 ```
 

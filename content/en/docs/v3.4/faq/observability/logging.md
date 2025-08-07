@@ -30,7 +30,7 @@ If you are using the KubeSphere internal Elasticsearch and want to change it to 
 2. Comment out `es.elasticsearchDataXXX`, `es.elasticsearchMasterXXX` and `status.logging`, and set `es.externalElasticsearchHost` to the address of your Elasticsearch and `es.externalElasticsearchPort` to its port number. Below is an example for your reference.
 
    ```yaml
-   apiVersion: installer.kubesphere.io/v1alpha1
+   apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
    kind: ClusterConfiguration
    metadata:
      name: ks-installer
@@ -100,7 +100,7 @@ You need to update the KubeKey configuration and rerun `ks-installer`.
   
 
    ```yaml
-   apiVersion: installer.kubesphere.io/v1alpha1
+   apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
    kind: ClusterConfiguration
    metadata:
      name: ks-installer
@@ -160,4 +160,4 @@ kubectl edit input -n kubesphere-logging-system tail
 
 Update the field `Input.Spec.Tail.ExcludePath`. For example, set the path to `/var/log/containers/*_kube*-system_*.log` to exclude any log from system components.
 
-For more information, see [Fluent Operator](https://github.com/kubesphere/fluentbit-operator).
+For more information, see [Fluent Operator](https://github.com/whenegghitsrock/fluentbit-operator).

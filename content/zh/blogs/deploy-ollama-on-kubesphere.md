@@ -87,7 +87,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/ollama-on-kube
 修改后的示例如下：
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: opsxlab

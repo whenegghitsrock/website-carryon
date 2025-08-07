@@ -141,11 +141,11 @@ kubectl patch pvc <pvc-name> -p '{"metadata":{"finalizers":null}}'
 - **创建快照**：创建一个持久性声明快照，可用于创建其他持久性声明。有关更多信息，请参阅[卷快照](../volume-snapshots/)。
 - **扩容**：增加持久性声明的容量。请注意，您无法在控制台上减少持久性声明的容量，因为数据可能会因此丢失。
 
-有关 `Storage Capability` 的更多信息，请参阅[设计文档](https://github.com/kubesphere/community/blob/master/sig-storage/concepts-and-designs/storage-capability-interface.md)。
+有关 `Storage Capability` 的更多信息，请参阅[设计文档](https://github.com/whenegghitsrock/community/blob/master/sig-storage/concepts-and-designs/storage-capability-interface.md)。
 
 {{< notice note >}}
 
-`Storage Capability` 可能尚未覆盖一些树内 (in-tree) 或特殊的 CSI 插件。如果某些功能在 KubeSphere 集群中没有正确显示，您可以按照[此文档](https://github.com/kubesphere/kubesphere/issues/2986)修改设置。
+`Storage Capability` 可能尚未覆盖一些树内 (in-tree) 或特殊的 CSI 插件。如果某些功能在 KubeSphere 集群中没有正确显示，您可以按照[此文档](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2986)修改设置。
 
 {{</ notice >}} 
 
@@ -153,7 +153,7 @@ kubectl patch pvc <pvc-name> -p '{"metadata":{"finalizers":null}}'
 
 KubeSphere 从 Kubelet 获取 `Filesystem` 模式的 PVC 的指标数据（包括容量使用情况和 inode 使用情况），从而对持久性声明进行监控。
 
-有关持久性声明监控的更多信息，请参阅 [Research on Volume Monitoring](https://github.com/kubesphere/kubesphere/issues/2921)。
+有关持久性声明监控的更多信息，请参阅 [Research on Volume Monitoring](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2921)。
 ## 查看持久卷列表并管理持久卷
 
 ### 查看持久卷列表

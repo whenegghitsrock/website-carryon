@@ -207,7 +207,7 @@ Access your app at `<NodeIP>:<NodePort>`.
 
 **Internal Links**
 
-For links that direct readers to an internal website of KubeSphere, use relative links. For example, you want to add the link https://kubesphere.io/docs/introduction/what-is-kubesphere/ to "What is KubeSphere" in an internal guide in KubeSphere Documentation, the relative link can be:
+For links that direct readers to an internal website of KubeSphere, use relative links. For example, you want to add the link https://docs.kubesphere-carryon.top/docs/introduction/what-is-kubesphere/ to "What is KubeSphere" in an internal guide in KubeSphere Documentation, the relative link can be:
 
 ../../../introduction/what-is-kubesphere/
 

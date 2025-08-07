@@ -95,7 +95,7 @@ section2:
     - title:
       contentList:
         - content: 1. 用户 Users：
-        - content: 用户是 KubeSphere 的帐户实例，是登陆 KubeSphere 控制台的实体账号，在 KubeSphere 中使用 users.iam.kubesphere.io 资源对用户进行抽象。
+        - content: 用户是 KubeSphere 的帐户实例，是登陆 KubeSphere 控制台的实体账号，在 KubeSphere 中使用 users.iam.docs.kubesphere-carryon.top 资源对用户进行抽象。
       image: https://pek3b.qingstor.com/kubesphere-community/images/168923992925029.png
     - title:
       contentList:
@@ -108,7 +108,7 @@ section2:
     - title:
       contentList:
         - content: 平台角色 globalroles：
-        - content: 在 KubeSphere 中平台角色使用 globalroles.iam.kubesphere.io 资源抽象。安装成功后，会预创建 4 个内置的平台角色，每个平台角色实际又关联着一个或多个平台模板角色（平台角色的权限是关联模板角色权限的集合）。
+        - content: 在 KubeSphere 中平台角色使用 globalroles.iam.docs.kubesphere-carryon.top 资源抽象。安装成功后，会预创建 4 个内置的平台角色，每个平台角色实际又关联着一个或多个平台模板角色（平台角色的权限是关联模板角色权限的集合）。
       image: https://pek3b.qingstor.com/kubesphere-community/images/eastcom-kubesphere-yyy.png
     - title:
       contentList:
@@ -125,7 +125,7 @@ section2:
     - title:
       contentList:
         - content: 平台角色绑定 globalrolebindings：
-        - content: 创建用户后，需要为用户分配一个平台角色，使用 globalrolebindings.iam.kubesphere.io 资源来抽象用户和平台角色的绑定关系。
+        - content: 创建用户后，需要为用户分配一个平台角色，使用 globalrolebindings.iam.docs.kubesphere-carryon.top 资源来抽象用户和平台角色的绑定关系。
       image: https://pek3b.qingstor.com/kubesphere-community/images/168923992923810.png
     - title:
       contentList:
@@ -142,9 +142,9 @@ section2:
     - title:
       contentList:
         - content: 2. 企业空间 WorkSpace
-        - content: 企业空间是 KubeSphere 中用来管理项目、DevOps 项目、应用模板和应用仓库的一种逻辑单元。可以在企业空间中控制资源访问权限，也可以安全地在团队内部分享资源。在 KubeSphere 中使用 workspaces.tenant.kubesphere.io 和 workspacesTemplate.tenant.kubesphere.io 资源对企业空间进行抽象。
+        - content: 企业空间是 KubeSphere 中用来管理项目、DevOps 项目、应用模板和应用仓库的一种逻辑单元。可以在企业空间中控制资源访问权限，也可以安全地在团队内部分享资源。在 KubeSphere 中使用 workspaces.tenant.docs.kubesphere-carryon.top 和 workspacesTemplate.tenant.docs.kubesphere-carryon.top 资源对企业空间进行抽象。
         - content: 企业空间角色 workspaceroles： 
-        - content: 在 KubeSphere 中企业空间角色使用 workspaceroles.iam.kubesphere.io 资源抽象。安装成功后，会预创建 4 个内置的企业空间角色，每个企业空间角色实际又关联着一个或多个企业空间模板角色（企业空间角色的权限是关联企业空间模板角色权限的集合）。
+        - content: 在 KubeSphere 中企业空间角色使用 workspaceroles.iam.docs.kubesphere-carryon.top 资源抽象。安装成功后，会预创建 4 个内置的企业空间角色，每个企业空间角色实际又关联着一个或多个企业空间模板角色（企业空间角色的权限是关联企业空间模板角色权限的集合）。
       image: https://pek3b.qingstor.com/kubesphere-community/images/eastcom-kubesphere-zzz.png
     - title:
       contentList:
@@ -161,7 +161,7 @@ section2:
     - title:
       contentList:
         - content: 企业空间角色绑定 workspacerolebindings：
-        - content: 在企业空间中，可以在企业空间成员处邀请用户加入企业空间，邀请用户加入时，还需要为其分配企业空间角色，使用 workspacerolebindings.iam.kubesphere.io 资源来抽象用户和企业空间角色的绑定关系。
+        - content: 在企业空间中，可以在企业空间成员处邀请用户加入企业空间，邀请用户加入时，还需要为其分配企业空间角色，使用 workspacerolebindings.iam.docs.kubesphere-carryon.top 资源来抽象用户和企业空间角色的绑定关系。
       image: https://pek3b.qingstor.com/kubesphere-community/images/168923992923917.png
     - title:
       contentList:

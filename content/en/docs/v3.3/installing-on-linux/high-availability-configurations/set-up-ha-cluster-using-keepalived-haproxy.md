@@ -259,16 +259,16 @@ Before you start to create your Kubernetes cluster, make sure you have tested th
 
 ## Use KubeKey to Create a Kubernetes Cluster
 
-[KubeKey](https://github.com/kubesphere/kubekey) is an efficient and convenient tool to create a Kubernetes cluster. Follow the steps below to download KubeKey.
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) is an efficient and convenient tool to create a Kubernetes cluster. Follow the steps below to download KubeKey.
 
 {{< tabs >}}
 
 {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command directly.
+Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly.
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{</ tab >}}
@@ -284,7 +284,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{< notice note >}}
@@ -409,6 +409,6 @@ After you complete the configuration, you can execute the following command to s
      2. Please change the default password after login.
    
    #####################################################
-   https://kubesphere.io             2020-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             2020-xx-xx xx:xx:xx
    #####################################################
    ```

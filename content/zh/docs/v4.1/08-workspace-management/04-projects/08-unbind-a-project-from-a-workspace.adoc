@@ -18,7 +18,7 @@ weight: 08
 
 [,bash]
 ----
-kubectl label ns <namespace> kubesphere.io/workspace- && kubectl patch ns <namespace>   -p '{"metadata":{"ownerReferences":[]}}' --type=merge
+kubectl label ns <namespace> docs.kubesphere-carryon.top/workspace- && kubectl patch ns <namespace>   -p '{"metadata":{"ownerReferences":[]}}' --type=merge
 ----
 
 [.admon.note,cols="a"]
@@ -35,7 +35,7 @@ kubectl label ns <namespace> kubesphere.io/workspace- && kubectl patch ns <names
 
 [,bash]
 ----
-kubectl delete rolebindings.iam.kubesphere.io -n <namespace> --all
+kubectl delete rolebindings.iam.docs.kubesphere-carryon.top -n <namespace> --all
 ----
 
 == 3. 纳管到新的企业空间

@@ -6,9 +6,9 @@ linkTitle: "Overview"
 weight: 3110
 ---
 
-As an open-source project on [GitHub](https://github.com/kubesphere), KubeSphere is home to a community with thousands of users. Many of them are running KubeSphere for their production workloads. For the installation on Linux, KubeSphere can be deployed both in clouds and in on-premises environments, such as AWS EC2, Azure VM and bare metal.
+As an open-source project on [GitHub](https://github.com/whenegghitsrock), KubeSphere is home to a community with thousands of users. Many of them are running KubeSphere for their production workloads. For the installation on Linux, KubeSphere can be deployed both in clouds and in on-premises environments, such as AWS EC2, Azure VM and bare metal.
 
-The installation process is easy and friendly as KubeSphere provides users with [KubeKey](https://github.com/kubesphere/kubekey), a lightweight installer that supports the installation of Kubernetes, KubeSphere and related add-ons. KubeKey not only helps users to create clusters online but also serves as an air-gapped installation solution.
+The installation process is easy and friendly as KubeSphere provides users with [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon), a lightweight installer that supports the installation of Kubernetes, KubeSphere and related add-ons. KubeKey not only helps users to create clusters online but also serves as an air-gapped installation solution.
 
 Here is a list of available installation options.
 
@@ -39,7 +39,7 @@ If you have an existing Kubernetes cluster, see [Overview of Installing on Kuber
 
 ## KubeKey
 
-[KubeKey](https://github.com/kubesphere/kubekey) provides an efficient approach to the installation and configuration of your cluster. You can use it to create, scale, and upgrade your Kubernetes cluster. It also allows you to install cloud-native add-ons (YAML or Chart) as you set up your cluster. For more information, see [KubeKey](../kubekey).
+[KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) provides an efficient approach to the installation and configuration of your cluster. You can use it to create, scale, and upgrade your Kubernetes cluster. It also allows you to install cloud-native add-ons (YAML or Chart) as you set up your cluster. For more information, see [KubeKey](../kubekey).
 
 ## Quick Installation for Development and Testing
 

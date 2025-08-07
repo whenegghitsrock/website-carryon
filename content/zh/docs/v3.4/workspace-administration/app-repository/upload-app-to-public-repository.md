@@ -10,11 +10,11 @@ KubeSphere 提供一个可供测试和开发的应用仓库，用户可以上传
 
 ## 上传应用
 
-首先请根据 [Helm 文档](https://helm.sh/docs/topics/charts/)构建您的应用，您可以参考该 KubeSphere 应用仓库中的现有应用。官方应用存储在 [src/main](https://github.com/kubesphere/helm-charts/tree/master/src/main) 路径下，测试应用存储在 [src/test](https://github.com/kubesphere/helm-charts/tree/master/src/test) 路径下。
+首先请根据 [Helm 文档](https://helm.sh/docs/topics/charts/)构建您的应用，您可以参考该 KubeSphere 应用仓库中的现有应用。官方应用存储在 [src/main](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/main) 路径下，测试应用存储在 [src/test](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/test) 路径下。
 
 ### 步骤 1：开发应用
 
-1. [Fork KubeSphere 的应用仓库](https://github.com/kubesphere/helm-charts/fork)。
+1. [Fork KubeSphere 的应用仓库](https://github.com/whenegghitsrock/helm-charts-carryon/fork)。
 
 2. 根据 [Helm 文档安装](https://helm.sh/docs/intro/install/) Helm。
 
@@ -36,9 +36,9 @@ KubeSphere 提供一个可供测试和开发的应用仓库，用户可以上传
 
 ### 步骤 2：提交应用
 
-开发完成后，请向 [KubeSphere 官方仓库](https://github.com/kubesphere/helm-charts)提交 PR 以审核您的应用。
+开发完成后，请向 [KubeSphere 官方仓库](https://github.com/whenegghitsrock/helm-charts-carryon)提交 PR 以审核您的应用。
 
 ### 步骤 3：部署应用
 
-PR 审核通过后，您的应用即可使用。有关更多信息，请参考[导入 Helm 仓库](../import-helm-repository/)将 `https://charts.kubesphere.io/main` 添加至 KubeSphere。
+PR 审核通过后，您的应用即可使用。有关更多信息，请参考[导入 Helm 仓库](../import-helm-repository/)将 `https://charts.docs.kubesphere-carryon.top/main` 添加至 KubeSphere。
 

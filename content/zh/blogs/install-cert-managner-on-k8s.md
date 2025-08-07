@@ -17,7 +17,7 @@ cert-manager（`https://cert-manager.io/`）是 Kubernetes 原生的证书管理
 ### 准备工作
 
 1. 需要一个公网可访问的 IP，例如 `139.198.121.121`
-2. 需要一个域名，并且已经解析到到对应的IP，例如 ` A kubesphere.io 139.198.121.121`，我们将 `staging.kubesphere.io` 域名解析到了 `139.198.121.121`
+2. 需要一个域名，并且已经解析到到对应的IP，例如 ` A docs.kubesphere-carryon.top 139.198.121.121`，我们将 `staging.docs.kubesphere-carryon.top` 域名解析到了 `139.198.121.121`
 3. 在KubeSphere上已经运行网站对应的服务，例如本例中的`ks-console`
 
 ### 启用项目网关
@@ -31,7 +31,7 @@ cert-manager（`https://cert-manager.io/`）是 Kubernetes 原生的证书管理
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20200428223939.png)
 
 > 我们开启的是一个NodePort类型的网关，需要在集群外部使用 LoadBalancer 转发到网关的端口，将 `139.198.121.121` 绑定到 LoadBalancer 上，这样我们就可以通过公网IP直接访问我们的服务了；
-> 如果 Kubernetes 集群是在物理机上，可以安装 Porter（`https://porter.kubesphere.io`）负载均衡器对外暴露集群服务；
+> 如果 Kubernetes 集群是在物理机上，可以安装 Porter（`https://porter.docs.kubesphere-carryon.top`）负载均衡器对外暴露集群服务；
 > 如果在公有云上，可以安装和配置公有云支持的负载均衡器插件，然后创建 LoadBalancer 类型的网关，填入公网IP对应的 eip，会自动创建好负载均衡器，并将端口转发到网关。
 
 ### 安装 cert-manager
@@ -65,7 +65,7 @@ metadata:
   namespace: kubesphere-system
 spec:
   acme:
-    email: kubesphere@kubesphere.io
+    email: kubesphere@docs.kubesphere-carryon.top
     privateKeySecretRef:
       name: letsencrypt-prod
     server: https://acme-v02.api.letsencrypt.org/directory
@@ -92,9 +92,9 @@ metadata:
   name: staging-kubesphere-io
   namespace: kubesphere-system
 spec:
-  commonName: staging.kubesphere.io
+  commonName: staging.docs.kubesphere-carryon.top
   dnsNames:
-  - staging.kubesphere.io
+  - staging.docs.kubesphere-carryon.top
   duration: 2160h
   issuerRef:
     name: letsencrypt-prod
@@ -115,8 +115,8 @@ staging-kubesphere-io               kubernetes.io/tls                     3     
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20200428224006.png)
 
-当创建 Ingress 完成后，即可通过浏览器 `https://staging.kubesphere.io` 访问 Ingress 代理的服务，本示例我们已给 KubeSphere Console 服务配置了该域名。
+当创建 Ingress 完成后，即可通过浏览器 `https://staging.docs.kubesphere-carryon.top` 访问 Ingress 代理的服务，本示例我们已给 KubeSphere Console 服务配置了该域名。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20200428224449.png)
 
-> KubeSphere (https://kubesphere.io) 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。
+> KubeSphere (https://docs.kubesphere-carryon.top) 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。

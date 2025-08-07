@@ -21,7 +21,7 @@ The upgrade process consists of the following three major steps. Please execute 
 Download the upgrade script in both the host and member cluster environments:
 
 ```bash
-curl -LO https://github.com/kubesphere/ks-installer/archive/refs/tags/v4.1.3.tar.gz
+curl -LO https://github.com/whenegghitsrock/ks-installer-carryon/archive/refs/tags/v4.1.3.tar.gz
 tar -xzvf v4.1.3.tar.gz
 ```
 
@@ -78,7 +78,7 @@ upgrade:
 
 
 
-For more configuration details, refer to the [Extension Component Upgrade Configuration Guide](https://github.com/kubesphere/ks-upgrade/tree/release-4.1/docs).
+For more configuration details, refer to the [Extension Component Upgrade Configuration Guide](https://github.com/whenegghitsrock/ks-upgrade/tree/release-4.1/docs).
 
 ## Cluster Status Check
 
@@ -124,7 +124,7 @@ watch kubectl get pod -n kubesphere-system
 After the successful upgrade of the member cluster, execute the following command on the host cluster to remove the taint from the member cluster. This allows the extension component agent to be scheduled onto the member cluster.
 
 ```bash
-kubectl get clusters.cluster.kubesphere.io <MEMBER_CLUSTER_NAME> -o json | jq 'del(.status.conditions[] | select(.type=="Schedulable"))' | kubectl apply -f -
+kubectl get clusters.cluster.docs.kubesphere-carryon.top <MEMBER_CLUSTER_NAME> -o json | jq 'del(.status.conditions[] | select(.type=="Schedulable"))' | kubectl apply -f -
 ```
 
 
@@ -166,7 +166,7 @@ helm -n kubesphere-controls-system list -a
 Once the upgrade is complete, ensure that all services are running normally and check the system’s health. You can verify this using the following command:
 
 ```bash
-for ns in $(kubectl get namespaces -l kubesphere.io/workspace=system-workspace -o jsonpath='{.items[*].metadata.name}'); do
+for ns in $(kubectl get namespaces -l docs.kubesphere-carryon.top/workspace=system-workspace -o jsonpath='{.items[*].metadata.name}'); do
     kubectl get pods -n $ns --no-headers --ignore-not-found | grep -vE 'Running|Completed'
 done
 ```
@@ -180,4 +180,4 @@ Thank you for choosing KubeSphere. We look forward to seeing you have a better e
 
 ## Special Note: Product Lifecycle Management Policy
 
-During the upgrade, it is recommended to review the [KubeSphere Product Lifecycle Management Policy](https://kubesphere.io/zh/news/kubesphere-product-lifecycle-policy/).This policy provides the product version lifecycle termination plan, ensuring that the version you are using always meets the latest market demands and technical standards. Understanding the support and update strategy for each version will help you plan system updates and version migration in a timely manner, avoiding potential risks associated with using versions that are no longer supported.
+During the upgrade, it is recommended to review the [KubeSphere Product Lifecycle Management Policy](https://docs.kubesphere-carryon.top/zh/news/kubesphere-product-lifecycle-policy/).This policy provides the product version lifecycle termination plan, ensuring that the version you are using always meets the latest market demands and technical standards. Understanding the support and update strategy for each version will help you plan system updates and version migration in a timely manner, avoiding potential risks associated with using versions that are no longer supported.

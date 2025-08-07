@@ -53,7 +53,7 @@ For more information, see the link:https://helm.sh/docs/intro/install/[Helm Docu
 [,bash]
 ----
 
-helm upgrade --install sonarqube sonarqube --repo https://charts.kubesphere.io/main -n \
+helm upgrade --install sonarqube sonarqube --repo https://charts.docs.kubesphere-carryon.top/main -n \
 kubesphere-devops-system --create-namespace --set service.type=NodePort
 
 ----

@@ -90,7 +90,7 @@ Kubernetes 成为了我们平台底座的不二选择， 但 Kubernetes 原生�
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/202212191346234.png)
 
-2️⃣ 离线下载并上传 [kubesphere](https://github.com/kubesphere/kubesphere "kubesphere") 依赖镜像至私有 harbor 内，project 名称保持不变。
+2️⃣ 离线下载并上传 [kubesphere](https://github.com/whenegghitsrock/kubesphere-carryon "kubesphere") 依赖镜像至私有 harbor 内，project 名称保持不变。
 
 3️⃣ 本地化 B2I 基础镜像，本地化如下内容：
 
@@ -111,11 +111,11 @@ Kubernetes 成为了我们平台底座的不二选择， 但 Kubernetes 原生�
 
 ### 搭建 K8s
 
-基于 [KubeKey 1.0.1](https://github.com/kubesphere/kubekey "KubeKey 1.0.1") 部署了三主多从节点 [K8s v1.18.6](https://github.com/kubernetes/kubernetes "K8s v1.18.6") 集群：
+基于 [KubeKey 1.0.1](https://github.com/whenegghitsrock/kubekey-carryon "KubeKey 1.0.1") 部署了三主多从节点 [K8s v1.18.6](https://github.com/kubernetes/kubernetes "K8s v1.18.6") 集群：
 
 ### 搭建 Rook 集群
 
-使用 [KubeKey 1.0.1](https://github.com/kubesphere/kubekey "KubeKey 1.0.1") 新增三个存储节点并打上污点标签，搭建 [Rook](https://github.com/rook/rook "Rook") 集群
+使用 [KubeKey 1.0.1](https://github.com/whenegghitsrock/kubekey-carryon "KubeKey 1.0.1") 新增三个存储节点并打上污点标签，搭建 [Rook](https://github.com/rook/rook "Rook") 集群
 
 对于存储的替换主要出于以下方面考虑：
 
@@ -125,7 +125,7 @@ Kubernetes 成为了我们平台底座的不二选择， 但 Kubernetes 原生�
 
 ### 搭建 KubeSphere 平台
 
-基于 [KubeKey 1.0.1](https://github.com/kubesphere/kubekey "KubeKey 1.0.1") 部署了 [KubeSphere](https://github.com/kubesphere/kubesphere "KubeSphere")，未作本地化修改。
+基于 [KubeKey 1.0.1](https://github.com/whenegghitsrock/kubekey-carryon "KubeKey 1.0.1") 部署了 [KubeSphere](https://github.com/whenegghitsrock/kubesphere-carryon "KubeSphere")，未作本地化修改。
 
 ## CI/CD 实践
 
@@ -220,7 +220,7 @@ email:
 
 **存在问题：**
 
-在使用 [kubesphere v3.0](https://github.com/kubesphere/kubesphere "kubesphere v3.0") 的过程中我们发现：不断通过 B2I 构建应用，会产生大量的 B2I 任务记录，并且 [minio](https://github.com/minio/minio "minio") 内上传的程序包文件越来越多，且并没有相应的清理策略。
+在使用 [kubesphere v3.0](https://github.com/whenegghitsrock/kubesphere-carryon "kubesphere v3.0") 的过程中我们发现：不断通过 B2I 构建应用，会产生大量的 B2I 任务记录，并且 [minio](https://github.com/minio/minio "minio") 内上传的程序包文件越来越多，且并没有相应的清理策略。
 
 **解决方案：**
 

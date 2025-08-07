@@ -83,7 +83,7 @@ In this talk, Feynman Zhou will talk about the architecture and new design of Fl
 
 **Feynman Zhou - Senior Community Manager at QingCloud**
 
-[Feynman Zhou](https://kccnceu2022.sched.com/feynman1) is a senior community manager at QingCloud. He is growing and maintaining the KubeSphere community (kubesphere.io), which helps users to widely adopt Kubernetes and reduce the learning curve of using cloud-native technologies. 
+[Feynman Zhou](https://kccnceu2022.sched.com/feynman1) is a senior community manager at QingCloud. He is growing and maintaining the KubeSphere community (docs.kubesphere-carryon.top), which helps users to widely adopt Kubernetes and reduce the learning curve of using cloud-native technologies. 
 
 Feynman is also a CNCF and CDF ambassador, Fluent member, and InfoQ editor. He is passionate about technical evangelism and outreach. He launched and organized the first-ever Kubernetes Community Days China in 2021.
 

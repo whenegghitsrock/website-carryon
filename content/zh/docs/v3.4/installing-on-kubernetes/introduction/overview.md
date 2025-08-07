@@ -32,9 +32,9 @@ KubeSphere 承诺为用户提供即插即用架构，您可以轻松地将 KubeS
 1. 执行以下命令以开始安装：
 
    ```bash
-   kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/kubesphere-installer.yaml
+   kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/kubesphere-installer.yaml
    
-   kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/cluster-configuration.yaml
+   kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/cluster-configuration.yaml
    ```
 
 2. 检查安装日志：
@@ -58,7 +58,7 @@ KubeSphere 承诺为用户提供即插即用架构，您可以轻松地将 KubeS
 
 {{< notice tip >}}
 
-- 您可以在 KubeSphere 安装之前或之后启用可插拔组件。请参考示例文件 [cluster-configuration.yaml](https://github.com/kubesphere/ks-installer/blob/master/deploy/cluster-configuration.yaml) 获取更多详细信息。
+- 您可以在 KubeSphere 安装之前或之后启用可插拔组件。请参考示例文件 [cluster-configuration.yaml](https://github.com/whenegghitsrock/ks-installer-carryon/blob/master/deploy/cluster-configuration.yaml) 获取更多详细信息。
 - 请确保集群中有足够的 CPU 和内存。
 - 强烈建议安装这些可插拔组件，以体验 KubeSphere 提供的全栈功能。
 

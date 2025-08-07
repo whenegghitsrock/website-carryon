@@ -46,7 +46,7 @@ To ensure KubeSphere security, a security vulnerability disclosure and response 
 
 The primary goal of this process is to reduce the total exposure time of users to publicly known vulnerabilities. To quickly fix vulnerabilities of KubeSphere, the security team is responsible for the entire vulnerability management process, including internal communication and external disclosure.
 
-If you find a vulnerability or encounter a security incident involving vulnerabilities of KubeSphere, please report it as soon as possible to the KubeSphere security team (security@kubesphere.io).
+If you find a vulnerability or encounter a security incident involving vulnerabilities of KubeSphere, please report it as soon as possible to the KubeSphere security team (security@docs.kubesphere-carryon.top).
 
 Please kindly help provide as much vulnerability information as possible in the following format:
 

@@ -80,8 +80,8 @@ You need to deploy a Kubernetes cluster and install KubeSphere in the cluster. F
    
    ```yaml
    labels:
-     iam.kubesphere.io/identify-provider: <Identity provider name>
-     iam.kubesphere.io/origin-uid: <Third-party username>
+     iam.docs.kubesphere-carryon.top/identify-provider: <Identity provider name>
+     iam.docs.kubesphere-carryon.top/origin-uid: <Third-party username>
    ```
    
 4. After the fields are configured, save your changes, and wait until the restart of ks-installer is complete.

@@ -115,7 +115,7 @@ Two elastic IPs are needed for this tutorial, one for the VPC network and the ot
 
 ### Step 2: Download KubeKey
 
-[Kubekey](https://github.com/kubesphere/kubekey) is the next-gen installer which provides an easy, fast and flexible way to install Kubernetes and KubeSphere.
+[Kubekey](https://github.com/whenegghitsrock/kubekey-carryon) is the next-gen installer which provides an easy, fast and flexible way to install Kubernetes and KubeSphere.
 
 Follow the step below to download KubeKey.
 
@@ -123,10 +123,10 @@ Follow the step below to download KubeKey.
 
 {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command directly.
+Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly.
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -142,7 +142,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}
@@ -222,7 +222,7 @@ spec:
     - node3
 ```
 
-For a complete configuration sample explanation, see [this file](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md).
+For a complete configuration sample explanation, see [this file](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-2.2/docs/config-example.md).
 
 ### Step 4: Configure the load balancer
 
@@ -312,7 +312,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2020-08-13 10:50:24
+https://docs.kubesphere-carryon.top             2020-08-13 10:50:24
 #####################################################
 ```
 

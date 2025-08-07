@@ -29,9 +29,9 @@ After you make sure your existing Kubernetes cluster meets all the requirements,
 1. Execute the following commands to start installation:
 
     ```bash
-    kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/kubesphere-installer.yaml
+    kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.2/kubesphere-installer.yaml
     
-    kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/cluster-configuration.yaml
+    kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.2/cluster-configuration.yaml
     ```
 
 2. Inspect the logs of installation:
@@ -56,7 +56,7 @@ If you start with a default minimal installation, refer to [Enable Pluggable Com
 
 {{< notice tip >}}
 
-- Pluggable components can be enabled either before or after the installation. Please refer to the example file [cluster-configuration.yaml](https://github.com/kubesphere/ks-installer/blob/release-3.0/deploy/cluster-configuration.yaml) for more details.
+- Pluggable components can be enabled either before or after the installation. Please refer to the example file [cluster-configuration.yaml](https://github.com/whenegghitsrock/ks-installer-carryon/blob/release-3.0/deploy/cluster-configuration.yaml) for more details.
 - Make sure there is enough CPU and memory available in your cluster.
 - It is highly recommended that you install these pluggable components to discover the full-stack features and capabilities provided by KubeSphere.
 

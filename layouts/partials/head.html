@@ -19,7 +19,7 @@
 {{ define "recursiveVersion" }}{{ if isset . "version" }}{{ .Version }}{{ else if .Params.section1.version  }}{{ .Params.section1.version }}{{ else if .Parent }}{{ template "recursiveVersion" .Parent }}{{ else }}{{ end }}{{ end }}
 <meta name="docsearch:version" content='{{ template "recursiveVersion" . }}' />
 
-<link rel="canonical" href="https://kubesphere.io{{ .RelPermalink }}" />
+<link rel="canonical" href="https://docs.kubesphere-carryon.top{{ .RelPermalink }}" />
 
 {{- partial "favicons.html" . -}}
 
@@ -83,7 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <!-- End GrowingIO Analytics code version: 2.1 -->
 
-<!-- Hotjar Tracking Code for https://kubesphere.io/docs/ -->
+<!-- Hotjar Tracking Code for https://docs.kubesphere-carryon.top/docs/ -->
 {{ if (and (.Site.Params.hotjarTracking) (.IsDescendant (.GetPage "/docs")) (eq .Site.Language.Lang "en"))  }}
 <script>
   (function(h,o,t,j,a,r){

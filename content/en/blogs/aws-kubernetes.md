@@ -133,10 +133,10 @@ sudo systemctl restart sshd
 
 ## Obtain the KubeKey Deployment Tool
 
-Download KubeKey from the [Github Release Page](https://github.com/kubesphere/kubekey/releases) or run the following command:
+Download KubeKey from the [Github Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or run the following command:
 
 ```
-curl -sfL https://get-kk.kubesphere.io | VERSION=v2.0.0 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.0.0 sh -
 ```
 
 ## Use KubeKey to Deploy a Kubernetes Cluster
@@ -149,10 +149,10 @@ Create the `config-HA.yaml` deployment configuration file.
 
 ## Configure Cluster Information
 
-Configure cluster information in the configuration file. For more information, see [Multi-node Installation](https://kubesphere.io/docs/installing-on-linux/introduction/multioverview/) and [ Kubernetes Cluster Configurations](https://kubesphere.io/docs/installing-on-linux/introduction/vars/).
+Configure cluster information in the configuration file. For more information, see [Multi-node Installation](https://docs.kubesphere-carryon.top/docs/installing-on-linux/introduction/multioverview/) and [ Kubernetes Cluster Configurations](https://docs.kubesphere-carryon.top/docs/installing-on-linux/introduction/vars/).
 
 ```
-apiVersion: kubekey.kubesphere.io/v1alpha1
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
 kind: Cluster
 metadata:
   name: sample

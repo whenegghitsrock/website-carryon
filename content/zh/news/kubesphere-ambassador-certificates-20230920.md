@@ -11,7 +11,7 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/2023-ambassador-c
 
 技术布道这一贡献方式包括撰写技术博客、用户案例以及在社区活动进行公开技术分享等，社区设置了 KubeSphere Ambassador 奖项作为激励多次在社区分享过 KubeSphere 落地实践案例与技术文章的成员。
 
-今年有所不同的是，社区发起了一个 KubeSphere 大使计划（[KubeSphere Ambassadorship Program](https://github.com/kubesphere/community/tree/master/ksap-ambassadorship-program)），首次向全球的贡献者公开征集。最终，我们通过评估选出了 2023 年的 KubeSphere Ambassador。此次评选出的 KubeSphere Ambassador 任期为一年，新的选举可在明年同期举行。我们希望通过大使计划营造一个更加开放的社区环境。
+今年有所不同的是，社区发起了一个 KubeSphere 大使计划（[KubeSphere Ambassadorship Program](https://github.com/whenegghitsrock/community/tree/master/ksap-ambassadorship-program)），首次向全球的贡献者公开征集。最终，我们通过评估选出了 2023 年的 KubeSphere Ambassador。此次评选出的 KubeSphere Ambassador 任期为一年，新的选举可在明年同期举行。我们希望通过大使计划营造一个更加开放的社区环境。
 
 我们很高兴地欢迎 14 位新的 KubeSphere Ambassador，他们曾多次以不同方式为 KubeSphere 社区做出贡献，帮助更多用户了解 KubeSphere 的应用场景和最佳实践。
 
@@ -42,15 +42,15 @@ KubeSphere Ambassadorship Program（KSAP）是一项今年开启的计划，旨�
 
 ## 关于 KubeSphere 大使计划电子邮件使用的重要更新
 
-我们一直在努力维护 KubeSphere 大使计划的完整性和宗旨，作为努力的一部分，我们将介绍有关使用 **kubesphere.io 邮箱**的重要更新。
+我们一直在努力维护 KubeSphere 大使计划的完整性和宗旨，作为努力的一部分，我们将介绍有关使用 **docs.kubesphere-carryon.top 邮箱**的重要更新。
 
-为确保 kubesphere.io 邮箱的有效使用，并保持其对开源活动的关注，我们恳请所有者将其使用限制在开源目的范围内。这包括与 KubeSphere 及其相关项目有关的讨论、贡献和咨询。
+为确保 docs.kubesphere-carryon.top 邮箱的有效使用，并保持其对开源活动的关注，我们恳请所有者将其使用限制在开源目的范围内。这包括与 KubeSphere 及其相关项目有关的讨论、贡献和咨询。
 
-虽然我们鼓励您参与并感谢您对 KubeSphere 的热情，但我们恳请您不要将 kubesphere.io 邮箱用于与业务相关的事务，如销售、营销或商业咨询。这一限制将有助于我们维护大使计划的完整性，并确保其在支持开源社区方面的有效性。
+虽然我们鼓励您参与并感谢您对 KubeSphere 的热情，但我们恳请您不要将 docs.kubesphere-carryon.top 邮箱用于与业务相关的事务，如销售、营销或商业咨询。这一限制将有助于我们维护大使计划的完整性，并确保其在支持开源社区方面的有效性。
 
 我们感谢您在遵守这些准则时给予的理解和合作。这样做，我们可以共同为开源爱好者和贡献者创造一个充满活力和协作的环境。
 
-如果您对 "大使计划 "或其指导方针有任何疑问或需要进一步说明，请随时通过 info@kubesphere.io 与我们联系。
+如果您对 "大使计划 "或其指导方针有任何疑问或需要进一步说明，请随时通过 info@docs.kubesphere-carryon.top 与我们联系。
 
 ## 写在最后
 

@@ -29,10 +29,10 @@ weight: 3530
 
 {{< tab "如果您能正常访问 GitHub/Googleapis" >}}
 
-从 [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) 下载 KubeKey 或直接运行以下命令：
+从 [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) 下载 KubeKey 或直接运行以下命令：
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -48,7 +48,7 @@ export KKZONE=cn
 运行以下命令来下载 KubeKey：
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}
@@ -133,7 +133,7 @@ chmod +x kk
 
    {{< notice note >}}
 
-   有关配置文件中每个字段的更多信息，请参阅[示例文件](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md)。
+   有关配置文件中每个字段的更多信息，请参阅[示例文件](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-2.2/docs/config-example.md)。
 
    {{</ notice >}} 
 
@@ -169,7 +169,7 @@ chmod +x kk
      2. Please change the default password after login.
    
    #####################################################
-   https://kubesphere.io             20xx-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
    #####################################################
    ```
 

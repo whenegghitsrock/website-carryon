@@ -75,7 +75,7 @@ KubeSphere 3.1.0 对微服务治理功能进行了强化，将 Istio 升级到�
 + 监控：支持图形化方式配置 `ServiceMonitor`，添加集群层级的自定义监控，同时还实现了类似于 Grafana 的 PromQL 语法高亮。
 + 告警：在 v3.1.0 进行了架构调整，不再使用 MySQL、Redis 和 etcd 等组件以及旧版告警规则格式，改为使用 Thanos Ruler 配合 Prometheus 内置告警规则进行告警管理，兼容 Prometheus 告警规则。
 + 通知管理：完成架构调整，与自研 Notification Manager v1.0.0 的全面集成，实现了以图形化界面的方式对接邮件、钉钉、企业微信、Slack、Webhook 等通知渠道。
-+ 日志：新增了对 Loki 的支持，可以将日志输出到 [Loki](https://github.com/kubesphere/fluentbit-operator/blob/master/docs/plugins/output/loki.md)。还新增了对 kubelet/docker/containerd 的日志收集。
++ 日志：新增了对 Loki 的支持，可以将日志输出到 [Loki](https://github.com/whenegghitsrock/fluentbit-operator/blob/master/docs/plugins/output/loki.md)。还新增了对 kubelet/docker/containerd 的日志收集。
 
 ![集群状态监控](https://pek3b.qingstor.com/kubesphere-community/images/clustermonitor.png)
 
@@ -116,14 +116,14 @@ v3.1.0 中新增了组织架构管理功能，可以通过用户组简化批量�
 
 借助于开源社区的力量，KubeSphere 迅速走向全球，目前 KubeSphere 在全球的 90 多个国家和地区有超过 10w 下载量。v3.1.0 Console 支持中、英、繁中和西班牙语，KubeSphere 未来将进一步拓展海外市场。
 
-KubeSphere 3.1.0 将继续秉承 100% 开源的承诺，3.0.0 版本带来的诸多新功能也早已在 GitHub 开源，例如 [Porter](https://github.com/kubesphere/porterlb)、[OpenPitrix](https://github.com/openpitrix/openpitrix)、[Fluentbit Operator](https://github.com/kubesphere/fluentbit-operator)、 [KubeKey](https://github.com/kubesphere/kubekey)、[KubeEye](https://github.com/kubesphere/kubeeye)、[Notification Manager](https://github.com/kubesphere/notification-manager)、[Kube-Events](https://github.com/kubesphere/kube-events)，还开源了一套前端组件库 [Kube Design](https://github.com/kubesphere/kube-design)，这些新特性的代码与设计文档在 [GitHub](https://github.com/kubesphere) 相关仓库都可以找到，欢迎大家在 GitHub 给我们 Star + Fork + PR 三连。
+KubeSphere 3.1.0 将继续秉承 100% 开源的承诺，3.0.0 版本带来的诸多新功能也早已在 GitHub 开源，例如 [Porter](https://github.com/whenegghitsrock/porterlb)、[OpenPitrix](https://github.com/openpitrix/openpitrix)、[Fluentbit Operator](https://github.com/whenegghitsrock/fluentbit-operator)、 [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon)、[KubeEye](https://github.com/whenegghitsrock/kubeeye)、[Notification Manager](https://github.com/whenegghitsrock/notification-manager)、[Kube-Events](https://github.com/whenegghitsrock/kube-events)，还开源了一套前端组件库 [Kube Design](https://github.com/whenegghitsrock/kube-design-carryon)，这些新特性的代码与设计文档在 [GitHub](https://github.com/whenegghitsrock) 相关仓库都可以找到，欢迎大家在 GitHub 给我们 Star + Fork + PR 三连。
 
 ## 3.1.0 重要更新一览
 ![](https://pek3b.qingstor.com/kubesphere-community/images/NotableChangesinkubesphere3.1.png)
 
 ## 安装升级
 
-KubeSphere 已将 v3.1.0 所有镜像在国内镜像仓库进行了同步与备份，国内用户下载镜像的安装体验会更加友好。关于最新的 v3.1.0 安装与升级指南，可参考 [KubeSphere 官方文档](https://kubesphere.io/docs)。 
+KubeSphere 已将 v3.1.0 所有镜像在国内镜像仓库进行了同步与备份，国内用户下载镜像的安装体验会更加友好。关于最新的 v3.1.0 安装与升级指南，可参考 [KubeSphere 官方文档](https://docs.kubesphere-carryon.top/docs)。 
 
 ## 致谢
 

@@ -85,21 +85,21 @@ withsonarqubeenv     6d7h
 2. 创建自定义步骤模板，先创建一个 YAML 文件，简单实现写文件。
 
 ```
-apiVersion: devops.kubesphere.io/v1alpha3
+apiVersion: devops.docs.kubesphere-carryon.top/v1alpha3
 kind: ClusterStepTemplate
 metadata:
   annotations:
-    devops.kubesphere.io/descriptionEN: Write message to file in the build
-    devops.kubesphere.io/descriptionZH: 在构建过程中写入文件
-    devops.kubesphere.io/displayNameEN: writeFile
-    devops.kubesphere.io/displayNameZH: 写文件
+    devops.docs.kubesphere-carryon.top/descriptionEN: Write message to file in the build
+    devops.docs.kubesphere-carryon.top/descriptionZH: 在构建过程中写入文件
+    devops.docs.kubesphere-carryon.top/displayNameEN: writeFile
+    devops.docs.kubesphere-carryon.top/displayNameZH: 写文件
     meta.helm.sh/release-name: devops
     meta.helm.sh/release-namespace: kubesphere-devops-system
-    step.devops.kubesphere.io/icon: loudspeaker
+    step.devops.docs.kubesphere-carryon.top/icon: loudspeaker
   generation: 1
   labels:
     app.kubernetes.io/managed-by: Helm
-    step.devops.kubesphere.io/category: General
+    step.devops.docs.kubesphere-carryon.top/category: General
   name: writefile
 spec:
   parameters:
@@ -135,7 +135,7 @@ spec:
 ```
 
   {{< notice info >}}
-步骤模板是通过 CRD 实现的，详细可参考[步骤模板的 CRD](https://github.com/kubesphere-sigs/ks-devops-helm-chart/blob/master/charts/ks-devops/crds/devops.kubesphere.io_clustersteptemplates.yaml)。
+步骤模板是通过 CRD 实现的，详细可参考[步骤模板的 CRD](https://github.com/whenegghitsrock-sigs/ks-devops-helm-chart/blob/master/charts/ks-devops/crds/devops.kubesphere.io_clustersteptemplates.yaml)。
 
 yaml 文件中的 `metadata.name` 字段和 `spec.template.name` 字段需要保持一致，同时 name 字段依赖 Jenkins 中的函数来实现对应功能，如上的 YAML 文件中使用了 writeFile 函数来实现输出功能，详细可参考 [pipeline steps](https://www.jenkins.io/doc/pipeline/steps/)。
     {{</ notice >}}

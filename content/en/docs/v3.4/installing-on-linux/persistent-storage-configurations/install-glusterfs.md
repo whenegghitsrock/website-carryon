@@ -81,7 +81,7 @@ The separate configuration file contains all parameters of GlusterFS storage whi
    metadata:
      annotations:
        storageclass.beta.kubernetes.io/is-default-class: "true"
-       storageclass.kubesphere.io/supported-access-modes: '["ReadWriteOnce","ReadOnlyMany","ReadWriteMany"]'
+       storageclass.docs.kubesphere-carryon.top/supported-access-modes: '["ReadWriteOnce","ReadOnlyMany","ReadWriteMany"]'
      name: glusterfs
    parameters:
      clusterid: "21240a91145aee4d801661689383dcd1"    # Replace it with your own GlusterFS cluster ID.
@@ -116,10 +116,10 @@ Follow the steps below to download [KubeKey](../../../installing-on-linux/introd
 
 {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command directly.
+Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly.
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -135,7 +135,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.13 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}
@@ -259,7 +259,7 @@ chmod +x kk
      2. Please change the default password after login.
    
    #####################################################
-   https://kubesphere.io             20xx-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
    #####################################################
    ```
 

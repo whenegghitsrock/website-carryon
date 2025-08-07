@@ -99,10 +99,10 @@ ssh -i .ssh/id_rsa2  -p50200 kubesphere@40.81.5.xx
 
    {{< tab "如果您能正常访问 GitHub/Googleapis">}}
 
-从 KubeKey 的 [Github 发布页面](https://github.com/kubesphere/kubekey/releases)下载，或执行以下命令：
+从 KubeKey 的 [Github 发布页面](https://github.com/whenegghitsrock/kubekey-carryon/releases)下载，或执行以下命令：
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{</ tab >}}
@@ -118,7 +118,7 @@ export KKZONE=cn
 运行以下命令下载 KubeKey：
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{< notice note >}}
@@ -186,7 +186,7 @@ spec:
     - node000002
 ```
 
-有关更多信息，请参阅[文件](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md)。
+有关更多信息，请参阅[文件](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-2.2/docs/config-example.md)。
 
 ### 配置负载均衡器
 
@@ -253,7 +253,7 @@ Azure 虚拟网络不支持 [Calico](https://docs.projectcalico.org/reference/pu
         are up and running.
      2. Please change the default password after login.
    #####################################################
-   https://kubesphere.io             2020-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             2020-xx-xx xx:xx:xx
    ```
 
 4. 使用 `<NodeIP>:30880` 和默认的帐户和密码 (`admin/p@88w0rd`) 访问 KubeShpere 控制台。

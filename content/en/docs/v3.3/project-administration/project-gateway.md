@@ -43,8 +43,8 @@ For example, to access your Service with an elastic IP address (EIP), visit:
 
 When you create a [Route](../../project-user-guide/application-workloads/routes/) (Ingress), you can customize a host name to access your Service. For example, to access your Service with the host name set in your Route, visit:
 
-- `http://demo.kubesphere.io:32734`
-- `https://demo.kubesphere.io:32471`
+- `http://demo.docs.kubesphere-carryon.top:32734`
+- `https://demo.docs.kubesphere-carryon.top:32471`
 
 {{< notice note >}}
 
@@ -61,6 +61,6 @@ You must configure a load balancer in advance before you select **LoadBalancer**
 
 {{< notice note >}}
 
-Cloud providers often support load balancer plugins. If you install KubeSphere on major Kubernetes engines on their platforms, you may notice a load balancer is already available in the environment for you to use. If you install KubeSphere in a bare metal environment, you can use [OpenELB](https://github.com/kubesphere/openelb) for load balancing.
+Cloud providers often support load balancer plugins. If you install KubeSphere on major Kubernetes engines on their platforms, you may notice a load balancer is already available in the environment for you to use. If you install KubeSphere in a bare metal environment, you can use [OpenELB](https://github.com/whenegghitsrock/openelb) for load balancing.
 
 {{</ notice >}} 

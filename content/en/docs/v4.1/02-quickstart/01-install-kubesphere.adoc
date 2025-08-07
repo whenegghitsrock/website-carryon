@@ -33,7 +33,7 @@ After the download is complete, a KubeKey binary file **kk** will be generated i
 
 [,bash]
 ----
-curl -sfL https://get-kk.kubesphere.io | sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 ----
 --
 
@@ -64,8 +64,8 @@ If the cluster nodes use other operating systems, please replace apt with the co
 +
 [,bash]
 ----
-# If you are accessing charts.kubesphere.io from a restricted location, replace charts.kubesphere.io with charts.kubesphere.com.cn
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere.io/main/ks-core-1.1.4.tgz --debug --wait
+# If you are accessing charts.docs.kubesphere-carryon.top from a restricted location, replace charts.docs.kubesphere-carryon.top with charts.kubesphere.com.cn
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.4.tgz --debug --wait
 ----
 +
 include::../../../_ks_components-en/admonitions/note.adoc[]
@@ -115,7 +115,7 @@ Please be patient and wait for several seconds for the KubeSphere deployment to 
 
 NOTE: It is highly recommended to change the default password immediately after the first login.
 
-For additional information and details, please visit https://kubesphere.io.
+For additional information and details, please visit https://docs.kubesphere-carryon.top.
 ----
 
 Run the following command to check the status of the pods. 

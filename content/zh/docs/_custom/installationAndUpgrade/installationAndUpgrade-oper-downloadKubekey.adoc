@@ -16,7 +16,7 @@ export KKZONE=cn
 // Bash
 [,bash]
 ----
-curl -sfL https://get-kk.kubesphere.io | sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 ----
 
 下载完成后当前目录下将生成 KubeKey 二进制文件 **kk**。
@@ -24,7 +24,7 @@ curl -sfL https://get-kk.kubesphere.io | sh -
 // Note
 // include::../../../_ks_components/admonitions/note.adoc[]
 
-// 如果用于执行本节操作的集群节点无法连接互联网，您可以从互联网连接正常的设备手动link:https://github.com/kubesphere/kubekey/releases[下载 KubeKey] 然后将其传输到用于执行本节操作的集群节点。
+// 如果用于执行本节操作的集群节点无法连接互联网，您可以从互联网连接正常的设备手动link:https://github.com/whenegghitsrock/kubekey-carryon/releases[下载 KubeKey] 然后将其传输到用于执行本节操作的集群节点。
 
 // include::../../../_ks_components/admonitions/admonEnd.adoc[]
 --

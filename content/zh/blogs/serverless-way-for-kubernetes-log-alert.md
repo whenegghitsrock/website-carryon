@@ -16,7 +16,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/20210903151879
 1. 搭建 Kafka 服务器作为 Kubernetes 集群的日志接收器
 2. 部署 OpenFunction 为日志处理工作负载提供 Serverless 能力
 3. 编写日志处理函数，抓取特定的日志生成告警消息
-4. 配置 [Notification Manager](https://github.com/kubesphere/notification-manager/) 将告警发送至 Slack
+4. 配置 [Notification Manager](https://github.com/whenegghitsrock/notification-manager/) 将告警发送至 Slack
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/202108261124546.png)
 
@@ -30,7 +30,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/20210903151879
 
 ## 使用 Kafka 作为日志接收器
 
-首先，我们为 KubeSphere 平台开启 **logging** 组件（可以参考 [启用可插拔组件](https://kubesphere.io/zh/docs/pluggable-components/) 获取更多信息）。然后我们使用 [strimzi-kafka-operator](https://github.com/strimzi/strimzi-kafka-operator) 搭建一个最小化的 Kafka 服务器。
+首先，我们为 KubeSphere 平台开启 **logging** 组件（可以参考 [启用可插拔组件](https://docs.kubesphere-carryon.top/zh/docs/pluggable-components/) 获取更多信息）。然后我们使用 [strimzi-kafka-operator](https://github.com/strimzi/strimzi-kafka-operator) 搭建一个最小化的 Kafka 服务器。
 
 1. 在 default 命名空间中安装 [strimzi-kafka-operator](https://github.com/strimzi/strimzi-kafka-operator) ：
 
@@ -119,7 +119,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/20210903151879
 
 1. 以 **admin** 身份登录 KubeSphere 的 Web 控制台。点击左上角的**平台管理**，然后选择**集群管理**。
 
-   > 如果您启用了[多集群功能](https://kubesphere.io/zh/docs/multicluster-management/)，您可以选择一个集群。
+   > 如果您启用了[多集群功能](https://docs.kubesphere-carryon.top/zh/docs/multicluster-management/)，您可以选择一个集群。
 
 2. 在**集群管理**页面，选择**集群设置**下的**日志收集**。
 
@@ -163,7 +163,7 @@ kubectl apply -f https://github.com/OpenFunction/OpenFunction/releases/download/
 
 ## 编写日志处理函数
 
-我们以 [创建并部署 WordPress](https://kubesphere.io/zh/docs/quick-start/wordpress-deployment/) 为例，搭建一个 WordPress 应用作为日志的生产者。该应用的工作负载所在的命名空间为 “demo-project”，Pod 名称为 “wordpress-v1-f54f697c5-hdn2z”。
+我们以 [创建并部署 WordPress](https://docs.kubesphere-carryon.top/zh/docs/quick-start/wordpress-deployment/) 为例，搭建一个 WordPress 应用作为日志的生产者。该应用的工作负载所在的命名空间为 “demo-project”，Pod 名称为 “wordpress-v1-f54f697c5-hdn2z”。
 
 当请求结果为 404 时，我们收到的日志内容如下：
 ```json
@@ -171,7 +171,7 @@ kubectl apply -f https://github.com/OpenFunction/OpenFunction/releases/download/
 
 ```
 
-我们的需求是：当一个请求结果为 404 时，发送一个告警通知给接收器（可以根据 [配置 Slack 通知](https://kubesphere.io/zh/docs/cluster-administration/platform-settings/notification-management/configure-slack/) 配置一个 Slack 告警接收器），并记录命名空间、Pod 名称、请求路径、请求方法等信息。按照这个需求，我们编写一个简单的处理函数：
+我们的需求是：当一个请求结果为 404 时，发送一个告警通知给接收器（可以根据 [配置 Slack 通知](https://docs.kubesphere-carryon.top/zh/docs/cluster-administration/platform-settings/notification-management/configure-slack/) 配置一个 Slack 告警接收器），并记录命名空间、Pod 名称、请求路径、请求方法等信息。按照这个需求，我们编写一个简单的处理函数：
 > 你可以从 [OpenFunction Context Spec](https://github.com/OpenFunction/functions-framework/blob/main/docs/OpenFunction-context-specs.md) 处了解 **openfunction-context** 的使用方法，这是 OpenFunction 提供给用户编写函数的工具库
 > 你可以通过 [OpenFunction Samples](https://github.com/OpenFunction/samples) 了解更多的 OpenFunction 函数案例 
 

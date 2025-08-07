@@ -33,7 +33,7 @@ If the cluster nodes use other operating systems, replace **apt** with the corre
 
 == Get Version Information and Image List
 
-. Visit https://get-images.kubesphere.io/
+. Visit https://get-images.docs.kubesphere-carryon.top/
 
 . Select the extensions you want to deploy.
 
@@ -73,7 +73,7 @@ After the download is complete, the KubeKey binary file **kk** will be generated
 
 [source,bash]
 ----
-curl -sSL https://get-kk.kubesphere.io | sh -
+curl -sSL https://get-kk.docs.kubesphere-carryon.top | sh -
 ----
 
 === 2. Create Manifest File
@@ -125,13 +125,13 @@ vi manifest-sample.yaml
 |===
 |Attention
 
-|The image list in the following manifest file is for example only. Please get the latest image list through https://get-images.kubesphere.io/.
+|The image list in the following manifest file is for example only. Please get the latest image list through https://get-images.docs.kubesphere-carryon.top/.
 
 |===
 
 [source,yaml]
 ----
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Manifest
 metadata:
   name: sample
@@ -370,10 +370,10 @@ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 [source,bash]
 ----
 VERSION=1.1.3     # Chart version
-helm fetch https://charts.kubesphere.io/main/ks-core-${VERSION}.tgz
+helm fetch https://charts.docs.kubesphere-carryon.top/main/ks-core-${VERSION}.tgz
 ----
 
-This is an example version. Please visit link:https://get-images.kubesphere.io[] or link:https://github.com/kubesphere/kubesphere/releases[KubeSphere GitHub repository] to check the latest chart version.
+This is an example version. Please visit link:https://get-images.docs.kubesphere-carryon.top[] or link:https://github.com/whenegghitsrock/kubesphere-carryon/releases[KubeSphere GitHub repository] to check the latest chart version.
 --
 
 == Air-gapped Deployment
@@ -418,7 +418,7 @@ Below is an example configuration file. For more information on how to configure
 
 [source,yaml]
 ----
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample
@@ -653,7 +653,7 @@ helm upgrade --install -n kubesphere-system --create-namespace ks-core ks-core-1
 |Note
 
 |
-* `ksExtensionRepository.image.tag` is the Extensions Museum version obtained earlier (i.e., the latest extension repository version displayed on https://get-images.kubesphere.io/).
+* `ksExtensionRepository.image.tag` is the Extensions Museum version obtained earlier (i.e., the latest extension repository version displayed on https://get-images.docs.kubesphere-carryon.top/).
 
 * If you need to deploy high availability in KubeSphere, add `--set ha.enabled=true,redisHA.enabled=true` to the command.
 |===
@@ -686,7 +686,7 @@ Please be patient and wait for several seconds for the KubeSphere deployment to 
     Password: P@88w0rd
 
 NOTE: It is highly recommended to change the default password immediately after the first login.
-For additional information and details, please visit https://kubesphere.io.
+For additional information and details, please visit https://docs.kubesphere-carryon.top.
 ----
 --
 

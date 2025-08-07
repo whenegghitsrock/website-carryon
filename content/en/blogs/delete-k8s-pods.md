@@ -82,7 +82,7 @@ When you want to delete all the existing pods on a node, you have to make sure t
 
 ### Delete Kubernetes pods on KubeSphere
 
-As an open-source project, [KubeSphere](https://kubesphere.io/) is a distributed operating system built on Kubernetes. It provides a user-friendly wizard web console to improve efficiency in Kubernetes management. To delete Kubernetes pods on KubeSphere, you just need to click several buttons and it's done!
+As an open-source project, [KubeSphere](https://docs.kubesphere-carryon.top/) is a distributed operating system built on Kubernetes. It provides a user-friendly wizard web console to improve efficiency in Kubernetes management. To delete Kubernetes pods on KubeSphere, you just need to click several buttons and it's done!
 
 ![](/images/blogs/en/delete-k8s-pod/pod-ui.png)
 

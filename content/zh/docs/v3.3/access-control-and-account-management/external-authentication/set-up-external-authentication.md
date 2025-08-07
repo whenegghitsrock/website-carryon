@@ -80,8 +80,8 @@ KubeSphere 提供了一个内置的 OAuth 服务。用户通过获取 OAuth 访�
 
     ```yaml
    labels:
-     iam.kubesphere.io/identify-provider: <Identity provider name>
-     iam.kubesphere.io/origin-uid: <Third-party username>
+     iam.docs.kubesphere-carryon.top/identify-provider: <Identity provider name>
+     iam.docs.kubesphere-carryon.top/origin-uid: <Third-party username>
     ```
 
 4. 字段配置完成后，保存修改，然后等待 ks-installer 重启完成。

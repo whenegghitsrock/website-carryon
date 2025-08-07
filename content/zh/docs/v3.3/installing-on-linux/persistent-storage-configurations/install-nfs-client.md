@@ -53,7 +53,7 @@ weight: 3330
 
    {{< notice note >}}
 
-   - 如果想要配置更多的值，请参见 [NFS-client Chart 配置](https://github.com/kubesphere/helm-charts/tree/master/src/main/nfs-client-provisioner#configuration)。
+   - 如果想要配置更多的值，请参见 [NFS-client Chart 配置](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/main/nfs-client-provisioner#configuration)。
    - `storageClass.defaultClass` 字段决定是否将 NFS-client Provisioner 的存储类型设置为默认存储类型。如果您输入 `false`，KubeKey 将安装 [OpenEBS](https://github.com/openebs/openebs) 来提供本地卷，您在集群上创建工作负载时，不会动态供应本地持久卷。安装 KubeSphere 之后，您可以直接在控制台上更改默认存储类型。
 
    {{</ notice >}}
@@ -68,10 +68,10 @@ weight: 3330
 
 {{< tab "如果您能正常访问 GitHub/Googleapis" >}}
 
-从 [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) 下载 KubeKey 或者直接运行以下命令。
+从 [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) 下载 KubeKey 或者直接运行以下命令。
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{</ tab >}}
@@ -87,7 +87,7 @@ export KKZONE=cn
 运行以下命令来下载 KubeKey：
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{< notice note >}}
@@ -173,7 +173,7 @@ chmod +x kk
        sources:
          chart:
            name: nfs-client-provisioner
-           repo: https://charts.kubesphere.io/main
+           repo: https://charts.docs.kubesphere-carryon.top/main
            valuesFile: /home/ubuntu/nfs-client.yaml # Use the path of your own NFS-client configuration file.
    ...             
    ```
@@ -212,7 +212,7 @@ chmod +x kk
      2. Please change the default password after login.
    
    #####################################################
-   https://kubesphere.io             20xx-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             20xx-xx-xx xx:xx:xx
    #####################################################
    ```
 

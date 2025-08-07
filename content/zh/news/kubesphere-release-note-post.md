@@ -43,7 +43,7 @@ KubeSphere 能够帮助企业快速构建一个功能丰富的容器云平台。
 > 提示：Installer 默认仅开启最小化安装，若机器资源充足，请在 `conf/common.yaml` 中开启可选功能组件，将其设置为 true，再进行安装。
 
 ```bash
-curl -L https://kubesphere.io/download/stable/v2.1.1 > installer.tar.gz \
+curl -L https://docs.kubesphere-carryon.top/download/stable/v2.1.1 > installer.tar.gz \
 && tar -zxf installer.tar.gz && cd kubesphere-all-v2.1.1/scripts
 ```
 

@@ -1464,107 +1464,107 @@ section4:
       meetup: 
         - place: 重庆站（02.22）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-chongqing-20250222-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-chongqing-20250222/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-chongqing-20250222/
           
     - year: 2024
       meetup: 
         - place: 广州站（12.28）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-guangzhou-20241228-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-guangzhou-20241228/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-guangzhou-20241228/
 
         - place: 成都站（11.23）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-chengdu-20241123-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-chengdu-20241123/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-chengdu-20241123/
       
         - place: 上海站（07.20）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-shanghai-20240720-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-shanghai-20240720/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-shanghai-20240720/
  
         - place: 北京站（05.25）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-beijing-20240525-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-beijing-20240525/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-beijing-20240525/
 
         - place: 深圳站（04.20）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-shenzhen-20240420-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-shenzhen-20240420/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-shenzhen-20240420/
 
         - place: 杭州站（03.23）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-hangzhou-20240323-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-hangzhou-20240323/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-hangzhou-20240323/
 
     - year: 2023
       meetup: 
         - place: 苏州站（12.23）
           img: https://pek3b.qingstor.com/kubesphere-community/images/suzhou-meetup-20231223-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-suzhou-20231223/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-suzhou-20231223/
 
         - place: 广州站（11.25）
           img: https://pek3b.qingstor.com/kubesphere-community/images/guangzhou-meetup-20231125-cover.jpg
-          meetupUrl: https://kubesphere.io/zh/live/meetup-guangzhou-20231125/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-guangzhou-20231125/
 
         - place: 成都站（11.04）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-chengdu-20231104-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-chengdu-20231104/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-chengdu-20231104/
 
         - place: 上海站（08.05）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-shanghai-20230805-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-shanghai-20230805/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-shanghai-20230805/
 
         - place: 杭州站（06.03）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-hangzhou-20230603-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-hangzhou-20230603/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-hangzhou-20230603/
 
         - place: 深圳站（04.08）
           img: https://pek3b.qingstor.com/kubesphere-community/images/kubesphere-meetup-shenzhen-20230408-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-shenzhen-20230408/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-shenzhen-20230408/
 
     - year: 2022
       meetup: 
         - place: 在线 Meetup（10.22）
           img: https://pek3b.qingstor.com/kubesphere-community/images/apisix-kubesphere-meetup1022-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/apisix-kubesphere-meetup1022/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/apisix-kubesphere-meetup1022/
 
         - place: 杭州站（08. 27）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-hangzhou-20220827-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-hangzhou-20220827/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-hangzhou-20220827/
 
         - place: 广州站（08.06）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-guangzhou-cover.jpeg
-          meetupUrl: https://kubesphere.io/zh/live/meetup-guangzhou-20220806/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-guangzhou-20220806/
 
         - place: 在线 Meetup（06.25）
           img: https://pek3b.qingstor.com/kubesphere-community/images/pulsar-kubesphere-meetup-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/pulsar-kubesphere-meetup0625/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/pulsar-kubesphere-meetup0625/
 
         - place: 成都站（05.14）
           img: https://pek3b.qingstor.com/kubesphere-community/images/cloudnative-chengdu-20220514-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-chengdu-20220514/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-chengdu-20220514/
 
         - place: 长沙站（03.12）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-changsha-20220312-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-changsha-20220312/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-changsha-20220312/
 
     - year: 2021
       meetup: 
         - place: 杭州站（10.23）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-hangzhou1023-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-hangzhou1023/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-hangzhou1023/
         
         - place: 北京站（07.29）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-beijing-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-beijing/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-beijing/
         
         - place: 成都站（06.19）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-chengdu-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-chengdu/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-chengdu/
 
         - place: 杭州站（05.29）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-hangzhou-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-hangzhou/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-hangzhou/
 
         - place: 上海站（05.15）
           img: https://pek3b.qingstor.com/kubesphere-community/images/meetup-shanghai-cover.png
-          meetupUrl: https://kubesphere.io/zh/live/meetup-shanghai/
+          meetupUrl: https://docs.kubesphere-carryon.top/zh/live/meetup-shanghai/
 
 section5:
   title: 分享您的主题

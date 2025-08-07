@@ -33,14 +33,14 @@ Here are some examples of what can be achieved using extended APIs:
 - Overriding KubeSphere's existing page routes to implement your unique business logic.
 - Extending KubeSphere's API.
 
-If you want a more comprehensive understanding of extended APIs, please refer to link:https://dev-guide.kubesphere.io/extension-dev-guide/en/feature-customization/[Feature Customization]。
+If you want a more comprehensive understanding of extended APIs, please refer to link:https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/en/feature-customization/[Feature Customization]。
 
 == How Do I Build Extensions?
 
-View the link:https://dev-guide.kubesphere.io/extension-dev-guide/en/examples/[Development Examples] section to learn how to build extensions.
+View the link:https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/en/examples/[Development Examples] section to learn how to build extensions.
 
-If you have questions about the development process, try getting help at link:https://github.com/kubesphere/kubesphere/issues/new/choose[GitHub Issue].
+If you have questions about the development process, try getting help at link:https://github.com/whenegghitsrock/kubesphere-carryon/issues/new/choose[GitHub Issue].
 
 == How to Publish an Extension?
 
-Please refer to link:https://dev-guide.kubesphere.io/extension-dev-guide/zh/packaging-and-release/release/[Publish Extensions] to learn how to submit an extension to the KubeSphere Marketplace.
+Please refer to link:https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/zh/packaging-and-release/release/[Publish Extensions] to learn how to submit an extension to the KubeSphere Marketplace.

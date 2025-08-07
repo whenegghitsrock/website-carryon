@@ -64,7 +64,7 @@ cd /srv/kubekey/
 
 # 选择中文区下载(访问 GitHub 受限时使用)
 export KKZONE=cn
-curl -sfL https://get-kk.kubesphere.io | sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 ```
 
 - 查看 KubeKey 支持的 Kubernetes 版本列表 **`./kk version --show-supported-k8s`**
@@ -117,7 +117,7 @@ KubeKey 支持的 K8s 版本相对较新。本文选择 v1.30.6，而在生产�
 > **注意：** 
 >
 > - 安装完成后，请勿删除安装配置文件 **ksp-k8s-v1306.yaml**，后续进行节点扩容、卸载等操作时仍需要使用该文件。如果该文件丢失，您需要重新创建安装配置文件。
-> - 生成的默认配置文件内容较多，请参阅 [KubeKey 配置示例](https://github.com/kubesphere/kubekey/blob/master/docs/config-example.md) 了解完整配置说明。
+> - 生成的默认配置文件内容较多，请参阅 [KubeKey 配置示例](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/config-example.md) 了解完整配置说明。
 
 2. 修改配置文件
 
@@ -140,7 +140,7 @@ KubeKey 支持的 K8s 版本相对较新。本文选择 v1.30.6，而在生产�
 修改后的完整示例如下：
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: opsxlab
@@ -243,7 +243,7 @@ Greetings, KubeKey!
 
 This is a simple check of your environment.
 Before installation, ensure that your machines meet all requirements specified at
-https://github.com/kubesphere/kubekey#requirements-and-recommendations
+https://github.com/whenegghitsrock/kubekey-carryon#requirements-and-recommendations
 
 Install k8s with specify version:  v1.30.6
 
@@ -496,8 +496,8 @@ nfs-client        k8s-sigs.io/nfs-subdir-external-provisioner   Delete          
 > **说明：** KubeKey 部署 Kubernetes 集群时会自动安装 Helm，无需手动安装。
 
 ```bash
-# 如果无法访问 charts.kubesphere.io, 可将 charts.kubesphere.io 替换为 charts.kubesphere.com.cn
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere.io/main/ks-core-1.1.3.tgz --debug --wait \
+# 如果无法访问 charts.docs.kubesphere-carryon.top, 可将 charts.docs.kubesphere-carryon.top 替换为 charts.kubesphere.com.cn
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.3.tgz --debug --wait \
 --set global.imageRegistry=swr.cn-southwest-2.myhuaweicloud.com/ks \
 --set extension.imageRegistry=swr.cn-southwest-2.myhuaweicloud.com/ks \
 --set hostClusterName=opsxlab-main
@@ -537,7 +537,7 @@ Please be patient and wait for several seconds for the KubeSphere deployment to 
     Password: P@88w0rd
 
 NOTE: It is highly recommended to change the default password immediately after the first login.
-For additional information and details, please visit https://kubesphere.io.
+For additional information and details, please visit https://docs.kubesphere-carryon.top.
 ```
 
 ### 5.2 命令行验证 KubeSphere Core 状态

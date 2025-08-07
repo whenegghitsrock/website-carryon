@@ -44,7 +44,7 @@ kubectl -n kubesphere-system edit clusterconfiguration ks-installer
 
    ```bash
    # 删除所有 DevOps 相关资源
-   for devops_crd in $(kubectl get crd -o=jsonpath='{range .items[*]}{.metadata.name}{"\n"}{end}' | grep "devops.kubesphere.io"); do
+   for devops_crd in $(kubectl get crd -o=jsonpath='{range .items[*]}{.metadata.name}{"\n"}{end}' | grep "devops.docs.kubesphere-carryon.top"); do
        for ns in $(kubectl get ns -ojsonpath='{.items..metadata.name}'); do
            for devops_res in $(kubectl get $devops_crd -n $ns -oname); do
                kubectl patch $devops_res -n $ns -p '{"metadata":{"finalizers":[]}}' --type=merge
@@ -52,7 +52,7 @@ kubectl -n kubesphere-system edit clusterconfiguration ks-installer
        done
    done
    # 删除所有 DevOps CRD
-   kubectl get crd -o=jsonpath='{range .items[*]}{.metadata.name}{"\n"}{end}' | grep "devops.kubesphere.io" | xargs -I crd_name kubectl delete crd crd_name
+   kubectl get crd -o=jsonpath='{range .items[*]}{.metadata.name}{"\n"}{end}' | grep "devops.docs.kubesphere-carryon.top" | xargs -I crd_name kubectl delete crd crd_name
    # 删除 DevOps 命名空间
    kubectl delete namespace kubesphere-devops-system
    ```
@@ -65,7 +65,7 @@ kubectl -n kubesphere-system edit clusterconfiguration ks-installer
 2. 仅禁用日志收集：
 
    ```bash
-   kubectl delete inputs.logging.kubesphere.io -n kubesphere-logging-system tail
+   kubectl delete inputs.logging.docs.kubesphere-carryon.top -n kubesphere-logging-system tail
    ```
 
    {{< notice note >}}
@@ -77,11 +77,11 @@ kubectl -n kubesphere-system edit clusterconfiguration ks-installer
 3. 卸载包括 Elasticsearch 的日志系统，请执行以下操作：
 
    ```bash
-   kubectl delete crd fluentbitconfigs.logging.kubesphere.io
-   kubectl delete crd fluentbits.logging.kubesphere.io
-   kubectl delete crd inputs.logging.kubesphere.io
-   kubectl delete crd outputs.logging.kubesphere.io
-   kubectl delete crd parsers.logging.kubesphere.io
+   kubectl delete crd fluentbitconfigs.logging.docs.kubesphere-carryon.top
+   kubectl delete crd fluentbits.logging.docs.kubesphere-carryon.top
+   kubectl delete crd inputs.logging.docs.kubesphere-carryon.top
+   kubectl delete crd outputs.logging.docs.kubesphere-carryon.top
+   kubectl delete crd parsers.logging.docs.kubesphere-carryon.top
    kubectl delete deployments.apps -n kubesphere-logging-system fluentbit-operator
    helm uninstall elasticsearch-logging --namespace kubesphere-logging-system
    ```
@@ -134,8 +134,8 @@ kubectl -n kubesphere-system edit clusterconfiguration ks-installer
 
    ```bash
    helm uninstall kube-auditing -n kubesphere-logging-system
-   kubectl delete crd rules.auditing.kubesphere.io
-   kubectl delete crd webhooks.auditing.kubesphere.io
+   kubectl delete crd rules.auditing.docs.kubesphere-carryon.top
+   kubectl delete crd webhooks.auditing.docs.kubesphere-carryon.top
    ```
 
 ## 卸载 KubeSphere 服务网格

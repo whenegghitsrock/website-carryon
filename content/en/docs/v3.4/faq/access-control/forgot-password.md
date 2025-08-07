@@ -23,7 +23,7 @@ Weight: 16410
 Execute the following command on the host cluster to change the password of any account.
 
 ```bash
-kubectl patch users <USERNAME> -p '{"spec":{"password":"<YOURPASSWORD>"}}' --type='merge' && kubectl annotate users <USERNAME> iam.kubesphere.io/password-encrypted-
+kubectl patch users <USERNAME> -p '{"spec":{"password":"<YOURPASSWORD>"}}' --type='merge' && kubectl annotate users <USERNAME> iam.docs.kubesphere-carryon.top/password-encrypted-
 ```
 
 {{< notice note >}}

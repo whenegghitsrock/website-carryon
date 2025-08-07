@@ -114,7 +114,7 @@ Fluent Bit 可以高效的采集日志，但是如果需要对日志信息进行
 
 ## 用法详解
 
-借助 Fluent Operator 可以对日志进行复杂处理，在这里我们可以通过 [fluent-operator-walkthrough](https://github.com/kubesphere-sigs/fluent-operator-walkthrough "fluent-operator-walkthrough") 中将日志输出到 elasticsearch 与 kafka 的例子对 Fluent Operator 的实际功能进行介绍。要获得 Fluent Operator 的一些实际操作经验，您需要一个 Kind 集群。同时你还需要在这种类型的集群中设置一个 Kafka 集群和一个 Elasticsearch 集群。
+借助 Fluent Operator 可以对日志进行复杂处理，在这里我们可以通过 [fluent-operator-walkthrough](https://github.com/whenegghitsrock-sigs/fluent-operator-walkthrough "fluent-operator-walkthrough") 中将日志输出到 elasticsearch 与 kafka 的例子对 Fluent Operator 的实际功能进行介绍。要获得 Fluent Operator 的一些实际操作经验，您需要一个 Kind 集群。同时你还需要在这种类型的集群中设置一个 Kafka 集群和一个 Elasticsearch 集群。
 
 ```shell
 # 创建一个 kind 的集群并命名为 fluent

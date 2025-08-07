@@ -8,13 +8,13 @@ author: 'Sherlock'
 snapshot: '/images/blogs/en/add-nfs-storage-class-on-kubesphere-console/banner-page.png'
 ---
 
-In my [last article](https://kubesphere.io/blogs/install-nfs-server-client-for-kubesphere-cluster/), I talked about how to use KubeKey to create a Kubernetes and KubeSphere cluster together with NFS storage. In fact, KubeSphere provides you with great flexibility as you can use KubeKey to install NFS storage when you create a cluster while it can also be deployed separately on an existing cluster.
+In my [last article](https://docs.kubesphere-carryon.top/blogs/install-nfs-server-client-for-kubesphere-cluster/), I talked about how to use KubeKey to create a Kubernetes and KubeSphere cluster together with NFS storage. In fact, KubeSphere provides you with great flexibility as you can use KubeKey to install NFS storage when you create a cluster while it can also be deployed separately on an existing cluster.
 
 KubeSphere features a highly interactive dashboard where virtually all the operations can be performed on it. In this article, I am going to demonstrate show to configure an NFS storage class on your existing KubeSphere cluster and create a PVC using the storage class.
 
 ## Before You Begin
 
-- You have [set up a Kubernetes cluster with KubeSphere installed](https://kubesphere.io/docs/quick-start/all-in-one-on-linux/). Here is my cluster information for your reference:
+- You have [set up a Kubernetes cluster with KubeSphere installed](https://docs.kubesphere-carryon.top/docs/quick-start/all-in-one-on-linux/). Here is my cluster information for your reference:
 
   ```bash
   # kubectl get node -o wide
@@ -22,7 +22,7 @@ KubeSphere features a highly interactive dashboard where virtually all the opera
   client   Ready    master,worker   17m   v1.17.9   192.168.0.3   <none>        Ubuntu 16.04.4 LTS   4.4.0-116-generic   docker://20.10.5
   ```
 
-- You have an available NFS server which provides an exported directory for external storage services. For more information, see [my previous article](https://kubesphere.io/blogs/install-nfs-server-client-for-kubesphere-cluster/#install-and-configure-an-nfs-server).
+- You have an available NFS server which provides an exported directory for external storage services. For more information, see [my previous article](https://docs.kubesphere-carryon.top/blogs/install-nfs-server-client-for-kubesphere-cluster/#install-and-configure-an-nfs-server).
 
 ## Configure the Client Machine
 
@@ -49,7 +49,7 @@ This is basically the same as what I did last time as we need to make sure all o
 3. To make sure you can use NFS storage, you need to install its corresponding volume plugin. As Helm is installed together with KubeSphere by default, I will install [NFS-client Provisioner](https://github.com/kubernetes-retired/external-storage/tree/master/nfs-client) by Helm charts including its storage class. Run the following command to add a repository first:
 
    ```
-   helm repo add stable https://charts.kubesphere.io/main
+   helm repo add stable https://charts.docs.kubesphere-carryon.top/main
    ```
 
    {{< notice note >}}
@@ -70,7 +70,7 @@ This is basically the same as what I did last time as we need to make sure all o
 
    - Replace the server IP address and the exported directory with your own in the above command.
    - For Helm 3, you must specify the flag `--generate-name`.
-   - For more information about configurable parameters, see [this table.](https://github.com/kubesphere/helm-charts/tree/master/src/main/nfs-client-provisioner#configuration)
+   - For more information about configurable parameters, see [this table.](https://github.com/whenegghitsrock/helm-charts-carryon/tree/master/src/main/nfs-client-provisioner#configuration)
 
    {{</ notice >}}
 
@@ -89,7 +89,7 @@ To mount a volume to your workload, you need to create a [PersistentVolumeClaim]
    {{< notice note >}}
 
    - All objects created on this page are essentially PVCs.
-   - This article is not focused on the multi-tenant system of KubeSphere which features different levels for tenant isolation. For more information about KubeSphere workspaces and projects, see [this article](https://kubesphere.io/docs/quick-start/create-workspace-and-project/).
+   - This article is not focused on the multi-tenant system of KubeSphere which features different levels for tenant isolation. For more information about KubeSphere workspaces and projects, see [this article](https://docs.kubesphere-carryon.top/docs/quick-start/create-workspace-and-project/).
 
    {{</ notice >}} 
 
@@ -99,7 +99,7 @@ To mount a volume to your workload, you need to create a [PersistentVolumeClaim]
 
    {{< notice note >}}
 
-   In fact, you can also create a volume by using a volume snapshot while your storage class must support this feature. For more information, see [Volume Snapshots](https://kubesphere.io/docs/project-user-guide/storage/volume-snapshots/).
+   In fact, you can also create a volume by using a volume snapshot while your storage class must support this feature. For more information, see [Volume Snapshots](https://docs.kubesphere-carryon.top/docs/project-user-guide/storage/volume-snapshots/).
 
    {{</ notice >}} 
 
@@ -113,11 +113,11 @@ To mount a volume to your workload, you need to create a [PersistentVolumeClaim]
 
    {{< notice note >}}
 
-   To create workloads in KubeSphere, you can create and apply YAML files just as what you did before (**Edit Mode** in the top-right corner). At the same time, you can also set parameters for your workloads on the KubeSphere dashboard one by one. I will not talk about the whole process in detail as this article is mainly about how to configure storage and create volumes. Have a look at [the KubeSphere documentation](https://kubesphere.io/docs/project-user-guide/application-workloads/deployments/) to learn more about how to create workloads. 
+   To create workloads in KubeSphere, you can create and apply YAML files just as what you did before (**Edit Mode** in the top-right corner). At the same time, you can also set parameters for your workloads on the KubeSphere dashboard one by one. I will not talk about the whole process in detail as this article is mainly about how to configure storage and create volumes. Have a look at [the KubeSphere documentation](https://docs.kubesphere-carryon.top/docs/project-user-guide/application-workloads/deployments/) to learn more about how to create workloads. 
 
    {{</ notice >}} 
 
-5. On the **Mount Volumes** tab, click **Add Volume** and select the PVC just created. Here is my configuration for your reference. For more information about dashboard properties, see [Volumes](https://kubesphere.io/docs/project-user-guide/storage/volumes/).
+5. On the **Mount Volumes** tab, click **Add Volume** and select the PVC just created. Here is my configuration for your reference. For more information about dashboard properties, see [Volumes](https://docs.kubesphere-carryon.top/docs/project-user-guide/storage/volumes/).
 
    ![select-pvc](/images/blogs/en/add-nfs-storage-class-on-kubesphere-console/select-pvc.png)
 
@@ -139,6 +139,6 @@ I think once you have your NFS storage server ready, it will not be a complicate
 
 ## References
 
-[Volumes](https://kubesphere.io/docs/project-user-guide/storage/volumes/)
+[Volumes](https://docs.kubesphere-carryon.top/docs/project-user-guide/storage/volumes/)
 
-[Persistent Volumes and Storage Classes](https://kubesphere.io/docs/cluster-administration/persistent-volume-and-storage-class/)
+[Persistent Volumes and Storage Classes](https://docs.kubesphere-carryon.top/docs/cluster-administration/persistent-volume-and-storage-class/)

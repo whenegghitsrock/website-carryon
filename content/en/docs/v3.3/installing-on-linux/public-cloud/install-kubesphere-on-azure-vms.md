@@ -98,10 +98,10 @@ ssh -i .ssh/id_rsa2  -p50200 kubesphere@40.81.5.xx
 
    {{< tab "Good network connections to GitHub/Googleapis" >}}
 
-Download KubeKey from its [GitHub Release Page](https://github.com/kubesphere/kubekey/releases) or use the following command directly:
+Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly:
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{</ tab >}}
@@ -117,7 +117,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -sfL https://get-kk.kubesphere.io | VERSION=v3.0.7 sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
 ```
 
 {{< notice note >}}
@@ -182,7 +182,7 @@ spec:
     - node000001
     - node000002
 ```
-For more information, see [this file](https://github.com/kubesphere/kubekey/blob/release-2.2/docs/config-example.md).
+For more information, see [this file](https://github.com/whenegghitsrock/kubekey-carryon/blob/release-2.2/docs/config-example.md).
 
 ### Configure the load balancer
 
@@ -249,7 +249,7 @@ Azure Virtual Network doesn't support the IPIP mode used by [Calico](https://doc
         are up and running.
      2. Please change the default password after login.
    #####################################################
-   https://kubesphere.io             2020-xx-xx xx:xx:xx
+   https://docs.kubesphere-carryon.top             2020-xx-xx xx:xx:xx
    ```
 
 4. Access the KubeSphere console using `<NodeIP>:30880` with the default account and password (`admin/P@88w0rd`).

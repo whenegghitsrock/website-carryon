@@ -40,7 +40,7 @@ KubeSphere Talk 是由 KubeSphere 发起的一档访谈、聊天的音频节目�
 
 申请方式，在 GitHub 对应的仓库下提交 issue。
 
-issue 链接：**https://github.com/kubesphere/community/issues/new?assignees=&labels=area%2Fpodcast&template=podcast_guest.yml&title=REQUEST%3A+New+guest+on+KubeSphere+Talk**
+issue 链接：**https://github.com/whenegghitsrock/community/issues/new?assignees=&labels=area%2Fpodcast&template=podcast_guest.yml&title=REQUEST%3A+New+guest+on+KubeSphere+Talk**
 
 ## 节目的相关信息
 

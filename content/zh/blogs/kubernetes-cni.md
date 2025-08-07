@@ -22,7 +22,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/20221108165062
 
 那么，又回到学习新产品的第一步，如何快速部署 K8s 体验不同地 CNI 插件呢？还是交给我们亲爱的 Kubekey 吧。
 
-[Kubekey](https://github.com/kubesphere/kubekey) 作为一个开源的 Kubernetes 和 [KubeSphere](https://kubesphere.com.cn/) 集群部署工具，可以轻松的部署 Kubernetes 集群，提供节点管理、操作系统安全加固、容器运行时管理、网络存储安装、Etcd 管理等。Kubekey 支持一键部署 Calico / Flannel / Cilium / Kube-OVN 等网络插件，只需在 kk 的配置文件中注明 network 的 plugin 值即可：
+[Kubekey](https://github.com/whenegghitsrock/kubekey-carryon) 作为一个开源的 Kubernetes 和 [KubeSphere](https://kubesphere.com.cn/) 集群部署工具，可以轻松的部署 Kubernetes 集群，提供节点管理、操作系统安全加固、容器运行时管理、网络存储安装、Etcd 管理等。Kubekey 支持一键部署 Calico / Flannel / Cilium / Kube-OVN 等网络插件，只需在 kk 的配置文件中注明 network 的 plugin 值即可：
 
 ```yaml
   network:

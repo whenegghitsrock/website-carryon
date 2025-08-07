@@ -48,9 +48,9 @@ footer:
         - content: Partners
           link: partner/
         # - content: Roadmap
-        #   link: https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md
+        #   link: https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/docs/roadmap.md
         - content: Global Site
-          link: https://kubesphere.io
+          link: https://docs.kubesphere-carryon.top
         - content: China Site
           link: https://kubesphere.com.cn/
 

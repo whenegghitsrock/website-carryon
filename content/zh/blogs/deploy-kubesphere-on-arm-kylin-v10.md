@@ -290,7 +290,7 @@ ln -s /data/containerd /var/lib/containerd
 
 ### 4.1 下载 KubeKey
 
-本文将 master-1 节点作为部署节点，把 KubeKey (下文简称 kk) 最新版 (**v3.0.13**) 二进制文件下载到该服务器。具体 kk 版本号可以在 [kk 发行页面](https://github.com/kubesphere/kubekey/releases) 查看。
+本文将 master-1 节点作为部署节点，把 KubeKey (下文简称 kk) 最新版 (**v3.0.13**) 二进制文件下载到该服务器。具体 kk 版本号可以在 [kk 发行页面](https://github.com/whenegghitsrock/kubekey-carryon/releases) 查看。
 
 - 下载最新版的 KubeKey
 
@@ -302,14 +302,14 @@ cd kubekey/
 # 选择中文区下载(访问 GitHub 受限时使用)
 export KKZONE=cn
 
-curl -sfL https://get-kk.kubesphere.io | sh -
+curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 
 # 正确的执行效果如下
 [root@ksp-master-1 ~]# cd ~
 [root@ksp-master-1 ~]# mkdir kubekey
 [root@ksp-master-1 ~]# cd kubekey/
 [root@ksp-master-1 kubekey]# export KKZONE=cn
-[root@ksp-master-1 kubekey]# curl -sfL https://get-kk.kubesphere.io | sh -
+[root@ksp-master-1 kubekey]# curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
 
 Downloading kubekey v3.0.13 from https://kubernetes.pek3b.qingstor.com/kubekey/releases/download/v3.0.13/kubekey-v3.0.13-linux-arm64.tar.gz ...
 
@@ -342,7 +342,7 @@ total 107012
 
 命令执行成功后，在当前目录会生成文件名为 **kubesphere-v340-v1265.yaml** 的配置文件。
 
-> 注意：生成的默认配置文件内容较多，这里就不做过多展示了，更多详细的配置参数请参考 [官方配置示例](https://github.com/kubesphere/kubekey/blob/master/docs/config-example.md)。
+> 注意：生成的默认配置文件内容较多，这里就不做过多展示了，更多详细的配置参数请参考 [官方配置示例](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/config-example.md)。
 
 本文示例采用 3 个节点同时作为 control-plane、etcd 节点和 worker 节点。
 
@@ -360,7 +360,7 @@ total 107012
 修改后的示例如下：
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha2
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha2
 kind: Cluster
 metadata:
   name: sample
@@ -455,7 +455,7 @@ events:
   enabled: true # 将 "false" 更改为 "true"
 ```
 
-> 注意：默认情况下，如果启用了事件系统功能，KubeKey 将安装内置 Elasticsearch。对于生产环境，不建议在部署集群时启用事件系统。请在部署完成后，参考 [可插拔组件官方文档](https://www.kubesphere.io/zh/docs/v3.3/pluggable-components/events/) 手工配置。
+> 注意：默认情况下，如果启用了事件系统功能，KubeKey 将安装内置 Elasticsearch。对于生产环境，不建议在部署集群时启用事件系统。请在部署完成后，参考 [可插拔组件官方文档](https://www.docs.kubesphere-carryon.top/zh/docs/v3.3/pluggable-components/events/) 手工配置。
 
 - 启用 KubeSphere 告警系统
 
@@ -471,7 +471,7 @@ auditing:
   enabled: true # 将 "false" 更改为 "true"
 ```
 
-> 注意：默认情况下，如果启用了审计日志功能，KubeKey 将安装内置 Elasticsearch。对于生产环境，不建议在部署集群时启用审计功能。请在部署完成后，参考 [可插拔组件官方文档](https://www.kubesphere.io/zh/docs/v3.3/pluggable-components/events/) 手工配置。
+> 注意：默认情况下，如果启用了审计日志功能，KubeKey 将安装内置 Elasticsearch。对于生产环境，不建议在部署集群时启用审计功能。请在部署完成后，参考 [可插拔组件官方文档](https://www.docs.kubesphere-carryon.top/zh/docs/v3.3/pluggable-components/events/) 手工配置。
 
 - 启用 KubeSphere 服务网格
 
@@ -494,7 +494,7 @@ metrics_server:
   enabled: true # 将 "false" 更改为 "true"
 ```
 
-> 说明：KubeSphere 支持用于 [部署](https://www.kubesphere.io/zh/docs/v3.3/project-user-guide/application-workloads/deployments/) 的容器组（Pod）弹性伸缩程序 (HPA)。在 KubeSphere 中，Metrics Server 控制着 HPA 是否启用。
+> 说明：KubeSphere 支持用于 [部署](https://www.docs.kubesphere-carryon.top/zh/docs/v3.3/project-user-guide/application-workloads/deployments/) 的容器组（Pod）弹性伸缩程序 (HPA)。在 KubeSphere 中，Metrics Server 控制着 HPA 是否启用。
 
 - 启用网络策略、容器组 IP 池，**服务拓扑图不启用**（名字排序，对应配置参数排序）
 
@@ -565,7 +565,7 @@ Greetings, KubeKey!
 
 This is a simple check of your environment.
 Before installation, ensure that your machines meet all requirements specified at
-https://github.com/kubesphere/kubekey#requirements-and-recommendations
+https://github.com/whenegghitsrock/kubekey-carryon#requirements-and-recommendations
 
 Continue this installation? [yes/no]: 
 ```
@@ -588,7 +588,7 @@ downloading arm64 kubeadm v1.26.5 ...
 实际部署时如果不手工干预，**必然会出现下面的情况 :**
 
 ```bash
-clusterconfiguration.installer.kubesphere.io/ks-installer created
+clusterconfiguration.installer.docs.kubesphere-carryon.top/ks-installer created
 18:13:51 CST skipped: [ksp-master-3]
 18:13:51 CST skipped: [ksp-master-2]
 18:13:51 CST success: [ksp-master-1]
@@ -605,7 +605,7 @@ failed: [ksp-master-1] execute task timeout, Timeout=2h
 真正的部署完成后，您应该会在终端上看到类似于下面的输出。提示部署完成的同时，输出中还会显示用户登陆 KubeSphere 的默认管理员用户和密码。
 
 ```yaml
-clusterconfiguration.installer.kubesphere.io/ks-installer created
+clusterconfiguration.installer.docs.kubesphere-carryon.top/ks-installer created
 17:35:03 CST skipped: [ksp-master-3]
 17:35:03 CST skipped: [ksp-master-2]
 17:35:03 CST success: [ksp-master-1]
@@ -625,7 +625,7 @@ NOTES：
   2. Please change the default password after login.
 
 #####################################################
-https://kubesphere.io             2023-11-07 17:43:50
+https://docs.kubesphere-carryon.top             2023-11-07 17:43:50
 #####################################################
 17:43:53 CST skipped: [ksp-master-3]
 17:43:53 CST skipped: [ksp-master-2]
@@ -922,7 +922,7 @@ registry.cn-beijing.aliyuncs.com/kubesphereio/ks-console                    v3.4
 # 解决思路：重新构建镜像，推送到自己的镜像仓库
 
 # Clone 源代码
-git clone https://github.com/kubesphere/console.git
+git clone https://github.com/whenegghitsrock/console.git
 cd console
 git checkout -b v3.4.0 v3.4.0
 
@@ -1138,7 +1138,7 @@ kubectl get pods -A -o wide --sort-by='.spec.nodeName'
 
 > **注意：** 
 > 
-> - 结果略，请自行查看或是参考上一篇[基于 OpenEuler ARM 的部署文档](https://kubesphere.io/zh/blogs/deploy-kubesphere-v3.4.0-on-arm-openeuler-2/)
+> - 结果略，请自行查看或是参考上一篇[基于 OpenEuler ARM 的部署文档](https://docs.kubesphere-carryon.top/zh/blogs/deploy-kubesphere-v3.4.0-on-arm-openeuler-2/)
 > - 如果 Pod 状态不是 Running 请根据本文的第 5 小节「异常组件及解决方案」中的内容进行比对处理，文中未涉及的问题可以参考本文的解决思路自行解决。
 
 - 查看 Image 列表

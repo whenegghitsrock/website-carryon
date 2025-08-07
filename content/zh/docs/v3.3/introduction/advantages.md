@@ -89,4 +89,4 @@ KubeSphere 社区具备充分的能力和技术知识，让大家能共享开源
 
 **贡献者**：KubeSphere 贡献者通过贡献代码或文档等对整个社区进行贡献。就算您不是该领域的专家，无论是细微的代码修改或是语言改进，您的贡献也会帮助到整个社区。
 
-有关更多信息，请参见[合作伙伴项目](https://kubesphere.io/zh/partner/)和[社区治理](https://kubesphere.io/zh/contribution/)。
+有关更多信息，请参见[合作伙伴项目](https://docs.kubesphere-carryon.top/zh/partner/)和[社区治理](https://docs.kubesphere-carryon.top/zh/contribution/)。

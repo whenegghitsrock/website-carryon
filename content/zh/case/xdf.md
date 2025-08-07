@@ -103,7 +103,7 @@ section2:
       image: https://pek3b.qingstor.com/kubesphere-community/images/260552ee-e505-4028-bfbe-4359e0bfe2fa.png
     - title:
       contentList:
-        - content: 这里引入 Kyverno 的作用是：Kubesphere 根据 Secret 的 type 字段前缀有：credential.devops.kubesphere.io/ 就会处理。为了避免 kubesphere-devops-system 下的源 Secret 被 ks-controller-manager 同步。所以源 Secret 的 type 不可为 type： credential.devops.kubesphere.io/basic-auth。kubed 在执行同步的时候，Kyverno 会将其替换。这样控制器只会同步目标凭证到 Jenkins。
+        - content: 这里引入 Kyverno 的作用是：Kubesphere 根据 Secret 的 type 字段前缀有：credential.devops.docs.kubesphere-carryon.top/ 就会处理。为了避免 kubesphere-devops-system 下的源 Secret 被 ks-controller-manager 同步。所以源 Secret 的 type 不可为 type： credential.devops.docs.kubesphere-carryon.top/basic-auth。kubed 在执行同步的时候，Kyverno 会将其替换。这样控制器只会同步目标凭证到 Jenkins。
       image: 
     - title:
       contentList: 

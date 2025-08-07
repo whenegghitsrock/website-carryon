@@ -9,7 +9,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-docs/png/20190930151339.png'
 [NetApp](https://www.netapp.com/cn/index.aspx) 是向目前的数据密集型企业提供统一存储解决方案的居世界最前列的公司，其 Data ONTAP是全球首屈一指的存储操作系统。NetApp 的存储解决方案涵盖了专业化的硬件、软件和服务，为开放网络环境提供了无缝的存储管理。
 **Ontap**数据管理软件支持高速闪存、低成本旋转介质和基于云的对象存储等存储配置，为通过块或文件访问协议读写数据的应用程序提供统一存储。
 **Trident**是一个由NetApp维护的完全支持的开源项目。以帮助您满足容器化应用程序的复杂**持久性**需求。
-[KubeSphere](https://github.com/kubesphere) 是一款开源项目，在目前主流容器调度平台 Kubernetes 之上构建的企业级分布式多租户**容器管理平台**，提供简单易用的操作界面以及向导式操作方式，在降低用户使用容器调度平台学习成本的同时，极大降低开发、测试、运维的日常工作的复杂度。
+[KubeSphere](https://github.com/whenegghitsrock) 是一款开源项目，在目前主流容器调度平台 Kubernetes 之上构建的企业级分布式多租户**容器管理平台**，提供简单易用的操作界面以及向导式操作方式，在降低用户使用容器调度平台学习成本的同时，极大降低开发、测试、运维的日常工作的复杂度。
 
 
 ## 整体方案
@@ -132,4 +132,4 @@ kubectl apply -f kubesphere.yaml
 
 - https://docs.netapp.com/ontap-9/index.jsp?lang=zh_CN
 - https://netapp-trident.readthedocs.io/en/stable-v19.07/introduction.html
-- https://github.com/kubesphere/ks-installer/blob/master/README_zh.md
+- https://github.com/whenegghitsrock/ks-installer-carryon/blob/master/README_zh.md

@@ -119,7 +119,7 @@ image:/images/ks-qkcp/zh/devops-user-guide/use-devops/create-a-pipeline-using-a-
 
 == 步骤 2：在 GitHub 仓库中修改 Jenkinsfile
 
-. 登录 GitHub 并 Fork GitHub 仓库 link:https://github.com/kubesphere/devops-maven-sample[devops-maven-sample] 的所有分支至您的 GitHub 个人账户。
+. 登录 GitHub 并 Fork GitHub 仓库 link:https://github.com/whenegghitsrock/devops-maven-sample[devops-maven-sample] 的所有分支至您的 GitHub 个人账户。
 
 . 在您自己的 GitHub 仓库 **devops-maven-sample** 中，切换到 v4.1.0-sonarqube 分支，点击根目录中的文件 **Jenkinsfile-online**。
 
@@ -152,7 +152,7 @@ image:/images/ks-qkcp/zh/devops-user-guide/use-devops/create-a-pipeline-using-a-
 
 |GITHUB_ACCOUNT
 |your-github-id
-|请替换为您的 GitHub 账户名。例如，如果您的 GitHub 地址是 link:https://github.com/kubesphere/[]，则您的 GitHub 账户名为 **kubesphere**，也可以替换为该账户下的 Organization 名称。
+|请替换为您的 GitHub 账户名。例如，如果您的 GitHub 地址是 link:https://github.com/whenegghitsrock/[]，则您的 GitHub 账户名为 **kubesphere**，也可以替换为该账户下的 Organization 名称。
 
 |APP_NAME
 |devops-maven-sample
@@ -368,7 +368,7 @@ input(id: 'release-image-with-tag', message: 'release image with tag?', submitte
 == 步骤 5：检查流水线状态
 
 . 在运行记录的**流水线**页签下，查看流水线的运行状态。流水线在刚创建时会初始化几分钟。
-// 示例流水线有八个阶段，它们已在 link:https://github.com/kubesphere/devops-maven-sample/blob/sonarqube/Jenkinsfile-online[Jenkinsfile-online] 中单独定义。
+// 示例流水线有八个阶段，它们已在 link:https://github.com/whenegghitsrock/devops-maven-sample/blob/sonarqube/Jenkinsfile-online[Jenkinsfile-online] 中单独定义。
 
 . 点击**运行日志**页签查看流水线运行日志。点击每个阶段查看其详细日志。点击**查看完整日志**，根据日志排除故障和问题，也可以将日志下载到本地进行进一步分析。
 

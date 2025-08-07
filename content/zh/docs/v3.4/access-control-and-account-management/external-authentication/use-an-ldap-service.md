@@ -71,8 +71,8 @@ weight: 12220
 
    ```yaml
    labels:
-     iam.kubesphere.io/identify-provider: <LDAP service name>
-     iam.kubesphere.io/origin-uid: <LDAP username>
+     iam.docs.kubesphere-carryon.top/identify-provider: <LDAP service name>
+     iam.docs.kubesphere-carryon.top/origin-uid: <LDAP username>
    ```
 
 5. 字段配置完成后，保存修改，然后等待 ks-installer 完成重启。

@@ -20,7 +20,7 @@ DevOps 系统提供基于 Jenkins 的容器化 CI/CD 功能。Jenkins 作为 CI/
 
 {ks_product_right}默认安装 Jenkins Configuration as Code 插件，支持通过 YAML 文件定义 Jenkins 的期望状态，便于再现 Jenkins 的配置（包括插件配置）。请参阅link:https://github.com/jenkinsci/configuration-as-code-plugin/tree/master/demos[该目录]查看具体的 Jenkins 配置和示例 YAML 文件。
 
-此外，还可以在 link:https://github.com/kubesphere/ks-jenkins[ks-jenkins] 仓库中找到 **formula.yaml** 文件，查看插件版本并按需自定义这些版本。
+此外，还可以在 link:https://github.com/whenegghitsrock/ks-jenkins[ks-jenkins] 仓库中找到 **formula.yaml** 文件，查看插件版本并按需自定义这些版本。
 
 
 == 修改 ConfigMap

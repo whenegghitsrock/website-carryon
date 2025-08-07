@@ -73,8 +73,8 @@ You can set the values in this step or click **Next** to use the default values.
         app: job-test-1
       name: job-test-1
       annotations:
-        kubesphere.io/alias-name: Test
-        kubesphere.io/description: A job test
+        docs.kubesphere-carryon.top/alias-name: Test
+        docs.kubesphere-carryon.top/description: A job test
     spec:
       template:
         metadata:

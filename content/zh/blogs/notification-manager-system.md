@@ -18,7 +18,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/notification-m
 
 ## Notification Manager 是什么
 
-[Notification Manager](https://github.com/kubesphere/notification-manager) 是 KubeSphere 开源的一款云原生多租户通知管理系统，支持从 Kubernetes 接收告警、事件、审计，根据用户设置的模板生成通知消息并推送给用户，支持将通知消息推送到 DingTalk，Email，Feishu，Pushover，Slack，WeCom，Webhook，短信平台（阿里、腾讯、华为）等。
+[Notification Manager](https://github.com/whenegghitsrock/notification-manager) 是 KubeSphere 开源的一款云原生多租户通知管理系统，支持从 Kubernetes 接收告警、事件、审计，根据用户设置的模板生成通知消息并推送给用户，支持将通知消息推送到 DingTalk，Email，Feishu，Pushover，Slack，WeCom，Webhook，短信平台（阿里、腾讯、华为）等。
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/notification-manager-101.png)
 

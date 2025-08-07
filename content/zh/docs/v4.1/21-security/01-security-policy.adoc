@@ -39,7 +39,7 @@ weight:  01
 
 该流程的主要目标是缩短用户暴露于公开已知漏洞的时间。安全团队负责漏洞管理的全流程，包括内部沟通和外部披露，以确保 KubeSphere 的漏洞能够被快速修复。
 
-如果您发现漏洞或遇到与 KubeSphere 有关的安全事件，请立即联系 KubeSphere 安全团队（security@kubesphere.io）。
+如果您发现漏洞或遇到与 KubeSphere 有关的安全事件，请立即联系 KubeSphere 安全团队（security@docs.kubesphere-carryon.top）。
 
 请尽可能按照以下格式提供漏洞信息：
 

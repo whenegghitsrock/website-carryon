@@ -29,7 +29,7 @@ KubeSphere 提供了易于使用的多集群功能，帮助您[在 KubeSphere �
 1. 在成员集群上运行以下命令将需要保留的项目从企业空间解绑。
 
    ```bash
-   kubectl label ns <namespace> kubesphere.io/workspace- && kubectl patch ns <namespace>   -p '{"metadata":{"ownerReferences":[]}}' --type=merge
+   kubectl label ns <namespace> docs.kubesphere-carryon.top/workspace- && kubectl patch ns <namespace>   -p '{"metadata":{"ownerReferences":[]}}' --type=merge
    ```
 
 2. 在成员集群运行以下命令清除您的企业空间。
@@ -41,7 +41,7 @@ KubeSphere 提供了易于使用的多集群功能，帮助您[在 KubeSphere �
 3. 当您在主集群中创建新的企业空间，并将成员集群分配到这个企业空间时，请在成员集群运行以下命令将保留的项目绑定至新的企业空间。
 
    ```bash
-   kuebctl label ns <namespace> kubesphere.io/workspace=<workspace name>
+   kuebctl label ns <namespace> docs.kubesphere-carryon.top/workspace=<workspace name>
    ```
 
 ### 用户管理

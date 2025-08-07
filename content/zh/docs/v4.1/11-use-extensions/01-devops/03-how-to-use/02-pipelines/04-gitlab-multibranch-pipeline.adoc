@@ -59,7 +59,7 @@ link:https://gitlab.com/users/sign_in[GitLab] 是一款基于 web 的 Git 仓库
 
 == 步骤 2：在 GitLab 仓库中编辑 Jenkinsfile
 
-. 登录 GitLab 并创建一个公开项目。点击**新建项目 > 导入项目**，选择**从 URL 导入仓库**，输入 link:https://github.com/kubesphere/devops-maven-sample[devops-maven-sample] 的 URL，可见性级别选择**公开**，然后点击**新建项目**。
+. 登录 GitLab 并创建一个公开项目。点击**新建项目 > 导入项目**，选择**从 URL 导入仓库**，输入 link:https://github.com/whenegghitsrock/devops-maven-sample[devops-maven-sample] 的 URL，可见性级别选择**公开**，然后点击**新建项目**。
 
 . 在刚刚创建的项目中，从 v4.1.0 分支中创建一个新分支，命名为 **gitlab-demo**。
 

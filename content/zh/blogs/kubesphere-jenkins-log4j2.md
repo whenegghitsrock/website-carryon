@@ -137,7 +137,7 @@ root@devops-jenkins-67fbd685bf-4jmn4:/var/jenkins_home# find ./ -name "*log4j*"
 
 ## 自定义构建 Jenkins 镜像
 
-KubeSphere 使用的 Jenkins Image 是采用 GitHub 中 [ks-jenkins](https://github.com/kubesphere/ks-jenkins) 项目下的相关工具和配置进行打包的，该项目底层工具使用的是 jcli，具体说明可以查看项目介绍。
+KubeSphere 使用的 Jenkins Image 是采用 GitHub 中 [ks-jenkins](https://github.com/whenegghitsrock/ks-jenkins) 项目下的相关工具和配置进行打包的，该项目底层工具使用的是 jcli，具体说明可以查看项目介绍。
 
 项目文档比较简单，没有一定的代码开发基础，实战起来还是比较困难的，我也是根据自己的理解和搜索引擎整理了操作过程，有些细节知识点并没有深入了解，目前也仅仅是解决了能打包的需求。
 
@@ -325,7 +325,7 @@ Docker Compose version v2.15.1
 ```bash
 mkdir /data/build
 cd /data/build
-git clone https://github.com/kubesphere/ks-jenkins.git
+git clone https://github.com/whenegghitsrock/ks-jenkins.git
 ```
 
 > **说明：** 受限于网络原因，可能需要多次操作。
@@ -643,8 +643,8 @@ imagePullPolicy: IfNotPresent
 
 [root@ks-k8s-master-0 ~]# kubectl get  deploy -n kubesphere-devops-system -o wide
 NAME                READY   UP-TO-DATE   AVAILABLE   AGE    CONTAINERS       IMAGES                                                                    SELECTOR
-devops-apiserver    1/1     1            1           102d   ks-devops        registry.cn-beijing.aliyuncs.com/kubesphereio/devops-apiserver:v3.3.0     app.kubernetes.io/instance=devops,app.kubernetes.io/name=ks-devops,devops.kubesphere.io/component=apiserver
-devops-controller   1/1     1            1           102d   ks-devops        registry.cn-beijing.aliyuncs.com/kubesphereio/devops-controller:v3.3.0    app.kubernetes.io/instance=devops,app.kubernetes.io/name=ks-devops,devops.kubesphere.io/component=controller
+devops-apiserver    1/1     1            1           102d   ks-devops        registry.cn-beijing.aliyuncs.com/kubesphereio/devops-apiserver:v3.3.0     app.kubernetes.io/instance=devops,app.kubernetes.io/name=ks-devops,devops.docs.kubesphere-carryon.top/component=apiserver
+devops-controller   1/1     1            1           102d   ks-devops        registry.cn-beijing.aliyuncs.com/kubesphereio/devops-controller:v3.3.0    app.kubernetes.io/instance=devops,app.kubernetes.io/name=ks-devops,devops.docs.kubesphere-carryon.top/component=controller
 devops-jenkins      1/1     1            1           102d   devops-jenkins   registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.3.0-2.375.3   component=devops-jenkins-master
 ```
 

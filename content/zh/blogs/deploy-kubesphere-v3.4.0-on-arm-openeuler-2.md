@@ -41,7 +41,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/kubesphere-3.4
 
 ## 1. 本文简介
 
-本文是 [ARM 版 openEuler 22.03 部署 KubeSphere 3.4.0 不完全指南](https://kubesphere.io/zh/blogs/deploy-kubesphere-v3.4.0-on-arm-openeuler/) 的续集，受限于字符数量限制，将完整的文档拆成了两篇。
+本文是 [ARM 版 openEuler 22.03 部署 KubeSphere 3.4.0 不完全指南](https://docs.kubesphere-carryon.top/zh/blogs/deploy-kubesphere-v3.4.0-on-arm-openeuler/) 的续集，受限于字符数量限制，将完整的文档拆成了两篇。
 
 上篇我们完成了 KubeSphere 和 Kubernetes 集群的部署，下篇我们主要介绍以下两个主题内容：
 

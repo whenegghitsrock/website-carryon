@@ -74,7 +74,7 @@ section3:
 
 section4:
   title: 主要功能
-  content: 如果您在寻找一个可以媲美商业产品的开源项目，KubeSphere 会是您的选择。<br> <br>我们在 <a class='inner-a' target='_blank' href='https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md'>RoadMap</a> 列出了下一个版本的规划，欢迎所有人为社区提供您的需求、建议与反馈。
+  content: 如果您在寻找一个可以媲美商业产品的开源项目，KubeSphere 会是您的选择。<br> <br>我们在 <a class='inner-a' target='_blank' href='https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/docs/roadmap.md'>RoadMap</a> 列出了下一个版本的规划，欢迎所有人为社区提供您的需求、建议与反馈。
   children:
     - name: 安装 Kubernetes 集群
       icon: /images/home/provisioning-kubernetes.svg
@@ -187,8 +187,8 @@ section6:
 
   btnContent: 案例学习
   btnLink: case/
-  link: mailto:info@kubesphere.io
-  linkContent: 希望加入用户社区并在 KubeSphere 官网展示您的 Logo？请邮件至 info@kubesphere.io
+  link: mailto:info@docs.kubesphere-carryon.top
+  linkContent: 希望加入用户社区并在 KubeSphere 官网展示您的 Logo？请邮件至 info@docs.kubesphere-carryon.top
   joinTitle: 加入 KubeSphere 社区合作伙伴计划
   joinContent: 我们非常期待您加入 KubeSphere 社区合作伙伴计划，共同完善各自的生态，加速您的业务增长。
   joinLink: partner/

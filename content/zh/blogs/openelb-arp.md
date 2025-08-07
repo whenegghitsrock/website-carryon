@@ -31,12 +31,12 @@ $ kubectl apply -f https://raw.githubusercontent.com/openelb/openelb/master/depl
 > EIP 地址要与集群主机节点在同一网段内，且不可绑定任何网卡；
 
 ```yaml
-apiVersion: network.kubesphere.io/v1alpha2
+apiVersion: network.docs.kubesphere-carryon.top/v1alpha2
 kind: Eip
 metadata:
   name: eip-sample-pool
   annotations:
-    eip.openelb.kubesphere.io/is-default-eip: "true"
+    eip.openelb.docs.kubesphere-carryon.top/is-default-eip: "true"
 spec:
   address: 192.168.0.91-192.168.0.100
   protocol: layer2
@@ -49,9 +49,9 @@ spec:
 把 Service 类型修改为 LoadBalancer，同时 annotations 中添加如下三行：
 
 ```yaml
-lb.kubesphere.io/v1alpha1: openelb
-protocol.openelb.kubesphere.io/v1alpha1: layer2
-eip.openelb.kubesphere.io/v1alpha2: layer2-eip
+lb.docs.kubesphere-carryon.top/v1alpha1: openelb
+protocol.openelb.docs.kubesphere-carryon.top/v1alpha1: layer2
+eip.openelb.docs.kubesphere-carryon.top/v1alpha2: layer2-eip
 ```
 
 总体配置清单如下：
@@ -62,9 +62,9 @@ apiVersion: v1
 metadata:
   name: layer2-svc
   annotations:
-    lb.kubesphere.io/v1alpha1: openelb
-    protocol.openelb.kubesphere.io/v1alpha1: layer2
-    eip.openelb.kubesphere.io/v1alpha2: layer2-eip
+    lb.docs.kubesphere-carryon.top/v1alpha1: openelb
+    protocol.openelb.docs.kubesphere-carryon.top/v1alpha1: layer2
+    eip.openelb.docs.kubesphere-carryon.top/v1alpha2: layer2-eip
 spec:
   selector:
     app: layer2-openelb

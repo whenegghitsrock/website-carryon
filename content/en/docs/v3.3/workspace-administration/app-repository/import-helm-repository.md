@@ -22,7 +22,7 @@ This tutorial demonstrates how to add an app repository to KubeSphere.
 
 1. Log in to the web console of KubeSphere as `ws-admin`. In your workspace, go to **App Repositories** under **App Management**, and then click **Add**.
 
-2. In the dialog that appears, specify an app repository name and add your repository URL. For example, enter `https://charts.kubesphere.io/main`.
+2. In the dialog that appears, specify an app repository name and add your repository URL. For example, enter `https://charts.docs.kubesphere-carryon.top/main`.
 
     - **Name**: Set a simple and clear name for the repository, which is easy for users to identify.
     - **URL**: Follow the RFC 3986 specification with the following three protocols supported:

@@ -15,7 +15,7 @@ weight: 13300
 
 {{< notice note >}}
 
-关于网络策略的实现，您可以参考 [KubeSphere NetworkPolicy](https://github.com/kubesphere/community/blob/master/sig-network/concepts-and-designs/kubesphere-network-policy.md)。
+关于网络策略的实现，您可以参考 [KubeSphere NetworkPolicy](https://github.com/whenegghitsrock/community/blob/master/sig-network/concepts-and-designs/kubesphere-network-policy.md)。
 
 {{</ notice >}}
 
@@ -162,8 +162,8 @@ KubeSphere 使用 CIDR 来区分对等方。假设当前项目中已创建一个
 KubeSphere 提供 `allowedIngressNamespaces` 配置项来简化类似配置，在配置中列出的所有项目都会被放行。
 
 ```yaml
-root@node1:~# kubectl get -n kubesphere-system clusterconfigurations.installer.kubesphere.io  ks-installer -o yaml
-apiVersion: installer.kubesphere.io/v1alpha1
+root@node1:~# kubectl get -n kubesphere-system clusterconfigurations.installer.docs.kubesphere-carryon.top  ks-installer -o yaml
+apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
 kind: ClusterConfiguration
 metadata:
   ...
@@ -207,4 +207,4 @@ spec:
 
 问：设置入站规则时，如何确定 CIDR？
 
-答：在 Kubernetes 中，数据包的源 IP 地址通常由 NAT 处理，因此您需要确定数据包的源地址，然后再添加规则。有关更多信息，请参考 [Source IP](https://github.com/kubesphere/community/blob/master/sig-network/concepts-and-designs/kubesphere-network-policy.md#source-ip)。
+答：在 Kubernetes 中，数据包的源 IP 地址通常由 NAT 处理，因此您需要确定数据包的源地址，然后再添加规则。有关更多信息，请参考 [Source IP](https://github.com/whenegghitsrock/community/blob/master/sig-network/concepts-and-designs/kubesphere-network-policy.md#source-ip)。

@@ -5,8 +5,8 @@
     "title": "KubeSphere",
     "contact": {
       "name": "KubeSphere",
-      "url": "https://kubesphere.io/",
-      "email": "info@kubesphere.io"
+      "url": "https://docs.kubesphere-carryon.top/",
+      "email": "info@docs.kubesphere-carryon.top"
     },
     "license": {
       "name": "Apache 2.0",
@@ -138,7 +138,7 @@
     ]
   },
   "paths": {
-    "/kapis/cluster.kubesphere.io/v1alpha1/clusters/validation": {
+    "/kapis/cluster.docs.kubesphere-carryon.top/v1alpha1/clusters/validation": {
       "post": {
         "produces": [
           "application/json"
@@ -162,7 +162,7 @@
         }
       }
     },
-    "/kapis/cluster.kubesphere.io/v1alpha1/clusters/{cluster}/agent/deployment": {
+    "/kapis/cluster.docs.kubesphere-carryon.top/v1alpha1/clusters/{cluster}/agent/deployment": {
       "get": {
         "produces": [
           "application/json"
@@ -188,7 +188,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/crumbissuer": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/crumbissuer": {
       "get": {
         "produces": [
           "application/json"
@@ -208,7 +208,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/checkCron": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/checkCron": {
       "post": {
         "produces": [
           "application/json",
@@ -246,7 +246,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/credentials/{credential}/usage": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/credentials/{credential}/usage": {
       "get": {
         "produces": [
           "application/json"
@@ -282,7 +282,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/jenkins/{path}": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/jenkins/{path}": {
       "get": {
         "produces": [
           "application/json"
@@ -315,7 +315,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}": {
       "get": {
         "produces": [
           "application/json"
@@ -351,7 +351,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches": {
       "get": {
         "produces": [
           "application/json"
@@ -413,7 +413,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}": {
       "get": {
         "produces": [
           "application/json"
@@ -456,7 +456,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs": {
       "post": {
         "produces": [
           "application/json"
@@ -507,7 +507,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}": {
       "get": {
         "produces": [
           "application/json"
@@ -557,7 +557,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/artifacts": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/artifacts": {
       "get": {
         "produces": [
           "application/json"
@@ -624,7 +624,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/log": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/log": {
       "get": {
         "produces": [
           "text/plain; charset=utf-8"
@@ -679,7 +679,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/nodes": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/nodes": {
       "get": {
         "produces": [
           "application/json"
@@ -740,7 +740,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/nodes/{node}/steps": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/nodes/{node}/steps": {
       "get": {
         "produces": [
           "application/json"
@@ -800,7 +800,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/nodes/{node}/steps/{step}": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/nodes/{node}/steps/{step}": {
       "post": {
         "produces": [
           "text/plain; charset=utf-8"
@@ -869,7 +869,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/nodes/{node}/steps/{step}/log": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/nodes/{node}/steps/{step}/log": {
       "get": {
         "produces": [
           "text/plain; charset=utf-8"
@@ -938,7 +938,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/nodesdetail": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/nodesdetail": {
       "get": {
         "produces": [
           "application/json"
@@ -991,7 +991,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/replay": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/replay": {
       "post": {
         "produces": [
           "application/json"
@@ -1041,7 +1041,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/stop": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/branches/{branch}/runs/{run}/stop": {
       "post": {
         "produces": [
           "application/json"
@@ -1107,7 +1107,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/checkScriptCompile": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/checkScriptCompile": {
       "post": {
         "consumes": [
           "application/x-www-form-urlencoded",
@@ -1157,7 +1157,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/consolelog": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/consolelog": {
       "get": {
         "produces": [
           "text/plain; charset=utf-8"
@@ -1190,7 +1190,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs": {
       "get": {
         "produces": [
           "application/json"
@@ -1289,7 +1289,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}": {
       "get": {
         "produces": [
           "application/json"
@@ -1332,7 +1332,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/artifacts": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/artifacts": {
       "get": {
         "produces": [
           "application/json"
@@ -1392,7 +1392,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/log": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/log": {
       "get": {
         "produces": [
           "text/plain; charset=utf-8"
@@ -1440,7 +1440,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/nodes": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/nodes": {
       "get": {
         "produces": [
           "application/json"
@@ -1486,7 +1486,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/nodes/{node}/steps": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/nodes/{node}/steps": {
       "get": {
         "produces": [
           "application/json"
@@ -1539,7 +1539,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/nodes/{node}/steps/{step}": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/nodes/{node}/steps/{step}": {
       "post": {
         "produces": [
           "text/plain; charset=utf-8"
@@ -1601,7 +1601,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/nodes/{node}/steps/{step}/log": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/nodes/{node}/steps/{step}/log": {
       "get": {
         "produces": [
           "text/plain; charset=utf-8"
@@ -1663,7 +1663,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/nodesdetail": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/nodesdetail": {
       "get": {
         "produces": [
           "application/json"
@@ -1709,7 +1709,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/replay": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/replay": {
       "post": {
         "produces": [
           "application/json"
@@ -1752,7 +1752,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/stop": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/runs/{run}/stop": {
       "post": {
         "produces": [
           "application/json"
@@ -1811,7 +1811,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/devops/{devops}/pipelines/{pipeline}/scan": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/pipelines/{pipeline}/scan": {
       "post": {
         "produces": [
           "text/html; charset=utf-8"
@@ -1851,7 +1851,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/jenkins/{path}": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/jenkins/{path}": {
       "get": {
         "produces": [
           "application/json"
@@ -1877,7 +1877,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/scms/{scm}/organizations": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/scms/{scm}/organizations": {
       "get": {
         "produces": [
           "application/json"
@@ -1917,7 +1917,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/scms/{scm}/organizations/{organization}/repositories": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/scms/{scm}/organizations/{organization}/repositories": {
       "get": {
         "produces": [
           "application/json"
@@ -1977,7 +1977,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/scms/{scm}/servers": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/scms/{scm}/servers": {
       "get": {
         "produces": [
           "application/json"
@@ -2044,7 +2044,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/scms/{scm}/verify": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/scms/{scm}/verify": {
       "post": {
         "produces": [
           "application/json"
@@ -2073,7 +2073,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/search": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/search": {
       "get": {
         "produces": [
           "application/json"
@@ -2124,7 +2124,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/tojenkinsfile": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/tojenkinsfile": {
       "post": {
         "consumes": [
           "application/x-www-form-urlencoded"
@@ -2158,7 +2158,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/tojson": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/tojson": {
       "post": {
         "consumes": [
           "application/x-www-form-urlencoded"
@@ -2192,7 +2192,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/webhook/git": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/webhook/git": {
       "get": {
         "produces": [
           "text/plain; charset=utf-8"
@@ -2247,7 +2247,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha2/webhook/github": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha2/webhook/github": {
       "post": {
         "consumes": [
           "application/x-www-form-urlencoded",
@@ -2268,7 +2268,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha3/devops/{devops}/credentials": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha3/devops/{devops}/credentials": {
       "get": {
         "produces": [
           "application/json"
@@ -2360,7 +2360,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha3/devops/{devops}/credentials/{credential}": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha3/devops/{devops}/credentials/{credential}": {
       "get": {
         "produces": [
           "application/json"
@@ -2473,7 +2473,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha3/devops/{devops}/pipelines": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha3/devops/{devops}/pipelines": {
       "get": {
         "produces": [
           "application/json"
@@ -2540,7 +2540,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha3/devops/{devops}/pipelines/{pipeline}": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha3/devops/{devops}/pipelines/{pipeline}": {
       "get": {
         "produces": [
           "application/json"
@@ -2653,7 +2653,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha3/workspaces/{workspace}/devops": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha3/workspaces/{workspace}/devops": {
       "get": {
         "produces": [
           "application/json"
@@ -2720,7 +2720,7 @@
         }
       }
     },
-    "/kapis/devops.kubesphere.io/v1alpha3/workspaces/{workspace}/devops/{devops}": {
+    "/kapis/devops.docs.kubesphere-carryon.top/v1alpha3/workspaces/{workspace}/devops/{devops}": {
       "get": {
         "produces": [
           "application/json"
@@ -2833,7 +2833,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/clustermembers": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/clustermembers": {
       "get": {
         "produces": [
           "application/json"
@@ -2887,7 +2887,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/clustermembers/{clustermember}": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/clustermembers/{clustermember}": {
       "get": {
         "produces": [
           "application/json"
@@ -2978,7 +2978,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/clustermembers/{clustermember}/clusterroles": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/clustermembers/{clustermember}/clusterroles": {
       "get": {
         "produces": [
           "application/json"
@@ -3007,7 +3007,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/clusterroles": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/clusterroles": {
       "get": {
         "produces": [
           "application/json"
@@ -3055,7 +3055,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/clusterroles/{clusterrole}": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/clusterroles/{clusterrole}": {
       "get": {
         "produces": [
           "application/json"
@@ -3181,7 +3181,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/devops/{devops}/members": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/members": {
       "get": {
         "produces": [
           "application/json"
@@ -3251,7 +3251,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/devops/{devops}/members/{member}": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/members/{member}": {
       "get": {
         "produces": [
           "application/json"
@@ -3363,7 +3363,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/devops/{devops}/members/{member}/roles": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/members/{member}/roles": {
       "get": {
         "produces": [
           "application/json"
@@ -3399,7 +3399,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/devops/{devops}/roles": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/roles": {
       "get": {
         "produces": [
           "application/json"
@@ -3463,7 +3463,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/devops/{devops}/roles/{role}": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/devops/{devops}/roles/{role}": {
       "get": {
         "produces": [
           "application/json"
@@ -3617,7 +3617,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/globalroles": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/globalroles": {
       "get": {
         "produces": [
           "application/json"
@@ -3665,7 +3665,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/globalroles/{globalrole}": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/globalroles/{globalrole}": {
       "get": {
         "produces": [
           "application/json"
@@ -3791,7 +3791,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/login": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/login": {
       "post": {
         "consumes": [
           "application/json"
@@ -3825,7 +3825,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/namespace/{namespace}/rolebindings/{rolebinding}": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/namespace/{namespace}/rolebindings/{rolebinding}": {
       "delete": {
         "produces": [
           "application/json"
@@ -3868,7 +3868,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/namespaces/{namespace}/members": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/members": {
       "get": {
         "produces": [
           "application/json"
@@ -3938,7 +3938,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/namespaces/{namespace}/members/{member}": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/members/{member}": {
       "get": {
         "produces": [
           "application/json"
@@ -4050,7 +4050,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/namespaces/{namespace}/members/{member}/roles": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/members/{member}/roles": {
       "get": {
         "produces": [
           "application/json"
@@ -4086,7 +4086,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/namespaces/{namespace}/rolebindings": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/rolebindings": {
       "post": {
         "produces": [
           "application/json"
@@ -4129,7 +4129,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/namespaces/{namespace}/roles": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/roles": {
       "get": {
         "produces": [
           "application/json"
@@ -4193,7 +4193,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/namespaces/{namespace}/roles/{role}": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/roles/{role}": {
       "get": {
         "produces": [
           "application/json"
@@ -4347,7 +4347,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/users": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/users": {
       "get": {
         "produces": [
           "application/json"
@@ -4395,7 +4395,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/users/{user}": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/users/{user}": {
       "get": {
         "produces": [
           "application/json"
@@ -4486,7 +4486,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/users/{user}/globalroles": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/users/{user}/globalroles": {
       "get": {
         "produces": [
           "application/json"
@@ -4515,7 +4515,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/users/{user}/loginrecords": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/users/{user}/loginrecords": {
       "get": {
         "produces": [
           "application/json"
@@ -4544,7 +4544,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/users/{user}/password": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/users/{user}/password": {
       "put": {
         "produces": [
           "application/json"
@@ -4581,7 +4581,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/groupbindings": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/groupbindings": {
       "post": {
         "produces": [
           "application/json"
@@ -4621,7 +4621,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/groupbindings/{groupbinding}": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/groupbindings/{groupbinding}": {
       "delete": {
         "produces": [
           "application/json"
@@ -4657,7 +4657,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/groups": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/groups": {
       "get": {
         "produces": [
           "application/json"
@@ -4721,7 +4721,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/groups/{group}": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/groups/{group}": {
       "get": {
         "produces": [
           "application/json"
@@ -4833,7 +4833,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/groups/{group}/devopsrolebindings": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/groups/{group}/devopsrolebindings": {
       "get": {
         "produces": [
           "application/json"
@@ -4869,7 +4869,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/groups/{group}/groupbindings": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/groups/{group}/groupbindings": {
       "get": {
         "produces": [
           "application/json"
@@ -4905,7 +4905,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/groups/{group}/rolebindings": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/groups/{group}/rolebindings": {
       "get": {
         "produces": [
           "application/json"
@@ -4941,7 +4941,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/groups/{group}/workspacerolebindings": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/groups/{group}/workspacerolebindings": {
       "get": {
         "produces": [
           "application/json"
@@ -4977,7 +4977,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/workspacemembers": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/workspacemembers": {
       "get": {
         "produces": [
           "application/json"
@@ -5047,7 +5047,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/workspacemembers/{workspacemember}": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/workspacemembers/{workspacemember}": {
       "get": {
         "produces": [
           "application/json"
@@ -5159,7 +5159,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/workspacemembers/{workspacemember}/workspaceroles": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/workspacemembers/{workspacemember}/workspaceroles": {
       "get": {
         "produces": [
           "application/json"
@@ -5195,7 +5195,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/workspacerolebindings": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/workspacerolebindings": {
       "post": {
         "produces": [
           "application/json"
@@ -5238,7 +5238,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/workspacerolebindings/{rolebinding}": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/workspacerolebindings/{rolebinding}": {
       "delete": {
         "produces": [
           "application/json"
@@ -5274,7 +5274,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/workspaceroles": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/workspaceroles": {
       "get": {
         "produces": [
           "application/json"
@@ -5338,7 +5338,7 @@
         }
       }
     },
-    "/kapis/iam.kubesphere.io/v1alpha2/workspaces/{workspace}/workspaceroles/{workspacerole}": {
+    "/kapis/iam.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/workspaceroles/{workspacerole}": {
       "get": {
         "produces": [
           "application/json"
@@ -5492,7 +5492,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/cluster": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/cluster": {
       "get": {
         "produces": [
           "application/json"
@@ -5505,7 +5505,7 @@
         "parameters": [
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both cluster CPU usage and disk usage: `cluster_cpu_usage|cluster_disk_size_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both cluster CPU usage and disk usage: `cluster_cpu_usage|cluster_disk_size_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -5545,7 +5545,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/components/{component}": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/components/{component}": {
       "get": {
         "produces": [
           "application/json"
@@ -5565,7 +5565,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both etcd server list and total size of the underlying database: `etcd_server_list|etcd_mvcc_db_size`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both etcd server list and total size of the underlying database: `etcd_server_list|etcd_mvcc_db_size`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -5605,7 +5605,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/kubesphere": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/kubesphere": {
       "get": {
         "produces": [
           "application/json"
@@ -5625,7 +5625,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/namespaces": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/namespaces": {
       "get": {
         "produces": [
           "application/json"
@@ -5638,7 +5638,7 @@
         "parameters": [
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both namespace CPU usage and memory usage: `namespace_cpu_usage|namespace_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both namespace CPU usage and memory usage: `namespace_cpu_usage|namespace_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -5710,7 +5710,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/namespaces/{namespace}": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}": {
       "get": {
         "produces": [
           "application/json"
@@ -5730,7 +5730,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both namespace CPU usage and memory usage: `namespace_cpu_usage|namespace_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both namespace CPU usage and memory usage: `namespace_cpu_usage|namespace_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -5770,7 +5770,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/namespaces/{namespace}/persistentvolumeclaims": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}/persistentvolumeclaims": {
       "get": {
         "produces": [
           "application/json"
@@ -5790,7 +5790,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both PVC available and used inodes: `pvc_inodes_available|pvc_inodes_used`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both PVC available and used inodes: `pvc_inodes_available|pvc_inodes_used`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -5862,7 +5862,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/namespaces/{namespace}/persistentvolumeclaims/{pvc}": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}/persistentvolumeclaims/{pvc}": {
       "get": {
         "produces": [
           "application/json"
@@ -5889,7 +5889,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both PVC available and used inodes: `pvc_inodes_available|pvc_inodes_used`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both PVC available and used inodes: `pvc_inodes_available|pvc_inodes_used`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -5929,7 +5929,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/namespaces/{namespace}/pods": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}/pods": {
       "get": {
         "produces": [
           "application/json"
@@ -5949,7 +5949,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both pod CPU usage and memory usage: `pod_cpu_usage|pod_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both pod CPU usage and memory usage: `pod_cpu_usage|pod_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -6021,7 +6021,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/namespaces/{namespace}/pods/{pod}": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}/pods/{pod}": {
       "get": {
         "produces": [
           "application/json"
@@ -6048,7 +6048,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both pod CPU usage and memory usage: `pod_cpu_usage|pod_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both pod CPU usage and memory usage: `pod_cpu_usage|pod_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -6088,7 +6088,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/namespaces/{namespace}/pods/{pod}/containers": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}/pods/{pod}/containers": {
       "get": {
         "produces": [
           "application/json"
@@ -6115,7 +6115,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both container CPU usage and memory usage: `container_cpu_usage|container_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both container CPU usage and memory usage: `container_cpu_usage|container_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -6187,7 +6187,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/namespaces/{namespace}/pods/{pod}/containers/{container}": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}/pods/{pod}/containers/{container}": {
       "get": {
         "produces": [
           "application/json"
@@ -6221,7 +6221,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both container CPU usage and memory usage: `container_cpu_usage|container_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both container CPU usage and memory usage: `container_cpu_usage|container_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -6261,7 +6261,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/namespaces/{namespace}/targets/labelsets": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}/targets/labelsets": {
       "get": {
         "produces": [
           "application/json"
@@ -6311,7 +6311,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/namespaces/{namespace}/targets/metadata": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}/targets/metadata": {
       "get": {
         "produces": [
           "application/json"
@@ -6340,7 +6340,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/namespaces/{namespace}/targets/query": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}/targets/query": {
       "get": {
         "produces": [
           "application/json"
@@ -6400,7 +6400,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/namespaces/{namespace}/workloads": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}/workloads": {
       "get": {
         "produces": [
           "application/json"
@@ -6420,7 +6420,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both workload CPU usage and memory usage: `workload_cpu_usage|workload_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both workload CPU usage and memory usage: `workload_cpu_usage|workload_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -6492,7 +6492,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/namespaces/{namespace}/workloads/{kind}": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}/workloads/{kind}": {
       "get": {
         "produces": [
           "application/json"
@@ -6519,7 +6519,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both workload CPU usage and memory usage: `workload_cpu_usage|workload_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both workload CPU usage and memory usage: `workload_cpu_usage|workload_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -6591,7 +6591,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/namespaces/{namespace}/workloads/{kind}/{workload}/pods": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}/workloads/{kind}/{workload}/pods": {
       "get": {
         "produces": [
           "application/json"
@@ -6625,7 +6625,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both pod CPU usage and memory usage: `pod_cpu_usage|pod_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both pod CPU usage and memory usage: `pod_cpu_usage|pod_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -6697,7 +6697,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/nodes": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/nodes": {
       "get": {
         "produces": [
           "application/json"
@@ -6710,7 +6710,7 @@
         "parameters": [
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both node CPU usage and disk usage: `node_cpu_usage|node_disk_size_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both node CPU usage and disk usage: `node_cpu_usage|node_disk_size_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -6782,7 +6782,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/nodes/{node}": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/nodes/{node}": {
       "get": {
         "produces": [
           "application/json"
@@ -6802,7 +6802,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both node CPU usage and disk usage: `node_cpu_usage|node_disk_size_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both node CPU usage and disk usage: `node_cpu_usage|node_disk_size_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -6842,7 +6842,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/nodes/{node}/pods": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/nodes/{node}/pods": {
       "get": {
         "produces": [
           "application/json"
@@ -6862,7 +6862,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both pod CPU usage and memory usage: `pod_cpu_usage|pod_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both pod CPU usage and memory usage: `pod_cpu_usage|pod_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -6934,7 +6934,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/nodes/{node}/pods/{pod}": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/nodes/{node}/pods/{pod}": {
       "get": {
         "produces": [
           "application/json"
@@ -6961,7 +6961,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both pod CPU usage and memory usage: `pod_cpu_usage|pod_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both pod CPU usage and memory usage: `pod_cpu_usage|pod_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -7001,7 +7001,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/pods": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/pods": {
       "get": {
         "produces": [
           "application/json"
@@ -7014,7 +7014,7 @@
         "parameters": [
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both pod CPU usage and memory usage: `pod_cpu_usage|pod_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both pod CPU usage and memory usage: `pod_cpu_usage|pod_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -7086,7 +7086,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/storageclasses/{storageclass}/persistentvolumeclaims": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/storageclasses/{storageclass}/persistentvolumeclaims": {
       "get": {
         "produces": [
           "application/json"
@@ -7106,7 +7106,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both PVC available and used inodes: `pvc_inodes_available|pvc_inodes_used`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both PVC available and used inodes: `pvc_inodes_available|pvc_inodes_used`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -7178,7 +7178,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/targets/labelsets": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/targets/labelsets": {
       "get": {
         "produces": [
           "application/json"
@@ -7221,7 +7221,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/targets/metadata": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/targets/metadata": {
       "get": {
         "produces": [
           "application/json"
@@ -7241,7 +7241,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/targets/query": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/targets/query": {
       "get": {
         "produces": [
           "application/json"
@@ -7294,7 +7294,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/workspaces": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/workspaces": {
       "get": {
         "produces": [
           "application/json"
@@ -7307,7 +7307,7 @@
         "parameters": [
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both workspace CPU usage and memory usage: `workspace_cpu_usage|workspace_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both workspace CPU usage and memory usage: `workspace_cpu_usage|workspace_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -7379,7 +7379,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/workspaces/{workspace}": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/workspaces/{workspace}": {
       "get": {
         "produces": [
           "application/json"
@@ -7399,7 +7399,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both workspace CPU usage and memory usage: `workspace_cpu_usage|workspace_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both workspace CPU usage and memory usage: `workspace_cpu_usage|workspace_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -7445,7 +7445,7 @@
         }
       }
     },
-    "/kapis/monitoring.kubesphere.io/v1alpha3/workspaces/{workspace}/namespaces": {
+    "/kapis/monitoring.docs.kubesphere-carryon.top/v1alpha3/workspaces/{workspace}/namespaces": {
       "get": {
         "produces": [
           "application/json"
@@ -7465,7 +7465,7 @@
           },
           {
             "type": "string",
-            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both namespace CPU usage and memory usage: `namespace_cpu_usage|namespace_memory_usage`. View available metrics at [kubesphere.io](https://v2-0.docs.kubesphere.io/docs/api-reference/monitoring-metrics/).",
+            "description": "The metric name filter consists of a regexp pattern. It specifies which metric data to return. For example, the following filter matches both namespace CPU usage and memory usage: `namespace_cpu_usage|namespace_memory_usage`. View available metrics at [docs.kubesphere-carryon.top](https://v2-0.docs.docs.kubesphere-carryon.top/docs/api-reference/monitoring-metrics/).",
             "name": "metrics_filter",
             "in": "query"
           },
@@ -7537,7 +7537,7 @@
         }
       }
     },
-    "/kapis/network.kubesphere.io/v1alpha2/namespaces/{namespace}/topology": {
+    "/kapis/network.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/topology": {
       "get": {
         "produces": [
           "application/json"
@@ -7566,7 +7566,7 @@
         }
       }
     },
-    "/kapis/network.kubesphere.io/v1alpha2/namespaces/{namespace}/topology/{node_id}": {
+    "/kapis/network.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/topology/{node_id}": {
       "get": {
         "produces": [
           "application/json"
@@ -9896,7 +9896,7 @@
         }
       }
     },
-    "/kapis/operations.kubesphere.io/v1alpha2/namespaces/{namespace}/jobs/{job}": {
+    "/kapis/operations.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/jobs/{job}": {
       "post": {
         "produces": [
           "application/json"
@@ -9943,7 +9943,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/abnormalworkloads": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/abnormalworkloads": {
       "get": {
         "produces": [
           "application/json"
@@ -9963,7 +9963,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/componenthealth": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/componenthealth": {
       "get": {
         "produces": [
           "application/json"
@@ -9983,7 +9983,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/components": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/components": {
       "get": {
         "produces": [
           "application/json"
@@ -10006,7 +10006,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/components/{component}": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/components/{component}": {
       "get": {
         "produces": [
           "application/json"
@@ -10035,7 +10035,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/git/verify": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/git/verify": {
       "post": {
         "produces": [
           "application/json"
@@ -10065,7 +10065,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/namespaces/{namespace}/abnormalworkloads": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/abnormalworkloads": {
       "get": {
         "produces": [
           "application/json"
@@ -10094,7 +10094,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/namespaces/{namespace}/daemonsets/{daemonset}/revisions/{revision}": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/daemonsets/{daemonset}/revisions/{revision}": {
       "get": {
         "produces": [
           "application/json"
@@ -10137,7 +10137,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/namespaces/{namespace}/deployments/{deployment}/revisions/{revision}": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/deployments/{deployment}/revisions/{revision}": {
       "get": {
         "produces": [
           "application/json"
@@ -10180,7 +10180,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/namespaces/{namespace}/quotas": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/quotas": {
       "get": {
         "produces": [
           "application/json"
@@ -10209,7 +10209,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/namespaces/{namespace}/router": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/router": {
       "get": {
         "produces": [
           "application/json"
@@ -10319,7 +10319,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/namespaces/{namespace}/statefulsets/{statefulset}/revisions/{revision}": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/statefulsets/{statefulset}/revisions/{revision}": {
       "get": {
         "produces": [
           "application/json"
@@ -10362,7 +10362,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/namespaces/{namespace}/{resources}": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/{resources}": {
       "get": {
         "produces": [
           "application/json"
@@ -10426,7 +10426,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/quotas": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/quotas": {
       "get": {
         "produces": [
           "application/json"
@@ -10446,7 +10446,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/registry/blob": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/registry/blob": {
       "get": {
         "produces": [
           "application/json"
@@ -10490,7 +10490,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/registry/verify": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/registry/verify": {
       "post": {
         "produces": [
           "application/json"
@@ -10520,7 +10520,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/users/{user}/kubeconfig": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/users/{user}/kubeconfig": {
       "get": {
         "produces": [
           "text/plain",
@@ -10550,7 +10550,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/users/{user}/kubectl": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/users/{user}/kubectl": {
       "get": {
         "produces": [
           "application/json"
@@ -10579,7 +10579,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha2/{resources}": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha2/{resources}": {
       "get": {
         "produces": [
           "application/json"
@@ -10636,7 +10636,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha3/componenthealth": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha3/componenthealth": {
       "get": {
         "produces": [
           "application/json"
@@ -10656,7 +10656,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha3/components": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha3/components": {
       "get": {
         "produces": [
           "application/json"
@@ -10679,7 +10679,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha3/components/{component}": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha3/components/{component}": {
       "get": {
         "produces": [
           "application/json"
@@ -10708,7 +10708,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha3/namespaces/{namespace}/{resources}": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}/{resources}": {
       "get": {
         "produces": [
           "application/json"
@@ -10777,7 +10777,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha3/namespaces/{namespace}/{resources}/{name}": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha3/namespaces/{namespace}/{resources}/{name}": {
       "get": {
         "produces": [
           "application/json"
@@ -10820,7 +10820,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha3/{resources}": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha3/{resources}": {
       "get": {
         "produces": [
           "application/json"
@@ -10882,7 +10882,7 @@
         }
       }
     },
-    "/kapis/resources.kubesphere.io/v1alpha3/{resources}/{name}": {
+    "/kapis/resources.docs.kubesphere-carryon.top/v1alpha3/{resources}/{name}": {
       "get": {
         "produces": [
           "application/json"
@@ -10915,7 +10915,7 @@
         }
       }
     },
-    "/kapis/servicemesh.kubesphere.io/v1alpha2/namespaces/{namespace}/apps/{app}/health": {
+    "/kapis/servicemesh.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/apps/{app}/health": {
       "get": {
         "produces": [
           "application/json"
@@ -10965,7 +10965,7 @@
         }
       }
     },
-    "/kapis/servicemesh.kubesphere.io/v1alpha2/namespaces/{namespace}/apps/{app}/metrics": {
+    "/kapis/servicemesh.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/apps/{app}/metrics": {
       "get": {
         "produces": [
           "application/json"
@@ -11070,7 +11070,7 @@
         }
       }
     },
-    "/kapis/servicemesh.kubesphere.io/v1alpha2/namespaces/{namespace}/graph": {
+    "/kapis/servicemesh.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/graph": {
       "get": {
         "produces": [
           "application/json"
@@ -11145,7 +11145,7 @@
         }
       }
     },
-    "/kapis/servicemesh.kubesphere.io/v1alpha2/namespaces/{namespace}/health": {
+    "/kapis/servicemesh.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/health": {
       "get": {
         "produces": [
           "application/json"
@@ -11200,7 +11200,7 @@
         }
       }
     },
-    "/kapis/servicemesh.kubesphere.io/v1alpha2/namespaces/{namespace}/metrics": {
+    "/kapis/servicemesh.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/metrics": {
       "get": {
         "produces": [
           "application/json"
@@ -11298,7 +11298,7 @@
         }
       }
     },
-    "/kapis/servicemesh.kubesphere.io/v1alpha2/namespaces/{namespace}/services/{service}/health": {
+    "/kapis/servicemesh.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/services/{service}/health": {
       "get": {
         "produces": [
           "application/json"
@@ -11348,7 +11348,7 @@
         }
       }
     },
-    "/kapis/servicemesh.kubesphere.io/v1alpha2/namespaces/{namespace}/services/{service}/metrics": {
+    "/kapis/servicemesh.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/services/{service}/metrics": {
       "get": {
         "produces": [
           "application/json"
@@ -11453,7 +11453,7 @@
         }
       }
     },
-    "/kapis/servicemesh.kubesphere.io/v1alpha2/namespaces/{namespace}/services/{service}/traces": {
+    "/kapis/servicemesh.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/services/{service}/traces": {
       "get": {
         "consumes": [
           "application/json"
@@ -11526,7 +11526,7 @@
         }
       }
     },
-    "/kapis/servicemesh.kubesphere.io/v1alpha2/namespaces/{namespace}/workloads/{workload}/health": {
+    "/kapis/servicemesh.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/workloads/{workload}/health": {
       "get": {
         "produces": [
           "application/json"
@@ -11576,7 +11576,7 @@
         }
       }
     },
-    "/kapis/servicemesh.kubesphere.io/v1alpha2/namespaces/{namespace}/workloads/{workload}/metrics": {
+    "/kapis/servicemesh.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/workloads/{workload}/metrics": {
       "get": {
         "produces": [
           "application/json"
@@ -11681,7 +11681,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/auditing/events": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/auditing/events": {
       "get": {
         "consumes": [
           "application/json",
@@ -11851,7 +11851,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/clusters": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/clusters": {
       "get": {
         "produces": [
           "application/json"
@@ -11871,7 +11871,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/events": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/events": {
       "get": {
         "produces": [
           "application/json"
@@ -12006,7 +12006,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/federatednamespaces": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/federatednamespaces": {
       "get": {
         "produces": [
           "application/json"
@@ -12026,7 +12026,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/logs": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/logs": {
       "get": {
         "produces": [
           "application/json"
@@ -12149,7 +12149,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/namespaces": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/namespaces": {
       "get": {
         "produces": [
           "application/json"
@@ -12169,7 +12169,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/workspaces": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/workspaces": {
       "get": {
         "produces": [
           "application/json"
@@ -12217,7 +12217,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/workspaces/{workspace}": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}": {
       "get": {
         "produces": [
           "application/json"
@@ -12348,7 +12348,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/workspaces/{workspace}/clusters": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/clusters": {
       "get": {
         "produces": [
           "application/json"
@@ -12377,7 +12377,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/workspaces/{workspace}/devops": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/devops": {
       "get": {
         "produces": [
           "application/json"
@@ -12406,7 +12406,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/workspaces/{workspace}/federatednamespaces": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/federatednamespaces": {
       "get": {
         "produces": [
           "application/json"
@@ -12435,7 +12435,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/workspaces/{workspace}/namespaces": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/namespaces": {
       "get": {
         "produces": [
           "application/json"
@@ -12499,7 +12499,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/workspaces/{workspace}/namespaces/{namespace}": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/namespaces/{namespace}": {
       "get": {
         "produces": [
           "application/json"
@@ -12656,7 +12656,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/workspaces/{workspace}/workspacemembers/{workspacemember}/devops": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/workspacemembers/{workspacemember}/devops": {
       "get": {
         "produces": [
           "application/json"
@@ -12700,7 +12700,7 @@
         }
       }
     },
-    "/kapis/tenant.kubesphere.io/v1alpha2/workspaces/{workspace}/workspacemembers/{workspacemember}/namespaces": {
+    "/kapis/tenant.docs.kubesphere-carryon.top/v1alpha2/workspaces/{workspace}/workspacemembers/{workspacemember}/namespaces": {
       "get": {
         "produces": [
           "application/json"
@@ -12744,7 +12744,7 @@
         }
       }
     },
-    "/kapis/terminal.kubesphere.io/v1alpha2/namespaces/{namespace}/pods/{pod}/exec": {
+    "/kapis/terminal.docs.kubesphere-carryon.top/v1alpha2/namespaces/{namespace}/pods/{pod}/exec": {
       "get": {
         "produces": [
           "application/json"

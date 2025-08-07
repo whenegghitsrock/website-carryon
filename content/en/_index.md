@@ -74,7 +74,7 @@ section3:
 
 section4:
   title: Key Features of Kubernetes Platform
-  content: If you are seeking an open source project that rivals a commercial product, KubeSphere is your choice. <br> <br>The <a class='inner-a' target='_blank' href='https://github.com/kubesphere/kubesphere/blob/master/docs/roadmap.md'>RoadMap</a> lists the planned features and everyone is welcome to raise a proposal and contribute your ideas.
+  content: If you are seeking an open source project that rivals a commercial product, KubeSphere is your choice. <br> <br>The <a class='inner-a' target='_blank' href='https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/docs/roadmap.md'>RoadMap</a> lists the planned features and everyone is welcome to raise a proposal and contribute your ideas.
   children:
     - name: Provisioning Kubernetes
       icon: /images/home/provisioning-kubernetes.svg
@@ -190,8 +190,8 @@ section6:
 
   btnContent: Case Studies
   btnLink: case/
-  link: mailto:info@kubesphere.io
-  linkContent: Want to join our user community and showcase your logo? Just send an email to info@kubesphere.io
+  link: mailto:info@docs.kubesphere-carryon.top
+  linkContent: Want to join our user community and showcase your logo? Just send an email to info@docs.kubesphere-carryon.top
   joinTitle: Join the Revolution, Partner with KubeSphere Container Platform
   joinContent: We look forward to your joining KubeSphere partner program to improve both ecosystems and grow your business.
   joinLink: partner/

@@ -32,7 +32,7 @@ Kubernetes 是一个非常复杂的容器编排平台，学习成本非常高，
 
 目前在 KubeSphere 上部署极狐GitLab 非常便利，只需要利用 KubeSphere 的**应用商店**即可一键部署。
 
-[应用商店](https://kubesphere.com.cn/docs/application-store/)与应用全生命周期管理是 KubeSphere 独有的特色，KubeSphere 为用户提供了一个基于 Helm 的应用商店，用于应用生命周期管理。而且从 3.2.0 版本开始，KubeSphere 新增了 **“动态加载应用商店”** 的功能，**合作伙伴可[申请将应用的 Helm Chart 集成到 KubeSphere 应用商店](https://github.com/kubesphere/helm-charts)，相关的 Pull Request 被合并后，KubeSphere 应用商店即可动态加载应用，不再受到 KubeSphere 版本的限制**。目前极狐 Gitlab 就是通过动态加载的方式将其 Helm Chart 上架到了 KubeSphere 的应用商店。
+[应用商店](https://kubesphere.com.cn/docs/application-store/)与应用全生命周期管理是 KubeSphere 独有的特色，KubeSphere 为用户提供了一个基于 Helm 的应用商店，用于应用生命周期管理。而且从 3.2.0 版本开始，KubeSphere 新增了 **“动态加载应用商店”** 的功能，**合作伙伴可[申请将应用的 Helm Chart 集成到 KubeSphere 应用商店](https://github.com/whenegghitsrock/helm-charts-carryon)，相关的 Pull Request 被合并后，KubeSphere 应用商店即可动态加载应用，不再受到 KubeSphere 版本的限制**。目前极狐 Gitlab 就是通过动态加载的方式将其 Helm Chart 上架到了 KubeSphere 的应用商店。
 
 ### 安装极狐GitLab
 

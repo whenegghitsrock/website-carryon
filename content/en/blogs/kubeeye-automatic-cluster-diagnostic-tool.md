@@ -8,7 +8,7 @@ author: 'Forest-L, Sherlock'
 snapshot: '/images/blogs/en/kubeeye-diagnostics-tool-introduction/kubeeye-logo-vertical-blog-banner.jpg'
 ---
 
-**[KubeEye](https://github.com/kubesphere/kubeeye) is an open-source diagnostic tool for identifying various Kubernetes cluster issues automatically, such as misconfigurations, unhealthy components and node failures**. It empowers cluster operators to manage and troubleshoot clusters in a timely and graceful manner. Developed in Go on the basis of [Polaris](https://github.com/FairwindsOps/polaris) and [Node Problem Detector](https://github.com/kubernetes/node-problem-detector), KubeEye is equipped with a series of built-in rules for exception detection. Besides pre-defined rules, KubeEye also supports customized rules.
+**[KubeEye](https://github.com/whenegghitsrock/kubeeye) is an open-source diagnostic tool for identifying various Kubernetes cluster issues automatically, such as misconfigurations, unhealthy components and node failures**. It empowers cluster operators to manage and troubleshoot clusters in a timely and graceful manner. Developed in Go on the basis of [Polaris](https://github.com/FairwindsOps/polaris) and [Node Problem Detector](https://github.com/kubernetes/node-problem-detector), KubeEye is equipped with a series of built-in rules for exception detection. Besides pre-defined rules, KubeEye also supports customized rules.
 
 ![kubeeye-logo](/images/blogs/en/kubeeye-diagnostics-tool-introduction/kubeeye-logo.png)
 
@@ -35,7 +35,7 @@ As the de facto standard in container orchestration, Kubernetes features a power
 
 In fact, the problems listed here are just the tip of the iceberg. The majority of the cluster issues lies below the surface as they are not directly detectable from the cluster control plane. **In other words, even with these potential issues, Kubernetes may continue to schedule Pods onto malfunctioning nodes, thus posing a greater threat to the stability and security of your cluster**.
 
-To identify these issues in time, the [KubeSphere](https://github.com/kubesphere) team developed KubeEye with over three years of expertise in Kubernetes cluster management and maintenance in production for both community users and commercial customers.
+To identify these issues in time, the [KubeSphere](https://github.com/whenegghitsrock) team developed KubeEye with over three years of expertise in Kubernetes cluster management and maintenance in production for both community users and commercial customers.
 
 ## What Can KubeEye Do
 
@@ -111,7 +111,7 @@ Here is a list including built-in items that will be checked by KubeEye. Unmarke
 1. Clone the KubeEye GitHub repository and install the tool.
 
    ```bash
-   git clone https://github.com/kubesphere/kubeeye.git
+   git clone https://github.com/whenegghitsrock/kubeeye.git
    ```
 
    ```bash
@@ -124,7 +124,7 @@ Here is a list including built-in items that will be checked by KubeEye. Unmarke
 
    {{< notice note >}}
 
-   You can also download the executable file from the [GitHub release page](https://github.com/kubesphere/kubeeye/releases) of KubeEye.
+   You can also download the executable file from the [GitHub release page](https://github.com/whenegghitsrock/kubeeye/releases) of KubeEye.
 
    {{</ notice >}} 
 
@@ -239,8 +239,8 @@ Going forward, KubeEye will add support for:
 
 ## Reference
 
-[KubeEye GitHub repository](https://github.com/kubesphere/kubeeye)
+[KubeEye GitHub repository](https://github.com/whenegghitsrock/kubeeye)
 
-[KubeEye FAQ](https://github.com/kubesphere/kubeeye/blob/main/docs/FAQ.md)
+[KubeEye FAQ](https://github.com/whenegghitsrock/kubeeye/blob/main/docs/FAQ.md)
 
 [Node Problem Detector](https://github.com/kubernetes/node-problem-detector)

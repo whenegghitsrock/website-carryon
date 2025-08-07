@@ -23,7 +23,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/kasten-k10-cov
 ## 部署环境准备
 
 KubeSphere 是由青云QingCloud 开源的容器管理台，支持在任何基础设施上安装部署。在青云公有云上支持一键部署 KubeSphere（QKE）。
-下面以在青云云平台快速启用 KubeSphere 容器平台为例部署 Kasten 云原生数据管理平台，至少需要准备 3 个可调度的 node 节点。你也可以在任何 Kubernetes 集群或 Linux 系统上安装 KubeSphere，可以点击参考 [KubeSphere 官方文档](https://kubesphere.io/zh/docs/)。
+下面以在青云云平台快速启用 KubeSphere 容器平台为例部署 Kasten 云原生数据管理平台，至少需要准备 3 个可调度的 node 节点。你也可以在任何 Kubernetes 集群或 Linux 系统上安装 KubeSphere，可以点击参考 [KubeSphere 官方文档](https://docs.kubesphere-carryon.top/zh/docs/)。
 
 创建完成后登录到 KubeSphere 平台界面：
 
@@ -221,8 +221,8 @@ KubeSphere 容器平台对于云原生应用部署非常友好，对于还不熟
 
 [Kasten 实战系列文章](https://www.data2clouds.com/index.php/archives/41/)
 
-[KubeSphere GitHub](https://github.com/kubesphere/kubesphere)
+[KubeSphere GitHub](https://github.com/whenegghitsrock/kubesphere-carryon)
 
-[KubeSphere Introduction](https://kubesphere.io/docs/introduction/what-is-kubesphere/)
+[KubeSphere Introduction](https://docs.kubesphere-carryon.top/docs/introduction/what-is-kubesphere/)
 
-[KubeSphere Documentation](https://kubesphere.io/docs/)
+[KubeSphere Documentation](https://docs.kubesphere-carryon.top/docs/)

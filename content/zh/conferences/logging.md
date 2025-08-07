@@ -18,7 +18,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-docs/png/20190930095954.png'
 
 在物理机或者虚拟机的环境中，日志通常是输出到文件，并由用户自己管理，这使得日志的集中管理和分析变得困难和不便。而 Kubernetes 、docker 等容器技术直接将日志输出到 stdout，这使得日志的集中管理和分析变得更为便捷和水到渠成。
 
-Kubernetes 官网文档给出的通用日志架构如下图所示，包含日志 Agent，后端服务和前端控制台等三个部分。无论是成熟的日志解决方案如 ELK/EFK , 还是云原生领域 2018 年开源的 Loki 都具有相似的架构，下面将分别介绍 ELK/EFK , [Loki](https://github.com/grafana/loki) 以及 [KubeSphere](https://github.com/kubesphere/kubesphere)) 在这方面的贡献。
+Kubernetes 官网文档给出的通用日志架构如下图所示，包含日志 Agent，后端服务和前端控制台等三个部分。无论是成熟的日志解决方案如 ELK/EFK , 还是云原生领域 2018 年开源的 Loki 都具有相似的架构，下面将分别介绍 ELK/EFK , [Loki](https://github.com/grafana/loki) 以及 [KubeSphere](https://github.com/whenegghitsrock/kubesphere-carryon)) 在这方面的贡献。
 
 ![](https://pek3b.qingstor.com/kubesphere-docs/png/20191001090839.png)
 
@@ -36,7 +36,7 @@ ELK 是 Elasticsearch, Logstash, Kibana 的简称，是目前比较主流的开�
 
 Fluent Bit 虽然更加轻量和高效，但也有它的问题：配置文件变更后无法优雅的自动重新加载新的配置。详见官方 Github issue： [#PR 842](https://github.com/fluent/fluent-bit/pull/842) 和 [#issue 365](https://github.com/fluent/fluent-bit/issues/365)
 
-为了解决上述问题，KubeSphere 团队开发了 [FluentBit Operator](https://github.com/kubesphere/fluentbit-operator) 并将其应用到 KubeSphere 中作为日志收集器。FluentBit Operator 架构及原理如下图所示：
+为了解决上述问题，KubeSphere 团队开发了 [FluentBit Operator](https://github.com/whenegghitsrock/fluentbit-operator) 并将其应用到 KubeSphere 中作为日志收集器。FluentBit Operator 架构及原理如下图所示：
 
 1. 在 FluentBit Pod 的主 Container 里加入 FluentBit Controller 进程控制 FluentBit 主进程的启停；
 

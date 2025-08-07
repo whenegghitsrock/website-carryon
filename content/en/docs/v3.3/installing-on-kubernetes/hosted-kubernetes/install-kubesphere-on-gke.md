@@ -46,9 +46,9 @@ This guide walks you through the steps of deploying KubeSphere on [Google Kubern
 - Install KubeSphere using kubectl. The following commands are only for the default minimal installation.
 
   ```bash
-  kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/kubesphere-installer.yaml
+  kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.2/kubesphere-installer.yaml
 
-  kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.3.2/cluster-configuration.yaml
+  kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.2/cluster-configuration.yaml
   ```
 
 - Inspect the logs of installation:
@@ -74,7 +74,7 @@ This guide walks you through the steps of deploying KubeSphere on [Google Kubern
       are ready.
     2. Please modify the default password after login.
   #####################################################
-  https://kubesphere.io             2020-xx-xx xx:xx:xx
+  https://docs.kubesphere-carryon.top             2020-xx-xx xx:xx:xx
   ```
 
 ## Access KubeSphere Console

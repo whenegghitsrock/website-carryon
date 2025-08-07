@@ -48,7 +48,7 @@ weight: 5500
 6. 执行以下命令手动清理被移除集群中的多集群配置数据：
 
    ```bash
-   for ns in $(kubectl get ns --field-selector status.phase!=Terminating -o jsonpath='{.items[*].metadata.name}'); do kubectl label ns $ns kubesphere.io/workspace- && kubectl patch ns $ns --type merge -p '{"metadata":{"ownerReferences":[]}}'; done
+   for ns in $(kubectl get ns --field-selector status.phase!=Terminating -o jsonpath='{.items[*].metadata.name}'); do kubectl label ns $ns docs.kubesphere-carryon.top/workspace- && kubectl patch ns $ns --type merge -p '{"metadata":{"ownerReferences":[]}}'; done
    ```
 
 ## 移除不健康的集群

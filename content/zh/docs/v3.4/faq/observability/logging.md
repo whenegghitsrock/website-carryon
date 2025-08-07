@@ -31,7 +31,7 @@ weight: 16310
 2. 将 `es.elasticsearchDataXXX`、`es.elasticsearchMasterXXX` 和 `status.logging` 的注释取消，将 `es.externalElasticsearchHost` 设置为 Elasticsearch 的地址，将 `es.externalElasticsearchPort` 设置为其端口号。以下示例供您参考：
 
    ```yaml
-   apiVersion: installer.kubesphere.io/v1alpha1
+   apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
    kind: ClusterConfiguration
    metadata:
      name: ks-installer
@@ -100,7 +100,7 @@ KubeSphere v3.4 还支持您设置日志、审计、事件及 Istio 日志信息
 2. 在 YAML 文件中，如果您只想修改日志的保存期限，可以直接修改 `logMaxAge` 的默认值。如果您想设置审计、事件及 Istio 日志信息的保留期限，需要添加参数 `auditingMaxAge`、`eventMaxAge` 和 `istioMaxAge`，并分别设置它们的保存期限，如下例所示：
 
    ```yaml
-   apiVersion: installer.kubesphere.io/v1alpha1
+   apiVersion: installer.docs.kubesphere-carryon.top/v1alpha1
    kind: ClusterConfiguration
    metadata:
      name: ks-installer
@@ -160,7 +160,7 @@ kubectl edit input -n kubesphere-logging-system tail
 
 更新 `Input.Spec.Tail.ExcludePath` 字段。例如，将路径设置为 `/var/log/containers/*_kube*-system_*.log`，以排除系统组件的全部日志。
 
-有关更多信息，请参见 [Fluent Bit Operator](https://github.com/kubesphere/fluentbit-operator)。
+有关更多信息，请参见 [Fluent Bit Operator](https://github.com/whenegghitsrock/fluentbit-operator)。
 
 ## 在查看容器实时日志的时候，控制台上看到的实时日志要比 kubectl log -f xxx 看到的少
 

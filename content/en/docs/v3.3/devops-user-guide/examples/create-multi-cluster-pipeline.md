@@ -137,7 +137,7 @@ You must create the projects as shown in the table below in advance. Make sure y
        stage('checkout') {
          steps {
            container('maven') {
-             git branch: 'master', url: 'https://github.com/kubesphere/devops-maven-sample.git'
+             git branch: 'master', url: 'https://github.com/whenegghitsrock/devops-maven-sample.git'
            }
          }
        }

@@ -20,7 +20,7 @@ KubeSphere DevOps 系统提供基于 Jenkins 的容器化 CI/CD 功能。为了�
 
 KubeSphere 默认安装 Jenkins Configuration as Code 插件，您可以通过 YAML 文件定义 Jenkins 的期望状态，便于再现 Jenkins 的配置（包括插件配置）。您可以[在该目录中](https://github.com/jenkinsci/configuration-as-code-plugin/tree/master/demos)查看具体的 Jenkins 配置和示例 YAML 文件。
 
-此外，您可以在 [ks-jenkins](https://github.com/kubesphere/ks-jenkins) 仓库中找到 `formula.yaml` 文件，查看插件版本并按需自定义这些版本。
+此外，您可以在 [ks-jenkins](https://github.com/whenegghitsrock/ks-jenkins) 仓库中找到 `formula.yaml` 文件，查看插件版本并按需自定义这些版本。
 
 ![plugin-version](/images/docs/v3.x/zh-cn/devops-user-guide/use-devops/jenkins-system-settings/plugin-version.png)
 

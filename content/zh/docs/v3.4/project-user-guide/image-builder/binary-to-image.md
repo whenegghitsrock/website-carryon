@@ -16,11 +16,11 @@ Binary-to-Image (B2I) 是一个工具箱和工作流，用于从二进制可执�
 
 | 制品包                                                       | GitHub 仓库                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [b2i-war-java8.war](https://github.com/kubesphere/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-war-java8.war) | [spring-mvc-showcase](https://github.com/spring-projects/spring-mvc-showcase) |
-| [b2i-war-java11.war](https://github.com/kubesphere/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-war-java11.war) | [springmvc5](https://github.com/kubesphere/s2i-java-container/tree/master/tomcat/examples/springmvc5) |
-| [b2i-binary](https://github.com/kubesphere/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-binary) | [devops-go-sample](https://github.com/runzexia/devops-go-sample) |
-| [b2i-jar-java11.jar](https://github.com/kubesphere/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-jar-java11.jar) | [ java-maven-example](https://github.com/kubesphere/s2i-java-container/tree/master/java/examples/maven) |
-| [b2i-jar-java8.jar](https://github.com/kubesphere/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-jar-java8.jar) | [devops-maven-sample](https://github.com/kubesphere/devops-maven-sample) |
+| [b2i-war-java8.war](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-war-java8.war) | [spring-mvc-showcase](https://github.com/spring-projects/spring-mvc-showcase) |
+| [b2i-war-java11.war](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-war-java11.war) | [springmvc5](https://github.com/whenegghitsrock/s2i-java-container/tree/master/tomcat/examples/springmvc5) |
+| [b2i-binary](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-binary) | [devops-go-sample](https://github.com/runzexia/devops-go-sample) |
+| [b2i-jar-java11.jar](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-jar-java11.jar) | [ java-maven-example](https://github.com/whenegghitsrock/s2i-java-container/tree/master/java/examples/maven) |
+| [b2i-jar-java8.jar](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-jar-java8.jar) | [devops-maven-sample](https://github.com/whenegghitsrock/devops-maven-sample) |
 
 ## 视频演示
 
@@ -55,7 +55,7 @@ Binary-to-Image (B2I) 是一个工具箱和工作流，用于从二进制可执�
 
    **服务类型**：本示例选择**无状态服务**。有关不同服务的更多信息，请参见[服务类型](../../../project-user-guide/application-workloads/services/#服务类型)。
 
-   **制品文件**：上传 WAR 制品 ([b2i-war-java8](https://github.com/kubesphere/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-war-java8.war))。
+   **制品文件**：上传 WAR 制品 ([b2i-war-java8](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-war-java8.war))。
 
    **构建环境**：选择 **kubesphere/tomcat85-java8-centos7:v2.1.0**。
 
@@ -123,7 +123,7 @@ Binary-to-Image (B2I) 是一个工具箱和工作流，用于从二进制可执�
 
 4. 在**构建设置**页面，请提供以下相应信息，然后点击**创建**。
 
-   **上传制品**：下载 [b2i-binary](https://github.com/kubesphere/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-binary) 并上传至 KubeSphere。
+   **上传制品**：下载 [b2i-binary](https://github.com/whenegghitsrock/tutorial/raw/master/tutorial%204%20-%20s2i-b2i/b2i-binary) 并上传至 KubeSphere。
 
    **构建环境**：选择 **kubesphere/s2i-binary:v2.1.0**。
 

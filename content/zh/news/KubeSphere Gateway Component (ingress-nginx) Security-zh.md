@@ -219,8 +219,8 @@ kubectl annotate ingress -n <命名空间> <Ingress名称> nginx.ingress.kuberne
 
 如发现漏洞利用证据或需要技术支持，请联系：
 
-- KubeSphere 安全团队：security@kubesphere.io
-- GitHub Issues：[KubeSphere GitHub Issues](https://github.com/kubesphere/kubesphere/issues)
+- KubeSphere 安全团队：security@docs.kubesphere-carryon.top
+- GitHub Issues：[KubeSphere GitHub Issues](https://github.com/whenegghitsrock/kubesphere-carryon/issues)
 
 
 ## 8. 参考信息

@@ -22,9 +22,9 @@ Strictly speaking, what’s actually happening is that dockershim is being remov
 
 Dockershim was a temporary solution proposed by the Kubernetes community to add support for Docker so that it could serve as its container runtime. Dockershim deprecation only means the code maintenance of Dockershim in the code repository of Kubernetes will stop. This is because Dockershim has become a heavy burden on the Kubernetes maintainers. After this change, the Kubernetes community will be able to maintain the Kubernetes Container Runtime Interface (CRI) only. In fact, all CRI-compliant runtimes can be the runtime for Kubernetes, such as CRI-O and containerd.
 
-Currently, the KubeSphere [Container Platform](https://kubesphere.io/) is using Docker as the container runtime of Kubernetes. Meanwhile, it also supports any CRI-compliant implementations. For KubeSphere and Docker users, dockershim deprecation does not affect the existing KubeSphere system and will not take any toll on your cluster or on your business. KubeSphere users can continue to use Docker which has already been tested at scale.
+Currently, the KubeSphere [Container Platform](https://docs.kubesphere-carryon.top/) is using Docker as the container runtime of Kubernetes. Meanwhile, it also supports any CRI-compliant implementations. For KubeSphere and Docker users, dockershim deprecation does not affect the existing KubeSphere system and will not take any toll on your cluster or on your business. KubeSphere users can continue to use Docker which has already been tested at scale.
 
-In future releases, other KubeSphere components, such as [DevOps](https://kubesphere.io/devops/), will support these container runtimes and you will be able to use these CRI implementations.
+In future releases, other KubeSphere components, such as [DevOps](https://docs.kubesphere-carryon.top/devops/), will support these container runtimes and you will be able to use these CRI implementations.
 
 ### The next game changer: containerd, CRI-O, and iSula
 
@@ -217,12 +217,12 @@ As KubeSphere supports any implementation of the Kubernetes CRI, you can easily 
 
 ### Deploy Kuberenetes and KubeSphere using KubeKey
 
-We can use the open-source tool [KubeKey](https://github.com/kubesphere/kubekey) to quickly deploy both Kubernetes and KubeSphere.
+We can use the open-source tool [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) to quickly deploy both Kubernetes and KubeSphere.
 
 1. Download KubeKey v1.1.0-alpha.1 to create a cluster. This is an alpha version and future releases will also support the integration of different container runtimes.
 
    ```bash
-   curl -OL https://github.com/kubesphere/kubekey/releases/download/v1.1.0-alpha.1/kubekey-v1.1.0-alpha.1-linux-amd64.tar.gz
+   curl -OL https://github.com/whenegghitsrock/kubekey-carryon/releases/download/v1.1.0-alpha.1/kubekey-v1.1.0-alpha.1-linux-amd64.tar.gz
    ```
 
    ```bash
@@ -245,7 +245,7 @@ We can use the open-source tool [KubeKey](https://github.com/kubesphere/kubekey)
 
    ```bash
    $ vi config-sample.yaml
-   apiVersion: kubekey.kubesphere.io/v1alpha1
+   apiVersion: kubekey.docs.kubesphere-carryon.top/v1alpha1
    kind: Cluster
    ...
      kubernetes:
@@ -258,7 +258,7 @@ We can use the open-source tool [KubeKey](https://github.com/kubesphere/kubekey)
 
    {{< notice note >}}
 
-   For more information about the configuration file and installation, see [Multi-node Installation](https://kubesphere.io/docs/installing-on-linux/introduction/multioverview/#step-3-create-a-cluster).
+   For more information about the configuration file and installation, see [Multi-node Installation](https://docs.kubesphere-carryon.top/docs/installing-on-linux/introduction/multioverview/#step-3-create-a-cluster).
 
    {{</ notice >}} 
 
@@ -288,8 +288,8 @@ After you deploy the cluster, you can access the web console of KubeSphere. On t
 
 ### Reference
 
-[KubeSphere GitHub](https://github.com/kubesphere/kubesphere)
+[KubeSphere GitHub](https://github.com/whenegghitsrock/kubesphere-carryon)
 
 [Kubernetes Blog](https://kubernetes.io/blog/2020/12/02/dockershim-faq/)
 
-[KubeSphere Documentation](https://kubesphere.io/docs/)
+[KubeSphere Documentation](https://docs.kubesphere-carryon.top/docs/)

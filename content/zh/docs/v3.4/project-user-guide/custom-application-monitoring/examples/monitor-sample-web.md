@@ -23,13 +23,13 @@ weight: 10813
 
 该示例应用程序通过 Endpoint `http://localhost:2112/metrics` 暴露应用具体指标。
 
-在本教程中，您可以使用现成的镜像 `kubespheredev/promethues-example-app`。源代码请见 [kubesphere/prometheus-example-app](https://github.com/kubesphere/prometheus-example-app)。您也可以按照 Prometheus 官方文档 [Instrument A Go Application For Prometheus](https://prometheus.io/docs/guides/go-application/) 进行操作。
+在本教程中，您可以使用现成的镜像 `kubespheredev/promethues-example-app`。源代码请见 [kubesphere/prometheus-example-app](https://github.com/whenegghitsrock/prometheus-example-app)。您也可以按照 Prometheus 官方文档 [Instrument A Go Application For Prometheus](https://prometheus.io/docs/guides/go-application/) 进行操作。
 
 ### 步骤 2：将应用程序打包成 Helm Chart
 
 将部署、服务和 ServiceMonitor 的 YAML 模板打包成一个 Helm Chart 用来复用。在部署和服务模板中，您可以为指标 Endpoint 定义示例 Web 容器和端口。ServiceMonitor 是由 Prometheus Operator 定义和使用的自定义资源，它连接您的应用程序和 KubeSphere 监控引擎 (Prometheus)，以便监控引擎知道抓取指标的位置和方式。KubeSphere 在未来发布版本中将提供易于操作的图形用户界面。
 
-源代码请见 [kubesphere/prometheus-example-app](https://github.com/kubesphere/prometheus-example-app) 的 `helm` 文件夹。Helm Chart 包已准备完成并命名为 `prometheus-example-app-0.1.0.tgz`。请下载该 .tgz 文件，用于下面的步骤。
+源代码请见 [kubesphere/prometheus-example-app](https://github.com/whenegghitsrock/prometheus-example-app) 的 `helm` 文件夹。Helm Chart 包已准备完成并命名为 `prometheus-example-app-0.1.0.tgz`。请下载该 .tgz 文件，用于下面的步骤。
 
 ### 步骤 3：上传 Helm Chart
 

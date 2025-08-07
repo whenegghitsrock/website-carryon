@@ -76,29 +76,29 @@ members:
 activities:
   videos:
     - image: https://pek3b.qingstor.com/kubesphere-community/images/guangzhou-meetup-20231125-cover.jpg
-      link: https://kubesphere.io/zh/live/meetup-guangzhou-20231125/
+      link: https://docs.kubesphere-carryon.top/zh/live/meetup-guangzhou-20231125/
 
     - image: https://pek3b.qingstor.com/kubesphere-community/images/meetup-guangzhou-cover.jpeg
-      link: https://kubesphere.io/zh/live/meetup-guangzhou-20220806/
+      link: https://docs.kubesphere-carryon.top/zh/live/meetup-guangzhou-20220806/
 
     - image: https://pek3b.qingstor.com/kubesphere-community/images/argocd0217-live-cover.png
-      link: https://kubesphere.io/zh/live/gitops-cic/
+      link: https://docs.kubesphere-carryon.top/zh/live/gitops-cic/
 
   review:    
     - text: 负载均衡器 OpenELB ARP 欺骗技术解析
       description: 这篇文章介绍了如何使用 OpenELB 在 Kubernetes 上实现负载均衡，并讨论了使用 ARP 协议的优点。
-      link: https://kubesphere.io/zh/blogs/openelb-arp/
+      link: https://docs.kubesphere-carryon.top/zh/blogs/openelb-arp/
 
     - text: Kubernetes 多行日志采集方案探索
       description: 这篇文章介绍了如何使用 KubeSphere 收集和分析应用程序日志，并提供了相关的操作步骤。
-      link: https://kubesphere.io/zh/blogs/kubesphere-log-collection/
+      link: https://docs.kubesphere-carryon.top/zh/blogs/kubesphere-log-collection/
 
     - text: Argo CD 速度通关指南
       description: 本次直播将介绍 Argo CD，分享实践经验，结合测试环境案例，演示相应场景下的实验效果；让用户快速把握重点难点以及相应的思路和方向。
-      link: https://kubesphere.io/zh/live/argocd0217-live/
+      link: https://docs.kubesphere-carryon.top/zh/live/argocd0217-live/
 
     - text: 基于 Argo CD 的 GitOps 实践经验
       description: 通过 KubeSphere 的应用管理能力快速使用 Apache APISIX Ingress Controller。
-      link: https://kubesphere.io/zh/blogs/gitops-argocd/
+      link: https://docs.kubesphere-carryon.top/zh/blogs/gitops-argocd/
 
 ---

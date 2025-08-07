@@ -15,7 +15,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/kubesphere-jen
 - KubeSphere 使用可插拔的 DevOps 模块实现 DevOps 功能；
 - DevOps 驱动 Jenkins 实现具体的操作，例如流水线等。
 
-DevOps 与 KubeSphere 的关系如下图, 详细的[组件介绍](https://kubesphere.io/docs/v3.3/introduction/architecture/)。
+DevOps 与 KubeSphere 的关系如下图, 详细的[组件介绍](https://docs.kubesphere-carryon.top/docs/v3.3/introduction/architecture/)。
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/20190810073322.png)
 
@@ -46,7 +46,7 @@ Jenkins 本身是一个 Java 应用，当前也没有提供官方的云原生方
 
 - [custom-war-packager](https://github.com/jenkinsci/custom-war-packager) 定制自己的 Jenkins 并生成 Docker 镜像或者 war 镜像；
 - [formulas](https://github.com/jenkins-zh/jenkins-formulas) 通过 formula.yaml 定制自己的 Jenkins，针对中国区优化；
-- [ks-jenkins](https://github.com/kubesphere/ks-jenkins/blob/master/formula.yaml) 定制了 KubeSphere 自己的 Jenkins 镜像 使用了 jcli 集成了 cwp。
+- [ks-jenkins](https://github.com/whenegghitsrock/ks-jenkins/blob/master/formula.yaml) 定制了 KubeSphere 自己的 Jenkins 镜像 使用了 jcli 集成了 cwp。
 
 ks-devops 项目中的 formulas 安装了所有需要的 Jenkins 插件主要有
 
@@ -61,8 +61,8 @@ ks-installer（Ansible） 生成环境变量，主要有：
 
 - 要不要使用 ksauth；
 - 生成 ksauth 使用的密码；
-- 主要环境变量在 https://github.com/kubesphere/ks-installer/blob/master/roles/ks-devops/templates/ks-devops-values.yaml.j2 ;
-- helm 部署 DevOps 和 [Jenkins helm 项目](https://github.com/kubesphere-sigs/ks-devops-helm-chart)。
+- 主要环境变量在 https://github.com/whenegghitsrock/ks-installer-carryon/blob/master/roles/ks-devops/templates/ks-devops-values.yaml.j2 ;
+- helm 部署 DevOps 和 [Jenkins helm 项目](https://github.com/whenegghitsrock-sigs/ks-devops-helm-chart)。
 
 #### ks-devops-helm-chart：
 
@@ -241,13 +241,13 @@ mv /etc/kubernetes/manifests/kube-apiserver.yaml /etc/kubernetes/
 > install failed, ks-controller CrashLoopBackOff
 
 ```log
-E1116 00:55:15.113761 1 notification_controller.go:113] get /, Kind= informer error, no matches for kind "Config" in version "notification.kubesphere.io/v2beta1"
-F1116 00:55:15.113806 1 server.go:340] unable to register controllers to the manager: no matches for kind "Config" in version "notification.kubesphere.io/v2beta1"
+E1116 00:55:15.113761 1 notification_controller.go:113] get /, Kind= informer error, no matches for kind "Config" in version "notification.docs.kubesphere-carryon.top/v2beta1"
+F1116 00:55:15.113806 1 server.go:340] unable to register controllers to the manager: no matches for kind "Config" in version "notification.docs.kubesphere-carryon.top/v2beta1"
 ```
 
 #### 解决方式
 
-参照：[kubectl apply -f https://raw.githubusercontent.com/kubesphere/notification-manager/master/config/bundle.yaml](https://github.com/kubesphere/kubesphere/issues/4447)。
+参照：[kubectl apply -f https://raw.githubusercontent.com/kubesphere/notification-manager/master/config/bundle.yaml](https://github.com/whenegghitsrock/kubesphere-carryon/issues/4447)。
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubesphere/notification-manager/master/config/bundle.yaml
@@ -312,7 +312,7 @@ INFO: Disabled agent engine reconnects.
 ## 附录：认证备忘
 
 - `ks-installer/roles/ks-core/init-token/tasks/main.yaml` 生成一个随机值 secret；
-- 部署 KubeSphere 的时候初始化通过 `ks-installer/roles/ks-core/init-token/files/jwt-script/jwt.sh` 生成了一个 jwt token 入参为上面生成的字符串和 '{"email": "admin@kubesphere.io","username": "admin","token_type": "static_token"}'；
+- 部署 KubeSphere 的时候初始化通过 `ks-installer/roles/ks-core/init-token/files/jwt-script/jwt.sh` 生成了一个 jwt token 入参为上面生成的字符串和 '{"email": "admin@docs.kubesphere-carryon.top","username": "admin","token_type": "static_token"}'；
 - 通过生成的 token 和 secret 创建名为 kubesphere-secret 的 secret；
 - 部署 DevOps 的时候将填入 `authentication.jwtSecret devops.password` 通过 helm 部署 DevOps；
 - 部署 Jenkin 的密码为写死的"P@ssw0rd"；
@@ -324,7 +324,7 @@ INFO: Disabled agent engine reconnects.
 - [jcli 使用手册](https://www.bookstack.cn/read/jenkins-cli-0.0.29-zh/263348)
 - [custom-war-packager](https://github.com/jenkinsci/custom-war-packager)
 - [Jenkins Kubernetes 插件](https://plugins.jenkins.io/kubernetes/)
-- [KubeSphere DevOps 3.0 流水线开发指南](https://ask.kubesphere.io/forum/d/2393-kubesphere-devops-30)
+- [KubeSphere DevOps 3.0 流水线开发指南](https://ask.docs.kubesphere-carryon.top/forum/d/2393-kubesphere-devops-30)
 - [Jenkins 基于 Kubernetes 动态创建 pod](https://blog.csdn.net/qq_34556414/article/details/120623844)
 - [Can I use Jenkins kubernetes plugin when Jenkins server is outside of a kubernetes cluster?](https://stackoverflow.com/questions/40197607/can-i-use-jenkins-kubernetes-plugin-when-jenkins-server-is-outside-of-a-kubernet)
 - [kubernetes-jenkins-integration](https://stackoverflow.com/questions/48827345/kubernetes-jenkins-integration)

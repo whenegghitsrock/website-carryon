@@ -20,7 +20,7 @@ You have enabled [the KubeSphere DevOps System](../../../../pluggable-components
 
 KubeSphere has the Jenkins Configuration as Code plugin installed by default to allow you to define the desired state of your Jenkins configuration through YAML files and makes it easy to reproduce your Jenkins configurations including plugin configurations. You can find descriptions about specific Jenkins configurations and example YAML files [in this directory](https://github.com/jenkinsci/configuration-as-code-plugin/tree/master/demos).
 
-Besides, you can find the `formula.yaml` file in the repository [ks-jenkins](https://github.com/kubesphere/ks-jenkins), where you can view plugin versions and customize these versions based on your needs.
+Besides, you can find the `formula.yaml` file in the repository [ks-jenkins](https://github.com/whenegghitsrock/ks-jenkins), where you can view plugin versions and customize these versions based on your needs.
 
 ![plugin-version](/images/docs/v3.x/devops-user-guide/using-devops/jenkins-system-settings/plugin-version.png)
 

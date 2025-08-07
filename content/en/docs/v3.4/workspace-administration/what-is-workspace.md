@@ -46,7 +46,7 @@ Before you delete a workspace, decide whether you want to unbind some key projec
 To delete a workspace while preserving some projects in it, run the following command first:
 
 ```bash
-kubectl label ns <namespace> kubesphere.io/workspace- && kubectl patch ns <namespace>   -p '{"metadata":{"ownerReferences":[]}}' --type=merge
+kubectl label ns <namespace> docs.kubesphere-carryon.top/workspace- && kubectl patch ns <namespace>   -p '{"metadata":{"ownerReferences":[]}}' --type=merge
 ```
 
 {{< notice note >}} 

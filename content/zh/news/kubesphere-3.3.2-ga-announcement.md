@@ -47,4 +47,4 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/KS-3.3.2-GA.png'
 
 可以访问下方链接来查看完整的 Release Notes：
 
-https://kubesphere.io/zh/docs/v3.3/release/release-v332/
+https://docs.kubesphere-carryon.top/zh/docs/v3.3/release/release-v332/

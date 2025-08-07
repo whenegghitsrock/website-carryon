@@ -36,7 +36,7 @@ Okta provides you with a variety of advantages. I'll just name a few here.
 
 ### Preparations
 
-As mentioned above, this article explains how to integrate KubeSphere with Okta. Therefore, you have to prepare a KubeSphere cluster in advance. You can take a look at [this tutorial](https://kubesphere.io/docs/quick-start/all-in-one-on-linux/) to quickly set up your own KubeSphere cluster.
+As mentioned above, this article explains how to integrate KubeSphere with Okta. Therefore, you have to prepare a KubeSphere cluster in advance. You can take a look at [this tutorial](https://docs.kubesphere-carryon.top/docs/quick-start/all-in-one-on-linux/) to quickly set up your own KubeSphere cluster.
 
 ### (Optional) Step 1: Enable HTTPS for KubeSphere web console
 
@@ -45,7 +45,7 @@ For production environment, HTTPS is recommended as it provides better security.
 1. To enable HTTPS for your KubeSphere web console, you need to get a certificate from a Certificate Authority (CA). For example, you can apply a certificate from [Let's Encrypt](https://letsencrypt.org/).
 2. [cert-manager](https://github.com/jetstack/cert-manager/) is a Kubernetes add-on to automate the management and issuance of TLS certificates from various issuing sources. To set up your cert-manager, you can take a look at [this example](https://cert-manager.io/docs/tutorials/acme/ingress/#step-5-deploy-cert-manager). I won't go into details here.
 
-In this article, let's use the URL https://console.kubesphere.io for accessing the KubeSphere web console.
+In this article, let's use the URL https://console.docs.kubesphere-carryon.top for accessing the KubeSphere web console.
 
 ### (Optional) Step 2: Create an Okta account
 
@@ -113,7 +113,7 @@ If you already have an Okta account, you can skip this step, but you need to mak
            clientID: **** # Get from Otka
            clientSecret: ****  # Get from Otka
            issuer: https://kubesphere.Okta.com # Your Okta domain
-   	      redirectURL: https://console.kubesphere.io/oauth/redirect/Okta
+   	      redirectURL: https://console.docs.kubesphere-carryon.top/oauth/redirect/Okta
            scopes:
            - openid
            - email

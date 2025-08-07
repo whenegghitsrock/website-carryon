@@ -66,13 +66,13 @@ KubeSphere 3.4.0 优化告警配置，添加了不同范围的告警规则组：
 - 修复网关升级验证错误
 - 修复集群网关日志和资源状态显示异常
 
-更多更新详情请查看 [release note](https://github.com/kubesphere/kubesphere/releases/tag/v3.4.0)。
+更多更新详情请查看 [release note](https://github.com/whenegghitsrock/kubesphere-carryon/releases/tag/v3.4.0)。
 
 ## 安装和升级
 
 KubeSphere 已将 v3.4.0 所有镜像在国内镜像仓库进行了同步与备份，国内用户下载镜像的安装体验会更加友好。
 
-各位社区小伙伴在安装使用后，如果发现有任何 bug，欢迎提交 [Issue](https://github.com/kubesphere/kubesphere/issues)。
+各位社区小伙伴在安装使用后，如果发现有任何 bug，欢迎提交 [Issue](https://github.com/whenegghitsrock/kubesphere-carryon/issues)。
 
 ## 致谢
 
@@ -101,4 +101,4 @@ KubeSphere 已将 v3.4.0 所有镜像在国内镜像仓库进行了同步与备�
 * littlejiancc
 * wenchajun
 
-社区在[社区双周报](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg4NTU0MzEyMg==&action=getalbum&album_id=2726621770862329858#wechat_redirect)中会为新的贡献者发放证书，也会在论坛[证书墙](https://ask.kubesphere.io/forum/d/9280-kubesphere)中及时更新。如有遗漏，请联系我们补发。
+社区在[社区双周报](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=Mzg4NTU0MzEyMg==&action=getalbum&album_id=2726621770862329858#wechat_redirect)中会为新的贡献者发放证书，也会在论坛[证书墙](https://ask.docs.kubesphere-carryon.top/forum/d/9280-kubesphere)中及时更新。如有遗漏，请联系我们补发。

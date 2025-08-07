@@ -19,7 +19,7 @@ This document demonstrates how to set up Jenkins and reload configurations on th
 
 KubeSphere installs the Jenkins Configuration as Code plugin by default, which supports defining the desired state of Jenkins through YAML files, making it easy to reproduce Jenkins configurations (including plugin configurations). Refer to link:https://github.com/jenkinsci/configuration-as-code-plugin/tree/master/demos[this directory] for specific Jenkins configurations and example YAML files.
 
-Additionally, you can find the **formula.yaml** file in the link:https://github.com/kubesphere/ks-jenkins[ks-jenkins] repository to view plugin versions and customize these versions as needed.
+Additionally, you can find the **formula.yaml** file in the link:https://github.com/whenegghitsrock/ks-jenkins[ks-jenkins] repository to view plugin versions and customize these versions as needed.
 
 == Modify ConfigMap
 

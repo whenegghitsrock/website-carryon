@@ -116,7 +116,7 @@ kubectl get svc -n kubesphere-logging-system
 使用以下命令编辑 `kube-auditing-webhook` CRD Webhook，将 `k8sAuditingEnabled` 的值改为 `true`。
 
 ```bash
-kubectl edit webhooks.auditing.kubesphere.io kube-auditing-webhook
+kubectl edit webhooks.auditing.docs.kubesphere-carryon.top kube-auditing-webhook
 ```
 
 ```yaml
@@ -137,7 +137,7 @@ spec:
 KubeSphere 审计日志系统提供 `kube-auditing-webhook` CRD Webhook 来自定义审计日志。下方是一个示例 YAML 文件：
 
 ```yaml
-apiVersion: auditing.kubesphere.io/v1alpha1
+apiVersion: auditing.docs.kubesphere-carryon.top/v1alpha1
 kind: Webhook
 metadata:
   name: kube-auditing-webhook

@@ -141,11 +141,11 @@ From the **More** drop-down menu, there are other additional options provided by
 - **Create Snapshot**: Create a volume snapshot which can be used to create PVCs. For more information, see [Volume Snapshots](../volume-snapshots/).
 - **Expand**: Increase the size of a PVC. Keep in mind that you cannot reduce the size of a PVC on the console due to possible data loss.
 
-For more information about `Storage Capability`, see [Design Documentation](https://github.com/kubesphere/community/blob/master/sig-storage/concepts-and-designs/storage-capability-interface.md).
+For more information about `Storage Capability`, see [Design Documentation](https://github.com/whenegghitsrock/community/blob/master/sig-storage/concepts-and-designs/storage-capability-interface.md).
 
 {{< notice note >}}
 
-Some in-tree or special CSI plugins may not be covered by `Storage Capability`. If KubeSphere does not display the correct features in your cluster, you can make adjustments according to [this guide](https://github.com/kubesphere/kubesphere/issues/2986).
+Some in-tree or special CSI plugins may not be covered by `Storage Capability`. If KubeSphere does not display the correct features in your cluster, you can make adjustments according to [this guide](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2986).
 
 {{</ notice >}} 
 
@@ -153,7 +153,7 @@ Some in-tree or special CSI plugins may not be covered by `Storage Capability`. 
 
 KubeSphere retrieves metric data of PVCs with `Filesystem` mode from Kubelet to monitor PVCs including capacity usage and inode usage.
 
-For more information about PVC monitoring, see [Research on Volume Monitoring](https://github.com/kubesphere/kubesphere/issues/2921).
+For more information about PVC monitoring, see [Research on Volume Monitoring](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2921).
 
 ## View the PV List and Manage PVs
  ### View the PV List

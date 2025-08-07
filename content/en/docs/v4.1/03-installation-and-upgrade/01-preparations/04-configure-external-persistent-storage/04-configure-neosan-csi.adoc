@@ -26,14 +26,14 @@ clusters in a production environment.
 
 Online installation is applicable to container cluster that has access to the Internet.
 
-. Execute the following command to add the Helm repository, such as https://charts.kubesphere.io/test.
+. Execute the following command to add the Helm repository, such as https://charts.docs.kubesphere-carryon.top/test.
 +
 --
 // Bash
 [,bash]
 ----
 
-$ helm repo add ks-test https://charts.kubesphere.io/test
+$ helm repo add ks-test https://charts.docs.kubesphere-carryon.top/test
 "ks-test" has been added to your repositories
 
 ----
@@ -48,7 +48,7 @@ $ helm repo add ks-test https://charts.kubesphere.io/test
 
 $ helm repo list
 NAME        URL
-ks-test     https://charts.kubesphere.io/test
+ks-test     https://charts.docs.kubesphere-carryon.top/test
 
 ----
 --
@@ -233,7 +233,7 @@ Offline installation is applicable to container clusters that cannot access the 
 [,bash]
 ----
 
-$ helm repo add ks-test https://charts.kubesphere.io/test
+$ helm repo add ks-test https://charts.docs.kubesphere-carryon.top/test
 "ks-test" has been added to your repositories
 $ helm pull ks-test/csi-neonsan
 $ ls -l csi-neonsan*.tgz

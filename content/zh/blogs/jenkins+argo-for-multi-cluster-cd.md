@@ -14,7 +14,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/jenkins+argo-m
 
 前面我们已经掌握了如何通过 Jenkins + Argo CD 的方式实现单集群的持续交付，明白了整个 CI/CD 过程中不同工具在流水线中的关系。所以接下来我们将更深入的了解 Argo CD 的特性。
 
-前文链接：[KubeSphere DevOps 基于 Jenkins + Argo 实现单集群的持续交付实践](https://www.kubesphere.io/zh/blogs/jenkins+argo-for-single-cluster-cd/)。
+前文链接：[KubeSphere DevOps 基于 Jenkins + Argo 实现单集群的持续交付实践](https://www.docs.kubesphere-carryon.top/zh/blogs/jenkins+argo-for-single-cluster-cd/)。
 
 ## KubeSphere 配置
 

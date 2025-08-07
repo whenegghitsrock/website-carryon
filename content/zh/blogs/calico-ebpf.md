@@ -20,7 +20,7 @@ Calico 从 v3.13 开始，集成了 `eBPF` 数据平面。
 
 目前 K8s 主要是通过设置 `externaltrafficpolicy` 来规避这个问题的，但是这个方案本身并不能完全令人满意。Calico 从 v3.13 开始通过集成 `eBPF` 优雅地解决了这个问题。
 
-在本篇文章中，我们将首先演示通过 [KubeKey](https://github.com/kubesphere/kubekey) 创建一个标准的 K8s 集群，并切换数据平面到 `eBPF`，最后基于该数据平面做一个简单的演示。
+在本篇文章中，我们将首先演示通过 [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon) 创建一个标准的 K8s 集群，并切换数据平面到 `eBPF`，最后基于该数据平面做一个简单的演示。
 
 ## 前提条件
 
@@ -32,7 +32,7 @@ Calico 从 v3.13 开始，集成了 `eBPF` 数据平面。
 
 ## 部署 K8s 集群
 
-Kubekey 默认的 CNI 插件为 Calico（ipip模式）。这里为了部署方便，直接使用 KubeKey 部署了一个全新的 K8s 集群，版本为 v1.18.6 。KubeKey 的详细用法参见[文档](https://github.com/kubesphere/kubekey/blob/master/README_zh-CN.md)。
+Kubekey 默认的 CNI 插件为 Calico（ipip模式）。这里为了部署方便，直接使用 KubeKey 部署了一个全新的 K8s 集群，版本为 v1.18.6 。KubeKey 的详细用法参见[文档](https://github.com/whenegghitsrock/kubekey-carryon/blob/master/README_zh-CN.md)。
 
 
 ## 切换 Calico 数据平面

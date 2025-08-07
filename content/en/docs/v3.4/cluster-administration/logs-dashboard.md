@@ -64,9 +64,9 @@ When installing KubeSphere with multiple nodes on Linux, you should create a con
 
 ### Install on Kubernetes
 
-When you [Install KubeSphere on Kubernetes](../../installing-on-kubernetes/introduction/overview/), you need to enable the relevant components in the [cluster-configuration.yaml](https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/cluster-configuration.yaml) file.
+When you [Install KubeSphere on Kubernetes](../../installing-on-kubernetes/introduction/overview/), you need to enable the relevant components in the [cluster-configuration.yaml](https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/cluster-configuration.yaml) file.
 
-1. Download the [cluster-configuration.yaml](https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/cluster-configuration.yaml) file and edit the file using the following command:
+1. Download the [cluster-configuration.yaml](https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/cluster-configuration.yaml) file and edit the file using the following command:
 
     ```bash
     vi cluster-configuration.yaml
@@ -108,7 +108,7 @@ When you [Install KubeSphere on Kubernetes](../../installing-on-kubernetes/intro
 3. Execute the following command to start KubeSphere installation:
 
     ```bash
-    kubectl apply -f https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/kubesphere-installer.yaml
+    kubectl apply -f https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/kubesphere-installer.yaml
     
     kubectl apply -f cluster-configuration.yaml
     ```

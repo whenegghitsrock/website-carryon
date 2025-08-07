@@ -18,11 +18,11 @@ weight: 18300
 
 ### FEATURES
 
-- A brand-new installer: [KubeKey](https://github.com/kubesphere/kubekey), v1.0.0, which is a turnkey solution to installing Kubernetes with KubeSphere on different platforms. It is more easy to use and reduces the dependency on OS environment
+- A brand-new installer: [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon), v1.0.0, which is a turnkey solution to installing Kubernetes with KubeSphere on different platforms. It is more easy to use and reduces the dependency on OS environment
 
 ### UPGRADES & ENHANCEMENTS
 
-- Be compatible with Kubernetes 1.15.x, 1.16.x, 1.17.x and 1.18.x for [ks-installer](https://github.com/kubesphere/ks-installer), v3.0.0
+- Be compatible with Kubernetes 1.15.x, 1.16.x, 1.17.x and 1.18.x for [ks-installer](https://github.com/whenegghitsrock/ks-installer-carryon), v3.0.0
 - Add support for EulerOS, UOS and KylinOS
 - Add support for Kunpeng and Phytium CPU
 - Use ClusterConfiguration CRD to store ks-installer's configuration instead of ConfigMap
@@ -40,10 +40,10 @@ weight: 18300
 
 - Support custom monitoring for 3rd-party application metrics in KubeSphere console
 - Add Kubernetes and KubeSphere auditing support, including audit event archiving, searching and alerting
-- Add Kubernetes event management support, including Kubernetes event archiving, searching and alerting based by [kube-events](https://github.com/kubesphere/kube-events)
+- Add Kubernetes event management support, including Kubernetes event archiving, searching and alerting based by [kube-events](https://github.com/whenegghitsrock/kube-events)
 - Add tenant control to auditing and support Kubernetes event searching. A tenant user can only search his or her own auditing logs and Kubernetes events
 - Support archiving auditing logs and Kubernetes events to Elasticsearch, Kafka or Fluentd
-- Add multi-tenant notification support by [Notification Manager](https://github.com/kubesphere/notification-manager)
+- Add multi-tenant notification support by [Notification Manager](https://github.com/whenegghitsrock/notification-manager)
 - Support Alertmanager v0.21.0
 
 ### UPGRADES & ENHANCEMENTS
@@ -63,8 +63,8 @@ weight: 18300
 
 ### BUG FIXES
 
-- Fix time skew in metric graphs for newly created namespaces (#[2868](https://github.com/kubesphere/kubesphere/issues/2868))
-- Fix workload-level alerting not working as expected (#[2834](https://github.com/kubesphere/kubesphere/issues/2834))
+- Fix time skew in metric graphs for newly created namespaces (#[2868](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2868))
+- Fix workload-level alerting not working as expected (#[2834](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2834))
 - Fix no metric data for NotReady nodes
 
 ## **DevOps**
@@ -81,8 +81,8 @@ weight: 18300
 
 - Fix the issue that DevOps permission data is missing in a very limited number of cases 
 
-- Fix the issue that the Button in the Stage page doesn't work (#[449](https://github.com/kubesphere/console/issues/449))
-- Fix the issue that the parameterized pipeline failed to send the parameter's value (#[2699](https://github.com/kubesphere/kubesphere/issues/2699))
+- Fix the issue that the Button in the Stage page doesn't work (#[449](https://github.com/whenegghitsrock/console/issues/449))
+- Fix the issue that the parameterized pipeline failed to send the parameter's value (#[2699](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2699))
 
 ## **App Store**
 
@@ -164,7 +164,7 @@ weight: 18300
 - Support custom workspace roles
 - Support custom DevOps project roles
 - Support access control across multiple clusters
-- Support pod security context (#[1453](https://github.com/kubesphere/kubesphere/issues/1453))
+- Support pod security context (#[1453](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1453))
 
 ### UPGRADES & ENHANCEMENTS
 
@@ -201,6 +201,6 @@ weight: 18300
 
 ### BUG FIXES
 
-- Fix the error when editing ingress annotations (#[1931](https://github.com/kubesphere/kubesphere/issues/1931))
+- Fix the error when editing ingress annotations (#[1931](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1931))
 - Fix container probes when editing in workload edit template modal
 - Fix XSS security problems of the server-side templates

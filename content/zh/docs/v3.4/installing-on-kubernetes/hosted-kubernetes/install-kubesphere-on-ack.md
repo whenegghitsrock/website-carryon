@@ -139,11 +139,11 @@ alicloud-disk-topology               diskplugin.csi.alibabacloud.com   Delete   
 
 ### 最小化部署 kubesphere
 
-1.使用 [ks-installer](https://github.com/kubesphere/ks-installer) 在已有的 Kubernetes 集群上来部署 KubeSphere，下载 YAML 文件:
+1.使用 [ks-installer](https://github.com/whenegghitsrock/ks-installer-carryon) 在已有的 Kubernetes 集群上来部署 KubeSphere，下载 YAML 文件:
 
 ```
-wget https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/kubesphere-installer.yaml
-wget https://github.com/kubesphere/ks-installer/releases/download/v3.4.1/cluster-configuration.yaml
+wget https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/kubesphere-installer.yaml
+wget https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.4.1/cluster-configuration.yaml
 ```
 
 
@@ -202,7 +202,7 @@ NOTES：
     are ready.
   2. Please modify the default password after login.
 #####################################################
-https://kubesphere.io             2020-xx-xx xx:xx:xx
+https://docs.kubesphere-carryon.top             2020-xx-xx xx:xx:xx
 ```
 
 ## 访问 KubeSphere 控制台

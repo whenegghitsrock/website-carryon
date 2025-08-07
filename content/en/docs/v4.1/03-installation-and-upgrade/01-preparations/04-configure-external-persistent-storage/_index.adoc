@@ -25,7 +25,7 @@ Generally, there are two ways to have KubeKey apply the configuration of the sto
 . Directly input the necessary parameters under the `addons` field in `config-sample.yaml`.
 . Create a separate configuration file for the plugin, listing all necessary parameters, and configure the file path in `config-sample.yaml` so that KubeKey can reference the path during the installation process.
 
-For more information, see link:https://github.com/kubesphere/kubekey/blob/master/docs/addons.md[Plugins].
+For more information, see link:https://github.com/whenegghitsrock/kubekey-carryon/blob/master/docs/addons.md[Plugins].
 
 == Default Storage Class
 

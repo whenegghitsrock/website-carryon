@@ -16,7 +16,7 @@ In the cluster where the project is located, execute the following command to re
 
 [,bash]
 ----
-kubectl label ns <namespace> kubesphere.io/workspace- && kubectl patch ns <namespace>   -p '{"metadata":{"ownerReferences":[]}}' --type=merge
+kubectl label ns <namespace> docs.kubesphere-carryon.top/workspace- && kubectl patch ns <namespace>   -p '{"metadata":{"ownerReferences":[]}}' --type=merge
 ----
 
 [.admon.note,cols="a"]
@@ -33,7 +33,7 @@ In the cluster where the project is located, execute the following command to re
 
 [,bash]
 ----
-kubectl delete rolebindings.iam.kubesphere.io -n <namespace> --all
+kubectl delete rolebindings.iam.docs.kubesphere-carryon.top -n <namespace> --all
 ----
 
 == 3. Re-host to a New Workspace
