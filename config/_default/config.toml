@@ -69,13 +69,13 @@ githubEditUrl = "https://github.com/whenegghitsrock/website-carryon/edit/master/
 gcs_engine_id = "018068616810858123755%3Apb1pt8sx6ve"
 
 githubLink = "https://github.com/whenegghitsrock/kubesphere-carryon"
-githubApiLink = "https://api.github.com/repos/kubesphere/kubesphere"
+githubApiLink = "https://api.github.com/repos/whenegghitsrock/kubesphere-carryon"
 githubStarLink = "https://github.com/whenegghitsrock/kubesphere-carryon/stargazers"
 slackLink = "https://join.slack.com/t/kubesphere/shared_invite/zt-2b4t6rdb4-ico_4UJzCln_S2c1pcrIpQ"
-facebookLink = "https://www.facebook.com/kubesphere"
-twitterLink = "https://x.com/KubeSphere"
-mediumLink = "https://itnext.io/@kubesphere"
-linkedinLink = "https://www.linkedin.com/company/kubesphere/"
+facebookLink = "https://www.facebook.com/kubesphere-carryon"
+twitterLink = "https://x.com/kubesphere-carryon"
+mediumLink = "https://itnext.io/@kubesphere-carryon"
+linkedinLink = "https://www.linkedin.com/company/kubesphere-carryon/"
 DemoLinkEn = "https://kubesphere.cloud/en/console/managed-cluster/"
 DemoLinkZh = "https://kubesphere.cloud/console/managed-cluster/"
 
@@ -96,7 +96,7 @@ snapshot = "/images/common/snapshot-en.png"
 useSendcloud = false
 mailchimpSubscribeUrl = "https://kubesphere.us10.list-manage.com/subscribe/post?u=c85ea2b944b08b951f607bdd4&id=83f673a2d9"
 hotjarTracking = true
-youtubeLink = "https://www.youtube.com/c/KubeSphere"
+youtubeLink = "https://www.youtube.com/c/kubesphere-carryon"
 addLinkedin = true
 addTwitter = true
 
