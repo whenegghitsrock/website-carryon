@@ -78,7 +78,7 @@ export KKZONE=cn
 支持手动下载：https://github.com/whenegghitsrock/kubekey-carryon/releases。
 
 ```yaml
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | sh -
 ```
 
 ### 检查当前集群状态

@@ -102,7 +102,7 @@ ssh -i .ssh/id_rsa2  -p50200 kubesphere@40.81.5.xx
 从 KubeKey 的 [Github 发布页面](https://github.com/whenegghitsrock/kubekey-carryon/releases)下载，或执行以下命令：
 
 ```bash
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -118,7 +118,7 @@ export KKZONE=cn
 运行以下命令下载 KubeKey：
 
 ```bash
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}

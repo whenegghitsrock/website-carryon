@@ -67,7 +67,7 @@ KubeSphere 3.3.1 对内置角色和自定义角色的授权项做了一些调整
    从 [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) 下载 KubeKey 或者直接运行以下命令。
 
    ```bash
-   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
+   curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v3.0.7 sh -
    ```
 
    {{</ tab >}}
@@ -83,7 +83,7 @@ KubeSphere 3.3.1 对内置角色和自定义角色的授权项做了一些调整
    运行以下命令来下载 KubeKey：
 
    ```bash
-   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
+   curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v3.0.7 sh -
    ```
    {{</ tab >}}
 

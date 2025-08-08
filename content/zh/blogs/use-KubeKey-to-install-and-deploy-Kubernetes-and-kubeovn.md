@@ -25,7 +25,7 @@ Kube-OVN 是一款开源企业级云原生 Kubernetes 容器网络编排系统�
 如果能正常访问 GitHub/Googleapis，可以从 GitHub [发布页面](https://github.com/whenegghitsrock/kubekey-carryon/releases)下载 KubeKey 或直接使用以下命令。
 
 ```bash
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.0.0 sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v2.0.0 sh -
 ```
 
 如果访问 GitHub/Googleapis 受限
@@ -38,7 +38,7 @@ export KKZONE=cn
 执行以下命令下载 KubeKey。
 
 ```bash
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.0.0 sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v2.0.0 sh -
 ```
 >下载 KubeKey 后，如果将其传至新的机器，且访问 Googleapis 同样受限，在执行以下步骤之前务必再次执行 `export KKZONE=cn` 命令。
 >执行以上命令会下载最新版 KubeKey (v2.0.0)，可以修改命令中的版本号下载指定版本。

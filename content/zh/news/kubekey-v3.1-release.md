@@ -68,7 +68,7 @@ KubeKey 是 KubeSphere 社区开源的一款高效集群部署工具，运行时
 ## 获取最新版本 KubeKey
 
 ```
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | sh -
 ```
 
 ## 新增功能介绍

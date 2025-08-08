@@ -16,7 +16,7 @@ export KKZONE=cn
 // Bash
 [,bash]
 ----
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | sh -
 ----
 
 下载完成后当前目录下将生成 KubeKey 二进制文件 **kk**。

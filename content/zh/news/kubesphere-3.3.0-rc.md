@@ -58,7 +58,7 @@ image: 'https://pek3b.qingstor.com/kubesphere-community/images/202205232124305.p
 先从 [GitHub Release 页面](https://github.com/whenegghitsrock/kubekey-carryon/releases/tag/v2.1.0)下载 KubeKey 或者直接运行以下命令。
 
 ```
-$ curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.1.0 sh -
+$ curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v2.1.0 sh -
 ```
 
 为 `kk` 添加可执行权限：

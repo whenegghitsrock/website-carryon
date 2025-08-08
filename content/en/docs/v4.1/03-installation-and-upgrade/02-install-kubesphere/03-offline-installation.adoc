@@ -73,7 +73,7 @@ After the download is complete, the KubeKey binary file **kk** will be generated
 
 [source,bash]
 ----
-curl -sSL https://get-kk.docs.kubesphere-carryon.top | sh -
+curl -sSL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | sh -
 ----
 
 === 2. Create Manifest File

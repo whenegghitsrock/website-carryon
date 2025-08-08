@@ -33,7 +33,7 @@ After the download is complete, a KubeKey binary file **kk** will be generated i
 
 [,bash]
 ----
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | sh -
 ----
 --
 

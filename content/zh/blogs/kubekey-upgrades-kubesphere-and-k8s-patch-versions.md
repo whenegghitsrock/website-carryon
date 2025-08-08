@@ -307,7 +307,7 @@ watch kubectl exec -it test-nginx-3 -n upgrade-test  -- df -h
 
 ```bash
 export KKZONE=cn
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v3.0.13 sh -
 ```
 
 ## 4. 生成集群部署配置文件

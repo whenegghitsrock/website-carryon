@@ -74,7 +74,7 @@ Follow the steps below to download KubeKey.
 1. Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly.
 
    ```bash
-   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.0.0 sh -
+   curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v2.0.0 sh -
    ```
 
 2. Make `kk` executable.

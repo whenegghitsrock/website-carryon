@@ -167,7 +167,7 @@ ntpServers:
 ### 5.1 Download KubeKey 
 
 ```shell
-curl -sSL https://get-kk.docs.kubesphere-carryon.top | sh -
+curl -sSL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | sh -
 ```
 
 

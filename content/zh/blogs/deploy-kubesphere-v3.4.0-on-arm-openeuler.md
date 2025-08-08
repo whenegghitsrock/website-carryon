@@ -289,17 +289,17 @@ cd kubekey/
 
 # 选择中文区下载(访问 GitHub 受限时使用)
 export KKZONE=cn
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | sh -
 
 # 也可以使用下面的命令指定具体版本
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.10 sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v3.0.10 sh -
 
 # 正确的执行效果如下
 [root@ks-master-1 ~]# cd ~
 [root@ks-master-1 ~]# mkdir kubekey
 [root@ks-master-1 ~]# cd kubekey/
 [root@ks-master-1 kubekey]# export KKZONE=cn
-[root@ks-master-1 kubekey]# curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
+[root@ks-master-1 kubekey]# curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | sh -
 
 Downloading kubekey v3.0.10 from https://kubernetes.pek3b.qingstor.com/kubekey/releases/download/v3.0.10/kubekey-v3.0.10-linux-arm64.tar.gz ...
 

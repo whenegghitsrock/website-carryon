@@ -78,7 +78,7 @@ $ export KKZONE=cn
 # 下载KubeKey
 $ mkdir /data/kubekey
 $ cd /data/kubekey/
-$ curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.2.1 sh -
+$ curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v2.2.1 sh -
 ```
 
 ### 获取 manifest 模板

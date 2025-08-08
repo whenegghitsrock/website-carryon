@@ -178,7 +178,7 @@ Now that we have our server machine ready, we need to install `nfs-common` on al
 1. Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command to download KubeKey version 1.0.1. You only need to download KubeKey to one of your machines that serves as the **taskbox** for installation.
 
    ```bash
-   curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.0.0 sh -
+   curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v2.0.0 sh -
    ```
 
 2. The above command downloads KubeKey and unzips the file. Your folder now contains a file called `kk`. Make it executable.

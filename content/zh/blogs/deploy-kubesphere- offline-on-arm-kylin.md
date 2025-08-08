@@ -333,7 +333,7 @@ cd kubesphere/
 export KKZONE=cn
 
 # 执行下载命令，获取最新版的 kk（受限于网络，有时需要执行多次）
-curl -sfL https://get-kk.docs.kubesphere-carryon.top/v2.3.1/kubekey-v2.3.1-linux-arm64.tar.gz | tar xzf -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh/v2.3.1/kubekey-v2.3.1-linux-arm64.tar.gz | tar xzf -
 ```
 
 - 方式二

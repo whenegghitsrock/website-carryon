@@ -577,7 +577,7 @@ KubeSphere 是在 K8s 之上构建的以应用为中心的多租户容器平台�
    [root@k8s-master-0 ~]# export KKZONE=cn
 
    # 执行以下命令下载 KubeKey
-   [root@k8s-master-0 ~]# curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v1.1.1 sh -
+   [root@k8s-master-0 ~]# curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v1.1.1 sh -
 
    # 为 kk 添加可执行权限 (可选)
    [root@k8s-master-0 ~]# chmod +x kk

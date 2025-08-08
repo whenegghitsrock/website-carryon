@@ -101,7 +101,7 @@ ssh -i .ssh/id_rsa2  -p50200 kubesphere@40.81.5.xx
 Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly:
 
 ```bash
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v3.0.13 sh -
 ```
 
 {{</ tab >}}
@@ -117,7 +117,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v3.0.13 sh -
 ```
 
 {{< notice note >}}

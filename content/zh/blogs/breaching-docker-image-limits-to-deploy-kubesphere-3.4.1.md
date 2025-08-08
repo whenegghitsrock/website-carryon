@@ -48,7 +48,7 @@ cd ~/kubekey/
 
 # 选择中文区下载(访问 GitHub 受限时使用)
 export KKZONE=cn
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | sh -
 ```
 
 - 查看 KubeKey 支持的 Kubernetes 版本列表 **`./kk version --show-supported-k8s`**

@@ -90,7 +90,7 @@ Welcome to Ubuntu 18.04.6 LTS (GNU/Linux 5.4.0-1089-azure x86_64)
 apt install socat conntrack containerd
 systemctl daemon-reload
 systemctl enable --now containerd
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.2 sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v3.0.2 sh -
 chmod +x kk
 ./kk create cluster --with-kubernetes v1.22.12 --with-kubesphere v3.3.1
 +------+------+------+---------+----------+-------+-------+---------+-----------+--------+--------+------------------+------------+-------------+------------------+--------------+

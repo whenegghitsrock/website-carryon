@@ -65,7 +65,7 @@ KubeKey v2.0.0 可使用自签名证书部署 docker regisgry 或者 harbor，�
 获取最新正式版 KubeKey 的最快方法是通过命令行脚本：
 
 ```
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | sh -
 ```
 
 或者也可以前往 GitHub Release 页面，下载获取 KubeKey 2.0.0 的二进制文件。

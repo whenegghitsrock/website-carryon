@@ -75,7 +75,7 @@ apt install socat conntrack -y
 
 [source,bash]
 ----
-curl -sSL https://get-kk.docs.kubesphere-carryon.top | sh -
+curl -sSL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | sh -
 ----
 
 

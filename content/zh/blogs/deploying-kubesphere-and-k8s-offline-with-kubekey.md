@@ -77,10 +77,10 @@ cd kubekey/
 export KKZONE=cn
 
 # 执行下载命令，获取最新版的 kk（受限于网络，有时需要执行多次）
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | sh -
 
 # 也可以使用下面的命令指定具体版本
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.13 sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v3.0.13 sh -
 ```
 
 ### 2.2. 获取 manifest 模板

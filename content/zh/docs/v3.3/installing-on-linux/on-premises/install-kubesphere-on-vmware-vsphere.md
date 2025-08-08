@@ -288,7 +288,7 @@ systemctl status -l keepalived
 从 [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) 下载 KubeKey 或直接使用以下命令。
 
 ```bash
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v3.0.7 sh -
 ```
 
 {{</ tab >}}
@@ -304,7 +304,7 @@ export KKZONE=cn
 执行以下命令下载 KubeKey。
 
 ```bash
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v3.0.7 sh -
 ```
 
 {{< notice note >}}

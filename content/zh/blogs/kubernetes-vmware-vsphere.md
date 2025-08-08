@@ -38,7 +38,7 @@ VMware vSphere Cloud Native Storage（CNS）是 VMware 结合 vSphere 和 K8s �
 
 ```bash
 🐳  → export KKZONE=cn #国内网络环境友好
-🐳  → curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v2.2.1 sh -
+🐳  → curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v2.2.1 sh -
 ```
 
 Docker 的出现让我们可以一条命令运行一个 MySQL 应用，Kubekey 让我们一条命令运行一个完整的 K8s 集群和 KubeSphere 平台。

@@ -119,7 +119,7 @@ Follow the steps below to download [KubeKey](../../../installing-on-linux/introd
 Download KubeKey from its [GitHub Release Page](https://github.com/whenegghitsrock/kubekey-carryon/releases) or use the following command directly.
 
 ```bash
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v3.0.7 sh -
 ```
 
 {{</ tab >}}
@@ -135,7 +135,7 @@ export KKZONE=cn
 Run the following command to download KubeKey:
 
 ```bash
-curl -sfL https://get-kk.docs.kubesphere-carryon.top | VERSION=v3.0.7 sh -
+curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v3.0.7 sh -
 ```
 
 {{< notice note >}}
