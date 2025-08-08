@@ -79,8 +79,8 @@ linkedinLink = "https://www.linkedin.com/company/kubesphere-carryon/"
 DemoLinkEn = "https://kubesphere.cloud/en/console/managed-cluster/"
 DemoLinkZh = "https://kubesphere.cloud/console/managed-cluster/"
 
-baiduAnalyticsID = "0888981f1fa45d241b1fb6962da2963e"
-googleAnalyticsID = "G-YYCVN36HT5"
+baiduAnalyticsID = "33b7bf2b9d43e10a1ba29bf1023c1602"
+googleAnalyticsID = "G-17KFSYG5J4"
 
 [languages.en]
 contentDir = "content/en"
