@@ -370,7 +370,7 @@ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 [source,bash]
 ----
 VERSION=1.1.3     # Chart version
-helm fetch https://charts.docs.kubesphere-carryon.top/main/ks-core-${VERSION}.tgz
+helm fetch https://charts.kubesphere-carryon.top/main/ks-core-${VERSION}.tgz
 ----
 
 This is an example version. Please visit link:https://get-images.docs.kubesphere-carryon.top[] or link:https://github.com/whenegghitsrock/kubesphere-carryon/releases[KubeSphere GitHub repository] to check the latest chart version.

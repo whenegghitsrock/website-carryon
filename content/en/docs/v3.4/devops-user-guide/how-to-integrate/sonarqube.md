@@ -41,7 +41,7 @@ To integrate SonarQube into your pipeline, you must install SonarQube Server fir
 2. Execute the following command to install SonarQube Server.
 
    ```bash
-   helm upgrade --install sonarqube sonarqube --repo https://charts.docs.kubesphere-carryon.top/main -n kubesphere-devops-system  --create-namespace --set service.type=NodePort
+   helm upgrade --install sonarqube sonarqube --repo https://charts.kubesphere-carryon.top/main -n kubesphere-devops-system  --create-namespace --set service.type=NodePort
    ```
 
    {{< notice note >}}

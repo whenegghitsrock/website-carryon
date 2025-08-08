@@ -31,7 +31,7 @@ kubectl delete sc csi-qingcloud
 ```
 
 ```
-helm repo add test https://charts.docs.kubesphere-carryon.top/test
+helm repo add test https://charts.kubesphere-carryon.top/test
 ```
 
 ```

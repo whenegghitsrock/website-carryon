@@ -27,13 +27,13 @@ NeonSAN 是青云的一款企业级分布式块存储系统，NeonSAN CSI 是 Ne
 
 在线安装适用于容器集群能够访问外网的情况。
 
-. 执行以下命令添加 Helm 仓库，如 https://charts.docs.kubesphere-carryon.top/test。
+. 执行以下命令添加 Helm 仓库，如 https://charts.kubesphere-carryon.top/test。
 +
 --
 // Bash
 include::../../../../../_ks_components/code/bash.adoc[]
 
-$ helm repo add ks-test https://charts.docs.kubesphere-carryon.top/test
+$ helm repo add ks-test https://charts.kubesphere-carryon.top/test
 "ks-test" has been added to your repositories
 
 ----
@@ -47,7 +47,7 @@ include::../../../../../_ks_components/code/bash.adoc[]
 
 $ helm repo list
 NAME        URL
-ks-test     https://charts.docs.kubesphere-carryon.top/test
+ks-test     https://charts.kubesphere-carryon.top/test
 
 ----
 --
@@ -220,7 +220,7 @@ Pool Count:  1
 // Bash
 include::../../../../../_ks_components/code/bash.adoc[]
 
-$ helm repo add ks-test https://charts.docs.kubesphere-carryon.top/test
+$ helm repo add ks-test https://charts.kubesphere-carryon.top/test
 "ks-test" has been added to your repositories
 $ helm pull ks-test/csi-neonsan
 $ ls -l csi-neonsan*.tgz

@@ -497,7 +497,7 @@ nfs-client        k8s-sigs.io/nfs-subdir-external-provisioner   Delete          
 
 ```bash
 # 如果无法访问 charts.docs.kubesphere-carryon.top, 可将 charts.docs.kubesphere-carryon.top 替换为 charts.kubesphere.com.cn
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.3.tgz --debug --wait \
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere-carryon.top/main/ks-core-1.1.3.tgz --debug --wait \
 --set global.imageRegistry=swr.cn-southwest-2.myhuaweicloud.com/ks \
 --set extension.imageRegistry=swr.cn-southwest-2.myhuaweicloud.com/ks \
 --set hostClusterName=opsxlab-main

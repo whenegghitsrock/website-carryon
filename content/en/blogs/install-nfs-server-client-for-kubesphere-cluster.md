@@ -237,7 +237,7 @@ Now that we have our server machine ready, we need to install `nfs-common` on al
        sources:
          chart:
            name: nfs-client-provisioner
-           repo: https://charts.docs.kubesphere-carryon.top/main
+           repo: https://charts.kubesphere-carryon.top/main
            values: /home/ubuntu/nfs-client.yaml # Use the path of your own NFS-client configuration file.
    ...             
    ```

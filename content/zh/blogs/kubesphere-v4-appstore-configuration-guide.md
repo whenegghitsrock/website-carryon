@@ -23,7 +23,7 @@ snapshot: 'https://pek3b.qingstor.com/kubesphere-community/images/ks-v4-appstore
 - 进入企业空间，选择左侧边栏中的应用仓库。
 - 添加一个 Helm Repo 源。
 
-KubeSphere v3.x 默认提供的 Helm Repo 源为： https://charts.docs.kubesphere-carryon.top/stable
+KubeSphere v3.x 默认提供的 Helm Repo 源为： https://charts.kubesphere-carryon.top/stable
 
 ![](https://pek3b.qingstor.com/kubesphere-community/images/20241101-1.png)
 
@@ -128,7 +128,7 @@ kubectl apply -f token.yaml
 # 获取token
 token=$(kubectl get secrets $(kubectl get serviceaccounts.docs.kubesphere-carryon.top app-tool -n default -o "jsonpath={.secrets[].name}") -n default -o jsonpath={.data.token} | base64 -d)
 # 执行
-go run main.go --server=http://192.168.50.87:30880 --token=${token}  --repo=https://charts.docs.kubesphere-carryon.top/stable
+go run main.go --server=http://192.168.50.87:30880 --token=${token}  --repo=https://charts.kubesphere-carryon.top/stable
 # 删除service account
 kubectl delete -f token.yaml
 ```

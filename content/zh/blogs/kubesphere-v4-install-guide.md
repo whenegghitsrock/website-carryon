@@ -283,7 +283,7 @@ helm del -n kube-federation-system kubefed
 ```
 # 下载 ks-core chart 包
 # 如果无法访问 charts.docs.kubesphere-carryon.top, 可将 charts.docs.kubesphere-carryon.top 替换为 charts.kubesphere.com.cn 
-helm fetch https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.3.tgz --untar
+helm fetch https://charts.kubesphere-carryon.top/main/ks-core-1.1.3.tgz --untar
 
 
 # 更新 crds 
@@ -301,7 +301,7 @@ kubectl apply -f ks-core/charts/ks-crds/crds/
 # --set extension.imageRegistry=swr.cn-southwest-2.myhuaweicloud.com/ks 
 # 如果无法访问 charts.docs.kubesphere-carryon.top, 可将 charts.docs.kubesphere-carryon.top 替换为 charts.kubesphere.com.cn
 
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.3.tgz --debug --wait
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere-carryon.top/main/ks-core-1.1.3.tgz --debug --wait
 ```
 
 ### 添加 Member 集群

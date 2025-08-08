@@ -21,7 +21,7 @@ This tutorial demonstrates how to deploy MeterSphere on KubeSphere.
 
 1. Log in to KubeSphere as `ws-admin`. In your workspace, go to **App Repositories** under **App Management**, and then click **Add**.
 
-2. In the dialog that appears, enter `metersphere` for the app repository name and `https://charts.docs.kubesphere-carryon.top/test` for the MeterSphere repository URL. Click **Validate** to verify the URL and you will see a green check mark next to the URL if it is available. Click **OK** to continue.
+2. In the dialog that appears, enter `metersphere` for the app repository name and `https://charts.kubesphere-carryon.top/test` for the MeterSphere repository URL. Click **Validate** to verify the URL and you will see a green check mark next to the URL if it is available. Click **OK** to continue.
 
 3. Your repository displays in the list after it is successfully imported to KubeSphere.
 

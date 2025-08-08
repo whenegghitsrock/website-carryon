@@ -175,7 +175,7 @@ chmod +x kk
        sources:
          chart:
            name: csi-qingcloud
-           repo: https://charts.docs.kubesphere-carryon.top/test
+           repo: https://charts.kubesphere-carryon.top/test
            valuesFile: /root/csi-qingcloud.yaml
    ...
    ```

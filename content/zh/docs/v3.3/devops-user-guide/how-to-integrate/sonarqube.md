@@ -41,7 +41,7 @@ weight: 11310
 2. 执行以下命令安装 SonarQube 服务器。
 
    ```bash
-   helm upgrade --install sonarqube sonarqube --repo https://charts.docs.kubesphere-carryon.top/main -n kubesphere-devops-system  --create-namespace --set service.type=NodePort
+   helm upgrade --install sonarqube sonarqube --repo https://charts.kubesphere-carryon.top/main -n kubesphere-devops-system  --create-namespace --set service.type=NodePort
    ```
 
    {{< notice note >}}

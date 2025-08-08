@@ -49,7 +49,7 @@ This is basically the same as what I did last time as we need to make sure all o
 3. To make sure you can use NFS storage, you need to install its corresponding volume plugin. As Helm is installed together with KubeSphere by default, I will install [NFS-client Provisioner](https://github.com/kubernetes-retired/external-storage/tree/master/nfs-client) by Helm charts including its storage class. Run the following command to add a repository first:
 
    ```
-   helm repo add stable https://charts.docs.kubesphere-carryon.top/main
+   helm repo add stable https://charts.kubesphere-carryon.top/main
    ```
 
    {{< notice note >}}

@@ -128,7 +128,7 @@ Extension repository: https://github.com/whenegghitsrock-extensions/ks-extension
 To upgrade from v4.1.1 to v4.1.2, run the following command:
 
 ```
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.2.tgz --debug --wait
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere-carryon.top/main/ks-core-1.1.2.tgz --debug --wait
 ```
 
 To quickly start, please refer to: https://docs.kubesphere-carryon.top/docs/v4.1/02-quickstart/01-install-kubesphere.

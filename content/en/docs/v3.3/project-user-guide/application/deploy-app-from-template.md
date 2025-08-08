@@ -21,7 +21,7 @@ This tutorial demonstrates how to quickly deploy [Grafana](https://grafana.com/)
 
 1. Log in to the web console of KubeSphere as `ws-admin`. In your workspace, go to **App Repositories** under **App Management**, and then click **Add**.
 
-2. In the displayed dialog box, enter `test-repo` for the app repository name and `https://charts.docs.kubesphere-carryon.top/main` for the repository URL. Click **Validate** to verify the URL, set **Synchronization Interval** based on your needs, and click **OK**.
+2. In the displayed dialog box, enter `test-repo` for the app repository name and `https://charts.kubesphere-carryon.top/main` for the repository URL. Click **Validate** to verify the URL, set **Synchronization Interval** based on your needs, and click **OK**.
 
 3. Your repository is displayed in the list after successfully imported to KubeSphere.
 

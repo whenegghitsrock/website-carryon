@@ -123,6 +123,6 @@ Save the above chart config locally (for example, `/root/rbd-provisioner.yaml`).
   sources:
     chart:
       name: rbd-provisioner
-      repo: https://charts.docs.kubesphere-carryon.top/test
+      repo: https://charts.kubesphere-carryon.top/test
       valuesFile: /root/rbd-provisioner.yaml
 ```

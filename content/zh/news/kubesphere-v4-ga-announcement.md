@@ -142,7 +142,7 @@ KubeSphere 扩展组件用于扩展 KubeSphere 的平台能力，用户可在系
 从 v4.1.1 升级到 v4.1.2，升级和安装部署可以使用以下命令：
 
 ```
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.2.tgz --debug --wait
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere-carryon.top/main/ks-core-1.1.2.tgz --debug --wait
 ```
 
 详细文档请参考： https://docs.kubesphere-carryon.top/zh/docs/v4.1/02-quickstart/01-install-kubesphere。

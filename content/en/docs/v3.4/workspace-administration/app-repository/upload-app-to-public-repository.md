@@ -40,5 +40,5 @@ When you finish the development, submit a pull request to [the official reposito
 
 ### Step 3: Deploy your app
 
-After your pull request is approved, your app will be available to use. For more information, refer to [Import a Helm Repository](../import-helm-repository/) to add `https://charts.docs.kubesphere-carryon.top/main` to KubeSphere.
+After your pull request is approved, your app will be available to use. For more information, refer to [Import a Helm Repository](../import-helm-repository/) to add `https://charts.kubesphere-carryon.top/main` to KubeSphere.
 

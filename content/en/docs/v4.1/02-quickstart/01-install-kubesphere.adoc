@@ -65,7 +65,7 @@ If the cluster nodes use other operating systems, please replace apt with the co
 [,bash]
 ----
 # If you are accessing charts.docs.kubesphere-carryon.top from a restricted location, replace charts.docs.kubesphere-carryon.top with charts.kubesphere.com.cn
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.4.tgz --debug --wait
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere-carryon.top/main/ks-core-1.1.4.tgz --debug --wait
 ----
 +
 include::../../../_ks_components-en/admonitions/note.adoc[]

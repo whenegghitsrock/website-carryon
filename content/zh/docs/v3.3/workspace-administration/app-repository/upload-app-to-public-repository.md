@@ -40,5 +40,5 @@ KubeSphere 提供一个可供测试和开发的应用仓库，用户可以上传
 
 ### 步骤 3：部署应用
 
-PR 审核通过后，您的应用即可使用。有关更多信息，请参考[导入 Helm 仓库](../import-helm-repository/)将 `https://charts.docs.kubesphere-carryon.top/main` 添加至 KubeSphere。
+PR 审核通过后，您的应用即可使用。有关更多信息，请参考[导入 Helm 仓库](../import-helm-repository/)将 `https://charts.kubesphere-carryon.top/main` 添加至 KubeSphere。
 

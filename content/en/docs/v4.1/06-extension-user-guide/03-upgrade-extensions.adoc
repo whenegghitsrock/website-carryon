@@ -26,7 +26,7 @@ if [ -z "$CHART_VERSION" ]; then
 fi
 
 # Construct the Chart URL
-CHART_URL="https://charts.docs.kubesphere-carryon.top/main/ks-core-$CHART_VERSION.tgz"
+CHART_URL="https://charts.kubesphere-carryon.top/main/ks-core-$CHART_VERSION.tgz"
 
 # If EXTENSION_REPOSITORY_VERSION is not set via environment variable, fetch it from GitHub
 if [ -z "$EXTENSION_REPOSITORY_VERSION" ]; then

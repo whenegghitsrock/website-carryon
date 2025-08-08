@@ -292,7 +292,7 @@ include::../../../_custom-en/installationAndUpgrade/installationAndUpgrade-para-
     sources:
       chart:
         name: csi-qingcloud
-        repo: https://charts.docs.kubesphere-carryon.top/test
+        repo: https://charts.kubesphere-carryon.top/test
         valuesFile: <configuration file path>
 ----
 --
@@ -308,7 +308,7 @@ include::../../../_custom-en/installationAndUpgrade/installationAndUpgrade-para-
     sources:
       chart:
         name: csi-neonsan
-        repo: https://charts.docs.kubesphere-carryon.top/test
+        repo: https://charts.kubesphere-carryon.top/test
         valuesFile: <configuration file path>
 ----
 --
@@ -324,7 +324,7 @@ include::../../../_custom-en/installationAndUpgrade/installationAndUpgrade-para-
     sources:
       chart:
         name: nfs-client-provisioner
-        repo: https://charts.docs.kubesphere-carryon.top/main
+        repo: https://charts.kubesphere-carryon.top/main
         valuesFile: <configuration file path>
 ----
 --
@@ -371,7 +371,7 @@ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 [,bash]
 ----
 # If you are accessing charts.docs.kubesphere-carryon.top from a restricted location, replace charts.docs.kubesphere-carryon.top with charts.kubesphere.com.cn
-helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.docs.kubesphere-carryon.top/main/ks-core-1.1.4.tgz --debug --wait
+helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere-carryon.top/main/ks-core-1.1.4.tgz --debug --wait
 ----
 
 include::../../../../_ks_components-en/admonitions/note.adoc[]
