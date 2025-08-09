@@ -7,7 +7,7 @@ css: scss/index.scss
 
 section1:
   title: KubeSphere 容器平台
-  topic: 面向云原生应用的<br>容器混合云
+  topic: 面向云原生应用的容器混合云<br>v4.1.3 amd64 版本已恢复, 安装参考文档
   content: KubeSphere 愿景是打造一个以 Kubernetes 为内核的云原生分布式操作系统，它的架构可以非常方便地使第三方应用与云原生生态组件进行即插即用（plug-and-play）的集成，支持云原生应用在多云与多集群的统一分发和运维管理。
 
 section2:
