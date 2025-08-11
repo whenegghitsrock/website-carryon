@@ -243,28 +243,28 @@ mailchimpSubscribeUrl = "https://www.sendcloud.net/v3/api/subInvite/subscription
 showCaseNumber = true
 bilibiliLink = "https://space.bilibili.com/438908638"
 
-[[languages.zh.menu.main]]
-weight = 2
-name = "应用场景"
-hasChildren = true
+# [[languages.zh.menu.main]]
+# weight = 2
+# name = "应用场景"
+# hasChildren = true
 
-  [[languages.zh.menu.main]]
-  parent = "应用场景"
-  name = "拥抱一站式 DevOps 工作流"
-  URL = "devops/"
-  weight = 2
+  # [[languages.zh.menu.main]]
+  # parent = "应用场景"
+  # name = "拥抱一站式 DevOps 工作流"
+  # URL = "devops/"
+  # weight = 2
 
-  [[languages.zh.menu.main]]
-  parent = "应用场景"
-  name = "在 Kubernetes 运行微服务"
-  URL = "service-mesh/"
-  weight = 4
+  # [[languages.zh.menu.main]]
+  # parent = "应用场景"
+  # name = "在 Kubernetes 运行微服务"
+  # URL = "service-mesh/"
+  # weight = 4
 
-  [[languages.zh.menu.main]]
-  parent = "应用场景"
-  name = "构建丰富的云原生可观测性"
-  URL = "observability/"
-  weight = 8
+  # [[languages.zh.menu.main]]
+  # parent = "应用场景"
+  # name = "构建丰富的云原生可观测性"
+  # URL = "observability/"
+  # weight = 8
 
 [[languages.zh.menu.main]]
 weight = 3
@@ -277,11 +277,11 @@ hasChildren = true
   URL = "projects/"
   weight = 1
 
-  [[languages.zh.menu.main]]
-  parent = "资源"
-  name = "开源峰会"
-  URL = "conferences/"
-  weight = 2
+  # [[languages.zh.menu.main]]
+  # parent = "资源"
+  # name = "开源峰会"
+  # URL = "conferences/"
+  # weight = 2
 
   [[languages.zh.menu.main]]
   parent = "资源"
@@ -369,11 +369,11 @@ name = "开源社区"
     URL = "user-group/"
     weight = 5
 
-    [[languages.zh.menu.main]]
-    parent = "开源社区"
-    name = "动态"
-    URL = "news/"
-    weight = 6
+    # [[languages.zh.menu.main]]
+    # parent = "开源社区"
+    # name = "动态"
+    # URL = "news/"
+    # weight = 6
 
     # [[languages.zh.menu.main]]
     # parent = "开源社区"
@@ -381,27 +381,27 @@ name = "开源社区"
     # URL = "https://github.com/whenegghitsrock/kubesphere-carryon/blob/master/docs/roadmap.md"
     # weight = 7
 
-    [[languages.zh.menu.main]]
-    parent = "开源社区"
-    name = "中国站"
-    URL = "https://www.docs.kubesphere-carryon.top/zh/"
-    weight = 8
+    # [[languages.zh.menu.main]]
+    # parent = "开源社区"
+    # name = "中国站"
+    # URL = "https://www.docs.kubesphere-carryon.top/zh/"
+    # weight = 8
 
-    [[languages.zh.menu.main]]
-    parent = "开源社区"
-    name = "开源之夏 2025"
-    URL = "https://github.com/whenegghitsrock/community/tree/master/sig-advocacy-and-outreach/ospp-2025"
-    weight = 9
+    # [[languages.zh.menu.main]]
+    # parent = "开源社区"
+    # name = "开源之夏 2025"
+    # URL = "https://github.com/whenegghitsrock/community/tree/master/sig-advocacy-and-outreach/ospp-2025"
+    # weight = 9
 
 [[languages.zh.menu.main]]
 weight = 6
 name = "用户论坛"
 URL = "https://ask.docs.kubesphere-carryon.top/forum"
 
-[[languages.zh.menu.main]]
-weight = 7
-name = "认证"
-URL = "https://kubesphere.cloud/certification/"
+# [[languages.zh.menu.main]]
+# weight = 7
+# name = "认证"
+# URL = "https://kubesphere.cloud/certification/"
 
 
 # [languages.tr]
