@@ -76,7 +76,7 @@ Dockerfile 安装用于构建和运行应用程序的的所有必要工具和库
 
 ```
 # nginx-centos7
-FROM kubespheredev/s2i-base-centos7:1
+FROM kubesphereondev/s2i-base-centos7:1
 
 # Here you can specify the maintainer for the image that you're building
 LABEL maintainer="Runze Xia <runzexia@yunify.com>"
@@ -147,7 +147,7 @@ S2I 脚本将使用 Dockerfile 中定义的标志作为参数。如果您需要�
 
    {{< notice note >}}
 
-   默认情况下，`s2i build` 将应用程序源代码放在 `/tmp/src`。上述命令将应用程序源代码复制到由 `kubespheredev/s2i-base-centos7:1` 定义的工作目录 `/opt/app-root/src`。
+   默认情况下，`s2i build` 将应用程序源代码放在 `/tmp/src`。上述命令将应用程序源代码复制到由 `kubesphereondev/s2i-base-centos7:1` 定义的工作目录 `/opt/app-root/src`。
 
    {{</ notice >}}
 
@@ -171,7 +171,7 @@ S2I 脚本将使用 Dockerfile 中定义的标志作为参数。如果您需要�
    This is the nginx-centos7 S2I image:
    To use it, install S2I: https://github.com/whenegghitsrock/s2i-operator
    Sample invocation:
-   s2i build test/test-app kubespheredev/nginx-centos7 nginx-centos7-app
+   s2i build test/test-app kubesphereondev/nginx-centos7 nginx-centos7-app
    You can then run the resulting image via:
    docker run -d -p 8080:8080 nginx-centos7-app
    and see the test via http://localhost:8080
@@ -183,7 +183,7 @@ S2I 脚本将使用 Dockerfile 中定义的标志作为参数。如果您需要�
 1. 修改 Makefile 中的镜像名称
 
    ```bash
-   IMAGE_NAME = kubespheredev/nginx-centos7-s2ibuilder-sample
+   IMAGE_NAME = kubesphereondev/nginx-centos7-s2ibuilder-sample
    
    # Create an Image Builder named above based on the Dockerfile that was created previously.
    .PHONY: build
@@ -201,9 +201,9 @@ S2I 脚本将使用 Dockerfile 中定义的标志作为参数。如果您需要�
 
    ```bash
    $ make build
-   docker build -t kubespheredev/nginx-centos7-s2ibuilder-sample .
+   docker build -t kubesphereondev/nginx-centos7-s2ibuilder-sample .
    Sending build context to Docker daemon  164.9kB
-   Step 1/17 : FROM kubespheredev/s2i-base-centos7:1
+   Step 1/17 : FROM kubesphereondev/s2i-base-centos7:1
     ---> 48f8574c05df
    Step 2/17 : LABEL maintainer="Runze Xia <runzexia@yunify.com>"
     ---> Using cache
@@ -226,13 +226,13 @@ S2I 脚本将使用 Dockerfile 中定义的标志作为参数。如果您需要�
    Removing intermediate container c24819f6be27
     ---> c147c86f2cb8
    Successfully built c147c86f2cb8
-   Successfully tagged kubespheredev/nginx-centos7-s2ibuilder-sample:latest
+   Successfully tagged kubesphereondev/nginx-centos7-s2ibuilder-sample:latest
    ```
 
 3. 在创建镜像构建器后，运行以下命令创建应用程序镜像。
 
    ```bash
-   $ s2i build ./test/test-app kubespheredev/nginx-centos7-s2ibuilder-sample:latest sample-app
+   $ s2i build ./test/test-app kubesphereondev/nginx-centos7-s2ibuilder-sample:latest sample-app
    ---> Building and installing application from source...
    Build completed successfully
    ```
@@ -265,9 +265,9 @@ metadata:
   name: nginx-demo
 spec:
   containerInfo:
-    - builderImage: kubespheredev/nginx-centos7-s2ibuilder-sample
+    - builderImage: kubesphereondev/nginx-centos7-s2ibuilder-sample
   codeFramework: nginx # type of code framework
-  defaultBaseImage: kubespheredev/nginx-centos7-s2ibuilder-sample # default Image Builder (can be replaced by a customized image)
+  defaultBaseImage: kubesphereondev/nginx-centos7-s2ibuilder-sample # default Image Builder (can be replaced by a customized image)
   version: 0.0.1 # Builder template version
   description: "This is an S2I builder template for NGINX builds whose result can be run directly without any further application server." # Builder template description
 ```

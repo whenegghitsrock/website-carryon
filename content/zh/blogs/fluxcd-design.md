@@ -93,6 +93,6 @@ type FluxApplicationSpec struct {
 
 ## Demo
 
-> demo 视频的前端采用 [kubesphere/console PR-3761](https://github.com/whenegghitsrock/console/pull/3761)；后端采用 [kubesphere/ks-devops master branch](https://github.com/whenegghitsrock/ks-devops)。
+> demo 视频的前端采用 [kubesphere/console PR-3761](https://github.com/whenegghitsrock/console-carryon/pull/3761)；后端采用 [kubesphere/ks-devops master branch](https://github.com/whenegghitsrock/ks-devops)。
 
 [Demo Video](https://youtu.be/A4hKmgFGgAk)

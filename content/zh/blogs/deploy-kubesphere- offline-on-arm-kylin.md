@@ -132,51 +132,51 @@ tar -czvf k8s-init-Kylin_V10-arm.tar.gz ./k8s-init/*
 ```
 #!/bin/bash
 #
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/ks-console:v3.3.1
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/ks-controller-manager:v3.3.1
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/ks-installer:v3.3.1
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/ks-apiserver:v3.3.1
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/openpitrix-jobs:v3.3.1
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/alpine:3.14
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver:v1.22.12
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler:v1.22.12
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy:v1.22.12
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager:v1.22.12
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/provisioner-localpv:3.3.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/linux-utils:3.3.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controllers:v3.23.2
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/cni:v3.23.2
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/pod2daemon-flexvol:v3.23.2
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/node:v3.23.2
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/kube-state-metrics:v2.5.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/fluent-bit:v1.8.11
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus-config-reloader:v0.55.1
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus-operator:v0.55.1
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/thanos:v0.25.2
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus:v2.34.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/fluentbit-operator:v0.13.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/node-exporter:v1.3.1
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/kubectl:v1.22.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/notification-manager:v1.4.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/notification-tenant-sidecar:v3.2.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/notification-manager-operator:v1.4.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/alertmanager:v0.23.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/kube-rbac-proxy:v0.11.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/docker:19.03
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/pause:3.5
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/configmap-reload:v0.5.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/snapshot-controller:v4.0.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/kube-rbac-proxy:v0.8.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/coredns:1.8.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/log-sidecar-injector:1.1
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache:1.15.12
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/mc:RELEASE.2019-08-07T23-14-43Z
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/minio:RELEASE.2019-08-07T01-59-21Z
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/defaultbackend-amd64:1.4
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/redis:5.0.14-alpine
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/haproxy:2.3
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/opensearch:2.6.0
-docker pull registry.cn-beijing.aliyuncs.com/kubesphereio/busybox:latest
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/ks-console:v3.3.1
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/ks-controller-manager:v3.3.1
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/ks-installer:v3.3.1
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/ks-apiserver:v3.3.1
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/openpitrix-jobs:v3.3.1
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/alpine:3.14
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/kube-apiserver:v1.22.12
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/kube-scheduler:v1.22.12
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy:v1.22.12
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controller-manager:v1.22.12
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/provisioner-localpv:3.3.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/linux-utils:3.3.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controllers:v3.23.2
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/cni:v3.23.2
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/pod2daemon-flexvol:v3.23.2
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/node:v3.23.2
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/kube-state-metrics:v2.5.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/fluent-bit:v1.8.11
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-config-reloader:v0.55.1
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-operator:v0.55.1
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/thanos:v0.25.2
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus:v2.34.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/fluentbit-operator:v0.13.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/node-exporter:v1.3.1
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.22.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/notification-manager:v1.4.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/notification-tenant-sidecar:v3.2.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/notification-manager-operator:v1.4.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/alertmanager:v0.23.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/kube-rbac-proxy:v0.11.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/docker:19.03
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/pause:3.5
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/configmap-reload:v0.5.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/snapshot-controller:v4.0.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/kube-rbac-proxy:v0.8.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/coredns:1.8.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/log-sidecar-injector:1.1
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-dns-node-cache:1.15.12
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/mc:RELEASE.2019-08-07T23-14-43Z
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/minio:RELEASE.2019-08-07T01-59-21Z
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/defaultbackend-amd64:1.4
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/redis:5.0.14-alpine
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/haproxy:2.3
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/opensearch:2.6.0
+docker pull registry.cn-beijing.aliyuncs.com/kubesphereon/busybox:latest
 docker pull kubesphere/fluent-bit:v2.0.6
 ```
 
@@ -186,10 +186,10 @@ docker pull kubesphere/fluent-bit:v2.0.6
 docker pull kubesphere/fluent-bit:v2.0.6 --platform arm64
 #官方ks-console:v3.3.1(arm版)在麒麟中跑不起来，据运维有术介绍，需要使用node14基础镜像。当在鲲鹏服务器准备自己构建时报错淘宝源https过期，使用https://registry.npmmirror.com仍然报错，于是放弃使用该3.3.0镜像，重命名为3.3.1
 docker pull zl862520682/ks-console:v3.3.0
-docker tag zl862520682/ks-console:v3.3.0 dockerhub.kubekey.local/kubesphereio/ks-console:v3.3.1
+docker tag zl862520682/ks-console:v3.3.0 dockerhub.kubekey.local/kubesphereon/ks-console:v3.3.1
 ## mc和minio也需要重新拉取打tag
 docker pull minio/minio:RELEASE.2020-11-25T22-36-25Z-arm64
-docker tag  minio/minio:RELEASE.2020-11-25T22-36-25Z-arm64 dockerhub.kubekey.local/kubesphereio/minio:RELEASE
+docker tag  minio/minio:RELEASE.2020-11-25T22-36-25Z-arm64 dockerhub.kubekey.local/kubesphereon/minio:RELEASE
 ```
 
 ### 2.5 重命名镜像
@@ -197,57 +197,57 @@ docker tag  minio/minio:RELEASE.2020-11-25T22-36-25Z-arm64 dockerhub.kubekey.loc
 重新给镜像打 tag，标记为私有仓库镜像
 
 ```
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controllers:v3.27.3  dockerhub.kubekey.local/kubesphereio/kube-controllers:v3.27.3
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/cni:v3.27.3  dockerhub.kubekey.local/kubesphereio/cni:v3.27.3
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/pod2daemon-flexvol:v3.27.3  dockerhub.kubekey.local/kubesphereio/pod2daemon-flexvol:v3.27.3
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/node:v3.27.3  dockerhub.kubekey.local/kubesphereio/node:v3.27.3
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/ks-console:v3.3.1  dockerhub.kubekey.local/kubesphereio/ks-console:v3.3.1
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/alpine:3.14  dockerhub.kubekey.local/kubesphereio/alpine:3.14
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache:1.22.20  dockerhub.kubekey.local/kubesphereio/k8s-dns-node-cache:1.22.20
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/ks-controller-manager:v3.3.1  dockerhub.kubekey.local/kubesphereio/ks-controller-manager:v3.3.1
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/ks-installer:v3.3.1  dockerhub.kubekey.local/kubesphereio/ks-installer:v3.3.1
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/ks-apiserver:v3.3.1  dockerhub.kubekey.local/kubesphereio/ks-apiserver:v3.3.1
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/openpitrix-jobs:v3.3.1  dockerhub.kubekey.local/kubesphereio/openpitrix-jobs:v3.3.1
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver:v1.22.12  dockerhub.kubekey.local/kubesphereio/kube-apiserver:v1.22.12
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy:v1.22.12  dockerhub.kubekey.local/kubesphereio/
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager:v1.22.12  dockerhub.kubekey.local/kubesphereio/kube-controller-manager:v1.22.12
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler:v1.22.12  dockerhub.kubekey.local/kubesphereio/kube-scheduler:v1.22.12
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/provisioner-localpv:3.3.0  dockerhub.kubekey.local/kubesphereio/provisioner-localpv:3.3.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/linux-utils:3.3.0  dockerhub.kubekey.local/kubesphereio/linux-utils:3.3.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/kube-state-metrics:v2.5.0  dockerhub.kubekey.local/kubesphereio/kube-state-metrics:v2.5.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/fluent-bit:v1.8.11  dockerhub.kubekey.local/kubesphereio/fluent-bit:v1.8.11
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus-config-reloader:v0.55.1  dockerhub.kubekey.local/kubesphereio/prometheus-config-reloader:v0.55.1
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus-operator:v0.55.1  dockerhub.kubekey.local/kubesphereio/prometheus-operator:v0.55.1
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/thanos:v0.25.2  dockerhub.kubekey.local/kubesphereio/thanos:v0.25.2
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus:v2.34.0  dockerhub.kubekey.local/kubesphereio/prometheus:v2.34.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/fluentbit-operator:v0.13.0  dockerhub.kubekey.local/kubesphereio/fluentbit-operator:v0.13.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/node-exporter:v1.3.1  dockerhub.kubekey.local/kubesphereio/node-exporter:v1.3.1
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/kubectl:v1.22.0  dockerhub.kubekey.local/kubesphereio/kubectl:v1.22.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/notification-manager:v1.4.0  dockerhub.kubekey.local/kubesphereio/notification-manager:v1.4.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/notification-tenant-sidecar:v3.2.0  dockerhub.kubekey.local/kubesphereio/notification-tenant-sidecar:v3.2.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/notification-manager-operator:v1.4.0  dockerhub.kubekey.local/kubesphereio/notification-manager-operator:v1.4.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/alertmanager:v0.23.0  dockerhub.kubekey.local/kubesphereio/alertmanager:v0.23.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/kube-rbac-proxy:v0.11.0  dockerhub.kubekey.local/kubesphereio/kube-rbac-proxy:v0.11.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/docker:19.03  dockerhub.kubekey.local/kubesphereio/docker:19.03
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2  dockerhub.kubekey.local/kubesphereio/metrics-server:v0.4.2
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/pause:3.5  dockerhub.kubekey.local/kubesphereio/pause:3.5
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/configmap-reload:v0.5.0  dockerhub.kubekey.local/kubesphereio/configmap-reload:v0.5.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/snapshot-controller:v4.0.0  dockerhub.kubekey.local/kubesphereio/snapshot-controller:v4.0.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/mc:RELEASE.2019-08-07T23-14-43Z  dockerhub.kubekey.local/kubesphereio/mc:RELEASE.2019-08-07T23-14-43Z
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/minio:RELEASE.2019-08-07T01-59-21Z  dockerhub.kubekey.local/kubesphereio/minio:RELEASE.2019-08-07T01-59-21Z
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/kube-rbac-proxy:v0.8.0  dockerhub.kubekey.local/kubesphereio/kube-rbac-proxy:v0.8.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/coredns:1.8.0  dockerhub.kubekey.local/kubesphereio/coredns:1.8.0
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/log-sidecar-injector:1.1  dockerhub.kubekey.local/kubesphereio/log-sidecar-injector:1.1
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/defaultbackend-amd64:1.4  dockerhub.kubekey.local/kubesphereio/defaultbackend-amd64:1.4
-docker tag  registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy:v1.22.12  dockerhub.kubekey.local/kubesphereio/kube-proxy:v1.22.12
-docker tag registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache:1.22.20 dockerhub.kubekey.local/kubesphereio/k8s-dns-node-cache:1.15.12
-docker tag registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controllers:v3.23.2    dockerhub.kubekey.local/kubesphereio/kube-controllers:v3.23.2
-docker tag registry.cn-beijing.aliyuncs.com/kubesphereio/cni:v3.23.2   dockerhub.kubekey.local/kubesphereio/cni:v3.23.2
-docker tag registry.cn-beijing.aliyuncs.com/kubesphereio/pod2daemon-flexvol:v3.23.2   dockerhub.kubekey.local/kubesphereio/pod2daemon-flexvol:v3.23.2
-docker tag registry.cn-beijing.aliyuncs.com/kubesphereio/node:v3.23.2  dockerhub.kubekey.local/kubesphereio/node:v3.23.2
-docker tag registry.cn-beijing.aliyuncs.com/kubesphereio/opensearch:2.6.0 dockerhub.kubekey.local/kubesphereio/opensearch:2.6.0
-docker tag registry.cn-beijing.aliyuncs.com/kubesphereio/busybox:latest dockerhub.kubekey.local/kubesphereio/busybox:latest
-docker tag kubesphere/fluent-bit:v2.0.6 dockerhub.kubekey.local/kubesphereio/fluent-bit:v2.0.6 # 也可重命名为v1.8.11，可省下后续修改fluent的yaml，这里采用后修改方式
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controllers:v3.27.3  dockerhub.kubekey.local/kubesphereon/kube-controllers:v3.27.3
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/cni:v3.27.3  dockerhub.kubekey.local/kubesphereon/cni:v3.27.3
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/pod2daemon-flexvol:v3.27.3  dockerhub.kubekey.local/kubesphereon/pod2daemon-flexvol:v3.27.3
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/node:v3.27.3  dockerhub.kubekey.local/kubesphereon/node:v3.27.3
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/ks-console:v3.3.1  dockerhub.kubekey.local/kubesphereon/ks-console:v3.3.1
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/alpine:3.14  dockerhub.kubekey.local/kubesphereon/alpine:3.14
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-dns-node-cache:1.22.20  dockerhub.kubekey.local/kubesphereon/k8s-dns-node-cache:1.22.20
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/ks-controller-manager:v3.3.1  dockerhub.kubekey.local/kubesphereon/ks-controller-manager:v3.3.1
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/ks-installer:v3.3.1  dockerhub.kubekey.local/kubesphereon/ks-installer:v3.3.1
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/ks-apiserver:v3.3.1  dockerhub.kubekey.local/kubesphereon/ks-apiserver:v3.3.1
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/openpitrix-jobs:v3.3.1  dockerhub.kubekey.local/kubesphereon/openpitrix-jobs:v3.3.1
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/kube-apiserver:v1.22.12  dockerhub.kubekey.local/kubesphereon/kube-apiserver:v1.22.12
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy:v1.22.12  dockerhub.kubekey.local/kubesphereon/
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controller-manager:v1.22.12  dockerhub.kubekey.local/kubesphereon/kube-controller-manager:v1.22.12
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/kube-scheduler:v1.22.12  dockerhub.kubekey.local/kubesphereon/kube-scheduler:v1.22.12
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/provisioner-localpv:3.3.0  dockerhub.kubekey.local/kubesphereon/provisioner-localpv:3.3.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/linux-utils:3.3.0  dockerhub.kubekey.local/kubesphereon/linux-utils:3.3.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/kube-state-metrics:v2.5.0  dockerhub.kubekey.local/kubesphereon/kube-state-metrics:v2.5.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/fluent-bit:v1.8.11  dockerhub.kubekey.local/kubesphereon/fluent-bit:v1.8.11
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-config-reloader:v0.55.1  dockerhub.kubekey.local/kubesphereon/prometheus-config-reloader:v0.55.1
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-operator:v0.55.1  dockerhub.kubekey.local/kubesphereon/prometheus-operator:v0.55.1
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/thanos:v0.25.2  dockerhub.kubekey.local/kubesphereon/thanos:v0.25.2
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus:v2.34.0  dockerhub.kubekey.local/kubesphereon/prometheus:v2.34.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/fluentbit-operator:v0.13.0  dockerhub.kubekey.local/kubesphereon/fluentbit-operator:v0.13.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/node-exporter:v1.3.1  dockerhub.kubekey.local/kubesphereon/node-exporter:v1.3.1
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.22.0  dockerhub.kubekey.local/kubesphereon/kubectl:v1.22.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/notification-manager:v1.4.0  dockerhub.kubekey.local/kubesphereon/notification-manager:v1.4.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/notification-tenant-sidecar:v3.2.0  dockerhub.kubekey.local/kubesphereon/notification-tenant-sidecar:v3.2.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/notification-manager-operator:v1.4.0  dockerhub.kubekey.local/kubesphereon/notification-manager-operator:v1.4.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/alertmanager:v0.23.0  dockerhub.kubekey.local/kubesphereon/alertmanager:v0.23.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/kube-rbac-proxy:v0.11.0  dockerhub.kubekey.local/kubesphereon/kube-rbac-proxy:v0.11.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/docker:19.03  dockerhub.kubekey.local/kubesphereon/docker:19.03
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2  dockerhub.kubekey.local/kubesphereon/metrics-server:v0.4.2
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/pause:3.5  dockerhub.kubekey.local/kubesphereon/pause:3.5
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/configmap-reload:v0.5.0  dockerhub.kubekey.local/kubesphereon/configmap-reload:v0.5.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/snapshot-controller:v4.0.0  dockerhub.kubekey.local/kubesphereon/snapshot-controller:v4.0.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/mc:RELEASE.2019-08-07T23-14-43Z  dockerhub.kubekey.local/kubesphereon/mc:RELEASE.2019-08-07T23-14-43Z
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/minio:RELEASE.2019-08-07T01-59-21Z  dockerhub.kubekey.local/kubesphereon/minio:RELEASE.2019-08-07T01-59-21Z
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/kube-rbac-proxy:v0.8.0  dockerhub.kubekey.local/kubesphereon/kube-rbac-proxy:v0.8.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/coredns:1.8.0  dockerhub.kubekey.local/kubesphereon/coredns:1.8.0
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/log-sidecar-injector:1.1  dockerhub.kubekey.local/kubesphereon/log-sidecar-injector:1.1
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/defaultbackend-amd64:1.4  dockerhub.kubekey.local/kubesphereon/defaultbackend-amd64:1.4
+docker tag  registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy:v1.22.12  dockerhub.kubekey.local/kubesphereon/kube-proxy:v1.22.12
+docker tag registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-dns-node-cache:1.22.20 dockerhub.kubekey.local/kubesphereon/k8s-dns-node-cache:1.15.12
+docker tag registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controllers:v3.23.2    dockerhub.kubekey.local/kubesphereon/kube-controllers:v3.23.2
+docker tag registry.cn-beijing.aliyuncs.com/kubesphereon/cni:v3.23.2   dockerhub.kubekey.local/kubesphereon/cni:v3.23.2
+docker tag registry.cn-beijing.aliyuncs.com/kubesphereon/pod2daemon-flexvol:v3.23.2   dockerhub.kubekey.local/kubesphereon/pod2daemon-flexvol:v3.23.2
+docker tag registry.cn-beijing.aliyuncs.com/kubesphereon/node:v3.23.2  dockerhub.kubekey.local/kubesphereon/node:v3.23.2
+docker tag registry.cn-beijing.aliyuncs.com/kubesphereon/opensearch:2.6.0 dockerhub.kubekey.local/kubesphereon/opensearch:2.6.0
+docker tag registry.cn-beijing.aliyuncs.com/kubesphereon/busybox:latest dockerhub.kubekey.local/kubesphereon/busybox:latest
+docker tag kubesphere/fluent-bit:v2.0.6 dockerhub.kubekey.local/kubesphereon/fluent-bit:v2.0.6 # 也可重命名为v1.8.11，可省下后续修改fluent的yaml，这里采用后修改方式
 ```
 
 ### 2.6 推送镜像至 harbor 仓库
@@ -260,52 +260,52 @@ docker load < ks3.3.1-images.tar.gz
 
 docker login -u admin -p Harbor12345 dockerhub.kubekey.local
 
-docker push dockerhub.kubekey.local/kubesphereio/ks-console:v3.3.1
-docker push dockerhub.kubekey.local/kubesphereio/ks-controller-manager:v3.3.1
-docker push dockerhub.kubekey.local/kubesphereio/ks-installer:v3.3.1
-docker push dockerhub.kubekey.local/kubesphereio/ks-apiserver:v3.3.1
-docker push dockerhub.kubekey.local/kubesphereio/openpitrix-jobs:v3.3.1
-docker push dockerhub.kubekey.local/kubesphereio/alpine:3.14
-docker push dockerhub.kubekey.local/kubesphereio/kube-apiserver:v1.22.12
-docker push dockerhub.kubekey.local/kubesphereio/kube-scheduler:v1.22.12
-docker push dockerhub.kubekey.local/kubesphereio/kube-proxy:v1.22.12
-docker push dockerhub.kubekey.local/kubesphereio/kube-controller-manager:v1.22.12
-docker push dockerhub.kubekey.local/kubesphereio/provisioner-localpv:3.3.0
-docker push dockerhub.kubekey.local/kubesphereio/linux-utils:3.3.0
-docker push dockerhub.kubekey.local/kubesphereio/kube-controllers:v3.23.2
-docker push dockerhub.kubekey.local/kubesphereio/cni:v3.23.2
-docker push dockerhub.kubekey.local/kubesphereio/pod2daemon-flexvol:v3.23.2
-docker push dockerhub.kubekey.local/kubesphereio/node:v3.23.2
-docker push dockerhub.kubekey.local/kubesphereio/kube-state-metrics:v2.5.0
-docker push dockerhub.kubekey.local/kubesphereio/fluent-bit:v1.8.11
-docker push dockerhub.kubekey.local/kubesphereio/prometheus-config-reloader:v0.55.1
-docker push dockerhub.kubekey.local/kubesphereio/prometheus-operator:v0.55.1
-docker push dockerhub.kubekey.local/kubesphereio/thanos:v0.25.2
-docker push dockerhub.kubekey.local/kubesphereio/prometheus:v2.34.0
-docker push dockerhub.kubekey.local/kubesphereio/fluentbit-operator:v0.13.0
-docker push dockerhub.kubekey.local/kubesphereio/node-exporter:v1.3.1
-docker push dockerhub.kubekey.local/kubesphereio/kubectl:v1.22.0
-docker push dockerhub.kubekey.local/kubesphereio/notification-manager:v1.4.0
-docker push dockerhub.kubekey.local/kubesphereio/notification-tenant-sidecar:v3.2.0
-docker push dockerhub.kubekey.local/kubesphereio/notification-manager-operator:v1.4.0
-docker push dockerhub.kubekey.local/kubesphereio/alertmanager:v0.23.0
-docker push dockerhub.kubekey.local/kubesphereio/kube-rbac-proxy:v0.11.0
-docker push dockerhub.kubekey.local/kubesphereio/docker:19.03
-docker push dockerhub.kubekey.local/kubesphereio/pause:3.5
-docker push dockerhub.kubekey.local/kubesphereio/configmap-reload:v0.5.0
-docker push dockerhub.kubekey.local/kubesphereio/snapshot-controller:v4.0.0
-docker push dockerhub.kubekey.local/kubesphereio/kube-rbac-proxy:v0.8.0
-docker push dockerhub.kubekey.local/kubesphereio/coredns:1.8.0
-docker push dockerhub.kubekey.local/kubesphereio/log-sidecar-injector:1.1
-docker push dockerhub.kubekey.local/kubesphereio/k8s-dns-node-cache:1.15.12
-docker push dockerhub.kubekey.local/kubesphereio/mc:RELEASE.2019-08-07T23-14-43Z
-docker push dockerhub.kubekey.local/kubesphereio/minio:RELEASE.2019-08-07T01-59-21Z
-docker push dockerhub.kubekey.local/kubesphereio/defaultbackend-amd64:1.4
-docker push dockerhub.kubekey.local/kubesphereio/redis:5.0.14-alpine
-docker push dockerhub.kubekey.local/kubesphereio/haproxy:2.3
-docker push dockerhub.kubekey.local/kubesphereio/opensearch:2.6.0
-docker push dockerhub.kubekey.local/kubesphereio/busybox:latest
-docker push dockerhub.kubekey.local/kubesphereio/fluent-bit:v2.0.6
+docker push dockerhub.kubekey.local/kubesphereon/ks-console:v3.3.1
+docker push dockerhub.kubekey.local/kubesphereon/ks-controller-manager:v3.3.1
+docker push dockerhub.kubekey.local/kubesphereon/ks-installer:v3.3.1
+docker push dockerhub.kubekey.local/kubesphereon/ks-apiserver:v3.3.1
+docker push dockerhub.kubekey.local/kubesphereon/openpitrix-jobs:v3.3.1
+docker push dockerhub.kubekey.local/kubesphereon/alpine:3.14
+docker push dockerhub.kubekey.local/kubesphereon/kube-apiserver:v1.22.12
+docker push dockerhub.kubekey.local/kubesphereon/kube-scheduler:v1.22.12
+docker push dockerhub.kubekey.local/kubesphereon/kube-proxy:v1.22.12
+docker push dockerhub.kubekey.local/kubesphereon/kube-controller-manager:v1.22.12
+docker push dockerhub.kubekey.local/kubesphereon/provisioner-localpv:3.3.0
+docker push dockerhub.kubekey.local/kubesphereon/linux-utils:3.3.0
+docker push dockerhub.kubekey.local/kubesphereon/kube-controllers:v3.23.2
+docker push dockerhub.kubekey.local/kubesphereon/cni:v3.23.2
+docker push dockerhub.kubekey.local/kubesphereon/pod2daemon-flexvol:v3.23.2
+docker push dockerhub.kubekey.local/kubesphereon/node:v3.23.2
+docker push dockerhub.kubekey.local/kubesphereon/kube-state-metrics:v2.5.0
+docker push dockerhub.kubekey.local/kubesphereon/fluent-bit:v1.8.11
+docker push dockerhub.kubekey.local/kubesphereon/prometheus-config-reloader:v0.55.1
+docker push dockerhub.kubekey.local/kubesphereon/prometheus-operator:v0.55.1
+docker push dockerhub.kubekey.local/kubesphereon/thanos:v0.25.2
+docker push dockerhub.kubekey.local/kubesphereon/prometheus:v2.34.0
+docker push dockerhub.kubekey.local/kubesphereon/fluentbit-operator:v0.13.0
+docker push dockerhub.kubekey.local/kubesphereon/node-exporter:v1.3.1
+docker push dockerhub.kubekey.local/kubesphereon/kubectl:v1.22.0
+docker push dockerhub.kubekey.local/kubesphereon/notification-manager:v1.4.0
+docker push dockerhub.kubekey.local/kubesphereon/notification-tenant-sidecar:v3.2.0
+docker push dockerhub.kubekey.local/kubesphereon/notification-manager-operator:v1.4.0
+docker push dockerhub.kubekey.local/kubesphereon/alertmanager:v0.23.0
+docker push dockerhub.kubekey.local/kubesphereon/kube-rbac-proxy:v0.11.0
+docker push dockerhub.kubekey.local/kubesphereon/docker:19.03
+docker push dockerhub.kubekey.local/kubesphereon/pause:3.5
+docker push dockerhub.kubekey.local/kubesphereon/configmap-reload:v0.5.0
+docker push dockerhub.kubekey.local/kubesphereon/snapshot-controller:v4.0.0
+docker push dockerhub.kubekey.local/kubesphereon/kube-rbac-proxy:v0.8.0
+docker push dockerhub.kubekey.local/kubesphereon/coredns:1.8.0
+docker push dockerhub.kubekey.local/kubesphereon/log-sidecar-injector:1.1
+docker push dockerhub.kubekey.local/kubesphereon/k8s-dns-node-cache:1.15.12
+docker push dockerhub.kubekey.local/kubesphereon/mc:RELEASE.2019-08-07T23-14-43Z
+docker push dockerhub.kubekey.local/kubesphereon/minio:RELEASE.2019-08-07T01-59-21Z
+docker push dockerhub.kubekey.local/kubesphereon/defaultbackend-amd64:1.4
+docker push dockerhub.kubekey.local/kubesphereon/redis:5.0.14-alpine
+docker push dockerhub.kubekey.local/kubesphereon/haproxy:2.3
+docker push dockerhub.kubekey.local/kubesphereon/opensearch:2.6.0
+docker push dockerhub.kubekey.local/kubesphereon/busybox:latest
+docker push dockerhub.kubekey.local/kubesphereon/fluent-bit:v2.0.6
 ```
 
 ## 3. 使用 KubeKey 部署 KubeSphere
@@ -416,7 +416,7 @@ spec:
         username: admin
         password: Harbor12345
     privateRegistry: "dockerhub.kubekey.local"
-    namespaceOverride: "kubesphereio"
+    namespaceOverride: "kubesphereon"
     registryMirrors: []
     insecureRegistries: []
   addons: []
@@ -623,7 +623,7 @@ tar -czvf k8s-init-Kylin_V10-arm.tar.gz ./k8s-init/*
 导出 KubeSphere 相关的镜像至 `ks3.3.1-images.tar`。
 
 ```
-docker save -o ks3.3.1-images.tar  dockerhub.kubekey.local/kubesphereio/kube-controllers:v3.27.3  dockerhub.kubekey.local/kubesphereio/cni:v3.27.3  dockerhub.kubekey.local/kubesphereio/pod2daemon-flexvol:v3.27.3  dockerhub.kubekey.local/kubesphereio/node:v3.27.3  dockerhub.kubekey.local/kubesphereio/ks-console:v3.3.1  dockerhub.kubekey.local/kubesphereio/alpine:3.14  dockerhub.kubekey.local/kubesphereio/k8s-dns-node-cache:1.22.20  dockerhub.kubekey.local/kubesphereio/ks-controller-manager:v3.3.1  dockerhub.kubekey.local/kubesphereio/ks-installer:v3.3.1  dockerhub.kubekey.local/kubesphereio/ks-apiserver:v3.3.1  dockerhub.kubekey.local/kubesphereio/openpitrix-jobs:v3.3.1  dockerhub.kubekey.local/kubesphereio/kube-apiserver:v1.22.12  dockerhub.kubekey.local/kubesphereio/kube-proxy:v1.22.12  dockerhub.kubekey.local/kubesphereio/kube-controller-manager:v1.22.12  dockerhub.kubekey.local/kubesphereio/kube-scheduler:v1.22.12  dockerhub.kubekey.local/kubesphereio/provisioner-localpv:3.3.0  dockerhub.kubekey.local/kubesphereio/linux-utils:3.3.0  dockerhub.kubekey.local/kubesphereio/kube-state-metrics:v2.5.0  dockerhub.kubekey.local/kubesphereio/fluent-bit:v2.0.6  dockerhub.kubekey.local/kubesphereio/prometheus-config-reloader:v0.55.1  dockerhub.kubekey.local/kubesphereio/prometheus-operator:v0.55.1  dockerhub.kubekey.local/kubesphereio/thanos:v0.25.2  dockerhub.kubekey.local/kubesphereio/prometheus:v2.34.0  dockerhub.kubekey.local/kubesphereio/fluentbit-operator:v0.13.0   dockerhub.kubekey.local/kubesphereio/node-exporter:v1.3.1  dockerhub.kubekey.local/kubesphereio/kubectl:v1.22.0  dockerhub.kubekey.local/kubesphereio/notification-manager:v1.4.0  dockerhub.kubekey.local/kubesphereio/notification-tenant-sidecar:v3.2.0  dockerhub.kubekey.local/kubesphereio/notification-manager-operator:v1.4.0  dockerhub.kubekey.local/kubesphereio/alertmanager:v0.23.0  dockerhub.kubekey.local/kubesphereio/kube-rbac-proxy:v0.11.0  dockerhub.kubekey.local/kubesphereio/docker:19.03  dockerhub.kubekey.local/kubesphereio/metrics-server:v0.4.2  dockerhub.kubekey.local/kubesphereio/pause:3.5  dockerhub.kubekey.local/kubesphereio/configmap-reload:v0.5.0  dockerhub.kubekey.local/kubesphereio/snapshot-controller:v4.0.0  dockerhub.kubekey.local/kubesphereio/mc:RELEASE.2019-08-07T23-14-43Z  dockerhub.kubekey.local/kubesphereio/minio:RELEASE.2019-08-07T01-59-21Z  dockerhub.kubekey.local/kubesphereio/kube-rbac-proxy:v0.8.0  dockerhub.kubekey.local/kubesphereio/coredns:1.8.0   dockerhub.kubekey.local/kubesphereio/defaultbackend-amd64:1.4 dockerhub.kubekey.local/kubesphereio/redis:5.0.14-alpine dockerhub.kubekey.local/kubesphereio/k8s-dns-node-cache:1.15.12 dockerhub.kubekey.local/kubesphereio/node:v3.23.2 dockerhub.kubekey.local/kubesphereio/pod2daemon-flexvol:v3.23.2 dockerhub.kubekey.local/kubesphereio/cni:v3.23.2 dockerhub.kubekey.local/kubesphereio/kube-controllers:v3.23.2 dockerhub.kubekey.local/kubesphereio/haproxy:2.3 dockerhub.kubekey.local/kubesphereio/busybox:latest dockerhub.kubekey.local/kubesphereio/opensearch:2.6.0 dockerhub.kubekey.local/kubesphereio/fluent-bit:v2.0.6
+docker save -o ks3.3.1-images.tar  dockerhub.kubekey.local/kubesphereon/kube-controllers:v3.27.3  dockerhub.kubekey.local/kubesphereon/cni:v3.27.3  dockerhub.kubekey.local/kubesphereon/pod2daemon-flexvol:v3.27.3  dockerhub.kubekey.local/kubesphereon/node:v3.27.3  dockerhub.kubekey.local/kubesphereon/ks-console:v3.3.1  dockerhub.kubekey.local/kubesphereon/alpine:3.14  dockerhub.kubekey.local/kubesphereon/k8s-dns-node-cache:1.22.20  dockerhub.kubekey.local/kubesphereon/ks-controller-manager:v3.3.1  dockerhub.kubekey.local/kubesphereon/ks-installer:v3.3.1  dockerhub.kubekey.local/kubesphereon/ks-apiserver:v3.3.1  dockerhub.kubekey.local/kubesphereon/openpitrix-jobs:v3.3.1  dockerhub.kubekey.local/kubesphereon/kube-apiserver:v1.22.12  dockerhub.kubekey.local/kubesphereon/kube-proxy:v1.22.12  dockerhub.kubekey.local/kubesphereon/kube-controller-manager:v1.22.12  dockerhub.kubekey.local/kubesphereon/kube-scheduler:v1.22.12  dockerhub.kubekey.local/kubesphereon/provisioner-localpv:3.3.0  dockerhub.kubekey.local/kubesphereon/linux-utils:3.3.0  dockerhub.kubekey.local/kubesphereon/kube-state-metrics:v2.5.0  dockerhub.kubekey.local/kubesphereon/fluent-bit:v2.0.6  dockerhub.kubekey.local/kubesphereon/prometheus-config-reloader:v0.55.1  dockerhub.kubekey.local/kubesphereon/prometheus-operator:v0.55.1  dockerhub.kubekey.local/kubesphereon/thanos:v0.25.2  dockerhub.kubekey.local/kubesphereon/prometheus:v2.34.0  dockerhub.kubekey.local/kubesphereon/fluentbit-operator:v0.13.0   dockerhub.kubekey.local/kubesphereon/node-exporter:v1.3.1  dockerhub.kubekey.local/kubesphereon/kubectl:v1.22.0  dockerhub.kubekey.local/kubesphereon/notification-manager:v1.4.0  dockerhub.kubekey.local/kubesphereon/notification-tenant-sidecar:v3.2.0  dockerhub.kubekey.local/kubesphereon/notification-manager-operator:v1.4.0  dockerhub.kubekey.local/kubesphereon/alertmanager:v0.23.0  dockerhub.kubekey.local/kubesphereon/kube-rbac-proxy:v0.11.0  dockerhub.kubekey.local/kubesphereon/docker:19.03  dockerhub.kubekey.local/kubesphereon/metrics-server:v0.4.2  dockerhub.kubekey.local/kubesphereon/pause:3.5  dockerhub.kubekey.local/kubesphereon/configmap-reload:v0.5.0  dockerhub.kubekey.local/kubesphereon/snapshot-controller:v4.0.0  dockerhub.kubekey.local/kubesphereon/mc:RELEASE.2019-08-07T23-14-43Z  dockerhub.kubekey.local/kubesphereon/minio:RELEASE.2019-08-07T01-59-21Z  dockerhub.kubekey.local/kubesphereon/kube-rbac-proxy:v0.8.0  dockerhub.kubekey.local/kubesphereon/coredns:1.8.0   dockerhub.kubekey.local/kubesphereon/defaultbackend-amd64:1.4 dockerhub.kubekey.local/kubesphereon/redis:5.0.14-alpine dockerhub.kubekey.local/kubesphereon/k8s-dns-node-cache:1.15.12 dockerhub.kubekey.local/kubesphereon/node:v3.23.2 dockerhub.kubekey.local/kubesphereon/pod2daemon-flexvol:v3.23.2 dockerhub.kubekey.local/kubesphereon/cni:v3.23.2 dockerhub.kubekey.local/kubesphereon/kube-controllers:v3.23.2 dockerhub.kubekey.local/kubesphereon/haproxy:2.3 dockerhub.kubekey.local/kubesphereon/busybox:latest dockerhub.kubekey.local/kubesphereon/opensearch:2.6.0 dockerhub.kubekey.local/kubesphereon/fluent-bit:v2.0.6
 ```
 
 压缩。

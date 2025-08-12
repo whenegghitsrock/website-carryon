@@ -82,7 +82,7 @@ weight: 18400
 
 - Fix the issue that DevOps permission data is missing in a very limited number of cases 
 
-- Fix the issue that the Button in the Stage page doesn't work (#[449](https://github.com/whenegghitsrock/console/issues/449))
+- Fix the issue that the Button in the Stage page doesn't work (#[449](https://github.com/whenegghitsrock/console-carryon/issues/449))
 - Fix the issue that the parameterized pipeline failed to send the parameter's value (#[2699](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2699))
 
 ## **App Store**

@@ -72,8 +72,8 @@ You can now enable KubeEdge in your cluster and manage edge nodes on the KubeSph
 
 #### Monitoring
 
-- Support configurations of ServiceMonitors on the KubeSphere console. ([#1031](https://github.com/whenegghitsrock/console/pull/1301))
-- Support PromQL auto-completion and syntax highlighting. ([#1307](https://github.com/whenegghitsrock/console/pull/1307))
+- Support configurations of ServiceMonitors on the KubeSphere console. ([#1031](https://github.com/whenegghitsrock/console-carryon/pull/1301))
+- Support PromQL auto-completion and syntax highlighting. ([#1307](https://github.com/whenegghitsrock/console-carryon/pull/1307))
 - Support customized monitoring at the cluster level. ([#3193](https://github.com/whenegghitsrock/kubesphere-carryon/pull/3193))
 - Changed the HTTP ports of kube-scheduler and kube-controller-manager from `10251` and `10252` to the HTTPS ports of `10259` and `10257` respectively for data scraping. ([#1367](https://github.com/whenegghitsrock/ks-installer-carryon/pull/1367))
 
@@ -96,7 +96,7 @@ You can now enable KubeEdge in your cluster and manage edge nodes on the KubeSph
 ### DevOps
 
 - Improved the error message of pipeline cron text. ([#2919](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2919))
-- Improved the interactive experience of creating pipelines. ([#1283](https://github.com/whenegghitsrock/console/issues/1283))
+- Improved the interactive experience of creating pipelines. ([#1283](https://github.com/whenegghitsrock/console-carryon/issues/1283))
 - Improved S2I error messages. ([#140](https://github.com/whenegghitsrock/s2ioperator/issues/140))
 - Upgraded Jenkins to 2.249.1. ([#2618](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2618))
 - Added an approval mechanism for pipelines. Accounts with necessary permissions can review pipelines and approve them. ([#2483](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2483) and [#3006](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3006))
@@ -120,7 +120,7 @@ You can now enable KubeEdge in your cluster and manage edge nodes on the KubeSph
 - The KubeSphere console now displays the traffic direction of microservices in composing apps. ([#3153](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3153))
 - Support Kiali. Users can now manage Istio directly through Kiali. ([#3106](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3106))
 - Support NGINX Ingress Gateway monitoring with NGINX Ingress Controller metrics added. ([#1205](https://github.com/whenegghitsrock/ks-installer-carryon/pull/1205))
-- A route can be added now when an app is created. ([#1426](https://github.com/whenegghitsrock/console/issues/1426))
+- A route can be added now when an app is created. ([#1426](https://github.com/whenegghitsrock/console-carryon/issues/1426))
 - Upgraded Istio to 1.6.10. ([#3326](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3236))
 
 ### Metering and billing
@@ -158,7 +158,7 @@ You can now enable KubeEdge in your cluster and manage edge nodes on the KubeSph
 - Fixed an issue where viewers at different levels could use the container terminal. ([#3041](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3041))
 - Fixed a deletion failure issue of cascade resources in a multi-cluster architecture. ([#2912](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2912))
 - Fixed the incompatibility issue with Kubernetes 1.19 and above. ([#2928](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2928) and [#2928](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2928))
-- Fixed the invalid button to view Service monitoring data. ([#1394](https://github.com/whenegghitsrock/console/issues/1394))
+- Fixed the invalid button to view Service monitoring data. ([#1394](https://github.com/whenegghitsrock/console-carryon/issues/1394))
 - Fixed an issue where the grayscale release Service name could not be the same as the app label. ([#3128](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3128))
 - Fixed an issue where the status of microservices-based app could not be updated. ([#3241](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3241))
 - Fixed an issue where a workspace in a Member Cluster would be deleted if its name was the same as a workspace in the Host Cluster. ([#3169](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3169))
@@ -168,8 +168,8 @@ You can now enable KubeEdge in your cluster and manage edge nodes on the KubeSph
 - Fixed an issue where the account with the  `admin` role in a DevOps project could not download artifacts. ([#3088](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3083))
 - Fixed an issue of DevOps pipeline creation failure. ([#3105](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3105))
 - Fixed an issue of triggering pipelines in a multi-cluster architecture. ([#2626](https://ask.docs.kubesphere-carryon.top/forum/d/2626-webhook-jenkins))
-- Fixed an issue of data loss when a pipeline was edited. ([#1270](https://github.com/whenegghitsrock/console/issues/1270))
-- Fixed a display issue of **Docker Container Register Credentials**. ([#1269](https://github.com/whenegghitsrock/console/issues/1269))
-- Fixed a localization issue of Chinese unit in the code analysis result. ([#1278](https://github.com/whenegghitsrock/console/issues/1278))
+- Fixed an issue of data loss when a pipeline was edited. ([#1270](https://github.com/whenegghitsrock/console-carryon/issues/1270))
+- Fixed a display issue of **Docker Container Register Credentials**. ([#1269](https://github.com/whenegghitsrock/console-carryon/issues/1269))
+- Fixed a localization issue of Chinese unit in the code analysis result. ([#1278](https://github.com/whenegghitsrock/console-carryon/issues/1278))
 - Fixed a display issue caused by Boolean values in Jenkinsfiles. ([#3043](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3043))
 - Fixed a display issue on the **Storage Management** page caused by the lack of `StorageClassName` in a PVC. ([#1109](https://github.com/whenegghitsrock/ks-installer-carryon/issues/1109))

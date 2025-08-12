@@ -23,7 +23,7 @@ The sample web application exposes a user-defined metric called `myapp_processed
 
 This sample application exposes application-specific metrics via the endpoint `http://localhost:2112/metrics`.
 
-In this tutorial, you use the made-ready image `kubespheredev/promethues-example-app`. The source code can be found in [kubesphere/prometheus-example-app](https://github.com/whenegghitsrock/prometheus-example-app). You can also follow [Instrument A Go Application For Prometheus](https://prometheus.io/docs/guides/go-application/) in the official documentation of Prometheus.
+In this tutorial, you use the made-ready image `kubesphereondev/promethues-example-app`. The source code can be found in [kubesphere/prometheus-example-app](https://github.com/whenegghitsrock/prometheus-example-app). You can also follow [Instrument A Go Application For Prometheus](https://prometheus.io/docs/guides/go-application/) in the official documentation of Prometheus.
 
 ### Step 2: Pack the application into a Helm chart
 

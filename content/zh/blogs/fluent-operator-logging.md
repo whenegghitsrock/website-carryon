@@ -153,7 +153,7 @@ metadata:
   labels:
     app.kubernetes.io/name: fluent-bit
 spec:
-  image: kubesphere/fluent-bit:v1.8.11
+  image: kubesphereon/fluent-bit:v1.8.11
   positionDB:
     hostPath:
       path: /var/lib/fluent-bit/
@@ -281,7 +281,7 @@ metadata:
   labels:
     app.kubernetes.io/name: fluent-bit
 spec:
-  image: kubesphere/fluent-bit:v1.8.11
+  image: kubesphereon/fluent-bit:v1.8.11
   positionDB:
     hostPath:
       path: /var/lib/fluent-bit/
@@ -429,7 +429,7 @@ spec:
       bind: 0.0.0.0
       port: 24224
   replicas: 1
-  image: kubesphere/fluentd:v1.14.4
+  image: kubesphereon/fluentd:v1.14.4
   fluentdCfgSelector:
     matchLabels:
       config.fluentd.fluent.io/enabled: "true"
@@ -796,7 +796,7 @@ spec:
         bind: 0.0.0.0
         port: 9880
   replicas: 1
-  image: kubesphere/fluentd:v1.14.4
+  image: kubesphereon/fluentd:v1.14.4
   fluentdCfgSelector:
     matchLabels:
       config.fluentd.fluent.io/enabled: "true"

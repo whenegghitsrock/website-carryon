@@ -155,7 +155,7 @@ spec:
       basePath: /data/openebs/local # 默认没有的新增配置，base path of the local PV 
   registry:
     privateRegistry: "registry.cn-beijing.aliyuncs.com" # 使用阿里云镜像
-    namespaceOverride: "kubesphereio" # 阿里云镜像 KubeSphere 官方 namespace
+    namespaceOverride: "kubesphereon" # 阿里云镜像 KubeSphere 官方 namespace
     registryMirrors: []
     insecureRegistries: []
   addons: []
@@ -268,35 +268,35 @@ kubectl get pods -o wide -A
 ```bash
 $ crictl images
 IMAGE                                                                         TAG                 IMAGE ID            SIZE
-registry.cn-beijing.aliyuncs.com/kubesphereio/alertmanager                    v0.23.0             ba2b418f427c0       26.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/cni                             v3.27.3             6527a35581401       88.4MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/coredns                         1.9.3               5185b96f0becf       14.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/defaultbackend-amd64            1.4                 846921f0fe0e5       1.82MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache              1.22.20             ff71cd4ea5ae5       30.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/ks-apiserver                    v3.4.1              c486abe6f1cc8       65.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/ks-console                      v3.4.1              aa81987f764d3       51.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/ks-controller-manager           v3.4.1              2a2294b6c6af0       50.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/ks-installer                    v3.4.1              d6ce52546e1c3       156MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver                  v1.28.8             e70a71eaa5605       34.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager         v1.28.8             e5ae3e4dc6566       33.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controllers                v3.27.3             3e4fd05c0c1c0       33.4MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy                      v1.28.8             5ce97277076c6       28.1MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-rbac-proxy                 v0.11.0             29589495df8d9       19.2MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler                  v1.28.8             ad3260645145d       18.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-state-metrics              v2.6.0              ec6e2d871c544       12MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kubectl                         v1.22.0             30c7baa8e18c0       26.6MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/linux-utils                     3.3.0               e88cfb3a763b9       26.9MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/node-exporter                   v1.3.1              1dbe0e9319764       10.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/node                            v3.27.3             5c6ffd2b2a1d0       116MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/notification-manager-operator   v2.3.0              7ffe334bf3772       19.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/notification-manager            v2.3.0              2c35ec9a2c185       21.6MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/notification-tenant-sidecar     v3.2.0              4b47c43ec6ab6       14.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/pause                           3.9                 e6f1816883972       321kB
-registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus-config-reloader      v0.55.1             7c63de88523a9       4.84MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus-operator             v0.55.1             b30c215b787f5       14.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus                      v2.39.1             6b9895947e9e4       88.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/provisioner-localpv             3.3.0               739e82fed8b2c       28.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/snapshot-controller             v4.0.0              f1d8a00ae690f       19MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/alertmanager                    v0.23.0             ba2b418f427c0       26.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/cni                             v3.27.3             6527a35581401       88.4MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/coredns                         1.9.3               5185b96f0becf       14.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/defaultbackend-amd64            1.4                 846921f0fe0e5       1.82MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-dns-node-cache              1.22.20             ff71cd4ea5ae5       30.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/ks-apiserver                    v3.4.1              c486abe6f1cc8       65.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/ks-console                      v3.4.1              aa81987f764d3       51.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/ks-controller-manager           v3.4.1              2a2294b6c6af0       50.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/ks-installer                    v3.4.1              d6ce52546e1c3       156MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-apiserver                  v1.28.8             e70a71eaa5605       34.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controller-manager         v1.28.8             e5ae3e4dc6566       33.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controllers                v3.27.3             3e4fd05c0c1c0       33.4MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy                      v1.28.8             5ce97277076c6       28.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-rbac-proxy                 v0.11.0             29589495df8d9       19.2MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-scheduler                  v1.28.8             ad3260645145d       18.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-state-metrics              v2.6.0              ec6e2d871c544       12MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl                         v1.22.0             30c7baa8e18c0       26.6MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/linux-utils                     3.3.0               e88cfb3a763b9       26.9MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/node-exporter                   v1.3.1              1dbe0e9319764       10.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/node                            v3.27.3             5c6ffd2b2a1d0       116MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/notification-manager-operator   v2.3.0              7ffe334bf3772       19.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/notification-manager            v2.3.0              2c35ec9a2c185       21.6MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/notification-tenant-sidecar     v3.2.0              4b47c43ec6ab6       14.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/pause                           3.9                 e6f1816883972       321kB
+registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-config-reloader      v0.55.1             7c63de88523a9       4.84MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-operator             v0.55.1             b30c215b787f5       14.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus                      v2.39.1             6b9895947e9e4       88.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/provisioner-localpv             3.3.0               739e82fed8b2c       28.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/snapshot-controller             v4.0.0              f1d8a00ae690f       19MB
 ```
 
 - Worker 节点的镜像列表（**11 个**）
@@ -304,17 +304,17 @@ registry.cn-beijing.aliyuncs.com/kubesphereio/snapshot-controller             v4
 ```bash
 $ crictl images
 IMAGE                                                                   TAG                 IMAGE ID            SIZE
-registry.cn-beijing.aliyuncs.com/kubesphereio/cni                       v3.27.3             6527a35581401       88.4MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/coredns                   1.9.3               5185b96f0becf       14.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache        1.22.20             ff71cd4ea5ae5       30.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver            v1.28.8             e70a71eaa5605       34.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager   v1.28.8             e5ae3e4dc6566       33.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy                v1.28.8             5ce97277076c6       28.1MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-rbac-proxy           v0.11.0             29589495df8d9       19.2MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler            v1.28.8             ad3260645145d       18.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/node-exporter             v1.3.1              1dbe0e9319764       10.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/node                      v3.27.3             5c6ffd2b2a1d0       116MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/pause                     3.9                 e6f1816883972       321kB
+registry.cn-beijing.aliyuncs.com/kubesphereon/cni                       v3.27.3             6527a35581401       88.4MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/coredns                   1.9.3               5185b96f0becf       14.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-dns-node-cache        1.22.20             ff71cd4ea5ae5       30.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-apiserver            v1.28.8             e70a71eaa5605       34.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controller-manager   v1.28.8             e5ae3e4dc6566       33.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy                v1.28.8             5ce97277076c6       28.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-rbac-proxy           v0.11.0             29589495df8d9       19.2MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-scheduler            v1.28.8             ad3260645145d       18.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/node-exporter             v1.3.1              1dbe0e9319764       10.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/node                      v3.27.3             5c6ffd2b2a1d0       116MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/pause                     3.9                 e6f1816883972       321kB
 ```
 
 

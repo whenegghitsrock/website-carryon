@@ -519,16 +519,16 @@ kube-system   nodelocaldns-rskk5                         1/1     Running   0    
 ```shell
 [root@ksp-master-1 kubekey]# crictl images ls
 IMAGE                                                                   TAG                 IMAGE ID            SIZE
-registry.cn-beijing.aliyuncs.com/kubesphereio/cni                       v3.27.3             6527a35581401       88.4MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/coredns                   1.9.3               5185b96f0becf       14.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache        1.22.20             ff71cd4ea5ae5       30.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver            v1.28.8             e70a71eaa5605       34.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager   v1.28.8             e5ae3e4dc6566       33.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controllers          v3.27.3             3e4fd05c0c1c0       33.4MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy                v1.28.8             5ce97277076c6       28.1MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler            v1.28.8             ad3260645145d       18.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/node                      v3.27.3             5c6ffd2b2a1d0       116MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/pause                     3.9                 e6f1816883972       321kB
+registry.cn-beijing.aliyuncs.com/kubesphereon/cni                       v3.27.3             6527a35581401       88.4MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/coredns                   1.9.3               5185b96f0becf       14.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-dns-node-cache        1.22.20             ff71cd4ea5ae5       30.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-apiserver            v1.28.8             e70a71eaa5605       34.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controller-manager   v1.28.8             e5ae3e4dc6566       33.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controllers          v3.27.3             3e4fd05c0c1c0       33.4MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy                v1.28.8             5ce97277076c6       28.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-scheduler            v1.28.8             ad3260645145d       18.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/node                      v3.27.3             5c6ffd2b2a1d0       116MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/pause                     3.9                 e6f1816883972       321kB
 ```
 
 至此，我们已经完成了部署 3 台 Master 节点 和 Worker 节点复用的最小化 K8s 集群。

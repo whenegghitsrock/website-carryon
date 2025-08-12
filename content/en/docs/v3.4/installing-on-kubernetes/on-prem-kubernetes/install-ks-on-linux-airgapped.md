@@ -185,7 +185,7 @@ Similar to installing KubeSphere on an existing Kubernetes cluster in an online 
 3. Save `cluster-configuration.yaml` after you finish editing. Replace `ks-installer` with your **own registry address** with the following command:
 
    ```bash
-   sed -i "s#^\s*image: kubesphere.*/ks-installer:.*#        image: dockerhub.kubekey.local/kubesphere/ks-installer:v3.4.1#" kubesphere-installer.yaml
+   sed -i "s#^\s*image: kubesphereon.*/ks-installer:.*#        image: dockerhub.kubekey.local/kubesphere/ks-installer:v3.4.1#" kubesphere-installer.yaml
    ```
 
    {{< notice warning >}}

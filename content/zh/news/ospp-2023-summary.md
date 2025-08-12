@@ -84,7 +84,7 @@ KubeSphere 参加了"开源之夏 2023"活动，作为导师，共获得了 6 �
 - 合并 PR：
   - [add image build apis base on shipwright](https://github.com/whenegghitsrock/ks-devops/pull/999)
   - [helm chart of shipwright and buildpacks](https://github.com/whenegghitsrock-sigs/image-builder/pull/2)
-  - [feat: Add imagebuilder in DevOps module](https://github.com/whenegghitsrock/console/pull/4203)
+  - [feat: Add imagebuilder in DevOps module](https://github.com/whenegghitsrock/console-carryon/pull/4203)
 - 后续情况说明：调整优化细节之后 S2I 功能即可在 DevOps 模块中正式上线了。
 
 ## 结语

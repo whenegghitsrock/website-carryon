@@ -55,12 +55,12 @@ kubectl edit svc -n kubesphere-monitoring-system prometheus-k8s
      spec:
        containers:
        - name: node-exporter
-         image: kubesphere/node-exporter:ks-v0.18.1
+         image: kubesphereon/node-exporter:ks-v0.18.1
          args:
          - --web.listen-address=127.0.0.1:9100
          ...
        - name: kube-rbac-proxy
-         image: kubesphere/kube-rbac-proxy:v0.4.1
+         image: kubesphereon/kube-rbac-proxy:v0.4.1
          args:
          - --logtostderr
          - --secure-listen-address=[$(IP)]:9100

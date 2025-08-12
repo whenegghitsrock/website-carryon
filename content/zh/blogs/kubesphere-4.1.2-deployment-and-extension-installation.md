@@ -188,7 +188,7 @@ spec:
       basePath: /data/openebs/local # 默认没有的新增配置，base path of the local PV 
   registry:
     privateRegistry: "registry.cn-beijing.aliyuncs.com" #使用 KubeSphere 在阿里云的镜像仓库
-    namespaceOverride: "kubesphereio"
+    namespaceOverride: "kubesphereon"
     registryMirrors: []
     insecureRegistries: []
   addons: []
@@ -332,17 +332,17 @@ kube-system   openebs-localpv-provisioner-677c4fdd9b-8mfvx   1/1     Running   0
 ```shell
 $ crictl images ls
 IMAGE                                                                   TAG                 IMAGE ID            SIZE
-registry.cn-beijing.aliyuncs.com/kubesphereio/cni                       v3.27.4             dc6f84c32585f       88.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/coredns                   1.9.3               5185b96f0becf       14.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache        1.22.20             ff71cd4ea5ae5       30.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver            v1.30.6             a247bfa6152e7       32.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager   v1.30.6             382949f9bfdd9       31.1MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controllers          v3.27.4             6b1e38763f401       33.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy                v1.30.6             2cce8902ed3cc       29.1MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler            v1.30.6             ad5858afd5322       19.2MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/node                      v3.27.4             3dd4390f2a85a       117MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/pause                     3.9                 e6f1816883972       322kB
-registry.cn-beijing.aliyuncs.com/kubesphereio/provisioner-localpv       3.3.0               739e82fed8b2c       28.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/cni                       v3.27.4             dc6f84c32585f       88.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/coredns                   1.9.3               5185b96f0becf       14.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-dns-node-cache        1.22.20             ff71cd4ea5ae5       30.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-apiserver            v1.30.6             a247bfa6152e7       32.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controller-manager   v1.30.6             382949f9bfdd9       31.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controllers          v3.27.4             6b1e38763f401       33.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy                v1.30.6             2cce8902ed3cc       29.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-scheduler            v1.30.6             ad5858afd5322       19.2MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/node                      v3.27.4             3dd4390f2a85a       117MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/pause                     3.9                 e6f1816883972       322kB
+registry.cn-beijing.aliyuncs.com/kubesphereon/provisioner-localpv       3.3.0               739e82fed8b2c       28.8MB
 ```
 
 至此，我们已经完成了在三台服务器部署 Control  和 Worker 节点复用的高可用 Kubernetes 集群。
@@ -498,8 +498,8 @@ nfs-client        k8s-sigs.io/nfs-subdir-external-provisioner   Delete          
 ```bash
 # 如果无法访问 charts.docs.kubesphere-carryon.top, 可将 charts.docs.kubesphere-carryon.top 替换为 charts.kubesphere.com.cn
 helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere-carryon.top/main/ks-core-1.1.3.tgz --debug --wait \
---set global.imageRegistry=swr.cn-southwest-2.myhuaweicloud.com/ks \
---set extension.imageRegistry=swr.cn-southwest-2.myhuaweicloud.com/ks \
+--set global.imageRegistry=registry.cn-beijing.aliyuncs.com \
+--set extension.imageRegistry=registry.cn-beijing.aliyuncs.com \
 --set hostClusterName=opsxlab-main
 ```
 

@@ -130,7 +130,7 @@ KubeSphere 3.3.1 对内置角色和自定义角色的授权项做了一些调整
 3. 编辑完成后保存 `cluster-configuration.yaml`。使用以下命令将 `ks-installer` 替换为您**自己仓库的地址**。
 
    ```bash
-   sed -i "s#^\s*image: kubesphere.*/ks-installer:.*#        image: dockerhub.kubekey.local/kubesphere/ks-installer:v3.3.2#" kubesphere-installer.yaml
+   sed -i "s#^\s*image: kubesphereon.*/ks-installer:.*#        image: dockerhub.kubekey.local/kubesphere/ks-installer:v3.3.2#" kubesphere-installer.yaml
    ```
 
    {{< notice warning >}}

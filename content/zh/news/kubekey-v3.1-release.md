@@ -124,13 +124,13 @@ spec:
     crictl:
       version: v1.29.0
   images:
-  - docker.io/kubesphere/pause:3.7
-  - docker.io/kubesphere/kube-apiserver:v1.24.17
-  - docker.io/kubesphere/kube-controller-manager:v1.24.17
-  - docker.io/kubesphere/kube-scheduler:v1.24.17
-  - docker.io/kubesphere/kube-proxy:v1.24.17
+  - docker.io/kubesphereon/pause:3.7
+  - docker.io/kubesphereon/kube-apiserver:v1.24.17
+  - docker.io/kubesphereon/kube-controller-manager:v1.24.17
+  - docker.io/kubesphereon/kube-scheduler:v1.24.17
+  - docker.io/kubesphereon/kube-proxy:v1.24.17
   - docker.io/coredns/coredns:1.8.6
-  - docker.io/kubesphere/k8s-dns-node-cache:1.22.20
+  - docker.io/kubesphereon/k8s-dns-node-cache:1.22.20
   - docker.io/calico/kube-controllers:v3.27.3
   - docker.io/calico/cni:v3.27.3
   - docker.io/calico/node:v3.27.3
@@ -142,18 +142,18 @@ spec:
   - docker.io/cilium/operator-generic:v1.15.3
   - docker.io/hybridnetdev/hybridnet:v0.8.6
   - docker.io/kubeovn/kube-ovn:v1.10.10
-  - docker.io/kubesphere/multus-cni:v3.8
+  - docker.io/kubesphereon/multus-cni:v3.8
   - docker.io/openebs/provisioner-localpv:3.3.0
   - docker.io/openebs/linux-utils:3.3.0
   - docker.io/library/haproxy:2.9.6-alpine
   - docker.io/plndr/kube-vip:v0.7.2
-  - docker.io/kubesphere/kata-deploy:stable
-  - docker.io/kubesphere/node-feature-discovery:v0.10.0
-  - docker.io/kubesphere/pause:3.8
-  - docker.io/kubesphere/kube-apiserver:v1.25.16
-  - docker.io/kubesphere/kube-controller-manager:v1.25.16
-  - docker.io/kubesphere/kube-scheduler:v1.25.16
-  - docker.io/kubesphere/kube-proxy:v1.25.16
+  - docker.io/kubesphereon/kata-deploy:stable
+  - docker.io/kubesphereon/node-feature-discovery:v0.10.0
+  - docker.io/kubesphereon/pause:3.8
+  - docker.io/kubesphereon/kube-apiserver:v1.25.16
+  - docker.io/kubesphereon/kube-controller-manager:v1.25.16
+  - docker.io/kubesphereon/kube-scheduler:v1.25.16
+  - docker.io/kubesphereon/kube-proxy:v1.25.16
   - docker.io/coredns/coredns:1.9.3
   registry:
     auths: {}

@@ -37,7 +37,7 @@ upgrade:
   enabled: true
   image:
     registry: ""
-    repository: kubesphere/ks-upgrade
+    repository: kubesphereon/ks-upgrade
     tag: "v4.1.3"
     pullPolicy: IfNotPresent
   persistenceVolume:
@@ -109,9 +109,9 @@ Run the following command to upgrade the member cluster, install the extension c
 
 ```
 # Optional: Specify image registry
-# export IMAGE_REGISTRY=swr.cn-southwest-2.myhuaweicloud.com/ks
+# export IMAGE_REGISTRY=registry.cn-beijing.aliyuncs.com
 # Optional: Specify extension component image registry
-# export EXTENSION_IMAGE_REGISTRY=swr.cn-southwest-2.myhuaweicloud.com/ks
+# export EXTENSION_IMAGE_REGISTRY=registry.cn-beijing.aliyuncs.com
 bash upgrade.sh member | tee member-upgrade.log
 ```
 
@@ -142,7 +142,7 @@ To upgrade the gateway individually, use the following command:
 
 ```
 # Optional: Specify image registry
-# export IMAGE_REGISTRY=swr.cn-southwest-2.myhuaweicloud.com/ks
+# export IMAGE_REGISTRY=registry.cn-beijing.aliyuncs.com
 bash upgrade.sh gateway kubesphere-router-<NAMESPACE> | tee gateway-upgrade.log
 ```
 
@@ -150,7 +150,7 @@ Alternatively, to upgrade all gateways at once, use the following command:
 
 ```
 # Optional: Specify image registry
-# export IMAGE_REGISTRY=swr.cn-southwest-2.myhuaweicloud.com/ks
+# export IMAGE_REGISTRY=registry.cn-beijing.aliyuncs.com
 bash upgrade.sh gateway all | tee gateway-upgrade.log
 ```
 

@@ -1,4 +1,4 @@
-baseURL = "https://www.docs.kubesphere-carryon.top/"
+baseURL = "https://docs.kubesphere-carryon.top/"
 
 enableRobotsTXT = true
 ignorefiles = [ ".*/_custom" ]

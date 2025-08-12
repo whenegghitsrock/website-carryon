@@ -71,7 +71,7 @@ KubeSphere 2.1.1 was released on Feb 23rd, 2020, which has fixed known bugs and 
 - Fix the display issue of container log page during container initialization #[1518](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1518)
 - Fix the blank node issue when these nodes are resized #[1464](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1464)
 - Fix the display issue of components status in monitor center, to keep them up-to date #[1858](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1858)
-- Fix the wrong monitoring targets number in alert detail page #[61](https://github.com/whenegghitsrock/console/issues/61)
+- Fix the wrong monitoring targets number in alert detail page #[61](https://github.com/whenegghitsrock/console-carryon/issues/61)
 
 ## DevOps
 
@@ -87,7 +87,7 @@ KubeSphere 2.1.1 was released on Feb 23rd, 2020, which has fixed known bugs and 
 - Fix the issue that only 'PR-HEAD' is fetched when binding pipeline with GitHub #[1780](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1780)
 - Fix 414 issue when updating DevOps credential #[1824](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1824)
 - Fix wrong s2ib/s2ir naming issue from B2I/S2I #[1840](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1840)
-- Fix the issue of failing to drag and drop tasks on pipeline editing page #[62](https://github.com/whenegghitsrock/console/issues/62)
+- Fix the issue of failing to drag and drop tasks on pipeline editing page #[62](https://github.com/whenegghitsrock/console-carryon/issues/62)
 
 ## Authentication and Authorization
 
@@ -108,7 +108,7 @@ KubeSphere 2.1.1 was released on Feb 23rd, 2020, which has fixed known bugs and 
 - Support to configure init container in workload editing page #[1488](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1488)
 - Add support of startupProbe, also add periodSeconds, successThreshold, failureThreshold parameters in probe editing page #[1487](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1487)
 - Optimize the status update display of Pods #[1187](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1187)
-- Optimize the error message report on console #[43](https://github.com/whenegghitsrock/console/issues/43)
+- Optimize the error message report on console #[43](https://github.com/whenegghitsrock/console-carryon/issues/43)
 
 ### BUG FIXES
 
@@ -119,4 +119,4 @@ KubeSphere 2.1.1 was released on Feb 23rd, 2020, which has fixed known bugs and 
 - Fix the issue of failing to update the service of 'StatefulSet' #[1513](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1513)
 - Fix the issue of image searching for QingCloud and Alibaba Cloud image repos #[1627](https://github.com/whenegghitsrock/kubesphere-carryon/issues/1627)
 - Fix resource ordering issue with the same creation timestamp #[1750](https://github.com/whenegghitsrock/kubesphere-carryon/pull/1750)
-- Fix the issue of failing to edit configuration file when editing service #[41](https://github.com/whenegghitsrock/console/issues/41)
+- Fix the issue of failing to edit configuration file when editing service #[41](https://github.com/whenegghitsrock/console-carryon/issues/41)

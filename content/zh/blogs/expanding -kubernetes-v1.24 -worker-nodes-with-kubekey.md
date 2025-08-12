@@ -522,35 +522,35 @@ crictl images ls
 # Worker-1
 [root@ks-worker-1 ~]# crictl images ls
 IMAGE                                                                      TAG                 IMAGE ID            SIZE
-registry.cn-beijing.aliyuncs.com/kubesphereio/cni                          v3.23.2             a87d3f6f1b8fd       111MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/coredns                      1.8.6               a4ca41631cc7a       13.6MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/haproxy                      2.3                 0ea9253dad7c0       38.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache           1.15.12             5340ba194ec91       42.1MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controllers             v3.23.2             ec95788d0f725       56.4MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy                   v1.24.12            562ccc25ea629       39.6MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-rbac-proxy              v0.11.0             29589495df8d9       19.2MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/linux-utils                  3.3.0               e88cfb3a763b9       26.9MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/node-exporter                v1.3.1              1dbe0e9319764       10.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/node                         v3.23.2             a3447b26d32c7       77.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/pause                        3.7                 221177c6082a8       311kB
-registry.cn-beijing.aliyuncs.com/kubesphereio/pod2daemon-flexvol           v3.23.2             b21e2d7408a79       8.67MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus-config-reloader   v0.55.1             7c63de88523a9       4.84MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus                   v2.34.0             e3cf894a63f55       78.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/cni                          v3.23.2             a87d3f6f1b8fd       111MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/coredns                      1.8.6               a4ca41631cc7a       13.6MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/haproxy                      2.3                 0ea9253dad7c0       38.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-dns-node-cache           1.15.12             5340ba194ec91       42.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controllers             v3.23.2             ec95788d0f725       56.4MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy                   v1.24.12            562ccc25ea629       39.6MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-rbac-proxy              v0.11.0             29589495df8d9       19.2MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/linux-utils                  3.3.0               e88cfb3a763b9       26.9MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/node-exporter                v1.3.1              1dbe0e9319764       10.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/node                         v3.23.2             a3447b26d32c7       77.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/pause                        3.7                 221177c6082a8       311kB
+registry.cn-beijing.aliyuncs.com/kubesphereon/pod2daemon-flexvol           v3.23.2             b21e2d7408a79       8.67MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-config-reloader   v0.55.1             7c63de88523a9       4.84MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus                   v2.34.0             e3cf894a63f55       78.1MB
 
 # Worker-2
 [root@ks-worker-2 ~]# crictl images ls
 IMAGE                                                              TAG                 IMAGE ID            SIZE
-registry.cn-beijing.aliyuncs.com/kubesphereio/cni                  v3.23.2             a87d3f6f1b8fd       111MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/coredns              1.8.6               a4ca41631cc7a       13.6MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/haproxy              2.3                 0ea9253dad7c0       38.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache   1.15.12             5340ba194ec91       42.1MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controllers     v3.23.2             ec95788d0f725       56.4MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy           v1.24.12            562ccc25ea629       39.6MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-rbac-proxy      v0.11.0             29589495df8d9       19.2MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/node-exporter        v1.3.1              1dbe0e9319764       10.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/node                 v3.23.2             a3447b26d32c7       77.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/pause                3.7                 221177c6082a8       311kB
-registry.cn-beijing.aliyuncs.com/kubesphereio/pod2daemon-flexvol   v3.23.2             b21e2d7408a79       8.67MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/cni                  v3.23.2             a87d3f6f1b8fd       111MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/coredns              1.8.6               a4ca41631cc7a       13.6MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/haproxy              2.3                 0ea9253dad7c0       38.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-dns-node-cache   1.15.12             5340ba194ec91       42.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controllers     v3.23.2             ec95788d0f725       56.4MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy           v1.24.12            562ccc25ea629       39.6MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-rbac-proxy      v0.11.0             29589495df8d9       19.2MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/node-exporter        v1.3.1              1dbe0e9319764       10.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/node                 v3.23.2             a3447b26d32c7       77.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/pause                3.7                 221177c6082a8       311kB
+registry.cn-beijing.aliyuncs.com/kubesphereon/pod2daemon-flexvol   v3.23.2             b21e2d7408a79       8.67MB
 ```
 
 > 注意：Worker-1 节点的 Image 初始数量为 **14** 个，Worker-2 节点的 Image 初始数量为 **11** 个。

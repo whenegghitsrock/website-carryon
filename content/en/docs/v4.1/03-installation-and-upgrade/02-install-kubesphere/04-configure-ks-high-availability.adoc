@@ -54,7 +54,7 @@ redis:
   port: 6379
   replicaCount: 1
   image:
-    repository: kubesphereio/redis
+    repository: kubesphereon/redis
     tag: 7.2.4-alpine
     pullPolicy: IfNotPresent
   persistentVolume:
@@ -73,7 +73,7 @@ redisHA:
   redis:
     port: 6379
   image:
-    repository: kubesphereio/redis
+    repository: kubesphereon/redis
     tag: 7.2.4-alpine
     pullPolicy: IfNotPresent
   persistentVolume:
@@ -119,7 +119,7 @@ redisHA:
     servicePort: 6379
     containerPort: 6379
     image:
-      repository: kubesphereio/haproxy
+      repository: kubesphereon/haproxy
       tag: 2.9.6-alpine
       pullPolicy: IfNotPresent
 ----

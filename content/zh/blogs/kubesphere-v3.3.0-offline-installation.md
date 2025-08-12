@@ -93,7 +93,7 @@ $ curl -sfL https://kubesphere-carryon.top/pkg/downloadKubekey.sh | VERSION=v2.2
 $ wget https://github.com/whenegghitsrock/ks-installer-carryon/releases/download/v3.3.0/images-list.txt
 ```
 
-文中的 image 列表选用的 Docker Hub 仓库其他组件存放的公共仓库，国内建议统一更改前缀为 **registry.cn-beijing.aliyuncs.com/kubesphereio**
+文中的 image 列表选用的 Docker Hub 仓库其他组件存放的公共仓库，国内建议统一更改前缀为 **registry.cn-beijing.aliyuncs.com/kubesphereon**
 
 修改后的完整的镜像列表在下面的 manifest 文件中展示。
 
@@ -153,146 +153,146 @@ spec:
     docker-compose:
       version: v2.2.2
   images:
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver:v1.23.7
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager:v1.23.7
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy:v1.23.7
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler:v1.23.7
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver:v1.24.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager:v1.24.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy:v1.24.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler:v1.24.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver:v1.22.10
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager:v1.22.10
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy:v1.22.10
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler:v1.22.10
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver:v1.21.13
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager:v1.21.13
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy:v1.21.13
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler:v1.21.13
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/pause:3.7
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/pause:3.6
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/pause:3.5
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/pause:3.4.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/coredns:1.8.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/coredns:1.8.6
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/cni:v3.20.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controllers:v3.20.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/node:v3.20.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/pod2daemon-flexvol:v3.20.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/typha:v3.20.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/flannel:v0.12.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/provisioner-localpv:2.10.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/linux-utils:2.10.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/haproxy:2.3
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/nfs-subdir-external-provisioner:v4.0.2
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache:1.15.12
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/ks-installer:v3.3.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/ks-apiserver:v3.3.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/ks-console:v3.3.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/ks-controller-manager:v3.3.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kubectl:v1.22.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kubectl:v1.21.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kubectl:v1.20.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kubefed:v0.8.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/tower:v0.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/minio:RELEASE.2019-08-07T01-59-21Z
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/mc:RELEASE.2019-08-07T23-14-43Z
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/snapshot-controller:v4.0.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/nginx-ingress-controller:v1.1.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/defaultbackend-amd64:1.4
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/redis:5.0.14-alpine
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/haproxy:2.0.25-alpine
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/alpine:3.14
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/openldap:1.3.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/netshoot:v1.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/cloudcore:v1.9.2
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/iptables-manager:v1.9.2
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/edgeservice:v0.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/gatekeeper:v3.5.2
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/openpitrix-jobs:v3.2.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/devops-apiserver:v3.3.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/devops-controller:v3.3.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/devops-tools:v3.3.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.3.0-2.319.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/inbound-agent:4.10-2
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-base:v3.2.2
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-nodejs:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-maven:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-maven:v3.2.1-jdk11
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-python:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-go:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-go:v3.2.2-1.16
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-go:v3.2.2-1.17
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-go:v3.2.2-1.18
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-base:v3.2.2-podman
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-nodejs:v3.2.0-podman
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-maven:v3.2.0-podman
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-maven:v3.2.1-jdk11-podman
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-python:v3.2.0-podman
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-go:v3.2.0-podman
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-go:v3.2.2-1.16-podman
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-go:v3.2.2-1.17-podman
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/builder-go:v3.2.2-1.18-podman
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/s2ioperator:v3.2.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/s2irun:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/s2i-binary:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/tomcat85-java11-centos7:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/tomcat85-java11-runtime:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/tomcat85-java8-centos7:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/tomcat85-java8-runtime:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/java-11-centos7:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/java-8-centos7:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/java-8-runtime:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/java-11-runtime:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/nodejs-8-centos7:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/nodejs-6-centos7:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/nodejs-4-centos7:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/python-36-centos7:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/python-35-centos7:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/python-34-centos7:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/python-27-centos7:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/argocd:v2.3.3
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/argocd-applicationset:v0.4.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/dex:v2.30.2
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/redis:6.2.6-alpine
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/configmap-reload:v0.5.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus:v2.34.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus-config-reloader:v0.55.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus-operator:v0.55.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-rbac-proxy:v0.11.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-state-metrics:v2.3.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/node-exporter:v1.3.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/alertmanager:v0.23.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/thanos:v0.25.2
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/grafana:8.3.3
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-rbac-proxy:v0.8.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/notification-manager-operator:v1.4.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/notification-manager:v1.4.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/notification-tenant-sidecar:v3.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/elasticsearch-curator:v5.7.6
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/elasticsearch-oss:6.8.22
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/fluentbit-operator:v0.13.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/docker:19.03
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/fluent-bit:v1.8.11
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/log-sidecar-injector:1.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/filebeat:6.7.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-events-operator:v0.4.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-events-exporter:v0.4.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-events-ruler:v0.4.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-auditing-operator:v0.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-auditing-webhook:v0.2.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/pilot:1.11.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/proxyv2:1.11.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/jaeger-operator:1.27
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/jaeger-agent:1.27
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/jaeger-collector:1.27
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/jaeger-query:1.27
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/jaeger-es-index-cleaner:1.27
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kiali-operator:v1.38.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kiali:v1.38
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/busybox:1.31.1
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/scope:1.13.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-apiserver:v1.23.7
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controller-manager:v1.23.7
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy:v1.23.7
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-scheduler:v1.23.7
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-apiserver:v1.24.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controller-manager:v1.24.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy:v1.24.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-scheduler:v1.24.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-apiserver:v1.22.10
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controller-manager:v1.22.10
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy:v1.22.10
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-scheduler:v1.22.10
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-apiserver:v1.21.13
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controller-manager:v1.21.13
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy:v1.21.13
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-scheduler:v1.21.13
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/pause:3.7
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/pause:3.6
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/pause:3.5
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/pause:3.4.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/coredns:1.8.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/coredns:1.8.6
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/cni:v3.20.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controllers:v3.20.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/node:v3.20.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/pod2daemon-flexvol:v3.20.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/typha:v3.20.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/flannel:v0.12.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/provisioner-localpv:2.10.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/linux-utils:2.10.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/haproxy:2.3
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/nfs-subdir-external-provisioner:v4.0.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-dns-node-cache:1.15.12
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/ks-installer:v3.3.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/ks-apiserver:v3.3.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/ks-console:v3.3.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/ks-controller-manager:v3.3.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.22.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.21.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.20.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubefed:v0.8.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/tower:v0.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/minio:RELEASE.2019-08-07T01-59-21Z
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/mc:RELEASE.2019-08-07T23-14-43Z
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/snapshot-controller:v4.0.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/nginx-ingress-controller:v1.1.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/defaultbackend-amd64:1.4
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/redis:5.0.14-alpine
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/haproxy:2.0.25-alpine
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/alpine:3.14
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/openldap:1.3.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/netshoot:v1.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/cloudcore:v1.9.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/iptables-manager:v1.9.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/edgeservice:v0.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/gatekeeper:v3.5.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/openpitrix-jobs:v3.2.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/devops-apiserver:v3.3.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/devops-controller:v3.3.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/devops-tools:v3.3.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.3.0-2.319.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/inbound-agent:4.10-2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-base:v3.2.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-nodejs:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-maven:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-maven:v3.2.1-jdk11
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-python:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.2-1.16
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.2-1.17
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.2-1.18
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-base:v3.2.2-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-nodejs:v3.2.0-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-maven:v3.2.0-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-maven:v3.2.1-jdk11-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-python:v3.2.0-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.0-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.2-1.16-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.2-1.17-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.2-1.18-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/s2ioperator:v3.2.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/s2irun:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/s2i-binary:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/tomcat85-java11-centos7:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/tomcat85-java11-runtime:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/tomcat85-java8-centos7:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/tomcat85-java8-runtime:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/java-11-centos7:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/java-8-centos7:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/java-8-runtime:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/java-11-runtime:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/nodejs-8-centos7:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/nodejs-6-centos7:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/nodejs-4-centos7:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/python-36-centos7:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/python-35-centos7:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/python-34-centos7:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/python-27-centos7:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/argocd:v2.3.3
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/argocd-applicationset:v0.4.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/dex:v2.30.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/redis:6.2.6-alpine
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/configmap-reload:v0.5.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus:v2.34.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-config-reloader:v0.55.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-operator:v0.55.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-rbac-proxy:v0.11.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-state-metrics:v2.3.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/node-exporter:v1.3.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/alertmanager:v0.23.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/thanos:v0.25.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/grafana:8.3.3
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-rbac-proxy:v0.8.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/notification-manager-operator:v1.4.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/notification-manager:v1.4.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/notification-tenant-sidecar:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/elasticsearch-curator:v5.7.6
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/elasticsearch-oss:6.8.22
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/fluentbit-operator:v0.13.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/docker:19.03
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/fluent-bit:v1.8.11
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/log-sidecar-injector:1.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/filebeat:6.7.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-events-operator:v0.4.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-events-exporter:v0.4.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-events-ruler:v0.4.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-auditing-operator:v0.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-auditing-webhook:v0.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/pilot:1.11.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/proxyv2:1.11.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/jaeger-operator:1.27
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/jaeger-agent:1.27
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/jaeger-collector:1.27
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/jaeger-query:1.27
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/jaeger-es-index-cleaner:1.27
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kiali-operator:v1.38.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kiali:v1.38
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/busybox:1.31.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/scope:1.13.0
   registry:
     auths: {}
 
@@ -301,7 +301,7 @@ spec:
 **manifest 修改说明**
 
 - 开启 **harbor** 和 **docker-compose** 配置项，为后面通过 KubeKey 自建 harbor 仓库推送镜像使用。
-- 默认创建的 manifest 里面的镜像列表从 **docker.io** 获取，替换前缀为 **registry.cn-beijing.aliyuncs.com/kubesphereio**。
+- 默认创建的 manifest 里面的镜像列表从 **docker.io** 获取，替换前缀为 **registry.cn-beijing.aliyuncs.com/kubesphereon**。
 - 若需要导出的 artifact 文件中包含操作系统依赖文件（如：conntarck、chrony 等），可在 **operationSystem** 元素中的 **.repostiory.iso.url** 中配置相应的 ISO 依赖文件下载地址为 **localPath** ，填写提前下载好的 ISO 包在本地的存放路径，并将 **url** 配置项置空。
 - 您可以访问 https://github.com/whenegghitsrock/kubekey-carryon/releases/tag/v2.2.1 下载 ISO 文件。
 
@@ -488,7 +488,7 @@ spec:
          username: admin
          password: Harbor12345
     privateRegistry: "registry.zdevops.com.cn"
-    namespaceOverride: "kubesphereio"
+    namespaceOverride: "kubesphereon"
     registryMirrors: []
     insecureRegistries: []
   addons: []
@@ -522,9 +522,9 @@ user="admin"
 # 访问 Harbor 仓库用户密码
 passwd="Harbor12345"
 
-# 需要创建的项目名列表，正常只需要创建一个**kubesphereio**即可，这里为了保留变量可扩展性多写了两个。
+# 需要创建的项目名列表，正常只需要创建一个**kubesphereon**即可，这里为了保留变量可扩展性多写了两个。
 harbor_projects=(library
-    kubesphereio
+    kubesphereon
     kubesphere
 )
 

@@ -211,14 +211,14 @@ exec /usr/local/bin/applicationset-controller: exec format error
 
 ```bash
 [root@ks-master-1 ~]# kubectl describe pods devops-argocd-applicationset-controller-8486797d4d-72888 -n argocd | grep Image:
-    Image:         registry.cn-beijing.aliyuncs.com/kubesphereio/argocd-applicationset:v0.4.1
+    Image:         registry.cn-beijing.aliyuncs.com/kubesphereon/argocd-applicationset:v0.4.1
 ```
 
 - 查看异常 Pod 镜像架构
 
 ```bash
 # 查看异常 Pod 镜像架构
-[root@ks-master-1 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/argocd-applicationset:v0.4.1 | grep arch
+[root@ks-master-1 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/argocd-applicationset:v0.4.1 | grep arch
       "architecture": "amd64",
 ```
 
@@ -226,20 +226,20 @@ exec /usr/local/bin/applicationset-controller: exec format error
 
 ```bash
 # 找个相同版本的 ARM 架构的镜像
-crictl pull kubespheredev/argocd-applicationset-arm64:v0.4.1
+crictl pull kubesphereondev/argocd-applicationset-arm64:v0.4.1
 ```
 
 - 镜像重新打 tag（**为了保持镜像名称风格一致**）
 
 ```bash
-ctr -n k8s.io images tag docker.io/kubespheredev/argocd-applicationset-arm64:v0.4.1 registry.cn-beijing.aliyuncs.com/kubesphereio/argocd-applicationset-arm64:v0.4.1
+ctr -n k8s.io images tag docker.io/kubesphereondev/argocd-applicationset-arm64:v0.4.1 registry.cn-beijing.aliyuncs.com/kubesphereon/argocd-applicationset-arm64:v0.4.1
 ```
 
 - 重新部署组件
 
 ```bash
 # 修改 Deployment 使用的镜像，并重启
-kubectl set image deployment/devops-argocd-applicationset-controller applicationset-controller=registry.cn-beijing.aliyuncs.com/kubesphereio/argocd-applicationset-arm64:v0.4.1 -n argocd
+kubectl set image deployment/devops-argocd-applicationset-controller applicationset-controller=registry.cn-beijing.aliyuncs.com/kubesphereon/argocd-applicationset-arm64:v0.4.1 -n argocd
 kubectl rollout restart deployment/devops-argocd-applicationset-controller -n argocd
 ```
 
@@ -271,14 +271,14 @@ exec /usr/local/bin/pilot-discovery: exec format error
 
 ```bash
 [root@ks-master-1 ~]# kubectl describe pods istiod-1-14-6-6576b8664b-28c44 -n istio-system | grep Image:
-    Image:         registry.cn-beijing.aliyuncs.com/kubesphereio/pilot:1.14.6
+    Image:         registry.cn-beijing.aliyuncs.com/kubesphereon/pilot:1.14.6
 ```
 
 - 查看异常 Pod 镜像架构
 
 ```bash
 # 查看异常 Pod 镜像架构
-[root@ks-master-2 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/pilot:1.14.6 | grep arch
+[root@ks-master-2 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/pilot:1.14.6 | grep arch
       "architecture": "amd64",
 ```
 
@@ -289,21 +289,21 @@ exec /usr/local/bin/pilot-discovery: exec format error
 crictl pull istio/pilot:1.15.7 --platform arm64
 
 # 确保镜像架构是 arm64
-[root@ks-master-2 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/pilot:1.15.7 | grep arch
+[root@ks-master-2 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/pilot:1.15.7 | grep arch
       "architecture": "arm64",
 ```
 
 - 镜像重新打 tag
 
 ```bash
-ctr -n k8s.io images tag docker.io/istio/pilot:1.15.7 registry.cn-beijing.aliyuncs.com/kubesphereio/pilot:1.15.7
+ctr -n k8s.io images tag docker.io/istio/pilot:1.15.7 registry.cn-beijing.aliyuncs.com/kubesphereon/pilot:1.15.7
 ```
 
 - 重新部署组件
 
 ```bash
 # 修改 Deployment 使用的镜像，并重启
-kubectl set image deployment/istiod-1-14-6 discovery=registry.cn-beijing.aliyuncs.com/kubesphereio/pilot:1.15.7 -n istio-system
+kubectl set image deployment/istiod-1-14-6 discovery=registry.cn-beijing.aliyuncs.com/kubesphereon/pilot:1.15.7 -n istio-system
 kubectl rollout restart deployment/istiod-1-14-6 -n istio-system
 ```
 
@@ -355,13 +355,13 @@ exec /server: exec format error
 
 ```bash
 [root@ks-master-1 ~]# kubectl describe pods default-http-backend-767cdb5fdc-ptqh -n kubesphere-controls-system | grep Image:
-    Image:          registry.cn-beijing.aliyuncs.com/kubesphereio/defaultbackend-amd64:1.4
+    Image:          registry.cn-beijing.aliyuncs.com/kubesphereon/defaultbackend-amd64:1.4
 ```
 
 - 查看异常 Pod 镜像架构
 
 ```bash
-[root@ks-master-3 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/defaultbackend-amd64:1.4 | grep arch
+[root@ks-master-3 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/defaultbackend-amd64:1.4 | grep arch
       "architecture": "amd64",
 ```
 
@@ -374,14 +374,14 @@ crictl pull mirrorgooglecontainers/defaultbackend-arm64:1.4
 - 镜像重新打 tag（**为了保持镜像名称风格一致**）
 
 ```bash
-ctr -n k8s.io images tag docker.io/mirrorgooglecontainers/defaultbackend-arm64:1.4 registry.cn-beijing.aliyuncs.com/kubesphereio/defaultbackend-arm64:1.4
+ctr -n k8s.io images tag docker.io/mirrorgooglecontainers/defaultbackend-arm64:1.4 registry.cn-beijing.aliyuncs.com/kubesphereon/defaultbackend-arm64:1.4
 ```
 
 - 重新部署组件
 
 ```bash
 # 修改 Deployment 使用的镜像，并重启
-kubectl set image deployment/default-http-backend default-http-backend=registry.cn-beijing.aliyuncs.com/kubesphereio/defaultbackend-arm64:1.4 -n kubesphere-controls-system
+kubectl set image deployment/default-http-backend default-http-backend=registry.cn-beijing.aliyuncs.com/kubesphereon/defaultbackend-arm64:1.4 -n kubesphere-controls-system
 kubectl rollout restart deployment/default-http-backend -n kubesphere-controls-system
 ```
 
@@ -410,8 +410,8 @@ LAST SEEN             TYPE      REASON             OBJECT                       
 40m                   Normal    SuccessfulCreate   CronJob/devops                        Created job devops-28284990
 40m                   Normal    SuccessfulCreate   Job/devops-28284990                   Created pod: devops-28284990-59cvp
 40m                   Normal    Scheduled          Pod/devops-28284990-59cvp             Successfully assigned kubesphere-devops-system/devops-28284990-59cvp to ks-master-1
-40m                   Normal    Pulling            Pod/devops-28284990-59cvp             Pulling image "registry.cn-beijing.aliyuncs.com/kubesphereio/devops-tools:ks-v3.4.0"
-40m                   Normal    Pulled             Pod/devops-28284990-59cvp             Successfully pulled image "registry.cn-beijing.aliyuncs.com/kubesphereio/devops-tools:ks-v3.4.0" in 427.197317ms (427.222677ms including waiting)
+40m                   Normal    Pulling            Pod/devops-28284990-59cvp             Pulling image "registry.cn-beijing.aliyuncs.com/kubesphereon/devops-tools:ks-v3.4.0"
+40m                   Normal    Pulled             Pod/devops-28284990-59cvp             Successfully pulled image "registry.cn-beijing.aliyuncs.com/kubesphereon/devops-tools:ks-v3.4.0" in 427.197317ms (427.222677ms including waiting)
 40m                   Normal    Created            Pod/devops-28284990-59cvp             Created container pipeline-run-gc
 40m                   Normal    Started            Pod/devops-28284990-59cvp             Started container pipeline-run-gc
 40m                   Normal    Completed          Job/devops-28284990                   Job completed
@@ -421,8 +421,8 @@ LAST SEEN             TYPE      REASON             OBJECT                       
 10m                   Normal    SuccessfulCreate   Job/devops-28285020                   Created pod: devops-28285020-zqd72
 10m                   Normal    Started            Pod/devops-28285020-zqd72             Started container pipeline-run-gc
 10m                   Normal    Created            Pod/devops-28285020-zqd72             Created container pipeline-run-gc
-10m                   Normal    Pulled             Pod/devops-28285020-zqd72             Successfully pulled image "registry.cn-beijing.aliyuncs.com/kubesphereio/devops-tools:ks-v3.4.0" in 423.190976ms (423.205056ms including waiting)
-10m                   Normal    Pulling            Pod/devops-28285020-zqd72             Pulling image "registry.cn-beijing.aliyuncs.com/kubesphereio/devops-tools:ks-v3.4.0"
+10m                   Normal    Pulled             Pod/devops-28285020-zqd72             Successfully pulled image "registry.cn-beijing.aliyuncs.com/kubesphereon/devops-tools:ks-v3.4.0" in 423.190976ms (423.205056ms including waiting)
+10m                   Normal    Pulling            Pod/devops-28285020-zqd72             Pulling image "registry.cn-beijing.aliyuncs.com/kubesphereon/devops-tools:ks-v3.4.0"
 10m                   Normal    Completed          Job/devops-28285020                   Job completed
 10m                   Normal    SuccessfulDelete   CronJob/devops                        Deleted job devops-28284930
 10m                   Normal    SawCompletedJob    CronJob/devops                        Saw completed job: devops-28285020, status: Complete
@@ -433,14 +433,14 @@ LAST SEEN             TYPE      REASON             OBJECT                       
 
 ```bash
 [root@ks-master-1 ~]# kubectl describe pods devops-jenkins-774fdb948b-4rk56 -n kubesphere-devops-system | grep Image:
-    Image:         registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.4.0-2.319.3-1
-    Image:         registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.4.0-2.319.3-1
+    Image:         registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.4.0-2.319.3-1
+    Image:         registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.4.0-2.319.3-1
 ```
 
 - 查看异常 Pod 镜像架构
 
 ```bash
-[root@ks-master-3 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.4.0-2.319.3-1 | grep arch
+[root@ks-master-3 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.4.0-2.319.3-1 | grep arch
       "architecture": "amd64",
 ```
 
@@ -448,18 +448,18 @@ LAST SEEN             TYPE      REASON             OBJECT                       
 
 ```bash
 # 没有找到同版本的，只能找了一个相近版本的 ARM 架构的镜像
-crictl pull docker.io/kubesphere/ks-jenkins:v3.4.1-2.319.3  --platform arm64
+crictl pull docker.io/kubesphereon/ks-jenkins:v3.4.1-2.319.3  --platform arm64
 
 # 确保 image 架构是 arm64
-[root@ks-master-3 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.4.0-2.319.3-1 | grep arch
+[root@ks-master-3 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.4.0-2.319.3-1 | grep arch
       "architecture": "arm64",
 ```
 
 - 镜像重新打 tag（**为了保持镜像名风格一致**）
 
 ```bash
-crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.4.0-2.319.3-1
-ctr -n k8s.io images tag docker.io/kubesphere/ks-jenkins:v3.4.1-2.319.3 registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.4.0-2.319.3-1
+crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.4.0-2.319.3-1
+ctr -n k8s.io images tag docker.io/kubesphereon/ks-jenkins:v3.4.1-2.319.3 registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.4.0-2.319.3-1
 ```
 
 - 重新部署组件
@@ -501,13 +501,13 @@ exec /home/weave/scope: exec format error
 
 ```bash
 [root@ks-master-1 ~]# kubectl describe pod weave-scope-agent-78r2r -n weave | grep Image:
-    Image:         registry.cn-beijing.aliyuncs.com/kubesphereio/scope:1.13.0
+    Image:         registry.cn-beijing.aliyuncs.com/kubesphereon/scope:1.13.0
 ```
 
 - 查看异常 Pod 镜像架构
 
 ```bash
-[root@ks-master-1 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/scope:1.13.0 | grep arch
+[root@ks-master-1 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/scope:1.13.0 | grep arch
       "architecture": "amd64",
 ```
 
@@ -556,13 +556,13 @@ exec /metrics-server: exec format error
 
 ```bash
 [root@ks-master-1 kubekey]# kubectl describe pod metrics-server-66b6cfb784-85l94 -n kube-system | grep Image:
-    Image:         registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2
+    Image:         registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2
 ```
 
 - 查看异常 Pod 镜像架构
 
 ```bash
-[root@ks-master-3 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2 | grep arch
+[root@ks-master-3 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2 | grep arch
       "architecture": "amd64",
 ```
 
@@ -570,17 +570,17 @@ exec /metrics-server: exec format error
 
 ```bash
 # 拉取 arm64 镜像
-crictl pull registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2-arm64  --platform arm64
+crictl pull registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2-arm64  --platform arm64
 ```
 
 - 镜像重新打 tag
 
 ```bash
 # 删除 amd64 镜像
-crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2
+crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2
 
 # 重新打 tag
-ctr -n k8s.io images tag registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2-arm64 registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2
+ctr -n k8s.io images tag registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2-arm64 registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2
 ```
 
 - 重新部署组件
@@ -613,17 +613,17 @@ exec /bin/sh: exec format error
 ```bash
 # Minio 组件对应两个镜像
 [root@ks-master-1 ~]# crictl images ls | grep minio
-registry.cn-beijing.aliyuncs.com/kubesphereio/minio                     RELEASE.2019-08-07T01-59-21Z   29c267893b048       23.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/minio                     RELEASE.2019-08-07T01-59-21Z   29c267893b048       23.1MB
 
 [root@ks-master-3 ~]# crictl images ls | grep mc
-registry.cn-beijing.aliyuncs.com/kubesphereio/mc                        RELEASE.2019-08-07T23-14-43Z         c02b00df169fc       9.32MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/mc                        RELEASE.2019-08-07T23-14-43Z         c02b00df169fc       9.32MB
 ```
 
 - 查看异常 Pod 镜像架构
 
 ```bash
 # 查看异常 Pod 镜像架构（以 minio 为例）
-[root@ks-master-1 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/minio:RELEASE.2019-08-07T01-59-21Z | grep arch
+[root@ks-master-1 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/minio:RELEASE.2019-08-07T01-59-21Z | grep arch
       "architecture": "amd64",
 ```
 
@@ -642,12 +642,12 @@ crictl pull minio/mc:RELEASE.2020-11-25T23-04-07Z-arm64
 
 ```bash
 # minio
-crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereio/minio:RELEASE.2019-08-07T01-59-21Z
-ctr -n k8s.io images tag docker.io/minio/minio:RELEASE.2020-11-25T22-36-25Z-arm64 registry.cn-beijing.aliyuncs.com/kubesphereio/minio:RELEASE.2019-08-07T01-59-21Z
+crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereon/minio:RELEASE.2019-08-07T01-59-21Z
+ctr -n k8s.io images tag docker.io/minio/minio:RELEASE.2020-11-25T22-36-25Z-arm64 registry.cn-beijing.aliyuncs.com/kubesphereon/minio:RELEASE.2019-08-07T01-59-21Z
 
 # mc
-crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereio/mc:RELEASE.2019-08-07T23-14-43Z
-ctr -n k8s.io images tag --force docker.io/minio/mc:RELEASE.2020-11-25T23-04-07Z-arm64 registry.cn-beijing.aliyuncs.com/kubesphereio/mc:RELEASE.2019-08-07T23-14-43Z
+crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereon/mc:RELEASE.2019-08-07T23-14-43Z
+ctr -n k8s.io images tag --force docker.io/minio/mc:RELEASE.2020-11-25T23-04-07Z-arm64 registry.cn-beijing.aliyuncs.com/kubesphereon/mc:RELEASE.2019-08-07T23-14-43Z
 ```
 
 - 重新部署组件
@@ -867,71 +867,71 @@ crictl images ls
 # crictl images ls | grep -v docker.io > /tmp/3.txt
 #  cat 1.txt 2.txt 3.txt | awk '{if (!seen[$1]++) {print}}' | sort
 IMAGE                                                                       TAG                                  IMAGE ID            SIZE
-registry.cn-beijing.aliyuncs.com/kubesphereio/alertmanager                  v0.23.0                              44a71f29f42b0       25MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/argocd-applicationset-arm64   v0.4.1                               758eaf0d9da26       76.2MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/argocd-applicationset         v0.4.1                               f5ac1e612edca       77.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/argocd                        v2.3.3                               9a557f111ba0b       185MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/cni                           v3.23.2                              dbad3c1a529ac       76.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/configmap-reload              v0.7.1                               b4151c08af07d       3.73MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/coredns                       1.9.3                                b19406328e70d       13.4MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/defaultbackend-amd64          1.4                 							   846921f0fe0e5       1.82MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/defaultbackend-arm64          1.4                                  156fbd4afe405       1.67MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/devops-apiserver              ks-v3.4.0                            c89baacbfca67       29.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/devops-controller             ks-v3.4.0                            5b4ce4e345d4a       26.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/devops-tools                  ks-v3.4.0                            3b2bc61feca12       28.9MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/dex                           v2.30.2                              cd0eb92a37da5       24.1MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/docker                        19.03                                59291a2ff3232       60.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/fluentbit-operator            v0.14.0                              1fe6aebe29cb9       18.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/fluent-bit                    v1.9.4                               bb0200a3096d6       25.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/haproxy                       2.3                                  5be62463c49bf       37.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/jaeger-operator               1.29                                 7e6f4ab1586b7       105MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache            1.15.12                              c5c27a390f5fa       41.9MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kiali-operator                v1.50.1                              c3dc2b49c5e8b       250MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kiali                         v1.50                                97c5cab789c50       78MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/ks-apiserver                  v3.4.0                               de0e22c9bcf4f       61.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/ks-console                    v3.4.0                               42b2364bcafe3       38.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/ks-controller-manager         v3.4.0                               4ff90f750485b       46.9MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/ks-installer                  v3.4.0                               3471e6e1d2af0       153MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins                    v3.4.0-2.319.3-1                     4b52636ce9e50       581MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver                v1.26.5                              06a268629a822       32.4MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-auditing-operator        v0.2.0                               9c5612b5f8a8e       8.37MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-auditing-webhook         v0.2.0                               f23e1078e2b2c       11.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager       v1.26.5                              a7b6fa1339316       29.6MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controllers              v3.23.2                              5a33f410afb91       25.1MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kubectl                       v1.22.0                              29c024bbbf9b1       25.2MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-events-exporter          v0.6.0                               452463fb02cb2       19.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-events-operator          v0.6.0                               27146d6e5ab73       21.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-events-ruler             v0.6.0                               12573f2ffe64d       25.1MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy                    v1.26.5                              5e89f86edbb88       19.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-rbac-proxy               v0.11.0                              bee4dbe8a9f42       17.9MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler                v1.26.5                              9eb699cb795f8       16.1MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-state-metrics            v2.6.0                               150fa1ddd5ab3       10.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/linux-utils                   3.3.0                                d06b9d3a552bc       27.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/log-sidecar-injector          v1.2.0                               dbad25c47d9ec       9.9MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/mc                            RELEASE.2019-08-07T23-14-43Z         c02b00df169fc       11.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server                v0.4.2                               b266eabac7d6a       23.6MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/minio                         RELEASE.2019-08-07T01-59-21Z         6760283c70e3e       23MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/node-exporter                 v1.3.1                               bb203ba967a80       9.72MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/node                          v3.23.2                              2a3416a8ae05d       73MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/notification-manager-operator v2.3.0                               3d8285028607a       17.9MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/notification-manager          v2.3.0                               b4d8dc4ea25ac       20.1MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/notification-tenant-sidecar   v3.2.0                               e41b413830c35       13.2MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/openldap                      1.3.0                                8803fc65b2bfa       91.6MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/openpitrix-jobs               v3.3.2                               d1afba2bac100       15.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/opensearch                    2.6.0                                92fe7c48b27f4       813MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/opensearch-curator            v0.0.5                               5791cbce4e83d       19MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/pause                         3.8                                  4e42fb3c9d90e       268kB
-registry.cn-beijing.aliyuncs.com/kubesphereio/pilot                         1.15.7                               4f12fc8040fe7       66MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/pod2daemon-flexvol            v3.23.2                              d48543e4a525a       4.56MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus-config-reloader    v0.55.1                              4152fd84f8c36       4.61MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus-operator           v0.55.1                              8e6f6c78032e8       13.1MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus                    v2.39.1                              af3e34b4a84e5       83.4MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/provisioner-localpv           3.3.0                                2f625755a998b       27.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/redis                         6.2.6-alpine                         50bbab999a871       10.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/s2ioperator                   v3.2.1                               30b700dff15f8       11.8MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/scope                         1.13.0                               ca6176be9738f       30.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/snapshot-controller           v4.0.0                               3758cfc26c6db       17.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/thanos                        v0.31.0                              5595f682eee8a       37.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/alertmanager                  v0.23.0                              44a71f29f42b0       25MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/argocd-applicationset-arm64   v0.4.1                               758eaf0d9da26       76.2MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/argocd-applicationset         v0.4.1                               f5ac1e612edca       77.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/argocd                        v2.3.3                               9a557f111ba0b       185MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/cni                           v3.23.2                              dbad3c1a529ac       76.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/configmap-reload              v0.7.1                               b4151c08af07d       3.73MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/coredns                       1.9.3                                b19406328e70d       13.4MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/defaultbackend-amd64          1.4                 							   846921f0fe0e5       1.82MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/defaultbackend-arm64          1.4                                  156fbd4afe405       1.67MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/devops-apiserver              ks-v3.4.0                            c89baacbfca67       29.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/devops-controller             ks-v3.4.0                            5b4ce4e345d4a       26.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/devops-tools                  ks-v3.4.0                            3b2bc61feca12       28.9MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/dex                           v2.30.2                              cd0eb92a37da5       24.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/docker                        19.03                                59291a2ff3232       60.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/fluentbit-operator            v0.14.0                              1fe6aebe29cb9       18.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/fluent-bit                    v1.9.4                               bb0200a3096d6       25.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/haproxy                       2.3                                  5be62463c49bf       37.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/jaeger-operator               1.29                                 7e6f4ab1586b7       105MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-dns-node-cache            1.15.12                              c5c27a390f5fa       41.9MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kiali-operator                v1.50.1                              c3dc2b49c5e8b       250MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kiali                         v1.50                                97c5cab789c50       78MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/ks-apiserver                  v3.4.0                               de0e22c9bcf4f       61.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/ks-console                    v3.4.0                               42b2364bcafe3       38.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/ks-controller-manager         v3.4.0                               4ff90f750485b       46.9MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/ks-installer                  v3.4.0                               3471e6e1d2af0       153MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins                    v3.4.0-2.319.3-1                     4b52636ce9e50       581MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-apiserver                v1.26.5                              06a268629a822       32.4MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-auditing-operator        v0.2.0                               9c5612b5f8a8e       8.37MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-auditing-webhook         v0.2.0                               f23e1078e2b2c       11.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controller-manager       v1.26.5                              a7b6fa1339316       29.6MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controllers              v3.23.2                              5a33f410afb91       25.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl                       v1.22.0                              29c024bbbf9b1       25.2MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-events-exporter          v0.6.0                               452463fb02cb2       19.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-events-operator          v0.6.0                               27146d6e5ab73       21.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-events-ruler             v0.6.0                               12573f2ffe64d       25.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy                    v1.26.5                              5e89f86edbb88       19.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-rbac-proxy               v0.11.0                              bee4dbe8a9f42       17.9MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-scheduler                v1.26.5                              9eb699cb795f8       16.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-state-metrics            v2.6.0                               150fa1ddd5ab3       10.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/linux-utils                   3.3.0                                d06b9d3a552bc       27.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/log-sidecar-injector          v1.2.0                               dbad25c47d9ec       9.9MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/mc                            RELEASE.2019-08-07T23-14-43Z         c02b00df169fc       11.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server                v0.4.2                               b266eabac7d6a       23.6MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/minio                         RELEASE.2019-08-07T01-59-21Z         6760283c70e3e       23MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/node-exporter                 v1.3.1                               bb203ba967a80       9.72MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/node                          v3.23.2                              2a3416a8ae05d       73MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/notification-manager-operator v2.3.0                               3d8285028607a       17.9MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/notification-manager          v2.3.0                               b4d8dc4ea25ac       20.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/notification-tenant-sidecar   v3.2.0                               e41b413830c35       13.2MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/openldap                      1.3.0                                8803fc65b2bfa       91.6MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/openpitrix-jobs               v3.3.2                               d1afba2bac100       15.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/opensearch                    2.6.0                                92fe7c48b27f4       813MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/opensearch-curator            v0.0.5                               5791cbce4e83d       19MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/pause                         3.8                                  4e42fb3c9d90e       268kB
+registry.cn-beijing.aliyuncs.com/kubesphereon/pilot                         1.15.7                               4f12fc8040fe7       66MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/pod2daemon-flexvol            v3.23.2                              d48543e4a525a       4.56MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-config-reloader    v0.55.1                              4152fd84f8c36       4.61MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-operator           v0.55.1                              8e6f6c78032e8       13.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus                    v2.39.1                              af3e34b4a84e5       83.4MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/provisioner-localpv           3.3.0                                2f625755a998b       27.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/redis                         6.2.6-alpine                         50bbab999a871       10.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/s2ioperator                   v3.2.1                               30b700dff15f8       11.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/scope                         1.13.0                               ca6176be9738f       30.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/snapshot-controller           v4.0.0                               3758cfc26c6db       17.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/thanos                        v0.31.0                              5595f682eee8a       37.7MB
 ```
 
 ### 5.2 DevOps 模块验证说明
@@ -997,16 +997,16 @@ maven-b43fl   1/2     Terminating   0          5s
 
 5s                      Normal   Started     Pod/maven-pxrt3   Started container jnlp
 4s                      Normal   Started     Pod/maven-xnt3j   Started container jnlp
-4s                      Normal   Pulled      Pod/maven-xnt3j   Container image "registry.cn-beijing.aliyuncs.com/kubesphereio/inbound-agent:4.10-2" already present on machine
+4s                      Normal   Pulled      Pod/maven-xnt3j   Container image "registry.cn-beijing.aliyuncs.com/kubesphereon/inbound-agent:4.10-2" already present on machine
 4s                      Normal   Started     Pod/maven-xnt3j   Started container maven
 4s                      Normal   Created     Pod/maven-xnt3j   Created container maven
 4s                      Normal   Created     Pod/maven-xnt3j   Created container jnlp
-4s                      Normal   Pulled      Pod/maven-xnt3j   Container image "registry.cn-beijing.aliyuncs.com/kubesphereio/builder-maven:v3.2.0-podman" already present on machine
+4s                      Normal   Pulled      Pod/maven-xnt3j   Container image "registry.cn-beijing.aliyuncs.com/kubesphereon/builder-maven:v3.2.0-podman" already present on machine
 
-[root@ks-master-2 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/builder-maven:v3.2.0-podman | grep arch
+[root@ks-master-2 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/builder-maven:v3.2.0-podman | grep arch
       "architecture": "amd64",
 
-[root@ks-master-2 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/inbound-agent:4.10-2 | grep arch
+[root@ks-master-2 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/inbound-agent:4.10-2 | grep arch
       "architecture": "arm64",
 ```
 
@@ -1014,15 +1014,15 @@ maven-b43fl   1/2     Terminating   0          5s
 
 ```bash
 # 说明：没有最终解决，只解决了镜像架构异常，但是后面构建应用的时候 maven 容器依旧起不来
-crictl pull kubespheredev/builder-maven:v3.3.1-podman --platform arm64
+crictl pull kubesphereondev/builder-maven:v3.3.1-podman --platform arm64
 
-[root@ks-master-2 ~]# crictl inspecti kubespheredev/builder-maven:v3.3.1-podman | grep arch | head -1
+[root@ks-master-2 ~]# crictl inspecti kubesphereondev/builder-maven:v3.3.1-podman | grep arch | head -1
       "architecture": "arm64",
 
 # 偷梁换柱，强制修改 tag（这个方案比较粗暴，建议采取自己构建同版本 ARM 镜像或是修改 kubesphere-devops-system 项目下的配置字典 jenkins-casc-config 中的 jenkins_user.yaml ，修改镜像版本）
-crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereio/builder-maven:v3.2.0-podman
-ctr -n k8s.io images tag docker.io/kubespheredev/builder-maven:v3.3.1-podman registry.cn-beijing.aliyuncs.com/kubesphereio/builder-maven:v3.2.0-podman --force
-#ctr -n k8s.io images tag docker.io/kubespheredev/builder-maven:v3.3.1-podman registry.cn-beijing.aliyuncs.com/kubesphereio/builder-maven:v3.3.1-podman
+crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereon/builder-maven:v3.2.0-podman
+ctr -n k8s.io images tag docker.io/kubesphereondev/builder-maven:v3.3.1-podman registry.cn-beijing.aliyuncs.com/kubesphereon/builder-maven:v3.2.0-podman --force
+#ctr -n k8s.io images tag docker.io/kubesphereondev/builder-maven:v3.3.1-podman registry.cn-beijing.aliyuncs.com/kubesphereon/builder-maven:v3.3.1-podman
 ```
 
 ## 7. 总结

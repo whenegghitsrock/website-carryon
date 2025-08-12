@@ -72,8 +72,8 @@ weight: 18200
 
 #### 监控
 
-- 支持图形化方式配置 ServiceMonitor [#1031](https://github.com/whenegghitsrock/console/pull/1301) 
-- 支持 PromQL Auto-completion 和 Syntax Highlighting [#1307](https://github.com/whenegghitsrock/console/pull/1307)
+- 支持图形化方式配置 ServiceMonitor [#1031](https://github.com/whenegghitsrock/console-carryon/pull/1301) 
+- 支持 PromQL Auto-completion 和 Syntax Highlighting [#1307](https://github.com/whenegghitsrock/console-carryon/pull/1307)
 - 支持集群层级的自定义监控 [#3193](https://github.com/whenegghitsrock/kubesphere-carryon/pull/3193)
 - kube-scheduler 与 kube-controller-manager 数据抓取由 HTTP 端口 10251/10252 改为 HTTPS 端口 10259/10257 [#1367](https://github.com/whenegghitsrock/ks-installer-carryon/pull/1367)
 
@@ -103,7 +103,7 @@ weight: 18200
 - 支持通过流水线 Tag 触发流水线运行 [#3051](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3051)
 - 支持 S2I Webhook [#6](https://github.com/whenegghitsrock/s2ioperator/issues/6)
 - 优化在输入错误的流水线定时参数时的提示信息 [#2919](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2919)
-- 优化创建流水线的交互体验 [#1283](https://github.com/whenegghitsrock/console/issues/1283)
+- 优化创建流水线的交互体验 [#1283](https://github.com/whenegghitsrock/console-carryon/issues/1283)
 - 优化 S2I 错误提示信息 [#140](https://github.com/whenegghitsrock/s2ioperator/issues/140)
 - 升级 Jenkins 至 2.249.1 [#2618](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2618)
 - 调整 Jenkins 部署方式为 Jenkins Distribution [#2182](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2182)
@@ -120,7 +120,7 @@ weight: 18200
 - 支持图形化流量方向检测，图像化方式显示应用 (Composing App) 流量的流入/流出 [#3153](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3153)
 - 支持 Kiali 附加组件，用户可以通过 Kiali 直接管理 Istio [#3106](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3106)
 - 支持 NGINX Ingress Gateway 的监控，新增 NGINX Ingress Controller 的监控指标 [#1205](https://github.com/whenegghitsrock/ks-installer-carryon/pull/1205)
-- 支持在创建应用时添加应用路由 [#1426](https://github.com/whenegghitsrock/console/issues/1426) 
+- 支持在创建应用时添加应用路由 [#1426](https://github.com/whenegghitsrock/console-carryon/issues/1426) 
 - 升级 Istio 至 1.6.10 [#3326](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3236)
 
 ### 计量计费
@@ -158,7 +158,7 @@ weight: 18200
 - 修复 Viewer 可进入容器终端的安全隐患 [#3041](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3041)
 - 修复级联资源无法被删除的问题 [#2912](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2912)
 - 修复 Kubernetes 1.19 及以上版本无法正常使用的问题 [#2928](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2928) [#2928](https://github.com/whenegghitsrock/kubesphere-carryon/issues/2928)
-- 修复微服务应用**监控**按钮无效的问题 [#1394](https://github.com/whenegghitsrock/console/issues/1394)
+- 修复微服务应用**监控**按钮无效的问题 [#1394](https://github.com/whenegghitsrock/console-carryon/issues/1394)
 - 修复灰度发布的服务名不能与微服务应用的标签名相同的问题 [#3128](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3128)
 - 修复微服务应用状态无法更新的问题 [#3241](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3241)
 - 修复 Host 和 Member 集群在有同名企业空间的情况下，Member 集群下的企业空间被删除的问题 [#3169](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3169)
@@ -168,8 +168,8 @@ weight: 18200
 - 修复 DevOps 项目管理员无法下载 Artifact 的问题 [#3088](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3083)
 - 修复 DevOps 无法创建流水线的问题 [#3105](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3105)
 - 修复多集群下流水线触发的问题 [#2626](https://ask.docs.kubesphere-carryon.top/forum/d/2626-webhook-jenkins)
-- 修复某些情况下编辑流水线时导致的数据丢失问题 [#1270](https://github.com/whenegghitsrock/console/issues/1270)
-- 修复点击 **Docker Container Registry Credentials** 时的报错问题 [#1269](https://github.com/whenegghitsrock/console/issues/1269)
-- 修复英文控制台显示中文代码质量检查结果的问题 [#1278](https://github.com/whenegghitsrock/console/issues/1278)
+- 修复某些情况下编辑流水线时导致的数据丢失问题 [#1270](https://github.com/whenegghitsrock/console-carryon/issues/1270)
+- 修复点击 **Docker Container Registry Credentials** 时的报错问题 [#1269](https://github.com/whenegghitsrock/console-carryon/issues/1269)
+- 修复英文控制台显示中文代码质量检查结果的问题 [#1278](https://github.com/whenegghitsrock/console-carryon/issues/1278)
 - 修复 Jenkinsfile 中包含布尔值时的显示报错问题 [#3043](https://github.com/whenegghitsrock/kubesphere-carryon/issues/3043)
 - 修复当 PVC 不含有 `StorageClassName` 时存储管理页面无法显示的问题 [#1109](https://github.com/whenegghitsrock/ks-installer-carryon/issues/1109)

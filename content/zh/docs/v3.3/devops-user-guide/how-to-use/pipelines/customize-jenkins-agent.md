@@ -32,7 +32,7 @@ Weight: 112191
      inheritFrom: "maven" # 该自定义 Jenkins Agent 所继承的现有容器组模板的名称。
      containers:
      - name: "maven" # 该自定义 Jenkins Agent 所继承的现有容器组模板中指定的容器名称。
-       image: "kubespheredev/builder-maven:v3.2.0jdk11" # 此镜像只用于测试。您可以使用自己的镜像。
+       image: "kubesphereondev/builder-maven:v3.2.0jdk11" # 此镜像只用于测试。您可以使用自己的镜像。
    ```
 
    {{< notice note >}}

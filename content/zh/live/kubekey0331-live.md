@@ -63,8 +63,8 @@ A：和正常添加节点同样的操作。
 ### Q5：KubeKey 制作离线包的时候，拉取镜像时太慢，官方能否提供离线包，KubeKey 制作离线包出现中断后，重新执行打包还会从头拉取，这样太耗时了。
 
 A：KubeKey 的愿景就是能够给用户提供方便制作离线包的方法，用户可根据自己的实际情况自由的制作离线包。如果当前网络环境不佳，拉取镜像很慢，可能是因为 manifest 文件中的 images 列表里面的镜像仓库地址都是 `docker.io/xxx/xxx:tag`。有两种方法可以解决这个问题：
-- 手动修改这个列表，比如可以修改成 `registry.cn-beijing.aliyuncs.com/kubesphereio/xxx.tag`，这个是 KubeSphere 社区提供的国内镜像仓库。也可以修改成自己的私有镜像仓库。这样kk会通过列表中的镜像仓库地址拉取镜像。
-- 在一台联网空闲环境中执行 `export kkzone=cn`，然后部署一套 K8s 环境。再使用 `kk create manifest`，会生成一份镜像仓库地址均为 `registry.cn-beijing.aliyuncs.com/kubesphereio/xxx.tag` 的 manifest 文件。
+- 手动修改这个列表，比如可以修改成 `registry.cn-beijing.aliyuncs.com/kubesphereon/xxx.tag`，这个是 KubeSphere 社区提供的国内镜像仓库。也可以修改成自己的私有镜像仓库。这样kk会通过列表中的镜像仓库地址拉取镜像。
+- 在一台联网空闲环境中执行 `export kkzone=cn`，然后部署一套 K8s 环境。再使用 `kk create manifest`，会生成一份镜像仓库地址均为 `registry.cn-beijing.aliyuncs.com/kubesphereon/xxx.tag` 的 manifest 文件。
 
 ### Q6：现有的集群生成制品，会包含集群开启的组件、用户数据吗？
 

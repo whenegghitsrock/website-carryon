@@ -132,13 +132,13 @@ spec:
     docker-compose:
       version: v2.26.1
   images:
-  - docker.io/kubesphere/pause:3.9
-  - docker.io/kubesphere/kube-apiserver:v1.28.8
-  - docker.io/kubesphere/kube-controller-manager:v1.28.8
-  - docker.io/kubesphere/kube-scheduler:v1.28.8
-  - docker.io/kubesphere/kube-proxy:v1.28.8
+  - docker.io/kubesphereon/pause:3.9
+  - docker.io/kubesphereon/kube-apiserver:v1.28.8
+  - docker.io/kubesphereon/kube-controller-manager:v1.28.8
+  - docker.io/kubesphereon/kube-scheduler:v1.28.8
+  - docker.io/kubesphereon/kube-proxy:v1.28.8
   - docker.io/coredns/coredns:1.9.3
-  - docker.io/kubesphere/k8s-dns-node-cache:1.22.20
+  - docker.io/kubesphereon/k8s-dns-node-cache:1.22.20
   - docker.io/calico/kube-controllers:v3.27.3
   - docker.io/calico/cni:v3.27.3
   - docker.io/calico/node:v3.27.3
@@ -150,13 +150,13 @@ spec:
   - docker.io/cilium/operator-generic:v1.15.3
   - docker.io/hybridnetdev/hybridnet:v0.8.6
   - docker.io/kubeovn/kube-ovn:v1.10.10
-  - docker.io/kubesphere/multus-cni:v3.8
+  - docker.io/kubesphereon/multus-cni:v3.8
   - docker.io/openebs/provisioner-localpv:3.3.0
   - docker.io/openebs/linux-utils:3.3.0
   - docker.io/library/haproxy:2.9.6-alpine
   - docker.io/plndr/kube-vip:v0.7.2
-  - docker.io/kubesphere/kata-deploy:stable
-  - docker.io/kubesphere/node-feature-discovery:v0.10.0
+  - docker.io/kubesphereon/kata-deploy:stable
+  - docker.io/kubesphereon/node-feature-discovery:v0.10.0
   registry:
     auths: {}
  ```
@@ -214,13 +214,13 @@ spec:
     docker-compose:
       version: v2.26.1
   images:
-  - docker.io/kubesphere/pause:3.9
-  - docker.io/kubesphere/kube-apiserver:v1.28.8
-  - docker.io/kubesphere/kube-controller-manager:v1.28.8
-  - docker.io/kubesphere/kube-scheduler:v1.28.8
-  - docker.io/kubesphere/kube-proxy:v1.28.8
+  - docker.io/kubesphereon/pause:3.9
+  - docker.io/kubesphereon/kube-apiserver:v1.28.8
+  - docker.io/kubesphereon/kube-controller-manager:v1.28.8
+  - docker.io/kubesphereon/kube-scheduler:v1.28.8
+  - docker.io/kubesphereon/kube-proxy:v1.28.8
   - docker.io/coredns/coredns:1.9.3
-  - docker.io/kubesphere/k8s-dns-node-cache:1.22.20
+  - docker.io/kubesphereon/k8s-dns-node-cache:1.22.20
   - docker.io/calico/kube-controllers:v3.27.3
   - docker.io/calico/cni:v3.27.3
   - docker.io/calico/node:v3.27.3
@@ -232,14 +232,14 @@ spec:
   - docker.io/cilium/operator-generic:v1.15.3
   - docker.io/hybridnetdev/hybridnet:v0.8.6
   - docker.io/kubeovn/kube-ovn:v1.10.10
-  - docker.io/kubesphere/multus-cni:v3.8
+  - docker.io/kubesphereon/multus-cni:v3.8
   - docker.io/openebs/provisioner-localpv:3.3.0
   - docker.io/openebs/linux-utils:3.3.0
   - docker.io/library/haproxy:2.9.6-alpine
   - docker.io/plndr/kube-vip:v0.7.2
-  - docker.io/kubesphere/kata-deploy:stable
-  - docker.io/kubesphere/node-feature-discovery:v0.10.0
-  - docker.io/kubesphere/busybox:1.31.1
+  - docker.io/kubesphereon/kata-deploy:stable
+  - docker.io/kubesphereon/node-feature-discovery:v0.10.0
+  - docker.io/kubesphereon/busybox:1.31.1
   registry:
     auths: {}
 ```
@@ -424,7 +424,7 @@ spec:
       "registry.opsxlab.cn":
         certsPath: "/etc/docker/certs.d/registry.opsxlab.cn"
     privateRegistry: "registry.opsxlab.cn"
-    namespaceOverride: "kubesphereio"
+    namespaceOverride: "kubesphereon"
     registryMirrors: []
     insecureRegistries: []
   addons: []
@@ -500,7 +500,7 @@ ca.crt  registry.opsxlab.cn.cert  registry.opsxlab.cn.key
 
 ```bash
 ......
-07:04:34 CST Push multi-arch manifest list: registry.opsxlab.cn/kubesphereio/kube-controllers:v3.27.3
+07:04:34 CST Push multi-arch manifest list: registry.opsxlab.cn/kubesphereon/kube-controllers:v3.27.3
 INFO[0035] Retrieving digests of member images
 07:04:34 CST Digest: sha256:70bfc9dcf0296a14ae87035b8f80911970cb0990c4bb832fc4cf99937284c477 Length: 393
 07:04:34 CST success: [LocalHost]

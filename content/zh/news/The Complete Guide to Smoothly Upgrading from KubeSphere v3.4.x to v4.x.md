@@ -35,7 +35,7 @@ upgrade:
   enabled: true
   image:
     registry: ""
-    repository: kubesphere/ks-upgrade
+    repository: kubesphereon/ks-upgrade
     tag: "v4.1.3"
     pullPolicy: IfNotPresent
   persistenceVolume:
@@ -90,9 +90,9 @@ bash pre-check.sh
 
 ```bash
 # 指定镜像仓库地址
-# export IMAGE_REGISTRY=swr.cn-southwest-2.myhuaweicloud.com/ks 
+# export IMAGE_REGISTRY=registry.cn-beijing.aliyuncs.com 
 # 指定扩展组件镜像仓库地址
-# export EXTENSION_IMAGE_REGISTRY=swr.cn-southwest-2.myhuaweicloud.com/ks 
+# export EXTENSION_IMAGE_REGISTRY=registry.cn-beijing.aliyuncs.com 
 bash upgrade.sh host | tee host-upgrade.log
 ```
 
@@ -108,9 +108,9 @@ watch kubectl get pod -n kubesphere-system
 
 ```bash
 # 指定镜像仓库地址
-# export IMAGE_REGISTRY=swr.cn-southwest-2.myhuaweicloud.com/ks 
+# export IMAGE_REGISTRY=registry.cn-beijing.aliyuncs.com 
 # 指定扩展组件镜像仓库地址
-# export EXTENSION_IMAGE_REGISTRY=swr.cn-southwest-2.myhuaweicloud.com/ks 
+# export EXTENSION_IMAGE_REGISTRY=registry.cn-beijing.aliyuncs.com 
 bash upgrade.sh member | tee member-upgrade.log
 ```
 
@@ -141,7 +141,7 @@ helm -n kubesphere-controls-system list -a
 
 ```bash
 # 指定镜像仓库地址
-# export IMAGE_REGISTRY=swr.cn-southwest-2.myhuaweicloud.com/ks 
+# export IMAGE_REGISTRY=registry.cn-beijing.aliyuncs.com 
 bash upgrade.sh gateway kubesphere-router-<NAMESPACE> | tee gateway-upgrade.log
 ```
 
@@ -149,7 +149,7 @@ bash upgrade.sh gateway kubesphere-router-<NAMESPACE> | tee gateway-upgrade.log
 
 ```bash
 # 指定镜像仓库地址
-# export IMAGE_REGISTRY=swr.cn-southwest-2.myhuaweicloud.com/ks 
+# export IMAGE_REGISTRY=registry.cn-beijing.aliyuncs.com 
 bash upgrade.sh gateway all | tee gateway-upgrade.log
 ```
 

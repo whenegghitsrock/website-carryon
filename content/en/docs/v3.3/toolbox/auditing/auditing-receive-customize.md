@@ -150,7 +150,7 @@ spec:
     archivingRuleSelector:
       matchLabels: 
         type: persistence
-  image: kubesphere/kube-auditing-webhook:v0.1.0
+  image: kubesphereon/kube-auditing-webhook:v0.1.0
   archivingPriority: DEBUG
   alertingPriority: WARNING
   replicas: 2

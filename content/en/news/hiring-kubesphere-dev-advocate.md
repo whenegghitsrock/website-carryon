@@ -45,4 +45,4 @@ As a Developer Advocate at KubeSphere, your primary role will be to enhance our 
 - Competitive salary and incentives based on experience and performance.
 
 **How to Apply:**
-Please send your CV, a cover letter, and a portfolio of relevant work (e.g., articles, videos, GitHub repositories) to kubesphere@gmail.com. Make sure to mention how your experience aligns with the requirements of this role.
+Please send your CV, a cover letter, and a portfolio of relevant work (e.g., articles, videos, GitHub repositories) to whenegghitsrock@gmail.com. Make sure to mention how your experience aligns with the requirements of this role.

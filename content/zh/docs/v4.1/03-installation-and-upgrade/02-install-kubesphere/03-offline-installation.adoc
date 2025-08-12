@@ -169,174 +169,174 @@ spec:
     docker-compose:
       version: v2.26.1
   images:
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/pause:3.9
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver:v1.26.12
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager:v1.26.12
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler:v1.26.12
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy:v1.26.12
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/coredns:1.9.3
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache:1.22.20
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controllers:v3.27.4
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/cni:v3.27.4
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/node:v3.27.4
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/pod2daemon-flexvol:v3.27.4
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/typha:v3.27.4
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/provisioner-localpv:3.3.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/linux-utils:3.3.0
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/haproxy:2.9.6-alpine
-  - registry.cn-beijing.aliyuncs.com/kubesphereio/kube-vip:v0.7.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/pause:3.9
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-apiserver:v1.26.12
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controller-manager:v1.26.12
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-scheduler:v1.26.12
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy:v1.26.12
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/coredns:1.9.3
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-dns-node-cache:1.22.20
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controllers:v3.27.4
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/cni:v3.27.4
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/node:v3.27.4
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/pod2daemon-flexvol:v3.27.4
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/typha:v3.27.4
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/provisioner-localpv:3.3.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/linux-utils:3.3.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/haproxy:2.9.6-alpine
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-vip:v0.7.2
   ## ks-core
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/ks-apiserver:v4.1.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/ks-console:v4.1.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/ks-controller-manager:v4.1.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kubectl:v1.27.16
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/redis:7.2.4-alpine
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/haproxy:2.9.6-alpine
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/ks-extensions-museum:v1.1.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/ks-apiserver:v4.1.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/ks-console:v4.1.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/ks-controller-manager:v4.1.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.27.16
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/redis:7.2.4-alpine
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/haproxy:2.9.6-alpine
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/ks-extensions-museum:v1.1.2
   ## devops
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/devops-apiserver:v4.1.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/devops-controller:v4.1.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/devops-tools:v4.1.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/devops-jenkins:v4.1.2-2.346.3
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/jenkins/inbound-agent:4.10-2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-base:v3.2.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-nodejs:v3.2.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-maven:v3.2.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-maven:v3.2.1-jdk11
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-python:v3.2.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-go:v3.2.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-go:v3.2.2-1.16
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-go:v3.2.2-1.17
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-go:v3.2.2-1.18
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-base:v3.2.2-podman
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-nodejs:v3.2.0-podman
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-maven:v3.2.0-podman
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-maven:v3.2.1-jdk11-podman
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-python:v3.2.0-podman
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-go:v3.2.0-podman
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-go:v3.2.2-1.16-podman
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-go:v3.2.2-1.17-podman
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/builder-go:v3.2.2-1.18-podman
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/argoproj/argocd:v2.3.3
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/argoproj/argocd-applicationset:v0.4.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/dexidp/dex:v2.30.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/library/redis:6.2.6-alpine
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/devops-apiserver:v4.1.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/devops-controller:v4.1.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/devops-tools:v4.1.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/devops-jenkins:v4.1.2-2.346.3
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/inbound-agent:4.10-2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-base:v3.2.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-nodejs:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-maven:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-maven:v3.2.1-jdk11
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-python:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.2-1.16
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.2-1.17
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.2-1.18
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-base:v3.2.2-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-nodejs:v3.2.0-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-maven:v3.2.0-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-maven:v3.2.1-jdk11-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-python:v3.2.0-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.0-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.2-1.16-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.2-1.17-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/builder-go:v3.2.2-1.18-podman
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/argocd:v2.3.3
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/argocd-applicationset:v0.4.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/dex:v2.30.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/redis:6.2.6-alpine
   ## gatekeeper
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/gatekeeper-extension-apiserver:v1.0.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kubectl:v1.27.12
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/openpolicyagent/gatekeeper:v3.14.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/openpolicyagent/gatekeeper-crds:v3.14.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/gatekeeper-extension-apiserver:v1.0.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.27.12
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/gatekeeper:v3.14.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/gatekeeper-crds:v3.14.0
   ## gateway
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/nginx-ingress-controller:v1.4.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/gateway-apiserver:v1.0.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/gateway-controller-manager:v1.0.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kubectl:v1.27.16
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/nginx-ingress-controller:v1.4.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/gateway-apiserver:v1.0.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/gateway-controller-manager:v1.0.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.27.16
   ## grafana
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/curlimages/curl:7.85.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/grafana/grafana:10.4.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/library/busybox:1.31.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/curl:7.85.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/grafana:10.4.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/busybox:1.31.1
   ## kubeedge
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubeedge/iptables-manager:v1.13.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubeedge/cloudcore:v1.13.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubeedge/controller-manager:v1.13.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kubeedge-proxy:v0.4.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/iptables-manager:v1.13.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/cloudcore:v1.13.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/controller-manager:v1.13.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubeedge-proxy:v0.4.1
   ## kubefed
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kubefed-extension:v1.0.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kubefed:v0.8.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kubectl:v1.27.4
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubefed-extension:v1.0.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubefed:v0.8.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.27.4
   ## loki
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kubectl:v1.27.12
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/grafana/loki:3.0.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/grafana/loki-helm-test:ewelch-distributed-helm-chart-17db5ee
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/grafana/loki-canary:3.0.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/nginxinc/nginx-unprivileged:1.24-alpine
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/library/memcached:1.6.23-alpine
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/prom/memcached-exporter:v0.14.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kiwigrid/k8s-sidecar:1.24.3
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/minio/minio:RELEASE.2022-09-17T00-09-45Z
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/minio/mc:RELEASE.2022-09-16T09-16-47Z
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.27.12
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/loki:3.0.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/loki-helm-test:ewelch-distributed-helm-chart-17db5ee
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/loki-canary:3.0.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/nginx-unprivileged:1.24-alpine
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/memcached:1.6.23-alpine
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/memcached-exporter:v0.14.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-sidecar:1.24.3
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/minio:RELEASE.2022-09-17T00-09-45Z
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/mc:RELEASE.2022-09-16T09-16-47Z
   ## metrics-server
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/metrics-server:v0.7.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/addon-resizer:1.8.20
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.7.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/addon-resizer:1.8.20
   ## network
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/network-extension-apiserver:v1.1.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/network-extension-controller:v1.1.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/network-extension-apiserver:v1.1.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/network-extension-controller:v1.1.0
   ## openpitrix
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/apps-manage:v2.0.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/apps-manage:v2.0.1
   ## opensearch
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/opensearchproject/opensearch:2.8.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/library/busybox:1.35.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/opensearch-curator:v0.0.5
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/opensearchproject/opensearch-dashboards:2.8.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/opensearch:2.8.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/busybox:1.35.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/opensearch-curator:v0.0.5
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/opensearch-dashboards:2.8.0
   ## servicemesh
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/istio/pilot:1.16.5
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/istio/proxyv2:1.16.5
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/istio/istioctl:1.16.5
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kubectl:v1.27.4
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kiali-operator:v1.59.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kiali:v1.59
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/jaegertracing/jaeger-operator:1.35.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/jaegertracing/jaeger-agent:1.35
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/jaegertracing/jaeger-collector:1.35
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/jaegertracing/jaeger-query:1.35
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/jaegertracing/jaeger-es-index-cleaner:1.35
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/servicemesh-apiserver:v0.1.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/servicemesh-controller-manager:v0.1.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/pilot:1.16.5
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/proxyv2:1.16.5
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/istioctl:1.16.5
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.27.4
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kiali-operator:v1.59.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kiali:v1.59
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/jaeger-operator:1.35.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/jaeger-agent:1.35
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/jaeger-collector:1.35
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/jaeger-query:1.35
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/jaeger-es-index-cleaner:1.35
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/servicemesh-apiserver:v0.1.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/servicemesh-controller-manager:v0.1.0
   ## storage-utils
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/storageclass-accessor:v0.2.5
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/snapshot-controller:v4.2.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/snapshotclass-controller:v0.0.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/pvc-autoresizer:v0.3.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/storageclass-accessor:v0.2.5
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/snapshot-controller:v4.2.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/snapshotclass-controller:v0.0.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/pvc-autoresizer:v0.3.1
   ## tower
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/tower:v0.2.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/tower-extension:v1.0.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/tower:v0.2.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/tower-extension:v1.0.0
   ## vector
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/timberio/vector:0.39.0-debian
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kubectl:v1.27.12
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/vector-config:v0.2.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/vector:0.39.0-debian
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.27.12
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/vector-config:v0.2.1
   ## whizard-alerting
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/whizard-alerting-apiserver:v1.0.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/whizard-alerting-controller-manager:v1.0.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/thanosio/thanos:v0.36.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kubectl:v1.27.12
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/cortex-tenant:v1.12.5
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/prometheus-operator/prometheus-config-reloader:v0.75.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/whizard-alerting-apiserver:v1.0.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/whizard-alerting-controller-manager:v1.0.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/thanos:v0.36.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.27.12
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/cortex-tenant:v1.12.5
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-config-reloader:v0.75.1
   ## whizard-events
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kube-events-exporter:v0.8.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/jimmidyson/configmap-reload:v0.9.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-events-exporter:v0.8.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/configmap-reload:v0.9.0
   ## whizard-logging
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kubectl:v1.27.12
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/log-sidecar-injector:v1.3.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/jimmidyson/configmap-reload:v0.9.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/elastic/filebeat:6.7.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/timberio/vector:0.39.0-debian
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/library/alpine:3.14
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.27.12
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/log-sidecar-injector:v1.3.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/configmap-reload:v0.9.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/filebeat:6.7.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/vector:0.39.0-debian
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/alpine:3.14
   ## whizard-monitoring
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kubectl:v1.27.12
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kube-state-metrics:v2.12.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubespheredev/kube-webhook-certgen:v20221220-controller-v1.5.1-58-g787ea74b6
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/thanosio/thanos:v0.36.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/brancz/kube-rbac-proxy:v0.18.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/prometheus-operator/prometheus-config-reloader:v0.75.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/prometheus-operator/prometheus-operator:v0.75.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/prometheus/node-exporter:v1.8.1
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/prometheus/prometheus:v2.51.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/dcgm-exporter:3.3.5-3.4.0-ubuntu22.04
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/process-exporter:0.5.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/nginxinc/nginx-unprivileged:1.24
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/calico-exporter:v0.3.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/whizard-monitoring-helm-init:v0.1.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.27.12
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-state-metrics:v2.12.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-webhook-certgen:v20221220-controller-v1.5.1-58-g787ea74b6
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/thanos:v0.36.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-rbac-proxy:v0.18.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-config-reloader:v0.75.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-operator:v0.75.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/node-exporter:v1.8.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus:v2.51.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/dcgm-exporter:3.3.5-3.4.0-ubuntu22.04
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/process-exporter:0.5.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/nginx-unprivileged:1.24
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/calico-exporter:v0.3.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/whizard-monitoring-helm-init:v0.1.0
   ## whizard-notification
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kubectl:v1.27.12
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/kube-rbac-proxy:v0.11.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/alertmanager-proxy:v0.2.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/notification-manager-operator:v2.5.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/notification-manager:v2.5.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/notification-tenant-sidecar:v4.0.2
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/prometheus/alertmanager:v0.27.0
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/prometheus-operator/prometheus-config-reloader:v0.75.1
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kubectl:v1.27.12
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/kube-rbac-proxy:v0.11.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/alertmanager-proxy:v0.2.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/notification-manager-operator:v2.5.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/notification-manager:v2.5.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/notification-tenant-sidecar:v4.0.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/alertmanager:v0.27.0
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-config-reloader:v0.75.1
   ## whizard-telemetry
-  - swr.cn-southwest-2.myhuaweicloud.com/ks/kubesphere/whizard-telemetry-apiserver:v1.2.2
+  - registry.cn-beijing.aliyuncs.com/kubesphereon/whizard-telemetry-apiserver:v1.2.2
 
   registry:
     auths: {}
@@ -472,7 +472,7 @@ spec:
     # 如果离线包中为原始 dockerhub 镜像（即 manifest 文件中的镜像地址为 docker.io/***），可以将该参数设置为 dockerhub.kubekey.local/ks, 表示将镜像全部推送至名为 ks 的 harbor 项目中。
     privateRegistry: "dockerhub.kubekey.local" 
     # 如果构建离线包时 Kubernetes 镜像使用的是阿里云仓库镜像，需配置该参数。如果使用 dockerhub 镜像，则无需配置此参数。
-    namespaceOverride: "kubesphereio"
+    namespaceOverride: "kubesphereon"
     registryMirrors: []
     insecureRegistries: []
   addons: []
@@ -559,7 +559,7 @@ passwd="Harbor12345"
 harbor_projects=(
         ks
         kubesphere
-        kubesphereio
+        kubesphereon
         coredns
         calico
         flannel

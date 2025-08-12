@@ -75,7 +75,7 @@ Modify the Dockerfile as follows to define the Image Builder.
 
 ```
 # nginx-centos7
-FROM kubespheredev/s2i-base-centos7:1
+FROM kubesphereondev/s2i-base-centos7:1
 
 # Here you can specify the maintainer for the image that you're building
 LABEL maintainer="maintainer name <email@xxx.com>"
@@ -146,7 +146,7 @@ S2I scripts will use the flags defined in the Dockerfile as parameters. If you n
 
    {{< notice note >}}
 
-   By default, `s2i build` places the application source code in `/tmp/src`. The above commands copy the application source code to the working directory `/opt/app-root/src` defined by `kubespheredev/s2i-base-centos7:1`.
+   By default, `s2i build` places the application source code in `/tmp/src`. The above commands copy the application source code to the working directory `/opt/app-root/src` defined by `kubesphereondev/s2i-base-centos7:1`.
 
    {{</ notice >}}
 
@@ -172,7 +172,7 @@ S2I scripts will use the flags defined in the Dockerfile as parameters. If you n
    This is the nginx-centos7 S2I image:
    To use it, install S2I: https://github.com/whenegghitsrock/s2i-operator
    Sample invocation:
-   s2i build test/test-app kubespheredev/nginx-centos7 nginx-centos7-app
+   s2i build test/test-app kubesphereondev/nginx-centos7 nginx-centos7-app
    You can then run the resulting image via:
    docker run -d -p 8080:8080 nginx-centos7-app
    and see the test via http://localhost:8080
@@ -184,7 +184,7 @@ S2I scripts will use the flags defined in the Dockerfile as parameters. If you n
 1. Modify the image name in `Makefile`.
 
    ```bash
-   IMAGE_NAME = kubespheredev/nginx-centos7-s2ibuilder-sample
+   IMAGE_NAME = kubesphereondev/nginx-centos7-s2ibuilder-sample
    
    # Create an Image Builder named above based on the Dockerfile that was created previously.
    .PHONY: build
@@ -202,9 +202,9 @@ S2I scripts will use the flags defined in the Dockerfile as parameters. If you n
 
    ```bash
    $ make build
-   docker build -t kubespheredev/nginx-centos7-s2ibuilder-sample .
+   docker build -t kubesphereondev/nginx-centos7-s2ibuilder-sample .
    Sending build context to Docker daemon  164.9kB
-   Step 1/17 : FROM kubespheredev/s2i-base-centos7:1
+   Step 1/17 : FROM kubesphereondev/s2i-base-centos7:1
     ---> 48f8574c05df
    Step 2/17 : LABEL maintainer="Runze Xia <runzexia@yunify.com>"
     ---> Using cache
@@ -227,13 +227,13 @@ S2I scripts will use the flags defined in the Dockerfile as parameters. If you n
    Removing intermediate container c24819f6be27
     ---> c147c86f2cb8
    Successfully built c147c86f2cb8
-   Successfully tagged kubespheredev/nginx-centos7-s2ibuilder-sample:latest
+   Successfully tagged kubesphereondev/nginx-centos7-s2ibuilder-sample:latest
    ```
 
 3. With the Image Builder created, run the following command to create an application image.
 
    ```bash
-   $ s2i build ./test/test-app kubespheredev/nginx-centos7-s2ibuilder-sample:latest sample-app
+   $ s2i build ./test/test-app kubesphereondev/nginx-centos7-s2ibuilder-sample:latest sample-app
    ---> Building and installing application from source...
    Build completed successfully
    ```
@@ -268,9 +268,9 @@ metadata:
   name: nginx-demo
 spec:
   containerInfo:
-    - builderImage: kubespheredev/nginx-centos7-s2ibuilder-sample
+    - builderImage: kubesphereondev/nginx-centos7-s2ibuilder-sample
   codeFramework: nginx # type of code framework
-  defaultBaseImage: kubespheredev/nginx-centos7-s2ibuilder-sample # default Image Builder (can be replaced by a customized image)
+  defaultBaseImage: kubesphereondev/nginx-centos7-s2ibuilder-sample # default Image Builder (can be replaced by a customized image)
   version: 0.0.1 # Builder template version
   description: "This is an S2I builder template for NGINX builds whose result can be run directly without any further application server." # Builder template description
 ```

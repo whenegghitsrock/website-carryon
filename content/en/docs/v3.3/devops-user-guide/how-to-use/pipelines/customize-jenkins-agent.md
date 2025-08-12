@@ -32,7 +32,7 @@ This document describes how to customize a Jenkins agent on KubeSphere.
      inheritFrom: "maven" # The name of the existing pod template from which this customzied Jenkins agent inherits.
      containers:
      - name: "maven" # The container name specified in the existing pod template from which this customzied Jenkins agent inherits.
-       image: "kubespheredev/builder-maven:v3.2.0jdk11" # This image is used for testing purposes only. You can use your own images.
+       image: "kubesphereondev/builder-maven:v3.2.0jdk11" # This image is used for testing purposes only. You can use your own images.
    ```
 
    {{< notice note >}}

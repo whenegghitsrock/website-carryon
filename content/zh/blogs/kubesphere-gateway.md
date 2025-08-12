@@ -135,7 +135,7 @@ Helm Operator Watch 了 Gateway 和 Nginx 2 个 CRD 的资源，当前端发起�
 ```yaml
 gateway:
   watchesPath: /var/helm-charts/watches.yaml
-  repository: kubesphere/nginx-ingress-controller
+  repository: kubesphereon/nginx-ingress-controller
   tag: v1.1.0
   namespace: kubesphere-controls-system
 ```

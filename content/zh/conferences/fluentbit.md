@@ -114,7 +114,7 @@ metadata:
   labels:
     app.kubernetes.io/name: fluent-bit
 spec:
-  image: kubesphere/fluent-bit:v1.9.9
+  image: kubesphereon/fluent-bit:v1.9.9
   positionDB:
     hostPath:
       path: /var/lib/fluent-bit/

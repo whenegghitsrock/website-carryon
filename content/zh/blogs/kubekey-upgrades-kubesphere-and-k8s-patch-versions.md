@@ -131,14 +131,14 @@ pod/openldap-0                               1/1     Running     4 (143m ago)   
 pod/openpitrix-import-job-plzc5              0/1     Completed   0              139m    10.233.85.48    k8s-master-2   <none>           <none>
 
 NAME                                    READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS              IMAGES                                                                             SELECTOR
-deployment.apps/ks-apiserver            1/1     1            1           4d23h   ks-apiserver            registry.cn-beijing.aliyuncs.com/kubesphereio/ks-apiserver:v3.4.0                  app=ks-apiserver,tier=backend
-deployment.apps/ks-console              1/1     1            1           4d23h   ks-console              registry.cn-beijing.aliyuncs.com/kubesphereio/ks-console:v3.4.0                    app=ks-console,tier=frontend
-deployment.apps/ks-controller-manager   1/1     1            1           4d23h   ks-controller-manager   registry.cn-beijing.aliyuncs.com/kubesphereio/ks-controller-manager:v3.4.0         app=ks-controller-manager,tier=backend
-deployment.apps/ks-installer            1/1     1            1           4d23h   installer               registry.cn-beijing.aliyuncs.com/kubesphereio/ks-installer:v3.4.0                  app=ks-installer
-deployment.apps/minio                   1/1     1            1           4d23h   minio                   registry.cn-beijing.aliyuncs.com/kubesphereio/minio:RELEASE.2019-08-07T01-59-21Z   app=minio,release=ks-minio
+deployment.apps/ks-apiserver            1/1     1            1           4d23h   ks-apiserver            registry.cn-beijing.aliyuncs.com/kubesphereon/ks-apiserver:v3.4.0                  app=ks-apiserver,tier=backend
+deployment.apps/ks-console              1/1     1            1           4d23h   ks-console              registry.cn-beijing.aliyuncs.com/kubesphereon/ks-console:v3.4.0                    app=ks-console,tier=frontend
+deployment.apps/ks-controller-manager   1/1     1            1           4d23h   ks-controller-manager   registry.cn-beijing.aliyuncs.com/kubesphereon/ks-controller-manager:v3.4.0         app=ks-controller-manager,tier=backend
+deployment.apps/ks-installer            1/1     1            1           4d23h   installer               registry.cn-beijing.aliyuncs.com/kubesphereon/ks-installer:v3.4.0                  app=ks-installer
+deployment.apps/minio                   1/1     1            1           4d23h   minio                   registry.cn-beijing.aliyuncs.com/kubesphereon/minio:RELEASE.2019-08-07T01-59-21Z   app=minio,release=ks-minio
 
 NAME                        READY   AGE     CONTAINERS    IMAGES
-statefulset.apps/openldap   1/1     4d23h   openldap-ha   registry.cn-beijing.aliyuncs.com/kubesphereio/openldap:1.3.0
+statefulset.apps/openldap   1/1     4d23h   openldap-ha   registry.cn-beijing.aliyuncs.com/kubesphereon/openldap:1.3.0
 ```
 
 - 查看 Kubernetes 资源（**受限于篇幅，不展示 pod 结果**）
@@ -146,18 +146,18 @@ statefulset.apps/openldap   1/1     4d23h   openldap-ha   registry.cn-beijing.al
 ```bash
 [root@k8s-master-1 ~]# kubectl get pods,deployment,sts,ds -o wide -n kube-system
 NAME                                          READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS                     IMAGES                                                                    SELECTOR
-deployment.apps/calico-kube-controllers       1/1     1            1           4d23h   calico-kube-controllers        registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controllers:v3.26.1    k8s-app=calico-kube-controllers
-deployment.apps/coredns                       2/2     2            2           4d23h   coredns                        registry.cn-beijing.aliyuncs.com/kubesphereio/coredns:1.8.6               k8s-app=kube-dns
-deployment.apps/metrics-server                1/1     1            1           4d23h   metrics-server                 registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2       k8s-app=metrics-server
-deployment.apps/openebs-localpv-provisioner   1/1     1            1           4d23h   openebs-provisioner-hostpath   registry.cn-beijing.aliyuncs.com/kubesphereio/provisioner-localpv:3.3.0   name=openebs-localpv-provisioner,openebs.io/component-name=openebs-localpv-provisioner
+deployment.apps/calico-kube-controllers       1/1     1            1           4d23h   calico-kube-controllers        registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controllers:v3.26.1    k8s-app=calico-kube-controllers
+deployment.apps/coredns                       2/2     2            2           4d23h   coredns                        registry.cn-beijing.aliyuncs.com/kubesphereon/coredns:1.8.6               k8s-app=kube-dns
+deployment.apps/metrics-server                1/1     1            1           4d23h   metrics-server                 registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2       k8s-app=metrics-server
+deployment.apps/openebs-localpv-provisioner   1/1     1            1           4d23h   openebs-provisioner-hostpath   registry.cn-beijing.aliyuncs.com/kubesphereon/provisioner-localpv:3.3.0   name=openebs-localpv-provisioner,openebs.io/component-name=openebs-localpv-provisioner
 
 NAME                                   READY   AGE     CONTAINERS            IMAGES
-statefulset.apps/snapshot-controller   1/1     4d23h   snapshot-controller   registry.cn-beijing.aliyuncs.com/kubesphereio/snapshot-controller:v4.0.0
+statefulset.apps/snapshot-controller   1/1     4d23h   snapshot-controller   registry.cn-beijing.aliyuncs.com/kubesphereon/snapshot-controller:v4.0.0
 
 NAME                          DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR            AGE     CONTAINERS    IMAGES                                                                     SELECTOR
-daemonset.apps/calico-node    6         6         6       6            6           kubernetes.io/os=linux   4d23h   calico-node   registry.cn-beijing.aliyuncs.com/kubesphereio/node:v3.26.1                 k8s-app=calico-node
-daemonset.apps/kube-proxy     6         6         6       6            6           kubernetes.io/os=linux   4d23h   kube-proxy    registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy:v1.24.12          k8s-app=kube-proxy
-daemonset.apps/nodelocaldns   6         6         6       6            6           <none>                   4d23h   node-cache    registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache:1.15.12   k8s-app=nodelocaldns
+daemonset.apps/calico-node    6         6         6       6            6           kubernetes.io/os=linux   4d23h   calico-node   registry.cn-beijing.aliyuncs.com/kubesphereon/node:v3.26.1                 k8s-app=calico-node
+daemonset.apps/kube-proxy     6         6         6       6            6           kubernetes.io/os=linux   4d23h   kube-proxy    registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy:v1.24.12          k8s-app=kube-proxy
+daemonset.apps/nodelocaldns   6         6         6       6            6           <none>                   4d23h   node-cache    registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-dns-node-cache:1.15.12   k8s-app=nodelocaldns
 ```
 
 - 查看二进制文件
@@ -595,14 +595,14 @@ pod/openldap-0                               1/1     Running     4 (5h15m ago)  
 pod/openpitrix-import-job-wcccl              0/1     Completed   0               42s     10.233.80.34    k8s-master-1   <none>           <none>
 
 NAME                                    READY   UP-TO-DATE   AVAILABLE   AGE    CONTAINERS              IMAGES                                                                             SELECTOR
-deployment.apps/ks-apiserver            1/1     1            1           5d2h   ks-apiserver            registry.cn-beijing.aliyuncs.com/kubesphereio/ks-apiserver:v3.4.1                  app=ks-apiserver,tier=backend
-deployment.apps/ks-console              1/1     1            1           5d2h   ks-console              registry.cn-beijing.aliyuncs.com/kubesphereio/ks-console:v3.4.1                    app=ks-console,tier=frontend
-deployment.apps/ks-controller-manager   1/1     1            1           5d2h   ks-controller-manager   registry.cn-beijing.aliyuncs.com/kubesphereio/ks-controller-manager:v3.4.1         app=ks-controller-manager,tier=backend
-deployment.apps/ks-installer            1/1     1            1           5d2h   installer               registry.cn-beijing.aliyuncs.com/kubesphereio/ks-installer:v3.4.1                  app=ks-installer
-deployment.apps/minio                   1/1     1            1           5d2h   minio                   registry.cn-beijing.aliyuncs.com/kubesphereio/minio:RELEASE.2019-08-07T01-59-21Z   app=minio,release=ks-minio
+deployment.apps/ks-apiserver            1/1     1            1           5d2h   ks-apiserver            registry.cn-beijing.aliyuncs.com/kubesphereon/ks-apiserver:v3.4.1                  app=ks-apiserver,tier=backend
+deployment.apps/ks-console              1/1     1            1           5d2h   ks-console              registry.cn-beijing.aliyuncs.com/kubesphereon/ks-console:v3.4.1                    app=ks-console,tier=frontend
+deployment.apps/ks-controller-manager   1/1     1            1           5d2h   ks-controller-manager   registry.cn-beijing.aliyuncs.com/kubesphereon/ks-controller-manager:v3.4.1         app=ks-controller-manager,tier=backend
+deployment.apps/ks-installer            1/1     1            1           5d2h   installer               registry.cn-beijing.aliyuncs.com/kubesphereon/ks-installer:v3.4.1                  app=ks-installer
+deployment.apps/minio                   1/1     1            1           5d2h   minio                   registry.cn-beijing.aliyuncs.com/kubesphereon/minio:RELEASE.2019-08-07T01-59-21Z   app=minio,release=ks-minio
 
 NAME                        READY   AGE    CONTAINERS    IMAGES
-statefulset.apps/openldap   1/1     5d2h   openldap-ha   registry.cn-beijing.aliyuncs.com/kubesphereio/openldap:1.3.0
+statefulset.apps/openldap   1/1     5d2h   openldap-ha   registry.cn-beijing.aliyuncs.com/kubesphereon/openldap:1.3.0
 ```
 
 **分析执行（不完全）结果：**
@@ -794,14 +794,14 @@ tcp    LISTEN     0      4000   127.0.0.1:6443                  *:*             
 
 ```bash
 [root@k8s-master-1 ~]# crictl images | grep v1.24
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver            v1.24.12            2d5d51b77357e       34.1MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-apiserver            v1.24.14            b651b48a617a5       34.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager   v1.24.12            d30605171488d       31.3MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controller-manager   v1.24.14            d40212fa9cf04       31.5MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy                v1.24.12            562ccc25ea629       39.6MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy                v1.24.14            e57c0d007d1ef       39.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler            v1.24.12            cfa5d12eaa131       15.7MB
-registry.cn-beijing.aliyuncs.com/kubesphereio/kube-scheduler            v1.24.14            19bf7b80c50e5       15.8MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-apiserver            v1.24.12            2d5d51b77357e       34.1MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-apiserver            v1.24.14            b651b48a617a5       34.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controller-manager   v1.24.12            d30605171488d       31.3MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controller-manager   v1.24.14            d40212fa9cf04       31.5MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy                v1.24.12            562ccc25ea629       39.6MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy                v1.24.14            e57c0d007d1ef       39.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-scheduler            v1.24.12            cfa5d12eaa131       15.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/kube-scheduler            v1.24.14            19bf7b80c50e5       15.8MB
 ```
 
 ### 6.2 Kubernetes 升级后验证
@@ -824,18 +824,18 @@ k8s-worker-3   Ready    worker                 5d1h   v1.24.14   192.168.9.97   
 ```bash
 [root@k8s-master-1 kubekey]# kubectl get deployment,sts,ds -o wide -n kube-system
 NAME                                          READY   UP-TO-DATE   AVAILABLE   AGE    CONTAINERS                     IMAGES                                                                    SELECTOR
-deployment.apps/calico-kube-controllers       1/1     1            1           5d3h   calico-kube-controllers        registry.cn-beijing.aliyuncs.com/kubesphereio/kube-controllers:v3.26.1    k8s-app=calico-kube-controllers
-deployment.apps/coredns                       2/2     2            2           5d3h   coredns                        registry.cn-beijing.aliyuncs.com/kubesphereio/coredns:1.8.6               k8s-app=kube-dns
-deployment.apps/metrics-server                1/1     1            1           5d3h   metrics-server                 registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2       k8s-app=metrics-server
-deployment.apps/openebs-localpv-provisioner   1/1     1            1           5d3h   openebs-provisioner-hostpath   registry.cn-beijing.aliyuncs.com/kubesphereio/provisioner-localpv:3.3.0   name=openebs-localpv-provisioner,openebs.io/component-name=openebs-localpv-provisioner
+deployment.apps/calico-kube-controllers       1/1     1            1           5d3h   calico-kube-controllers        registry.cn-beijing.aliyuncs.com/kubesphereon/kube-controllers:v3.26.1    k8s-app=calico-kube-controllers
+deployment.apps/coredns                       2/2     2            2           5d3h   coredns                        registry.cn-beijing.aliyuncs.com/kubesphereon/coredns:1.8.6               k8s-app=kube-dns
+deployment.apps/metrics-server                1/1     1            1           5d3h   metrics-server                 registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2       k8s-app=metrics-server
+deployment.apps/openebs-localpv-provisioner   1/1     1            1           5d3h   openebs-provisioner-hostpath   registry.cn-beijing.aliyuncs.com/kubesphereon/provisioner-localpv:3.3.0   name=openebs-localpv-provisioner,openebs.io/component-name=openebs-localpv-provisioner
 
 NAME                                   READY   AGE    CONTAINERS            IMAGES
-statefulset.apps/snapshot-controller   1/1     5d3h   snapshot-controller   registry.cn-beijing.aliyuncs.com/kubesphereio/snapshot-controller:v4.0.0
+statefulset.apps/snapshot-controller   1/1     5d3h   snapshot-controller   registry.cn-beijing.aliyuncs.com/kubesphereon/snapshot-controller:v4.0.0
 
 NAME                          DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR            AGE    CONTAINERS    IMAGES                                                                     SELECTOR
-daemonset.apps/calico-node    6         6         6       6            6           kubernetes.io/os=linux   5d3h   calico-node   registry.cn-beijing.aliyuncs.com/kubesphereio/node:v3.26.1                 k8s-app=calico-node
-daemonset.apps/kube-proxy     6         6         6       6            6           kubernetes.io/os=linux   5d3h   kube-proxy    registry.cn-beijing.aliyuncs.com/kubesphereio/kube-proxy:v1.24.14          k8s-app=kube-proxy
-daemonset.apps/nodelocaldns   6         6         6       6            6           <none>                   5d3h   node-cache    registry.cn-beijing.aliyuncs.com/kubesphereio/k8s-dns-node-cache:1.15.12   k8s-app=nodelocaldns
+daemonset.apps/calico-node    6         6         6       6            6           kubernetes.io/os=linux   5d3h   calico-node   registry.cn-beijing.aliyuncs.com/kubesphereon/node:v3.26.1                 k8s-app=calico-node
+daemonset.apps/kube-proxy     6         6         6       6            6           kubernetes.io/os=linux   5d3h   kube-proxy    registry.cn-beijing.aliyuncs.com/kubesphereon/kube-proxy:v1.24.14          k8s-app=kube-proxy
+daemonset.apps/nodelocaldns   6         6         6       6            6           <none>                   5d3h   node-cache    registry.cn-beijing.aliyuncs.com/kubesphereon/k8s-dns-node-cache:1.15.12   k8s-app=nodelocaldns
 ```
 
 - 查看二进制文件

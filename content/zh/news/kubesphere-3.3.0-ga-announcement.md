@@ -147,7 +147,7 @@ v3.3.0 默认集成了 OpenELB，即使是在非公有云环境的 K8s 集群下
 
 借助于开源社区的力量，KubeSphere 迅速走向全球，目前 KubeSphere 的用户遍布全球，覆盖超过了 **100** 个国家和地区，下载量近**百万**，拥有贡献者近 **300 人**，主仓库在 GitHub 上 Star 数超过 **10000**，Fork 数超 **1500**。v3.3.0 Console 除了支持中、英、繁中和西班牙语之外，还支持了更多的语种，进一步拓展了海外市场。
 
-未来 KubeSphere 团队将继续保持开源、开放的理念，v3.3.0 带来的众多优化也早已在 GitHub 开源，例如 [Console](https://github.com/whenegghitsrock/console/)、[OpenELB](https://github.com/whenegghitsrock/openelb/)、[Fluent Operator](https://github.com/fluent/fluent-operator)、 [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon/)、[KubeEye](https://github.com/whenegghitsrock/kubeeye/)、[Notification Manager](https://github.com/whenegghitsrock/notification-manager/)、[Kube-Events](https://github.com/whenegghitsrock/kube-events/)、[ks-devops](https://github.com/whenegghitsrock/ks-devops/)，相关的代码与设计文档在 GitHub 相关仓库都可以找到，欢迎大家在 GitHub 给我们 Star + Fork + PR 三连。
+未来 KubeSphere 团队将继续保持开源、开放的理念，v3.3.0 带来的众多优化也早已在 GitHub 开源，例如 [Console](https://github.com/whenegghitsrock/console-carryon/)、[OpenELB](https://github.com/whenegghitsrock/openelb/)、[Fluent Operator](https://github.com/fluent/fluent-operator)、 [KubeKey](https://github.com/whenegghitsrock/kubekey-carryon/)、[KubeEye](https://github.com/whenegghitsrock/kubeeye/)、[Notification Manager](https://github.com/whenegghitsrock/notification-manager/)、[Kube-Events](https://github.com/whenegghitsrock/kube-events/)、[ks-devops](https://github.com/whenegghitsrock/ks-devops/)，相关的代码与设计文档在 GitHub 相关仓库都可以找到，欢迎大家在 GitHub 给我们 Star + Fork + PR 三连。
 
 ## 安装升级
 

@@ -663,24 +663,24 @@ Please check the result using the command:
 
 ```bash
 # 拉取 arm64 镜像
-crictl pull registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2-arm64  --platform arm64
+crictl pull registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2-arm64  --platform arm64
 ```
 
 - 镜像重新打 tag（~~可不做~~ ）
 
 ```bash
 # 删除 amd64 镜像
-#crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2
+#crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2
 
 # 重新打 tag
-# ctr -n k8s.io images tag registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2-arm64 registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2
+# ctr -n k8s.io images tag registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2-arm64 registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2
 ```
 
 - 重新部署组件
 
 ```bash
 # 修改 Deployment 使用的镜像，并重启
-kubectl set image deployment/metrics-server metrics-server=registry.cn-beijing.aliyuncs.com/kubesphereio/metrics-server:v0.4.2-arm64 -n kube-system
+kubectl set image deployment/metrics-server metrics-server=registry.cn-beijing.aliyuncs.com/kubesphereon/metrics-server:v0.4.2-arm64 -n kube-system
 kubectl rollout restart deployment/metrics-server -n kube-system
 ```
 
@@ -690,20 +690,20 @@ kubectl rollout restart deployment/metrics-server -n kube-system
 
 ```bash
 # 找个相同版本的 ARM 架构的镜像
-crictl pull kubespheredev/argocd-applicationset-arm64:v0.4.1
+crictl pull kubesphereondev/argocd-applicationset-arm64:v0.4.1
 ```
 
 - 镜像重新打 tag（**为了保持镜像名称风格一致**）
 
 ```bash
-ctr -n k8s.io images tag docker.io/kubespheredev/argocd-applicationset-arm64:v0.4.1 registry.cn-beijing.aliyuncs.com/kubesphereio/argocd-applicationset-arm64:v0.4.1
+ctr -n k8s.io images tag docker.io/kubesphereondev/argocd-applicationset-arm64:v0.4.1 registry.cn-beijing.aliyuncs.com/kubesphereon/argocd-applicationset-arm64:v0.4.1
 ```
 
 - 重新部署组件
 
 ```bash
 # 修改 Deployment 使用的镜像，并重启
-kubectl set image deployment/devops-argocd-applicationset-controller applicationset-controller=registry.cn-beijing.aliyuncs.com/kubesphereio/argocd-applicationset-arm64:v0.4.1 -n argocd
+kubectl set image deployment/devops-argocd-applicationset-controller applicationset-controller=registry.cn-beijing.aliyuncs.com/kubesphereon/argocd-applicationset-arm64:v0.4.1 -n argocd
 kubectl rollout restart deployment/devops-argocd-applicationset-controller -n argocd
 ```
 
@@ -722,21 +722,21 @@ kubectl get pods -o wide -n argocd | grep applicationset-controller
 crictl pull istio/pilot:1.15.7 --platform arm64
 
 # 确保镜像架构是 arm64
-[root@ks-master-2 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/pilot:1.15.7 | grep arch
+[root@ks-master-2 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/pilot:1.15.7 | grep arch
       "architecture": "arm64",
 ```
 
 - 镜像重新打 tag
 
 ```bash
-ctr -n k8s.io images tag docker.io/istio/pilot:1.15.7 registry.cn-beijing.aliyuncs.com/kubesphereio/pilot:1.15.7
+ctr -n k8s.io images tag docker.io/istio/pilot:1.15.7 registry.cn-beijing.aliyuncs.com/kubesphereon/pilot:1.15.7
 ```
 
 - 重新部署组件
 
 ```bash
 # 修改 Deployment 使用的镜像，并重启
-kubectl set image deployment/istiod-1-14-6 discovery=registry.cn-beijing.aliyuncs.com/kubesphereio/pilot:1.15.7 -n istio-system
+kubectl set image deployment/istiod-1-14-6 discovery=registry.cn-beijing.aliyuncs.com/kubesphereon/pilot:1.15.7 -n istio-system
 kubectl rollout restart deployment/istiod-1-14-6 -n istio-system
 ```
 
@@ -757,14 +757,14 @@ crictl pull mirrorgooglecontainers/defaultbackend-arm64:1.4
 - 镜像重新打 tag（**为了保持镜像名称风格一致**）
 
 ```bash
-ctr -n k8s.io images tag docker.io/mirrorgooglecontainers/defaultbackend-arm64:1.4 registry.cn-beijing.aliyuncs.com/kubesphereio/defaultbackend-arm64:1.4
+ctr -n k8s.io images tag docker.io/mirrorgooglecontainers/defaultbackend-arm64:1.4 registry.cn-beijing.aliyuncs.com/kubesphereon/defaultbackend-arm64:1.4
 ```
 
 - 重新部署组件
 
 ```bash
 # 修改 Deployment 使用的镜像，并重启
-kubectl set image deployment/default-http-backend default-http-backend=registry.cn-beijing.aliyuncs.com/kubesphereio/defaultbackend-arm64:1.4 -n kubesphere-controls-system
+kubectl set image deployment/default-http-backend default-http-backend=registry.cn-beijing.aliyuncs.com/kubesphereon/defaultbackend-arm64:1.4 -n kubesphere-controls-system
 kubectl rollout restart deployment/default-http-backend -n kubesphere-controls-system
 ```
 
@@ -780,25 +780,25 @@ kubectl get pods -o wide -n kubesphere-controls-system | grep default-http-backe
 
 ```bash
 # 没有找到同版本的，只能找了一个相近版本的 ARM 架构的镜像
-crictl pull docker.io/kubesphere/ks-jenkins:v3.4.1-2.319.3  --platform arm64
+crictl pull docker.io/kubesphereon/ks-jenkins:v3.4.1-2.319.3  --platform arm64
 
 # 确保 image 架构是 arm64
-[root@ksp-master-1 ~]# crictl inspecti docker.io/kubesphere/ks-jenkins:v3.4.1-2.319.3 | grep arch
+[root@ksp-master-1 ~]# crictl inspecti docker.io/kubesphereon/ks-jenkins:v3.4.1-2.319.3 | grep arch
       "architecture": "arm64",
 ```
 
 - 镜像重新打 tag（**为了保持镜像名风格一致**）
 
 ```bash
-ctr -n k8s.io images tag docker.io/kubesphere/ks-jenkins:v3.4.1-2.319.3 registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.4.1-2.319.3
+ctr -n k8s.io images tag docker.io/kubesphereon/ks-jenkins:v3.4.1-2.319.3 registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.4.1-2.319.3
 ```
 
 - 重新部署组件
 
 ```bash
 # 修改 Deployment 使用的镜像及镜像拉取策略，并重新部署
-kubectl set image deployment/devops-jenkins devops-jenkins=registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.4.1-2.319.3 -n kubesphere-devops-system
-kubectl set image deployment/devops-jenkins copy-default-config=registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.4.1-2.319.3 -n kubesphere-devops-system
+kubectl set image deployment/devops-jenkins devops-jenkins=registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.4.1-2.319.3 -n kubesphere-devops-system
+kubectl set image deployment/devops-jenkins copy-default-config=registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.4.1-2.319.3 -n kubesphere-devops-system
 kubectl patch deployment devops-jenkins --patch '{"spec": {"template": {"spec": {"containers": [{"name": "devops-jenkins","imagePullPolicy": "IfNotPresent"}]}}}}' -n kubesphere-devops-system
 kubectl patch deployment devops-jenkins --patch '{"spec": {"template": {"spec": {"initContainers": [{"name": "copy-default-config","imagePullPolicy": "IfNotPresent"}]}}}}' -n kubesphere-devops-system
 
@@ -824,17 +824,17 @@ kubesphere-monitoring-system   thanos-ruler-kubesphere-1                        
 
 ```bash
 [root@ksp-master-1 kubekey]# kubectl describe pod thanos-ruler-kubesphere-0 -n kubesphere-monitoring-system | grep Image:
-    Image:         registry.cn-beijing.aliyuncs.com/kubesphereio/thanos:v0.31.0
-    Image:         registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus-config-reloader:v0.55.1
+    Image:         registry.cn-beijing.aliyuncs.com/kubesphereon/thanos:v0.31.0
+    Image:         registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-config-reloader:v0.55.1
 ```
 
 - 查看异常 Pod 镜像架构（**镜像架构没问题**）
 
 ```bash
-[root@ksp-master-1 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/thanos:v0.31.0 | grep arch
+[root@ksp-master-1 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/thanos:v0.31.0 | grep arch
       "architecture": "arm64",
 
-[root@ksp-master-1 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/prometheus-config-reloader:v0.55.1 | grep arch
+[root@ksp-master-1 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/prometheus-config-reloader:v0.55.1 | grep arch
       "architecture": "arm64",
 ```
 
@@ -857,12 +857,12 @@ crictl pull minio/mc:RELEASE.2020-11-25T23-04-07Z-arm64
 
 ```bash
 # minio
-crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereio/minio:RELEASE.2019-08-07T01-59-21Z
-ctr -n k8s.io images tag docker.io/minio/minio:RELEASE.2020-11-25T22-36-25Z-arm64 registry.cn-beijing.aliyuncs.com/kubesphereio/minio:RELEASE.2019-08-07T01-59-21Z
+crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereon/minio:RELEASE.2019-08-07T01-59-21Z
+ctr -n k8s.io images tag docker.io/minio/minio:RELEASE.2020-11-25T22-36-25Z-arm64 registry.cn-beijing.aliyuncs.com/kubesphereon/minio:RELEASE.2019-08-07T01-59-21Z
 
 # mc
-crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereio/mc:RELEASE.2019-08-07T23-14-43Z
-ctr -n k8s.io images tag --force docker.io/minio/mc:RELEASE.2020-11-25T23-04-07Z-arm64 registry.cn-beijing.aliyuncs.com/kubesphereio/mc:RELEASE.2019-08-07T23-14-43Z
+crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereon/mc:RELEASE.2019-08-07T23-14-43Z
+ctr -n k8s.io images tag --force docker.io/minio/mc:RELEASE.2020-11-25T23-04-07Z-arm64 registry.cn-beijing.aliyuncs.com/kubesphereon/mc:RELEASE.2019-08-07T23-14-43Z
 ```
 
 - 重新部署组件
@@ -905,13 +905,13 @@ kubesphere-system              ks-console-6f77f6f49d-wgd94                      
 
 ```bash
 [root@ksp-master-3 ~]# crictl image ls | grep ks-console
-registry.cn-beijing.aliyuncs.com/kubesphereio/ks-console                    v3.4.0                               42b2364bcafe3       38.7MB
+registry.cn-beijing.aliyuncs.com/kubesphereon/ks-console                    v3.4.0                               42b2364bcafe3       38.7MB
 ```
 
 - 查看异常 Pod 的镜像架构（**表面上看着没问题，架构匹配**）
 
 ```bash
-[root@ksp-master-3 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereio/ks-console:v3.4.0  | grep archite
+[root@ksp-master-3 ~]# crictl inspecti registry.cn-beijing.aliyuncs.com/kubesphereon/ks-console:v3.4.0  | grep archite
       "architecture": "arm64",
 ```
 
@@ -944,8 +944,8 @@ docker push zstack/ks-console:v3.4.0
 ```bash
 # 服务器拉取新镜像
 crictl pull docker.io/zstack/ks-console:v3.4.0
-crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereio/ks-console:v3.4.0
-ctr -n k8s.io images tag --force docker.io/zstack/ks-console:v3.4.0 registry.cn-beijing.aliyuncs.com/kubesphereio/ks-console:v3.4.0
+crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereon/ks-console:v3.4.0
+ctr -n k8s.io images tag --force docker.io/zstack/ks-console:v3.4.0 registry.cn-beijing.aliyuncs.com/kubesphereon/ks-console:v3.4.0
 ```
 
 - 重新部署
@@ -1414,8 +1414,8 @@ kubesphere-logging-system      opensearch-logging-curator-opensearch-curator-283
 
 # 删除 amd64 镜像并重打 Tag（受限于 fluentbit-operator，会自动变更任何手改的配置，就不改 deployment 的配置了）
 crictl pull kubesphere/fluent-bit:v2.0.6 --platform arm64
-crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereio/fluent-bit:v1.9.4
-ctr -n k8s.io images tag --force docker.io/kubesphere/fluent-bit:v2.0.6 registry.cn-beijing.aliyuncs.com/kubesphereio/fluent-bit:v1.9.4
+crictl rmi registry.cn-beijing.aliyuncs.com/kubesphereon/fluent-bit:v1.9.4
+ctr -n k8s.io images tag --force docker.io/kubesphereon/fluent-bit:v2.0.6 registry.cn-beijing.aliyuncs.com/kubesphereon/fluent-bit:v1.9.4
 
 # 销毁 pod 重建（每个节点的都要销毁）
 kubectl delete pod fluent-bit-l5lx4 -n kubesphere-logging-system

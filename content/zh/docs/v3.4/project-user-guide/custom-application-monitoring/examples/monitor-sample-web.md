@@ -23,7 +23,7 @@ weight: 10813
 
 该示例应用程序通过 Endpoint `http://localhost:2112/metrics` 暴露应用具体指标。
 
-在本教程中，您可以使用现成的镜像 `kubespheredev/promethues-example-app`。源代码请见 [kubesphere/prometheus-example-app](https://github.com/whenegghitsrock/prometheus-example-app)。您也可以按照 Prometheus 官方文档 [Instrument A Go Application For Prometheus](https://prometheus.io/docs/guides/go-application/) 进行操作。
+在本教程中，您可以使用现成的镜像 `kubesphereondev/promethues-example-app`。源代码请见 [kubesphere/prometheus-example-app](https://github.com/whenegghitsrock/prometheus-example-app)。您也可以按照 Prometheus 官方文档 [Instrument A Go Application For Prometheus](https://prometheus.io/docs/guides/go-application/) 进行操作。
 
 ### 步骤 2：将应用程序打包成 Helm Chart
 

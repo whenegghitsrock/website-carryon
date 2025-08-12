@@ -297,8 +297,8 @@ kubectl apply -f ks-core/charts/ks-crds/crds/
 ```
 # 该命令仅需在 host 集群上执行
 # 如果访问 dockerhub 受限，在以下命令中添加 
-# --set global.imageRegistry=swr.cn-southwest-2.myhuaweicloud.com/ks 
-# --set extension.imageRegistry=swr.cn-southwest-2.myhuaweicloud.com/ks 
+# --set global.imageRegistry=registry.cn-beijing.aliyuncs.com 
+# --set extension.imageRegistry=registry.cn-beijing.aliyuncs.com 
 # 如果无法访问 charts.docs.kubesphere-carryon.top, 可将 charts.docs.kubesphere-carryon.top 替换为 charts.kubesphere.com.cn
 
 helm upgrade --install -n kubesphere-system --create-namespace ks-core https://charts.kubesphere-carryon.top/main/ks-core-1.1.3.tgz --debug --wait
@@ -327,7 +327,7 @@ Host 集群部署好之后，进入工作台点击**集群管理**：
 ```
 # 如果访问 dockerhub 受限，此处可填，如果能够正常访问 dockerhub，可跳过该步骤。
 global:
-  imageRegistry: swr.cn-southwest-2.myhuaweicloud.com/ks
+  imageRegistry: registry.cn-beijing.aliyuncs.com
 ```
 
 ![](http://pek3b.qingstor.com/kubesphere-community/images/ks-v4-install-guide-6.png)

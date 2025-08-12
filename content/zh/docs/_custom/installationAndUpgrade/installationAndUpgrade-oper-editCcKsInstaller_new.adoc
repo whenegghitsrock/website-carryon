@@ -32,7 +32,7 @@ include::../../../_ks_components/admonitions/admonEnd.adoc[]
 // Bash
 include::../../../_ks_components/code/bash.adoc[]
 
-sed -i "s#^\s*image: kubesphere.*/ks-installer:.*#     
+sed -i "s#^\s*image: kubesphereon.*/ks-installer:.*#     
 image: dockerhub.kubekey.local/kubesphere/ks-installer:v3.5.0#" kubesphere-installer.yaml
 
 ----

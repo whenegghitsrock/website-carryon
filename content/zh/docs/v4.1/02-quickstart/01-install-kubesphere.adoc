@@ -78,12 +78,12 @@ include::../../../_ks_components/admonitions/note.adoc[]
 
 [,bash]
 ----
---set global.imageRegistry=swr.cn-southwest-2.myhuaweicloud.com/ks
+--set global.imageRegistry=registry.cn-beijing.aliyuncs.com
 ----
 
 [,bash]
 ----
---set extension.imageRegistry=swr.cn-southwest-2.myhuaweicloud.com/ks
+--set extension.imageRegistry=registry.cn-beijing.aliyuncs.com
 ----
 
 include::../../../_ks_components/admonitions/admonEnd.adoc[]

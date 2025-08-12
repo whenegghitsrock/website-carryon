@@ -54,7 +54,7 @@ Server: Jetty(9.4.43.v20210629)
 ```bash
 [root@ks-k8s-master-0 ~]# kubectl get deploy  devops-jenkins -n kubesphere-devops-system -o wide
 NAME             READY   UP-TO-DATE   AVAILABLE   AGE    CONTAINERS       IMAGES                                                                    SELECTOR
-devops-jenkins   1/1     1            1           101d   devops-jenkins   registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.3.0-2.319.1   component=devops-jenkins-master
+devops-jenkins   1/1     1            1           101d   devops-jenkins   registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.3.0-2.319.1   component=devops-jenkins-master
 ```
 
 > **说明：** 从结果中可以看到 KubeSphere 3.3.0 采用的 Jenkins 版本为 **2.319.1**，跟漏扫报告中的结果一致。
@@ -486,7 +486,7 @@ INFO: Building Docker image kubesphere/ks-jenkins:v3.3.0-2.375.3
  => exporting to image                                                                      2.0s
  => => exporting layers                                                                     1.9s
  => => writing image sha256:23c59911c9309bb8436716797ab488e80b3d7dbeea0135c9b8c9faa230d24f  0.0s
- => => naming to docker.io/kubesphere/ks-jenkins:v3.3.0-2.375.3
+ => => naming to docker.io/kubesphereon/ks-jenkins:v3.3.0-2.375.3
 ```
 
 > **注意：** 构建过程会通过 Maven 下载很多依赖包，具体时长视网络和机器配置而定。
@@ -597,12 +597,12 @@ Server: Jetty(10.0.12)
 
 如果使用离线镜像自定义域名部署的集群，推送镜像到内网 Harbor 仓库 (此过程略)。
 
-如果用的在线互联网的镜像，比如我的环境就是使用的 **registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.3.0-2.319.1**。 手工推送镜像到服务器并修改 tag 名字。
+如果用的在线互联网的镜像，比如我的环境就是使用的 **registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.3.0-2.319.1**。 手工推送镜像到服务器并修改 tag 名字。
 
 ```bash
 # 在打包服务器导出自定义构建的 Image
-docker tag kubesphere/ks-jenkins:v3.3.0-2.375.3 registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.3.0-2.375.3
-docker save registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.3.0-2.375.3 -o ks-jenkins-v3.3.0-2.375.3.tar
+docker tag kubesphere/ks-jenkins:v3.3.0-2.375.3 registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.3.0-2.375.3
+docker save registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.3.0-2.375.3 -o ks-jenkins-v3.3.0-2.375.3.tar
 
 # 上传到 devops-jenkins 所在的服务器（过程略）
 
@@ -625,11 +625,11 @@ kubectl edit deploy devops-jenkins -n kubesphere-devops-system
 
 # 修改的主要内容如下（一共有两处相同的内容需要修改）
 # 原始内容
-image: registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.3.0-2.319.1
+image: registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.3.0-2.319.1
 imagePullPolicy: Always
 
 # 修改后
-image: registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.3.0-2.375.3
+image: registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.3.0-2.375.3
 imagePullPolicy: IfNotPresent
 ```
 
@@ -643,9 +643,9 @@ imagePullPolicy: IfNotPresent
 
 [root@ks-k8s-master-0 ~]# kubectl get  deploy -n kubesphere-devops-system -o wide
 NAME                READY   UP-TO-DATE   AVAILABLE   AGE    CONTAINERS       IMAGES                                                                    SELECTOR
-devops-apiserver    1/1     1            1           102d   ks-devops        registry.cn-beijing.aliyuncs.com/kubesphereio/devops-apiserver:v3.3.0     app.kubernetes.io/instance=devops,app.kubernetes.io/name=ks-devops,devops.docs.kubesphere-carryon.top/component=apiserver
-devops-controller   1/1     1            1           102d   ks-devops        registry.cn-beijing.aliyuncs.com/kubesphereio/devops-controller:v3.3.0    app.kubernetes.io/instance=devops,app.kubernetes.io/name=ks-devops,devops.docs.kubesphere-carryon.top/component=controller
-devops-jenkins      1/1     1            1           102d   devops-jenkins   registry.cn-beijing.aliyuncs.com/kubesphereio/ks-jenkins:v3.3.0-2.375.3   component=devops-jenkins-master
+devops-apiserver    1/1     1            1           102d   ks-devops        registry.cn-beijing.aliyuncs.com/kubesphereon/devops-apiserver:v3.3.0     app.kubernetes.io/instance=devops,app.kubernetes.io/name=ks-devops,devops.docs.kubesphere-carryon.top/component=apiserver
+devops-controller   1/1     1            1           102d   ks-devops        registry.cn-beijing.aliyuncs.com/kubesphereon/devops-controller:v3.3.0    app.kubernetes.io/instance=devops,app.kubernetes.io/name=ks-devops,devops.docs.kubesphere-carryon.top/component=controller
+devops-jenkins      1/1     1            1           102d   devops-jenkins   registry.cn-beijing.aliyuncs.com/kubesphereon/ks-jenkins:v3.3.0-2.375.3   component=devops-jenkins-master
 ```
 
 2. 验证 Pod
@@ -687,7 +687,7 @@ s2ioperator-0                        1/1     Running     2 (32h ago)   102d    1
 [root@zdevops-main ks-jenkins]# make build
 jcli cwp --install-artifacts --config-path formula.yaml \
             --value-set output=load \
-            --value-set tag=kubespheredev/ks-jenkins:test \
+            --value-set tag=kubesphereondev/ks-jenkins:test \
             --value-set platform=linux/amd64
 Exception in thread "main" com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "output" (class io.jenkins.tools.warpackager.lib.config.DockerBuildSettings), not marked as ignorable (5 known properties: "base", "tag", "outputDir", "build", "customSettings"])
  at [Source: (FileInputStream); line: 10, column: 17] (through reference chain: io.jenkins.tools.warpackager.lib.config.Config["buildSettings"]->io.jenkins.tools.warpackager.lib.config.BuildSettings["docker"]->io.jenkins.tools.warpackager.lib.config.DockerBuildSettings["output"])
