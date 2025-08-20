@@ -143,7 +143,7 @@ We are grateful for the contribution of the student, Zhang Qiming, who has devel
 
 - Repository for Contribution: https://github.com/whenegghitsrock-extensions/ks-extensions-contrib
 
-- Development Guide: https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/en/
+- Development Guide: https://dev-guide.kubesphere.io/extension-dev-guide/en/
 
 ## Future Plans
 

@@ -157,7 +157,7 @@ helm upgrade --install -n kubesphere-system --create-namespace ks-core ht
 
 - 贡献仓库： https://github.com/whenegghitsrock-extensions/ks-extensions-contrib
 
-- 开发指南： https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/zh/
+- 开发指南： https://dev-guide.kubesphere.io/extension-dev-guide/zh/
 
 ## 未来计划与展望
 

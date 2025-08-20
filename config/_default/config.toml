@@ -158,26 +158,14 @@ name = "Documentation"
 hasChildren = true
     [[languages.en.menu.main]]
     parent = "Documentation"
-    name = "v4.1 <img src='/images/header/star.svg' alt='star'>"
+    name = "v4.1"
     URL = "/docs/v4.1"
     weight = 42
 
     [[languages.en.menu.main]]
     parent = "Documentation"
-    name = "v3.4"
-    URL = "/docs/v3.4"
-    weight = 43
-
-    [[languages.en.menu.main]]
-    parent = "Documentation"
-    name = "v3.3"
-    URL = "/docs/v3.3"
-    weight = 44
-   
-    [[languages.en.menu.main]]
-    parent = "Documentation"
     name = "Extension Development"
-    URL = "https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/en/ "
+    URL = "https://dev-guide.kubesphere.io/extension-dev-guide/en/ "
     weight = 45
 
     [[languages.en.menu.main]]
@@ -234,7 +222,7 @@ languageCode = "zh-CN"
 languageName = "简体中文"
 
 [languages.zh.params]
-title = "KubeSphere | 面向云原生应用的容器混合云 - v4.1.3 amd64 版本已恢复, 安装参考文档"
+title = "KubeSphere | 面向云原生应用的容器混合云 - v4.1.3 已恢复, 安装参考文档"
 description = "KubeSphere 是在 Kubernetes 之上构建的以应用为中心的多租户容器平台，提供全栈的 IT 自动化运维的能力，简化企业的 DevOps 工作流。KubeSphere 提供了运维友好的向导式操作界面，帮助企业快速构建一个强大和功能丰富的容器云平台。"
 keywords = "KubeSphere, Kubernetes, 容器平台, DevOps, 混合云"
 snapshot = "/images/common/snapshot-zh.png"
@@ -307,26 +295,14 @@ hasChildren = true
 name = "文档中心"
     [[languages.zh.menu.main]]
     parent = "文档中心"
-    name = "v4.1 <img src='/images/header/star.svg' alt='star'>"
+    name = "v4.1"
     URL = "/docs/v4.1"
     weight = 42
 
     [[languages.zh.menu.main]]
     parent = "文档中心"
-    name = "v3.4"
-    URL = "/docs/v3.4"
-    weight = 43
-
-    [[languages.zh.menu.main]]
-    parent = "文档中心"
-    name = "v3.3"
-    URL = "/docs/v3.3"
-    weight = 44
-
-    [[languages.zh.menu.main]]
-    parent = "文档中心"
     name = "扩展组件开发"
-    URL = "https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/zh/"
+    URL = "https://dev-guide.kubesphere.io/extension-dev-guide/zh/"
     weight = 45
    
     [[languages.zh.menu.main]]

@@ -53,7 +53,7 @@ KubeSphere 扩展组件用于扩展 KubeSphere 的平台能力，用户可在系
 
 您可以在扩展组件仓库中了解每个扩展组件的具体功能以及详细的安装及使用方法。
 
-> 注意：扩展市场不等同于应用商店，两者的对比，可参考[对比文档](https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/zh/faq/01-difference/)。
+> 注意：扩展市场不等同于应用商店，两者的对比，可参考[对比文档](https://dev-guide.kubesphere.io/extension-dev-guide/zh/faq/01-difference/)。
 > 
 > 关于应用商店的使用方法，详见文章 [KubeSphere v4 应用商店配置指南](https://www.docs.kubesphere-carryon.top/zh/blogs/kubesphere-v4-appstore-configuration-guide/)。
 
@@ -135,7 +135,7 @@ KubeSphere v4 除账户、权限、租户、实时监控和日志功能外，其
 
 贡献仓库： https://github.com/whenegghitsrock-extensions/ks-extensions-contrib
 
-开发指南： https://dev-guide.docs.kubesphere-carryon.top/extension-dev-guide/zh/
+开发指南： https://dev-guide.kubesphere.io/extension-dev-guide/zh/
 
 ## 总结
 
