@@ -143,3 +143,19 @@ Total in 2396 ms
 #### Get the generated static content
 
 You will find the previously generated content in the `public` directory.
+
+## 💖 Support this Project  
+
+If you find this project useful, consider buying me a coffee ☕️.  
+
+### 💰 Crypto Donation  
+
+- **BTC**  
+  ![BTC QR Code](./donation/btc.png)  
+
+- **ETH**  
+  ![ETH QR Code](./donation/eth.png)  
+
+- **SOLANA**  
+  ![SOLANA QR Code](./donation/sol.png)  
+
