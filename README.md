@@ -6,14 +6,6 @@ The master branch contains KubeSphere Doc 3.3 which has been released together w
 
 This project uses [Hugo](https://gohugo.io/) to build the KubeSphere website.
 
-## Contribute to the project
-
-Contributions of any kind are welcome! Thanks goes to these wonderful contributors, they made our community and product grow fast.
-
-<a href="https://github.com/whenegghitsrock/website-carryon/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=kubesphere/website" />
-</a>
-
 ### Fork and clone the repository
 
 1. Fork the repository.
